@@ -2,9 +2,14 @@
   --rem: 12pt;
   --width: 960px;
   --navpos: fixed;
-  /* --border: 1.5px solid var(--cmed); */
-  /** colors */
-
+  /* spacing */
+  --fullsp: 1.0em;
+  --halfsp: 0.5em;
+  --quartsp: 0.25em;
+  /* borders */
+  --border: 1.5px solid black;
+  --border-radius: 4px;
+  /* colors */
 }
 
 /* reset ---------------------------- */
@@ -14,7 +19,7 @@
   border-spacing: 0;
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  border: 1px solid orange;
 }
 header, footer, figure, video, details, blockquote,
 ul, ol, dl, fieldset, pre, pre > code {
@@ -40,27 +45,63 @@ body {
 div[role=row] {
   display: flex;
   align-items: stretch;
+  padding-bottom: var(--quartsp);
 }
 div[role=row] > div {
   width: 100%;
 }
 div[role=row] > :first-child {
-  margin-right: 0.25em;
+  margin-right: var(--halfsp);
 }
 div[role=row] > :not(:first-child) {
-  margin-left: 0.25em;
-  margin-right: 0.25em;
+  margin-left: var(--quartsp);
+  margin-right: var(--quartsp);
 }
 div[role=row] > :last-child {
   margin-right: 0;
 }
 
 /* group --------------------------- */
+
 div[role=group] {
   display: flex;
   align-items: stretch;
+  margin-bottom: var(--fullsp);
 }
 div[role=group] > * {
   width: 100%;
   align-items: center;
+}
+
+/* headings & layout */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--halfsp);
+}
+
+p {
+  margin-bottom: var(--halfsp);
+}
+
+/* notes */
+div[role=note] {
+  padding: var(--halfsp);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--fullsp);
+}
+
+/* form */
+form {
+  margin-bottom: var(--fullsp);
+}
+
+fieldset {
+  padding: var(--halfsp);
+  padding-bottom: var(--fullsp);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+fieldset > * {
+  margin: 0 !important;
 }
