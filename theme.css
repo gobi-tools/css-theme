@@ -1,0 +1,66 @@
+:root {
+  --rem: 12pt;
+  --width: 960px;
+  --navpos: fixed;
+  /* --border: 1.5px solid var(--cmed); */
+  /** colors */
+
+}
+
+/* reset ---------------------------- */
+
+* {
+  box-sizing: border-box;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+header, footer, figure, video, details, blockquote,
+ul, ol, dl, fieldset, pre, pre > code {
+	display: block;
+	overflow: auto hidden;
+	text-align: left;
+}
+a, button, select, summary { cursor: pointer; }
+
+/* base style ---------------------- */
+
+html {
+  font-size: var(--rem);
+}
+body {
+  position: relative;
+  max-width: var(--width);
+  margin: auto;
+}
+
+/* layout -------------------------- */
+
+div[role=row] {
+  display: flex;
+  align-items: stretch;
+}
+div[role=row] > div {
+  width: 100%;
+}
+div[role=row] > :first-child {
+  margin-right: 0.25em;
+}
+div[role=row] > :not(:first-child) {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+div[role=row] > :last-child {
+  margin-right: 0;
+}
+
+/* group --------------------------- */
+div[role=group] {
+  display: flex;
+  align-items: stretch;
+}
+div[role=group] > * {
+  width: 100%;
+  align-items: center;
+}
