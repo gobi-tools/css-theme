@@ -1,6 +1,6 @@
 :root {
   --rem: 12pt;
-  --width: 960px;
+  --width: 1024px;
   --navpos: fixed;
   /* spacing */
   --space-0: 0;
@@ -50,7 +50,8 @@ summary {
   cursor: pointer;
 }
 
-/* horizontal spacing -------------- */
+/* vertical spacing -------------- */
+
 h1 {
   margin-top: var(--space-6);
   margin-bottom: var(--space-3);
@@ -72,7 +73,7 @@ h6 {
 p,
 ul,
 ol {
-  margin-top: var(--space-2);
+  /* margin-top: var(--space-2); */
   margin-bottom: var(--space-3);
 }
 
@@ -107,6 +108,16 @@ hr {
   margin-bottom: var(--space-4);
 }
 
+nav+* {
+  margin-top: var(--space-6);
+}
+
+/* horizontal special styles */
+
+body > * {
+  padding-inline: var(--space-6);
+}
+
 /* base style ---------------------- */
 
 html {
@@ -115,32 +126,24 @@ html {
 
 body {
   position: relative;
+  margin: 0;
+}
+
+main {
   max-width: var(--width);
   margin: auto;
 }
 
-/* layout -------------------------- */
+/* columns -------------------------- */
 
 div[role=row] {
   display: flex;
   align-items: stretch;
+  gap: var(--space-2);
 }
 
 div[role=row]>div {
   width: 100%;
-}
-
-div[role=row]> :first-child {
-  margin-right: var(--space-1);
-}
-
-div[role=row]> :not(:first-child) {
-  margin-left: var(--space-1);
-  margin-right: var(--space-1);
-}
-
-div[role=row]> :last-child {
-  margin-right: 0;
 }
 
 /* group --------------------------- */
@@ -155,16 +158,59 @@ div[role=group]>* {
   align-items: center;
 }
 
-/* notes */
+/* notes ---------------------------- */
 div[role=note] {
   padding: var(--space-2);
   border: var(--border);
   border-radius: var(--border-radius);
 }
 
-/* form */
+/* form --------------------------- */
+
 fieldset {
   padding: var(--space-2);
   border: var(--border);
   border-radius: var(--border-radius);
+}
+
+aside {
+  min-width: 200px;
+}
+
+/* navigation --------------- */
+
+nav {
+  width: 100%;
+}
+
+body>nav,
+head nav {
+  z-index: 41;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul:first-child {
+  overflow: visible;
+}
+
+nav ul:first-child>li {
+  display: inline-block;
+}
+
+nav ul>li>ul {
+  display: none;
+  width: auto;
+  position: absolute;
+  z-index: 42;
+}
+
+nav ul>li>ul>li {
+  white-space: nowrap;
+}
+
+nav ul>li:hover>ul {
+  display: block;
 }
