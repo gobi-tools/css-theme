@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Experiment</title>
+
+  <style>
+    :root {
+      --space-0: 0;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 1rem;
+      --space-4: 1.5rem;
+      --space-5: 2rem;
+      --space-6: 3rem;
+    }
+
+    /* reset ---------------------------- */
+
+    * {
+      box-sizing: border-box;
+      border-spacing: 0;
+      margin: 0;
+      padding: 0;
+      border: 1px solid orange;
+    }
+
+    header,
+    footer,
+    figure,
+    video,
+    details,
+    blockquote,
+    ul,
+    ol,
+    dl,
+    fieldset,
+    pre,
+    pre>code {
+      display: block;
+      overflow: auto hidden;
+      text-align: left;
+    }
+
+    a,
+    button,
+    select,
+    summary {
+      cursor: pointer;
+    }
+
+    h1 {
+      margin-top: var(--space-6);
+      margin-bottom: var(--space-3);
+    }
+
+    h2 {
+      margin-top: var(--space-5);
+      margin-bottom: var(--space-2);
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: var(--space-4);
+      margin-bottom: var(--space-2);
+    }
+
+    p,
+    ul,
+    ol {
+      margin-top: var(--space-2);
+      margin-bottom: var(--space-3);
+    }
+
+    img,
+    blockquote,
+    table {
+      margin: var(--space-3) 0;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+      margin-bottom: var(--space-2);
+    }
+
+    section,
+    article,
+    aside,
+    main,
+    header,
+    footer {
+      margin-bottom: var(--space-5);
+    }
+
+    div[role=row] {
+      display: flex;
+      align-items: stretch;
+    }
+
+    div[role=row]>div {
+      width: 100%;
+    }
+
+    div[role=row]> :first-child {
+      margin-right: var(--space-1);
+    }
+
+    div[role=row]> :not(:first-child) {
+      margin-left: var(--space-1);
+      margin-right: var(--space-1);
+    }
+
+    div[role=row]> :last-child {
+      margin-right: 0;
+    }
+
+    /* group --------------------------- */
+
+    div[role=group] {
+      display: flex;
+      align-items: stretch;
+    }
+
+    div[role=group]>* {
+      width: 100%;
+      align-items: center;
+    }
+
+    /* notes */
+    div[role=note] {
+      padding: var(--space-2);
+      border: var(--border);
+      border-radius: var(--border-radius);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Heading 1</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </p>
+    <h2>Heading 2</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </p>
+    <h3>Heading 3</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </p>
+
+    <h4>Heading 4</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </p>
+
+    <h5>Heading 5</h5>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </p>
+
+    <h6>Heading 6</h6>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </p>
+  </main>
+
+  <main>
+    <div role="row">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </div>
+    </div>
+    <div role="row">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+      </div>
+      <div>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+    </div>
+    <div role="row">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+      </div>
+      <div>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </div>
+    </div>
+
+    <form>
+      <fieldset>
+        <legend>Form</legend>
+        <div role="group">
+          <input type="email" placeholder="Email...">
+          <input type="submit" value="submit">
+        </div>
+      </fieldset>
+    </form>
+
+    <div role="note">
+      <div role="group">
+        <div role="row">
+          <img width="60" height="60" src="https://picsum.photos/40/40">
+          <div>
+            <b>Title</b>
+            <br>
+            <div>Lorem ipsum</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </div>
+      <hr>
+      <div>
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <div role="group">
+      <div role="row">
+        <img width="24" height="24" src="https://picsum.photos/40/40">
+        <div>
+          <a href=""><b>zoso blog</b></a>
+          <br>
+          <div>
+            Blog de cultura generala<br>
+            1 Newsletter &#x2022; Oct 11. 2025 &#x2022; Daily
+          </div>
+        </div>
+        <img width="17" height="16" src="https://picsum.photos/40/40">
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
