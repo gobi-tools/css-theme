@@ -1,6 +1,7 @@
 :root {
   --rem: 12pt;
-  --width: 960px;
+  --narrow-width: 960px;
+  --wide-with: 1600px;
   --navpos: fixed;
   /* spacing */
   --space-0: 0;
@@ -112,11 +113,6 @@ nav+* {
   margin-top: var(--space-6);
 }
 
-/* horizontal special styles */
-
-body > :not(main) {
-  padding-inline: var(--space-6);
-}
 
 /* base style ---------------------- */
 
@@ -125,14 +121,14 @@ html {
 }
 
 body {
-  position: relative;
   margin: 0;
 }
 
-main {
-  max-width: var(--width);
-  margin: auto;
-}
+/* make footer stick to bottom */
+/* html, body { height: 100%; }
+body { display: flex; flex-direction: column; min-height: 100vh; align-items: start; }
+main { flex: 1; }
+footer { min-height: 60px; } */
 
 /* columns -------------------------- */
 
@@ -213,4 +209,16 @@ nav ul>li>ul>li {
 
 nav ul>li:hover>ul {
   display: block;
+}
+
+/* classes ---------------- */
+
+.content-narrow {
+  width: min(100% - var(--space-6), var(--narrow-width));
+  margin-inline: auto;
+}
+
+.content-wide {
+  width: min(100% - var(--space-6), var(--wide-with));
+  margin-inline: auto;
 }
