@@ -109,11 +109,6 @@ hr {
   margin-bottom: var(--space-4);
 }
 
-nav+* {
-  margin-top: var(--space-6);
-}
-
-
 /* base style ---------------------- */
 
 html {
@@ -125,10 +120,15 @@ body {
 }
 
 /* make footer stick to bottom */
-/* html, body { height: 100%; }
-body { display: flex; flex-direction: column; min-height: 100vh; align-items: start; }
-main { flex: 1; }
-footer { min-height: 60px; } */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
 
 /* columns -------------------------- */
 
@@ -221,4 +221,8 @@ nav ul>li:hover>ul {
 .content-wide {
   width: min(100% - var(--space-6), var(--wide-with));
   margin-inline: auto;
+}
+
+.align-center {
+  text-align: center;
 }
