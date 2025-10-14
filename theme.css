@@ -24,7 +24,7 @@
   border-spacing: 0;
   margin: 0;
   padding: 0;
-  /* border: 1px solid orange; */
+  border: 1px solid red;
 }
 
 header,
@@ -119,6 +119,32 @@ body {
   margin: 0;
 }
 
+/* horz alignment ------------------ */
+body>* {
+  width: min(100% - var(--space-6), var(--narrow-width));
+  margin-inline: auto;
+}
+
+.full {
+  max-width: none;
+  margin-inline: 0;
+  width: 100%;
+}
+
+.full>* {
+  width: min(100% - var(--space-6), var(--narrow-width));
+  margin-inline: auto;
+}
+
+.wide {
+  width: min(100% - var(--space-6), var(--wide-with));
+  margin-inline: auto;
+}
+
+.wide>* {
+  width: 100%;
+}
+
 /* make footer stick to bottom */
 body {
   display: flex;
@@ -175,9 +201,9 @@ aside {
 
 /* navigation --------------- */
 
-nav {
+/* nav {
   width: 100%;
-}
+} */
 
 body>nav,
 head nav {
@@ -212,16 +238,6 @@ nav ul>li:hover>ul {
 }
 
 /* classes ---------------- */
-
-.content-narrow {
-  width: min(100% - var(--space-6), var(--narrow-width));
-  margin-inline: auto;
-}
-
-.content-wide {
-  width: min(100% - var(--space-6), var(--wide-with));
-  margin-inline: auto;
-}
 
 .align-center {
   text-align: center;
