@@ -263,6 +263,16 @@ fieldset {
   border-radius: var(--border-radius);
 }
 
+blockquote {
+  padding: var(--space-2);
+  border-left: 0.4rem solid black;
+}
+blockquote > * {
+  margin: 0;
+}
+
+/* asides -----------------------*/
+
 aside {
   min-width: 200px;
 }
