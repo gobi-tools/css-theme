@@ -45,7 +45,7 @@
   border-spacing: 0;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 header,
@@ -263,7 +263,7 @@ nav ul>li:hover>ul {
 /* ---------------------------------- */
 /* typography ----------------------- */
 /* ---------------------------------- */
-· html {
+html {
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
