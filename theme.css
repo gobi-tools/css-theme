@@ -1,6 +1,6 @@
 :root {
   --rem: 12pt;
-  --narrow-width: 960px;
+  --narrow-width: 800px;
   --wide-with: 1600px;
   --navpos: fixed;
   /* spacing */
@@ -14,17 +14,38 @@
   /* borders */
   --border: 1.5px solid black;
   --border-radius: 4px;
+  /* typography */
+  --font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-family-head: var(--font-family-body);
+  --font-family-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+  --line-height-body: 1.6;
+  --line-height-head: 1.25;
+  --letter-spacing-head: -0.01em; 
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-lg: 1.125rem;
+  /* 18px */
+  --font-size-xl: 1.25rem;
+  /* 20px */
+  --font-size-2xl: 1.5rem;
+  /* 24px */
+  --font-size-3xl: 2rem;
+  /* 32px */
+  --font-weight-head: 600;
   /* colors */
 }
 
+/* ---------------------------------- */
 /* reset ---------------------------- */
+/* ---------------------------------- */
 
 * {
   box-sizing: border-box;
   border-spacing: 0;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 header,
@@ -50,6 +71,10 @@ select,
 summary {
   cursor: pointer;
 }
+
+/* ---------------------------------- */
+/* layouts -------------------------- */
+/* ---------------------------------- */
 
 /* vertical spacing -------------- */
 
@@ -110,10 +135,6 @@ hr {
 }
 
 /* base style ---------------------- */
-
-html {
-  font-size: var(--rem);
-}
 
 body {
   margin: 0;
@@ -201,10 +222,6 @@ aside {
 
 /* navigation --------------- */
 
-/* nav {
-  width: 100%;
-} */
-
 body>nav,
 head nav {
   z-index: 41;
@@ -241,4 +258,52 @@ nav ul>li:hover>ul {
 
 .align-center {
   text-align: center;
+}
+
+/* ---------------------------------- */
+/* typography ----------------------- */
+/* ---------------------------------- */
+· html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-head);
+  line-height: var(--line-height-head);
+  font-weight: var(--font-weight-head);
+  font-size: var(--font-size-base);
+  letter-spacing: var(--letter-spacing-head);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+pre, code {
+  font-family: var(--font-family-mono);
 }
