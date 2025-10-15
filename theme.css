@@ -21,8 +21,9 @@
   --font-family-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
   --line-height-body: 1.6;
   --line-height-head: 1.25;
-  --letter-spacing-head: -0.01em; 
+  --letter-spacing-head: -0.01em;
   --font-size-base: 1rem;
+  --font-size-sm: 0.95em;
   /* 16px */
   --font-size-lg: 1.125rem;
   /* 18px */
@@ -54,6 +55,7 @@ figure,
 video,
 details,
 blockquote,
+img,
 ul,
 ol,
 dl,
@@ -129,21 +131,31 @@ footer {
   margin-bottom: var(--space-5);
 }
 
+img:has(+ figcaption) {
+  margin-bottom: 0;
+}
+
 hr {
   margin-top: var(--space-4);
   margin-bottom: var(--space-4);
 }
 
-/* base style ---------------------- */
+/* horz spacing ------------------ */
 
-body {
-  margin: 0;
-}
-
-/* horz alignment ------------------ */
 body>* {
   width: min(100% - var(--space-6), var(--narrow-width));
   margin-inline: auto;
+}
+
+img {
+  margin-inline: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+figure>figure {
+  display: inline-grid;
+  width: auto;
 }
 
 .full {
@@ -166,7 +178,8 @@ body>* {
   width: 100%;
 }
 
-/* make footer stick to bottom */
+/* make footer stick to bottom ----- */
+
 body {
   display: flex;
   flex-direction: column;
@@ -177,36 +190,70 @@ main {
   flex: 1;
 }
 
-/* columns -------------------------- */
+/* alignment classes ---------------- */
 
-div[role=row] {
-  display: flex;
-  align-items: stretch;
-  gap: var(--space-2);
+.align-center {
+  text-align: center;
 }
 
-div[role=row]>div {
-  width: 100%;
+/* ---------------------------------- */
+/* typography ----------------------- */
+/* ---------------------------------- */
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* group --------------------------- */
-
-div[role=group] {
-  display: flex;
-  align-items: stretch;
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
 }
 
-div[role=group]>* {
-  width: 100%;
-  align-items: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-head);
+  line-height: var(--line-height-head);
+  font-weight: var(--font-weight-head);
+  font-size: var(--font-size-base);
+  letter-spacing: var(--letter-spacing-head);
 }
 
-/* notes ---------------------------- */
-div[role=note] {
-  padding: var(--space-2);
-  border: var(--border);
-  border-radius: var(--border-radius);
+h1 {
+  font-size: var(--font-size-3xl);
 }
+
+h2 {
+  font-size: var(--font-size-2xl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+pre,
+code {
+  font-family: var(--font-family-mono);
+}
+
+figcaption {
+  font-style: italic;
+  font-size: var(--font-size-sm);
+}
+
+/* ---------------------------------- */
+/* standard elements ---------------- */
+/* ---------------------------------- */
 
 /* form --------------------------- */
 
@@ -254,56 +301,38 @@ nav ul>li:hover>ul {
   display: block;
 }
 
-/* classes ---------------- */
-
-.align-center {
-  text-align: center;
-}
-
 /* ---------------------------------- */
-/* typography ----------------------- */
+/* custom elements ------------------ */
 /* ---------------------------------- */
-html {
-  font-size: 100%;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+
+/* columns -------------------------- */
+
+div[role=row] {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-2);
 }
 
-body {
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-body);
+div[role=row]>div {
+  width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-family-head);
-  line-height: var(--line-height-head);
-  font-weight: var(--font-weight-head);
-  font-size: var(--font-size-base);
-  letter-spacing: var(--letter-spacing-head);
+/* group --------------------------- */
+
+div[role=group] {
+  display: flex;
+  align-items: stretch;
 }
 
-h1 {
-  font-size: var(--font-size-3xl);
+div[role=group]>* {
+  width: 100%;
+  align-items: center;
 }
 
-h2 {
-  font-size: var(--font-size-2xl);
-}
+/* notes ---------------------------- */
 
-h3 {
-  font-size: var(--font-size-xl);
-}
-
-h4 {
-  font-size: var(--font-size-lg);
-}
-
-pre, code {
-  font-family: var(--font-family-mono);
+div[role=note] {
+  padding: var(--space-2);
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
