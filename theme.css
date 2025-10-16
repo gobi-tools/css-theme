@@ -88,7 +88,7 @@
   --color-accent: var(--blue-600);
   --color-accent-bg: var(--blue-50);
   /* borders */
-  --border-radius: 4px;
+  --border-radius: 6px;
   --border-width-thin: 1.5px;
   --border-width-thick: 0.4em;
   --border-color: var(--color-highlight);
@@ -191,7 +191,7 @@
   border-spacing: 0;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 header,
