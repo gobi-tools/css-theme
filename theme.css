@@ -89,10 +89,8 @@
   --color-accent-bg: var(--blue-50);
   /* borders */
   --border-radius: 6px;
-  --border-width-thin: 1.5px;
-  --border-width-thick: 0.4em;
+  --border-width: 1.5px;
   --border-color: var(--color-highlight);
-  --border-color-accent: var(--color-accent);
   /* typography */
   --font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
@@ -428,13 +426,14 @@ a {
   color: var(--color-accent);
 }
 
-code,
-kbd {
-  background: var(--color-highlight-bg);
+button {
+  background: var(--color-accent);
+  color: var(--color-highlight);
 }
 
-pre>code {
-  background-color: var(--color-accent-bg);
+code,
+kbd {
+  background: var(--color-accent-bg);
 }
 
 blockquote {
@@ -452,7 +451,6 @@ mark {
   --color-accent: var(--purple-800);
   --color-accent-bg: var(--purple-100);
   --border-color: var(--color-highlight);
-  --border-color-accent: var(--purple-300);
 }
 
 .success {
@@ -461,7 +459,6 @@ mark {
   --color-accent: var(--green-800);
   --color-accent-bg: var(--green-100);
   --border-color: var(--color-highlight);
-  --border-color-accent: var(--green-300);
 }
 
 .warning {
@@ -470,7 +467,6 @@ mark {
   --color-accent: var(--yellow-800);
   --color-accent-bg: var(--yellow-100);
   --border-color: var(--color-highlight);
-  --border-color-accent: var(--yellow-300);
 }
 
 .error {
@@ -479,7 +475,6 @@ mark {
   --color-accent: var(--red-800);
   --color-accent-bg: var(--red-100);
   --border-color: var(--color-highlight);
-  --border-color-accent: var(--red-300);
 }
 
 /* ---------------------------------- */
@@ -491,26 +486,26 @@ mark {
 fieldset {
   padding: var(--space-2);
   border-radius: var(--border-radius);
-  border-width: var(--border-width-thin);
+  border-width: var(--border-width);
   border-color: var(--border-color);
   border-style: solid;
+}
+
+/* buttons ------------------------- */
+button {
+
 }
 
 /* other --------------------------- */
 
 blockquote {
-  padding: var(--space-2-5);
-  border-left-width: var(--border-width-thick);
-  border-left-style: solid;
-  border-left-color: var(--border-color);
+  padding: var(--space-3);
+  border-radius: var(--border-radius);
 }
 
 pre>code {
-  padding: var(--space-2-5);
+  padding: var(--space-3);
   border-radius: var(--border-radius);
-  border-left-width: var(--border-width-thick);
-  border-left-style: solid;
-  border-left-color: var(--border-color-accent);
 }
 
 mark,
@@ -596,7 +591,7 @@ div[role=group]>* {
 div[role=note] {
   padding: var(--space-2);
   border-radius: var(--border-radius);
-  border-width: var(--border-width-thin);
+  border-width: var(--border-width);
   border-style: solid;
   border-color: var(--border-color);
 }
