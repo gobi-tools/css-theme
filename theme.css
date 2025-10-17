@@ -82,15 +82,23 @@
   --purple-50: #faf5ff;
   /* colors - functional */
   --color-text: var(--gray-700);
-  --color-bg: var(--gray-0);
-  --color-highlight: var(--gray-200);
-  --color-highlight-bg: var(--gray-100);
-  --color-accent: var(--blue-600);
-  --color-accent-bg: var(--blue-50);
+  --color-doc: var(--gray-0);
+
+  /*
+  -> color-neutral -> blockout (gray-100)
+  -> color-neutral-dark -> borders, kbd, mark, code (gray-200)
+  -> color-action -> buttons (blue-50)
+  -> color-action-dark -> links, text, etc (blue-600)
+  -> 
+  */
+
+  --color-neutral: var(--gray-100);
+  --color-neutral-dark: var(--gray-200);
+  --color-action: var(--blue-50);
+  --color-action-dark: var(--blue-600);
   /* borders */
   --border-radius: 6px;
   --border-width: 1.5px;
-  --border-color: var(--color-highlight);
   /* typography */
   --font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
@@ -402,7 +410,6 @@ kbd {
 code,
 kbd {
   font-size: var(--font-size-sm);
-  ;
 }
 
 figcaption {
@@ -414,8 +421,12 @@ figcaption {
 /* colors --------------------------- */
 /* ---------------------------------- */
 
+* {
+  border-color: var(--color-neutral-dark);
+}
+
 html {
-  background-color: var(--color-bg);
+  background-color: var(--color-doc);
 }
 
 body {
@@ -423,58 +434,61 @@ body {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-action-dark);
 }
 
 button {
-  background: var(--color-accent);
-  color: var(--color-highlight);
+  background: var(--color-action);
+  color: var(--color-action-dark);
+  border-radius: var(--border-radius);
+  /** temp **/
+  padding: 0.6em 1.3em 0.6em 1.3em;
+  border-style: none;
+}
+button:hover {
+  filter: brightness(90%)
 }
 
 code,
 kbd {
-  background: var(--color-accent-bg);
+  background: var(--color-neutral-dark);
 }
 
 blockquote {
-  background: var(--color-highlight-bg);
+  background: var(--color-neutral);
 }
 
 mark {
-  background: var(--color-accent-bg);
+  background: var(--color-neutral-dark);
   color: var(--color-text);
 }
 
 .hint {
-  --color-highlight: var(--purple-200);
-  --color-highlight-bg: var(--purple-50);
-  --color-accent: var(--purple-800);
-  --color-accent-bg: var(--purple-100);
-  --border-color: var(--color-highlight);
+  --color-neutral: var(--purple-50);
+  --color-neutral-dark: var(--purple-100);
+  --color-action: var(--purple-100);
+  --color-action-dark: var(--purple-800);
 }
 
 .success {
-  --color-highlight: var(--green-200);
-  --color-highlight-bg: var(--green-50);
-  --color-accent: var(--green-800);
-  --color-accent-bg: var(--green-100);
-  --border-color: var(--color-highlight);
+  --color-neutral: var(--green-50);
+  --color-neutral-dark: var(--green-100);
+  --color-action: var(--green-100);
+  --color-action-dark: var(--green-800);
 }
 
 .warning {
-  --color-highlight: var(--yellow-200);
-  --color-highlight-bg: var(--yellow-50);
-  --color-accent: var(--yellow-800);
-  --color-accent-bg: var(--yellow-100);
-  --border-color: var(--color-highlight);
+  --color-neutral: var(--yellow-50);
+  --color-neutral-dark: var(--yellow-100);
+  --color-action: var(--yellow-100);
+  --color-action-dark: var(--yellow-800);
 }
 
 .error {
-  --color-highlight: var(--red-200);
-  --color-highlight-bg: var(--red-50);
-  --color-accent: var(--red-800);
-  --color-accent-bg: var(--red-100);
-  --border-color: var(--color-highlight);
+  --color-neutral: var(--red-50);
+  --color-neutral-dark: var(--red-100);
+  --color-action: var(--red-100);
+  --color-action-dark: var(--red-800);
 }
 
 /* ---------------------------------- */
@@ -487,14 +501,11 @@ fieldset {
   padding: var(--space-2);
   border-radius: var(--border-radius);
   border-width: var(--border-width);
-  border-color: var(--border-color);
   border-style: solid;
 }
 
 /* buttons ------------------------- */
-button {
-
-}
+button {}
 
 /* other --------------------------- */
 
@@ -593,5 +604,4 @@ div[role=note] {
   border-radius: var(--border-radius);
   border-width: var(--border-width);
   border-style: solid;
-  border-color: var(--border-color);
 }
