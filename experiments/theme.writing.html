@@ -29,6 +29,7 @@
       --gray-200: #c9c9c9;
       --gray-100: #e6e6e6;
       --gray-50: #f0f0f0;
+      --gray-0: #fcfcfc;
       --red-950: #1b1616;
       --red-900: #2c1f1f;
       --red-800: #3e2927;
@@ -107,21 +108,29 @@
       --violet-100: #ebe3f9;
       --violet-50: #f4f1f9;
       /* utility colors */
-      --color-bg: var(--violet-50);
+      --color-bg: var(--gray-0);
       --color: var(--gray-700);
 
-      --theme-color-highlight-bg: var(--color-bg);
-      --theme-color-highlight-fg: var(--red-300);
-      --theme-color-highlight: var(--gray-900);
+      --color-neutral: var(--gray-0);
+      --color-neutral-stroke: var(--gray-500);
 
-      --theme-color-accent-bg: var(--red-100);
-      --theme-color-accent-fg: var(--red-300);
-      --theme-color-accent: var(--red-700);
+      --color-highlight: var(--gray-50);
+      --color-highlight-stroke: var(--red-400);
+      --color-highlight-txt: var(--red-500);
 
-      --theme-color-contrast-bg: var(--red-500);
-      --theme-color-contrast-fg: var(--red-500);
-      --theme-color-contrast: var(--red-50);
+      --color-action: var(--green-400);
+      --color-action-stroke: var(--green-200);
+      --color-action-txt: var(--gray-0);
 
+      --color-contrast: var(--green-100);
+      --color-contrast-stroke: var(--green-400);
+      --color-contrast-txt: var(--gray-700);
+
+      --color-muted: var(--gray-0);
+      --color-muted-stroke: var(--green-100);
+      --color-muted-text: var(--gry-700);
+
+      /* style utlitiies */
       --border-radius-highlights: 6px;
 
       --border-radius-blocks: 0px;
@@ -150,6 +159,7 @@
         --gray-200: #2e2e2e;
         --gray-100: #242424;
         --gray-50: #1b1b1b;
+        --gray-0: #1b1b1b;
         --red-950: #f9eeee;
         --red-900: #f8e1de;
         --red-800: #f7bbb1;
@@ -303,87 +313,46 @@
 
     * {
       color: var(--color);
-      border-color: var(--theme-color-highlight-bg);
+      border-color: var(--color-neutral);
     }
 
     blockquote {
-      background: var(--theme-color-highlight-bg);
-      color: var(--theme-color-highlight);
-      border-left-color: var(--theme-color-highlight-fg);
+      background: var(--color-neutral);
+      border-left-color: var(--color-neutral-stroke);
     }
 
     code,
     kbd,
     mark {
-      background: var(--theme-color-accent-bg);
-      color: var(--theme-color-accent);
+      background: var(--color-highlight);
+      color: var(--color-highlight-txt);
     }
 
     pre>code {
-      border-left-color: var(--theme-color-accent-fg);
+      border-left-color: var(--color-highlight-stroke);
     }
 
     button {
-      background: var(--theme-color-contrast-bg);
-      color: var(--theme-color-contrast);
-      border-color: var(--theme-color-contrast-fg);
+      background: var(--color-action);
+      color: var(--color-action-txt);
+      border-color: var(--color-action-stroke);
     }
 
     button[type=reset] {
-      background: var(--theme-color-contrast);
-      color: var(--theme-color-contrast-bg);
-      border-color: var(--theme-color-contrast-fg);
+      background: var(--color-contrast);
+      color: var(--color-contrast-txt);
+      border-color: var(--color-contrast-stroke);
     }
 
     button[type=menu] {
-      color: var(--theme-color-contrast-bg);
-      background: var(--theme-color-highlight-bg);
-      border-color: var(--theme-color-highlight-fg);
+      color: var(--color-muted-text);
+      background: var(--color-muted);
+      border-color: var(--color-muted-stroke);
     }
-
-    /* button[type=menu] {
-      color: var(--theme-color-contrast-bg);
-      background: var(--color-bg);
-      border-color: var(--color-bg);
-      border-bottom-width: var(--border-width-action);
-    } */
 
     a {
-      color: var(--color-action-high);
+      color: var(--color-action);
     }
-
-    /* .hint {
-      --color-highlight-low: var(--purple-50);
-      --color-highlight-mid: var(--purple-100);
-      --color-highlight-high: var(--purple-600);
-      --color-accent-low: var(--purple-100);
-      --color-accent-high: var(--purple-600);
-      --color-action-low: var(--purple-100);
-      --color-action-high: var(--purple-600);
-      --color: var(--purple-800);
-    }
-
-    .error {
-      --color-highlight-low: var(--red-50);
-      --color-highlight-mid: var(--red-100);
-      --color-highlight-high: var(--red-600);
-      --color-accent-low: var(--red-100);
-      --color-accent-high: var(--red-600);
-      --color-action-low: var(--red-100);
-      --color-action-high: var(--red-600);
-      --color: var(--red-800);
-    }
-
-    .success {
-      --color-highlight-low: var(--green-50);
-      --color-highlight-mid: var(--green-100);
-      --color-highlight-high: var(--green-600);
-      --color-accent-low: var(--green-100);
-      --color-accent-high: var(--green-600);
-      --color-action-low: var(--green-100);
-      --color-action-high: var(--green-600);
-      --color: var(--green-800);
-    } */
   </style>
 </head>
 
@@ -509,6 +478,16 @@
 
       <section>
         <h2>Blockquotes</h2>
+        <blockquote>
+          <p>
+            This is a longer message 
+          </p>
+          <p>
+            <small><mark>tag-2</mark>
+            <small><mark>tag-3</mark></small>
+            <small><mark>tag-1</mark></small>
+          </p>
+        </blockquote>
 
         <blockquote>
           <p>

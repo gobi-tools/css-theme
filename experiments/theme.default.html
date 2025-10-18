@@ -89,18 +89,26 @@
       --color-bg: var(--gray-0);
       --color: var(--gray-700);
 
-      --theme-color-highlight-bg: var(--gray-50);
-      --theme-color-highlight-fg: var(--gray-300);
-      --theme-color-highlight: var(--gray-700);
+      --color-neutral: var(--gray-50);
+      --color-neutral-stroke: var(--gray-300);
 
-      --theme-color-accent-bg: var(--blue-50);
-      --theme-color-accent-fg: var(--blue-500);
-      --theme-color-accent: var(--gray-700);
+      --color-highlight: var(--blue-100);
+      --color-highlight-stroke: var(--blue-500);
+      --color-highlight-txt: var(--gray-700);
 
-      --theme-color-contrast-bg: var(--blue-600);
-      --theme-color-contrast-fg: var(--blue-600);
-      --theme-color-contrast: var(--blue-50);
+      --color-action: var(--blue-600);
+      --color-action-stroke: var(--blue-600);
+      --color-action-txt: var(--blue-50);
 
+      --color-contrast: var(--blue-50);
+      --color-contrast-stroke: var(--blue-500);
+      --color-contrast-txt: var(--blue-600);
+
+      --color-muted: var(--blue-50);
+      --color-muted-stroke: var(--blue-50);
+      --color-muted-text: var(--blue-600);
+
+      /* style utlitiies */
       --border-radius-highlights: 6px;
 
       --border-radius-blocks: 0px;
@@ -128,7 +136,7 @@
         --gray-300: #374151;
         --gray-200: #1f2937;
         --gray-100: #111827;
-        --gray-50:#111827; /* #030712; */
+        --gray-50: #111827;
         --gray-0: #030712;
         --red-950: #fef2f2;
         --red-900: #fee2e2;
@@ -261,86 +269,46 @@
 
     * {
       color: var(--color);
-      border-color: var(--theme-color-highlight-bg);
+      border-color: var(--color-neutral);
     }
 
     blockquote {
-      background: var(--theme-color-highlight-bg);
-      color: var(--theme-color-highlight);
-      border-left-color: var(--theme-color-highlight-fg);
+      background: var(--color-neutral);
+      border-left-color: var(--color-neutral-stroke);
     }
 
     code,
-    kbd, 
+    kbd,
     mark {
-      background: var(--theme-color-accent-bg);
-      color: var(--theme-color-accent);
+      background: var(--color-highlight);
+      color: var(--color-highlight-txt);
     }
 
     pre>code {
-      border-left-color: var(--theme-color-accent-fg);
+      border-left-color: var(--color-highlight-stroke);
     }
 
     button {
-      background: var(--theme-color-contrast-bg);
-      color: var(--theme-color-contrast);
-      border-color: var(--theme-color-contrast-fg);
+      background: var(--color-action);
+      color: var(--color-action-txt);
+      border-color: var(--color-action-stroke);
     }
 
     button[type=reset] {
-      background: var(--theme-color-contrast);
-      color: var(--theme-color-contrast-bg);
-      border-color: var(--theme-color-contrast-fg);
+      background: var(--color-contrast);
+      color: var(--color-contrast-txt);
+      border-color: var(--color-contrast-stroke);
     }
 
     button[type=menu] {
-      color: var(--theme-color-contrast-bg);
-      background: var(--theme-color-highlight-bg);
-      border-color: var(--theme-color-highlight-bg);
+      color: var(--color-muted-text);
+      background: var(--color-muted);
+      border-color: var(--color-muted-stroke);
     }
 
     a {
-      color: var(--color-action-high);
+      color: var(--color-action);
     }
-
-    /* .hint {
-      --color-highlight-low: var(--blue-50);
-      --color-highlight-mid: var(--blue-100);
-      --color-highlight-high: var(--blue-500);
-      --color-accent-low: var(--blue-100);
-      --color-accent-high: var(--blue-600);
-      --color-action-vlow: var(--blue-50);
-      --color-action-low: var(--blue-50);
-      --color-action-mid: var(--blue-600);
-      --color-action-high: var(--blue-600);
-      --color: var(--blue-800);
-    }
-
-    .error {
-      --color-highlight-low: var(--red-50);
-      --color-highlight-mid: var(--red-100);
-      --color-highlight-high: var(--red-600);
-      --color-accent-low: var(--red-100);
-      --color-accent-high: var(--red-600);
-      --color-action-vlow: var(--red-100);
-      --color-action-low: var(--red-100);
-      --color-action-mid: var(--red-600);
-      --color-action-high: var(--red-600);
-      --color: var(--red-800);
-    }
-
-    .success {
-      --color-highlight-low: var(--green-50);
-      --color-highlight-mid: var(--green-100);
-      --color-highlight-high: var(--green-600);
-      --color-accent-low: var(--green-100);
-      --color-accent-high: var(--green-600);
-      --color-action-vlow: var(--green-100);
-      --color-action-low: var(--green-100);
-      --color-action-mid: var(--green-600);
-      --color-action-high: var(--green-600);
-      --color: var(--green-800);
-    } */
   </style>
 </head>
 
@@ -499,6 +467,17 @@
             <button>Copy</button>
           </div>
         </blockquote>
+      </section>
+
+      <section>
+        <h2>Form</h2>
+        <form>
+          <fieldset>
+            <legend>My Form</legend>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email...">
+          </fieldset>
+        </form>
       </section>
     </article>
   </main>
