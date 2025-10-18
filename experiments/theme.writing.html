@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minimal Theme with Utilities</title>
+  <title>Writing Theme</title>
   <style>
     :root {
       /* theme colors */
@@ -41,11 +41,17 @@
       --color-muted-stroke: var(--green-light);
       --color-muted-txt: var(--gray-strong);
 
+      --color-link: var(--green-dark);
+
       /* style utlitiies */
       --border-radius-highlights: 6px;
 
       --border-radius-blocks: 0px;
       --border-style-blocks: solid;
+      --border-width-blocks: 0px;
+      --border-left-style-blocks: solid;
+      --border-left-width-blocks: 4px;
+      --border-bottom-width-blocks: 0px;
       --width-blocks: 100%;
       --margin-left-blocks: 0em;
       --padding-inline-blocks: 1em;
@@ -93,7 +99,11 @@
       padding-top: 1em;
       padding-bottom: 1em;
       border-radius: var(--border-radius-blocks);
-      border-left-style: var(--border-style-blocks);
+      border-style: var(--border-style-blocks);
+      border-width: var(--border-width-blocks);
+      border-left-style: var(--border-left-style-blocks);
+      border-left-width: var(--border-left-width-blocks);
+      border-bottom-width: var(--border-bottom-width-blocks);
       width: var(--width-blocks);
       margin-left: var(--margin-left-blocks);
       padding-inline: var(--padding-inline-blocks);
@@ -105,7 +115,11 @@
       padding-top: 1em;
       padding-bottom: 1em;
       border-radius: var(--border-radius-blocks);
-      border-left-style: var(--border-style-blocks);
+      border-style: var(--border-style-blocks);
+      border-width: var(--border-width-blocks);
+      border-left-style: var(--border-left-style-blocks);
+      border-left-width: var(--border-left-width-blocks);
+      border-bottom-width: var(--border-bottom-width-blocks);
       width: var(--width-blocks);
       margin-left: var(--margin-left-blocks);
       padding-inline: var(--padding-inline-blocks);
@@ -179,12 +193,12 @@
 
     * {
       color: var(--color);
-      border-color: var(--color-neutral);
+      border-color: var(--color-neutral-stroke);
     }
 
     blockquote {
       background: var(--color-neutral);
-      border-left-color: var(--color-neutral-stroke);
+      border-color: var(--color-neutral-stroke);
     }
 
     code,
@@ -199,7 +213,7 @@
     }
 
     pre>code {
-      border-left-color: var(--color-highlight-stroke);
+      border-color: var(--color-highlight-stroke);
     }
 
     button {
@@ -221,7 +235,7 @@
     }
 
     a {
-      color: var(--color-action);
+      color: var(--color-link);
     }
   </style>
 </head>

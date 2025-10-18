@@ -4,57 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Strong Theme</title>
+  <title>App Theme</title>
   <style>
     :root {
       /* theme colors */
-      --yellow-light: #fde047;
-      --yellow-mid: #facc15;
-      --yellow-high: #eab308;
-      --gray-light: #f9fafb;
-      --gray-mid: #4b5563;
-      --gray-dark: #111827;
-      --blue-mid: #1d4ed8;
-      --blue-dark: #1e3a8a;
+      --gray-white: #ffffff;
+      --gray-light: #fdfdfd;
+      --gray-mid: #f4f4f4;
+      --gray-dark: #d3d3d3;
+      --gray-strong: #333333;
+      --blue-strong: #209cee;
+
       /* utility colors */
-      --color-bg: var(--yellow-mid);
-      --color: var(--gray-dark);
+      --color-bg: var(--gray-light);
+      --color: var(--gray-strong);
 
-      --color-neutral: var(--yellow-light);
-      --color-neutral-stroke: var(--yellow-high);
+      --color-neutral: var(--gray-mid);
+      --color-neutral-stroke: var(--gray-dark);
 
-      --color-highlight: var(--blue-mid);
-      --color-highlight-stroke: var(--blue-mid);
-      --color-highlight-txt: var(--gray-light);
+      --color-highlight: var(--gray-white);
+      --color-highlight-stroke: var(--blue-strong);
+      --color-highlight-txt: var(--gray-strong);
 
-      --color-action: var(--gray-mid);
-      --color-action-stroke: var(--gray-dark);
-      --color-action-txt: var(--gray-light);
+      --color-action: var(--gray-light);
+      --color-action-stroke: var(--blue-strong);
+      --color-action-txt: var(--gray-strong);
 
-      --color-contrast: var(--gray-light);
-      --color-contrast-stroke: var(--gray-mid);
-      --color-contrast-txt: var(--gray-dark);
+      --color-contrast: var(--gray-white);
+      --color-contrast-stroke: var(--gray-dark);
+      --color-contrast-txt: var(--gray-strong);
 
-      --color-muted: var(--yellow-mid);
-      --color-muted-stroke: var(--gray-mid);
-      --color-muted-txt: var(--blue-dark);
+      --color-muted: var(--gray-light);
+      --color-muted-stroke: transparent;
+      --color-muted-txt: var(--blue-strong);
 
-      --color-link: var(--gray-dark);
+      --color-link: var(--blue-strong);
 
       /* style utlitiies */
       --border-radius-highlights: 6px;
 
-      --border-radius-blocks: 6px;
-      --border-style-blocks: none;
-      --border-width-blocks: 0px;
-      --border-left-style-blocks: none;
-      --border-left-width-blocks: 0px;
-      --border-bottom-width-blocks: 0px;
-      --width-blocks: calc(100% + 3.0em);
-      --margin-left-blocks: -1.5em;
-      --padding-inline-blocks: 1.5em;
+      --border-radius-blocks: 4px;
+      --border-style-blocks: solid;
+      --border-width-blocks: 2px;
+      --border-left-style-blocks: solid;
+      --border-left-width-blocks: 2px;
+      --border-bottom-width-blocks: 5px;
+      --width-blocks: 100%;
+      --margin-left-blocks: 0em;
+      --padding-inline-blocks: 1em;
 
-      --border-radius-action: 0px;
+      --border-radius-action: 4px;
       --border-width-action: 2px;
       --border-bottom-width-action: 5px;
 
@@ -64,6 +63,17 @@
       --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       --font-header: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       --font-mono: monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --gray-white: #000000;
+        --gray-light: #17181c;
+        --gray-mid: #242424;
+        --gray-dark: #505050;
+        --gray-strong: #b5b5b5;
+        --blue-strong: #209cee;
+      }
     }
 
     * {
@@ -291,55 +301,56 @@
         <h2>Action elements</h2>
 
         <p>
-          This is a <a href="">link</a></p>
+          This is a <a href="">link</a> or an <a class="success" href="">success link</a>
+        </p>
         <p>
         <h3>Full buttons</h3>
         <div>
           <button>Button</button>
-          <!-- <button class="hint">Cancel</button>
+          <button class="hint">Cancel</button>
           <button class="success">Confirm</button>
-          <button class="error">Cancel</button> -->
+          <button class="error">Cancel</button>
         </div>
         </p>
         <p>
         <div>
           <button disabled>Button</button>
-          <!-- <button disabled class="hint">Cancel</button>
+          <button disabled class="hint">Cancel</button>
           <button disabled class="success">Confirm</button>
-          <button disabled class="error">Cancel</button> -->
+          <button disabled class="error">Cancel</button>
         </div>
         </p>
         <p>
         <h3>Outlined buttons</h3>
         <div>
           <button type="reset">Button</button>
-          <!-- <button type="reset" class="hint">Cancel</button>
+          <button type="reset" class="hint">Cancel</button>
           <button type="reset" class="success">Confirm</button>
-          <button type="reset" class="error">Cancel</button> -->
+          <button type="reset" class="error">Cancel</button>
         </div>
         </p>
         <p>
         <div>
           <button disabled type="reset">Button</button>
-          <!-- <button disabled type="reset" class="hint">Cancel</button>
+          <button disabled type="reset" class="hint">Cancel</button>
           <button disabled type="reset" class="success">Confirm</button>
-          <button disabled type="reset" class="error">Cancel</button> -->
+          <button disabled type="reset" class="error">Cancel</button>
         </div>
         </p>
         <h3>Simple buttons</h3>
         <div>
           <button type="menu">Button</button>
-          <!-- <button type="menu" class="hint">Cancel</button>
+          <button type="menu" class="hint">Cancel</button>
           <button type="menu" class="success">Confirm</button>
-          <button type="menu" class="error">Cancel</button> -->
+          <button type="menu" class="error">Cancel</button>
         </div>
         </p>
         </p>
         <div>
           <button disabled type="menu">Button</button>
-          <!-- <button disabled type="menu" class="hint">Cancel</button>
+          <button disabled type="menu" class="hint">Cancel</button>
           <button disabled type="menu" class="success">Confirm</button>
-          <button disabled type="menu" class="error">Cancel</button> -->
+          <button disabled type="menu" class="error">Cancel</button>
         </div>
         </p>
       </section>
@@ -365,7 +376,7 @@
           <p>
             <small><mark>v15.20.30</mark></small>
             <small class="error"><mark><a href="">more info</a></mark></small>
-            <small class="warning"><mark><b>3</b> warnings</mark></small>
+            <small class="success"><mark><b>3</b> warnings</mark></small>
             <small><mark class="hint">released</mark></small>
           </p>
         </blockquote>
