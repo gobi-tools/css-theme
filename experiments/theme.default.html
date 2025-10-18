@@ -6,16 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Minimal Theme with Utilities</title>
   <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-    }
-
     :root {
       /**  base colors */
       --gray-950: #030712;
@@ -122,6 +112,11 @@
       --border-bottom-width-action: 2px;
 
       --border-radius-form: 6px;
+
+      /* fonts */
+      --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --font-header: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --font-mono: monospace;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -196,6 +191,15 @@
       }
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+
     /* background items */
 
     blockquote {
@@ -226,7 +230,6 @@
     kbd {
       padding: 0.5em;
       border-radius: var(--border-radius-highlights);
-      font-family: monospace;
       font-size: 0.95em;
     }
 
@@ -257,6 +260,28 @@
 
     button:hover:disabled {
       filter: opacity(50%);
+    }
+
+    /* ---------------*/
+    /** typography */
+    /* ---------------*/
+
+    * {
+      font-family: var(--font-body);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-header);
+    }
+
+    code,
+    kbd {
+      font-family: var(--font-mono);
     }
 
     /* ---------------*/
