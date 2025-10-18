@@ -194,6 +194,10 @@
       color: var(--color-highlight-txt);
     }
 
+    mark>* {
+      color: currentColor !important;
+    }
+
     pre>code {
       border-left-color: var(--color-highlight-stroke);
     }
@@ -349,7 +353,7 @@
             This is a longer message
           </p>
           <p>
-            <small><mark>tag-2</mark></small>
+            <small><mark><a href="">tag-2</a></mark></small>
             <small><mark>tag-3</mark></small>
             <small><mark>tag-1</mark></small>
           </p>
