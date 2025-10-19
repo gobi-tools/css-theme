@@ -16,6 +16,14 @@
       --gray-dark: #111827;
       --blue-mid: #1d4ed8;
       --blue-dark: #1e3a8a;
+
+      --green-light: #ecfdf5;
+      --green-mid: #16976c;
+      --green-high: #056e4d;
+      --red-light: #fef2f2;
+      --red-mid: #ef4444;
+      --red-high: #dc2626;
+
       /* utility colors */
       --color-bg: var(--yellow-mid);
       --color: var(--gray-dark);
@@ -40,6 +48,40 @@
       --color-muted-txt: var(--blue-dark);
 
       --color-link: var(--gray-dark);
+      /* semantic colors - success */
+      --color-success: var(--green-high);
+      --color-neutral-success: var(--yellow-light);
+      --color-neutral-stroke-success: var(--green-light);
+      --color-highlight-success: var(--green-mid);
+      --color-highlight-stroke-success: var(--green-high);
+      --color-highlight-txt-success: var(--gray-light);
+      --color-action-success: var(--green-mid);
+      --color-action-stroke-success: var(--gray-dark);
+      --color-action-txt-success: var(--gray-light);
+      --color-contrast-success: var(--green-light);
+      --color-contrast-stroke-success: var(--green-mid);
+      --color-contrast-txt-success: var(--green-high);
+      --color-muted-success: var(--yellow-mid);
+      --color-muted-stroke-success: var(--gray-mid);
+      --color-muted-txt-success: var(--green-high);
+      --color-link-success: var(--green-high);
+      /* semantic colors - errors */
+      --color-error: var(--red-high);
+      --color-neutral-error: var(--yellow-light);
+      --color-neutral-stroke-error: var(--red-mid);
+      --color-highlight-error: var(--red-mid);
+      --color-highlight-stroke-error: var(--red-high);
+      --color-highlight-txt-error: var(--gray-light);
+      --color-action-error: var(--red-mid);
+      --color-action-stroke-error: var(--gray-dark);
+      --color-action-txt-error: var(--gray-light);
+      --color-contrast-error: var(--red-light);
+      --color-contrast-stroke-error: var(--red-mid);
+      --color-contrast-txt-error: var(--red-high);
+      --color-muted-error: var(--yellow-mid);
+      --color-muted-stroke-error: var(--gray-mid);
+      --color-muted-txt-error: var(--red-high);
+      --color-link-error: var(--red-high);
 
       /* style utlitiies */
       --border-radius-highlights: 6px;
@@ -229,6 +271,44 @@
 
     a {
       color: var(--color-link);
+    }
+
+    .success {
+      --color: var(--color-success);
+      --color-neutral: var(--color-neutral-success);
+      --color-neutral-stroke: var(--color-neutral-stroke-success);
+      --color-highlight: var(--color-highlight-success);
+      --color-highlight-stroke: var(--color-highlight-stroke-success);
+      --color-highlight-txt: var(--color-highlight-txt-success);
+      --color-action: var(--color-action-success);
+      --color-action-stroke: var(--color-action-stroke-success);
+      --color-action-txt: var(--color-action-txt-success);
+      --color-contrast: var(--color-contrast-success);
+      --color-contrast-stroke: var(--color-contrast-stroke-success);
+      --color-contrast-txt: var(--color-contrast-txt-success);
+      --color-muted: var(--color-muted-success);
+      --color-muted-stroke: var(--color-muted-stroke-success);
+      --color-muted-txt: var(--color-muted-txt-success);
+      --color-link: var(--color-link-success);
+    }
+
+    .error {
+      --color: var(--color-error);
+      --color-neutral: var(--color-neutral-error);
+      --color-neutral-stroke: var(--color-neutral-stroke-error);
+      --color-highlight: var(--color-highlight-error);
+      --color-highlight-stroke: var(--color-highlight-stroke-error);
+      --color-highlight-txt: var(--color-highlight-txt-error);
+      --color-action: var(--color-action-error);
+      --color-action-stroke: var(--color-action-stroke-error);
+      --color-action-txt: var(--color-action-txt-error);
+      --color-contrast: var(--color-contrast-error);
+      --color-contrast-stroke: var(--color-contrast-stroke-error);
+      --color-contrast-txt: var(--color-contrast-txt-error);
+      --color-muted: var(--color-muted-error);
+      --color-muted-stroke: var(--color-muted-stroke-error);
+      --color-muted-txt: var(--color-muted-txt-error);
+      --color-link: var(--color-link-error);
     }
   </style>
 </head>
