@@ -36,7 +36,6 @@
   /* colors - theme */
   --gray-light: #ffffff;
   --gray-mid: #f9fafb;
-  --gray-dark: #d1d5db;
   --gray-strong: #374151;
   --blue-light: #eff6ff;
   --blue-mid: #dbeafe;
@@ -54,6 +53,7 @@
 
   --color-neutral: var(--gray-mid);
   --color-neutral-stroke: var(--gray-high);
+  --color-neutral-txt: var(--gray-strong);
 
   --color-highlight: var(--blue-mid);
   --color-highlight-stroke: var(--blue-high);
@@ -72,6 +72,7 @@
   --color-success: var(--green-high);
   --color-neutral-success: var(--green-light);
   --color-neutral-stroke-success: var(--green-mid);
+  --color-neutral-txt-success: var(--green-high);
   --color-highlight-success: var(--green-mid);
   --color-highlight-stroke-success: var(--green-high);
   --color-highlight-txt-success: var(--gray-light);
@@ -86,6 +87,7 @@
   --color-error: var(--red-high);
   --color-neutral-error: var(--red-light);
   --color-neutral-stroke-error: var(--red-mid);
+  --color-neutral-txt-error: var(--red-mid);
   --color-highlight-error: var(--red-mid);
   --color-highlight-stroke-error: var(--red-high);
   --color-highlight-txt-error: var(--gray-light);
@@ -388,6 +390,7 @@ body {
 
 blockquote {
   background: var(--color-neutral);
+  color: var(--color-neutral-txt);
   border-color: var(--color-neutral-stroke);
 }
 
@@ -399,12 +402,12 @@ var {
   color: var(--color-highlight-txt);
 }
 
-mark>* {
-  color: currentColor !important;
-}
-
 pre>code {
   border-color: var(--color-highlight-stroke);
+}
+
+mark>* {
+  color: currentColor !important;
 }
 
 button {
@@ -427,6 +430,7 @@ a {
   --color: var(--color-success);
   --color-neutral: var(--color-neutral-success);
   --color-neutral-stroke: var(--color-neutral-stroke-success);
+  --color-neutral-txt: var(--color-neutral-txt-success);
   --color-highlight: var(--color-highlight-success);
   --color-highlight-stroke: var(--color-highlight-stroke-success);
   --color-highlight-txt: var(--color-highlight-txt-success);
@@ -443,6 +447,7 @@ a {
   --color: var(--color-error);
   --color-neutral: var(--color-neutral-error);
   --color-neutral-stroke: var(--color-neutral-stroke-error);
+  --color-neutral-txt: var(--color-neutral-txt-error);
   --color-highlight: var(--color-highlight-error);
   --color-highlight-stroke: var(--color-highlight-stroke-error);
   --color-highlight-txt: var(--color-highlight-txt-error);

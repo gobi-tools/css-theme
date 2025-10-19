@@ -27,6 +27,7 @@
 
   --color-neutral: var(--yellow-light);
   --color-neutral-stroke: var(--yellow-high);
+  --color-neutral-txt: var(--gray-dark);
 
   --color-highlight: var(--blue-mid);
   --color-highlight-stroke: var(--blue-mid);
@@ -45,6 +46,7 @@
   --color-success: var(--green-high);
   --color-neutral-success: var(--yellow-light);
   --color-neutral-stroke-success: var(--green-light);
+  --color-neutral-txt-success: var(--green-high);
   --color-highlight-success: var(--green-mid);
   --color-highlight-stroke-success: var(--green-high);
   --color-highlight-txt-success: var(--gray-light);
@@ -59,6 +61,7 @@
   --color-error: var(--red-high);
   --color-neutral-error: var(--yellow-light);
   --color-neutral-stroke-error: var(--red-mid);
+  --color-neutral-txt-error: var(--red-high);
   --color-highlight-error: var(--red-mid);
   --color-highlight-stroke-error: var(--red-high);
   --color-highlight-txt-error: var(--gray-light);
