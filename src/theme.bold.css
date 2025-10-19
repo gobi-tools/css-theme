@@ -40,10 +40,6 @@
   --color-contrast-stroke: var(--gray-mid);
   --color-contrast-txt: var(--gray-dark);
 
-  --color-muted: var(--yellow-mid);
-  --color-muted-stroke: var(--gray-mid);
-  --color-muted-txt: var(--blue-dark);
-
   --color-link: var(--gray-dark);
   /* semantic colors - success */
   --color-success: var(--green-high);
@@ -58,9 +54,6 @@
   --color-contrast-success: var(--green-light);
   --color-contrast-stroke-success: var(--green-mid);
   --color-contrast-txt-success: var(--green-high);
-  --color-muted-success: var(--yellow-mid);
-  --color-muted-stroke-success: var(--gray-mid);
-  --color-muted-txt-success: var(--green-high);
   --color-link-success: var(--green-high);
   /* semantic colors - errors */
   --color-error: var(--red-high);
@@ -75,9 +68,6 @@
   --color-contrast-error: var(--red-light);
   --color-contrast-stroke-error: var(--red-mid);
   --color-contrast-txt-error: var(--red-high);
-  --color-muted-error: var(--yellow-mid);
-  --color-muted-stroke-error: var(--gray-mid);
-  --color-muted-txt-error: var(--red-high);
   --color-link-error: var(--red-high);
 
   /* style utlitiies */
