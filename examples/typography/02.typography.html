@@ -7,49 +7,145 @@
 
   <title>Typography</title>
 
-  <link rel="stylesheet" href="../../theme.css">
+  <link rel="stylesheet" href="../../src/theme.css">
 </head>
 
 <body>
   <main>
     <article>
+      <h1>Typography</h1>
+
       <section>
+        <h2>Elements</h2>
         <p>
-          We have <b>bold</b>, <strong>strong</strong>, <i>italic</i> and <em>emphasized</em> text
+          This is a <cite>citation</cite>.
         </p>
         <p>
-          We have <u>underlined</u>, <ins>inserted</ins>, <del>deleted</del> and <mark>highlighted</mark> text
+          This text is <del>deleted</del>
         </p>
         <p>
-          This is a tag: <small><mark>v1.23.59-rc-01</mark></small>
+          This term is <dfn>definied</dfn> in this article
         </p>
         <p>
-          This is a <a href="">link</a>
+          This text is <em>emphasized</em>
         </p>
         <p>
-          We have supscripts, like H<sub>2</sub>O and superscripts like 2<sup>n</sup>
+          This text is <i>italic</i>
         </p>
         <p>
-          We have <q>quoted</q> text and <cite>citations</cite>, <dfn>definitions</dfn> and <i>variables</i> like
-          <var>x</var> = <var>y</var>
+          This is a short <q>quotation</q>
         </p>
         <p>
-          We have keyboards like <kbd>Ctrl + K</kbd> with the <code>kbd</code> element
+          This is a text that is no longer <s>correct</s>
         </p>
         <p>
-          We have date elements <time datetime="2013-04-08T12:05:03">like this one</time>
+          This is <small>smaller</small> text
         </p>
+        <p>
+          This is <b>bold</b> text
+        </p>
+        <p>
+          This is <strong>strong</strong> text
+        </p>
+        <p>
+          This is H<sub>2</sub>O and 2<sup>n</sup>
+        </p>
+        <p>
+          This is <u>underlined</u> text
+        </p>
+      </section>
+
+      <section>
+        <h2>Code</h2>
+
+        <p>
+          This is inline <code>5f802c3f-830b-4c64-aa57-6fec5a27ecac</code>
+        </p>
+        <p>
+        <pre><code>main(int a) {
+  printf("hello world");
+}</code></pre>
+        </p>
+        <p>
+          Press <kbd class="success">Ctrl + K</kbd> for more info
+        </p>
+        <p>
+          This is <mark>highlighted</mark> text
+        </p>
+        <p>defines variables, like <var>x</var> = <var class="error">y</var></p>
+      </section>
+
+      <section>
+        <h2>Action elements</h2>
+
+        <p>
+          This is a <a href="">link</a> or an <a class="success" href="">success link</a>
+        </p>
+        <p>
+        <h3>Full buttons</h3>
+        <div>
+          <button>Button</button>
+          <button class="success">Confirm</button>
+          <button class="error">Cancel</button>
+        </div>
+        </p>
+        <p>
+        <div>
+          <button disabled>Button</button>
+          <button disabled class="success">Confirm</button>
+          <button disabled class="error">Cancel</button>
+        </div>
+        </p>
+        <p>
+        <h3>Outlined buttons</h3>
+        <div>
+          <button type="reset">Button</button>
+          <button type="reset" class="success">Confirm</button>
+          <button type="reset" class="error">Cancel</button>
+        </div>
+        </p>
+        <p>
+        <div>
+          <button disabled type="reset">Button</button>
+          <button disabled type="reset" class="success">Confirm</button>
+          <button disabled type="reset" class="error">Cancel</button>
+        </div>
+        </p>
+        <h3>Simple buttons</h3>
+        <div>
+          <button type="menu">Button</button>
+          <button type="menu" class="success">Confirm</button>
+          <button type="menu" class="error">Cancel</button>
+        </div>
+        </p>
+        </p>
+        <div>
+          <button disabled type="menu">Button</button>
+          <button disabled type="menu" class="success">Confirm</button>
+          <button disabled type="menu" class="error">Cancel</button>
+        </div>
+        </p>
+      </section>
+
+      <section>
+        <h2>Blockquotes</h2>
 
         <blockquote>
           Normal blockquote
         </blockquote>
+
         <blockquote>
           <p>
-            Bloquote with paragraph
+            Last time I ran a huge experiment trying to figure out how components should work in Humble UI. Since then,
+            I’ve been trying to bring it to the main.
+          </p>
+          <p>
+            This was trickier than I anticipated — even with a working prototype, there are still lots of decisions to
+            make, and each one takes time.
           </p>
         </blockquote>
 
-        <blockquote class="hint">
+        <blockquote>
           <p>Press <kbd>Ctrl + Q</kbd> to quit</p>
         </blockquote>
 
@@ -57,28 +153,25 @@
           <p>This is a successfull message with a <a href="">link</a>.</p>
           <p>
             <small><mark>v15.20.30</mark></small>
-            <small class="error"><mark><a href="">more info</a></mark></small>
-            <small class="warning"><mark><b>3</b> warnings</mark></small>
-            <small><mark class="hint">released</mark></small>
-          </p>
-        </blockquote>
-
-        <blockquote class="warning">
-          <p>
-            <b>Title</b><br>
-            Error message.<br>
-            More <a href="">info</a>.
+            <small><mark class="error"><a href="">more info</a></mark></small>
+            <small><mark class="success"><b>3</b> warnings</mark></small>
           </p>
         </blockquote>
 
         <blockquote class="error">
           <h2>Title</h2>
           <p>Some message with <a href="">link</a></p>
-          <div role="group">
+          <p>
             <code>e025fd4e-2c91-4098-8fd5-0a54a4857c7d</code>
+          </p>
+          <p>
             <button>Copy</button>
-          </div>
+          </p>
         </blockquote>
+      </section>
+
+      <section>
+        <h2>Figures</h2>
 
         <figure>
           <pre><code>main(int a) {
