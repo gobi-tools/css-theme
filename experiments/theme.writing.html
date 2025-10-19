@@ -304,82 +304,71 @@
   printf("hello world");
 }</code></pre>
         <p>
-          Press <kbd>Ctrl + K</kbd> for more info
+          Press <kbd class="success">Ctrl + K</kbd> for more info
         </p>
         <p>
           This is <mark>highlighted</mark> text
         </p>
-        <p>defines variables, like <var>x</var> = <var>y</var></p>
+        <p>defines variables, like <var>x</var> = <var class="error">y</var></p>
       </section>
 
       <section>
         <h2>Action elements</h2>
 
         <p>
-          This is a <a href="">link</a></p>
+          This is a <a href="">link</a> or an <a class="success" href="">success link</a>
+        </p>
         <p>
         <h3>Full buttons</h3>
         <div>
           <button>Button</button>
-          <!-- <button class="hint">Cancel</button>
           <button class="success">Confirm</button>
-          <button class="error">Cancel</button> -->
+          <button class="error">Cancel</button>
         </div>
         </p>
         <p>
         <div>
           <button disabled>Button</button>
-          <!-- <button disabled class="hint">Cancel</button>
           <button disabled class="success">Confirm</button>
-          <button disabled class="error">Cancel</button> -->
+          <button disabled class="error">Cancel</button>
         </div>
         </p>
         <p>
         <h3>Outlined buttons</h3>
         <div>
           <button type="reset">Button</button>
-          <!-- <button type="reset" class="hint">Cancel</button>
           <button type="reset" class="success">Confirm</button>
-          <button type="reset" class="error">Cancel</button> -->
+          <button type="reset" class="error">Cancel</button>
         </div>
         </p>
         <p>
         <div>
           <button disabled type="reset">Button</button>
-          <!-- <button disabled type="reset" class="hint">Cancel</button>
           <button disabled type="reset" class="success">Confirm</button>
-          <button disabled type="reset" class="error">Cancel</button> -->
+          <button disabled type="reset" class="error">Cancel</button>
         </div>
         </p>
         <h3>Simple buttons</h3>
         <div>
           <button type="menu">Button</button>
-          <!-- <button type="menu" class="hint">Cancel</button>
           <button type="menu" class="success">Confirm</button>
-          <button type="menu" class="error">Cancel</button> -->
+          <button type="menu" class="error">Cancel</button>
         </div>
         </p>
         </p>
         <div>
           <button disabled type="menu">Button</button>
-          <!-- <button disabled type="menu" class="hint">Cancel</button>
           <button disabled type="menu" class="success">Confirm</button>
-          <button disabled type="menu" class="error">Cancel</button> -->
+          <button disabled type="menu" class="error">Cancel</button>
         </div>
         </p>
       </section>
 
       <section>
         <h2>Blockquotes</h2>
+
         <blockquote>
-          <p>
-            This is a longer message
-          </p>
-          <p>
-            <small><mark><a href="">tag-2</a></mark></small>
-            <small><mark>tag-3</mark></small>
-            <small><mark>tag-1</mark></small>
-          </p>
+          Normal blockquote
         </blockquote>
 
         <blockquote>
@@ -391,6 +380,28 @@
             This was trickier than I anticipated — even with a working prototype, there are still lots of decisions to
             make, and each one takes time.
           </p>
+        </blockquote>
+
+        <blockquote>
+          <p>Press <kbd>Ctrl + Q</kbd> to quit</p>
+        </blockquote>
+
+        <blockquote class="success">
+          <p>This is a successfull message with a <a href="">link</a>.</p>
+          <p>
+            <small><mark>v15.20.30</mark></small>
+            <small><mark class="error"><a href="">more info</a></mark></small>
+            <small><mark class="success"><b>3</b> warnings</mark></small>
+          </p>
+        </blockquote>
+
+        <blockquote class="error">
+          <h2>Title</h2>
+          <p>Some message with <a href="">link</a></p>
+          <div role="group">
+            <code>e025fd4e-2c91-4098-8fd5-0a54a4857c7d</code>
+            <button>Copy</button>
+          </div>
         </blockquote>
       </section>
     </article>
