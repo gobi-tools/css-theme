@@ -622,7 +622,6 @@ div[role=group]>* {
   width: 100%;
   align-items: center;
   margin-bottom: 0;
-  /* @todo: maybe move to horz align section */
 }
 
 /* notes ---------------------------- */

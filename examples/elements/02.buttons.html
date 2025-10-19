@@ -13,14 +13,71 @@
 <body>
   <main>
     <article>
-      <h1>Tags</h1>
+      <h1>Buttons</h1>
+
       <section>
-        <h2>Example Buttons</h2>
-        
+        <h2>Standalone buttons</h2>
+        <p>
+        <h3>Full buttons</h3>
         <div>
           <button>Button</button>
-          <button class="error">Reset</button>
-          <button class="success">Menu</button>
+          <button class="success">Confirm</button>
+          <button class="error">Cancel</button>
+        </div>
+        </p>
+        <p>
+        <div>
+          <button disabled>Button</button>
+          <button disabled class="success">Confirm</button>
+          <button disabled class="error">Cancel</button>
+        </div>
+        </p>
+        <p>
+        <h3>Outlined buttons</h3>
+        <div>
+          <button type="reset">Button</button>
+          <button type="reset" class="success">Confirm</button>
+          <button type="reset" class="error">Cancel</button>
+        </div>
+        </p>
+        <p>
+        <div>
+          <button disabled type="reset">Button</button>
+          <button disabled type="reset" class="success">Confirm</button>
+          <button disabled type="reset" class="error">Cancel</button>
+        </div>
+        </p>
+        <h3>Simple buttons</h3>
+        <div>
+          <button type="menu">Button</button>
+          <button type="menu" class="success">Confirm</button>
+          <button type="menu" class="error">Cancel</button>
+        </div>
+        </p>
+        </p>
+        <div>
+          <button disabled type="menu">Button</button>
+          <button disabled type="menu" class="success">Confirm</button>
+          <button disabled type="menu" class="error">Cancel</button>
+        </div>
+        </p>
+      </section>
+
+      <section>
+        <h2>Button Size</h2>
+        <p>
+          <small><button>Small</button></small>
+          <small><button type="reset">Cancel</button></small>
+          <small><button type="menu">Simple</button></small>
+        </p>
+      </section>
+
+      <section>
+        <h2>Grouped Buttons</h2>
+
+        <div role="group">
+          <button type="reset">Cancel</button>
+          <button >Submit</button>
         </div>
       </section>
     </article>
