@@ -80,9 +80,11 @@
   --border-left-style-blocks: solid;
   --border-left-width-blocks: 2px;
   --border-bottom-width-blocks: 5px;
-  --width-blocks: 100%;
-  --margin-left-blocks: 0em;
-  --padding-inline-blocks: 1em;
+  
+  --border-radius-details: 4px;
+  --border-style-details: solid;
+  --border-width-details: 2px;
+  --border-bottom-width-details: 5px;
 
   --border-radius-action: 4px;
   --border-width-action: 2px;

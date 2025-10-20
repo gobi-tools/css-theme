@@ -107,9 +107,11 @@
   --border-left-style-blocks: solid;
   --border-left-width-blocks: 4px;
   --border-bottom-width-blocks: 0px;
-  --width-blocks: 100%;
-  --margin-left-blocks: 0em;
-  --padding-inline-blocks: 1em;
+  
+  --border-radius-details: 0px;
+  --border-style-details: solid;
+  --border-width-details: 1.5px;
+  --border-bottom-width-details: 1.5px;
 
   --border-radius-action: 6px;
   --border-width-action: 2px;
@@ -163,8 +165,11 @@ fieldset,
 pre,
 pre>code {
   display: block;
-  /* overflow: auto hidden; */
   text-align: left;
+}
+
+details {
+  overflow: hidden;
 }
 
 a,
@@ -198,10 +203,14 @@ h6 {
   margin-bottom: var(--space-2);
 }
 
+p:has(+p) {
+  margin-bottom: 0;
+}
+
 p,
 ul,
 ol {
-  /* margin-top: var(--space-2); */
+  margin-top: var(--space-2);
   margin-bottom: var(--space-3);
 }
 
@@ -211,7 +220,7 @@ table {
   margin: var(--space-3) 0;
 }
 
-fieldset {
+fieldset, details {
   margin-bottom: var(--space-3);
 }
 
@@ -422,6 +431,20 @@ button[type=reset] {
   border-color: var(--color-contrast-stroke);
 }
 
+details {
+  border-color: var(--color-action-stroke);
+}
+
+details[open] {
+  background: var(--color-neutral);
+  border-color: var(--color-action-stroke);
+}
+
+summary {
+  background: var(--color-action);
+  color: var(--color-action-txt);
+}
+
 a {
   color: var(--color-link);
 }
@@ -479,9 +502,13 @@ pre>code {
   border-left-style: var(--border-left-style-blocks);
   border-left-width: var(--border-left-width-blocks);
   border-bottom-width: var(--border-bottom-width-blocks);
-  width: var(--width-blocks);
-  margin-left: var(--margin-left-blocks);
-  padding-inline: var(--padding-inline-blocks);
+}
+
+details {
+  border-radius: var(--border-radius-details);
+  border-width: var(--border-width-details);
+  border-style: var(--border-style-details);
+  border-bottom-width: var(--border-bottom-width-details);
 }
 
 button {
@@ -523,11 +550,26 @@ button:hover:disabled {
   filter: opacity(50%);
 }
 
+/* summary & details */
+
+summary {
+  padding: var(--space-2);
+  padding-inline: var(--space-3);
+}
+
+details> :not(summary) {
+  padding-inline: var(--space-3);
+}
+
+summary:hover {
+  filter: brightness(90%);
+}
+
 /* other --------------------------- */
 
-pre>code, blockquote {
-  padding-top: var(--space-3);
-  padding-bottom: var(--space-3);
+pre>code,
+blockquote {
+  padding: var(--space-3);
 }
 
 mark,
