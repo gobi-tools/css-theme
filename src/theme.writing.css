@@ -42,7 +42,7 @@
   --color-contrast-txt: var(--gray-strong);
 
   --color-link: var(--green-dark);
-
+  --color-link-active: var(--gray-strong);
   /* semantic colors - success */
   --color-success: var(--green-high);
   --color-neutral-success: var(--green-light);

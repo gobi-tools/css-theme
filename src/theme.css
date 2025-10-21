@@ -68,6 +68,7 @@
   --color-contrast-txt: var(--blue-strong);
 
   --color-link: var(--blue-strong);
+  --color-link-active: var(--gray-strong);
   /* colors - semantic */
   --color-success: var(--green-high);
   --color-neutral-success: var(--green-light);
@@ -150,7 +151,7 @@
   border-spacing: 0;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  /* border: 1px solid yellow; */
 }
 
 header,
@@ -450,6 +451,9 @@ summary {
 a {
   color: var(--color-link);
 }
+a:hover {
+  color: var(--color-link-active);
+}
 
 .success {
   --color: var(--color-success);
@@ -601,10 +605,19 @@ nav ul {
 
 nav ul:first-child {
   overflow: visible;
+  margin-bottom: var(--space-2);
 }
 
 nav ul:first-child>li {
   display: inline-block;
+  padding: var(--space-2);
+  padding-inline: var(--space-3);
+}
+nav ul:first-child>li:first-child {
+  padding-left: 0;
+}
+nav a {
+  text-decoration: none;
 }
 
 nav ul>li>ul {
@@ -612,10 +625,15 @@ nav ul>li>ul {
   width: auto;
   position: absolute;
   z-index: 42;
+  /* @todo: here? */
+  padding-inline: var(--space-3);
+  background: var(--color-neutral);
+  border: 2px solid var(--color-highlight-stroke);
 }
 
 nav ul>li>ul>li {
   white-space: nowrap;
+  padding: var(--space-2);
 }
 
 nav ul>li:hover>ul {
