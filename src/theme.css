@@ -117,6 +117,8 @@
   --border-width-action: 2px;
   --border-bottom-width-action: 2px;
 
+  --border-radius-tabs: 4px;
+
   --border-radius-form: 6px;
 }
 
@@ -654,3 +656,61 @@ div[role=group]>* {
 div[role=note] {
   padding: var(--space-2);
 }
+
+/* tabs ---------------------------- */
+
+[role=tablist] {
+  display: flex;
+  flex-wrap: wrap;
+  /* @todo: here? */
+  background: linear-gradient(0deg, var(--color-bg) 1rem, var(--color-action) 0%);
+  padding-bottom: var(--space-2);
+}
+[role=tablist] label {
+  order: 1;
+  display: block;
+  cursor: pointer;
+  /* @todo: here? */
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+  padding-inline: var(--space-3);
+  margin-top: var(--space-2-5);
+  margin-bottom: -2px;
+  border-radius: var(--border-radius-tabs) var(--border-radius-tabs) 0 0;
+  background: var(--color-action);
+  color: var(--color-action-txt);
+}
+[role=tablist] label:first-of-type {
+  margin-left: var(--space-3);
+}
+[role=tablist] [role=tab] {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  z-index: 10;
+  /* @todo: here? */
+  padding-inline: var(--space-3);
+  background: var(--color-bg);
+  border-top: 2px solid var(--color-neutral-stroke);
+}
+[role=tablist] input[type=radio]:not(:checked) + label:hover {
+  filter: brightness(90%);
+}
+[role=tablist] input[type=radio] {
+  display: none;
+}
+[role=tablist] input[type=radio] + label {
+  border: 2px solid var(--color-action);
+}
+[role=tablist] input[type=radio]:checked + label {
+  z-index: 11;
+  border: 2px solid var(--color-neutral-stroke);
+  background: var(--color-bg);
+  border-bottom: 0;
+  color: var(--color);
+}
+[role=tablist] input[type=radio]:checked + label + [role=tab] {
+  display: block;
+}
+
