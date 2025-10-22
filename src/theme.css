@@ -586,6 +586,10 @@ summary:hover {
   filter: brightness(90%);
 }
 
+ul, ol {
+  margin-left: var(--space-3);
+}
+
 /* other --------------------------- */
 
 pre>code,
@@ -599,6 +603,14 @@ kbd,
 var {
   padding: var(--space-1);
   padding-inline: var(--space-2);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  padding-left: var(--space-2);
 }
 
 /* asides -----------------------*/
