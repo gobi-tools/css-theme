@@ -154,9 +154,9 @@
   padding: 0;
 }
 
-body * {
+/* body * {
   border: 1px solid red;
-}
+} */
 
 header,
 footer,
@@ -221,10 +221,13 @@ ol {
   margin-bottom: var(--space-3);
 }
 
-img,
+figure,
 blockquote,
 table {
   margin: var(--space-3) 0;
+}
+figure>figure {
+  margin: 0;
 }
 
 fieldset,
@@ -253,18 +256,16 @@ hr {
   margin-bottom: var(--space-4);
 }
 
-img:has(+ figcaption) {
-  margin-bottom: 0;
-}
 
 blockquote>:first-child {
   margin-top: 0;
 }
 
-blockquote>:last-child {
+img:has(+ figcaption),
+blockquote>:last-child,
+[role=note]>:last-child {
   margin-bottom: 0;
 }
-
 
 /* horz spacing ------------------ */
 
@@ -689,6 +690,9 @@ div[role=row] {
   align-items: stretch;
   gap: var(--space-6);
 }
+div[role=row].small-gap {
+  gap: var(--space-2);
+}
 
 div[role=row]>div {
   width: 100%;
@@ -710,7 +714,29 @@ div[role=group]>* {
 /* notes ---------------------------- */
 
 div[role=note] {
-  padding: var(--space-2);
+  overflow: hidden;
+  padding: var(--space-2-5);
+  /* @todo: here? */
+  border-radius: var(--border-radius-details);
+  border: var(--border-width-details) var(--border-style-details) var(--color-highlight-stroke);
+  border-bottom-width: var(--border-bottom-width-details);
+}
+
+div[role=note]>p:first-child {
+  color: var(--color-highlight-txt);
+  box-shadow: inset 0 0 0 2em var(--color-highlight), 0 -.8rem 0 .8rem var(--color-highlight);
+}
+
+div[role=note]>p:first-child * {
+  color: var(--color-highlight-txt);
+}
+
+div[role=note]>img:first-child {
+  /* @todo: here? */
+  max-width: none;
+  margin-top: calc(-1 * var(--space-2-5));
+  margin-left: calc(-1 * var(--space-2-5));
+  width: calc(100% + 2 * var(--space-2-5));
 }
 
 /* tabs ---------------------------- */
