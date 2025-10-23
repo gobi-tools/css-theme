@@ -153,7 +153,8 @@
   margin: 0;
   padding: 0;
 }
-body  * {
+
+body * {
   border: 1px solid red;
 }
 
@@ -283,15 +284,13 @@ figure>figure {
   width: auto;
 }
 
-/* used so that content can expand 100% of the page but its content can still be aligned properly */
-/* bg banners, etc*/
-.full {
+.banner {
   max-width: none;
   margin-inline: 0;
   width: 100%;
 }
 
-.full>* {
+.banner>* {
   width: min(100% - var(--space-6), var(--narrow-width));
   margin-inline: auto;
 }
@@ -588,7 +587,8 @@ summary:hover {
   filter: brightness(90%);
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: var(--space-3);
 }
 
