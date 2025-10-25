@@ -107,19 +107,19 @@
   --border-style-blocks: solid;
   --border-width-blocks: 0px;
   --border-left-style-blocks: solid;
-  --border-left-width-blocks: 4px;
+  --border-left-width-blocks: 3px;
   --border-bottom-width-blocks: 0px;
 
-  --border-radius-details: 0px;
+  --border-radius-details: 6px;
   --border-style-details: solid;
-  --border-width-details: 1.5px;
-  --border-bottom-width-details: 1.5px;
+  --border-width-details: 1px;
+  --border-bottom-width-details: 1px;
 
   --border-radius-action: 6px;
-  --border-width-action: 2px;
-  --border-bottom-width-action: 2px;
+  --border-width-action: 1px;
+  --border-bottom-width-action: 1px;
 
-  --border-radius-tabs: 4px;
+  --border-radius-tabs: 6px;
 
   --border-radius-form: 6px;
 }
@@ -226,6 +226,7 @@ blockquote,
 table {
   margin: var(--space-3) 0;
 }
+
 figure>figure {
   margin: 0;
 }
@@ -416,11 +417,15 @@ body {
   border-color: var(--color-neutral-stroke);
 }
 
+/* elements with neutral colors ----------- */
+
 blockquote {
   background: var(--color-neutral);
   color: var(--color-neutral-txt);
   border-color: var(--color-neutral-stroke);
 }
+
+/* elements with highlighted colors ------- */
 
 code,
 kbd,
@@ -438,11 +443,15 @@ mark>* {
   color: currentColor !important;
 }
 
+/* elements with action colors ---------- */
+
 button {
   background: var(--color-action);
   color: var(--color-action-txt);
   border-color: var(--color-action-stroke);
 }
+
+/* elements with contrasting colors ---- */
 
 button[type=reset] {
   background: var(--color-contrast);
@@ -450,19 +459,36 @@ button[type=reset] {
   border-color: var(--color-contrast-stroke);
 }
 
+/* elements with detailed colors ------ */
+
 details {
-  border-color: var(--color-action-stroke);
+  border-color: var(--color-highlight-stroke);
 }
 
 details[open] {
   background: var(--color-neutral);
-  border-color: var(--color-action-stroke);
 }
 
 summary {
-  background: var(--color-action);
-  color: var(--color-action-txt);
+  background: var(--color-highlight);
+  color: var(--color-highlight-txt);
 }
+
+div[role=note] {
+  background: var(--color-neutral);
+  border-color: var(--color-highlight-stroke);
+}
+
+div[role=note]>p:first-child {
+  color: var(--color-highlight-txt);
+  box-shadow: inset 0 0 0 2em var(--color-highlight), 0 -.8rem 0 .8rem var(--color-highlight);
+}
+
+div[role=note]>p:first-child * {
+  color: var(--color-highlight-txt);
+}
+
+/* elements with link colors ------- */
 
 a {
   color: var(--color-link);
@@ -528,6 +554,13 @@ pre>code {
 }
 
 details {
+  border-radius: var(--border-radius-details);
+  border-width: var(--border-width-details);
+  border-style: var(--border-style-details);
+  border-bottom-width: var(--border-bottom-width-details);
+}
+
+div[role=note] {
   border-radius: var(--border-radius-details);
   border-width: var(--border-width-details);
   border-style: var(--border-style-details);
@@ -690,6 +723,7 @@ div[role=row] {
   align-items: stretch;
   gap: var(--space-6);
 }
+
 div[role=row].small-gap {
   gap: var(--space-2);
 }
@@ -716,19 +750,6 @@ div[role=group]>* {
 div[role=note] {
   overflow: hidden;
   padding: var(--space-2-5);
-  /* @todo: here? */
-  border-radius: var(--border-radius-details);
-  border: var(--border-width-details) var(--border-style-details) var(--color-highlight-stroke);
-  border-bottom-width: var(--border-bottom-width-details);
-}
-
-div[role=note]>p:first-child {
-  color: var(--color-highlight-txt);
-  box-shadow: inset 0 0 0 2em var(--color-highlight), 0 -.8rem 0 .8rem var(--color-highlight);
-}
-
-div[role=note]>p:first-child * {
-  color: var(--color-highlight-txt);
 }
 
 div[role=note]>img:first-child {
