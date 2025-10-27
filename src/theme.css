@@ -786,8 +786,11 @@ nav ul>li>ul {
   z-index: 42;
   /* @todo: here? */
   padding-inline: var(--space-3);
-  background: var(--color-neutral);
-  border: 2px solid var(--color-highlight-stroke);
+  border-width: 2px;
+  border-style: solid;
+  background: var(--color-bg);
+  /* background: var(--color-neutral); */
+  /* border: 2px solid var(--color-highlight-stroke); */
 }
 
 nav ul>li>ul>li {
@@ -853,7 +856,7 @@ div[role=note]>img:first-child {
   display: flex;
   flex-wrap: wrap;
   /* @todo: here? */
-  background: linear-gradient(0deg, var(--color-bg) 1rem, var(--color-action) 0%);
+  background: linear-gradient(0deg, var(--color-bg) 1rem, var(--color-bg-strong) 0%);
   padding-bottom: var(--space-2);
 }
 
@@ -868,8 +871,8 @@ div[role=note]>img:first-child {
   margin-top: var(--space-2-5);
   margin-bottom: -2px;
   border-radius: var(--border-radius-tabs) var(--border-radius-tabs) 0 0;
-  background: var(--color-action);
-  color: var(--color-action-txt);
+  /* background: var(--color-action); */
+  color: var(--color-txt-contrast);
 }
 
 [role=tablist] label:first-of-type {
@@ -905,7 +908,7 @@ div[role=note]>img:first-child {
   border: 2px solid var(--color-action-stroke);
   background: var(--color-bg);
   border-bottom: 0;
-  color: var(--color);
+  color: var(--color-txt);
 }
 
 [role=tablist] input[type=radio]:checked+label+[role=tab] {
