@@ -28,6 +28,23 @@ Table of Contents:
 	--cemph: #088;    --cemphbg: #0881;
 }
 
+html[data-theme='pure']{
+	--navpos: absolute;
+	--width: 768px;
+	--rem: 18px;
+	--font-p: 1em/1.6 Helvetica,Arial,sans-serif;
+	--font-h: 1em/1.6 Helvetica,Arial,sans-serif;
+	--font-c: 86%/1.4 monospace;
+	--ornament: "‹‹‹ ›››";
+	--border: 1px solid var(--cmed);
+	/* foreground   | background color */
+	--cfg:   #777;    --cbg: #fff;
+	--cdark: #777;    --clight: #f8f8ff;
+	--cmed: #e6e6e6;
+	--clink: #3b8bba;
+	--cemph: #1f8dd6; --cemphbg: #1f8dd610;
+}
+
 
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
 

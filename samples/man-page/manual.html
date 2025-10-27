@@ -55,13 +55,10 @@
       <section>
         <h2>Getting started</h2>
         <p>
-          Once installed and set up, BashVault can be summoned by just typing:
+          Once installed and set up, BashVault can be summoned by just typing the following command in your terminal:
         </p>
         <p>
         <pre><code>bashvault</code></pre>
-        </p>
-        <p>
-          in your terminal.
         </p>
         <p>
           In order to make the most of the app, you'll want to import some files. BashVault supports two types of files,
@@ -69,6 +66,7 @@
           accessible <b>remote</b> location (a
           git repo, a ftp server, etc).
         </p>
+        </ul>
         <blockquote>
           <p>
             <code>Scripts</code> are any normal Shell scripts. Any file that can be invoked by typing
@@ -85,30 +83,25 @@
           </p>
         </blockquote>
         <p>
-          To import a file, you can use the <code>-import</code> flag, followed by the name of the file.
+          To import a file or folder, you can use the <code>-import</code> flag, followed by the name or path.
         </p>
         <p>
         <pre><code>bashvault -import /path/to/my/script.sh
 bashvault -import https://path/to/remote/script.sh
-bashvault -import /path/to/my/cheatsheet</code></pre>
-        </p>
-        <p>
-          If you have a lot of files to import, you can just give BashVault the path to the whole folder.
-        </p>
-        <p>
-        <pre><code>bashvault -import /path/to/my/folder</code></pre>
+bashvault -import /path/to/my/folder/</code></pre>
         </p>
         <p>
           Note that right now remote folders (or integration with full git repos) are not supported.
         </p>
 
-        <details open>
-          <summary>Controls</summary>
+        <section>
+          <h2>Controls</h2>
+          <p>
+            In any case, you should see a screen like the one in the picture.
+          </p>
+
           <div role="row">
             <div>
-              <p>
-                In any case, you should see a screen like the one in the picture.
-              </p>
               <p>
                 BashVault will list the available file. If you've specify just one, it'll just show one. If you specify
                 a
@@ -142,9 +135,7 @@ bashvault -import /path/to/my/cheatsheet</code></pre>
               </figure>
             </div>
           </div>
-        </details>
-
-
+        </section>
       </section>
     </article>
   </main>

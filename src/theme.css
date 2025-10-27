@@ -34,8 +34,43 @@
   --font-size-2xl: 1.5rem;
   --font-size-3xl: 2rem;
   --font-weight-head: 600;
+  /* colors - theme*/
+  --gray-base: #433;
+  --gray-strong: color-mix(in srgb, var(--gray-base) 100%, white);
+  --gray-mid: color-mix(in srgb, var(--gray-base) 25%, white);
+  --gray-light: color-mix(in srgb, var(--gray-base) 3%, white);
+  --gray-white: color-mix(in srgb, var(--gray-base) 0%, white);
+  --blue-base: #1f8dd6;
+  --blue-strong: color-mix(in srgb, var(--blue-base) 100%, white);
+  --blue-mid: color-mix(in srgb, var(--blue-base) 60%, white);
+  --blue-light: color-mix(in srgb, var(--blue-base) 15%, white);
+  --green-base: #088;
+  --green-strong: color-mix(in srgb, var(--green-base) 100%, white);
+  --green-mid: color-mix(in srgb, var(--green-base) 70%, white);
+  --green-light: color-mix(in srgb, var(--green-base) 15%, white);
+  --red-base: #c11;
+  --red-strong: color-mix(in srgb, var(--red-base) 100%, white);
+  --red-mid: color-mix(in srgb, var(--red-base) 70%, white);
+  --red-light: color-mix(in srgb, var(--red-base) 15%, white);
+  /* utility colors */
+  --color-bg: var(--gray-white);
+  --color-txt: var(--gray-strong);
+
+  --color-bg-faded: var(--gray-light);
+  --color-bg-accent: var(--blue-light);
+  --color-bg-strong: var(--blue-strong);
+
+  --color-border-faded: var(--gray-mid);
+  --color-border-accent: var(--blue-mid);
+  --color-border-strong: var(--blue-strong);
+
+  --color-txt-accent: var(--gray-strong);
+  --color-txt-contrast: var(--blue-light);
+
+  --color-link: var(--blue-strong);
+
   /* colors - theme */
-  --gray-light: #ffffff;
+  /* --gray-light: #ffffff;
   --gray-mid: #f9fafb;
   --gray-strong: #374151;
   --blue-light: #eff6ff;
@@ -47,9 +82,9 @@
   --green-high: #059669;
   --red-light: #fef2f2;
   --red-mid: #ef4444;
-  --red-high: #dc2626;
+  --red-high: #dc2626; */
   /* colors - utility */
-  --color-bg: var(--gray-light);
+  /* --color-bg: var(--gray-light);
   --color: var(--gray-strong);
 
   --color-neutral: var(--gray-mid);
@@ -69,9 +104,9 @@
   --color-contrast-txt: var(--blue-strong);
 
   --color-link: var(--blue-strong);
-  --color-link-active: var(--gray-strong);
+  --color-link-active: var(--gray-strong); */
   /* colors - semantic */
-  --color-success: var(--green-high);
+  /* --color-success: var(--green-high);
   --color-neutral-success: var(--green-light);
   --color-neutral-stroke-success: var(--green-mid);
   --color-neutral-txt-success: var(--green-high);
@@ -84,9 +119,9 @@
   --color-contrast-success: var(--green-light);
   --color-contrast-stroke-success: var(--green-mid);
   --color-contrast-txt-success: var(--green-high);
-  --color-link-success: var(--blue-strong);
+  --color-link-success: var(--blue-strong); */
 
-  --color-error: var(--red-high);
+  /* --color-error: var(--red-high);
   --color-neutral-error: var(--red-light);
   --color-neutral-stroke-error: var(--red-mid);
   --color-neutral-txt-error: var(--red-mid);
@@ -99,7 +134,7 @@
   --color-contrast-error: var(--red-light);
   --color-contrast-stroke-error: var(--red-mid);
   --color-contrast-txt-error: var(--red-high);
-  --color-link-error: var(--blue-strong);
+  --color-link-error: var(--blue-strong); */
   /* borders & other elements */
   --border-radius-highlights: 6px;
 
@@ -107,7 +142,7 @@
   --border-style-blocks: solid;
   --border-width-blocks: 0px;
   --border-left-style-blocks: solid;
-  --border-left-width-blocks: 3px;
+  --border-left-width-blocks: 4px;
   --border-bottom-width-blocks: 0px;
 
   --border-radius-details: 6px;
@@ -413,16 +448,20 @@ body {
 }
 
 * {
-  color: var(--color);
-  border-color: var(--color-neutral-stroke);
+  color: var(--color-txt);
+  border-color: var(--color-border-faded);
+}
+
+hr {
+  border-color: inherit;
 }
 
 /* elements with neutral colors ----------- */
 
 blockquote {
-  background: var(--color-neutral);
-  color: var(--color-neutral-txt);
-  border-color: var(--color-neutral-stroke);
+  /* background: var(--color-neutral);
+  color: var(--color-neutral-txt); */
+  /* border-color: var(--color-neutral-stroke); */
 }
 
 /* elements with highlighted colors ------- */
@@ -431,12 +470,17 @@ code,
 kbd,
 mark,
 var {
-  background: var(--color-highlight);
-  color: var(--color-highlight-txt);
+  background: var(--color-bg-accent);
+  color: var(--color-txt-accent);
+  /* background: var(--color-highlight);
+  color: var(--color-highlight-txt); */
 }
 
 pre>code {
-  border-color: var(--color-highlight-stroke);
+  background: var(--color-bg-faded);
+  border-color: var(--color-border-accent);
+  color: var(--color-txt);
+  /* border-color: var(--color-highlight-stroke); */
 }
 
 mark>* {
@@ -446,46 +490,51 @@ mark>* {
 /* elements with action colors ---------- */
 
 button {
-  background: var(--color-action);
+  background: var(--color-bg-strong);
+  border-color: var(--color-border-strong);
+  color: var(--color-txt-contrast);
+  /* background: var(--color-action);
   color: var(--color-action-txt);
-  border-color: var(--color-action-stroke);
+  border-color: var(--color-action-stroke); */
 }
 
 /* elements with contrasting colors ---- */
 
-button[type=reset] {
+/* button[type=reset] {
   background: var(--color-contrast);
   color: var(--color-contrast-txt);
   border-color: var(--color-contrast-stroke);
-}
+} */
 
 /* elements with detailed colors ------ */
 
 details {
-  border-color: var(--color-highlight-stroke);
+  border-color: var(--color-bg);
+  /* border-color: var(--color-highlight-stroke); */
 }
 
 details[open] {
-  background: var(--color-neutral);
+  border-color: var(--color-border-faded);
+  /* background: var(--color-neutral); */
 }
 
 summary {
-  background: var(--color-highlight);
-  color: var(--color-highlight-txt);
+  /* background: var(--color-highlight);
+  color: var(--color-highlight-txt); */
 }
 
 div[role=note] {
-  background: var(--color-neutral);
-  border-color: var(--color-highlight-stroke);
+  /* background: var(--color-neutral);
+  border-color: var(--color-highlight-stroke); */
 }
 
 div[role=note]>p:first-child {
-  color: var(--color-highlight-txt);
-  box-shadow: inset 0 0 0 2em var(--color-highlight), 0 -.8rem 0 .8rem var(--color-highlight);
+  /* color: var(--color-highlight-txt); */
+  box-shadow: inset 0 0 0 2em var(--color-bg-faded), 0 -.8rem 0 .8rem var(--color-bg-faded);
 }
 
 div[role=note]>p:first-child * {
-  color: var(--color-highlight-txt);
+  /* color: var(--color-highlight-txt); */
 }
 
 /* elements with link colors ------- */
@@ -499,7 +548,24 @@ a:hover {
 }
 
 .success {
-  --color: var(--color-success);
+  --color-txt: var(--green-strong);
+
+  --color-bg-faded: var(--green-light);
+  --color-bg-accent: var(--green-mid);
+  --color-bg-strong: var(--green-strong);
+  
+  --color-border-faded: var(--green-mid);
+  --color-border-accent: var(--green-strong);
+  --color-border-strong: var(--green-strong);
+
+  --color-txt-accent: var(--gray-light);
+  --color-txt-contrast: var(--gray-light);
+
+  --color-link: var(--green-strong);
+
+
+
+  /* --color: var(--color-success);
   --color-neutral: var(--color-neutral-success);
   --color-neutral-stroke: var(--color-neutral-stroke-success);
   --color-neutral-txt: var(--color-neutral-txt-success);
@@ -512,11 +578,25 @@ a:hover {
   --color-contrast: var(--color-contrast-success);
   --color-contrast-stroke: var(--color-contrast-stroke-success);
   --color-contrast-txt: var(--color-contrast-txt-success);
-  --color-link: var(--color-link-success);
+  --color-link: var(--color-link-success); */
 }
 
 .error {
-  --color: var(--color-error);
+  --color-txt: var(--red-strong);
+
+  --color-bg-faded: var(--red-light);
+  --color-bg-accent: var(--red-mid);
+  --color-bg-strong: var(--red-strong);
+  
+  --color-border-faded: var(--red-mid);
+  --color-border-accent: var(--red-strong);
+  --color-border-strong: var(--red-strong);
+
+  --color-txt-accent: var(--gray-light);
+  --color-txt-contrast: var(--gray-light);
+
+  --color-link: var(--red-strong);
+  /* --color: var(--color-error);
   --color-neutral: var(--color-neutral-error);
   --color-neutral-stroke: var(--color-neutral-stroke-error);
   --color-neutral-txt: var(--color-neutral-txt-error);
@@ -529,7 +609,7 @@ a:hover {
   --color-contrast: var(--color-contrast-error);
   --color-contrast-stroke: var(--color-contrast-stroke-error);
   --color-contrast-txt: var(--color-contrast-txt-error);
-  --color-link: var(--color-link-error);
+  --color-link: var(--color-link-error); */
 }
 
 /* ---------------------------------- */
@@ -647,6 +727,13 @@ dt {
 
 dd {
   padding-left: var(--space-2);
+}
+
+hr {
+  height: 1px;
+  display: block;
+  border-width: 0px;
+  border-top-width: 1px;
 }
 
 /* asides -----------------------*/
