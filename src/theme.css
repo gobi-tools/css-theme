@@ -35,106 +35,44 @@
   --font-size-3xl: 2rem;
   --font-weight-head: 600;
   /* colors - theme*/
-  --gray-base: #433;
-  --gray-strong: color-mix(in srgb, var(--gray-base) 100%, white);
-  --gray-mid: color-mix(in srgb, var(--gray-base) 25%, white);
-  --gray-light: color-mix(in srgb, var(--gray-base) 3%, white);
-  --gray-white: color-mix(in srgb, var(--gray-base) 0%, white);
-  --blue-base: #1f8dd6;
-  --blue-strong: color-mix(in srgb, var(--blue-base) 100%, white);
-  --blue-mid: color-mix(in srgb, var(--blue-base) 60%, white);
-  --blue-light: color-mix(in srgb, var(--blue-base) 15%, white);
-  --green-base: #088;
-  --green-strong: color-mix(in srgb, var(--green-base) 100%, white);
-  --green-mid: color-mix(in srgb, var(--green-base) 70%, white);
-  --green-light: color-mix(in srgb, var(--green-base) 15%, white);
-  --red-base: #c11;
-  --red-strong: color-mix(in srgb, var(--red-base) 100%, white);
-  --red-mid: color-mix(in srgb, var(--red-base) 70%, white);
-  --red-light: color-mix(in srgb, var(--red-base) 15%, white);
-  /* utility colors */
-  --color-bg: var(--gray-white);
-  --color-txt: var(--gray-strong);
+  /* ===== Base Colors ===== */
+  --color-primary-light-1: #3b82f6;
+  --color-primary-light-2: #93c5fd;
+  --color-primary-light-3: #dbeafe;
+  --color-primary-dark-1: #2563eb;
+  --color-primary-dark-2: #1e3a8a;
 
-  --color-bg-faded: var(--gray-light);
-  --color-bg-accent: var(--blue-light);
-  --color-bg-strong: var(--blue-strong);
+  --color-secondary-light-1: #8b5cf6;
+  --color-secondary-light-2: #c4b5fd;
+  --color-secondary-light-3: #ede9fe;
+  --color-secondary-dark-1: #7c3aed;
+  --color-secondary-dark-2: #4c1d95;
 
-  --color-border-faded: var(--gray-mid);
-  --color-border-accent: var(--blue-mid);
-  --color-border-strong: var(--blue-strong);
+  --color-success-light-1: #22c55e;
+  --color-success-light-2: #86efac;
+  --color-success-light-3: #dcfce7;
+  --color-success-dark-1: #16a34a;
+  --color-success-dark-2: #14532d;
 
-  --color-txt-accent: var(--gray-strong);
-  --color-txt-contrast: var(--blue-light);
+  --color-error-light-1: #ef4444;
+  --color-error-light-2: #fca5a5;
+  --color-error-light-3: #fee2e2;
+  --color-error-dark-1: #dc2626;
+  --color-error-dark-2: #7f1d1d;
 
-  --color-link: var(--blue-strong);
+  --color-accent-light-1: #f3f4f6;
+  --color-accent-light-2: #e5e7eb;
+  --color-accent-dark-1: #374151;
+  --color-accent-dark-2: #1f2937;
 
-  /* colors - theme */
-  /* --gray-light: #ffffff;
-  --gray-mid: #f9fafb;
-  --gray-strong: #374151;
-  --blue-light: #eff6ff;
-  --blue-mid: #dbeafe;
-  --blue-high: #3b82f6;
-  --blue-strong: #2563eb;
-  --green-light: #ecfdf5;
-  --green-mid: #10b981;
-  --green-high: #059669;
-  --red-light: #fef2f2;
-  --red-mid: #ef4444;
-  --red-high: #dc2626; */
-  /* colors - utility */
-  /* --color-bg: var(--gray-light);
-  --color: var(--gray-strong);
+  /* ===== Text Colors ===== */
+  --color-txt-on-light: #111827;
+  --color-txt-on-dark: #f9fafb;
 
-  --color-neutral: var(--gray-mid);
-  --color-neutral-stroke: var(--gray-high);
-  --color-neutral-txt: var(--gray-strong);
+  /* ===== Background Colors ===== */
+  --color-bg: light-dark(#ffffff, #111827);
+  --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
 
-  --color-highlight: var(--blue-mid);
-  --color-highlight-stroke: var(--blue-high);
-  --color-highlight-txt: var(--gray-strong);
-
-  --color-action: var(--blue-strong);
-  --color-action-stroke: var(--blue-strong);
-  --color-action-txt: var(--blue-light);
-
-  --color-contrast: var(--blue-light);
-  --color-contrast-stroke: var(--blue-high);
-  --color-contrast-txt: var(--blue-strong);
-
-  --color-link: var(--blue-strong);
-  --color-link-active: var(--gray-strong); */
-  /* colors - semantic */
-  /* --color-success: var(--green-high);
-  --color-neutral-success: var(--green-light);
-  --color-neutral-stroke-success: var(--green-mid);
-  --color-neutral-txt-success: var(--green-high);
-  --color-highlight-success: var(--green-mid);
-  --color-highlight-stroke-success: var(--green-high);
-  --color-highlight-txt-success: var(--gray-light);
-  --color-action-success: var(--green-mid);
-  --color-action-stroke-success: var(--green-mid);
-  --color-action-txt-success: var(--gray-light);
-  --color-contrast-success: var(--green-light);
-  --color-contrast-stroke-success: var(--green-mid);
-  --color-contrast-txt-success: var(--green-high);
-  --color-link-success: var(--blue-strong); */
-
-  /* --color-error: var(--red-high);
-  --color-neutral-error: var(--red-light);
-  --color-neutral-stroke-error: var(--red-mid);
-  --color-neutral-txt-error: var(--red-mid);
-  --color-highlight-error: var(--red-mid);
-  --color-highlight-stroke-error: var(--red-high);
-  --color-highlight-txt-error: var(--gray-light);
-  --color-action-error: var(--red-mid);
-  --color-action-stroke-error: var(--red-mid);
-  --color-action-txt-error: var(--gray-light);
-  --color-contrast-error: var(--red-light);
-  --color-contrast-stroke-error: var(--red-mid);
-  --color-contrast-txt-error: var(--red-high);
-  --color-link-error: var(--blue-strong); */
   /* borders & other elements */
   --border-radius-highlights: 6px;
 
@@ -157,25 +95,6 @@
   --border-radius-tabs: 6px;
 
   --border-radius-form: 6px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --gray-light: #030712;
-    --gray-mid: #111827;
-    --gray-high: #374151;
-    --gray-strong: #d1d5db;
-    --blue-light: #172554;
-    --blue-mid: #1e3a8a;
-    --blue-high: #3b82f6;
-    --blue-strong: #60a5fa;
-    --green-light: #102a1f;
-    --green-mid: #48c78e;
-    --green-high: #48c78e;
-    --red-light: #461c24;
-    --red-mid: #ff6685;
-    --red-high: #ffcfd9;
-  }
 }
 
 /* ---------------------------------- */
@@ -449,7 +368,16 @@ body {
 
 * {
   color: var(--color-txt);
-  border-color: var(--color-border-faded);
+}
+
+/* elements with link colors ------- */
+
+a {
+  color: light-dark(var(--color-primary-light-1), var(--color-primary-light-2));
+}
+
+a:hover {
+  color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-3));
 }
 
 hr {
@@ -459,9 +387,8 @@ hr {
 /* elements with neutral colors ----------- */
 
 blockquote {
-  /* background: var(--color-neutral);
-  color: var(--color-neutral-txt); */
-  /* border-color: var(--color-neutral-stroke); */
+  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
+  border-color: var(--color-accent-dark-1);
 }
 
 /* elements with highlighted colors ------- */
@@ -470,51 +397,45 @@ code,
 kbd,
 mark,
 var {
-  background: var(--color-bg-accent);
-  color: var(--color-txt-accent);
-  /* background: var(--color-highlight);
-  color: var(--color-highlight-txt); */
+  background: light-dark(var(--color-secondary-light-3), var(--color-secondary-dark-2));
 }
 
 pre>code {
-  background: var(--color-bg-faded);
-  border-color: var(--color-border-accent);
-  color: var(--color-txt);
-  /* border-color: var(--color-highlight-stroke); */
+  background: light-dark(var(--color-secondary-light-3), var(--color-secondary-dark-2));
+  border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1));
 }
 
-mark>* {
+mark>*,
+kbd>*,
+var>* {
   color: currentColor !important;
 }
 
 /* elements with action colors ---------- */
 
 button {
-  background: var(--color-bg-strong);
-  border-color: var(--color-border-strong);
-  color: var(--color-txt-contrast);
-  /* background: var(--color-action);
-  color: var(--color-action-txt);
-  border-color: var(--color-action-stroke); */
+  background: var(--color-primary-light-1);
+  border-color: var(--color-primary-light-1);
+  color: var(--color-txt-on-dark);
 }
 
 /* elements with contrasting colors ---- */
 
-/* button[type=reset] {
-  background: var(--color-contrast);
-  color: var(--color-contrast-txt);
-  border-color: var(--color-contrast-stroke);
-} */
+button[type=reset] {
+  background: var(--color-bg);
+  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
+  border-color: var(--color-primary-light-1);
+}
 
 /* elements with detailed colors ------ */
 
 details {
-  border-color: var(--color-bg);
+  /* border-color: var(--color-bg); */
   /* border-color: var(--color-highlight-stroke); */
 }
 
 details[open] {
-  border-color: var(--color-border-faded);
+  /* border-color: var(--color-border-faded); */
   /* background: var(--color-neutral); */
 }
 
@@ -530,86 +451,11 @@ div[role=note] {
 
 div[role=note]>p:first-child {
   /* color: var(--color-highlight-txt); */
-  box-shadow: inset 0 0 0 2em var(--color-bg-faded), 0 -.8rem 0 .8rem var(--color-bg-faded);
+  /* box-shadow: inset 0 0 0 2em var(--color-bg-faded), 0 -.8rem 0 .8rem var(--color-bg-faded); */
 }
 
 div[role=note]>p:first-child * {
   /* color: var(--color-highlight-txt); */
-}
-
-/* elements with link colors ------- */
-
-a {
-  color: var(--color-link);
-}
-
-a:hover {
-  color: var(--color-link-active);
-}
-
-.success {
-  --color-txt: var(--green-strong);
-
-  --color-bg-faded: var(--green-light);
-  --color-bg-accent: var(--green-mid);
-  --color-bg-strong: var(--green-strong);
-  
-  --color-border-faded: var(--green-mid);
-  --color-border-accent: var(--green-strong);
-  --color-border-strong: var(--green-strong);
-
-  --color-txt-accent: var(--gray-light);
-  --color-txt-contrast: var(--gray-light);
-
-  --color-link: var(--green-strong);
-
-
-
-  /* --color: var(--color-success);
-  --color-neutral: var(--color-neutral-success);
-  --color-neutral-stroke: var(--color-neutral-stroke-success);
-  --color-neutral-txt: var(--color-neutral-txt-success);
-  --color-highlight: var(--color-highlight-success);
-  --color-highlight-stroke: var(--color-highlight-stroke-success);
-  --color-highlight-txt: var(--color-highlight-txt-success);
-  --color-action: var(--color-action-success);
-  --color-action-stroke: var(--color-action-stroke-success);
-  --color-action-txt: var(--color-action-txt-success);
-  --color-contrast: var(--color-contrast-success);
-  --color-contrast-stroke: var(--color-contrast-stroke-success);
-  --color-contrast-txt: var(--color-contrast-txt-success);
-  --color-link: var(--color-link-success); */
-}
-
-.error {
-  --color-txt: var(--red-strong);
-
-  --color-bg-faded: var(--red-light);
-  --color-bg-accent: var(--red-mid);
-  --color-bg-strong: var(--red-strong);
-  
-  --color-border-faded: var(--red-mid);
-  --color-border-accent: var(--red-strong);
-  --color-border-strong: var(--red-strong);
-
-  --color-txt-accent: var(--gray-light);
-  --color-txt-contrast: var(--gray-light);
-
-  --color-link: var(--red-strong);
-  /* --color: var(--color-error);
-  --color-neutral: var(--color-neutral-error);
-  --color-neutral-stroke: var(--color-neutral-stroke-error);
-  --color-neutral-txt: var(--color-neutral-txt-error);
-  --color-highlight: var(--color-highlight-error);
-  --color-highlight-stroke: var(--color-highlight-stroke-error);
-  --color-highlight-txt: var(--color-highlight-txt-error);
-  --color-action: var(--color-action-error);
-  --color-action-stroke: var(--color-action-stroke-error);
-  --color-action-txt: var(--color-action-txt-error);
-  --color-contrast: var(--color-contrast-error);
-  --color-contrast-stroke: var(--color-contrast-stroke-error);
-  --color-contrast-txt: var(--color-contrast-txt-error);
-  --color-link: var(--color-link-error); */
 }
 
 /* ---------------------------------- */
@@ -788,7 +634,7 @@ nav ul>li>ul {
   padding-inline: var(--space-3);
   border-width: 2px;
   border-style: solid;
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
   /* background: var(--color-neutral); */
   /* border: 2px solid var(--color-highlight-stroke); */
 }
@@ -856,7 +702,7 @@ div[role=note]>img:first-child {
   display: flex;
   flex-wrap: wrap;
   /* @todo: here? */
-  background: linear-gradient(0deg, var(--color-bg) 1rem, var(--color-bg-strong) 0%);
+  /* background: linear-gradient(0deg, var(--color-bg) 1rem, var(--color-bg-strong) 0%); */
   padding-bottom: var(--space-2);
 }
 
@@ -872,7 +718,7 @@ div[role=note]>img:first-child {
   margin-bottom: -2px;
   border-radius: var(--border-radius-tabs) var(--border-radius-tabs) 0 0;
   /* background: var(--color-action); */
-  color: var(--color-txt-contrast);
+  /* color: var(--color-txt-contrast); */
 }
 
 [role=tablist] label:first-of-type {
@@ -887,8 +733,8 @@ div[role=note]>img:first-child {
   z-index: 10;
   /* @todo: here? */
   padding-inline: var(--space-3);
-  background: var(--color-bg);
-  border-top: 2px solid var(--color-action-stroke);
+  /* background: var(--color-bg);
+  border-top: 2px solid var(--color-action-stroke); */
 }
 
 [role=tablist] input[type=radio]:not(:checked)+label:hover {
@@ -905,10 +751,10 @@ div[role=note]>img:first-child {
 
 [role=tablist] input[type=radio]:checked+label {
   z-index: 11;
-  border: 2px solid var(--color-action-stroke);
-  background: var(--color-bg);
+  /* border: 2px solid var(--color-action-stroke); */
+  /* background: var(--color-bg); */
   border-bottom: 0;
-  color: var(--color-txt);
+  color: var(--color?-txt);
 }
 
 [role=tablist] input[type=radio]:checked+label+[role=tab] {

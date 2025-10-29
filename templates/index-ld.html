@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern CSS Theme with light-dark()</title>
+<style>
+:root {
+  /* ===== Base Colors ===== */
+  --color-primary-light-1: #3b82f6;
+  --color-primary-light-2: #dbeafe;
+  --color-primary-dark-1: #2563eb;
+  --color-primary-dark-2: #1e3a8a;
+
+  --color-secondary-light-1: #8b5cf6;
+  --color-secondary-light-2: #ede9fe;
+  --color-secondary-dark-1: #7c3aed;
+  --color-secondary-dark-2: #4c1d95;
+
+  --color-success-light-1: #22c55e;
+  --color-success-light-2: #dcfce7;
+  --color-success-dark-1: #16a34a;
+  --color-success-dark-2: #14532d;
+
+  --color-error-light-1: #ef4444;
+  --color-error-light-2: #fee2e2;
+  --color-error-dark-1: #dc2626;
+  --color-error-dark-2: #7f1d1d;
+
+  --color-accent-light-1: #f3f4f6;
+  --color-accent-light-2: #e5e7eb;
+  --color-accent-dark-1: #374151;
+  --color-accent-dark-2: #1f2937;
+
+  /* ===== Text Colors ===== */
+  --text-on-light: #111827;
+  --text-on-dark: #f9fafb;
+
+  /* ===== Background Colors ===== */
+  --bg-page: light-dark(#ffffff, #111827);
+  --text-color: light-dark(var(--text-on-light), var(--text-on-dark));
+}
+
+/* ===== Base Layout ===== */
+body {
+  background: var(--bg-page);
+  color: var(--text-color);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+  background: light-dark(var(--color-primary-light-1), var(--color-primary-dark-1));
+  color: light-dark(var(--text-on-dark), var(--text-on-dark));
+}
+.btn-secondary {
+  background: light-dark(var(--color-secondary-light-1), var(--color-secondary-dark-1));
+  color: light-dark(var(--text-on-dark), var(--text-on-dark));
+}
+.btn-success {
+  background: light-dark(var(--color-success-light-1), var(--color-success-dark-1));
+  color: light-dark(var(--text-on-dark), var(--text-on-dark));
+}
+.btn-error {
+  background: light-dark(var(--color-error-light-1), var(--color-error-dark-1));
+  color: light-dark(var(--text-on-dark), var(--text-on-dark));
+}
+.btn-accent {
+  background: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
+  color: light-dark(var(--text-on-light), var(--text-on-dark));
+}
+
+/* Hover brightness tweak */
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+/* ===== Alerts ===== */
+.alert {
+  padding: 1em;
+  border-left: 5px solid;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  font-size: 0.95rem;
+}
+
+.alert-primary {
+  background: light-dark(var(--color-primary-light-2), var(--color-primary-dark-2));
+  border-color: light-dark(var(--color-primary-light-1), var(--color-primary-dark-1));
+  color: light-dark(var(--text-on-light), var(--text-on-dark));
+}
+.alert-secondary {
+  background: light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-2));
+  border-color: light-dark(var(--color-secondary-light-1), var(--color-secondary-dark-1));
+  color: light-dark(var(--text-on-light), var(--text-on-dark));
+}
+.alert-success {
+  background: light-dark(var(--color-success-light-2), var(--color-success-dark-2));
+  border-color: light-dark(var(--color-success-light-1), var(--color-success-dark-1));
+  color: light-dark(var(--text-on-light), var(--text-on-dark));
+}
+.alert-error {
+  background: light-dark(var(--color-error-light-2), var(--color-error-dark-2));
+  border-color: light-dark(var(--color-error-light-1), var(--color-error-dark-1));
+  color: light-dark(var(--text-on-light), var(--text-on-dark));
+}
+.alert-accent {
+  background: light-dark(var(--color-accent-light-1), var(--color-accent-dark-2));
+  border-color: light-dark(var(--color-accent-dark-1), var(--color-accent-dark-1));
+  color: light-dark(var(--text-on-light), var(--text-on-dark));
+}
+
+/* ===== Utility ===== */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.buttons > * {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Modern CSS Theme with <code>light-dark()</code></h1>
+    <p>
+      This demo uses native <code>light-dark()</code> to define colors for both light and dark modes —
+      no JavaScript, no manual toggles. Try switching your system’s color scheme!
+    </p>
+
+    <h2>Buttons</h2>
+    <div class="buttons">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-error">Error</button>
+      <button class="btn btn-accent">Accent</button>
+    </div>
+
+    <h2>Alerts</h2>
+    <div class="alert alert-primary">This is a primary alert — attention required.</div>
+    <div class="alert alert-secondary">This is a secondary alert — extra info.</div>
+    <div class="alert alert-success">This is a success alert — everything went fine!</div>
+    <div class="alert alert-error">This is an error alert — something went wrong!</div>
+    <div class="alert alert-accent">This is an accent/neutral alert — just a note.</div>
+  </div>
+</body>
+</html>
