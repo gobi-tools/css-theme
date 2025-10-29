@@ -6,32 +6,32 @@
 
   /* colors - theme*/
   /* ===== Base Colors ===== */
-  --color-primary-light-2: #93c5fd;
-  --color-primary-light-3: #dbeafe;
+  --color-primary-light-1: #93c5fd;
+  --color-primary-light-2: #dbeafe;
   --color-primary: #3b82f6;
   --color-primary-dark-1: #2563eb;
   --color-primary-dark-2: #1e3a8a;
 
-  --color-secondary-light-2: #c4b5fd;
-  --color-secondary-light-3: #ede9fe;
+  --color-secondary-light-1: #c4b5fd;
+  --color-secondary-light-2: #ede9fe;
   --color-secondary: #8b5cf6;
   --color-secondary-dark-1: #7c3aed;
   --color-secondary-dark-2: #4c1d95;
 
-  --color-success-light-2: #86efac;
-  --color-success-light-3: #dcfce7;
+  --color-success-light-1: #86efac;
+  --color-success-light-2: #dcfce7;
   --color-success: #22c55e;
   --color-success-dark-1: #16a34a;
   --color-success-dark-2: #14532d;
 
-  --color-error-light-2: #fca5a5;
-  --color-error-light-3: #fee2e2;
+  --color-error-light-1: #fca5a5;
+  --color-error-light-2: #fee2e2;
   --color-error: #ef4444;
   --color-error-dark-1: #dc2626;
   --color-error-dark-2: #7f1d1d;
 
   --color-accent-light-1: #e5e7eb;
-  --color-accent-light-2: #f3f4f6;
+  --color-accent-light-1: #f3f4f6;
   --color-accent-dark-1: #374151;
   --color-accent-dark-2: #1f2937;
 
