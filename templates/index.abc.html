@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial / Print Theme</title>
+  <style>
+    :root {
+      /* Background & Text */
+      --color-bg: #fff8dc;
+      --color-text: #111111;
+
+      /* Primary (Black Ink) */
+      --color-primary-light-2: #d4d4d4;
+      --color-primary-light-1: #737373;
+      --color-primary: #111111;
+      --color-primary-dark-1: #000000;
+      --color-primary-dark-2: #000000;
+
+      /* Secondary (Soft Gray) */
+      --color-secondary-light-2: #f5f5f5;
+      --color-secondary-light-1: #e5e5e5;
+      --color-secondary: #bfbfbf;
+      --color-secondary-dark-1: #737373;
+      --color-secondary-dark-2: #525252;
+
+      /* Success (Olive Green) */
+      --color-success-light-2: #e8f3d7;
+      --color-success-light-1: #c7e6a1;
+      --color-success: #708d3a;
+      --color-success-dark-1: #566c2f;
+      --color-success-dark-2: #3a4a1e;
+
+      /* Error (Brick Red) */
+      --color-error-light-2: #fbe4e0;
+      --color-error-light-1: #ec9a90;
+      --color-error: #c2412f;
+      --color-error-dark-1: #9b2c1a;
+      --color-error-dark-2: #6b1c12;
+
+      /* Accent / Neutral Gray */
+      --color-accent-light-2: #f2f2f2;
+      --color-accent-light-1: #d4d4d4;
+      --color-accent: #9a9a9a;
+      --color-accent-dark-1: #666666;
+      --color-accent-dark-2: #3a3a3a;
+    }
+
+    /* ========== Base Theme ========== */
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1,
+    h2 {
+      color: var(--color-primary);
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      max-width: 70ch;
+    }
+
+    /* ========== Links ========== */
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-primary-light-1);
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    a:hover {
+      color: var(--color-primary-dark-1);
+      border-color: currentColor;
+    }
+
+    /* ========== Buttons ========== */
+    button {
+      font: inherit;
+      padding: 0.6em 1.2em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn {
+      background: var(--color-secondary-light-1);
+      color: var(--color-primary);
+    }
+
+    .btn:hover {
+      background: var(--color-secondary);
+    }
+
+    /* Variants */
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-secondary-light-2);
+    }
+
+    .btn-primary:hover {
+      background: var(--color-primary-dark-1);
+    }
+
+    .btn-success {
+      background: var(--color-success);
+      color: var(--color-secondary-light-2);
+    }
+
+    .btn-error {
+      background: var(--color-error);
+      color: var(--color-secondary-light-2);
+    }
+
+    /* ========== Alerts ========== */
+    .alert {
+      padding: 1em;
+      border-left: 6px solid currentColor;
+      border-radius: 4px;
+      margin-block: 1em;
+    }
+
+    .alert-success {
+      background: var(--color-success-light-2);
+      color: var(--color-success-dark-2);
+    }
+
+    .alert-error {
+      background: var(--color-error-light-2);
+      color: var(--color-error-dark-2);
+    }
+
+    .alert-accent {
+      background: var(--color-accent-light-2);
+      color: var(--color-accent-dark-2);
+    }
+
+    /* ========== Utility ========== */
+    section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1>Editorial Theme</h1>
+    <p>
+      This theme is designed for <strong>writers, blogs, and essays</strong> — inspired by paper and print.
+      The background uses a warm yellow hue, the primary color is deep black, and secondary tones
+      come from soft grays.
+    </p>
+    <p>
+      You can <a href="#">link to articles</a> or <a href="#">inline references</a> easily while keeping legibility.
+    </p>
+  </section>
+
+  <section>
+    <h2>Buttons</h2>
+    <button class="btn">Default</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-error">Error</button>
+  </section>
+
+  <section>
+    <h2>Alerts</h2>
+    <div class="alert alert-success">✅ Your draft was saved successfully.</div>
+    <div class="alert alert-error">⚠️ There was an issue publishing the post.</div>
+    <div class="alert alert-accent">💡 Tip: Use short paragraphs for readability.</div>
+  </section>
+</body>
+
+</html>
