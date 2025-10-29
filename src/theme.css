@@ -60,8 +60,8 @@
   --color-error-dark-1: #dc2626;
   --color-error-dark-2: #7f1d1d;
 
-  --color-accent-light-1: #f3f4f6;
-  --color-accent-light-2: #e5e7eb;
+  --color-accent-light-1: #e5e7eb;
+  --color-accent-light-2: #f3f4f6;
   --color-accent-dark-1: #374151;
   --color-accent-dark-2: #1f2937;
 
@@ -89,8 +89,8 @@
   --border-bottom-width-details: 1px;
 
   --border-radius-action: 6px;
-  --border-width-action: 1px;
-  --border-bottom-width-action: 1px;
+  --border-width-action: 2px;
+  --border-bottom-width-action: 2px;
 
   --border-radius-tabs: 6px;
 
@@ -362,6 +362,44 @@ button {
 /* theme colors --------------------- */
 /* ---------------------------------- */
 
+.success {
+  --color-accent-light-1: var(--color-success-light-1);
+  --color-accent-light-2: var(--color-success-light-3);
+  --color-accent-dark-1: var(--color-success-dark-1);
+  --color-accent-dark-2: var(--color-success-dark-2);
+
+  --color-primary-light-1: var(--color-success-light-1);
+  --color-primary-light-2: var(--color-success-light-2);
+  --color-primary-light-3: var(--color-success-light-3);
+  --color-primary-dark-1: var(--color-success-dark-1);
+  --color-primary-dark-2: var(--color-success-dark-2);
+
+  --color-secondary-light-1: var(--color-success-light-1);
+  --color-secondary-light-2: var(--color-success-light-2);
+  --color-secondary-light-3: var(--color-success-light-3);
+  --color-secondary-dark-1: var(--color-success-dark-1);
+  --color-secondary-dark-2: var(--color-success-dark-2);
+}
+
+.error {
+  --color-accent-light-1: var(--color-error-light-1);
+  --color-accent-light-2: var(--color-error-light-3);
+  --color-accent-dark-1: var(--color-error-dark-1);
+  --color-accent-dark-2: var(--color-error-dark-2);
+
+  --color-primary-light-1: var(--color-error-light-1);
+  --color-primary-light-2: var(--color-error-light-2);
+  --color-primary-light-3: var(--color-error-light-3);
+  --color-primary-dark-1: var(--color-error-dark-1);
+  --color-primary-dark-2: var(--color-error-dark-2);
+
+  --color-secondary-light-1: var(--color-error-light-1);
+  --color-secondary-light-2: var(--color-error-light-2);
+  --color-secondary-light-3: var(--color-error-light-3);
+  --color-secondary-dark-1: var(--color-error-dark-1);
+  --color-secondary-dark-2: var(--color-error-dark-2);
+}
+
 body {
   background: var(--color-bg);
 }
@@ -370,7 +408,9 @@ body {
   color: var(--color-txt);
 }
 
-/* elements with link colors ------- */
+*>* {
+  color: inherit;
+}
 
 a {
   color: light-dark(var(--color-primary-light-1), var(--color-primary-light-2));
@@ -384,25 +424,34 @@ hr {
   border-color: inherit;
 }
 
-/* elements with neutral colors ----------- */
+button {
+  background: var(--color-primary-light-1);
+  border-color: var(--color-primary-light-1);
+  color: var(--color-txt-on-dark);
+}
+
+button[type=reset] {
+  background: var(--color-bg);
+  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
+  border-color: var(--color-primary-light-1);
+}
 
 blockquote {
   background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
   border-color: var(--color-accent-dark-1);
 }
 
-/* elements with highlighted colors ------- */
-
 code,
 kbd,
 mark,
 var {
-  background: light-dark(var(--color-secondary-light-3), var(--color-secondary-dark-2));
+  background: light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
 }
 
 pre>code {
   background: light-dark(var(--color-secondary-light-3), var(--color-secondary-dark-2));
   border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1));
+  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
 }
 
 mark>*,
@@ -411,20 +460,11 @@ var>* {
   color: currentColor !important;
 }
 
-/* elements with action colors ---------- */
+/* nav & uls */
 
-button {
-  background: var(--color-primary-light-1);
-  border-color: var(--color-primary-light-1);
-  color: var(--color-txt-on-dark);
-}
-
-/* elements with contrasting colors ---- */
-
-button[type=reset] {
+nav ul>li>ul {
   background: var(--color-bg);
-  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
-  border-color: var(--color-primary-light-1);
+  border-color: var(--color-txt);
 }
 
 /* elements with detailed colors ------ */
@@ -498,6 +538,11 @@ button {
   border-width: var(--border-width-action);
   border-radius: var(--border-radius-action);
   border-bottom-width: var(--border-bottom-width-action);
+}
+
+nav ul>li>ul {
+  border-style: solid;
+  border-width: 2px;
 }
 
 /* ---------------------------------- */
@@ -630,13 +675,7 @@ nav ul>li>ul {
   width: auto;
   position: absolute;
   z-index: 42;
-  /* @todo: here? */
   padding-inline: var(--space-3);
-  border-width: 2px;
-  border-style: solid;
-  /* background: var(--color-bg); */
-  /* background: var(--color-neutral); */
-  /* border: 2px solid var(--color-highlight-stroke); */
 }
 
 nav ul>li>ul>li {
@@ -701,9 +740,10 @@ div[role=note]>img:first-child {
 [role=tablist] {
   display: flex;
   flex-wrap: wrap;
-  /* @todo: here? */
-  /* background: linear-gradient(0deg, var(--color-bg) 1rem, var(--color-bg-strong) 0%); */
   padding-bottom: var(--space-2);
+  /* @todo: here? */
+  background: linear-gradient(0deg, var(--color-bg) 1rem, light-dark(var(--color-secondary-light-3), var(--color-secondary-light-1)) 0%);
+  border: 1px solid var(--color-secondary-light-2);
 }
 
 [role=tablist] label {
@@ -717,8 +757,6 @@ div[role=note]>img:first-child {
   margin-top: var(--space-2-5);
   margin-bottom: -2px;
   border-radius: var(--border-radius-tabs) var(--border-radius-tabs) 0 0;
-  /* background: var(--color-action); */
-  /* color: var(--color-txt-contrast); */
 }
 
 [role=tablist] label:first-of-type {
@@ -733,8 +771,7 @@ div[role=note]>img:first-child {
   z-index: 10;
   /* @todo: here? */
   padding-inline: var(--space-3);
-  /* background: var(--color-bg);
-  border-top: 2px solid var(--color-action-stroke); */
+  background: var(--color-bg);
 }
 
 [role=tablist] input[type=radio]:not(:checked)+label:hover {
@@ -751,8 +788,7 @@ div[role=note]>img:first-child {
 
 [role=tablist] input[type=radio]:checked+label {
   z-index: 11;
-  /* border: 2px solid var(--color-action-stroke); */
-  /* background: var(--color-bg); */
+  background: var(--color-bg);
   border-bottom: 0;
   color: var(--color?-txt);
 }
