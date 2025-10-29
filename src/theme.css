@@ -108,10 +108,6 @@
   padding: 0;
 }
 
-/* body * {
-  border: 1px solid red;
-} */
-
 header,
 footer,
 figure,
@@ -186,7 +182,7 @@ figure>figure {
 }
 
 fieldset,
-details {
+details[open] {
   margin-bottom: var(--space-3);
 }
 
@@ -465,7 +461,7 @@ nav ul>li>ul {
   border-color: var(--color-txt);
 }
 
-div[role=note] {
+div[role=note], details[open] {
   background: light-dark(var(--color-bg), var(--color-accent-dark-2));
   border: 1px solid var(--color-secondary-light-2);
 }
@@ -474,27 +470,20 @@ div[role=note]>p:first-child {
   box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-3), var(--color-secondary-light-1)), 0 -.8rem 0 .8rem light-dark(var(--color-secondary-light-3), var(--color-secondary-light-1));
 }
 
-/* nav & uls */
-
-
-/* elements with detailed colors ------ */
-
 details {
-  /* border-color: var(--color-bg); */
-  /* border-color: var(--color-highlight-stroke); */
+  border: 1px solid transparent;
 }
 
-details[open] {
-  /* border-color: var(--color-border-faded); */
-  /* background: var(--color-neutral); */
+summary { /* same as <a> */
+  color: light-dark(var(--color-primary-light-1), var(--color-primary-light-2))
 }
 
-summary {
-  /* background: var(--color-highlight);
-  color: var(--color-highlight-txt); */
+details[open]>summary, summary:hover { /* same as <a> */
+  color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-3));
+  background: light-dark(var(--color-secondary-light-3), var(--color-secondary-light-1));
 }
 
-/* ---------------------------------- */
+/* --------------------------
 /* theme styles --------------------- */
 /* ---------------------------------- */
 
@@ -582,10 +571,6 @@ summary {
 
 details> :not(summary) {
   padding-inline: var(--space-3);
-}
-
-summary:hover {
-  filter: brightness(90%);
 }
 
 ul,
@@ -786,7 +771,7 @@ div[role=note]>img:first-child {
   z-index: 11;
   background: var(--color-bg);
   border-bottom: 0;
-  color: var(--color?-txt);
+  color: var(--color-txt);
 }
 
 [role=tablist] input[type=radio]:checked+label+[role=tab] {
