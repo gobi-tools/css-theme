@@ -461,9 +461,10 @@ nav ul>li>ul {
   border-color: var(--color-txt);
 }
 
-div[role=note], details[open] {
+div[role=note],
+details[open] {
   background: light-dark(var(--color-bg), var(--color-accent-dark-2));
-  border: 1px solid var(--color-secondary-light-2);
+  border-color: var(--color-secondary-light-2);
 }
 
 div[role=note]>p:first-child {
@@ -471,14 +472,17 @@ div[role=note]>p:first-child {
 }
 
 details {
-  border: 1px solid transparent;
+  border-color: transparent;
 }
 
-summary { /* same as <a> */
+summary {
+  /* same as <a> */
   color: light-dark(var(--color-primary-light-1), var(--color-primary-light-2))
 }
 
-details[open]>summary, summary:hover { /* same as <a> */
+details[open]>summary,
+summary:hover {
+  /* same as <a> */
   color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-3));
   background: light-dark(var(--color-secondary-light-3), var(--color-secondary-light-1));
 }
@@ -511,7 +515,7 @@ details {
   border-bottom-width: var(--border-bottom-width-details);
 }
 
-div[role=note] {
+div[role=note], [role=tablist] {
   border-radius: var(--border-radius-details);
   border-width: var(--border-width-details);
   border-style: var(--border-style-details);
@@ -724,7 +728,7 @@ div[role=note]>img:first-child {
   padding-bottom: var(--space-2);
   /* @todo: here? */
   background: linear-gradient(0deg, var(--color-bg) 1rem, light-dark(var(--color-secondary-light-3), var(--color-secondary-light-1)) 0%);
-  border: 1px solid var(--color-secondary-light-2);
+  border-color: var(--color-secondary-light-2);
 }
 
 [role=tablist] label {

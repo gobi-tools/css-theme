@@ -4,72 +4,44 @@
   --font-family-head: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-mono: monospace;
 
-  /* theme colors */
-  --gray-white: #ffffff;
-  --gray-light: #fdfdfd;
-  --gray-mid: #f4f4f4;
-  --gray-dark: #d3d3d3;
-  --gray-strong: #333333;
-  --blue-strong: #209cee;
-  --green-light: #ecfdf5;
-  --green-mid: #10b981;
-  --green-high: #059669;
-  --red-light: #fef2f2;
-  --red-mid: #ef4444;
-  --red-high: #dc2626;
+  /* colors - theme*/
+  /* ===== Base Colors ===== */
+  --color-primary-light-1: #3b82f6;
+  --color-primary-light-2: #93c5fd;
+  --color-primary-light-3: #dbeafe;
+  --color-primary-dark-1: #2563eb;
+  --color-primary-dark-2: #1e3a8a;
 
-  /* utility colors */
-  --color-bg: var(--gray-light);
-  --color: var(--gray-strong);
+  --color-secondary-light-1: #8b5cf6;
+  --color-secondary-light-2: #c4b5fd;
+  --color-secondary-light-3: #ede9fe;
+  --color-secondary-dark-1: #7c3aed;
+  --color-secondary-dark-2: #4c1d95;
 
-  --color-neutral: var(--gray-mid);
-  --color-neutral-stroke: var(--gray-dark);
-  --color-neutral-txt: var(--gray-strong);
+  --color-success-light-1: #22c55e;
+  --color-success-light-2: #86efac;
+  --color-success-light-3: #dcfce7;
+  --color-success-dark-1: #16a34a;
+  --color-success-dark-2: #14532d;
 
-  --color-highlight: var(--gray-white);
-  --color-highlight-stroke: var(--blue-strong);
-  --color-highlight-txt: var(--gray-strong);
+  --color-error-light-1: #ef4444;
+  --color-error-light-2: #fca5a5;
+  --color-error-light-3: #fee2e2;
+  --color-error-dark-1: #dc2626;
+  --color-error-dark-2: #7f1d1d;
 
-  --color-action: var(--gray-light);
-  --color-action-stroke: var(--blue-strong);
-  --color-action-txt: var(--gray-strong);
+  --color-accent-light-1: #e5e7eb;
+  --color-accent-light-2: #f3f4f6;
+  --color-accent-dark-1: #374151;
+  --color-accent-dark-2: #1f2937;
 
-  --color-contrast: var(--gray-white);
-  --color-contrast-stroke: var(--gray-dark);
-  --color-contrast-txt: var(--gray-strong);
+  /* ===== Text Colors ===== */
+  --color-txt-on-light: #111827;
+  --color-txt-on-dark: #f9fafb;
 
-  --color-link: var(--blue-strong);
-  --color-link-active: var(--gray-strong);
-  /* semantic colors - success */
-  --color-success: var(--green-high);
-  --color-neutral-success: var(--green-light);
-  --color-neutral-stroke-success: var(--green-mid);
-  --color-neutral-txt-success: var(--green-high);
-  --color-highlight-success: var(--green-mid);
-  --color-highlight-stroke-success: var(--green-high);
-  --color-highlight-txt-success: var(--gray-light);
-  --color-action-success: var(--gray-light);
-  --color-action-stroke-success: var(--green-mid);
-  --color-action-txt-success: var(--green-high);
-  --color-contrast-success: var(--gray-white);
-  --color-contrast-stroke-success: var(--gray-dark);
-  --color-contrast-txt-success: var(--green-high);
-  --color-link-success: var(--blue-strong);
-  /* semantic colors - errors */
-  --color-error: var(--red-high);
-  --color-neutral-error: var(--red-light);
-  --color-neutral-stroke-error: var(--red-mid);
-  --color-neutral-txt-error: var(--red-hight);
-  --color-highlight-error: var(--red-mid);
-  --color-highlight-stroke-error: var(--red-high);
-  --color-highlight-txt-error: var(--gray-light);
-  --color-action-error: var(--gray-light);
-  --color-action-stroke-error: var(--red-mid);
-  --color-action-txt-error: var(--red-high);
-  --color-contrast-error: var(--gray-white);
-  --color-contrast-stroke-error: var(--gray-dark);
-  --color-contrast-txt-error: var(--red-high);
-  --color-link-error: var(--blue-strong);
+  /* ===== Background Colors ===== */
+  --color-bg: light-dark(#ffffff, #111827);
+  --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
 
   /* style utlitiies */
   --border-radius-highlights: 6px;
@@ -95,19 +67,7 @@
   --border-radius-form: 6px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --gray-white: #000000;
-    --gray-light: #17181c;
-    --gray-mid: #242424;
-    --gray-dark: #505050;
-    --gray-strong: #b5b5b5;
-    --blue-strong: #209cee;
-    --green-light: #102a1f;
-    --green-mid: #48c78e;
-    --green-high: #48c78e;
-    --red-light: #461c24;
-    --red-mid: #ff6685;
-    --red-high: #ffcfd9;
-  }
+button {
+  background: light-dark(var(--color-primary-light-3), var(--color-primary-dark-2));
+  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
 }

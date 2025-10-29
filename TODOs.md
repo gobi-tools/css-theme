@@ -1,3 +1,4 @@
 - dl, dt, dd (description list)
 - ul, li, etc (bulleted lists)
 - icon & icon buttons
+- proper mobile support
