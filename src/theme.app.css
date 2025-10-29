@@ -6,27 +6,27 @@
 
   /* colors - theme*/
   /* ===== Base Colors ===== */
-  --color-primary-light-1: #3b82f6;
   --color-primary-light-2: #93c5fd;
   --color-primary-light-3: #dbeafe;
+  --color-primary: #3b82f6;
   --color-primary-dark-1: #2563eb;
   --color-primary-dark-2: #1e3a8a;
 
-  --color-secondary-light-1: #8b5cf6;
   --color-secondary-light-2: #c4b5fd;
   --color-secondary-light-3: #ede9fe;
+  --color-secondary: #8b5cf6;
   --color-secondary-dark-1: #7c3aed;
   --color-secondary-dark-2: #4c1d95;
 
-  --color-success-light-1: #22c55e;
   --color-success-light-2: #86efac;
   --color-success-light-3: #dcfce7;
+  --color-success: #22c55e;
   --color-success-dark-1: #16a34a;
   --color-success-dark-2: #14532d;
 
-  --color-error-light-1: #ef4444;
   --color-error-light-2: #fca5a5;
   --color-error-light-3: #fee2e2;
+  --color-error: #ef4444;
   --color-error-dark-1: #dc2626;
   --color-error-dark-2: #7f1d1d;
 
