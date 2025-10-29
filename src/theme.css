@@ -50,7 +50,7 @@
 
   --color-success-light-1: #86efac;
   --color-success-light-2: #dcfce7;
-  --color-success: #22c55e;
+  --color-success: #23b157;
   --color-success-dark-1: #16a34a;
   --color-success-dark-2: #14532d;
 
@@ -468,11 +468,11 @@ details[open] {
 }
 div[role=note].success, details[open].success,
 div[role=note].error, details[open].error {
-  border-color: var(--color-accent-dark-1);
+  border-color: var(--color-accent-dark-1) !important;
 }
 
 div[role=note]>p:first-child {
-  box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-2), var(--color-secondary)), 0 -.8rem 0 .8rem light-dark(var(--color-secondary-light-2), var(--color-secondary));
+  box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1)), 0 -.8rem 0 .8rem light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
 }
 
 details {
@@ -488,7 +488,7 @@ details[open]>summary,
 summary:hover {
   /* same as <a> */
   color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
-  background: light-dark(var(--color-secondary-light-2), var(--color-secondary));
+  background: light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
 }
 
 /* --------------------------
