@@ -2,3 +2,6 @@
 - ul, li, etc (bulleted lists)
 - icon & icon buttons
 - proper mobile support
+- breadcrumbs
+- pagination
+- mobile navigation?

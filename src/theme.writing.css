@@ -71,8 +71,3 @@
 blockquote {
   background: none;
 }
-
-blockquote.success,
-blockquote.error {
-  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
-}

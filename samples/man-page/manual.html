@@ -9,7 +9,7 @@
   <title>Manual</title>
 
   <link rel="stylesheet" href="../../src/theme.css">
-  <link rel="stylesheet" href="../../src/theme.simple.css">
+  <!-- <link rel="stylesheet" href="../../src/theme.simple.css"> -->
 </head>
 
 <body>
@@ -67,8 +67,20 @@
           accessible <b>remote</b> location (a
           git repo, a ftp server, etc).
         </p>
+        <ul>
+          <li>
+            <code>Scripts</code> are any normal Shell scripts. Any file that can be invoked by typing
+            <code>./my_script.sh</code>, can be run by BashVault.
+          </li>
+          <li>
+            <code>Cheatsheets</code> are simply files containing aliases, functions, variables, etc.
+            Depending on your shell, you will already have default files like <code>.bashrc</code>, <code>.zshrc</code>,
+            etc.
+            You can check out starter cheatsheets <a href="/cheatsheets.html">here</a>.
+
+          </li>
         </ul>
-        <blockquote>
+        <!-- <blockquote>
           <p>
             <code><b>Scripts</b></code> are any normal Shell scripts. Any file that can be invoked by typing
             <code>./my_script.sh</code>, can be run by BashVault.
@@ -82,7 +94,7 @@
             etc.
             You can check out starter cheatsheets <a href="/cheatsheets.html">here</a>.
           </p>
-        </blockquote>
+        </blockquote> -->
         <p>
           To import a file or folder, you can use the <code>-import</code> flag, followed by the name or path.
         </p>

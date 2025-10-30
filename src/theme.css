@@ -171,10 +171,20 @@ ol {
   margin-bottom: var(--space-3);
 }
 
+ul li {
+  margin-bottom: var(--space-2-5);
+}
+
 figure,
 blockquote,
 table {
   margin: var(--space-3) 0;
+}
+pre {
+  margin-bottom: var(--space-4);
+}
+pre:has(+ figcaption) {
+  margin-bottom: 0;
 }
 
 figure>figure {
@@ -441,11 +451,11 @@ code,
 kbd,
 mark,
 var {
-  background: light-dark(var(--color-secondary-light-1), var(--color-secondary-dark-1));
+  background: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
 
 pre>code {
-  background: light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-2));
+  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
   border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1));
   color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
 }
@@ -464,11 +474,7 @@ nav ul>li>ul {
 div[role=note],
 details[open] {
   background: light-dark(var(--color-bg), var(--color-accent-dark-2));
-  border-color: var(--color-secondary-light-1);
-}
-div[role=note].success, details[open].success,
-div[role=note].error, details[open].error {
-  border-color: var(--color-accent-dark-1);
+  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
 
 div[role=note]>p:first-child {

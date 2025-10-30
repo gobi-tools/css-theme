@@ -31,7 +31,7 @@
   --color-error-dark-2: #7f1d1d;
 
   --color-accent-light-1: #e5e7eb;
-  --color-accent-light-1: #f3f4f6;
+  --color-accent-light-2: #f3f4f6;
   --color-accent-dark-1: #374151;
   --color-accent-dark-2: #1f2937;
 
@@ -70,4 +70,8 @@
 button {
   background: light-dark(var(--color-primary-light-2), var(--color-primary-dark-2));
   color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
+}
+
+blockquote {
+  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
