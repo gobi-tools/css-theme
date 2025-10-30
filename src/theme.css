@@ -61,7 +61,7 @@
   --color-error-dark-2: #7f1d1d;
 
   --color-accent-light-1: #e5e7eb;
-  --color-accent-light-1: #f3f4f6;
+  --color-accent-light-2: #f3f4f6;
   --color-accent-dark-1: #374151;
   --color-accent-dark-2: #1f2937;
 
@@ -359,8 +359,8 @@ button {
 /* ---------------------------------- */
 
 .success {
-  --color-accent-light-1: var(--color-success);
-  --color-accent-light-1: var(--color-success-light-2);
+  --color-accent-light-1: var(--color-success-light-1);
+  --color-accent-light-2: var(--color-success-light-2);
   --color-accent-dark-1: var(--color-success-dark-1);
   --color-accent-dark-2: var(--color-success-dark-2);
 
@@ -378,8 +378,8 @@ button {
 }
 
 .error {
-  --color-accent-light-1: var(--color-error);
-  --color-accent-light-1: var(--color-error-light-2);
+  --color-accent-light-1: var(--color-error-light-1);
+  --color-accent-light-2: var(--color-error-light-2);
   --color-accent-dark-1: var(--color-error-dark-1);
   --color-accent-dark-2: var(--color-error-dark-2);
 
@@ -433,7 +433,7 @@ button[type=reset] {
 }
 
 blockquote {
-  background: light-dark(var(--color-accent-light-1), var(--color-accent-dark-2));
+  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
   border-color: var(--color-accent-dark-1);
 }
 
@@ -468,7 +468,7 @@ details[open] {
 }
 div[role=note].success, details[open].success,
 div[role=note].error, details[open].error {
-  border-color: var(--color-accent-dark-1) !important;
+  border-color: var(--color-accent-dark-1);
 }
 
 div[role=note]>p:first-child {
