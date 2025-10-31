@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Forms - Normal</title>
+
+  <link rel="stylesheet" href="../../src/theme.css">
+  <!-- <link rel="stylesheet" href="../../src/theme.bold.css"> -->
+</head>
+
+<body>
+  <main>
+    <article>
+      <h1>Normal Forms</h1>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Grouped inputs</legend>
+
+            <div role="group">
+              <input type="email" placeholder="Test@test.com">
+              <input type="submit" value="Subcribe" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Select</legend>
+
+            <div role="group">
+              <input name="name" type="text" placeholder="Name">
+              <select name="delivery">
+                <option value="fast">Fast</option>
+                <option value="slow">Slow</option>
+              </select>
+              <input type="submit" value="Submit">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Options</legend>
+
+            <div role="group">
+              <!-- <div> -->
+                <input type="checkbox" id="int_dev" name="interests" value="development">
+                <label for="int_dev">Development</label>
+              <!-- </div> -->
+
+              <!-- <div> -->
+                <input type="checkbox" id="int_design" name="interests" value="design">
+                <label for="int_design">Design</label>
+              <!-- </div> -->
+
+              <!-- <div> -->
+                <input type="checkbox" id="int_writing" name="interests" value="writing">
+                <label for="int_writing">Writing</label>
+              <!-- </div> -->
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>

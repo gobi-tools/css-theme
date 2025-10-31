@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Forms - Normal</title>
+
+  <link rel="stylesheet" href="../../src/theme.css">
+  <!-- <link rel="stylesheet" href="../../src/theme.bold.css"> -->
+</head>
+
+<body>
+  <main>
+    <article>
+      <h1>Normal Forms</h1>
+      <section>
+        <form>
+          <!-- Personal info -->
+          <fieldset>
+            <legend>Personal information</legend>
+
+            <label for="firstName">First name</label><br>
+            <input type="text" id="firstName" name="fullName" placeholder="Jane" disabled>
+
+            <label for="lastName">Last name</label><br>
+            <input type="text" id="lastName" name="fullName" placeholder="Jane" disabled>
+          </fieldset>
+
+          <fieldset>
+            <legend>Choose an option</legend>
+
+            <div>
+              <label for="service">Service</label><br>
+              <select id="service" name="service" disabled>
+                <option value="">-- Please choose --</option>
+                <optgroup label="Web">
+                  <option value="hosting">Hosting</option>
+                  <option value="domain">Domain registration</option>
+                </optgroup>
+                <optgroup label="Design">
+                  <option value="branding">Branding</option>
+                  <option value="ux">UX consultation</option>
+                </optgroup>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Submit</legend>
+
+            <input type="submit" value="Done" disabled>
+          </fieldset>
+        </form>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>

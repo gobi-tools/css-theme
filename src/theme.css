@@ -16,6 +16,7 @@
   --space-4: 1.5rem;
   --space-5: 2rem;
   --space-6: 3rem;
+  --min-elem-height: 41.48px;
   /* ---------------------- */
   /* theme                  */
   /* ---------------------- */
@@ -204,9 +205,6 @@ details[open] {
   margin-bottom: var(--space-3);
 }
 
-input,
-select,
-textarea,
 button {
   margin-bottom: var(--space-2);
 }
@@ -370,7 +368,7 @@ figcaption {
   font-size: var(--font-size-sm);
 }
 
-button {
+button, input[type=submit] {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: -0.015em;
@@ -443,7 +441,7 @@ hr {
   border-color: inherit;
 }
 
-button {
+button, input[type=submit] {
   background: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-txt-on-dark);
@@ -596,6 +594,14 @@ textarea {
   border-width: var(--border-width-input);
   border-radius: var(--border-radius-input);
 }
+[role=group]>:is(input, select, textarea, button):is(:first-child) {
+  border-top-left-radius: var(--border-radius-input);
+  border-bottom-left-radius: var(--border-radius-input);
+}
+[role=group]>:is(input, select, textarea, button):is(:last-child) {
+  border-top-right-radius: var(--border-radius-input);
+  border-bottom-right-radius: var(--border-radius-input);
+}
 
 fieldset, select {
   border-bottom-width: var(--border-bottom-width-input);
@@ -621,15 +627,24 @@ fieldset {
   padding-top: var(--space-3);
 }
 
-input,
+input:not([type=checkbox], [type=radio]),
 select,
 textarea {
   display: block;
   width: 100%;
   padding: var(--space-2);
   font-size: 500;
+  min-height: var(--min-elem-height);
 }
 
+input[type=checkbox], input[type=radio] {
+  margin-right: var(--space-1);
+}
+
+input[type=submit] {
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
 input:is([type=checkbox]),
 input:is([type=radio]) {
   display: initial;
@@ -643,22 +658,23 @@ textarea {
 /* buttons ------------------------- */
 
 button {
+  min-height: var(--min-elem-height);
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
   padding-left: var(--space-4);
   padding-right: var(--space-4);
 }
 
-button:hover {
+button:hover, input[type=submit]:hover {
   filter: brightness(90%);
 }
 
-button:disabled {
+*:disabled {
   filter: opacity(50%);
   cursor: not-allowed;
 }
 
-button:hover:disabled {
+*:hover:disabled, input[type=submit]:hover:disabled {
   filter: opacity(50%);
 }
 
@@ -790,15 +806,23 @@ div[role=row]>div {
 
 /* group --------------------------- */
 
-div[role=group] {
+[role=group] {
   display: flex;
-  align-items: end;
+  align-items: center;
 }
 
-div[role=group]>* {
+[role=group]>* {
   width: 100%;
   align-items: center;
   margin-bottom: 0;
+  border-radius: 0;
+}
+[role=group]>:is(input[type=submit], button) {
+  width: auto;
+  align-self: flex-end;
+}
+[role=group]>:not(:first-child) {
+  border-left-width: 0;
 }
 
 /* notes ---------------------------- */
