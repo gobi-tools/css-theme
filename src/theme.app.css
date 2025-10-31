@@ -52,7 +52,7 @@
   --border-left-style-blocks: solid;
   --border-left-width-blocks: 2px;
   --border-bottom-width-blocks: 5px;
-  
+
   --border-radius-details: 4px;
   --border-style-details: solid;
   --border-width-details: 2px;
@@ -63,8 +63,6 @@
   --border-bottom-width-action: 5px;
 
   --border-radius-tabs: 4px;
-
-  --border-radius-form: 6px;
 }
 
 button {

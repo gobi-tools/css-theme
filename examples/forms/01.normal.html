@@ -13,7 +13,140 @@
 <body>
   <main>
     <article>
+      <h1>Normal Forms</h1>
+      <section>
+        <form action="/submit" method="post" autocomplete="on">
+          <!-- Personal info -->
+          <fieldset>
+            <legend>Personal information</legend>
 
+            <div role="row" class="small-gap">
+              <div>
+                <label for="firstName">First name</label><br>
+                <input type="text" id="firstName" name="fullName" placeholder="Jane">
+
+                <label for="lastName">Last name</label><br>
+                <input type="text" id="lastName" name="fullName" placeholder="Jane">
+              </div>
+
+              <div>
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username" placeholder="janedoe123">
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" autocomplete="new-password">
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Preferences -->
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <div>
+              <label for="color">Favourite color (datalist)</label><br>
+              <input list="colorOptions" id="color" name="color" placeholder="Choose or type">
+              <datalist id="colorOptions">
+                <option value="Blue">
+                <option value="Green">
+                <option value="Burgundy">
+                <option value="Mauve">
+                <option value="Yellow">
+              </datalist>
+            </div>
+
+            <div>
+              <label for="volume">Volume (range)</label><br>
+              <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="50">
+            </div>
+
+            <div>
+              <label for="reminderDate">Preferred reminder date</label><br>
+              <input type="date" id="reminderDate" name="reminderDate">
+            </div>
+          </fieldset>
+
+          <!-- Select with groups -->
+          <fieldset>
+            <legend>Choose an option</legend>
+
+            <div>
+              <label for="service">Service</label><br>
+              <select id="service" name="service">
+                <option value="">-- Please choose --</option>
+                <optgroup label="Web">
+                  <option value="hosting">Hosting</option>
+                  <option value="domain">Domain registration</option>
+                </optgroup>
+                <optgroup label="Design">
+                  <option value="branding">Branding</option>
+                  <option value="ux">UX consultation</option>
+                </optgroup>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- Multiple checkboxes -->
+          <fieldset>
+            <legend>Checkbox & radio</legend>
+
+            <div role="row" class="small-gap">
+              <div>
+                <div>
+                  <input type="checkbox" id="int_dev" name="interests" value="development">
+                  <label for="int_dev">Development</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="int_design" name="interests" value="design">
+                  <label for="int_design">Design</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="int_writing" name="interests" value="writing">
+                  <label for="int_writing">Writing</label>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <input type="radio" id="int_dev" name="interests" value="development">
+                  <label for="int_dev">Development</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="int_design" name="interests" value="design">
+                  <label for="int_design">Design</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="int_writing" name="interests" value="writing">
+                  <label for="int_writing">Writing</label>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <!-- Message -->
+          <fieldset>
+            <legend>Message</legend>
+
+            <div>
+              <label for="message">Your message</label><br>
+              <textarea id="message" name="message" rows="6" placeholder="Write something…"></textarea>
+            </div>
+          </fieldset>
+
+          <!-- Submit -->
+          <fieldset>
+            <legend>Submit</legend>
+            <div>
+              <button type="submit">Send</button>
+              <button type="reset">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </article>
   </main>
 </body>

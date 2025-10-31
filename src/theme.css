@@ -62,6 +62,7 @@
 
   --color-accent-light-1: #e5e7eb;
   --color-accent-light-2: #f3f4f6;
+  --color-accent: #9a9a9a;
   --color-accent-dark-1: #374151;
   --color-accent-dark-2: #1f2937;
 
@@ -92,9 +93,13 @@
   --border-width-action: 2px;
   --border-bottom-width-action: 2px;
 
+  --border-radius-input: 6px;
+  --border-width-input: 2px;
+  --border-style-input: solid;
+
   --border-radius-tabs: 6px;
 
-  --border-radius-form: 6px;
+  --border-width-nav: 2px;
 }
 
 /* ---------------------------------- */
@@ -180,9 +185,11 @@ blockquote,
 table {
   margin: var(--space-3) 0;
 }
+
 pre {
   margin-bottom: var(--space-4);
 }
+
 pre:has(+ figcaption) {
   margin-bottom: 0;
 }
@@ -217,9 +224,14 @@ hr {
   margin-bottom: var(--space-4);
 }
 
-
 blockquote>:first-child {
   margin-top: 0;
+}
+
+input,
+select,
+textarea {
+  margin-bottom: var(--space-2-5);
 }
 
 img:has(+ figcaption),
@@ -497,6 +509,29 @@ summary:hover {
   background: light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
 }
 
+fieldset,
+input,
+select,
+textarea {
+  background: var(--color-bg);
+  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
+}
+
+:is(input, select, textarea)::placeholder {
+  color: var(--color-accent);
+}
+
+fieldset:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: var(--color-primary);
+}
+
+fieldset {
+  background: light-dark(var(--color-bg), var(--color-accent-dark-2));
+}
+
 /* --------------------------
 /* theme styles --------------------- */
 /* ---------------------------------- */
@@ -525,7 +560,8 @@ details {
   border-bottom-width: var(--border-bottom-width-details);
 }
 
-div[role=note], [role=tablist] {
+div[role=note],
+[role=tablist] {
   border-radius: var(--border-radius-details);
   border-width: var(--border-width-details);
   border-style: var(--border-style-details);
@@ -541,7 +577,25 @@ button {
 
 nav ul>li>ul {
   border-style: solid;
-  border-width: 2px;
+  border-width: var(--border-width-nav);
+}
+
+fieldset,
+input,
+select,
+textarea {
+  border-style: var(--border-style-input);
+  border-width: var(--border-width-input);
+  border-radius: var(--border-radius-input);
+}
+
+fieldset:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline-style: var(--border-style-input);
+  outline-width: var(--border-width-input);
+  outline-offset: calc(-1 * var(--border-width-input));
 }
 
 /* ---------------------------------- */
@@ -551,7 +605,28 @@ nav ul>li>ul {
 /* form --------------------------- */
 
 fieldset {
+  padding: var(--space-2-5);
+  padding-top: var(--space-3);
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
   padding: var(--space-2);
+  font-size: 500;
+  /* outline: none; */
+}
+
+input:is([type=checkbox]),
+input:is([type=radio]) {
+  display: initial;
+  width: auto;
+}
+
+textarea {
+  resize: vertical;
 }
 
 /* buttons ------------------------- */
