@@ -231,7 +231,7 @@ blockquote>:first-child {
 input,
 select,
 textarea {
-  margin-bottom: var(--space-2-5);
+  margin-bottom: var(--space-3);
 }
 
 img:has(+ figcaption),
@@ -515,6 +515,13 @@ select,
 textarea {
   background: var(--color-bg);
   border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
+  accent-color: var(--color-secondary);
+}
+
+select {
+  background: light-dark(var(--color-accent-light-2), var(--color-bg));
+  color: light-dark(var(--color-primary-dark-1), var(--color-primary-light-1));
+  font-weight: bold;
 }
 
 :is(input, select, textarea)::placeholder {
@@ -616,7 +623,6 @@ textarea {
   width: 100%;
   padding: var(--space-2);
   font-size: 500;
-  /* outline: none; */
 }
 
 input:is([type=checkbox]),
