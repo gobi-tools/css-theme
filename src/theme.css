@@ -602,8 +602,11 @@ textarea {
   border-top-right-radius: var(--border-radius-input);
   border-bottom-right-radius: var(--border-radius-input);
 }
+[role=group]>:is(:last-child):is(input[type=submit]) {
+  border-left-width: var(--border-width-input);
+}
 
-fieldset, select {
+fieldset, select, input[type=submit] {
   border-bottom-width: var(--border-bottom-width-input);
 }
 
