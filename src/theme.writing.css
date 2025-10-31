@@ -63,6 +63,11 @@
   --border-width-action: 2px;
   --border-bottom-width-action: 2px;
 
+  --border-radius-input: 4px;
+  --border-width-input: 2px;
+  --border-style-input: solid;
+  --border-bottom-width-input: 2px;
+
   --border-radius-tabs: 6px;
 }
 

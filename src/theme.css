@@ -96,6 +96,7 @@
   --border-radius-input: 6px;
   --border-width-input: 2px;
   --border-style-input: solid;
+  --border-bottom-width-input: 2px;
 
   --border-radius-tabs: 6px;
 
@@ -594,6 +595,10 @@ textarea {
   border-style: var(--border-style-input);
   border-width: var(--border-width-input);
   border-radius: var(--border-radius-input);
+}
+
+fieldset, select {
+  border-bottom-width: var(--border-bottom-width-input);
 }
 
 fieldset:focus,
