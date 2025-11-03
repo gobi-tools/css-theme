@@ -727,6 +727,7 @@ th:last-child, td:last-child {
 pre>code,
 blockquote {
   padding: var(--space-3);
+  text-wrap: auto;
 }
 
 mark,
