@@ -703,7 +703,7 @@ table {
   border: none;
 }
 tr:hover {
-  background-color: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
+  background-color: light-dark(var(--color-accent-light-2), var(--color-accent-dark-1));
 }
 tr, th, td {
   border: none;
