@@ -14,5 +14,5 @@
 - [ ] left navigation or lists or summary/details
 - [ ] think about mobile in terms of https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 - [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
-- [x] small buttons should not have the same height as big ones
+- [-] small buttons should not have the same height as big ones
   - removed small buttons

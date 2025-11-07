@@ -369,7 +369,8 @@ figcaption {
   font-size: var(--font-size-sm);
 }
 
-button, input[type=submit] {
+button,
+input[type=submit] {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: -0.015em;
@@ -442,7 +443,8 @@ hr {
   border-color: inherit;
 }
 
-button, input[type=submit] {
+button,
+input[type=submit] {
   background: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-txt-on-dark);
@@ -595,22 +597,31 @@ textarea {
   border-width: var(--border-width-input);
   border-radius: var(--border-radius-input);
 }
-[role=group]>:is(input, select, textarea, button):is(:first-child) {
+
+[role=group]>:is(input, select, textarea, button, mark):is(:first-child),
+[role=group]>small:first-child>mark {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-[role=group]>:is(input, select, textarea, button):is(:last-child) {
+
+[role=group]>:is(input, select, textarea, button, mark):is(:last-child),
+[role=group]>small:last-child>mark {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-[role=group]>:is(input, select, textarea, button):not(:first-child):not(:last-child) {
+
+[role=group]>:is(input, select, textarea, button, mark):not(:first-child):not(:last-child),
+[role=group]>small:not(:first-child):not(:last-child)>mark {
   border-radius: 0;
 }
+
 [role=group]>:is(:last-child):is(input[type=submit]) {
   border-left-width: var(--border-width-input);
 }
 
-fieldset, select, input[type=submit] {
+fieldset,
+select,
+input[type=submit] {
   border-bottom-width: var(--border-bottom-width-input);
 }
 
@@ -644,7 +655,8 @@ textarea {
   min-height: var(--min-elem-height);
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
   margin-right: var(--space-1);
 }
 
@@ -652,6 +664,7 @@ input[type=submit] {
   padding-left: var(--space-4);
   padding-right: var(--space-4);
 }
+
 input:is([type=checkbox]),
 input:is([type=radio]) {
   display: initial;
@@ -672,7 +685,8 @@ button {
   padding-right: var(--space-4);
 }
 
-button:hover, input[type=submit]:hover {
+button:hover,
+input[type=submit]:hover {
   filter: brightness(90%);
 }
 
@@ -681,7 +695,8 @@ button:hover, input[type=submit]:hover {
   cursor: not-allowed;
 }
 
-*:hover:disabled, input[type=submit]:hover:disabled {
+*:hover:disabled,
+input[type=submit]:hover:disabled {
   filter: opacity(50%);
 }
 
@@ -706,23 +721,33 @@ table {
   width: 100%;
   border: none;
 }
+
 tr:hover {
   background-color: light-dark(var(--color-accent-light-2), var(--color-accent-dark-1));
 }
-tr, th, td {
+
+tr,
+th,
+td {
   border: none;
   text-align: left;
 }
-th, td {
+
+th,
+td {
   width: auto;
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
   border-bottom: 1px solid var(--color-accent-dark-1);
 }
-th:first-child, td:first-child {
+
+th:first-child,
+td:first-child {
   padding-left: var(--space-2);
 }
-th:last-child, td:last-child {
+
+th:last-child,
+td:last-child {
   padding-right: var(--space-2);
 }
 
@@ -849,10 +874,12 @@ div[role=row]>div {
   align-items: center;
   margin-bottom: 0;
 }
-[role=group]>:is(input[type=submit], button) {
+
+[role=group]>:is(input[type=submit], button, mark, small) {
   width: auto;
   align-self: flex-end;
 }
+
 [role=group]>:not(:first-child) {
   border-left-width: 0;
 }
@@ -943,19 +970,24 @@ svg {
   padding: 0;
   transform: translateY(-0.075em);
 }
+
 svg:only-child {
   transform: translateY(0);
 }
+
 svg:has(+*) {
   margin-right: var(--space-1);
 }
+
 *:has(+svg) {
   margin-right: var(--space-1);
 }
+
 button:has(svg) {
   display: inline-flex;
   align-items: center;
 }
+
 button:has(svg:only-child) {
   padding-left: var(--space-2-25);
   padding-right: var(--space-2-25);
