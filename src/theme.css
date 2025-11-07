@@ -830,6 +830,9 @@ nav ul:first-child>li>* {
 
 nav a {
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 nav ul>li>ul {
@@ -979,6 +982,12 @@ mark > svg {
   width: var(--font-size-sm);
   height: var(--font-size-sm);
   transform: translateY(0.05em);
+}
+
+a > svg {
+  width: var(--font-size-xl);
+  height: var(--font-size-xl);
+  transform: translateY(-0.075em);
 }
 
 svg {

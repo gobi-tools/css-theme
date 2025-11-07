@@ -4,7 +4,7 @@
   - [x] icons & text on buttons
   - [x] single icons on buttons
   - [x] icons on tags
-  - [ ] icons on navigation 
+  - [x] icons on navigation 
   - [ ] icons on tabs
   - [ ] independent icons
 - [ ] proper mobile support
