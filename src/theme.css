@@ -922,11 +922,13 @@ div[role=note]>img:first-child {
 
 [role=tablist] label {
   order: 1;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
   cursor: pointer;
   /* @todo: here? */
   padding-top: var(--space-2);
-  padding-bottom: var(--space-1);
+  padding-bottom: var(--space-2);
   padding-inline: var(--space-3);
   margin-top: var(--space-2-5);
   margin-bottom: -2px;
@@ -988,6 +990,12 @@ a > svg {
   width: var(--font-size-xl);
   height: var(--font-size-xl);
   transform: translateY(-0.075em);
+}
+
+[role=tablist] label > svg {
+  width: var(--font-size-xl);
+  height: var(--font-size-xl);
+  transform: translateY(-0.05em);
 }
 
 svg {

@@ -5,7 +5,7 @@
   - [x] single icons on buttons
   - [x] icons on tags
   - [x] icons on navigation 
-  - [ ] icons on tabs
+  - [x] icons on tabs
   - [ ] independent icons
 - [ ] proper mobile support
 - [ ] breadcrumbs
