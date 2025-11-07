@@ -15,4 +15,4 @@
 - [ ] left navigation or lists or summary/details
 - [ ] think about mobile in terms of https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 - [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
-- [ ][bug] table inside a "note" seems to skew the width of the whole page
+- [x][bug] table inside a "note" seems to skew the width of the whole page ---> it's just the scrollbar
