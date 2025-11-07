@@ -18,6 +18,7 @@
   --space-5: 2rem;
   --space-6: 3rem;
   --min-elem-height: 41.48px;
+  --small-elem-height: 26px;
   /* ---------------------- */
   /* theme                  */
   /* ---------------------- */
@@ -598,25 +599,18 @@ textarea {
   border-radius: var(--border-radius-input);
 }
 
-[role=group]>:is(input, select, textarea, button, mark):is(:first-child),
-[role=group]>small:first-child>mark {
+[role=group]>:is(:first-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-[role=group]>:is(input, select, textarea, button, mark):is(:last-child),
-[role=group]>small:last-child>mark {
+[role=group]>:is(:last-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-[role=group]>:is(input, select, textarea, button, mark):not(:first-child):not(:last-child),
-[role=group]>small:not(:first-child):not(:last-child)>mark {
+[role=group]>:not(:first-child):not(:last-child) {
   border-radius: 0;
-}
-
-[role=group]>:is(:last-child):is(input[type=submit]) {
-  border-left-width: var(--border-width-input);
 }
 
 fieldset,
@@ -683,6 +677,9 @@ button {
   padding-bottom: var(--space-2);
   padding-left: var(--space-4);
   padding-right: var(--space-4);
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 button:hover,
@@ -782,10 +779,20 @@ hr {
   border-top-width: 1px;
 }
 
-/* asides -----------------------*/
+/* asides ----------------------- */
 
 aside {
   min-width: 200px;
+}
+
+/* marks ----------------------- */
+
+
+mark {
+  height: var(--small-elem-height);
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 /* navigation --------------- */
@@ -875,7 +882,7 @@ div[role=row]>div {
   margin-bottom: 0;
 }
 
-[role=group]>:is(input[type=submit], button, mark, small) {
+[role=group]>:is(input[type=submit], button, mark) {
   width: auto;
   align-self: flex-end;
 }
@@ -963,12 +970,20 @@ div[role=note]>img:first-child {
 
 /* icons -------------------------- */
 
-svg {
+button > svg {
   width: var(--font-size-base);
   height: var(--font-size-base);
+  transform: translateY(-0.075em);
+}
+mark > svg {
+  width: var(--font-size-sm);
+  height: var(--font-size-sm);
+  transform: translateY(0.05em);
+}
+
+svg {
   margin: 0;
   padding: 0;
-  transform: translateY(-0.075em);
 }
 
 svg:only-child {
@@ -981,11 +996,6 @@ svg:has(+*) {
 
 *:has(+svg) {
   margin-right: var(--space-1);
-}
-
-button:has(svg) {
-  display: inline-flex;
-  align-items: center;
 }
 
 button:has(svg:only-child) {
