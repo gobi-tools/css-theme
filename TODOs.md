@@ -5,7 +5,7 @@
   - [x] single icons on buttons
   - [ ] independent icons 
   - [ ] icons on tabs
-  - [x] icons on tags
+  - [ ] icons on tags
 - [ ] proper mobile support
 - [ ] breadcrumbs
 - [ ] pagination
@@ -13,5 +13,6 @@
 - [x] top navigation
 - [ ] left navigation or lists or summary/details
 - [ ] think about mobile in terms of https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
-- [ ] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
-- [ ] small buttons should not have the same height as big ones
+- [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
+- [x] small buttons should not have the same height as big ones
+  - removed small buttons

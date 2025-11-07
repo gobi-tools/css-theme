@@ -11,6 +11,7 @@
   --space-0: 0;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
+  --space-2-25: 0.65rem;
   --space-2-5: 0.75rem;
   --space-3: 1rem;
   --space-4: 1.5rem;
@@ -595,12 +596,15 @@ textarea {
   border-radius: var(--border-radius-input);
 }
 [role=group]>:is(input, select, textarea, button):is(:first-child) {
-  border-top-left-radius: var(--border-radius-input);
-  border-bottom-left-radius: var(--border-radius-input);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 [role=group]>:is(input, select, textarea, button):is(:last-child) {
-  border-top-right-radius: var(--border-radius-input);
-  border-bottom-right-radius: var(--border-radius-input);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+[role=group]>:is(input, select, textarea, button):not(:first-child):not(:last-child) {
+  border-radius: 0;
 }
 [role=group]>:is(:last-child):is(input[type=submit]) {
   border-left-width: var(--border-width-input);
@@ -844,7 +848,6 @@ div[role=row]>div {
   width: 100%;
   align-items: center;
   margin-bottom: 0;
-  border-radius: 0;
 }
 [role=group]>:is(input[type=submit], button) {
   width: auto;
@@ -938,7 +941,10 @@ svg {
   height: var(--font-size-base);
   margin: 0;
   padding: 0;
-  transform: translateY();
+  transform: translateY(-0.075em);
+}
+svg:only-child {
+  transform: translateY(0);
 }
 svg:has(+*) {
   margin-right: var(--space-1);
@@ -951,6 +957,6 @@ button:has(svg) {
   align-items: center;
 }
 button:has(svg:only-child) {
-  padding-left: var(--space-2);
-  padding-right: var(--space-2);
+  padding-left: var(--space-2-25);
+  padding-right: var(--space-2-25);
 }
