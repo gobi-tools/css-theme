@@ -6,7 +6,7 @@
   - [x] icons on tags
   - [x] icons on navigation 
   - [x] icons on tabs
-  - [ ] independent icons
+  - [x] independent icons
 - [ ] proper mobile support
 - [ ] breadcrumbs
 - [ ] pagination
