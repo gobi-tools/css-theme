@@ -930,3 +930,27 @@ div[role=note]>img:first-child {
 [role=tablist] input[type=radio]:checked+label+[role=tab] {
   display: block;
 }
+
+/* icons -------------------------- */
+
+svg {
+  width: var(--font-size-base);
+  height: var(--font-size-base);
+  margin: 0;
+  padding: 0;
+  transform: translateY();
+}
+svg:has(+*) {
+  margin-right: var(--space-1);
+}
+*:has(+svg) {
+  margin-right: var(--space-1);
+}
+button:has(svg) {
+  display: inline-flex;
+  align-items: center;
+}
+button:has(svg:only-child) {
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}

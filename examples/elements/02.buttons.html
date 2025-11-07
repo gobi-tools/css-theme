@@ -9,7 +9,7 @@
   <title>Buttons</title>
 
   <link rel="stylesheet" href="../../src/theme.css">
-  <!-- <link rel="stylesheet" href="../../src/theme.bold.css"> -->
+  <link rel="stylesheet" href="../../src/theme.writing.css">
 </head>
 
 <body>
@@ -52,20 +52,179 @@
       </section>
 
       <section>
-        <h2>Button Size</h2>
-        <p>
-          <small><button>Small</button></small>
-          <small><button type="reset">Cancel</button></small>
-        </p>
-      </section>
-
-      <section>
         <h2>Grouped Buttons</h2>
 
+        <p>
         <div role="group">
           <button type="reset">Cancel</button>
           <button>Submit</button>
         </div>
+        </p>
+
+        <p>
+        <div role="group">
+          <button>Option 1</button>
+          <button>Option 2</button>
+          <button>Option 3</button>
+          <button class="success">Option 4</button>
+        </div>
+        </p>
+
+        <p>
+        <div role="group">
+          <button type="reset">Option 1</button>
+          <button type="reset">Option 2</button>
+          <button type="reset">Option 3</button>
+          <button type="reset">Option 4</button>
+        </div>
+        <p>
+      </section>
+
+      <section>
+        <h2>Buttons with left icon and right text</h2>
+        <p>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-house-icon lucide-house">
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            </svg>
+            <span>
+              Home
+            </span>
+          </button>
+          <button type="reset">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user-round-plus-icon lucide-user-round-plus">
+              <path d="M2 21a8 8 0 0 1 13.292-6" />
+              <circle cx="10" cy="8" r="5" />
+              <path d="M19 16v6" />
+              <path d="M22 19h-6" />
+            </svg>
+            <span>
+              Profile
+            </span>
+          </button>
+          <button type="reset" class="error">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-x-icon lucide-x">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+            <span>
+              Cancel
+            </span>
+          </button>
+        </p>
+
+        <p role="group">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-house-icon lucide-house">
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            </svg>
+            <span>
+              Home
+            </span>
+          </button>
+          <button type="reset">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user-round-plus-icon lucide-user-round-plus">
+              <path d="M2 21a8 8 0 0 1 13.292-6" />
+              <circle cx="10" cy="8" r="5" />
+              <path d="M19 16v6" />
+              <path d="M22 19h-6" />
+            </svg>
+            <span>
+              Profile
+            </span>
+          </button>
+          <button type="reset">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-rss-icon lucide-rss">
+              <path d="M4 11a9 9 0 0 1 9 9" />
+              <path d="M4 4a16 16 0 0 1 16 16" />
+              <circle cx="5" cy="19" r="1" />
+            </svg>
+            <span>
+              RSS
+            </span>
+          </button>
+        </p>
+      </section>
+
+      <section>
+        <h2>Buttons with right icon and left text</h2>
+        <p>
+          <button>
+            <span>
+              Home
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-house-icon lucide-house">
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            </svg>
+          </button>
+          <button class="success" type="reset">
+            <span>
+              Play
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-skip-forward-icon lucide-skip-forward">
+              <path d="M21 4v16" />
+              <path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z" />
+            </svg>
+          </button>
+        </p>
+      </section>
+
+      <section>
+        <h2>Icon buttons</h2>
+
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-rss-icon lucide-rss">
+            <path d="M4 11a9 9 0 0 1 9 9" />
+            <path d="M4 4a16 16 0 0 1 16 16" />
+            <circle cx="5" cy="19" r="1" />
+          </svg>
+        </button>
+
+        <button type="reset">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-bolt-icon lucide-bolt">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+            <circle cx="12" cy="12" r="4" />
+          </svg>
+        </button>
+
+        <button type="reset" class="error">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-folder-git-icon lucide-folder-git">
+            <circle cx="12" cy="13" r="2" />
+            <path
+              d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+            <path d="M14 13h3" />
+            <path d="M7 13h3" />
+          </svg>
+        </button>
       </section>
     </article>
   </main>

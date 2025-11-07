@@ -40,23 +40,35 @@
           </fieldset>
 
           <fieldset>
+            <legend>Search</legend>
+
+            <div role="group">
+              <button disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-search-icon lucide-search">
+                  <path d="m21 21-4.34-4.34" />
+                  <circle cx="11" cy="11" r="8" />
+                </svg>
+
+              </button>
+              <input type="search" placeholder="Search" />
+              <input type="submit" value="Search" />
+            </div>
+          </fieldset>
+
+          <fieldset>
             <legend>Options</legend>
 
             <div role="group">
-              <!-- <div> -->
-                <input type="checkbox" id="int_dev" name="interests" value="development">
-                <label for="int_dev">Development</label>
-              <!-- </div> -->
+              <input type="checkbox" id="int_dev" name="interests" value="development">
+              <label for="int_dev">Development</label>
 
-              <!-- <div> -->
-                <input type="checkbox" id="int_design" name="interests" value="design">
-                <label for="int_design">Design</label>
-              <!-- </div> -->
+              <input type="checkbox" id="int_design" name="interests" value="design">
+              <label for="int_design">Design</label>
 
-              <!-- <div> -->
-                <input type="checkbox" id="int_writing" name="interests" value="writing">
-                <label for="int_writing">Writing</label>
-              <!-- </div> -->
+              <input type="checkbox" id="int_writing" name="interests" value="writing">
+              <label for="int_writing">Writing</label>
             </div>
           </fieldset>
         </form>
