@@ -1114,6 +1114,10 @@ button:has(svg:only-child) {
     content: none;
   }
 
+  nav ul>li:hover>ul {
+    display: none;
+  }
+
   /* other elements --- */
   main {
     margin-bottom: calc(var(--botton-nav-height-mobile) + var(--space-5));
