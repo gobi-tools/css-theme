@@ -822,6 +822,7 @@ nav ul:first-child>li {
   display: inline-block;
   padding: var(--space-2);
   padding-inline: var(--space-3);
+  margin-bottom: 0;
 }
 
 nav ul:first-child>li:first-child {
@@ -856,6 +857,12 @@ nav ul>li:hover>ul {
   display: block;
 }
 
+li:has(> ul)>a::after {
+  content: "▼";
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
 /* ---------------------------------- */
 /* custom elements ------------------ */
 /* ---------------------------------- */
@@ -874,12 +881,6 @@ nav ul>li:hover>ul {
 
 [role=row]>div {
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  [role=row] {
-    flex-direction: column;
-  }
 }
 
 /* group --------------------------- */
@@ -984,24 +985,25 @@ div[role=note]>img:first-child {
 
 /* icons -------------------------- */
 
-button > svg {
+button>svg {
   width: var(--font-size-base);
   height: var(--font-size-base);
   transform: translateY(-0.075em);
 }
-mark > svg {
+
+mark>svg {
   width: var(--font-size-sm);
   height: var(--font-size-sm);
   transform: translateY(0.05em);
 }
 
-a > svg {
+a>svg {
   width: var(--font-size-xl);
   height: var(--font-size-xl);
   transform: translateY(-0.075em);
 }
 
-[role=tablist] label > svg {
+[role=tablist] label>svg {
   width: var(--font-size-xl);
   height: var(--font-size-xl);
   transform: translateY(-0.05em);
@@ -1027,4 +1029,90 @@ svg:has(+*) {
 button:has(svg:only-child) {
   padding-left: var(--space-2-25);
   padding-right: var(--space-2-25);
+}
+
+/* ---------------------------------- */
+/* mobile support ------------------ */
+/* ---------------------------------- */
+
+.only-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* classes ----- */
+  
+  .only-mobile {
+    display: block;
+  }
+
+  /* row -------------- */
+  [role=row] {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  /* navigation (other) ------ */
+
+  nav>ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul:first-child>li {
+    padding-left: 0;
+  }
+
+  /* navigation (top) -------- */
+
+  :is(body, header)>nav:first-of-type {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: var(--color-primary) !important;
+  }
+
+  :is(body, header)>nav:first-of-type ul {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    flex-direction: row;
+  }
+
+  :is(body, header)>nav:first-of-type ul>li {
+    padding-inline: var(--space-3);
+  }
+
+  :is(body, header)>nav:first-of-type ul:first-child>li {
+    width: 100% !important;
+    margin-top: var(--space-2) !important;
+    margin-bottom: var(--space-2) !important;
+  }
+
+  :is(body, header)>nav:first-of-type ul:first-child>li:not(:has(a:only-child)) {
+    display: none !important;
+  }
+
+  :is(body, header)>nav:first-of-type ul:first-child>li>a {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-txt-on-dark);
+  }
+
+  :is(body, header)>nav:first-of-type ul:first-child>li:first-child {
+    padding-inline: var(--space-3) !important;
+  }
+
+  li:has(> ul)>a::after {
+    content: none;
+  }
+
+  /* other elements --- */
+  main {
+    margin-bottom: var(--space-6);
+  }
+
+  footer {
+    display: none;
+  }
 }
