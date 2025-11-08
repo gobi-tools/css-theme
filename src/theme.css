@@ -742,7 +742,9 @@ td {
   padding-bottom: var(--space-2);
   border-bottom: 1px solid var(--color-accent-dark-1);
 }
-tr:last-child > th, tr:last-child > td {
+
+tr:last-child>th,
+tr:last-child>td {
   border-bottom: none;
 }
 
@@ -861,7 +863,11 @@ nav ul>li:hover>ul {
   display: block;
 }
 
-li:has(> ul)>a::after {
+nav li:has(> ul)>a {
+  pointer-events: none;
+}
+
+nav li:has(> ul)>a::after {
   content: "▼";
   font-size: 0.8em;
   opacity: 0.7;
@@ -1053,6 +1059,7 @@ button:has(svg:only-child) {
     flex-direction: column;
     align-items: start;
   }
+
   nav ul:first-child>li {
     padding-left: 0;
   }
@@ -1099,7 +1106,11 @@ button:has(svg:only-child) {
     padding-inline: var(--space-3) !important;
   }
 
-  li:has(> ul)>a::after {
+  nav li:has(> ul)>a {
+    pointer-events: initial;
+  }
+
+  nav li:has(> ul)>a::after {
     content: none;
   }
 
