@@ -1039,16 +1039,7 @@ button:has(svg:only-child) {
 /* mobile support ------------------ */
 /* ---------------------------------- */
 
-.only-mobile {
-  display: none;
-}
-
 @media (max-width: 768px) {
-  /* classes ----- */
-
-  .only-mobile {
-    display: block;
-  }
 
   /* row -------------- */
   [role=row] {
