@@ -669,6 +669,10 @@ textarea {
   resize: vertical;
 }
 
+label {
+  margin-right: var(--space-3);
+}
+
 /* buttons ------------------------- */
 
 button {
@@ -880,7 +884,6 @@ nav ul>li:hover>ul {
 }
 
 [role=group]>* {
-  width: 100%;
   align-items: center;
   margin-bottom: 0;
 }

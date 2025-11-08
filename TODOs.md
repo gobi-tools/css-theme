@@ -1,18 +1,20 @@
 - [x] dl, dt, dd (description list)
 - [x] ul, li, etc (bulleted lists)
-- [ ] icon 
+- [x] icon 
   - [x] icons & text on buttons
   - [x] single icons on buttons
   - [x] icons on tags
   - [x] icons on navigation 
   - [x] icons on tabs
   - [x] independent icons
+- [ ] better flex support based on https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
+- [ ] think about mobile in terms of https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 - [ ] proper mobile support
 - [ ] breadcrumbs
 - [ ] pagination
 - [ ] mobile navigation
 - [x] top navigation
 - [ ] left navigation or lists or summary/details
-- [ ] think about mobile in terms of https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 - [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
 - [x][bug] table inside a "note" seems to skew the width of the whole page ---> it's just the scrollbar
+- [ ] form validation
