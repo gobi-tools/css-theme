@@ -876,6 +876,12 @@ nav ul>li:hover>ul {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  [role=row] {
+    flex-direction: column;
+  }
+}
+
 /* group --------------------------- */
 
 [role=group] {
