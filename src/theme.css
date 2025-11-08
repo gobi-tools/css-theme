@@ -19,6 +19,7 @@
   --space-6: 3rem;
   --min-elem-height: 41.48px;
   --small-elem-height: 26px;
+  --botton-nav-height-mobile: 77px;
   /* ---------------------- */
   /* theme                  */
   /* ---------------------- */
@@ -1041,7 +1042,7 @@ button:has(svg:only-child) {
 
 @media (max-width: 768px) {
   /* classes ----- */
-  
+
   .only-mobile {
     display: block;
   }
@@ -1065,6 +1066,7 @@ button:has(svg:only-child) {
   /* navigation (top) -------- */
 
   :is(body, header)>nav:first-of-type {
+    height: var(--botton-nav-height-mobile);
     position: fixed !important;
     bottom: 0 !important;
     left: 0 !important;
@@ -1109,7 +1111,7 @@ button:has(svg:only-child) {
 
   /* other elements --- */
   main {
-    margin-bottom: var(--space-6);
+    margin-bottom: calc(var(--botton-nav-height-mobile) + var(--space-5));
   }
 
   footer {
