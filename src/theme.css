@@ -1077,6 +1077,7 @@ button:has(svg:only-child) {
 
   :is(body, header)>nav:first-of-type ul {
     width: 100% !important;
+    height: var(--botton-nav-height-mobile);
     margin-bottom: 0 !important;
     margin-top: 0 !important;
     flex-direction: row;
@@ -1088,8 +1089,15 @@ button:has(svg:only-child) {
 
   :is(body, header)>nav:first-of-type ul:first-child>li {
     width: 100% !important;
-    margin-top: var(--space-2) !important;
-    margin-bottom: var(--space-2) !important;
+    height: var(--botton-nav-height-mobile);
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  :is(body, header)>nav:first-of-type ul:first-child>li[data-selected="true"] {
+    background: var(--color-primary-dark-1);
   }
 
   :is(body, header)>nav:first-of-type ul:first-child>li:not(:has(a:only-child)) {
