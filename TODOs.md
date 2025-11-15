@@ -21,5 +21,5 @@
 - [x][bug] table inside a "note" seems to skew the width of the whole page ---> it's just the scrollbar
 - [ ] form validation
 - [ ] animations!
-- [ ][bug] on real mobile safari & chrome inputs are very thin
+- [x][bug] on real mobile safari & chrome inputs are very thin
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered

@@ -650,6 +650,9 @@ textarea {
   font-size: 500;
   min-height: var(--min-elem-height);
 }
+select {
+  height: var(--min-elem-height);
+}
 
 input[type=checkbox],
 input[type=radio] {
