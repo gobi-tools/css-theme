@@ -22,4 +22,4 @@
 - [ ] form validation
 - [ ] animations!
 - [ ][bug] on real mobile safari & chrome inputs are very thin
-- [ ][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
+- [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
