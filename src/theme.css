@@ -302,6 +302,7 @@ main {
 /* alignment classes ---------------- */
 
 .align-center {
+  justify-content: center;
   text-align: center;
 }
 
