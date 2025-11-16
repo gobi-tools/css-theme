@@ -32,6 +32,7 @@
   --line-height-head: 1.25;
   --letter-spacing-head: -0.01em;
   --font-size-base: 1rem;
+  --font-size-xsm: 0.8em;
   --font-size-sm: 0.9em;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
@@ -1097,7 +1098,6 @@ button:has(svg:only-child) {
 
   nav ul:first-child>li {
     padding-left: 0;
-    width: 100%;
   }
 
   nav ul>li>ul {
@@ -1114,18 +1114,19 @@ button:has(svg:only-child) {
   nav[role=menu]>ul {
     flex-direction: row;
     margin: var(--space-1);
+    justify-content: center;
   }
 
   nav[role=menu]>ul>li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: 0 !important;
-    flex-grow: 1;
+    padding-inline: var(--space-4);
   }
 
   nav[role=menu]>ul>li>a {
     flex-direction: column;
+    font-size: var(--font-size-xsm);
   }
 
   nav[role=menu] li:has(> ul)>a {
@@ -1152,5 +1153,18 @@ button:has(svg:only-child) {
 
   footer {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* menu */
+
+  nav[role=menu]>ul {
+    justify-content: initial;
+  }
+
+  nav[role=menu]>ul>li {
+    flex-grow: 1;
+    padding-inline: 0;
   }
 }
