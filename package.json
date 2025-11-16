@@ -1,0 +1,14 @@
+{
+ "name": "css-theme",
+ "version": "1.0.0",
+ "type": "module",
+ "scripts": {
+  "build": "css-minify -d src/ -o /dist"
+ },
+ "keywords": [],
+ "author": "Gabriel Coman",
+ "license": "MIT",
+ "devDependencies": {
+  "css-minify": "^2.1.0"
+ }
+}
