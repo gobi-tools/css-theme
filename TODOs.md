@@ -9,12 +9,15 @@
   - [x] independent icons
 - [x] better flex support based on https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 - [x] think about mobile in terms of https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
-- [ ] proper mobile support
+- [x] proper mobile support
 - [ ] breadcrumbs
 - [ ] pagination
-- [x] mobile navigation
-  - [ ] navigation item selection
-  - [ ] non-top-level navigation on mobile should be fully expanded (?)
+- [x] navigation
+  - [x] standard - should be horizontal (with icons, sub-menus, etc)
+  - [x] mobile - shoild be vertical (with no sub-menus)
+- [x] menus -> another from of navigation
+  - [x] standard - should be horizontal, top level, and bold 
+  - [x] mobile - should be the classic mobile bottom nav
 - [x] top navigation
 - [ ] left navigation or lists or summary/details
 - [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
