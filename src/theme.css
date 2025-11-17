@@ -770,6 +770,7 @@ pre>code,
 blockquote {
   padding: var(--space-3);
   text-wrap: auto;
+  word-wrap: break-word;
 }
 
 mark,

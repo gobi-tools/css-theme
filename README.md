@@ -10,7 +10,7 @@ To setup, you can run
 npm i 
 ```
 
-provided you have [Node](https://nodejs.org/en)/[NPM](https://www.npmjs.com/) installed.
+provided you have [Node](https://nodejs.org/en) / [NPM](https://www.npmjs.com/) installed.
 
 To build, you can run
 
