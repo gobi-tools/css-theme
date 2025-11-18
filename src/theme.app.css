@@ -78,3 +78,6 @@ button, input[type=submit] {
 blockquote {
   border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
+pre>code{
+  border: none;
+}
