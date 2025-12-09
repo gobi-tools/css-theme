@@ -155,12 +155,12 @@ summary {
 
 h1 {
   margin-top: var(--space-6);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 
 h2 {
   margin-top: var(--space-5);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-4);
 }
 
 h3,
@@ -168,11 +168,7 @@ h4,
 h5,
 h6 {
   margin-top: var(--space-4);
-  margin-bottom: var(--space-2);
-}
-
-p:has(+p) {
-  margin-bottom: 0;
+  margin-bottom: var(--space-4);
 }
 
 p,
@@ -183,13 +179,16 @@ ol {
 }
 
 ul li {
-  margin-bottom: var(--space-2-5);
+  margin-bottom: var(--space-1);
 }
 
 figure,
-blockquote,
 table {
-  margin: var(--space-3) 0;
+  margin: var(--space-5) 0;
+}
+
+blockquote {
+  margin: var(--space-2) 0;
 }
 
 pre {
@@ -721,7 +720,7 @@ details> :not(summary) {
 
 ul,
 ol {
-  margin-left: var(--space-3);
+  margin-left: var(--space-5);
 }
 
 /* table */
@@ -979,6 +978,7 @@ div[role=note]>img:first-child {
   z-index: 10;
   /* @todo: here? */
   padding-inline: var(--space-3);
+  padding-top: var(--space-2);
   background: var(--color-bg);
 }
 
