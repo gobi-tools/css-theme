@@ -222,6 +222,13 @@ footer {
   margin-bottom: var(--space-5);
 }
 
+main {
+  margin-top: var(--space-5);
+}
+main > *, main > * * {
+  margin-top: var(--space-0);
+}
+
 hr {
   margin-top: var(--space-4);
   margin-bottom: var(--space-4);

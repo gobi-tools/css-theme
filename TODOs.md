@@ -32,5 +32,5 @@
   - [ ] try simpler tabs
 - [x][bug] on real mobile safari & chrome inputs are very thin
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
-- [ ] layout issues
-  - [ ] in the "app" layout, there is no vertical space between the nav & the content
+- [ ][bugs] layout issues
+  - [x] in the "app" layout, there is no vertical space between the nav & the content
