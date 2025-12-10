@@ -29,8 +29,11 @@
 - [ ] code highlight
 - [ ] tabs 
   - [x] compelx tabs 
+  - [ ] tabs on mobile
+  - [ ] tab top padding nok
   - [ ] try simpler tabs
 - [x][bug] on real mobile safari & chrome inputs are very thin
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
 - [ ][bugs] layout issues
   - [x] in the "app" layout, there is no vertical space between the nav & the content
+  - [ ] should sections have more bottom spacing (helps readability in text-dense pages)?
