@@ -117,6 +117,7 @@
   border-spacing: 0;
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 header,
@@ -798,6 +799,7 @@ hr {
 /* asides ----------------------- */
 
 aside {
+  container-type: inline-size;
   min-width: 200px;
 }
 
@@ -1079,6 +1081,25 @@ button:has(svg:only-child) {
 }
 
 /* ---------------------------------- */
+/* container support ---------------- */
+/* only <aside> works atm ----------- */
+/* ---------------------------------- */
+
+@container (max-width: 768px) { 
+  /* navigation ------ */
+
+  nav>ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav ul:first-child>li {
+    padding-left: var(--space-0);
+    padding-bottom: var(--space-0);
+  }
+}
+
+/* ---------------------------------- */
 /* mobile support ------------------ */
 /* ---------------------------------- */
 
@@ -1098,7 +1119,8 @@ button:has(svg:only-child) {
   }
 
   nav ul:first-child>li {
-    padding-left: 0;
+    padding-left: var(--space-0);
+    padding-bottom: var(--space-0);
   }
 
   nav ul>li>ul {
@@ -1154,6 +1176,11 @@ button:has(svg:only-child) {
 
   footer {
     display: none;
+  }
+
+  aside {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-3);
   }
 }
 

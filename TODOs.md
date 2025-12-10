@@ -15,15 +15,22 @@
 - [x] navigation
   - [x] standard - should be horizontal (with icons, sub-menus, etc)
   - [x] mobile - shoild be vertical (with no sub-menus)
+  - [ ] selected
 - [x] menus -> another from of navigation
   - [x] standard - should be horizontal, top level, and bold 
   - [x] mobile - should be the classic mobile bottom nav
+  - [ ] selected
 - [x] top navigation
-- [ ] left navigation or lists or summary/details
+- [x] left navigation or lists or summary/details
 - [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
 - [x][bug] table inside a "note" seems to skew the width of the whole page ---> it's just the scrollbar
 - [ ] form validation
 - [ ] animations
 - [ ] code highlight
+- [ ] tabs 
+  - [x] compelx tabs 
+  - [ ] try simpler tabs
 - [x][bug] on real mobile safari & chrome inputs are very thin
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
+- [ ] layout issues
+  - [ ] in the "app" layout, there is no vertical space between the nav & the content
