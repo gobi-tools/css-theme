@@ -230,7 +230,9 @@ section {
 main {
   margin-top: var(--space-5);
 }
-main > *, main > * * {
+
+main>*,
+main>* * {
   margin-top: var(--space-0);
 }
 
@@ -664,6 +666,7 @@ textarea {
   font-size: 500;
   min-height: var(--min-elem-height);
 }
+
 select {
   height: var(--min-elem-height);
 }
@@ -689,7 +692,7 @@ textarea {
 }
 
 label {
-  margin-right: var(--space-3);
+  margin-right: var(--space-4);
 }
 
 /* buttons ------------------------- */
@@ -918,6 +921,7 @@ nav li:has(> ul)>a::after {
   width: 100%;
   margin-bottom: var(--space-4);
 }
+
 [role=row].small-gap>div {
   margin-bottom: var(--space-2);
 }
@@ -937,6 +941,11 @@ nav li:has(> ul)>a::after {
 [role=group]>:is(input[type=submit], button, mark) {
   width: auto;
   align-self: flex-end;
+}
+
+[role=group]>input[type=checkbox],
+[role=group]>input[type=radio] {
+  margin-right: var(--space-2);
 }
 
 [role=group]>:not(:first-child) {
@@ -1101,7 +1110,7 @@ button:has(svg:only-child) {
 /* only <aside> works atm ----------- */
 /* ---------------------------------- */
 
-@container (max-width: 768px) { 
+@container (max-width: 768px) {
   /* navigation ------ */
 
   nav>ul {

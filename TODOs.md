@@ -28,8 +28,8 @@
 - [ ] forms
   - [x] normal
   - [x] grouped
-    - [ ] increase horz spacing by a bit
-    - [ ] add an example for radio
+    - [x] increase horz spacing by a bit
+    - [x] add an example for radio
   - [ ] validation states
 - [ ] animations
 - [ ] code highlight
@@ -42,5 +42,5 @@
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
 - [ ][bugs] layout issues
   - [x] in the "app" layout, there is no vertical space between the nav & the content
-  - [-] should sections have more bottom spacing (helps readability in text-dense pages)?
+  - [x] should sections have more bottom spacing (helps readability in text-dense pages)?
   - [ ] complex card content does not seem to have top margin anymore ... 
