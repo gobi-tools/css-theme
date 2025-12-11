@@ -1039,7 +1039,7 @@ div[role=note]>img:first-child {
 
 /* menu ---------------- */
 
-nav[role=menu] {
+/* nav[role=menu] {
   position: fixed;
   width: 100%;
   background: var(--color-bg);
@@ -1056,7 +1056,7 @@ nav[role=menu]>.wide {
 
 nav[role=menu]+* {
   margin-top: calc(var(--botton-nav-height-mobile) + var(--space-3));
-}
+} */
 
 /* icons -------------------------- */
 
@@ -1154,6 +1154,7 @@ button:has(svg:only-child) {
   }
 
   nav ul:first-child>li {
+    padding-left: var(--space-0);
     padding-bottom: var(--space-0);
   }
 
@@ -1164,6 +1165,9 @@ button:has(svg:only-child) {
   /* menu -------- */
 
   nav[role=menu] {
+    position: fixed;
+    width: 100%;
+    background: var(--color-bg);
     bottom: 0;
     padding: 0;
     border-top: 1px solid light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
