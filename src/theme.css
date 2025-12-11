@@ -231,8 +231,7 @@ main {
   margin-top: var(--space-5);
 }
 
-main>*,
-main>* * {
+main>* {
   margin-top: var(--space-0);
 }
 

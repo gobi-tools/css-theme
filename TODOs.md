@@ -36,11 +36,14 @@
 - [ ] tabs 
   - [x] compelx tabs 
   - [ ] tabs on mobile
-  - [ ] tab top padding nok
+  - [x] tab top padding nok
   - [ ] try simpler tabs
+- [ ] cols & rows
+  - [x] basic implementation
+  - [ ] have it also depend on container width, not just mobile, for extra flexibility
 - [x][bug] on real mobile safari & chrome inputs are very thin
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
 - [ ][bugs] layout issues
   - [x] in the "app" layout, there is no vertical space between the nav & the content
   - [x] should sections have more bottom spacing (helps readability in text-dense pages)?
-  - [ ] complex card content does not seem to have top margin anymore ... 
+  - [x] complex card content does not seem to have top margin anymore ... 
