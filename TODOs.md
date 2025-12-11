@@ -23,8 +23,6 @@
   - [x] standard - should be horizontal, top level, and bold 
   - [x] mobile - should be the classic mobile bottom nav
   - [c] selected
-  - [ ] on smaller devices, when I have 5 tabs, it's not great
-    - and sometimes the tabs have varying widths 
 - [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
 - [x][bug] table inside a "note" seems to skew the width of the whole page ---> it's just the scrollbar
 - [ ] forms
@@ -49,3 +47,6 @@
   - [x] in the "app" layout, there is no vertical space between the nav & the content
   - [x] should sections have more bottom spacing (helps readability in text-dense pages)?
   - [x] complex card content does not seem to have top margin anymore ... 
+  - [ ] MENU on smaller devices, when I have 5 navigation menu tabs
+    - the last one won't appear
+    - and the widths are not consistent
