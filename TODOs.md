@@ -15,14 +15,16 @@
 - [x] navigation
   - [x] standard - should be horizontal (with icons, sub-menus, etc)
   - [x] mobile - shoild be vertical (with no sub-menus)
-  - [ ] selected
+  - [x] selected
   - [x] top navigation
   - [x] left navigation or lists or summary/details
   - [ ] navigation of various widths (super skinny, skinny, horizontal, etc)
 - [x] menus -> another from of navigation
   - [x] standard - should be horizontal, top level, and bold 
   - [x] mobile - should be the classic mobile bottom nav
-  - [ ] selected
+  - [c] selected
+  - [ ] on smaller devices, when I have 5 tabs, it's not great
+    - and sometimes the tabs have varying widths 
 - [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
 - [x][bug] table inside a "note" seems to skew the width of the whole page ---> it's just the scrollbar
 - [ ] forms

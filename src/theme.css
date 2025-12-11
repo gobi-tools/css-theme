@@ -1037,27 +1037,6 @@ div[role=note]>img:first-child {
   display: block;
 }
 
-/* menu ---------------- */
-
-/* nav[role=menu] {
-  position: fixed;
-  width: 100%;
-  background: var(--color-bg);
-}
-
-nav[role=menu]>* {
-  margin-inline: var(--space-3);
-}
-
-nav[role=menu]>.medium,
-nav[role=menu]>.wide {
-  margin-inline: auto;
-}
-
-nav[role=menu]+* {
-  margin-top: calc(var(--botton-nav-height-mobile) + var(--space-3));
-} */
-
 /* icons -------------------------- */
 
 button>svg {
@@ -1141,6 +1120,7 @@ button:has(svg:only-child) {
 @media (max-width: 768px) {
 
   /* row -------------- */
+
   [role=row] {
     flex-direction: column;
     gap: var(--space-1);
@@ -1186,6 +1166,8 @@ button:has(svg:only-child) {
     padding-inline: var(--space-4) !important;
     padding-top: var(--space-3);
     padding-bottom: var(--space-2);
+    flex-grow: 1;
+    max-width: 100px;
   }
 
   nav[role=menu]>ul>li>a {
@@ -1226,14 +1208,14 @@ button:has(svg:only-child) {
 }
 
 @media (max-width: 480px) {
-  /* menu */
-
   nav[role=menu]>ul {
     justify-content: initial;
   }
 
   nav[role=menu]>ul>li {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    width: 100%;
+    max-width: 100%;
     padding-inline: 0;
   }
 }
