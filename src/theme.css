@@ -900,6 +900,10 @@ nav li:has(> ul)>a::after {
   opacity: 0.7;
 }
 
+nav ul>li[aria-selected="true"] a {
+  color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
+}
+
 /* ---------------------------------- */
 /* custom elements ------------------ */
 /* ---------------------------------- */
@@ -977,7 +981,6 @@ div[role=note]>img:first-child {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: var(--space-2);
-  /* @todo: here? */
   background: linear-gradient(0deg, var(--color-bg) 1rem, light-dark(var(--color-secondary-light-2), var(--color-secondary)) 0%);
   border-color: var(--color-secondary-light-1);
 }
@@ -988,7 +991,6 @@ div[role=note]>img:first-child {
   align-items: center;
   vertical-align: middle;
   cursor: pointer;
-  /* @todo: here? */
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
   padding-inline: var(--space-3);
@@ -1007,7 +1009,6 @@ div[role=note]>img:first-child {
   width: 100%;
   display: none;
   z-index: 10;
-  /* @todo: here? */
   padding-inline: var(--space-3);
   padding-top: var(--space-2);
   background: var(--color-bg);
@@ -1041,7 +1042,7 @@ div[role=note]>img:first-child {
 nav[role=menu] {
   position: fixed;
   width: 100%;
-  background: var(--color-primary);
+  background: var(--color-bg);
 }
 
 nav[role=menu]>* {
@@ -1051,10 +1052,6 @@ nav[role=menu]>* {
 nav[role=menu]>.medium,
 nav[role=menu]>.wide {
   margin-inline: auto;
-}
-
-nav[role=menu]>ul>li>a {
-  color: var(--color-txt-on-dark);
 }
 
 nav[role=menu]+* {
@@ -1129,6 +1126,7 @@ button:has(svg:only-child) {
 }
 
 @container(max-width: 1024px) {
+
   /* row -------------- */
   [role=row] {
     flex-direction: column;
@@ -1156,7 +1154,6 @@ button:has(svg:only-child) {
   }
 
   nav ul:first-child>li {
-    padding-left: var(--space-0);
     padding-bottom: var(--space-0);
   }
 
@@ -1169,11 +1166,12 @@ button:has(svg:only-child) {
   nav[role=menu] {
     bottom: 0;
     padding: 0;
+    border-top: 1px solid light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
   }
 
   nav[role=menu]>ul {
     flex-direction: row;
-    margin: var(--space-1);
+    margin: var(--space-0);
     justify-content: center;
   }
 
@@ -1181,7 +1179,9 @@ button:has(svg:only-child) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: var(--space-4);
+    padding-inline: var(--space-4) !important;
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-2);
   }
 
   nav[role=menu]>ul>li>a {
