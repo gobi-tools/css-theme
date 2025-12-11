@@ -906,6 +906,11 @@ nav li:has(> ul)>a::after {
 
 /* columns -------------------------- */
 
+div:has(>[role=row]) {
+  container-type: inline-size;
+  width: 100%;
+}
+
 [role=row] {
   display: flex;
   align-items: stretch;
@@ -1120,6 +1125,14 @@ button:has(svg:only-child) {
   nav ul:first-child>li {
     padding-left: var(--space-0);
     padding-bottom: var(--space-0);
+  }
+}
+
+@container(max-width: 1024px) {
+  /* row -------------- */
+  [role=row] {
+    flex-direction: column;
+    gap: var(--space-1);
   }
 }
 

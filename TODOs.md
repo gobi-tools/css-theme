@@ -40,7 +40,7 @@
   - [ ] try simpler tabs
 - [ ] cols & rows
   - [x] basic implementation
-  - [ ] have it also depend on container width, not just mobile, for extra flexibility
+  - [x] have it also depend on container width, not just mobile, for extra flexibility
 - [x][bug] on real mobile safari & chrome inputs are very thin
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
 - [ ][bugs] layout issues
