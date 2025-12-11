@@ -17,6 +17,7 @@
   --space-4: 1.5rem;
   --space-5: 2rem;
   --space-6: 3rem;
+  --space-7: 6rem;
   --min-elem-height: 41.48px;
   --small-elem-height: 26px;
   --botton-nav-height-mobile: 77px;
@@ -902,7 +903,7 @@ nav li:has(> ul)>a::after {
 [role=row] {
   display: flex;
   align-items: stretch;
-  gap: var(--space-6);
+  gap: var(--space-4);
 }
 
 [role=row].small-gap {
@@ -911,6 +912,10 @@ nav li:has(> ul)>a::after {
 
 [role=row]>div {
   width: 100%;
+  margin-bottom: var(--space-4);
+}
+[rolw=row].small-gap>div {
+  margin-bottom: var(--space-2);
 }
 
 /* group --------------------------- */

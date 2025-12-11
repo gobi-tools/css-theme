@@ -16,15 +16,21 @@
   - [x] standard - should be horizontal (with icons, sub-menus, etc)
   - [x] mobile - shoild be vertical (with no sub-menus)
   - [ ] selected
+  - [x] top navigation
+  - [x] left navigation or lists or summary/details
+  - [ ] navigation of various widths (super skinny, skinny, horizontal, etc)
 - [x] menus -> another from of navigation
   - [x] standard - should be horizontal, top level, and bold 
   - [x] mobile - should be the classic mobile bottom nav
   - [ ] selected
-- [x] top navigation
-- [x] left navigation or lists or summary/details
 - [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
 - [x][bug] table inside a "note" seems to skew the width of the whole page ---> it's just the scrollbar
-- [ ] form validation
+- [ ] forms
+  - [x] normal
+  - [x] grouped
+    - [ ] increase spacing by a bit
+    - [ ] add an example for radio
+  - [ ] validation states
 - [ ] animations
 - [ ] code highlight
 - [ ] tabs 
