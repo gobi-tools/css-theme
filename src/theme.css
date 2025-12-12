@@ -1032,6 +1032,13 @@ button:has(svg:only-child) {
   padding-right: var(--space-2-25);
 }
 
+.only-mobile {
+  display: none;
+}
+.only-desktop {
+  display: block;
+}
+
 /* ---------------------------------- */
 /* container support ---------------- */
 /* only <aside> works atm ----------- */
@@ -1081,6 +1088,13 @@ button:has(svg:only-child) {
 /* ---------------------------------- */
 
 @media (max-width: 768px) {
+
+  .only-mobile {
+    display: block;
+  }
+  .only-desktop {
+    display: none;
+  }
 
   /* row -------------- */
 
