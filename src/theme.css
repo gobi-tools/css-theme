@@ -138,6 +138,10 @@ pre>code {
   text-align: left;
 }
 
+pre {
+  padding: 0 !important;
+}
+
 details {
   overflow: hidden;
 }

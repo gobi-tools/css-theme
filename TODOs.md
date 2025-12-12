@@ -50,3 +50,4 @@
   - [ ] MENU on smaller devices, when I have 5 navigation menu tabs
     - the last one won't appear
     - and the widths are not consistent
+  - [ ] when I'm in a paragraph that has the "align-center" class, grouped buttons don't work
