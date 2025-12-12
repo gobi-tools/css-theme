@@ -93,11 +93,3 @@ div[role=note],
 details[open] {
   border-color: var(--color-accent-dark-1);
 }
-
-[role=tablist] {
-  background: linear-gradient(0deg, var(--color-bg) 1rem, var(--color-accent-dark-1) 0%);
-  border-color: var(--color-accent-dark-1);
-}
-[role=tablist] input[type=radio]:not(:checked)+label {
-  color: var(--color-txt-on-dark);
-}

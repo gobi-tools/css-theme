@@ -8,13 +8,13 @@
   <title>Layout - App</title>
 
   <link rel="stylesheet" href="../../src/theme.css">
+  <!-- <link rel="stylesheet" href="../../src/theme.bold.css"> -->
 </head>
 
 <body>
   <nav class="wide">
     <ul>
-      <!-- <li><b>Logo</b></li> -->
-      <li>
+      <li aria-selected="true">
         <a href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -67,7 +67,7 @@
     <div role="row">
       <aside>
         <b>Menu</b>
-        <nav>
+        <nav role="tablist">
           <ul>
             <li>
               <a href="">
@@ -82,7 +82,7 @@
                 <span>Service endpoints
               </a>
             </li>
-            <li>
+            <li aria-selected="true">
               <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
