@@ -47,11 +47,11 @@
     - [x] .medium -> delete
     - [x] .wide -> .is-wide
     - [x] .align-center -> .is-pulled-center
-    - [ ] .float-right -> .is-pulled-right
+    - [x] .float-right -> .is-pulled-right
     - [ ] .success -> .is-success
     - [ ] .error -> .is-danger
-    - [ ] .only-mobile -> .is-mobile-only
-    - [ ] .only-desktop -> .is-desktop-only
+    - [x] .only-mobile -> .is-mobile-only
+    - [x] .only-desktop -> .is-desktop-only
     - [ ] .small-gap -> .has-small-gap
     - [ ] NEW -> .has-bg-primary
     - [ ] NEW -> .has-bg-secondary

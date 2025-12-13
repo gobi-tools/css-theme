@@ -1021,11 +1021,11 @@ button:has(svg:only-child) {
   padding-right: var(--space-2-25);
 }
 
-.only-mobile {
+.is-mobile-only {
   display: none !important;
 }
 
-.only-desktop {
+.is-desktop-only {
   display: block !important;
 }
 
@@ -1078,11 +1078,11 @@ button:has(svg:only-child) {
 
 @media (max-width: 768px) {
 
-  .only-mobile {
+  .is-mobile-only {
     display: block !important;
   }
 
-  .only-desktop {
+  .is-desktop-only {
     display: none !important;
   }
 
