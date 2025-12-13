@@ -44,7 +44,7 @@
 - [ ] CLASS NAMES
   - [ ] come up with more unified / meaningful class names
     - [x] .banner -> .is-hero  -> or role="banner"?
-    - [x] .medium -> delete
+    - [x] .medium -> DELETE
     - [x] .wide -> .is-wide
     - [x] .align-center -> .is-pulled-center
     - [x] .float-right -> .is-pulled-right
@@ -52,7 +52,7 @@
     - [ ] .error -> .is-danger
     - [x] .only-mobile -> .is-mobile-only
     - [x] .only-desktop -> .is-desktop-only
-    - [ ] .small-gap -> .has-small-gap
+    - [x] .small-gap -> DELETE
     - [ ] NEW -> .has-bg-primary
     - [ ] NEW -> .has-bg-secondary
     - [ ] NEW -> .has-bg-accent

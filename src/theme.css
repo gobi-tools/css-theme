@@ -915,17 +915,9 @@ div:has(>[role=row]) {
   gap: var(--space-4);
 }
 
-[role=row].small-gap {
-  gap: var(--space-2);
-}
-
 [role=row]>div {
   width: 100%;
   margin-bottom: var(--space-4);
-}
-
-[role=row].small-gap>div {
-  margin-bottom: var(--space-2);
 }
 
 /* group --------------------------- */
@@ -952,6 +944,10 @@ div:has(>[role=row]) {
 
 [role=group]>:not(:first-child) {
   border-left-width: 0;
+}
+
+[role=group]>[role=row]>div{
+  margin-bottom: 0;
 }
 
 /* notes ---------------------------- */
@@ -1088,7 +1084,7 @@ button:has(svg:only-child) {
 
   /* row -------------- */
 
-  [role=row] {
+  :not([role=group]) > [role=row] {
     flex-direction: column;
     gap: var(--space-1);
   }
