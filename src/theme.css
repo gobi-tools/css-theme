@@ -138,6 +138,11 @@ pre>code {
   text-align: left;
 }
 
+/* @todo: think of something better than this ... */
+header > :not(nav) {
+  padding-top: var(--space-6);
+}
+
 pre {
   padding: 0 !important;
 }
@@ -160,27 +165,23 @@ summary {
 /* vertical spacing -------------- */
 
 h1 {
-  margin-top: var(--space-6);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
 }
 
 h2 {
-  margin-top: var(--space-5);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
 }
 
 h3,
 h4,
 h5,
 h6 {
-  margin-top: var(--space-4);
   margin-bottom: var(--space-4);
 }
 
 p,
 ul,
 ol {
-  margin-top: var(--space-2);
   margin-bottom: var(--space-3);
 }
 
@@ -190,11 +191,11 @@ ul li {
 
 figure,
 table {
-  margin: var(--space-5) 0;
+  margin-bottom: var(--space-5);
 }
 
 blockquote {
-  margin: var(--space-2) 0;
+  margin-bottom: var(--space-4);
 }
 
 pre {
@@ -213,10 +214,6 @@ fieldset,
 details[open] {
   margin-bottom: var(--space-3);
 }
-
-/* button {
-  margin-bottom: var(--space-2);
-} */
 
 section,
 article,
@@ -301,7 +298,6 @@ figure>figure {
 
 .medium>*,
 .wide>* {
-  /* width: 100%; */
   width: auto;
 }
 
@@ -591,8 +587,7 @@ details {
   border-bottom-width: var(--border-bottom-width-details);
 }
 
-div[role=note]/*,
-[role=tablist]*/ {
+div[role=note] {
   border-radius: var(--border-radius-details);
   border-width: var(--border-width-details);
   border-style: var(--border-style-details);
@@ -734,6 +729,7 @@ summary {
 }
 
 details> :not(summary) {
+  padding-top: var(--space-2);
   padding-inline: var(--space-3);
 }
 
@@ -1008,12 +1004,6 @@ a>svg {
   transform: translateY(-0.075em);
 }
 
-/* [role=tablist] label>svg {
-  width: var(--font-size-xl);
-  height: var(--font-size-xl);
-  transform: translateY(-0.05em);
-} */
-
 svg {
   margin: 0;
   padding: 0;
@@ -1210,7 +1200,6 @@ button:has(svg:only-child) {
   }
 
   nav[role=menu]>ul>li {
-    /* flex-grow: 1; */
     width: 100%;
     max-width: 100%;
     padding-inline: 0;
