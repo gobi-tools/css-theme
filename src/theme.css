@@ -4,7 +4,6 @@
   /* ---------------------- */
   --rem: 12pt;
   --narrow-width: 800px;
-  --medium-width: 1100px;
   --wide-with: 1600px;
   --navpos: fixed;
   /* spacing */
@@ -277,29 +276,23 @@ figure>figure {
   width: auto;
 }
 
-.banner {
+.is-hero {
   max-width: none;
   margin-inline: 0;
   width: 100%;
 }
 
-.banner>* {
+.is-hero>* {
   width: min(100% - var(--space-6), var(--narrow-width));
   margin-inline: auto;
 }
 
-.medium {
-  width: min(100% - var(--space-6), var(--medium-width));
-  margin-inline: auto;
-}
-
-.wide {
+.is-wide {
   width: min(100% - var(--space-6), var(--wide-with));
   margin-inline: auto;
 }
 
-.medium>*,
-.wide>* {
+.is-wide>* {
   width: auto;
 }
 
