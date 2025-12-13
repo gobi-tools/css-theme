@@ -1050,7 +1050,7 @@ button:has(svg:only-child) {
 @container(max-width: 1024px) {
 
   /* row -------------- */
-  [role=row] {
+  :not([role=group]) > [role=row] {
     flex-direction: column;
     gap: var(--space-1);
   }
