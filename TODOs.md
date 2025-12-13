@@ -48,8 +48,8 @@
     - [x] .wide -> .is-wide
     - [x] .align-center -> .is-pulled-center
     - [x] .float-right -> .is-pulled-right
-    - [ ] .success -> .is-success
-    - [ ] .error -> .is-danger
+    - [x] .success -> .is-success
+    - [x] .error -> .is-danger
     - [x] .only-mobile -> .is-mobile-only
     - [x] .only-desktop -> .is-desktop-only
     - [x] .small-gap -> DELETE
@@ -67,3 +67,5 @@
     - and the widths are not consistent
   - [x] when I'm in a paragraph that has the "align-center" class, grouped buttons don't work
     - not a bug, just don't group things
+  - [ ] adding a bottom margin to the "row" might not
+    have been such a good idea ...
