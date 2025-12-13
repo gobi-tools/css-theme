@@ -238,8 +238,8 @@ main>* {
 }
 
 hr {
-  margin-top: var(--space-4);
-  margin-bottom: var(--space-4);
+  margin-top: var(--space-4) !important;
+  margin-bottom: var(--space-4) !important;
 }
 
 blockquote>:first-child {
