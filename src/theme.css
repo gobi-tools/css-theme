@@ -310,7 +310,7 @@ main {
 
 /* alignment classes ---------------- */
 
-.align-center {
+.is-pulled-center {
   justify-content: center;
   text-align: center;
 }

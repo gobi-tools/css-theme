@@ -46,7 +46,7 @@
     - [x] .banner -> .is-hero  -> or role="banner"?
     - [x] .medium -> delete
     - [x] .wide -> .is-wide
-    - [ ] .align-center -> .is-pulled-center
+    - [x] .align-center -> .is-pulled-center
     - [ ] .float-right -> .is-pulled-right
     - [ ] .success -> .is-success
     - [ ] .error -> .is-danger
