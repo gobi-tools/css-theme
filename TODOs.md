@@ -53,11 +53,11 @@
     - [x] .only-mobile -> .is-mobile-only
     - [x] .only-desktop -> .is-desktop-only
     - [x] .small-gap -> DELETE
-    - [ ] NEW -> .has-bg-primary
-    - [ ] NEW -> .has-bg-secondary
-    - [ ] NEW -> .has-bg-accent
-    - [ ] NEW -> .has-bg-success
-    - [ ] NEW -> .has-bg-error
+    - [ ] NEW -> .is-bg-primary
+    - [ ] NEW -> .is-bg-secondary
+    - [ ] NEW -> .is-bg-accent
+    - [ ] NEW -> .is-bg-success
+    - [ ] NEW -> .is-bg-error
   - [ ][bugs] layout issues
   - [x] in the "app" layout, there is no vertical space between the nav & the content
   - [x] should sections have more bottom spacing (helps readability in text-dense pages)?
