@@ -58,6 +58,8 @@
     - [ ] NEW -> .is-bg-accent
     - [ ] NEW -> .is-bg-success
     - [ ] NEW -> .is-bg-error
+    - [ ] NEW -> .is-rounded
+    - [ ] NEW -> .is-circle
   - [ ][bugs] layout issues
   - [x] in the "app" layout, there is no vertical space between the nav & the content
   - [x] should sections have more bottom spacing (helps readability in text-dense pages)?
