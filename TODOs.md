@@ -69,5 +69,5 @@
     - and the widths are not consistent
   - [x] when I'm in a paragraph that has the "align-center" class, grouped buttons don't work
     - not a bug, just don't group things
-  - [ ] adding a bottom margin to the "row" might not
-    have been such a good idea ...
+  - [x] adding a bottom margin to the "row" might not
+  - [ ] bottom padding for forms with row is bad
