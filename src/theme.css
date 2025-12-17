@@ -1169,9 +1169,9 @@ button:has(svg:only-child) {
 
   /* other elements --- */
 
-  nav[role=menu]+* {
-    margin-top: initial;
-  }
+  /* nav[role=menu]+* {
+    margin-top: initial; 
+  } */
 
   main {
     margin-bottom: calc(var(--botton-nav-height-mobile) + var(--space-5));
@@ -1182,7 +1182,6 @@ button:has(svg:only-child) {
   }
 
   aside {
-    /* margin-top: var(--space-4); */
     margin-bottom: var(--space-3);
   }
 }
