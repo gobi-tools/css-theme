@@ -70,4 +70,5 @@
   - [x] when I'm in a paragraph that has the "align-center" class, grouped buttons don't work
     - not a bug, just don't group things
   - [x] adding a bottom margin to the "row" might not
-  - [ ] bottom padding for forms with row is bad
+  - [x] bottom padding for forms with row is bad
+  - [ ] in layouts/01.article.html, on mobile, the <h1> at the top does not have top margin when maybe it should ...
