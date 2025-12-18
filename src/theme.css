@@ -660,7 +660,7 @@ select {
 
 input[type=checkbox],
 input[type=radio] {
-  margin-right: var(--space-1);
+  margin-right: var(--space-2);
 }
 
 input[type=submit] {
