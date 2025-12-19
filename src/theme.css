@@ -377,7 +377,8 @@ figcaption {
 }
 
 button,
-input[type=submit] {
+input[type=submit],
+input[type=reset] {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: -0.015em;
@@ -451,13 +452,15 @@ hr {
 }
 
 button,
-input[type=submit] {
+input[type=submit],
+input[type=reset] {
   background: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-txt-on-dark);
 }
 
-button[type=reset] {
+button[type=reset],
+input[type=reset] {
   background: var(--color-bg);
   color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
   border-color: var(--color-primary);
@@ -583,7 +586,7 @@ details {
   border-bottom-width: var(--border-bottom-width-details);
 }
 
-button {
+button, input[type=submit], input[type=reset] {
   border-style: solid;
   border-width: var(--border-width-action);
   border-radius: var(--border-radius-action);
@@ -620,7 +623,8 @@ textarea {
 
 fieldset,
 select,
-input[type=submit] {
+input[type=submit],
+input[type=reset] {
   border-bottom-width: var(--border-bottom-width-input);
 }
 
@@ -683,7 +687,9 @@ label {
 
 /* buttons ------------------------- */
 
-button {
+button,
+input[type=submit],
+input[type=reset] {
   min-height: var(--min-elem-height);
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
@@ -699,7 +705,8 @@ button {
 }
 
 button:hover,
-input[type=submit]:hover {
+input[type=submit]:hover,
+input[type=reset]:hover {
   filter: brightness(90%);
 }
 
@@ -709,7 +716,8 @@ input[type=submit]:hover {
 }
 
 *:hover:disabled,
-input[type=submit]:hover:disabled {
+input[type=submit]:hover:disabled,
+input[type=reset]:hover:disabled {
   filter: opacity(50%);
 }
 
@@ -932,7 +940,7 @@ nav ul>li[aria-selected="true"] a {
   margin-bottom: 0;
 }
 
-[role=group]>:is(input[type=submit], button, mark) {
+[role=group]>:is(input[type=submit], input[type=reset], button, mark) {
   width: auto;
   align-self: flex-end;
 }
@@ -978,7 +986,7 @@ nav[role=tablist] ul>li {
 
 /* icons -------------------------- */
 
-button>svg {
+:is(button, input[type=submit], input[type=reset])>svg {
   width: var(--font-size-base);
   height: var(--font-size-base);
   transform: translateY(-0.075em);
@@ -1013,7 +1021,7 @@ svg:has(+*) {
   margin-right: var(--space-1);
 }
 
-button:has(svg:only-child) {
+:is(button, input[type=submit], input[type=reset]):has(svg:only-child) {
   padding-left: var(--space-2-25);
   padding-right: var(--space-2-25);
 }
