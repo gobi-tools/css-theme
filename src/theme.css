@@ -137,6 +137,10 @@ pre>code {
   text-align: left;
 }
 
+pre>code {
+  white-space: break-spaces !important;
+}
+
 /* @todo: think of something better than this ... */
 header> :not(nav) {
   padding-top: var(--space-6);
@@ -452,8 +456,7 @@ hr {
 }
 
 button,
-input[type=submit],
-input[type=reset] {
+input[type=submit] {
   background: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-txt-on-dark);
@@ -545,6 +548,7 @@ input:focus,
 select:focus,
 textarea:focus {
   outline-color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
 }
 
 fieldset {
@@ -621,10 +625,9 @@ textarea {
   border-radius: 0;
 }
 
+[role=group]>input,
 fieldset,
-select,
-input[type=submit],
-input[type=reset] {
+select {
   border-bottom-width: var(--border-bottom-width-input);
 }
 
@@ -950,7 +953,13 @@ nav ul>li[aria-selected="true"] a {
   margin-right: var(--space-2);
 }
 
-[role=group]>:not(:first-child) {
+[role=group]>:not(:last-child) {
+  border-right-width: 0;
+}
+[role=group]>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
+  border-right-width: var(--border-width-action);
+}
+[role=group]>:is(button, input[type=submit], input[type=reset]) + input {
   border-left-width: 0;
 }
 
@@ -967,7 +976,6 @@ nav ul>li[aria-selected="true"] a {
 }
 
 [role=note]>img:first-child {
-  /* @todo: here? */
   max-width: none;
   margin-top: calc(-1 * var(--space-2-5));
   margin-left: calc(-1 * var(--space-2-5));
@@ -1175,10 +1183,6 @@ svg:has(+*) {
   }
 
   /* other elements --- */
-
-  /* nav[role=menu]+* {
-    margin-top: initial; 
-  } */
 
   main {
     margin-bottom: calc(var(--botton-nav-height-mobile) + var(--space-5));
