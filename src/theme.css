@@ -962,7 +962,7 @@ nav ul>li[aria-selected="true"] a {
   margin-right: var(--space-2);
 }
 
-[role=group]>:not(:last-child) {
+[role=group]>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
   border-right-width: 0;
 }
 
