@@ -4,6 +4,7 @@
   /* ---------------------- */
   --rem: 12pt;
   --narrow-width: 800px;
+  --medium-width: 1200px;
   --wide-with: 1600px;
   --navpos: fixed;
   /* spacing */
@@ -285,12 +286,18 @@ figure>figure {
   margin-inline: auto;
 }
 
-.is-wide {
+.is-medium-container {
+  width: min(100% - var(--space-6), var(--medium-width));
+  margin-inline: auto;
+}
+
+.is-wide-container {
   width: min(100% - var(--space-6), var(--wide-with));
   margin-inline: auto;
 }
 
-.is-wide>* {
+.is-wide-container>*,
+.is-medium-container>* {
   width: auto;
 }
 
@@ -590,7 +597,9 @@ details {
   border-bottom-width: var(--border-bottom-width-details);
 }
 
-button, input[type=submit], input[type=reset] {
+button,
+input[type=submit],
+input[type=reset] {
   border-style: solid;
   border-width: var(--border-width-action);
   border-radius: var(--border-radius-action);
@@ -956,10 +965,12 @@ nav ul>li[aria-selected="true"] a {
 [role=group]>:not(:last-child) {
   border-right-width: 0;
 }
+
 [role=group]>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
   border-right-width: var(--border-width-action);
 }
-[role=group]>:is(button, input[type=submit], input[type=reset]) + input {
+
+[role=group]>:is(button, input[type=submit], input[type=reset])+:is(input, button) {
   border-left-width: 0;
 }
 

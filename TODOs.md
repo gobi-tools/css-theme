@@ -41,11 +41,12 @@
   - [x] have it also depend on container width, not just mobile, for extra flexibility
 - [x][bug] on real mobile safari & chrome inputs are very thin
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
+- [ ][bug] fix issues with grouped buttons border
 - [ ] CLASS NAMES
   - [ ] come up with more unified / meaningful class names
     - [x] .banner -> .is-hero  -> or role="banner"?
-    - [x] .medium -> DELETE
-    - [x] .wide -> .is-wide
+    - [x] .medium -> .is-medium-container
+    - [x] .wide -> .is-wide-container
     - [x] .align-center -> .is-pulled-center
     - [x] .float-right -> .is-pulled-right
     - [x] .success -> .is-success
@@ -73,3 +74,4 @@
   - [x] bottom padding for forms with row is bad
   - [x] in custom/04.menu.html, on mobile, the <h1> at the top does not have top margin when maybe it should ...
   - [ ] also have class versions of "roles" & "types" (row, note, etc)
+  - [ ] have more widths for screen sizes (e.g. medium, wide, full, etc)
