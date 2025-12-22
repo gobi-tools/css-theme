@@ -42,6 +42,8 @@
 - [x][bug] on real mobile safari & chrome inputs are very thin
 - [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
 - [x][bug] fix issues with grouped buttons border
+- [ ][bug] on mobile chrome, submit & reset form types have left-aligned (instead of centered) text 
+- [ ][bug] on mobile chrome, datepicker has small height & width
 - [ ] CLASS NAMES
   - [ ] come up with more unified / meaningful class names
     - [x] .banner -> .is-hero  -> or role="banner"?
