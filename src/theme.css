@@ -80,7 +80,7 @@
   --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
   /* style elements */
   --border-radius-highlights: 6px;
-  
+
   --border-radius-blocks: 0px;
   --border-style-blocks: solid;
   --border-width-blocks: 0px;
@@ -114,7 +114,6 @@
   border-spacing: 0;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
 }
 
 header,
@@ -165,10 +164,7 @@ summary {
 
 /* vertical spacing -------------- */
 
-h1 {
-  margin-bottom: var(--space-8);
-}
-
+h1,
 h2 {
   margin-bottom: var(--space-8);
 }
@@ -370,11 +366,6 @@ code,
 kbd,
 var {
   font-family: var(--font-family-mono);
-}
-
-code,
-kbd,
-var {
   font-size: var(--font-size-sm);
 }
 
@@ -387,9 +378,9 @@ button,
 input[type=submit],
 input[type=reset] {
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: -0.015em;
   border: solid;
+  font-size: var(--font-size-xsm);
 }
 
 /* ---------------------------------- */
@@ -1068,6 +1059,7 @@ svg:has(+*) {
 }
 
 @container(max-width: 824px) {
+
   /* row -------------- */
   :not([role=group])>[role=row] {
     flex-direction: column;
