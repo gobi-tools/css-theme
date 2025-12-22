@@ -26,9 +26,10 @@
   --line-height-body: 1.6;
   --line-height-head: 1.25;
   --letter-spacing-head: -0.01em;
-  --font-size-base: 1rem;
+  /* font sizes */
   --font-size-xsm: 0.8em;
   --font-size-sm: 0.9em;
+  --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
