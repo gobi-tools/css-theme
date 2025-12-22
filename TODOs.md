@@ -1,79 +1,33 @@
-- [x] dl, dt, dd (description list)
-- [x] ul, li, etc (bulleted lists)
-- [x] icon 
-  - [x] icons & text on buttons
-  - [x] single icons on buttons
-  - [x] icons on tags
-  - [x] icons on navigation 
-  - [x] icons on tabs
-  - [x] independent icons
-- [x] better flex support based on https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
-- [x] think about mobile in terms of https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
-- [x] proper mobile support
+Features
+--------
 - [ ] breadcrumbs
 - [ ] pagination
 - [x] navigation
-  - [x] standard - should be horizontal (with icons, sub-menus, etc)
-  - [x] mobile - shoild be vertical (with no sub-menus)
-  - [x] selected
-  - [x] top navigation
-  - [x] left navigation or lists or summary/details
-  - [ ] navigation of various widths (super skinny, skinny, horizontal, etc)
-- [x] menus -> another from of navigation
-  - [x] standard - should be horizontal, top level, and bold 
-  - [x] mobile - should be the classic mobile bottom nav
-  - [c] selected
-- [x] tabs -> another form of navigation
-  - [x] standard
-  - [x] mobile
-- [x][bug] on the "Writing" theme (and in general), the "group" role overrides the usual corner radius (for buttons, etc)
-- [x][bug] table inside a "note" seems to skew the width of the whole page ---> it's just the scrollbar
+  - [ ] navigation of various widths (super skinny, skinny, horizontal, etc, like the side menu of CircleCI)
 - [ ] forms
-  - [x] normal
-  - [x] grouped
-    - [x] increase horz spacing by a bit
-    - [x] add an example for radio
   - [ ] validation states
 - [ ] animations
-- [ ] code highlight
-- [ ] cols & rows
-  - [x] basic implementation
-  - [x] have it also depend on container width, not just mobile, for extra flexibility
-- [x][bug] on real mobile safari & chrome inputs are very thin
-- [x][bug] on real mobile safari & chrome the bottom tablist nav is not too centered
-- [x][bug] fix issues with grouped buttons border
-- [ ][bug] on mobile chrome, submit & reset form types have left-aligned (instead of centered) text 
-- [ ][bug] on mobile chrome, datepicker has small height & width
-- [ ] CLASS NAMES
-  - [ ] come up with more unified / meaningful class names
-    - [x] .banner -> .is-hero  -> or role="banner"?
-    - [x] .medium -> .is-medium-container
-    - [x] .wide -> .is-wide-container
-    - [x] .align-center -> .is-pulled-center
-    - [x] .float-right -> .is-pulled-right
-    - [x] .success -> .is-success
-    - [x] .error -> .is-danger
-    - [x] .only-mobile -> .is-mobile-only
-    - [x] .only-desktop -> .is-desktop-only
-    - [x] .small-gap -> DELETE
-    - [ ] NEW -> .is-bg-primary
-    - [ ] NEW -> .is-bg-secondary
-    - [ ] NEW -> .is-bg-accent
-    - [ ] NEW -> .is-bg-success
-    - [ ] NEW -> .is-bg-error
-    - [ ] NEW -> .is-rounded
-    - [ ] NEW -> .is-circle
-  - [ ][bugs] layout issues
-  - [x] in the "app" layout, there is no vertical space between the nav & the content
-  - [x] should sections have more bottom spacing (helps readability in text-dense pages)?
-  - [x] complex card content does not seem to have top margin anymore ... 
-  - [ ] MENU on smaller devices, when I have 5 navigation menu tabs
-    - the last one won't appear
-    - and the widths are not consistent
-  - [x] when I'm in a paragraph that has the "align-center" class, grouped buttons don't work
-    - not a bug, just don't group things
-  - [x] adding a bottom margin to the "row" might not
-  - [x] bottom padding for forms with row is bad
-  - [x] in custom/04.menu.html, on mobile, the <h1> at the top does not have top margin when maybe it should ...
-  - [ ] also have class versions of "roles" & "types" (row, note, etc)
-  - [x] have more widths for screen sizes (e.g. medium, wide, full, etc)
+- [ ] have the following classes:
+  - [x] .is-banner
+  - [x] .is-medium-container
+  - [x] .is-wide-container
+  - [x] .is-pulled-center
+  - [x] .is-pulled-right
+  - [x] .is-success
+  - [x] .is-error
+  - [x] .is-mobile-only
+  - [x] .is-desktop-only
+  - [ ] .is-bg-primary
+  - [ ] .is-bg-secondary
+  - [ ] .is-bg-accent
+  - [ ] .is-bg-success
+  - [ ] .is-bg-error
+  - [ ] .is-rounded
+  - [ ] .is-circle
+
+Bugs
+----
+- [ ] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
+- [ ] on mobile Chrome (browser), datepicker has small height & width
+- [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
+- [ ] also have class versions of "roles" & "types" (row, note, etc)
