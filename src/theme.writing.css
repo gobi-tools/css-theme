@@ -1,11 +1,9 @@
 :root {
-  /* fonts */
+  /* typography - font type */
   --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-head: serif;
   --font-family-mono: monospace;
-
-  /* theme colors */
-  /* ===== Base Colors ===== */
+  /* colors - base */
   --color-primary-light-2: #f3e5d0;
   --color-primary-light-1: #c19a6b;
   --color-primary: #8b5e3c;
@@ -35,16 +33,13 @@
   --color-accent: #6b7280;
   --color-accent-dark-1: #4b5563;
   --color-accent-dark-2: #2d2d2d;
-
-  /* ===== Text Colors ===== */
+  /* colors - text */
   --color-txt-on-light: #2d2d2d;
   --color-txt-on-dark: #f3f4f6;
-
-  /* ===== Background Colors ===== */
+  /* colors - bg */
   --color-bg: light-dark(#fffaf5, #1c1917);
   --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
-
-  /* style utlitiies */
+  /* style elements */
   --border-radius-highlights: 6px;
 
   --border-radius-blocks: 0px;
@@ -67,29 +62,23 @@
   --border-width-input: 2px;
   --border-style-input: solid;
   --border-bottom-width-input: 2px;
-
-  --border-radius-tabs: 6px;
 }
 
 blockquote {
   background: none;
 }
 
-[role=group]>:is(
-  button,
+[role=group]>:is(button,
   input,
-  select
-):first-child {
+  select):first-child {
   border-top-left-radius: var(--border-radius-action);
   border-bottom-left-radius: var(--border-radius-action);
   padding-left: calc(var(--border-radius-action) / 1.35) !important;
 }
 
-[role=group]>:is(
-  button,
+[role=group]>:is(button,
   input,
-  select
-):last-child {
+  select):last-child {
   border-top-right-radius: var(--border-radius-action);
   border-bottom-right-radius: var(--border-radius-action);
 }

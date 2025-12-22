@@ -18,17 +18,11 @@
   --space-8: 2rem;
   --space-9: 3rem;
   --space-10: 4.5rem;
-  /* minmum element heights for consistent displays */
+  /* min heights (for consistent displays) */
   --height-input: 41.48px;
   --height-small-elem: 26px;
   --height-bottom-nav: 77px;
-  /* ---------------------- */
-  /* theme                  */
-  /* ---------------------- */
-  /* typography */
-  --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-family-head: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-family-mono: monospace;
+  /* text size */
   --line-height-body: 1.6;
   --line-height-head: 1.25;
   --letter-spacing-head: -0.01em;
@@ -40,8 +34,14 @@
   --font-size-2xl: 1.5rem;
   --font-size-3xl: 2rem;
   --font-weight-head: 600;
-  /* colors - theme*/
-  /* ===== Base Colors ===== */
+  /* ---------------------- */
+  /* theme elements         */
+  /* ---------------------- */
+  /* typography - font type */
+  --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-head: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-mono: monospace;
+  /* colors - base */
   --color-primary-light-1: #93c5fd;
   --color-primary-light-2: #dbeafe;
   --color-primary: #3b82f6;
@@ -71,18 +71,15 @@
   --color-accent: #9a9a9a;
   --color-accent-dark-1: #374151;
   --color-accent-dark-2: #1f2937;
-
-  /* ===== Text Colors ===== */
+  /* colors - text */
   --color-txt-on-light: #111827;
   --color-txt-on-dark: #f9fafb;
-
-  /* ===== Background Colors ===== */
+  /* colors - bg */
   --color-bg: light-dark(#ffffff, #111827);
   --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
-
-  /* borders & other elements */
+  /* style elements */
   --border-radius-highlights: 6px;
-
+  
   --border-radius-blocks: 0px;
   --border-style-blocks: solid;
   --border-width-blocks: 0px;
@@ -103,8 +100,6 @@
   --border-width-input: 2px;
   --border-style-input: solid;
   --border-bottom-width-input: 2px;
-
-  --border-radius-tabs: 6px;
 
   --border-width-nav: 2px;
 }
