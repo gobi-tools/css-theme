@@ -3,9 +3,9 @@
   /* general elements       */
   /* ---------------------- */
   --rem: 12pt;
-  --container-width-narrow: 800px;
-  --container-width-medium: 1200px;
-  --container-width-wide: 1600px;
+  --width-container-narrow: 800px;
+  --width-container-medium: 1200px;
+  --width-container-wide: 1600px;
   /* spacing */
   --space-0: 0;
   --space-1: 0.125rem;
@@ -19,9 +19,9 @@
   --space-9: 3rem;
   --space-10: 4.5rem;
   /* minmum element heights for consistent displays */
-  --min-elem-height: 41.48px;
-  --small-elem-height: 26px;
-  --botton-nav-height-mobile: 77px;
+  --height-input: 41.48px;
+  --height-small-elem: 26px;
+  --height-bottom-nav: 77px;
   /* ---------------------- */
   /* theme                  */
   /* ---------------------- */
@@ -260,7 +260,7 @@ blockquote>:last-child,
 /* horz spacing ------------------ */
 
 body>* {
-  width: min(100% - var(--space-9), var(--container-width-narrow));
+  width: min(100% - var(--space-9), var(--width-container-narrow));
   margin-inline: auto;
 }
 
@@ -282,17 +282,17 @@ figure>figure {
 }
 
 .is-hero>* {
-  width: min(100% - var(--space-9), var(--container-width-narrow));
+  width: min(100% - var(--space-9), var(--width-container-narrow));
   margin-inline: auto;
 }
 
 .is-medium-container {
-  width: min(100% - var(--space-9), var(--container-width-medium));
+  width: min(100% - var(--space-9), var(--width-container-medium));
   margin-inline: auto;
 }
 
 .is-wide-container {
-  width: min(100% - var(--space-9), var(--container-width-wide));
+  width: min(100% - var(--space-9), var(--width-container-wide));
   margin-inline: auto;
 }
 
@@ -666,11 +666,11 @@ textarea {
   display: block;
   width: 100%;
   padding: var(--space-3);
-  min-height: var(--min-elem-height);
+  min-height: var(--height-input);
 }
 
 select {
-  height: var(--min-elem-height);
+  height: var(--height-input);
 }
 
 input[type=checkbox],
@@ -702,7 +702,7 @@ label {
 button,
 input[type=submit],
 input[type=reset] {
-  min-height: var(--min-elem-height);
+  min-height: var(--height-input);
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
   padding-left: var(--space-7);
@@ -837,7 +837,7 @@ aside {
 
 
 mark {
-  height: var(--small-elem-height);
+  height: var(--height-small-elem);
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -1197,7 +1197,7 @@ svg:has(+*) {
   /* other elements --- */
 
   main {
-    margin-bottom: calc(var(--botton-nav-height-mobile) + var(--space-8));
+    margin-bottom: calc(var(--height-bottom-nav) + var(--space-8));
   }
 
   footer {
