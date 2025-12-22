@@ -175,6 +175,7 @@ body {
 main {
   flex: 1;
 }
+
 /* vertical spacing between elements */
 h1,
 h2 {
@@ -315,7 +316,6 @@ figure>figure {
   margin-left: auto;
 }
 
-
 /* ---------------------------------- */
 /* typography ----------------------- */
 /* ---------------------------------- */
@@ -384,46 +384,8 @@ input[type=reset] {
 }
 
 /* ---------------------------------- */
-/* theme colors --------------------- */
+/* theme - colors ------------------- */
 /* ---------------------------------- */
-
-.is-success {
-  --color-accent-light-1: var(--color-success-light-1);
-  --color-accent-light-2: var(--color-success-light-2);
-  --color-accent-dark-1: var(--color-success-dark-1);
-  --color-accent-dark-2: var(--color-success-dark-2);
-
-  --color-primary: var(--color-success);
-  --color-primary-light-1: var(--color-success-light-1);
-  --color-primary-light-2: var(--color-success-light-2);
-  --color-primary-dark-1: var(--color-success-dark-1);
-  --color-primary-dark-2: var(--color-success-dark-2);
-
-  --color-secondary: var(--color-success);
-  --color-secondary-light-1: var(--color-success-light-1);
-  --color-secondary-light-2: var(--color-success-light-2);
-  --color-secondary-dark-1: var(--color-success-dark-1);
-  --color-secondary-dark-2: var(--color-success-dark-2);
-}
-
-.is-error {
-  --color-accent-light-1: var(--color-error-light-1);
-  --color-accent-light-2: var(--color-error-light-2);
-  --color-accent-dark-1: var(--color-error-dark-1);
-  --color-accent-dark-2: var(--color-error-dark-2);
-
-  --color-primary: var(--color-error);
-  --color-primary-light-1: var(--color-error-light-1);
-  --color-primary-light-2: var(--color-error-light-2);
-  --color-primary-dark-1: var(--color-error-dark-1);
-  --color-primary-dark-2: var(--color-error-dark-2);
-
-  --color-secondary: var(--color-error);
-  --color-secondary-light-1: var(--color-error-light-1);
-  --color-secondary-light-2: var(--color-error-light-2);
-  --color-secondary-dark-1: var(--color-error-dark-1);
-  --color-secondary-dark-2: var(--color-error-dark-2);
-}
 
 body {
   background: var(--color-bg);
@@ -530,6 +492,7 @@ textarea {
 select {
   background: light-dark(var(--color-accent-light-2), var(--color-bg));
   color: light-dark(var(--color-primary-dark-1), var(--color-primary-light-1));
+  /* @todo: move to typography */
   font-weight: bold;
 }
 
@@ -549,8 +512,46 @@ fieldset {
   background: light-dark(var(--color-bg), var(--color-accent-dark-2));
 }
 
-/* --------------------------
-/* theme styles --------------------- */
+.is-success {
+  --color-accent-light-1: var(--color-success-light-1);
+  --color-accent-light-2: var(--color-success-light-2);
+  --color-accent-dark-1: var(--color-success-dark-1);
+  --color-accent-dark-2: var(--color-success-dark-2);
+
+  --color-primary: var(--color-success);
+  --color-primary-light-1: var(--color-success-light-1);
+  --color-primary-light-2: var(--color-success-light-2);
+  --color-primary-dark-1: var(--color-success-dark-1);
+  --color-primary-dark-2: var(--color-success-dark-2);
+
+  --color-secondary: var(--color-success);
+  --color-secondary-light-1: var(--color-success-light-1);
+  --color-secondary-light-2: var(--color-success-light-2);
+  --color-secondary-dark-1: var(--color-success-dark-1);
+  --color-secondary-dark-2: var(--color-success-dark-2);
+}
+
+.is-error {
+  --color-accent-light-1: var(--color-error-light-1);
+  --color-accent-light-2: var(--color-error-light-2);
+  --color-accent-dark-1: var(--color-error-dark-1);
+  --color-accent-dark-2: var(--color-error-dark-2);
+
+  --color-primary: var(--color-error);
+  --color-primary-light-1: var(--color-error-light-1);
+  --color-primary-light-2: var(--color-error-light-2);
+  --color-primary-dark-1: var(--color-error-dark-1);
+  --color-primary-dark-2: var(--color-error-dark-2);
+
+  --color-secondary: var(--color-error);
+  --color-secondary-light-1: var(--color-error-light-1);
+  --color-secondary-light-2: var(--color-error-light-2);
+  --color-secondary-dark-1: var(--color-error-dark-1);
+  --color-secondary-dark-2: var(--color-error-dark-2);
+}
+
+/* ---------------------------------- */
+/* theme - styles ------------------- */
 /* ---------------------------------- */
 
 code,
@@ -570,14 +571,7 @@ pre>code {
   border-bottom-width: var(--border-bottom-width-blocks);
 }
 
-details {
-  border-radius: var(--border-radius-details);
-  border-width: var(--border-width-details);
-  border-style: var(--border-style-details);
-  border-bottom-width: var(--border-bottom-width-details);
-}
-
-[role=note] {
+details, [role=note] {
   border-radius: var(--border-radius-details);
   border-width: var(--border-width-details);
   border-style: var(--border-style-details);
@@ -607,6 +601,14 @@ textarea {
   border-radius: var(--border-radius-input);
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+  outline-style: var(--border-style-input);
+  outline-width: var(--border-width-input);
+  outline-offset: calc(-1 * var(--border-width-input));
+}
+
 [role=group]>:is(:first-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -625,15 +627,6 @@ textarea {
 fieldset,
 select {
   border-bottom-width: var(--border-bottom-width-input);
-}
-
-fieldset:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline-style: var(--border-style-input);
-  outline-width: var(--border-width-input);
-  outline-offset: calc(-1 * var(--border-width-input));
 }
 
 /* ---------------------------------- */
