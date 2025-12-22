@@ -1045,6 +1045,15 @@ svg:has(+*) {
 /* only <aside> works atm ----------- */
 /* ---------------------------------- */
 
+@container(max-width: 600px) {
+
+  /* row -------------- */
+  :not([role=group])>[role=row] {
+    flex-direction: column;
+    gap: var(--space-0);
+  }
+}
+
 @container (max-width: 768px) {
   /* navigation ------ */
 
@@ -1055,15 +1064,6 @@ svg:has(+*) {
 
   nav ul:first-child>li {
     padding-bottom: var(--space-0);
-  }
-}
-
-@container(max-width: 824px) {
-
-  /* row -------------- */
-  :not([role=group])>[role=row] {
-    flex-direction: column;
-    gap: var(--space-0);
   }
 }
 
