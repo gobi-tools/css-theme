@@ -144,22 +144,6 @@ summary {
   cursor: pointer;
 }
 
-/* @todo: move this to element section */
-pre>code {
-  white-space: break-spaces !important;
-}
-
-/* @todo: move this to element section */
-header> :not(nav) {
-  padding-top: var(--space-9);
-}
-
-/* @todo: move this to element section */
-pre {
-  padding: 0 !important;
-  background: transparent !important;
-}
-
 /* ---------------------------------- */
 /* layouts -------------------------- */
 /* ---------------------------------- */
@@ -571,7 +555,8 @@ pre>code {
   border-bottom-width: var(--border-bottom-width-blocks);
 }
 
-details, [role=note] {
+details,
+[role=note] {
   border-radius: var(--border-radius-details);
   border-width: var(--border-width-details);
   border-style: var(--border-style-details);
@@ -731,6 +716,7 @@ ol {
 }
 
 /* table */
+
 table {
   width: 100%;
   border: none;
@@ -749,7 +735,6 @@ td {
 
 th,
 td {
-  width: auto;
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--color-accent-dark-1);
@@ -770,7 +755,16 @@ td:last-child {
   padding-right: var(--space-3);
 }
 
-/* other --------------------------- */
+/* code --------------------------- */
+
+pre {
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+pre>code {
+  white-space: break-spaces !important;
+}
 
 pre>code,
 blockquote {
@@ -815,7 +809,6 @@ aside {
 
 /* marks ----------------------- */
 
-
 mark {
   height: var(--height-small-elem);
   display: inline-flex;
@@ -824,6 +817,10 @@ mark {
 }
 
 /* navigation (normal) --------------- */
+
+header> :not(nav) {
+  padding-top: var(--space-9);
+}
 
 body>nav,
 header>nav {
