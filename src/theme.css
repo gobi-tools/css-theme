@@ -8,16 +8,17 @@
   --container-width-wide: 1600px;
   /* spacing */
   --space-0: 0;
-  --space-0-5: 0.125rem;
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-2-25: 0.65rem;
-  --space-2-5: 0.75rem;
-  --space-3: 1rem;
-  --space-4: 1.5rem;
-  --space-5: 2rem;
-  --space-6: 3rem;
-  --space-7: 4.5rem;
+  --space-1: 0.125rem;
+  --space-2: 0.25rem;
+  --space-3: 0.5rem;
+  --space-4: 0.65rem;
+  --space-5: 0.75rem;
+  --space-6: 1rem;
+  --space-7: 1.5rem;
+  --space-8: 2rem;
+  --space-9: 3rem;
+  --space-10: 4.5rem;
+  /* minmum element heights for consistent displays */
   --min-elem-height: 41.48px;
   --small-elem-height: 26px;
   --botton-nav-height-mobile: 77px;
@@ -143,7 +144,7 @@ pre>code {
 
 /* @todo: think of something better than this ... */
 header> :not(nav) {
-  padding-top: var(--space-6);
+  padding-top: var(--space-9);
 }
 
 pre {
@@ -169,18 +170,18 @@ summary {
 /* vertical spacing -------------- */
 
 h1 {
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-8);
 }
 
 h2 {
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-8);
 }
 
 h3,
 h4,
 h5,
 h6 {
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-7);
 }
 
 p,
@@ -189,16 +190,16 @@ ol,
 dl,
 blockquote,
 pre {
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-6);
 }
 
 ul li {
-  margin-bottom: var(--space-1);
+  margin-bottom: var(--space-2);
 }
 
 figure,
 table {
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-8);
 }
 
 pre:has(+ figcaption) {
@@ -211,7 +212,7 @@ figure>figure {
 
 fieldset,
 details[open] {
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-6);
 }
 
 section,
@@ -220,15 +221,15 @@ aside,
 main,
 header,
 footer {
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-8);
 }
 
 section {
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-10);
 }
 
 main {
-  margin-top: var(--space-5);
+  margin-top: var(--space-8);
 }
 
 main>* {
@@ -236,8 +237,8 @@ main>* {
 }
 
 hr {
-  margin-top: var(--space-4) !important;
-  margin-bottom: var(--space-4) !important;
+  margin-top: var(--space-7) !important;
+  margin-bottom: var(--space-7) !important;
 }
 
 blockquote>:first-child {
@@ -247,7 +248,7 @@ blockquote>:first-child {
 input,
 select,
 textarea {
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-6);
 }
 
 img:has(+ figcaption),
@@ -259,7 +260,7 @@ blockquote>:last-child,
 /* horz spacing ------------------ */
 
 body>* {
-  width: min(100% - var(--space-6), var(--container-width-narrow));
+  width: min(100% - var(--space-9), var(--container-width-narrow));
   margin-inline: auto;
 }
 
@@ -281,17 +282,17 @@ figure>figure {
 }
 
 .is-hero>* {
-  width: min(100% - var(--space-6), var(--container-width-narrow));
+  width: min(100% - var(--space-9), var(--container-width-narrow));
   margin-inline: auto;
 }
 
 .is-medium-container {
-  width: min(100% - var(--space-6), var(--container-width-medium));
+  width: min(100% - var(--space-9), var(--container-width-medium));
   margin-inline: auto;
 }
 
 .is-wide-container {
-  width: min(100% - var(--space-6), var(--container-width-wide));
+  width: min(100% - var(--space-9), var(--container-width-wide));
   margin-inline: auto;
 }
 
@@ -655,8 +656,8 @@ textarea:focus {
 /* form --------------------------- */
 
 fieldset {
-  padding: var(--space-2-5);
-  padding-top: var(--space-3);
+  padding: var(--space-5);
+  padding-top: var(--space-6);
 }
 
 input:not([type=checkbox], [type=radio]),
@@ -664,7 +665,7 @@ select,
 textarea {
   display: block;
   width: 100%;
-  padding: var(--space-2);
+  padding: var(--space-3);
   min-height: var(--min-elem-height);
 }
 
@@ -674,12 +675,12 @@ select {
 
 input[type=checkbox],
 input[type=radio] {
-  margin-right: var(--space-2);
+  margin-right: var(--space-3);
 }
 
 input[type=submit] {
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  padding-left: var(--space-7);
+  padding-right: var(--space-7);
 }
 
 input:is([type=checkbox]),
@@ -693,7 +694,7 @@ textarea {
 }
 
 label {
-  margin-right: var(--space-4);
+  margin-right: var(--space-7);
 }
 
 /* buttons ------------------------- */
@@ -702,17 +703,17 @@ button,
 input[type=submit],
 input[type=reset] {
   min-height: var(--min-elem-height);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  padding-left: var(--space-7);
+  padding-right: var(--space-7);
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
 }
 
 :not([role=group])>button+button {
-  margin-left: var(--space-1);
+  margin-left: var(--space-2);
 }
 
 button:hover,
@@ -735,18 +736,18 @@ input[type=reset]:hover:disabled {
 /* summary & details */
 
 summary {
-  padding: var(--space-2);
-  padding-inline: var(--space-3);
+  padding: var(--space-3);
+  padding-inline: var(--space-6);
 }
 
 details> :not(summary) {
-  padding-top: var(--space-2);
-  padding-inline: var(--space-3);
+  padding-top: var(--space-3);
+  padding-inline: var(--space-6);
 }
 
 ul,
 ol {
-  margin-left: var(--space-5);
+  margin-left: var(--space-8);
 }
 
 /* table */
@@ -769,8 +770,8 @@ td {
 th,
 td {
   width: auto;
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--color-accent-dark-1);
 }
 
@@ -781,19 +782,19 @@ tr:last-child>td {
 
 th:first-child,
 td:first-child {
-  padding-left: var(--space-2);
+  padding-left: var(--space-3);
 }
 
 th:last-child,
 td:last-child {
-  padding-right: var(--space-2);
+  padding-right: var(--space-3);
 }
 
 /* other --------------------------- */
 
 pre>code,
 blockquote {
-  padding: var(--space-3);
+  padding: var(--space-6);
   text-wrap: auto;
   word-wrap: break-word;
 }
@@ -802,12 +803,12 @@ mark,
 code,
 kbd,
 var {
-  padding: var(--space-1);
-  padding-inline: var(--space-2);
+  padding: var(--space-2);
+  padding-inline: var(--space-3);
 }
 
 :not([role=group])>mark+mark {
-  margin-left: var(--space-1);
+  margin-left: var(--space-2);
 }
 
 dt {
@@ -815,7 +816,7 @@ dt {
 }
 
 dd {
-  padding-left: var(--space-2);
+  padding-left: var(--space-3);
 }
 
 hr {
@@ -847,8 +848,8 @@ mark {
 body>nav,
 header>nav {
   z-index: 41;
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
 }
 
 nav ul {
@@ -865,9 +866,9 @@ nav ul {
 
 nav ul>li {
   display: inline-block;
-  padding: var(--space-2);
+  padding: var(--space-3);
   padding-left: 0;
-  padding-right: var(--space-4);
+  padding-right: var(--space-7);
   margin-bottom: 0;
 }
 
@@ -897,9 +898,9 @@ nav ul>li>ul>li {
 nav ul>li:hover>ul {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
-  padding-inline: var(--space-4);
-  padding: var(--space-3);
+  gap: var(--space-3);
+  padding-inline: var(--space-7);
+  padding: var(--space-6);
   align-items: start;
   min-width: 150px;
 }
@@ -932,7 +933,7 @@ nav ul>li[aria-selected="true"] a {
 [role=row] {
   display: flex;
   align-items: stretch;
-  gap: var(--space-4);
+  gap: var(--space-7);
 }
 
 [role=row]>div {
@@ -958,7 +959,7 @@ nav ul>li[aria-selected="true"] a {
 
 [role=group]>input[type=checkbox],
 [role=group]>input[type=radio] {
-  margin-right: var(--space-2);
+  margin-right: var(--space-3);
 }
 
 [role=group]>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
@@ -981,15 +982,15 @@ nav ul>li[aria-selected="true"] a {
 
 [role=note] {
   overflow: hidden;
-  padding: var(--space-2-5);
-  margin-bottom: var(--space-3);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
 }
 
 [role=note]>img:first-child {
   max-width: none;
-  margin-top: calc(-1 * var(--space-2-5));
-  margin-left: calc(-1 * var(--space-2-5));
-  width: calc(100% + 2 * var(--space-2-5));
+  margin-top: calc(-1 * var(--space-5));
+  margin-left: calc(-1 * var(--space-5));
+  width: calc(100% + 2 * var(--space-5));
 }
 
 /* tabs ---------------------------- */
@@ -999,7 +1000,7 @@ nav[role=tablist]>ul>li[aria-selected="true"] {
 }
 
 nav[role=tablist] ul>li {
-  padding-left: var(--space-3);
+  padding-left: var(--space-6);
 }
 
 /* icons -------------------------- */
@@ -1032,16 +1033,16 @@ svg:only-child {
 }
 
 svg:has(+*) {
-  margin-right: var(--space-1);
+  margin-right: var(--space-2);
 }
 
 *:has(+svg) {
-  margin-right: var(--space-1);
+  margin-right: var(--space-2);
 }
 
 :is(button, input[type=submit], input[type=reset]):has(svg:only-child) {
-  padding-left: var(--space-2-25);
-  padding-right: var(--space-2-25);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
 }
 
 .is-mobile-only {
@@ -1085,14 +1086,14 @@ svg:has(+*) {
     border-bottom: none;
     border-left: 3px solid light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
     background-color: light-dark(var(--color-primary-light-2), var(--color-accent-dark-2));
-    padding-left: calc(var(--space-3) - 3px) !important;
+    padding-left: calc(var(--space-6) - 3px) !important;
   }
 
   nav[role=tablist]>ul>li {
     width: 100%;
-    padding-top: var(--space-0-5);
-    padding-bottom: var(--space-0-5);
-    padding-left: var(--space-3) !important;
+    padding-top: var(--space-1);
+    padding-bottom: var(--space-1);
+    padding-left: var(--space-6) !important;
   }
 }
 
@@ -1126,8 +1127,8 @@ svg:has(+*) {
 
   nav ul>li {
     padding-left: var(--space-0);
-    padding-top: var(--space-1);
-    padding-bottom: var(--space-1);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
   }
 
   nav ul>li>ul {
@@ -1155,9 +1156,9 @@ svg:has(+*) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: var(--space-4) !important;
-    padding-top: var(--space-3);
-    padding-bottom: var(--space-2);
+    padding-inline: var(--space-7) !important;
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-3);
     flex-grow: 1;
     max-width: 100px;
   }
@@ -1185,18 +1186,18 @@ svg:has(+*) {
     border-bottom: none;
     border-left: 3px solid light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
     background-color: light-dark(var(--color-primary-light-2), var(--color-accent-dark-2));
-    padding-left: calc(var(--space-3) - 3px);
+    padding-left: calc(var(--space-6) - 3px);
   }
 
   nav[role=tablist]>ul>li {
     width: 100%;
-    padding-left: var(--space-3);
+    padding-left: var(--space-6);
   }
 
   /* other elements --- */
 
   main {
-    margin-bottom: calc(var(--botton-nav-height-mobile) + var(--space-5));
+    margin-bottom: calc(var(--botton-nav-height-mobile) + var(--space-8));
   }
 
   footer {
@@ -1204,7 +1205,7 @@ svg:has(+*) {
   }
 
   aside {
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-6);
   }
 }
 
