@@ -3,10 +3,9 @@
   /* general elements       */
   /* ---------------------- */
   --rem: 12pt;
-  --narrow-width: 800px;
-  --medium-width: 1200px;
-  --wide-with: 1600px;
-  --navpos: fixed;
+  --container-width-narrow: 800px;
+  --container-width-medium: 1200px;
+  --container-width-wide: 1600px;
   /* spacing */
   --space-0: 0;
   --space-0-5: 0.125rem;
@@ -260,7 +259,7 @@ blockquote>:last-child,
 /* horz spacing ------------------ */
 
 body>* {
-  width: min(100% - var(--space-6), var(--narrow-width));
+  width: min(100% - var(--space-6), var(--container-width-narrow));
   margin-inline: auto;
 }
 
@@ -282,17 +281,17 @@ figure>figure {
 }
 
 .is-hero>* {
-  width: min(100% - var(--space-6), var(--narrow-width));
+  width: min(100% - var(--space-6), var(--container-width-narrow));
   margin-inline: auto;
 }
 
 .is-medium-container {
-  width: min(100% - var(--space-6), var(--medium-width));
+  width: min(100% - var(--space-6), var(--container-width-medium));
   margin-inline: auto;
 }
 
 .is-wide-container {
-  width: min(100% - var(--space-6), var(--wide-with));
+  width: min(100% - var(--space-6), var(--container-width-wide));
   margin-inline: auto;
 }
 
