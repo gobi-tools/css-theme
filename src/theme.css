@@ -133,20 +133,6 @@ pre>code {
   text-align: left;
 }
 
-pre>code {
-  white-space: break-spaces !important;
-}
-
-/* @todo: think of something better than this ... */
-header> :not(nav) {
-  padding-top: var(--space-9);
-}
-
-pre {
-  padding: 0 !important;
-  background: transparent !important;
-}
-
 details {
   overflow: hidden;
 }
@@ -158,12 +144,38 @@ summary {
   cursor: pointer;
 }
 
+/* @todo: move this to element section */
+pre>code {
+  white-space: break-spaces !important;
+}
+
+/* @todo: move this to element section */
+header> :not(nav) {
+  padding-top: var(--space-9);
+}
+
+/* @todo: move this to element section */
+pre {
+  padding: 0 !important;
+  background: transparent !important;
+}
+
 /* ---------------------------------- */
 /* layouts -------------------------- */
 /* ---------------------------------- */
 
-/* vertical spacing -------------- */
+/* VERTICAL -------------- */
+/* make footer stick to bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+main {
+  flex: 1;
+}
+/* vertical spacing between elements */
 h1,
 h2 {
   margin-bottom: var(--space-8);
@@ -249,7 +261,7 @@ blockquote>:last-child,
   margin-bottom: 0;
 }
 
-/* horz spacing ------------------ */
+/* HORIZONTAL ------------------ */
 
 body>* {
   width: min(100% - var(--space-9), var(--width-container-narrow));
@@ -259,12 +271,13 @@ body>* {
 img {
   margin-inline: auto;
   max-width: 100%;
+  /* @todo: move this to element section */
   object-fit: cover;
 }
 
+/* @todo: move this to element section */
 figure>figure {
   display: inline-grid;
-  width: auto;
 }
 
 .is-hero {
@@ -293,20 +306,6 @@ figure>figure {
   width: auto;
 }
 
-/* make footer stick to bottom ----- */
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-/* alignment classes ---------------- */
-
 .is-pulled-center {
   justify-content: center;
   text-align: center;
@@ -315,6 +314,7 @@ main {
 .is-pulled-right {
   margin-left: auto;
 }
+
 
 /* ---------------------------------- */
 /* typography ----------------------- */
