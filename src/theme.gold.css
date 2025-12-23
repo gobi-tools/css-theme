@@ -40,7 +40,7 @@
   --color-bg: light-dark(#ffffff, #111827);
   --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
   /* style elements */
-  --border-radius-highlights: 6px;
+  --border-radius-highlights: 0px;
 
   --border-radius-blocks: 0px;
   --border-style-blocks: solid;
@@ -55,17 +55,21 @@
   --border-bottom-width-details: 2px;
 
   --border-radius-action: 0px;
-  --border-width-action: 0px;
-  --border-bottom-width-action: 5px;
+  --border-width-action: 2px;
+  --border-bottom-width-action: 2px;
 
-  --border-radius-input: 4px;
+  --border-radius-input: 0px;
   --border-width-input: 2px;
   --border-style-input: solid;
-  --border-bottom-width-input: 5px;
+  --border-bottom-width-input: 2px;
 }
 
-button {
-  border-color: var(--color-primary-dark-2)
+a {
+  color: light-dark(var(--color-accent-dark-2), var(--color-accent-light-2));
+}
+
+blockquote, pre>code {
+  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
 
 [role=note] {
@@ -75,8 +79,5 @@ button {
 
 details[open]>summary,
 summary:hover {
-  /* same as <a> */
   background: light-dark(var(--color-primary-light-1), var(--color-primary-dark-2));
-  /* color: light-dark(var(--color-primary-light-2), var(--color-primary-light-2)); */
-  /* background: light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1)); */
 }
