@@ -14,10 +14,10 @@
   --space-4: 0.65rem;
   --space-5: 0.75rem;
   --space-6: 1rem;
-  --space-7: 1.5rem;
-  --space-8: 2rem;
-  --space-9: 3rem;
-  --space-10: 4.5rem;
+  --space-7: 1.35rem;
+  --space-8: 1.75rem;
+  --space-9: 2.5rem;
+  --space-10: 4rem;
   /* min heights (for consistent displays) */
   --height-input: 41.48px;
   --height-small-elem: 26px;
@@ -27,13 +27,13 @@
   --line-height-head: 1.25;
   --letter-spacing-head: -0.01em;
   /* font sizes */
-  --font-size-xsm: 0.8em;
-  --font-size-sm: 0.9em;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 2rem;
+  --font-size-base: 15px; /* could also be 0.95rem? */
+  --font-size-xsm: calc(0.8 * var(--font-size-base));
+  --font-size-sm: calc(0.9 * var(--font-size-base));
+  --font-size-lg: calc(1.125 * var(--font-size-base));
+  --font-size-xl: calc(1.25 * var(--font-size-base)); 
+  --font-size-2xl: calc(1.5 * var(--font-size-base));
+  --font-size-3xl: calc(2 * var(--font-size-base));
   --font-weight-head: 600;
   /* ---------------------- */
   /* theme elements         */
