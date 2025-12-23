@@ -56,30 +56,24 @@
 
   --border-radius-action: 0px;
   --border-width-action: 2px;
-  --border-bottom-width-action: 5px;
+  --border-bottom-width-action: 2px;
 
   --border-radius-input: 0px;
   --border-width-input: 2px;
   --border-style-input: solid;
-  --border-bottom-width-input: 5px;
+  --border-bottom-width-input: 2px;
+
+  color-scheme: light only;
 }
 
-blockquote {
-  background: var(--color-secondary-light-2);
+a:hover {
+  color: var(--color-primary-light-1);
 }
 
-button,
-input[type=submit],
-input[type=reset] {
-  border-color: var(--color-accent-dark-1);
+nav ul>li[aria-selected="true"] a {
+  color: var(--color-primary-light-1);
 }
 
-button[type=reset],
-input[type=reset] {
-  color: var(--color-txt-on-light);
-}
-
-div[role=note],
-details[open] {
-  border-color: var(--color-accent-dark-1);
+:is(button, input[type=submit]):not([type=reset]):not(:disabled):hover {
+  background: var(--color-primary-light-1);
 }
