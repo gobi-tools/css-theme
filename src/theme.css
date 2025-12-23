@@ -23,7 +23,7 @@
   --height-small-elem: 26px;
   --height-bottom-nav: 77px;
   /* text size */
-  --line-height-body: 1.6;
+  --line-height-body: 1.45;
   --line-height-head: 1.25;
   --letter-spacing-head: -0.01em;
   /* font sizes */
@@ -358,13 +358,19 @@ figcaption {
   font-size: var(--font-size-sm);
 }
 
+input {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-body);
+}
+
 button,
 input[type=submit],
 input[type=reset] {
   font-weight: bold;
   letter-spacing: -0.015em;
   border: solid;
-  font-size: var(--font-size-xsm);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-body);
 }
 
 /* ---------------------------------- */
@@ -1068,6 +1074,7 @@ svg:has(+*) {
   }
 
   nav[role=tablist]>ul>li {
+    align-content: center;
     width: 100%;
     padding-top: var(--space-1);
     padding-bottom: var(--space-1);
