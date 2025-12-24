@@ -7,7 +7,6 @@
   --width-container-medium: 1200px;
   --width-container-wide: 1600px;
   /* spacing */
-  --space-0: 0;
   --space-1: 0.125rem;
   --space-2: 0.25rem;
   --space-3: 0.5rem;
@@ -223,7 +222,7 @@ hr {
 }
 
 blockquote>:first-child {
-  margin-top: var(--space-0);
+  margin-top: 0;
 }
 
 blockquote>:last-child {
@@ -842,7 +841,7 @@ nav ul {
 nav ul {
   overflow: visible;
   /* @todo: vertical! */
-  margin-bottom: var(--space-0);
+  margin-bottom: 0;
 }
 
 nav ul>li {
@@ -1058,7 +1057,7 @@ svg:has(+*) {
   /* row -------------- */
   :not([role=group])>[role=row] {
     flex-direction: column;
-    gap: var(--space-0);
+    gap: 0;
   }
 }
 
@@ -1071,7 +1070,7 @@ svg:has(+*) {
   }
 
   nav ul:first-child>li {
-    padding-bottom: var(--space-0);
+    padding-bottom: 0;
   }
 }
 
@@ -1113,7 +1112,7 @@ svg:has(+*) {
 
   :not([role=group])>[role=row] {
     flex-direction: column;
-    gap: var(--space-0);
+    gap: 0;
   }
 
   /* navigation ------ */
@@ -1124,7 +1123,7 @@ svg:has(+*) {
   }
 
   nav ul>li {
-    padding-left: var(--space-0);
+    padding-left: 0;
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
   }
@@ -1147,7 +1146,7 @@ svg:has(+*) {
 
   nav[role=menu]>ul {
     flex-direction: row;
-    margin: var(--space-0);
+    margin: 0;
     justify-content: center;
   }
 
