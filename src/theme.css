@@ -200,8 +200,7 @@ figure>figure {
   margin: 0;
 }
 
-fieldset,
-details[open] {
+fieldset {
   margin-bottom: var(--space-6);
 }
 
@@ -245,6 +244,17 @@ img:has(+ figcaption),
 blockquote>:last-child,
 [role=note]>:last-child {
   margin-bottom: 0;
+}
+
+details {
+  margin-bottom: var(--space-2);
+}
+
+details>:nth-child(2) {
+  margin-top: var(--space-4);
+}
+[role=note]>:nth-child(2) {
+  margin-top: var(--space-7);
 }
 
 /* HORIZONTAL ------------------ */
@@ -446,30 +456,13 @@ nav ul>li>ul {
   border-color: var(--color-txt);
 }
 
-[role=note],
-details[open] {
+[role=note] {
   background: light-dark(var(--color-bg), var(--color-accent-dark-2));
   border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
 
-[role=note]>p:first-child {
-  box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1)), 0 -.8rem 0 .8rem light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
-}
-
-details {
-  border-color: transparent;
-}
-
-summary {
-  /* same as <a> */
-  color: light-dark(var(--color-primary), var(--color-primary-light-1))
-}
-
-details[open]>summary,
-summary:hover {
-  /* same as <a> */
-  color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
-  background: light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
+[role=note]>:is(p:first-child, summary:first-child) {
+  box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1)), 0 0rem 0 .8rem light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
 }
 
 fieldset,
@@ -569,7 +562,6 @@ pre>code {
   border-bottom-width: var(--border-bottom-width-blocks);
 }
 
-details,
 [role=note] {
   border-radius: var(--border-radius-details);
   border-width: var(--border-width-details);
@@ -720,18 +712,6 @@ input[type=reset]:hover {
 input[type=submit]:hover:disabled,
 input[type=reset]:hover:disabled {
   filter: opacity(50%);
-}
-
-/* summary & details */
-
-summary {
-  padding: var(--space-3);
-  padding-inline: var(--space-6);
-}
-
-details> :not(summary) {
-  padding-top: var(--space-3);
-  padding-inline: var(--space-6);
 }
 
 ul,
