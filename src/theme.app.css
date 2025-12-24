@@ -48,10 +48,10 @@
   --border-left-width-blocks: 2px;
   --border-bottom-width-blocks: 5px;
 
-  --border-radius-details: 4px;
-  --border-style-details: solid;
-  --border-width-details: 2px;
-  --border-bottom-width-details: 5px;
+  --border-radius-note: 4px;
+  --border-style-note: solid;
+  --border-width-note: 2px;
+  --border-bottom-width-note: 5px;
 
   --border-radius-action: 4px;
   --border-width-action: 2px;

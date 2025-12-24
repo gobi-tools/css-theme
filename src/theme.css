@@ -89,11 +89,6 @@
   --border-left-width-blocks: 4px;
   --border-bottom-width-blocks: 0px;
 
-  --border-radius-details: 6px;
-  --border-style-details: solid;
-  --border-width-details: 1px;
-  --border-bottom-width-details: 1px;
-
   --border-radius-action: 6px;
   --border-width-action: 2px;
   --border-bottom-width-action: 2px;
@@ -104,6 +99,11 @@
   --border-bottom-width-input: 2px;
 
   --border-width-nav: 2px;
+
+  --border-radius-note: 6px;
+  --border-style-note: solid;
+  --border-width-note: 1px;
+  --border-bottom-width-note: 1px;
 }
 
 /* ---------------------------------- */
@@ -192,16 +192,16 @@ table {
   margin-bottom: var(--space-8);
 }
 
-pre:has(+ figcaption) {
-  margin-bottom: 0;
-}
-
-figure>figure {
-  margin: 0;
-}
-
 fieldset {
   margin-bottom: var(--space-6);
+}
+
+main {
+  margin-top: var(--space-8);
+}
+
+main>* {
+  margin-top: 0;
 }
 
 section,
@@ -217,21 +217,17 @@ section {
   margin-bottom: var(--space-10);
 }
 
-main {
-  margin-top: var(--space-8);
-}
-
-main>* {
-  margin-top: var(--space-0);
-}
-
 hr {
   margin-top: var(--space-7) !important;
   margin-bottom: var(--space-7) !important;
 }
 
 blockquote>:first-child {
-  margin-top: 0;
+  margin-top: var(--space-0);
+}
+
+blockquote>:last-child {
+  margin-bottom: 0;
 }
 
 input,
@@ -240,10 +236,16 @@ textarea {
   margin-bottom: var(--space-6);
 }
 
-img:has(+ figcaption),
-blockquote>:last-child,
-[role=note]>:last-child {
+pre:has(+ figcaption) {
   margin-bottom: 0;
+}
+
+img:has(+ figcaption) {
+  margin-bottom: 0;
+}
+
+figure>figure {
+  margin: 0;
 }
 
 details {
@@ -252,6 +254,10 @@ details {
 
 details>:nth-child(2) {
   margin-top: var(--space-4);
+}
+
+[role=note]>:last-child {
+  margin-top: 0;
 }
 
 [role=note]>:nth-child(2) {
@@ -457,19 +463,6 @@ nav ul>li>ul {
   border-color: var(--color-txt);
 }
 
-[role=note] {
-  background: light-dark(var(--color-bg), var(--color-accent-dark-2));
-  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
-}
-
-[role=note]>:is(p, summary):first-child {
-  box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1)), 0 0rem 0 .8rem light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
-}
-
-[role=note]>summary:first-child:hover {
-  box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-1), var(--color-secondary)), 0 0rem 0 .8rem light-dark(var(--color-secondary-light-1), var(--color-secondary));
-}
-
 fieldset,
 input,
 select,
@@ -506,6 +499,19 @@ tr:hover {
 
 [aria-selected="true"] a {
   color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
+}
+
+[role=note] {
+  background: light-dark(var(--color-bg), var(--color-accent-dark-2));
+  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
+}
+
+[role=note]>:is(p, summary):first-child {
+  box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1)), 0 0rem 0 .8rem light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
+}
+
+[role=note]>summary:first-child:hover {
+  box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-1), var(--color-secondary)), 0 0rem 0 .8rem light-dark(var(--color-secondary-light-1), var(--color-secondary));
 }
 
 .is-success {
@@ -567,13 +573,6 @@ pre>code {
   border-bottom-width: var(--border-bottom-width-blocks);
 }
 
-[role=note] {
-  border-radius: var(--border-radius-details);
-  border-width: var(--border-width-details);
-  border-style: var(--border-style-details);
-  border-bottom-width: var(--border-bottom-width-details);
-}
-
 button,
 input[type=submit],
 input[type=reset] {
@@ -603,6 +602,13 @@ textarea:focus {
   outline-style: var(--border-style-input);
   outline-width: var(--border-width-input);
   outline-offset: calc(-1 * var(--border-width-input));
+}
+
+[role=note] {
+  border-radius: var(--border-radius-note);
+  border-width: var(--border-width-note);
+  border-style: var(--border-style-note);
+  border-bottom-width: var(--border-bottom-width-note);
 }
 
 [role=group]>:is(:first-child) {
@@ -698,10 +704,6 @@ input[type=reset] {
   vertical-align: middle;
 }
 
-:not([role=group])>button+button {
-  margin-left: var(--space-2);
-}
-
 button:hover,
 input[type=submit]:hover,
 input[type=reset]:hover {
@@ -784,10 +786,6 @@ kbd,
 var {
   padding: var(--space-2);
   padding-inline: var(--space-3);
-}
-
-:not([role=group])>mark+mark {
-  margin-left: var(--space-2);
 }
 
 dt {
@@ -962,6 +960,14 @@ nav li:has(> ul)>a::after {
   margin-bottom: 0;
 }
 
+:not([role=group])>button+button {
+  margin-left: var(--space-2);
+}
+
+:not([role=group])>mark+mark {
+  margin-left: var(--space-2);
+}
+
 /* notes ---------------------------- */
 
 [role=note] {
@@ -1031,6 +1037,8 @@ svg:has(+*) {
   padding-left: var(--space-4);
   padding-right: var(--space-4);
 }
+
+/* mobile & destkop */
 
 .is-mobile-only {
   display: none !important;
