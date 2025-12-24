@@ -306,8 +306,13 @@ img {
   text-align: center;
 }
 
+/* @todo: to delete */
 .is-pulled-right {
   margin-left: auto;
+}
+
+.is-gap {
+  flex-grow: 1;
 }
 
 /* ---------------------------------- */
@@ -833,6 +838,7 @@ header>nav {
 
 nav ul {
   display: flex;
+  gap: var(--space-7);
   align-items: center;
   list-style-type: none;
   margin-left: 0;
@@ -846,9 +852,8 @@ nav ul {
 
 nav ul>li {
   display: inline-block;
-  padding: var(--space-3);
-  padding-left: 0;
-  padding-right: var(--space-7);
+  padding-block: var(--space-3);
+  padding-inline: 0;
   /* @todo: vertical! */
   margin-bottom: 0;
 }
@@ -1066,6 +1071,7 @@ svg:has(+*) {
 
   nav>ul {
     flex-direction: column;
+    gap: 0;
     align-items: start;
   }
 
@@ -1119,6 +1125,7 @@ svg:has(+*) {
 
   nav>ul {
     flex-direction: column;
+    gap: 0;
     align-items: start;
   }
 
