@@ -72,10 +72,10 @@ blockquote, pre>code, [role=note] {
   border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
 
-[role=note] {
+/* [role=note] {
   background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
   border-color: var(--color-accent-dark-1);
-}
+} */
 
 details[open]>summary,
 summary:hover {
