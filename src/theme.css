@@ -1058,7 +1058,7 @@ svg:has(+*) {
 /* only <aside> works atm ----------- */
 /* ---------------------------------- */
 
-@container(max-width: 600px) {
+@container(max-width: 420px) {
 
   /* row -------------- */
   :not([role=group])>[role=row] {

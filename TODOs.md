@@ -4,6 +4,7 @@ Features
 - [ ] pagination
 - [x] navigation
   - [ ] navigation of various widths (super skinny, skinny, horizontal, etc, like the side menu of CircleCI)
+  - [ ] "menu" type navigation on desktop should also look like https://retiready.co.uk/ (e.g. a bit of "mobile-on-desktop" feel)
 - [ ] forms
   - [ ] validation states
 - [ ] animations
