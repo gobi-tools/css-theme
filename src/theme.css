@@ -944,6 +944,8 @@ nav li:has(> ul)>a::after {
 
 [role=group]>* {
   align-items: center;
+  /* @todo: horz */
+  margin-inline: 0;
   /* @todo: vertical! */
   margin-bottom: 0;
 }
