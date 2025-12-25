@@ -1,9 +1,3 @@
-/* vertical layout */
-
-[role=group]>* {
-  margin-bottom: 0;
-}
-
 /* horizontal layout */
 
 [role=group]>* {
@@ -37,7 +31,10 @@
 
 [role=group]>:is(button, input[type=submit], input[type=reset], mark) {
   width: auto;
-  align-self: flex-end;
+  /* @todo: buttons & inputs have different margin-bottom (0 vs space-6 
+     so this becomes important
+     */
+  align-self: flex-start;
 }
 
 [role=group]>:is(button, input[type=submit], input[type=reset])+:is(input, button) {

@@ -616,8 +616,9 @@ figure>figure {
 /* form --------------------------- */
 
 fieldset {
-  padding: var(--space-5);
+  padding-inline: var(--space-5);
   padding-top: var(--space-6);
+  padding-bottom: 0;
 }
 
 input:not([type=checkbox], [type=radio]),
