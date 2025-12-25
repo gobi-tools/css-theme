@@ -14,14 +14,6 @@
   margin-inline: 0;
 }
 
-:not([role=group])>button+button {
-  margin-left: var(--space-2);
-}
-
-:not([role=group])>mark+mark {
-  margin-left: var(--space-2);
-}
-
 /* base */
 
 [role=group] {
@@ -47,7 +39,7 @@
   border-radius: 0;
 }
 
-[role=group]>:is(input[type=submit], input[type=reset], button, mark) {
+[role=group]>:is(button, input[type=submit], input[type=reset], mark) {
   width: auto;
   align-self: flex-end;
 }
@@ -69,6 +61,8 @@
 [role=group]>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
   border-right-width: var(--border-width-action);
 }
+
+/* different layouts */ 
 
 @container(max-width: 420px) {
   :not([role=group])>[role=row] {
