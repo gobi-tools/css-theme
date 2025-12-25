@@ -1,3 +1,5 @@
+/* base */
+
 nav[role=tablist]>ul>li[aria-selected="true"] {
   border-bottom: 4px solid light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
 }
@@ -6,6 +8,8 @@ nav[role=tablist] ul>li {
   border-bottom: 4px solid var(--color-bg);
   padding-inline: var(--space-5);
 }
+
+/* different layouts */ 
 
 @container(max-width: 420px) {
   nav[role=tablist]>ul>li[aria-selected="true"] {
