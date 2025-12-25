@@ -14,11 +14,6 @@
   margin-inline: 0;
 }
 
-[role=group]>input[type=checkbox],
-[role=group]>input[type=radio] {
-  margin-right: var(--space-3);
-}
-
 :not([role=group])>button+button {
   margin-left: var(--space-2);
 }
