@@ -24,7 +24,7 @@ Features
   - [ ] .is-bg-success
   - [ ] .is-bg-error
   - [ ] .is-rounded
-  - [ ] .is-circle
+  - [x] .is-circle
 
 Improvements
 ------------
