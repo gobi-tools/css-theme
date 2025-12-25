@@ -1,31 +1,39 @@
+import { exit } from 'process';
 import * as fs from 'fs';
 
-// 1. create inter folder
+const TMP_FOLDER = 'tmp';
+const THEMES_FOLDER = 'src/themes';
+const BASE_FOLDER = 'src/base';
+const RESET_FILE = '01.reset.css';
+const OUTPUT_FILE = 'theme.css';
+
+// 1. setup workspace dir
 try {
-  fs.rmSync('inter', { recursive: true, force: true });
-} catch {}
-fs.mkdirSync('inter');
-console.log('Created intermediary folder');
+  fs.rmSync(TMP_FOLDER, { recursive: true, force: true });
+  fs.mkdirSync(TMP_FOLDER);
+} catch {
+  exit(0);
+}
 
 // 2. copy the normal themes
-const themes = fs.readdirSync('src/themes');
+const themes = fs.readdirSync(THEMES_FOLDER);
 for (const theme of themes) {
-  const origin = `src/themes/${theme}`;
-  const dest = `inter/${theme}`;
+  const origin = `${THEMES_FOLDER}/${theme}`;
+  const dest = `${TMP_FOLDER}/${theme}`;
   fs.copyFileSync(origin, dest);
-  console.log('Copied', theme, 'to intermediary folder');
+  console.log(`Copied ${origin} => ${dest}`);
 }
 
 // 3. create main theme file
-const baseCssFile = 'theme.css';
-const baseCss = fs.readFileSync('src/base/theme.css', 'utf-8');
-const extraCssFiles = fs.readdirSync('src/base').filter((f) => f !== baseCssFile);
+const baseCss = fs.readFileSync(`${BASE_FOLDER}/${RESET_FILE}`, 'utf-8');
+const extraCssFiles = fs.readdirSync(BASE_FOLDER).filter((f) => f !== RESET_FILE);
 
 const extraCsss = [];
 for (const extraCssFile of extraCssFiles) {
-  const extraCss = fs.readFileSync(`src/base/${extraCssFile}`, 'utf-8');  
+  const extraCss = fs.readFileSync(`${BASE_FOLDER}/${extraCssFile}`, 'utf-8');
   extraCsss.push(extraCss);
 }
 
+// 4. write the filal file
 const css = [baseCss, ...extraCsss].join('\n');
-fs.writeFileSync('inter/theme.css', css);
+fs.writeFileSync(`${TMP_FOLDER}/${OUTPUT_FILE}`, css);
