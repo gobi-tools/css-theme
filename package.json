@@ -1,14 +1,16 @@
 {
- "name": "css-theme",
- "version": "1.0.0",
- "type": "module",
- "scripts": {
-  "build": "css-minify -d src/ -o /dist"
- },
- "keywords": [],
- "author": "Gabriel Coman",
- "license": "MIT",
- "devDependencies": {
-  "css-minify": "^2.1.0"
- }
+  "name": "css-theme",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsx scripts/build.ts && css-minify -d inter/ -o /dist"
+  },
+  "keywords": [],
+  "author": "Gabriel Coman",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "css-minify": "^2.1.0",
+    "tsx": "^4.21.0"
+  }
 }
