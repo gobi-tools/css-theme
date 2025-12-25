@@ -267,7 +267,15 @@ img {
   max-width: 100%;
 }
 
-:is(button, mark, input, blockquote, pre, img)+:is(button, mark, input, blockquote, pre, img) {
+button + button,
+input[type=submit] + input[type=submit],
+input[type=submit] + input[type=reset],
+input[type=reset] + input[type=reset],
+input[type=reset] + input[type=submit],
+mark + mark,
+blockquote + blockquote,
+pre + pre,
+img + img {
   margin-left: var(--space-2);
 }
 

@@ -4,10 +4,6 @@
   margin-bottom: 0;
 }
 
-[role=group]>[role=row]>div {
-  margin-bottom: 0;
-}
-
 /* horizontal layout */
 
 [role=group]>* {
