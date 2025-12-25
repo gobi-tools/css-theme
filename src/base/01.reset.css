@@ -908,11 +908,11 @@ svg:only-child {
 }
 
 svg:has(+*) {
-  margin-right: var(--space-2);
+  margin-right: var(--space-2) !important;
 }
 
 *:has(+svg) {
-  margin-right: var(--space-2);
+  margin-right: var(--space-2) !important;
 }
 
 :is(button, input[type=submit], input[type=reset]):has(svg:only-child) {
