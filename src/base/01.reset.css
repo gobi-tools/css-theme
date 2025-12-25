@@ -582,21 +582,6 @@ textarea:focus {
   outline-offset: calc(-1 * var(--border-width-input));
 }
 
-[role=group]>:is(:first-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-[role=group]>:is(:last-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-[role=group]>:not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-
-[role=group]>input,
 fieldset,
 select {
   border-bottom-width: var(--border-bottom-width-input);
@@ -889,56 +874,6 @@ nav li:has(> ul)>a::after {
   width: 100%;
 }
 
-/* group --------------------------- */
-
-[role=group] {
-  display: flex;
-  align-items: center;
-}
-
-[role=group]>* {
-  align-items: center;
-  /* @todo: horz */
-  margin-inline: 0;
-  /* @todo: vertical! */
-  margin-bottom: 0;
-}
-
-[role=group]>:is(input[type=submit], input[type=reset], button, mark) {
-  width: auto;
-  align-self: flex-end;
-}
-
-[role=group]>input[type=checkbox],
-[role=group]>input[type=radio] {
-  margin-right: var(--space-3);
-}
-
-[role=group]>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
-  border-right-width: 0;
-}
-
-[role=group]>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
-  border-right-width: var(--border-width-action);
-}
-
-[role=group]>:is(button, input[type=submit], input[type=reset])+:is(input, button) {
-  border-left-width: 0;
-}
-
-[role=group]>[role=row]>div {
-  /* @todo: vertical! */
-  margin-bottom: 0;
-}
-
-:not([role=group])>button+button {
-  margin-left: var(--space-2);
-}
-
-:not([role=group])>mark+mark {
-  margin-left: var(--space-2);
-}
-
 /* icons -------------------------- */
 
 :is(button, input[type=submit], input[type=reset])>svg {
@@ -996,15 +931,6 @@ svg:has(+*) {
 /* only <aside> works atm ----------- */
 /* ---------------------------------- */
 
-@container(max-width: 420px) {
-
-  /* row -------------- */
-  :not([role=group])>[role=row] {
-    flex-direction: column;
-    gap: 0;
-  }
-}
-
 @container (max-width: 768px) {
   /* navigation ------ */
 
@@ -1031,13 +957,6 @@ svg:has(+*) {
 
   .is-desktop-only {
     display: none !important;
-  }
-
-  /* row -------------- */
-
-  :not([role=group])>[role=row] {
-    flex-direction: column;
-    gap: 0;
   }
 
   /* navigation ------ */

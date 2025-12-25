@@ -1,0 +1,90 @@
+/* vertical layout */
+
+[role=group]>* {
+  margin-bottom: 0;
+}
+
+[role=group]>[role=row]>div {
+  margin-bottom: 0;
+}
+
+/* horizontal layout */
+
+[role=group]>* {
+  margin-inline: 0;
+}
+
+[role=group]>input[type=checkbox],
+[role=group]>input[type=radio] {
+  margin-right: var(--space-3);
+}
+
+:not([role=group])>button+button {
+  margin-left: var(--space-2);
+}
+
+:not([role=group])>mark+mark {
+  margin-left: var(--space-2);
+}
+
+/* base */
+
+[role=group] {
+  display: flex;
+  align-items: center;
+}
+
+[role=group]>* {
+  align-items: center;
+}
+
+[role=group]>:is(:first-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+[role=group]>:is(:last-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+[role=group]>:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+[role=group]>:is(input[type=submit], input[type=reset], button, mark) {
+  width: auto;
+  align-self: flex-end;
+}
+
+[role=group]>:is(button, input[type=submit], input[type=reset])+:is(input, button) {
+  border-left-width: 0;
+}
+
+[role=group]>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
+  border-right-width: 0;
+}
+
+/* theme styles */
+
+[role=group]>input {
+  border-bottom-width: var(--border-bottom-width-input);
+}
+
+[role=group]>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
+  border-right-width: var(--border-width-action);
+}
+
+@container(max-width: 420px) {
+  :not([role=group])>[role=row] {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  :not([role=group])>[role=row] {
+    flex-direction: column;
+    gap: 0;
+  }
+}

@@ -27,11 +27,13 @@ for (const theme of themes) {
 // 3. create main theme file
 const baseCss = fs.readFileSync(`${BASE_FOLDER}/${RESET_FILE}`, 'utf-8');
 const extraCssFiles = fs.readdirSync(BASE_FOLDER).filter((f) => f !== RESET_FILE);
+console.log(`Extracted ${BASE_FOLDER}/${RESET_FILE}`);
 
 const extraCsss = [];
 for (const extraCssFile of extraCssFiles) {
   const extraCss = fs.readFileSync(`${BASE_FOLDER}/${extraCssFile}`, 'utf-8');
   extraCsss.push(extraCss);
+  console.log(`Extracted ${BASE_FOLDER}/${extraCssFile}`);
 }
 
 // 4. write the filal file
