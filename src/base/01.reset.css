@@ -861,23 +861,6 @@ nav li:has(> ul)>a::after {
 /* custom elements ------------------ */
 /* ---------------------------------- */
 
-/* columns -------------------------- */
-
-:is(div, p, section):has(>[role=row]) {
-  container-type: inline-size;
-  width: 100%;
-}
-
-[role=row] {
-  display: flex;
-  align-items: stretch;
-  gap: var(--space-7);
-}
-
-[role=row]>div {
-  width: 100%;
-}
-
 /* icons -------------------------- */
 
 :is(button, input[type=submit], input[type=reset])>svg {

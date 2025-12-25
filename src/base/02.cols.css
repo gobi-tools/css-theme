@@ -1,0 +1,32 @@
+/* base */
+
+:is(div, p, section):has(>[role=row]) {
+  container-type: inline-size;
+  width: 100%;
+}
+
+[role=row] {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-7);
+}
+
+[role=row]>div {
+  width: 100%;
+}
+
+/* different layouts */ 
+
+@container(max-width: 420px) {
+  :not([role=group])>[role=row] {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  :not([role=group])>[role=row] {
+    flex-direction: column;
+    gap: 0;
+  }
+}

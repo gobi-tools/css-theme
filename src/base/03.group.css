@@ -61,19 +61,3 @@
 [role=group]>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
   border-right-width: var(--border-width-action);
 }
-
-/* different layouts */ 
-
-@container(max-width: 420px) {
-  :not([role=group])>[role=row] {
-    flex-direction: column;
-    gap: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  :not([role=group])>[role=row] {
-    flex-direction: column;
-    gap: 0;
-  }
-}
