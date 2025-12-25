@@ -1076,7 +1076,7 @@ svg:has(+*) {
   }
 }
 
-@container(max-width: 1024px) {
+@container(max-width: 420px) {
   /* tabs */
 
   nav[role=tablist]>ul>li[aria-selected="true"] {
@@ -1093,7 +1093,7 @@ svg:has(+*) {
     padding-top: var(--space-1);
     padding-bottom: var(--space-1);
     padding-left: var(--space-6) !important;
-    border-bottom: 0;
+    border-bottom: none;
   }
 }
 
