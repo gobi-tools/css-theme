@@ -39,4 +39,4 @@ Bugs
 - [ ] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [ ] on mobile Chrome (browser), datepicker has small height & width
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
-- [ ] make the .is-gap class not visible on mobile
+- [x] make the .is-gap class not visible on mobile

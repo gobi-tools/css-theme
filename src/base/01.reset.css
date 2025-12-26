@@ -126,7 +126,6 @@ img,
 ul,
 ol,
 dl,
-fieldset,
 pre,
 pre>code {
   display: block;
@@ -138,8 +137,6 @@ details {
 }
 
 a,
-button,
-select,
 summary {
   cursor: pointer;
 }
@@ -190,10 +187,6 @@ figure {
   margin-bottom: var(--space-8);
 }
 
-fieldset {
-  margin-bottom: var(--space-6);
-}
-
 main {
   margin-top: var(--space-8);
 }
@@ -228,12 +221,6 @@ blockquote>:last-child {
   margin-bottom: 0;
 }
 
-input,
-select,
-textarea {
-  margin-bottom: var(--space-6);
-}
-
 pre:has(+ figcaption) {
   margin-bottom: 0;
 }
@@ -266,11 +253,6 @@ img {
   max-width: 100%;
 }
 
-button + button,
-input[type=submit] + input[type=submit],
-input[type=submit] + input[type=reset],
-input[type=reset] + input[type=reset],
-input[type=reset] + input[type=submit],
 mark + mark,
 blockquote + blockquote,
 pre + pre,
@@ -336,25 +318,6 @@ figcaption {
   font-size: var(--font-size-sm);
 }
 
-input {
-  font-size: var(--font-size-sm);
-  font-family: var(--font-family-body);
-}
-
-select {
-  font-weight: bold;
-}
-
-button,
-input[type=submit],
-input[type=reset] {
-  font-weight: bold;
-  letter-spacing: -0.015em;
-  border: solid;
-  font-size: var(--font-size-xsm);
-  font-family: var(--font-family-body);
-}
-
 /* ---------------------------------- */
 /* theme - colors ------------------- */
 /* ---------------------------------- */
@@ -381,20 +344,6 @@ a:hover {
 
 hr {
   border-color: inherit;
-}
-
-button,
-input[type=submit] {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-txt-on-dark);
-}
-
-button[type=reset],
-input[type=reset] {
-  background: var(--color-bg);
-  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
-  border-color: var(--color-primary);
 }
 
 blockquote {
@@ -425,36 +374,6 @@ var>* {
   color: currentColor !important;
 }
 
-fieldset,
-input,
-select,
-textarea {
-  background: var(--color-bg);
-  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
-  accent-color: var(--color-secondary);
-}
-
-select {
-  background: light-dark(var(--color-accent-light-2), var(--color-bg));
-  color: light-dark(var(--color-primary-dark-1), var(--color-primary-light-1));
-}
-
-:is(input, select, textarea)::placeholder {
-  color: var(--color-accent);
-}
-
-fieldset:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline-color: var(--color-primary);
-  border-bottom-color: var(--color-primary);
-}
-
-fieldset {
-  background: light-dark(var(--color-bg), var(--color-accent-dark-2));
-}
-
 [aria-selected="true"] a {
   color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
 }
@@ -480,37 +399,6 @@ pre>code {
   border-bottom-width: var(--border-bottom-width-blocks);
 }
 
-button,
-input[type=submit],
-input[type=reset] {
-  border-style: solid;
-  border-width: var(--border-width-action);
-  border-radius: var(--border-radius-action);
-  border-bottom-width: var(--border-bottom-width-action);
-}
-
-fieldset,
-input,
-select,
-textarea {
-  border-style: var(--border-style-input);
-  border-width: var(--border-width-input);
-  border-radius: var(--border-radius-input);
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline-style: var(--border-style-input);
-  outline-width: var(--border-width-input);
-  outline-offset: calc(-1 * var(--border-width-input));
-}
-
-fieldset,
-select {
-  border-bottom-width: var(--border-bottom-width-input);
-}
-
 /* ---------------------------------- */
 /* standard elements ---------------- */
 /* ---------------------------------- */
@@ -525,82 +413,7 @@ figure>figure {
   display: inline-grid;
 }
 
-/* form --------------------------- */
-
-fieldset {
-  padding-inline: var(--space-5);
-  padding-top: var(--space-6);
-  padding-bottom: 0;
-}
-
-input:not([type=checkbox], [type=radio]),
-select,
-textarea {
-  display: block;
-  width: 100%;
-  padding: var(--space-3);
-  min-height: var(--height-input);
-}
-
-select {
-  height: var(--height-input);
-}
-
-input[type=checkbox],
-input[type=radio] {
-  margin-right: var(--space-3);
-}
-
-input[type=submit] {
-  padding-left: var(--space-7);
-  padding-right: var(--space-7);
-}
-
-input:is([type=checkbox]),
-input:is([type=radio]) {
-  display: initial;
-  width: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-label {
-  margin-right: var(--space-7);
-}
-
-/* buttons ------------------------- */
-
-button,
-input[type=submit],
-input[type=reset] {
-  min-height: var(--height-input);
-  padding-top: var(--space-3);
-  padding-bottom: var(--space-3);
-  padding-left: var(--space-7);
-  padding-right: var(--space-7);
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-}
-
-button:hover,
-input[type=submit]:hover,
-input[type=reset]:hover {
-  filter: brightness(90%);
-}
-
-*:disabled {
-  filter: opacity(50%);
-  cursor: not-allowed;
-}
-
-*:hover:disabled,
-input[type=submit]:hover:disabled,
-input[type=reset]:hover:disabled {
-  filter: opacity(50%);
-}
+/* lists ------------------------- */
 
 ul,
 ol {

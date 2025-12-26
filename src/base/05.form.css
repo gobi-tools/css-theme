@@ -1,0 +1,123 @@
+/* vertical layout */
+
+fieldset,
+input,
+select,
+textarea {
+  margin-bottom: var(--space-6);
+}
+
+/* horizontal layout */
+
+input[type=checkbox],
+input[type=radio] {
+  margin-right: var(--space-3);
+}
+
+label {
+  margin-right: var(--space-7);
+}
+
+/* base */
+
+fieldset {
+  display: block;
+  text-align: left;
+  padding-inline: var(--space-5);
+  padding-top: var(--space-6);
+  padding-bottom: 0;
+}
+
+select {
+  cursor: pointer;
+}
+
+input:not([type=checkbox], [type=radio]),
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: var(--space-3);
+  min-height: var(--height-input);
+}
+
+select {
+  height: var(--height-input);
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: initial;
+  width: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* typography */
+
+input {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-body);
+}
+
+select {
+  font-weight: bold;
+}
+
+/* theme colors */
+
+fieldset,
+input,
+select,
+textarea {
+  background: var(--color-bg);
+  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
+  accent-color: var(--color-secondary);
+}
+
+select {
+  background: light-dark(var(--color-accent-light-2), var(--color-bg));
+  color: light-dark(var(--color-primary-dark-1), var(--color-primary-light-1));
+}
+
+:is(input, select, textarea)::placeholder {
+  color: var(--color-accent);
+}
+
+fieldset:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+fieldset {
+  background: light-dark(var(--color-bg), var(--color-accent-dark-2));
+}
+
+/* theme style */
+
+fieldset,
+input,
+select,
+textarea {
+  border-style: var(--border-style-input);
+  border-width: var(--border-width-input);
+  border-radius: var(--border-radius-input);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-style: var(--border-style-input);
+  outline-width: var(--border-width-input);
+  outline-offset: calc(-1 * var(--border-width-input));
+}
+
+fieldset,
+select {
+  border-bottom-width: var(--border-bottom-width-input);
+}
