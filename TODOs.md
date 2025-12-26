@@ -29,6 +29,7 @@ Features
 Improvements
 ------------
 - [ ] if I have a nav with the "card" role, it looks fairly ok; but the padding-block could be 0 to make it look even better
+- [ ] fieldsets, cards all have padding-bottom: 0 -> is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
 - [ ] decide on class-based versions for various roles & types (columns, note, etc)
 - [ ] redo the horizontal spacing to be based on "ch"
 - [ ] redo the mobile & container logic (based on "ch", like here: https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
@@ -38,4 +39,3 @@ Bugs
 - [ ] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [ ] on mobile Chrome (browser), datepicker has small height & width
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
-- [ ] fieldsets, cards all have padding-bottom: 0 -> is that a good way to approach this?

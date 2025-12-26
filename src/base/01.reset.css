@@ -460,11 +460,6 @@ var>* {
   color: currentColor !important;
 }
 
-nav ul>li>ul {
-  background: var(--color-bg);
-  border-color: var(--color-txt);
-}
-
 fieldset,
 input,
 select,
@@ -565,11 +560,6 @@ input[type=reset] {
   border-width: var(--border-width-action);
   border-radius: var(--border-radius-action);
   border-bottom-width: var(--border-bottom-width-action);
-}
-
-nav ul>li>ul {
-  border-style: solid;
-  border-width: var(--border-width-nav);
 }
 
 fieldset,
@@ -748,90 +738,9 @@ mark {
   vertical-align: middle;
 }
 
-/* navigation (normal) --------------- */
-
-header> :not(nav) {
-  padding-top: var(--space-9);
-}
-
-body>nav,
-header>nav {
-  z-index: 41;
-  padding-top: var(--space-3);
-  padding-bottom: var(--space-3);
-}
-
-nav ul {
-  display: flex;
-  gap: var(--space-7);
-  align-items: center;
-  list-style-type: none;
-  margin-left: 0;
-}
-
-nav ul {
-  overflow: visible;
-  /* @todo: vertical! */
-  margin-bottom: 0;
-}
-
-nav ul>li {
-  display: inline-block;
-  padding-block: var(--space-3);
-  padding-inline: 0;
-  /* @todo: vertical! */
-  margin-bottom: 0;
-}
-
-nav ul>li>* {
-  margin: 0;
-}
-
-nav a {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-}
-
-nav ul>li>ul {
-  display: none;
-  width: auto;
-  position: absolute;
-  z-index: 42;
-}
-
-nav ul>li>ul>li {
-  white-space: nowrap;
-  margin: 0;
-}
-
-nav ul>li:hover>ul {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  padding-inline: var(--space-7);
-  padding: var(--space-6);
-  align-items: start;
-  min-width: 150px;
-}
-
-nav li:has(> ul)>a {
-  pointer-events: none;
-}
-
-nav li:has(> ul)>a::after {
-  content: "▼";
-  font-size: 0.8em;
-  opacity: 0.7;
-}
-
 /* ---------------------------------- */
 /* custom elements ------------------ */
 /* ---------------------------------- */
-
-/* icons -------------------------- */
-
 
 
 /* mobile & destkop */
@@ -842,25 +751,6 @@ nav li:has(> ul)>a::after {
 
 .is-desktop-only {
   display: block !important;
-}
-
-/* ---------------------------------- */
-/* container support ---------------- */
-/* only <aside> works atm ----------- */
-/* ---------------------------------- */
-
-@container (max-width: 768px) {
-  /* navigation ------ */
-
-  nav>ul {
-    flex-direction: column;
-    gap: 0;
-    align-items: start;
-  }
-
-  nav ul:first-child>li {
-    padding-bottom: 0;
-  }
 }
 
 /* ---------------------------------- */
@@ -875,24 +765,6 @@ nav li:has(> ul)>a::after {
 
   .is-desktop-only {
     display: none !important;
-  }
-
-  /* navigation ------ */
-
-  nav>ul {
-    flex-direction: column;
-    gap: 0;
-    align-items: start;
-  }
-
-  nav ul>li {
-    padding-left: 0;
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
-  }
-
-  nav ul>li>ul {
-    width: 50%;
   }
 
   /* menu -------- */
