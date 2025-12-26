@@ -278,41 +278,6 @@ img + img {
   margin-left: var(--space-2);
 }
 
-.is-hero {
-  max-width: none;
-  margin-inline: 0;
-  width: 100%;
-}
-
-.is-hero>* {
-  width: min(100% - var(--space-9), var(--width-container-narrow));
-  margin-inline: auto;
-}
-
-.is-medium-container {
-  width: min(100% - var(--space-9), var(--width-container-medium));
-  margin-inline: auto;
-}
-
-.is-wide-container {
-  width: min(100% - var(--space-9), var(--width-container-wide));
-  margin-inline: auto;
-}
-
-.is-wide-container>*,
-.is-medium-container>* {
-  width: auto;
-}
-
-.is-pulled-center {
-  justify-content: center;
-  text-align: center;
-}
-
-.is-gap {
-  flex-grow: 1;
-}
-
 /* ---------------------------------- */
 /* typography ----------------------- */
 /* ---------------------------------- */
@@ -492,44 +457,6 @@ fieldset {
 
 [aria-selected="true"] a {
   color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
-}
-
-.is-success {
-  --color-accent-light-1: var(--color-success-light-1);
-  --color-accent-light-2: var(--color-success-light-2);
-  --color-accent-dark-1: var(--color-success-dark-1);
-  --color-accent-dark-2: var(--color-success-dark-2);
-
-  --color-primary: var(--color-success);
-  --color-primary-light-1: var(--color-success-light-1);
-  --color-primary-light-2: var(--color-success-light-2);
-  --color-primary-dark-1: var(--color-success-dark-1);
-  --color-primary-dark-2: var(--color-success-dark-2);
-
-  --color-secondary: var(--color-success);
-  --color-secondary-light-1: var(--color-success-light-1);
-  --color-secondary-light-2: var(--color-success-light-2);
-  --color-secondary-dark-1: var(--color-success-dark-1);
-  --color-secondary-dark-2: var(--color-success-dark-2);
-}
-
-.is-error {
-  --color-accent-light-1: var(--color-error-light-1);
-  --color-accent-light-2: var(--color-error-light-2);
-  --color-accent-dark-1: var(--color-error-dark-1);
-  --color-accent-dark-2: var(--color-error-dark-2);
-
-  --color-primary: var(--color-error);
-  --color-primary-light-1: var(--color-error-light-1);
-  --color-primary-light-2: var(--color-error-light-2);
-  --color-primary-dark-1: var(--color-error-dark-1);
-  --color-primary-dark-2: var(--color-error-dark-2);
-
-  --color-secondary: var(--color-error);
-  --color-secondary-light-1: var(--color-error-light-1);
-  --color-secondary-light-2: var(--color-error-light-2);
-  --color-secondary-dark-1: var(--color-error-dark-1);
-  --color-secondary-dark-2: var(--color-error-dark-2);
 }
 
 /* ---------------------------------- */
