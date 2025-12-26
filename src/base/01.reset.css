@@ -117,10 +117,7 @@
 }
 
 header,
-footer,
-figure,
-video,
-img {
+footer {
   display: block;
   text-align: left;
 }
@@ -158,10 +155,6 @@ p {
   margin-bottom: var(--space-6);
 }
 
-figure {
-  margin-bottom: var(--space-8);
-}
-
 main {
   margin-top: var(--space-8);
 }
@@ -188,28 +181,11 @@ hr {
   margin-bottom: var(--space-7) !important;
 }
 
-img:has(+ figcaption) {
-  margin-bottom: 0;
-}
-
-figure>figure {
-  margin: 0;
-}
-
 /* HORIZONTAL ------------------ */
 
 body>* {
   width: min(100% - var(--space-9), var(--width-container-narrow));
   margin-inline: auto;
-}
-
-img {
-  margin-inline: auto;
-  max-width: 100%;
-}
-
-img + img {
-  margin-left: var(--space-2);
 }
 
 /* ---------------------------------- */
@@ -257,11 +233,6 @@ h4 {
   font-size: var(--font-size-lg);
 }
 
-figcaption {
-  font-style: italic;
-  font-size: var(--font-size-sm);
-}
-
 /* ---------------------------------- */
 /* theme - colors ------------------- */
 /* ---------------------------------- */
@@ -289,18 +260,6 @@ hr {
 /* ---------------------------------- */
 /* standard elements ---------------- */
 /* ---------------------------------- */
-
-/* images & figures */
-
-img {
-  object-fit: cover;
-}
-
-figure>figure {
-  display: inline-grid;
-}
-
-/* lists ------------------------- */
 
 hr {
   height: 1px;

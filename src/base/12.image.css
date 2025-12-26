@@ -1,0 +1,48 @@
+/* vertical layout */
+
+figure {
+  margin-bottom: var(--space-8);
+}
+
+img:has(+ figcaption) {
+  margin-bottom: 0;
+}
+
+figure>figure {
+  margin: 0;
+}
+
+/* horizontal layout */ 
+
+img {
+  margin-inline: auto;
+  max-width: 100%;
+}
+
+img + img {
+  margin-left: var(--space-2);
+}
+
+/* base */
+
+figure,
+video,
+img {
+  display: block;
+  text-align: left;
+}
+
+img {
+  object-fit: cover;
+}
+
+figure>figure {
+  display: inline-grid;
+}
+
+/* typography */ 
+
+figcaption {
+  font-style: italic;
+  font-size: var(--font-size-sm);
+}
