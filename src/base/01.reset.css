@@ -125,10 +125,6 @@ img {
   text-align: left;
 }
 
-a {
-  cursor: pointer;
-}
-
 /* ---------------------------------- */
 /* layouts -------------------------- */
 /* ---------------------------------- */
@@ -280,14 +276,6 @@ body {
 
 *>* {
   color: inherit;
-}
-
-a {
-  color: light-dark(var(--color-primary), var(--color-primary-light-1));
-}
-
-a:hover {
-  color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
 }
 
 hr {
