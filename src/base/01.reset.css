@@ -120,18 +120,12 @@ header,
 footer,
 figure,
 video,
-details,
 img {
   display: block;
   text-align: left;
 }
 
-details {
-  overflow: hidden;
-}
-
-a,
-summary {
+a {
   cursor: pointer;
 }
 
@@ -204,14 +198,6 @@ img:has(+ figcaption) {
 
 figure>figure {
   margin: 0;
-}
-
-details {
-  margin-bottom: var(--space-2);
-}
-
-details>:nth-child(2) {
-  margin-top: var(--space-4);
 }
 
 /* HORIZONTAL ------------------ */
