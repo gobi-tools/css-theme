@@ -121,10 +121,7 @@ footer,
 figure,
 video,
 details,
-img,
-ul,
-ol,
-dl {
+img {
   display: block;
   text-align: left;
 }
@@ -167,15 +164,8 @@ h6 {
   margin-bottom: var(--space-7);
 }
 
-p,
-ul,
-ol,
-dl {
+p {
   margin-bottom: var(--space-6);
-}
-
-ul li {
-  margin-bottom: var(--space-2);
 }
 
 figure {
@@ -337,20 +327,6 @@ figure>figure {
 }
 
 /* lists ------------------------- */
-
-ul,
-ol {
-  /* @todo: layout! */
-  margin-left: var(--space-8);
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  padding-left: var(--space-3);
-}
 
 hr {
   height: 1px;

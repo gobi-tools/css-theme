@@ -1,0 +1,35 @@
+/* vertical layout */
+
+ul,
+ol,
+dl {
+  margin-bottom: var(--space-6);
+}
+
+ul li {
+  margin-bottom: var(--space-2);
+}
+
+/* horizontal layout */
+
+ul,
+ol {
+  margin-left: var(--space-8);
+}
+
+/* base */ 
+
+ul,
+ol,
+dl {
+  display: block;
+  text-align: left;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  padding-left: var(--space-3);
+}
