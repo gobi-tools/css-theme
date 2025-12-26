@@ -124,9 +124,7 @@ details,
 img,
 ul,
 ol,
-dl,
-pre,
-pre>code {
+dl {
   display: block;
   text-align: left;
 }
@@ -172,8 +170,7 @@ h6 {
 p,
 ul,
 ol,
-dl,
-pre {
+dl {
   margin-bottom: var(--space-6);
 }
 
@@ -211,10 +208,6 @@ hr {
   margin-bottom: var(--space-7) !important;
 }
 
-pre:has(+ figcaption) {
-  margin-bottom: 0;
-}
-
 img:has(+ figcaption) {
   margin-bottom: 0;
 }
@@ -243,8 +236,6 @@ img {
   max-width: 100%;
 }
 
-mark + mark,
-pre + pre,
 img + img {
   margin-left: var(--space-2);
 }
@@ -294,14 +285,6 @@ h4 {
   font-size: var(--font-size-lg);
 }
 
-pre,
-code,
-kbd,
-var {
-  font-family: var(--font-family-mono);
-  font-size: var(--font-size-sm);
-}
-
 figcaption {
   font-style: italic;
   font-size: var(--font-size-sm);
@@ -335,51 +318,8 @@ hr {
   border-color: inherit;
 }
 
-code,
-kbd,
-mark,
-var {
-  background: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
-}
-
-pre {
-  background: transparent !important;
-}
-
-pre>code {
-  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
-  border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1));
-  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
-}
-
-mark>*,
-kbd>*,
-var>* {
-  color: currentColor !important;
-}
-
 [aria-selected="true"] a {
   color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
-}
-
-/* ---------------------------------- */
-/* theme - styles ------------------- */
-/* ---------------------------------- */
-
-code,
-kbd,
-var,
-mark {
-  border-radius: var(--border-radius-highlights);
-}
-
-pre>code {
-  border-radius: var(--border-radius-blocks);
-  border-style: var(--border-style-blocks);
-  border-width: var(--border-width-blocks);
-  border-left-style: var(--border-left-style-blocks);
-  border-left-width: var(--border-left-width-blocks);
-  border-bottom-width: var(--border-bottom-width-blocks);
 }
 
 /* ---------------------------------- */
@@ -404,31 +344,6 @@ ol {
   margin-left: var(--space-8);
 }
 
-
-/* code --------------------------- */
-
-pre {
-  padding: 0 !important;
-}
-
-pre>code {
-  white-space: break-spaces !important;
-}
-
-pre>code {
-  padding: var(--space-6);
-  text-wrap: auto;
-  word-wrap: break-word;
-}
-
-mark,
-code,
-kbd,
-var {
-  padding: var(--space-2);
-  padding-inline: var(--space-3);
-}
-
 dt {
   font-weight: bold;
 }
@@ -449,15 +364,6 @@ hr {
 aside {
   container-type: inline-size;
   min-width: 200px;
-}
-
-/* marks ----------------------- */
-
-mark {
-  height: var(--height-small-elem);
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
 }
 
 /* ---------------------------------- */
