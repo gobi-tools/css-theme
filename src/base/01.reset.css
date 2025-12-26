@@ -739,36 +739,10 @@ mark {
 }
 
 /* ---------------------------------- */
-/* custom elements ------------------ */
-/* ---------------------------------- */
-
-
-/* mobile & destkop */
-
-.is-mobile-only {
-  display: none !important;
-}
-
-.is-desktop-only {
-  display: block !important;
-}
-
-/* ---------------------------------- */
 /* mobile support ------------------ */
 /* ---------------------------------- */
 
 @media (max-width: 768px) {
-
-  .is-mobile-only {
-    display: block !important;
-  }
-
-  .is-desktop-only {
-    display: none !important;
-  }
-
-  /* other elements --- */
-
   main {
     /* @todo: vertical! */
     margin-bottom: calc(var(--height-bottom-nav) + var(--space-8));
@@ -782,12 +756,4 @@ mark {
     /* @todo: vertical! */
     margin-bottom: var(--space-6);
   }
-}
-
-/* ---------------------------------- */
-/* other classes -------------------- */
-/* ---------------------------------- */
-
-.is-circle {
-  border-radius: 50%;
 }
