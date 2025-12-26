@@ -121,7 +121,6 @@ footer,
 figure,
 video,
 details,
-blockquote,
 img,
 ul,
 ol,
@@ -174,7 +173,6 @@ p,
 ul,
 ol,
 dl,
-blockquote,
 pre {
   margin-bottom: var(--space-6);
 }
@@ -213,14 +211,6 @@ hr {
   margin-bottom: var(--space-7) !important;
 }
 
-blockquote>:first-child {
-  margin-top: 0;
-}
-
-blockquote>:last-child {
-  margin-bottom: 0;
-}
-
 pre:has(+ figcaption) {
   margin-bottom: 0;
 }
@@ -254,7 +244,6 @@ img {
 }
 
 mark + mark,
-blockquote + blockquote,
 pre + pre,
 img + img {
   margin-left: var(--space-2);
@@ -346,11 +335,6 @@ hr {
   border-color: inherit;
 }
 
-blockquote {
-  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
-  border-color: var(--color-accent-dark-1);
-}
-
 code,
 kbd,
 mark,
@@ -389,7 +373,6 @@ mark {
   border-radius: var(--border-radius-highlights);
 }
 
-blockquote,
 pre>code {
   border-radius: var(--border-radius-blocks);
   border-style: var(--border-style-blocks);
@@ -432,8 +415,7 @@ pre>code {
   white-space: break-spaces !important;
 }
 
-pre>code,
-blockquote {
+pre>code {
   padding: var(--space-6);
   text-wrap: auto;
   word-wrap: break-word;

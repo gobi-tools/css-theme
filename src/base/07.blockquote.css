@@ -1,0 +1,41 @@
+/* vertical layout */
+
+blockquote {
+  margin-bottom: var(--space-6);
+}
+
+blockquote>:first-child {
+  margin-top: 0;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+/* base */
+
+blockquote {
+  display: block;
+  text-align: left;
+  padding: var(--space-6);
+  text-wrap: auto;
+  word-wrap: break-word;
+}
+
+/* theme colors */
+
+blockquote {
+  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
+  border-color: var(--color-accent-dark-1);
+}
+
+/* theme styles */
+
+blockquote {
+  border-radius: var(--border-radius-blocks);
+  border-style: var(--border-style-blocks);
+  border-width: var(--border-width-blocks);
+  border-left-style: var(--border-left-style-blocks);
+  border-left-width: var(--border-left-width-blocks);
+  border-bottom-width: var(--border-bottom-width-blocks);
+}
