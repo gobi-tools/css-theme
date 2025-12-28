@@ -40,3 +40,9 @@ Bugs
 - [ ] on mobile Chrome (browser), datepicker has small height & width
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
 - [x] make the .is-gap class not visible on mobile
+- [ ] when in a form/fieldset and I want to "group" inputs
+  - [ ] they still have a margin-left between them 
+  - [ ] they are not 100% of the screen
+- [ ] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
+- [ ] checkbox & radio button text is not correctly aligned
+- [ ] ordered lists should also have the same v-spacing as horizontal lists
