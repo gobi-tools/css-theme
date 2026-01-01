@@ -46,3 +46,5 @@ Bugs
 - [ ] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
 - [ ] checkbox & radio button text is not correctly aligned
 - [ ] ordered lists should also have the same v-spacing as horizontal lists
+- [ ] if datalist is last element in a grouped form, then 
+one of the visible inputs will not have the right-hand side border

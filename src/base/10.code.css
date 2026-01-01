@@ -10,7 +10,8 @@ pre:has(+ figcaption) {
 
 /* horizontal layout */
 
-mark + mark {
+mark + mark,
+code + code {
   margin-left: var(--space-2);
 }
 
