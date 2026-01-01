@@ -35,7 +35,7 @@ svg:only-child {
   padding-right: var(--space-4);
 }
 
-mark>svg {
+mark>svg, code>svg {
   width: var(--font-size-sm);
   height: var(--font-size-sm);
   transform: translateY(0.05em);
