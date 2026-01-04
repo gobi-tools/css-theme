@@ -4,6 +4,11 @@ table {
   margin-bottom: var(--space-8);
 }
 
+th,
+td {
+  padding-right: var(--space-6);
+}
+
 /* base */
 
 table {
@@ -22,7 +27,7 @@ th,
 td {
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
-  min-width: 40px;
+
 }
 
 tr:last-child>th,
