@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Dialog</title>
+
+  <link rel="stylesheet" href="../../dist/theme.min.css">
+  <!-- <link rel="stylesheet" href="../../dist/theme.app.min.css"> -->
+</head>
+
+<body>
+  <main>
+    <article>
+      <h1>Dialog</h1>
+
+      <section>
+        <p>
+          <dialog>
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+            
+            <form>
+              <label for="inp">Data</label>
+              <input type="number" placeholder="Data"/>
+            </form>
+
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat
+            </p>
+
+            <button autofocus>Submit</button>
+          </dialog>
+
+          <button>Open</button>
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <script type="text/javascript">
+    console.log('doc', document);
+    const dialog = document.querySelector("dialog");
+    const showButton = document.querySelector("dialog + button");
+    const closeButton = document.querySelector("dialog button");
+
+    // "Show the dialog" button opens the dialog modally
+    showButton.addEventListener("click", () => {
+      dialog.showModal();
+    });
+
+    // "Close" button closes the dialog
+    closeButton.addEventListener("click", () => {
+      dialog.close();
+    });
+
+  </script>
+</body>
+
+</html>

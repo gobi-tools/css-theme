@@ -1,0 +1,35 @@
+/* vertical layout */
+
+dialog {
+  margin-top: var(--space-10);
+}
+
+/* horizontal layout */
+
+dialog {
+  margin-inline: auto;
+}
+
+/* base */ 
+
+dialog {
+  border: none;
+  padding: var(--space-6);
+  width: min(100% - var(--space-9), var(--width-container-dialog));
+}
+
+/* theme colors */
+
+dialog {
+  background: light-dark(var(--color-bg), var(--color-accent-dark-2));
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* theme styles */ 
+
+dialog {
+  border-radius: var(--border-radius-blocks);
+}

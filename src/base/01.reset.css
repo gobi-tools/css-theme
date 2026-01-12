@@ -3,6 +3,7 @@
   /* general elements       */
   /* ---------------------- */
   --rem: 12pt;
+  --width-container-dialog: 600px;
   --width-container-narrow: 800px;
   --width-container-medium: 1200px;
   --width-container-wide: 1600px;
