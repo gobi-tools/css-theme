@@ -36,9 +36,12 @@
   /* colors - text */
   --color-txt-on-light: #111827;
   --color-txt-on-dark: #f9fafb;
-  /* colors - bg */
-  --color-bg: #fff8dc;
   --color-txt: #111111;
+  /* colors - bg */
+  --color-bg-light: #fff8dc;
+  --color-bg-dark: #fff8dc;
+  --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
+  
   /* style elements */
   --border-radius-highlights: 6px;
 

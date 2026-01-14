@@ -46,6 +46,7 @@
 .is-success {
   --color-accent-light-1: var(--color-success-light-1);
   --color-accent-light-2: var(--color-success-light-2);
+  --color-accent: var(--color-success);
   --color-accent-dark-1: var(--color-success-dark-1);
   --color-accent-dark-2: var(--color-success-dark-2);
 
@@ -65,6 +66,7 @@
 .is-error {
   --color-accent-light-1: var(--color-error-light-1);
   --color-accent-light-2: var(--color-error-light-2);
+  --color-accent: var(--color-error);
   --color-accent-dark-1: var(--color-error-dark-1);
   --color-accent-dark-2: var(--color-error-dark-2);
 
