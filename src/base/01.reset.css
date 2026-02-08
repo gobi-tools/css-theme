@@ -3,10 +3,14 @@
   /* general elements       */
   /* ---------------------- */
   --rem: 12pt;
+  /* set sizes */
   --width-container-dialog: 600px;
   --width-container-narrow: 800px;
   --width-container-medium: 1200px;
   --width-container-wide: 1600px;
+  /* references for dialog & page widths */
+  --width-dialog: var(--width-container-dialog);
+  --width-page: var(--width-container-narrow);
   /* spacing */
   --space-1: 0.125rem;
   --space-2: 0.25rem;

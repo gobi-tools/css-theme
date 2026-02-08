@@ -55,7 +55,7 @@ hr {
 /* horizontal layout */ 
 
 body>* {
-  width: min(100% - var(--space-9), var(--width-container-narrow));
+  width: min(100% - var(--space-9), var(--width-page));
   margin-inline: auto;
 }
 

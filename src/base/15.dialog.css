@@ -15,7 +15,7 @@ dialog {
 dialog {
   border: none;
   padding: var(--space-6);
-  width: min(100% - var(--space-9), var(--width-container-dialog));
+  width: min(100% - var(--space-9), var(--width-dialog));
 }
 
 /* theme colors */
