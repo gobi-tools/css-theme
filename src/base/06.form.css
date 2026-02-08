@@ -57,7 +57,9 @@ textarea {
 
 /* typography */
 
-input {
+input,
+select,
+textarea {
   font-size: var(--font-size-sm);
   font-family: var(--font-family-body);
 }
