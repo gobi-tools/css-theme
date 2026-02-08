@@ -11,6 +11,11 @@
   margin-inline: auto;
 }
 
+.is-narrow-container {
+  width: min(100% - var(--space-9), var(--width-container-narrow));
+  margin-inline: auto;
+}
+
 .is-medium-container {
   width: min(100% - var(--space-9), var(--width-container-medium));
   margin-inline: auto;
@@ -21,6 +26,7 @@
   margin-inline: auto;
 }
 
+.is-narrow-container>*,
 .is-wide-container>*,
 .is-medium-container>* {
   width: auto;
