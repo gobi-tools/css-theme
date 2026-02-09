@@ -36,7 +36,6 @@ Improvements
 
 Bugs
 ----
-- [ ] code, kbd, etc, elements should have display: inline-block
 - [ ] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [ ] on mobile Chrome (browser), datepicker has small height & width
 - [ ] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small 
@@ -49,4 +48,5 @@ Bugs
 - [ ] when in a form/fieldset and I want to "group" inputs
   - [ ] they still have a margin-left between them 
   - [ ] they are not 100% of the screen
+- [x] code, kbd, etc, elements should have display: inline-block
 - [x] make the .is-gap class not visible on mobile
