@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Forms - Validation</title>
+
+  <link rel="stylesheet" href="../../dist/theme.min.css">
+</head>
+
+<body>
+  <main>
+    <article>
+      <h1>Validated Form</h1>
+      <section>
+        <form action="/submit" method="post">
+          <!-- Personal info -->
+          <fieldset>
+            <legend>Input</legend>
+
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Name..." pattern=".{4,100}"
+              title="Name must be at least 4 characters" value="a" />
+            <div class="is-error"><small>Enter a name between 4 and 100 characters</small></div>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="Email..." />
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" placeholder="Enter your comment" required minlength="10"
+              maxlength="500"></textarea>
+            <div class="is-error"><small>Enter a meaningful comment</small></div>
+
+            <label for="country">Country</label>
+
+            <select id="country" name="country" required>
+              <option value="" disabled selected hidden>
+                Please select a country
+              </option>
+
+              <option value="uk">United Kingdom</option>
+              <option value="fr">France</option>
+              <option value="de">Germany</option>
+            </select>
+
+            <label>
+              <input type="checkbox" name="terms" required />
+              I accept the terms and conditions
+            </label>
+
+
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
