@@ -22,6 +22,11 @@ input[type=reset] {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
+  /* center text even on mobile safari */
+  -webkit-appearance: none;
+  appearance: none;
+  text-align: center;
+  justify-content: center; /* ← THIS is the important one */
 }
 
 button:hover,
