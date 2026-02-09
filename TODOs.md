@@ -36,15 +36,17 @@ Improvements
 
 Bugs
 ----
+- [ ] code, kbd, etc, elements should have display: inline-block
 - [ ] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [ ] on mobile Chrome (browser), datepicker has small height & width
+- [ ] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small 
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
-- [x] make the .is-gap class not visible on mobile
+- [ ] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
+- [ ] checkbox & radio button text is not correctly aligned (it needs more padding bottom?)
+- [ ] ordered lists should also have the same v-spacing as horizontal lists
+- [ ] if datalist is last element in a grouped form, then one of the visible inputs will not have the right-hand side border
+- [ ] buttons with icon & text need better horizontal alignment
 - [ ] when in a form/fieldset and I want to "group" inputs
   - [ ] they still have a margin-left between them 
   - [ ] they are not 100% of the screen
-- [ ] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
-- [ ] checkbox & radio button text is not correctly aligned
-- [ ] ordered lists should also have the same v-spacing as horizontal lists
-- [ ] if datalist is last element in a grouped form, then 
-one of the visible inputs will not have the right-hand side border
+- [x] make the .is-gap class not visible on mobile
