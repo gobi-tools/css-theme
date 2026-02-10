@@ -39,6 +39,16 @@ textarea {
   width: 100%;
   padding: var(--space-3);
   min-height: var(--height-input);
+  text-align: left;
+  /* Mobile Safari */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* weird fix for datepicker on Mobile Safari */
+input[type="date"]::-webkit-date-and-time-value {
+   /* Mobile Safari */
+  text-align: left;
 }
 
 select {

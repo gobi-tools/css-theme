@@ -36,8 +36,9 @@ Improvements
 
 Bugs
 ----
-- [ ] on mobile Chrome (browser), datepicker has small height & width
-- [ ] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small 
+- [ ] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small horizontally
+      whilst other elements maintain a decent width
+- [ ] autocompleted input elements (name, email, etc) have a "yellow" background; can it be changed?
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
 - [ ] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
 - [ ] checkbox & radio button text is not correctly aligned (it needs more padding bottom?)
@@ -47,6 +48,7 @@ Bugs
 - [ ] when in a form/fieldset and I want to "group" inputs
   - [ ] they still have a margin-left between them 
   - [ ] they are not 100% of the screen
+- [x] on mobile Chrome (browser), datepicker has small height & width
 - [x] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [x] code, kbd, etc, elements should have display: inline-block
 - [x] make the .is-gap class not visible on mobile
