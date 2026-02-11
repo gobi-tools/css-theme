@@ -46,6 +46,7 @@ pre>code {
 pre>code {
   text-wrap: auto;
   word-wrap: break-word;
+  word-break: break-all;
   white-space: break-spaces !important;
   padding: var(--space-6);
 }

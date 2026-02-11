@@ -36,6 +36,10 @@ Improvements
 
 Bugs
 ----
+- [ ] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
+      on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
+        - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px
+        - [ ] still a problem here, http://localhost/docs/forms-grouped?theme=default&width=medium, at 806px
 - [ ] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small horizontally
       whilst other elements maintain a decent width
 - [ ] autocompleted input elements (name, email, etc) have a "yellow" background; can it be changed?
