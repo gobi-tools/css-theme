@@ -31,7 +31,7 @@
   --line-height-head: 1.25;
   --letter-spacing-head: -0.01em;
   /* font sizes */
-  --font-size-base: 15px;
+  --font-size-base: 16px;
   /* could also be 0.95rem? */
   --font-size-xsm: calc(0.8 * var(--font-size-base));
   --font-size-sm: calc(0.9 * var(--font-size-base));

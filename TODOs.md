@@ -50,6 +50,7 @@ Bugs
 - [ ] when in a form/fieldset and I want to "group" inputs
   - [ ] they still have a margin-left between them 
   - [ ] they are not 100% of the screen
+- [x] on mobile, make sure no zooming happens on input focus (this is because input font was smaller than 16px!)
 - [x] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small horizontally whilst other elements maintain a decent width
 - [x] on mobile Chrome (browser), datepicker has small height & width
 - [x] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
