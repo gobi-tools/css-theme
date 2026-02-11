@@ -40,8 +40,6 @@ Bugs
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
         - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px
         - [ ] still a problem here, http://localhost/docs/forms-grouped?theme=default&width=medium, at 806px
-- [ ] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small horizontally
-      whilst other elements maintain a decent width
 - [ ] autocompleted input elements (name, email, etc) have a "yellow" background; can it be changed?
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
 - [ ] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
@@ -52,6 +50,7 @@ Bugs
 - [ ] when in a form/fieldset and I want to "group" inputs
   - [ ] they still have a margin-left between them 
   - [ ] they are not 100% of the screen
+- [x] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small horizontally whilst other elements maintain a decent width
 - [x] on mobile Chrome (browser), datepicker has small height & width
 - [x] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [x] code, kbd, etc, elements should have display: inline-block

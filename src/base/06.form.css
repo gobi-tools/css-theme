@@ -37,6 +37,8 @@ select,
 textarea {
   display: block;
   width: 100%;
+  /* so that all grouped inputs get some space, horizontally */
+  min-width: 0; 
   padding: var(--space-3);
   min-height: var(--height-input);
   text-align: left;
