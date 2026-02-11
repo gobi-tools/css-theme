@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
-  <title>Forms - Normal</title>
+  <title>Forms - Grouped</title>
 
   <link rel="stylesheet" href="../../dist/theme.min.css">
 </head>
@@ -13,7 +13,7 @@
 <body>
   <main>
     <article>
-      <h1>Normal Forms</h1>
+      <h1>Grouped Forms</h1>
       <section>
         <form>
           <fieldset>
@@ -75,14 +75,23 @@
             <legend>Radios</legend>
 
             <div role="group">
-              <input type="radio" id="rint_dev" name="interests" value="development" checked>
-              <label for="rint_dev">Development</label>
+              <label for="test">
+                <input type="radio" id="test" name="env" value="test" checked>
+                <span>Test Env</span>
+              </label>
 
-              <input type="radio" id="rint_design" name="interests" value="design">
+              <label for="prod">
+                <input type="radio" id="prod" name="env" value="prod">
+                <span>Prod Env</span>
+              </label>
+              <!-- <input type="radio" id="rint_dev" name="interests" value="development" checked>
+              <label for="rint_dev">Development</label> -->
+
+              <!-- <input type="radio" id="rint_design" name="interests" value="design">
               <label for="rint_design">Design</label>
 
               <input type="radio" id="rint_writing" name="interests" value="writing">
-              <label for="rint_writing">Writing</label>
+              <label for="rint_writing">Writing</label> -->
             </div>
           </fieldset>
         </form>

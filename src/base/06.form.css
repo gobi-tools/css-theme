@@ -42,6 +42,9 @@ textarea {
   padding: var(--space-3);
   min-height: var(--height-input);
   text-align: left;
+}
+
+input:not([type=checkbox], [type=radio], [type=range]) {
   /* Mobile Safari */
   -webkit-appearance: none;
   appearance: none;

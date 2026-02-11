@@ -88,7 +88,28 @@
 
           <!-- Multiple checkboxes -->
           <fieldset>
-            <legend>Checkbox & radio</legend>
+            <legend>checkboxes & radios (in line)</legend>
+            
+            <div>
+              <label for="test_env">
+                <input type="radio" id="test_env" name="env" value="test" checked/>
+                <span>Test Environment</span>
+              </label>
+              <label for="prod_env">
+                <input type="radio" id="prod_env" name="env" value="prod" checked/>
+                <span>Prod Environment</span>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="version_1" name="version_1"/>
+              <label for="version_1">Version 1</label>
+
+              <input type="checkbox" id="version_2" name="version_2"/>
+              <label for="version_2">Version 2</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Checkbox & radio (in columns)</legend>
 
             <div role="row">
               <div>
