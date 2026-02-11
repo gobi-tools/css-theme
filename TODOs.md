@@ -44,12 +44,12 @@ Bugs
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
 - [ ] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
 - [ ] checkbox & radio button text is not correctly aligned (it needs more padding bottom?)
-- [ ] ordered lists should also have the same v-spacing as horizontal lists
 - [ ] if datalist is last element in a grouped form, then one of the visible inputs will not have the right-hand side border
 - [ ] buttons with icon & text need better horizontal alignment
 - [ ] when in a form/fieldset and I want to "group" inputs
   - [ ] they still have a margin-left between them 
   - [ ] they are not 100% of the screen
+- [x] ordered lists should also have the same v-spacing as horizontal lists
 - [x] on mobile, make sure no zooming happens on input focus (this is because input font was smaller than 16px!)
 - [x] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small horizontally whilst other elements maintain a decent width
 - [x] on mobile Chrome (browser), datepicker has small height & width

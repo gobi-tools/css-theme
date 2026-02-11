@@ -6,8 +6,13 @@ dl {
   margin-bottom: var(--space-6);
 }
 
-ul li {
+ul li,
+ol li {
   margin-bottom: var(--space-2);
+}
+
+dd {
+  margin-bottom: var(--space-3);
 }
 
 /* horizontal layout */
