@@ -1,0 +1,56 @@
+/* vertical layout */
+
+/* labels following check | radio buttons get bottom padding */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  margin-bottom: var(--space-6);
+}
+
+/* if a label contains check | radios, it gets the bottom margin */
+label:has(> input[type="checkbox"]),
+label:has(> input[type="radio"]) {
+  margin-bottom: var(--space-6);
+}
+/* 
+ * and conversely, if a label contains check | radios, they don't have 
+ * the normal bottom margin 
+ */
+label > input[type="checkbox"],
+label > input[type="radio"] {
+  margin-bottom: 0;
+}
+
+/* horizontal layout */
+
+input[type=checkbox],
+input[type=radio] {
+  margin-right: var(--space-3);
+}
+
+/* if a label contains check | radios, they won't have right margin */
+label > input[type="checkbox"],
+label > input[type="radio"] {
+  margin-right: 0;
+}
+
+/* base */
+
+input[type=checkbox],
+input[type=radio] {
+  display: initial;
+  width: auto;
+  min-width: auto;
+  padding: auto;
+  min-height: auto;
+}
+
+/* 
+ * make labels that are parts of checboxes and radio buttons 
+ * diplay as flex so any inline padding the browser adds is nulliied
+ */ 
+label:has(> input[type="checkbox"]),
+label:has(> input[type="radio"]) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}

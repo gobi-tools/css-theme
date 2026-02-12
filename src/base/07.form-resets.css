@@ -1,0 +1,7 @@
+/* base */
+
+/* fix for all inputs except checkbox, radio, range, for Mobile Safari */
+input:not([type=checkbox], [type=radio], [type=range]) {
+  -webkit-appearance: none;
+  appearance: none;
+}

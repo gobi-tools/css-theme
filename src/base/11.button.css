@@ -1,0 +1,87 @@
+/* horizontal layout */
+
+button + button,
+input[type=submit] + input[type=submit],
+input[type=submit] + input[type=reset],
+input[type=reset] + input[type=reset],
+input[type=reset] + input[type=submit] {
+  margin-left: var(--space-2);
+}
+
+/* base */
+
+button,
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+  min-height: var(--height-input);
+  min-width: auto;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  padding-left: var(--space-7);
+  padding-right: var(--space-7);
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+  /* Mobile Safari */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+  filter: brightness(90%);
+}
+
+*:disabled {
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+*:hover:disabled,
+input[type=submit]:hover:disabled,
+input[type=reset]:hover:disabled {
+  filter: opacity(50%);
+}
+
+/* typography */
+
+button,
+input[type=submit],
+input[type=reset] {
+  font-weight: bold;
+  letter-spacing: -0.015em;
+  border: solid;
+  font-size: var(--font-size-xsm);
+  font-family: var(--font-family-body);
+}
+
+/* theme colors */
+
+button,
+input[type=submit] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-txt-on-dark);
+}
+
+button[type=reset],
+input[type=reset] {
+  background: var(--color-bg);
+  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
+  border-color: var(--color-primary);
+}
+
+/* theme style */
+
+button,
+input[type=submit],
+input[type=reset] {
+  border-style: solid;
+  border-width: var(--border-width-action);
+  border-radius: var(--border-radius-action);
+  border-bottom-width: var(--border-bottom-width-action);
+}
