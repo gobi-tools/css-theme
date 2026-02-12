@@ -51,6 +51,6 @@ input[type=radio] {
 label:has(> input[type="checkbox"]),
 label:has(> input[type="radio"]) {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   gap: var(--space-3);
 }
