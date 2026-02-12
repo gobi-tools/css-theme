@@ -44,10 +44,10 @@ Bugs
 - [ ] autocompleted input elements (name, email, etc) have a "yellow" background; can it be changed?
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
 - [ ] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
-- [ ] buttons with icon & text need better horizontal alignment
 - [ ] when in a form/fieldset and I want to "group" inputs
   - [ ] they still have a margin-left between them 
   - [ ] they are not 100% of the screen
+- [x] buttons with icon & text need better horizontal alignment
 - [x] if a set of grouped checkboxes aren't each in their div (label + input pair), then v-align is way off
 - [x] checkbox & radio button text is not correctly aligned (it needs more padding bottom?)
 - [x] ordered lists should also have the same v-spacing as horizontal lists
