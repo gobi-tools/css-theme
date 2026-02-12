@@ -9,11 +9,6 @@ textarea {
 
 /* horizontal layout */
 
-input[type=checkbox],
-input[type=radio] {
-  margin-right: var(--space-3);
-}
-
 label {
   margin-right: var(--space-7);
 }
@@ -32,7 +27,7 @@ select {
   cursor: pointer;
 }
 
-input:not([type=checkbox], [type=radio]),
+input,
 select,
 textarea {
   display: block;
@@ -44,26 +39,8 @@ textarea {
   text-align: left;
 }
 
-input:not([type=checkbox], [type=radio], [type=range]) {
-  /* Mobile Safari */
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-/* weird fix for datepicker on Mobile Safari */
-input[type="date"]::-webkit-date-and-time-value {
-   /* Mobile Safari */
-  text-align: left;
-}
-
 select {
   height: var(--height-input);
-}
-
-input[type=checkbox],
-input[type=radio] {
-  display: initial;
-  width: auto;
 }
 
 textarea {

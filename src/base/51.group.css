@@ -1,6 +1,6 @@
 /* horizontal layout */
 
-[role=group]>* {
+[role=group]>*:not(label, input[type=checkbox], input[type=radio]) {
   margin-inline: 0;
 }
 

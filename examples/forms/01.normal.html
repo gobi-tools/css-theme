@@ -88,28 +88,41 @@
 
           <!-- Multiple checkboxes -->
           <fieldset>
-            <legend>checkboxes & radios (in line)</legend>
-            
+            <legend>Checkboxes & radios (Canonical)</legend>
+
             <div>
               <label for="test_env">
-                <input type="radio" id="test_env" name="env" value="test" checked/>
+                <input type="radio" id="test_env" name="env" value="test" checked />
                 <span>Test Environment</span>
               </label>
               <label for="prod_env">
-                <input type="radio" id="prod_env" name="env" value="prod" checked/>
+                <input type="radio" id="prod_env" name="env" value="prod" checked />
                 <span>Prod Environment</span>
               </label>
             </div>
             <div>
-              <input type="checkbox" id="version_1" name="version_1"/>
-              <label for="version_1">Version 1</label>
-
-              <input type="checkbox" id="version_2" name="version_2"/>
-              <label for="version_2">Version 2</label>
+              <label for="version_1">
+                <input type="checkbox" id="version_1" name="version_1" />
+                <span>Deply<br/>Version Alpha</span>
+              </label>
+              <label for="version_2">
+                <input type="checkbox" id="version_2" name="version_2" />
+                <span>Deploy<br/>Pre Release</span>
+              </label>
+            </div>
+            <div>
+              <label for="option_1">
+                <span>Option 1</span>
+                <input type="radio" id="option_1" name="option" checked/>
+              </label>
+              <label for="option_1">
+                <span>Option 2</span>
+                <input type="radio" id="option_2" name="option"/>
+              </label>
             </div>
           </fieldset>
           <fieldset>
-            <legend>Checkbox & radio (in columns)</legend>
+            <legend>Checkbox & radio (Next to each other)</legend>
 
             <div role="row">
               <div>
@@ -163,10 +176,10 @@
             <legend>Submit</legend>
             <div role="row">
               <div>
-                <input type="reset" value="Reset" class="is-error"/>
+                <input type="reset" value="Reset" class="is-error" />
               </div>
               <div>
-                <input type="submit" value="Submit"/>
+                <input type="submit" value="Submit" />
               </div>
             </div>
           </fieldset>

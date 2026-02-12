@@ -36,8 +36,6 @@ Improvements
 
 Bugs
 ----
-- [ ] if a set of grouped checkboxes aren't each in their div (label + input pair), then v-align is way off
-- [ ] checkbox & radio button text is not correctly aligned (it needs more padding bottom?)
 - [ ] if datalist is last element in a grouped form, then one of the visible inputs will not have the right-hand side border
 - [ ] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
@@ -50,6 +48,8 @@ Bugs
 - [ ] when in a form/fieldset and I want to "group" inputs
   - [ ] they still have a margin-left between them 
   - [ ] they are not 100% of the screen
+- [x] if a set of grouped checkboxes aren't each in their div (label + input pair), then v-align is way off
+- [x] checkbox & radio button text is not correctly aligned (it needs more padding bottom?)
 - [x] ordered lists should also have the same v-spacing as horizontal lists
 - [x] on mobile, make sure no zooming happens on input focus (this is because input font was smaller than 16px!)
 - [x] on smaller devices (any browswer) grouped select + datepicker + button ... the select input becoems waaaay to small horizontally whilst other elements maintain a decent width
