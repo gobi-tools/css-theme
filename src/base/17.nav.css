@@ -99,7 +99,7 @@ nav ul>li>ul {
 
 /* different layouts */
 
-nav:has(> ul) {
+nav:has(> ul):not(.no-mobile) {
   container-type: inline-size;
   container-name: navigation;
 }
