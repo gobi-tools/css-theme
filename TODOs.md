@@ -36,17 +36,17 @@ Improvements
 
 Bugs
 ----
+- [ ] Tabs in here http://localhost/docs/tabs?theme=default&width=medium at 1000px does not look great (e.g. they're going mobile way too soon!)
 - [ ] if datalist is last element in a grouped form, then one of the visible inputs will not have the right-hand side border
 - [ ] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
         - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px
         - [ ] still a problem here, http://localhost/docs/forms-grouped?theme=default&width=medium, at 806px
-- [ ] Tabs in here http://localhost/docs/tabs?theme=default&width=medium at 1000px does not look great (e.g. they're going mobile way too soon!)
 - [ ] autocompleted input elements (name, email, etc) have a "yellow" background; can it be changed?
 - [ ] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
-- [ ] when in a form/fieldset and I want to "group" inputs
-  - [ ] they still have a margin-left between them 
-  - [ ] they are not 100% of the screen
+- [x] when in a form/fieldset and I want to "group" inputs
+  - [x] they still have a margin-left between them 
+  - [x] they are not 100% of the screen
 - [x] buttons or submit inputs as direct parents inside a "row" role should not have margin-left between them anymore (on desktop or mobile)
 - [x] buttons with icon & text need better horizontal alignment
 - [x] if a set of grouped checkboxes aren't each in their div (label + input pair), then v-align is way off

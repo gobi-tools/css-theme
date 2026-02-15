@@ -32,6 +32,7 @@ header>nav {
 
 nav ul {
   display: flex;
+  /* flex-wrap: wrap; */
   gap: var(--space-7);
   align-items: center;
   list-style-type: none;
@@ -99,9 +100,13 @@ nav ul>li>ul {
 
 /* different layouts */
 
-@container (max-width: 768px) {
+nav:has(> ul) {
+  container-type: inline-size;
+  container-name: navigation;
+}
 
-  nav>ul {
+@container navigation (max-width: 420px) {
+  nav ul {
     flex-direction: column;
     align-items: start;
     gap: 0;
@@ -109,14 +114,6 @@ nav ul>li>ul {
 
   nav ul:first-child>li {
     padding-bottom: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  nav>ul {
-    flex-direction: column;
-    align-items: start;
-    gap: 0;
   }
 
   nav ul>li {

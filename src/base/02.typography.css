@@ -75,7 +75,6 @@ hr {
 }
 
 aside {
-  container-type: inline-size;
   min-width: 200px;
 }
 
@@ -144,11 +143,10 @@ hr {
   color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
 }
 
-/* different layouts */ 
+/* different layouts */
 
-@media (max-width: 768px) {
+@container (max-width: 768px) {
   main {
-    /* @todo: vertical! */
     margin-bottom: calc(var(--height-bottom-nav) + var(--space-8));
   }
 
@@ -157,7 +155,6 @@ hr {
   }
 
   aside {
-    /* @todo: vertical! */
     margin-bottom: var(--space-6);
   }
 }

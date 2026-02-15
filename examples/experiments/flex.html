@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Layouts</title>
+
+  <!-- <link rel="stylesheet" href="../../dist/theme.min.css"> -->
+
+  <style>
+    form {
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .name {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 160px;;
+    }
+
+    .email {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 160px;
+    }
+
+    button {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 160px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <form>
+      <input type="text" id="name" class="name" placeholder="Name..."/>
+      <input type="email" id="email" class="email" placeholder="test@test.com"/>
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>

@@ -37,15 +37,35 @@ nav[role=menu]>ul>li>a {
 
 /* different layouts */
 
-@container (max-width: 768px) {
+header:has(> nav[role=menu]) {
+  container-type: inline-size;
+  container-name: navigation-tabs;
+}
 
-  /* override normal nav */
-  nav[role=menu]>ul {
-    flex-direction: row;
+@container navigation-tabs (max-width: 768px) {
+  header>nav[role=menu] {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    background: var(--color-bg);
+    border-top: 1px solid light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
   }
 }
 
-@media (max-width: 480px) {
+@container navigation (max-width: 768px) {
+  nav[role=menu]>ul {
+    flex-direction: row;
+  }
+
+  header>nav[role=menu]>ul {
+    margin: 0;
+    justify-content: center;
+  }
+}
+
+@container navigation (max-width: 420px) {
   nav[role=menu]>ul {
     justify-content: initial;
   }
@@ -54,24 +74,5 @@ nav[role=menu]>ul>li>a {
     width: 100%;
     max-width: 100%;
     padding-inline: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  header>nav[role=menu] {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    padding: 0;
-    /* @todo: color! */
-    background: var(--color-bg);
-    border-top: 1px solid light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
-  }
-
-  header>nav[role=menu]>ul {
-    flex-direction: row;
-    margin: 0;
-    justify-content: center;
   }
 }

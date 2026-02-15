@@ -9,9 +9,9 @@ nav[role=tablist] ul>li {
   padding-inline: var(--space-5);
 }
 
-/* different layouts */ 
+/* different layouts */
 
-@container(max-width: 420px) {
+@container navigation (max-width: 420px) {
   nav[role=tablist]>ul>li[aria-selected="true"] {
     border-bottom: none;
     padding-left: calc(var(--space-6) - 3px) !important;
@@ -26,20 +26,5 @@ nav[role=tablist] ul>li {
     padding-bottom: var(--space-1);
     padding-left: var(--space-6) !important;
     border-bottom: none;
-  }
-}
-
-@media (max-width: 768px) {
-  nav[role=tablist]>ul>li[aria-selected="true"] {
-    border-bottom: none;
-    padding-left: calc(var(--space-6) - 3px);
-    border-left: 3px solid light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
-    background-color: light-dark(var(--color-primary-light-2), var(--color-accent-dark-2));
-  }
-
-  nav[role=tablist]>ul>li {
-    width: 100%;
-    padding-left: var(--space-6);
-    border-bottom: 0;
   }
 }

@@ -1,10 +1,5 @@
 /* base */
 
-:is(div, p, section):has(>[role=row]) {
-  container-type: inline-size;
-  width: 100%;
-}
-
 [role=row] {
   display: flex;
   align-items: stretch;
@@ -19,16 +14,14 @@
   margin-left: 0;
 }
 
-/* different layouts */ 
+/* different layouts */
 
-@container(max-width: 420px) {
-  :not([role=group])>[role=row] {
-    flex-direction: column;
-    gap: 0;
-  }
+*:has(>[role=row]) {
+  container-type: inline-size;
+  container-name: rows;
 }
 
-@media (max-width: 768px) {
+@container rows (max-width: 768px) {
   :not([role=group])>[role=row] {
     flex-direction: column;
     gap: 0;
