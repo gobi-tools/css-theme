@@ -32,7 +32,6 @@ header>nav {
 
 nav ul {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: var(--space-7);
   align-items: center;
   list-style-type: none;
@@ -105,7 +104,7 @@ nav:has(> ul) {
   container-name: navigation;
 }
 
-@container navigation (max-width: 420px) {
+@container navigation (max-width: 600px) {
   nav ul {
     flex-direction: column;
     align-items: start;

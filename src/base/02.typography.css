@@ -145,7 +145,7 @@ hr {
 
 /* different layouts */
 
-@container (max-width: 768px) {
+@container (max-width: 600px) {
   main {
     margin-bottom: calc(var(--height-bottom-nav) + var(--space-8));
   }

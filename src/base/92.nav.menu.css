@@ -42,7 +42,7 @@ header:has(> nav[role=menu]) {
   container-name: navigation-tabs;
 }
 
-@container navigation-tabs (max-width: 768px) {
+@container navigation-tabs (max-width: 600px) {
   header>nav[role=menu] {
     position: fixed;
     width: 100%;
@@ -52,12 +52,6 @@ header:has(> nav[role=menu]) {
     background: var(--color-bg);
     border-top: 1px solid light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
   }
-}
-
-@container navigation (max-width: 768px) {
-  nav[role=menu]>ul {
-    flex-direction: row;
-  }
 
   header>nav[role=menu]>ul {
     margin: 0;
@@ -65,8 +59,9 @@ header:has(> nav[role=menu]) {
   }
 }
 
-@container navigation (max-width: 420px) {
+@container navigation (max-width: 600px) {
   nav[role=menu]>ul {
+    flex-direction: row;
     justify-content: initial;
   }
 

@@ -11,7 +11,7 @@ nav[role=tablist] ul>li {
 
 /* different layouts */
 
-@container navigation (max-width: 420px) {
+@container navigation (max-width: 600px) {
   nav[role=tablist]>ul>li[aria-selected="true"] {
     border-bottom: none;
     padding-left: calc(var(--space-6) - 3px) !important;

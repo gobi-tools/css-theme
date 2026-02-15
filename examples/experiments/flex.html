@@ -10,7 +10,7 @@
   <!-- <link rel="stylesheet" href="../../dist/theme.min.css"> -->
 
   <style>
-    form {
+    /* form {
       display: flex;
       align-items: flex-end;
       flex-wrap: wrap;
@@ -33,6 +33,33 @@
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 160px;
+    } */
+
+    main {
+      container-type: inline-size;
+    }
+
+    form {
+      --min: 160px;
+      --gap: 16px;
+
+      display: grid;
+      gap: var(--gap);
+
+      /* Prefer filling a single row left→right */
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(var(--min), 1fr);
+
+      align-items: end;
+    }
+
+    /* When the container is too narrow, stack */
+    @container (max-width: 600px) {
+      form {
+        grid-auto-flow: row;
+        grid-auto-columns: initial;
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -40,8 +67,8 @@
 <body>
   <main>
     <form>
-      <input type="text" id="name" class="name" placeholder="Name..."/>
-      <input type="email" id="email" class="email" placeholder="test@test.com"/>
+      <input type="text" id="name" class="name" placeholder="Name..." />
+      <input type="email" id="email" class="email" placeholder="test@test.com" />
       <button type="submit" value="Submit">Submit</button>
     </form>
   </main>

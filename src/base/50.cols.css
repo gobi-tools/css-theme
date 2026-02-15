@@ -21,7 +21,7 @@
   container-name: rows;
 }
 
-@container rows (max-width: 768px) {
+@container rows (max-width: 600px) {
   :not([role=group])>[role=row] {
     flex-direction: column;
     gap: 0;

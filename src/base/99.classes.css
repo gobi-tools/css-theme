@@ -90,18 +90,16 @@
   display: none !important;
 }
 
-@container (max-width: 768px) {
+@container (max-width: 600px) {
+  .is-gap {
+    display: none !important;
+  }
+
   .is-desktop-only {
     display: none !important;
   }
 
   .is-mobile-only {
     display: block !important;
-  }
-}
-
-@container (max-width: 420px) {
-  .is-gap {
-    display: none !important;
   }
 }
