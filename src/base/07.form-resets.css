@@ -5,3 +5,12 @@ input:not([type=checkbox], [type=radio], [type=range]) {
   -webkit-appearance: none;
   appearance: none;
 }
+
+/* reset autocomplete as much as we can */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--color-bg) inset;
+  -webkit-text-fill-color: var(--color-txt);
+  transition: background-color 9999s ease-out 0s;
+}
