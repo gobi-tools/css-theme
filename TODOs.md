@@ -1,23 +1,26 @@
 Features
 --------
-- [ ] breadcrumbs elements
+- [ ] breadcrumbs navigation elements
 - [ ] pagination elements
+- [ ] group dialogs with the same name into an accordion menu
 - [x] navigation
   - [ ] navigation of various widths (super skinny, skinny, horizontal, etc, like the side menu of CircleCI)
-  - [ ] "menu" type navigation on desktop should also look like https://retiready.co.uk/ (e.g. a bit of "mobile-on-desktop" feel)
-- [ ] forms
-  - [ ] validation states
+  - [x] "menu" type navigation on desktop should also look like https://retiready.co.uk/ (e.g. a bit of "mobile-on-desktop" feel)
+- [x] forms
+  - [x] validation states
 - [ ] animations
 - [ ] have the following classes:
   - [x] .is-banner
   - [x] .is-medium-container
   - [x] .is-wide-container
+  - [x] .is-narrow-container
   - [x] .is-pulled-center
   - [c] .id-gap
   - [x] .is-success
   - [x] .is-error
   - [x] .is-mobile-only
   - [x] .is-desktop-only
+  - [x] .no-mobile
   - [ ] .is-bg-primary
   - [ ] .is-bg-secondary
   - [ ] .is-bg-accent
@@ -28,11 +31,19 @@ Features
 
 Improvements
 ------------
-- [ ] if I have a nav with the "card" role, it looks fairly ok; but the padding-block could be 0 to make it look even better
-- [ ] fieldsets, cards all have padding-bottom: 0 -> is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
+- [x] if I have a nav with the "card" role, it looks fairly ok; but the padding-block could be 0 to make it look even better
+- [ ] fieldsets, cards all have padding-bottom: 0 
+  -> is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
 - [ ] decide on class-based versions for various roles & types (columns, note, etc)
 - [ ] redo the horizontal spacing to be based on "ch"
+- [ ] redo aside and any other fixed widths to be based on "ch"
 - [ ] redo the mobile & container logic (based on "ch", like here: https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
+- [ ] change "mobile & desktop" only class naming to something like:
+ - .is-mobile-only --> .is-mobile-visible (?)
+ - .is-desktop-only --> .is-desktop-visible (?)
+ - .no-mobile --> .is-desktop-only
+- [ ] for Tab like navigation, is it possible to have N layers, like Soda docs
+  https://docs.soda.io/data-testing/git-managed-data-contracts/install-and-configure 
 
 Bugs
 ----
