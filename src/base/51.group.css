@@ -54,3 +54,9 @@
 [role=group]>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
   border-right-width: var(--border-width-action);
 }
+
+/* just in case datalist is the last element ... ignore it */
+[role=group]>:is(button, input, textarea, select):has(+ datalist) {
+  border-top-right-radius: var(--border-radius-input) !important;
+  border-bottom-right-radius: var(--border-radius-input) !important;
+}

@@ -88,15 +88,22 @@
           </fieldset>
 
           <fieldset>
-            <legend>Test</legend>
+            <legend>Datalist</legend>
 
-            <div>
-              <label for="my-input">
-                <span>My input</span>
-                <input type="email" name="my-input" id="my-input" placeholder="Email"/>
-              </label>
+            <div role="group">
+              <input list="colorOptions" id="color" name="color" placeholder="Choose or type">
+              <input type="submit" value="Select"/>
+              <datalist id="colorOptions">
+                <option value="Blue">
+                <option value="Green">
+                <option value="Burgundy">
+                <option value="Mauve">
+                <option value="Yellow">
+              </datalist>
             </div>
           </fieldset>
+
+
         </form>
       </section>
     </article>
