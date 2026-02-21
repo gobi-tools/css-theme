@@ -1,0 +1,13 @@
+/* horizontal layout */
+
+.is-narrow-container {
+  --width-page: var(--width-container-narrow);
+}
+
+.is-medium-container {
+  --width-page: var(--width-container-medium);
+}
+
+.is-wide-container {
+  --width-page: var(--width-container-wide);
+}

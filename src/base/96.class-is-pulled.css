@@ -1,0 +1,6 @@
+/* horizontal layout */
+
+.is-pulled-center {
+  justify-content: center;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+/* horizontal layout */
+
+.is-hero {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.is-hero>* {
+  width: min(100% - var(--space-9), var(--width-page));
+  margin-inline: auto;
+}

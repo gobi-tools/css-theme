@@ -1,0 +1,22 @@
+/* base */
+
+.is-desktop-only {
+  display: block !important;
+}
+
+.is-mobile-only {
+  display: none !important;
+}
+
+
+/* different layouts */
+
+@container (max-width: 600px) {
+  .is-desktop-only {
+    display: none !important;
+  }
+
+  .is-mobile-only {
+    display: block !important;
+  }
+}
