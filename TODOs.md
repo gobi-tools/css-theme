@@ -47,10 +47,10 @@ Improvements
 
 Bugs
 ----
-- [ ] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
+- [x] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
         - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px
-        - [ ] still a problem here, http://localhost/docs/forms-grouped?theme=default&width=medium, at 806px
+        - [x] still a problem here, http://localhost/docs/forms-grouped?theme=default&width=medium, at 806px
 - [x] for menu elements on smaller devices, when I have 5 navigation menu tabs, the last one won't appear and the widths are not consistent
 - [x] autocompleted input elements (name, email, etc) have a "yellow" background; can it be changed?
 - [x] if datalist is last element in a grouped form, then one of the visible inputs will not have the right-hand side border
