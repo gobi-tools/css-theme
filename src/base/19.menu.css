@@ -76,7 +76,6 @@ header:has(> menu):not(.no-mobile) {
     justify-content: center;
     gap: 0;
     flex-direction: row;
-    justify-content: initial;
   }
 
   menu>li {

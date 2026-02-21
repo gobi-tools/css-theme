@@ -1,18 +1,18 @@
 /* vertical layout */
 
-nav ul {
+nav :is(ul, ol) {
   margin-bottom: 0;
 }
 
-nav ul>li {
+nav :is(ul, ol)>li {
   margin-bottom: 0;
 }
 
-nav ul>li>* {
+nav :is(ul, ol)>li>* {
   margin: 0;
 }
 
-nav ul>li>ul>li {
+nav :is(ul, ol)>li>:is(ul, ol)>li {
   margin: 0;
 }
 
@@ -25,7 +25,7 @@ header>nav {
   padding-bottom: var(--space-3);
 }
 
-nav ul {
+nav :is(ul, ol) {
   display: flex;
   gap: var(--space-7);
   align-items: center;
@@ -34,7 +34,7 @@ nav ul {
   overflow: visible;
 }
 
-nav ul>li {
+nav :is(ul, ol)>li {
   display: inline-block;
   padding-block: var(--space-3);
   padding-inline: 0;
@@ -47,14 +47,14 @@ nav a {
   vertical-align: middle;
 }
 
-nav ul>li>ul {
+nav :is(ul, ol)>li>ul {
   display: none;
   width: auto;
   position: absolute;
   z-index: 42;
 }
 
-nav ul>li:hover>ul {
+nav :is(ul, ol)>li:hover>ul {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
@@ -64,15 +64,15 @@ nav ul>li:hover>ul {
   min-width: 150px;
 }
 
-nav ul>li>ul>li {
+nav :is(ul, ol)>li>:is(ul, ol)>li {
   white-space: nowrap;
 }
 
-nav li:has(> ul)>a {
+nav li:has(> :is(ul, ol))>a {
   pointer-events: none;
 }
 
-nav li:has(> ul)>a::after {
+nav li:has(> :is(ul, ol))>a::after {
   content: "▼";
   font-size: 0.8em;
   opacity: 0.7;
@@ -80,43 +80,43 @@ nav li:has(> ul)>a::after {
 
 /* theme colors */
 
-nav ul>li>ul {
+nav :is(ul, ol)>li>:is(ul, ol) {
   background: var(--color-bg);
   border-color: var(--color-txt);
 }
 
 /* theme style */
 
-nav ul>li>ul {
+nav :is(ul, ol)>li>:is(ul, ol) {
   border-style: solid;
   border-width: var(--border-width-nav);
 }
 
 /* different layouts */
 
-nav:has(> ul):not(.no-mobile) {
+nav:has(> :is(ul, ol)):not(.no-mobile) {
   container-type: inline-size;
   container-name: navigation;
 }
 
 @container navigation (max-width: 600px) {
-  nav ul {
+  nav :is(ul, ol) {
     flex-direction: column;
     align-items: start;
     gap: 0;
   }
 
-  nav ul:first-child>li {
+  nav :is(ul, ol):first-child>li {
     padding-bottom: 0;
   }
 
-  nav ul>li {
+  nav :is(ul, ol)>li {
     padding-left: 0;
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
   }
 
-  nav ul>li>ul {
+  nav :is(ul, ol)>li>:is(ul, ol) {
     width: 50%;
   }
 }
