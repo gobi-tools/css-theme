@@ -16,13 +16,13 @@
 
 /* different layouts */
 
-*:has(>[role=row]:not(.no-mobile)) {
+*:has(>[role=row]:not(.disable-mobile)) {
   container-type: inline-size;
   container-name: rows;
 }
 
 @container rows (max-width: 600px) {
-  :not(.group)>[role=row]:not(.no-mobile) {
+  :not(.group)>[role=row]:not(.disable-mobile) {
     flex-direction: column;
     gap: 0;
   }

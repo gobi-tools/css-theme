@@ -18,9 +18,9 @@ Features
   - [c] .gap
   - [x] .success
   - [x] .error
-  - [x] .is-mobile-only
-  - [x] .is-desktop-only
-  - [x] .no-mobile
+  - [x] .hide-on-desktop
+  - [x] .hide-on-mobile
+  - [x] .disable-mobile
   - [ ] .is-bg-primary
   - [ ] .is-bg-secondary
   - [ ] .is-bg-accent
@@ -41,9 +41,9 @@ Improvements
 - [ ] redo aside and any other fixed widths to be based on "ch"
 - [ ] redo the mobile & container logic (based on "ch", like here: https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
 - [ ] change "mobile & desktop" only class naming to something like:
- - .is-mobile-only --> .is-mobile-visible (?)
- - .is-desktop-only --> .is-desktop-visible (?)
- - .no-mobile --> .is-desktop-only
+ - .hide-on-desktop --> .is-mobile-visible (?)
+ - .hide-on-mobile --> .is-desktop-visible (?)
+ - .disable-mobile --> .hide-on-mobile
 - [ ] for Tab like navigation, is it possible to have N layers, like Soda docs
   https://docs.soda.io/data-testing/git-managed-data-contracts/install-and-configure 
 - [ ] have a full-screen width dimension

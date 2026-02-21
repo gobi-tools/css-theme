@@ -94,7 +94,7 @@ nav :is(ul, ol)>li>:is(ul, ol) {
 
 /* different layouts */
 
-nav:has(> :is(ul, ol)):not(.no-mobile) {
+nav:has(> :is(ul, ol)):not(.disable-mobile) {
   container-type: inline-size;
   container-name: navigation;
 }

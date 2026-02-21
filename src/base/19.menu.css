@@ -57,7 +57,7 @@ menu>li>a {
 
 /* different layouts */
 
-header:has(> menu):not(.no-mobile) {
+header:has(> menu):not(.disable-mobile) {
   container-type: inline-size;
   container-name: menu;
 }
