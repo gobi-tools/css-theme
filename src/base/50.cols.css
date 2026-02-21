@@ -22,7 +22,7 @@
 }
 
 @container rows (max-width: 600px) {
-  :not([role=group])>[role=row]:not(.no-mobile) {
+  :not(.is-grouped)>[role=row]:not(.no-mobile) {
     flex-direction: column;
     gap: 0;
   }
