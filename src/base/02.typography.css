@@ -43,6 +43,10 @@ footer {
   margin-bottom: var(--space-8);
 }
 
+header>:not(nav):not(menu) {
+  padding-top: var(--space-9);
+}
+
 section {
   margin-bottom: var(--space-10);
 }

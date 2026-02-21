@@ -15,7 +15,7 @@ Features
   - [x] .is-wide-container
   - [x] .is-narrow-container
   - [x] .is-pulled-center
-  - [c] .id-gap
+  - [c] .is-gap
   - [x] .is-success
   - [x] .is-error
   - [x] .is-mobile-only
@@ -28,6 +28,8 @@ Features
   - [ ] .is-bg-error
   - [ ] .is-rounded
   - [x] .is-circle
+  - [ ] .is-grouped
+  - [ ] .is-row (?)
 
 Improvements
 ------------
@@ -44,6 +46,7 @@ Improvements
  - .no-mobile --> .is-desktop-only
 - [ ] for Tab like navigation, is it possible to have N layers, like Soda docs
   https://docs.soda.io/data-testing/git-managed-data-contracts/install-and-configure 
+- [ ] have a full-screen width dimension
 
 Bugs
 ----
