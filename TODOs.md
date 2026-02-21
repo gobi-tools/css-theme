@@ -11,13 +11,13 @@ Features
 - [ ] animations
 - [ ] have the following classes:
   - [x] .is-banner
-  - [x] .is-medium-container
-  - [x] .is-wide-container
-  - [x] .is-narrow-container
+  - [x] .container-medium
+  - [x] .container-wide
+  - [x] .container-narrow
   - [x] .is-pulled-center
-  - [c] .is-gap
-  - [x] .is-success
-  - [x] .is-error
+  - [c] .gap
+  - [x] .success
+  - [x] .error
   - [x] .is-mobile-only
   - [x] .is-desktop-only
   - [x] .no-mobile
@@ -27,8 +27,8 @@ Features
   - [ ] .is-bg-success
   - [ ] .is-bg-error
   - [ ] .is-rounded
-  - [x] .is-circle
-  - [ ] .is-grouped
+  - [x] .circle
+  - [ ] .group
   - [ ] .is-row (?)
 
 Improvements
@@ -71,4 +71,4 @@ Bugs
 - [x] on mobile Chrome (browser), datepicker has small height & width
 - [x] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [x] code, kbd, etc, elements should have display: inline-block
-- [x] make the .is-gap class not visible on mobile
+- [x] make the .gap class not visible on mobile

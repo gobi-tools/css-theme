@@ -1,6 +1,6 @@
 /* vertical layout */
 
-:is(input, textarea)+.is-error {
+:is(input, textarea)+.error {
   margin-top: calc(-1 * var(--space-6));
   margin-bottom: var(--space-6);
 }
@@ -17,7 +17,7 @@
   background: light-dark(var(--color-error-light-2), var(--color-error-dark-2));
 }
 
-:is(input, textarea):not(:placeholder-shown):not(:focus):invalid + .is-error {
+:is(input, textarea):not(:placeholder-shown):not(:focus):invalid + .error {
   color: light-dark(var(--color-error), var(--color-error-light-1));
 }
 

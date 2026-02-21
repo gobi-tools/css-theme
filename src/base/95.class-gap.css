@@ -1,13 +1,13 @@
 /* horizontal layout */ 
 
-.is-gap {
+.gap {
   flex-grow: 1;
 }
 
 /* different layouts */
 
 @container (max-width: 600px) {
-  .is-gap {
+  .gap {
     display: none !important;
   }
 }

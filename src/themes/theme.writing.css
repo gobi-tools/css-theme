@@ -70,7 +70,7 @@ blockquote {
   background: none;
 }
 
-.is-grouped>:is(button,
+.group>:is(button,
   input,
   select):first-child {
   border-top-left-radius: var(--border-radius-action);
@@ -78,7 +78,7 @@ blockquote {
   padding-left: calc(var(--border-radius-action) / 1.35) !important;
 }
 
-.is-grouped>:is(button,
+.group>:is(button,
   input,
   select):last-child {
   border-top-right-radius: var(--border-radius-action);

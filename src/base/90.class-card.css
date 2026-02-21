@@ -1,57 +1,57 @@
 /* vertical layout */
 
-.is-card {
+.card {
   margin-bottom: var(--space-6);
 }
 
-.is-card>:last-child {
+.card>:last-child {
   margin-bottom: 0;
 }
 
-.is-card>:nth-child(2) {
+.card>:nth-child(2) {
   margin-top: var(--space-7);
 }
 
-.is-card>img:first-child {
+.card>img:first-child {
   margin-top: calc(-1 * var(--space-5));
   margin-left: calc(-1 * var(--space-5));
 }
 
 /* horizontal layout */
 
-.is-card>img:first-child {
+.card>img:first-child {
   width: calc(100% + 2 * var(--space-5));
 }
 
 /* base */
 
-.is-card {
+.card {
   overflow: hidden;
   padding: var(--space-5);
 }
 
-.is-card>img:first-child {
+.card>img:first-child {
   max-width: none;
 }
 
 /* theme colors */
 
-.is-card {
+.card {
   background: light-dark(var(--color-bg), var(--color-accent-dark-2));
   border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
 
-.is-card>:is(p, summary):first-child {
+.card>:is(p, summary):first-child {
   box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1)), 0 0rem 0 .8rem light-dark(var(--color-secondary-light-2), var(--color-secondary-dark-1));
 }
 
-.is-card>summary:first-child:hover {
+.card>summary:first-child:hover {
   box-shadow: inset 0 0 0 2em light-dark(var(--color-secondary-light-1), var(--color-secondary)), 0 0rem 0 .8rem light-dark(var(--color-secondary-light-1), var(--color-secondary));
 }
 
 /* theme styles */
 
-.is-card {
+.card {
   border-radius: var(--border-radius-note);
   border-width: var(--border-width-note);
   border-style: var(--border-style-note);

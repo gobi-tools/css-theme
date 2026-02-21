@@ -1,35 +1,35 @@
 /* horizontal layout */
 
-.is-grouped>*:not(label, input[type=checkbox], input[type=radio]) {
+.group>*:not(label, input[type=checkbox], input[type=radio]) {
   margin-inline: 0;
 }
 
 /* base */
 
-.is-grouped {
+.group {
   display: flex;
   align-items: center;
 }
 
-.is-grouped>* {
+.group>* {
   align-items: center;
 }
 
-.is-grouped>:is(:first-child) {
+.group>:is(:first-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.is-grouped>:is(:last-child) {
+.group>:is(:last-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.is-grouped>:not(:first-child):not(:last-child) {
+.group>:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
-.is-grouped>:is(button, input[type=submit], input[type=reset], mark) {
+.group>:is(button, input[type=submit], input[type=reset], mark) {
   width: auto;
   /* @todo: buttons & inputs have different margin-bottom (0 vs space-6 
      so this becomes important
@@ -37,26 +37,26 @@
   align-self: flex-start;
 }
 
-.is-grouped>:is(button, input[type=submit], input[type=reset])+:is(input, button) {
+.group>:is(button, input[type=submit], input[type=reset])+:is(input, button) {
   border-left-width: 0;
 }
 
-.is-grouped>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
+.group>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
   border-right-width: 0;
 }
 
 /* theme styles */
 
-.is-grouped>input {
+.group>input {
   border-bottom-width: var(--border-bottom-width-input);
 }
 
-.is-grouped>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
+.group>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
   border-right-width: var(--border-width-action);
 }
 
 /* just in case datalist is the last element ... ignore it */
-.is-grouped>:is(button, input, textarea, select):has(+ datalist) {
+.group>:is(button, input, textarea, select):has(+ datalist) {
   border-top-right-radius: var(--border-radius-input) !important;
   border-bottom-right-radius: var(--border-radius-input) !important;
 }

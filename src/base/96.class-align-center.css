@@ -1,6 +1,6 @@
 /* horizontal layout */
 
-.is-pulled-center {
+.align-center {
   justify-content: center;
   text-align: center;
 }
