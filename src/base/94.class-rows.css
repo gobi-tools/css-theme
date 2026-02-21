@@ -1,28 +1,49 @@
 /* base */
 
-[role=row] {
+.row {
   display: flex;
   align-items: stretch;
   gap: var(--space-7);
   width: 100%;
 }
 
-[role=row]>div {
-  width: 100%;
+.row :is(.col, div) {
+  flex: 0 4 100%;
 }
-[role=row]>:not(div) {
+
+.row .col-2 {
+  flex: 0 2 16.66%;
+}
+
+.row .col-3 {
+  flex: 0 3 25%;
+}
+
+.row .col-4 {
+  flex: 0 4 33.33%;
+}
+
+.row .col-5 {
+  flex: 0 5 41.66%;
+}
+
+.row .col-6 {
+  flex: 0 6 50%;
+}
+
+:is(.row, .col, .col-2, .col-3, .col-4, .col-5, .col-6)>:not(div) {
   margin-left: 0;
 }
 
 /* different layouts */
 
-*:has(>[role=row]:not(.disable-mobile)) {
+*:has(>.row:not(.disable-mobile)) {
   container-type: inline-size;
   container-name: rows;
 }
 
 @container rows (max-width: 600px) {
-  :not(.group)>[role=row]:not(.disable-mobile) {
+  :not(.group)>.row:not(.disable-mobile) {
     flex-direction: column;
     gap: 0;
   }

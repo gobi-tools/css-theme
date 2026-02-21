@@ -70,6 +70,6 @@ a {
   color: light-dark(var(--color-accent-dark-2), var(--color-accent-light-2));
 }
 
-blockquote, pre>code, .is-card {
+blockquote, pre>code, .card {
   border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
