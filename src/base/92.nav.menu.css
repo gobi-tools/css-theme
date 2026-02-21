@@ -48,14 +48,16 @@ header:has(> nav[role=menu]) {
     width: 100%;
     left: 0;
     bottom: 0;
-    padding: 0;
     background: var(--color-bg);
     border-top: 1px solid light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
+    padding-inline: var(--space-6);
+    padding-block: 0;
   }
 
   header>nav[role=menu]>ul {
     margin: 0;
     justify-content: center;
+    gap: 0;
   }
 }
 
@@ -66,8 +68,8 @@ header:has(> nav[role=menu]) {
   }
 
   nav[role=menu]>ul>li {
-    width: 100%;
-    max-width: 100%;
     padding-inline: 0;
+    flex-grow: 1;
+    flex-basis: 999px;
   }
 }
