@@ -45,7 +45,7 @@ menu li:has(> ul)>a::after {
   content: none;
 }
 
-menu>li:hover>ul {
+menu>li>ul {
   display: none;
 }
 
