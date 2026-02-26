@@ -7,33 +7,35 @@ svg {
 /* horizontal layout */
 
 svg:has(+*),
-*:has(+svg) {
+*:has(+svg),
+button > img:has(+*),
+button>*:has(+img) {
   margin-right: var(--space-2) !important;
 }
 
 /* base */
 
-svg {
+svg, button>img {
   padding: 0;
 }
 
-:is(button, input[type=submit], input[type=reset])>svg {
+:is(button, input[type=submit], input[type=reset])>:is(svg, img) {
   width: var(--font-size-base);
   height: var(--font-size-base);
 }
 
-:is(button, input[type=submit], input[type=reset]):has(svg:only-child) {
+:is(button, input[type=submit], input[type=reset]):has(:is(svg:only-child, img:only-child)) {
   padding-left: var(--space-4);
   padding-right: var(--space-4);
 }
 
-mark>svg,
-code>svg {
+mark>:is(svg, img),
+code>:is(svg, img) {
   width: var(--font-size-sm);
   height: var(--font-size-sm);
 }
 
-a>svg {
+a>:is(svg, img) {
   width: var(--font-size-xl);
   height: var(--font-size-xl);
 }
