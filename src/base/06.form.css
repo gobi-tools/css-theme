@@ -94,7 +94,6 @@ fieldset {
 
 /* theme style */
 
-fieldset,
 input,
 select,
 textarea {
@@ -111,7 +110,13 @@ textarea:focus {
   outline-offset: calc(-1 * var(--border-width-input));
 }
 
-fieldset,
 select {
-  border-bottom-width: var(--border-bottom-width-input);
+  border-bottom-width: var(--border-bottom-width-select);
+}
+
+fieldset {
+  border-style: var(--border-style-note);
+  border-radius: var(--border-radius-note);
+  border-width: var(--border-width-note);
+  border-bottom-width: var( --border-bottom-width-note);
 }

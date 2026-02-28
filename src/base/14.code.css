@@ -1,4 +1,4 @@
-/* vertical layout */ 
+/* vertical layout */
 
 pre {
   margin-bottom: var(--space-6);
@@ -10,12 +10,12 @@ pre:has(+ figcaption) {
 
 /* horizontal layout */
 
-mark + mark,
-code + code {
+mark+mark,
+code+code {
   margin-left: var(--space-2);
 }
 
-/* base */ 
+/* base */
 
 pre {
   padding: 0 !important;
@@ -71,13 +71,13 @@ mark {
 }
 
 pre {
-  background: transparent !important;
+  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2)) !important;
+  border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1)) !important;
+  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark)) !important;
 }
 
-pre>code {
-  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
-  border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1));
-  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
+pre>* {
+  background: transparent !important;
 }
 
 kbd>*,
@@ -92,10 +92,10 @@ code,
 kbd,
 var,
 mark {
-  border-radius: var(--border-radius-highlights);
+  border-radius: var(--border-radius-code);
 }
 
-pre>code {
+pre {
   border-radius: var(--border-radius-blocks);
   border-style: var(--border-style-blocks);
   border-width: var(--border-width-blocks);

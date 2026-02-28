@@ -47,8 +47,8 @@
 
 /* theme styles */
 
-.group>input {
-  border-bottom-width: var(--border-bottom-width-input);
+.group>:is(input, textarea, select) {
+  border-bottom-width: var(--border-bottom-width-select);
 }
 
 .group>:is(:first-child):is(button, input[type=submit], input[type=reset]) {

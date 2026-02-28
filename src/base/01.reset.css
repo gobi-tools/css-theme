@@ -82,13 +82,13 @@
   --color-bg-dark: #111827;
   --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
 
-  /* -small-elem applies to mark */
-  --height-small-elem: 26px;
+  /* -small-elem applies to "mark" */
+  --height-small-elem: 32px;
   
-  /* -highlights applis to kbd, code, var, mark  */
-  --border-radius-highlights: 6px;
+  /* -code applis to "kbd", "code", "var", "mark"  */
+  --border-radius-code: 6px;
 
-  /* -blocks applies to to: blockquote, pre>code, dialog */
+  /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 0px;
   --border-style-blocks: solid;
   --border-width-blocks: 0px;
@@ -96,28 +96,28 @@
   --border-left-width-blocks: 4px;
   --border-bottom-width-blocks: 0px;
 
-  /* -action applies to: button (& "grouped" buttons) */
+  /* -action applies to: "button" (& "grouped" buttons) */
   --border-radius-action: 6px;
   --border-width-action: 2px;
   --border-bottom-width-action: 2px;
 
-  /* -input applies to: form inputs, button (for height), "grouped" inputs */
+  /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
   --height-input: 41.48px; 
   --border-radius-input: 6px;
   --border-width-input: 2px;
   --border-style-input: solid;
-  --border-bottom-width-input: 2px;
+  --border-bottom-width-select: 2px;
 
-  /* -bottom-nav applies to main???? */
+  /* -bottom-nav applies to "main"???? */
   --height-bottom-nav: 77px;
-  /* -nav applies to nav elements */
+  /* -nav applies to "nav" elements */
   --border-width-nav: 2px;
 
-  /* -note applies to elements with the card class */
+  /* -note applies to elements with the "card" class and to fieldsets  */
   --border-radius-note: 6px;
   --border-style-note: solid;
-  --border-width-note: 1px;
-  --border-bottom-width-note: 1px;
+  --border-width-note: 2px;
+  --border-bottom-width-note: 2px;
 }
 
 * {

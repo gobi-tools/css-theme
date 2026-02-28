@@ -42,7 +42,7 @@
   --color-bg-dark: #111827;
   --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
   /* style elements */
-  --border-radius-highlights: 0px;
+  --border-radius-code: 0px;
 
   --border-radius-blocks: 0px;
   --border-style-blocks: solid;
@@ -63,7 +63,7 @@
   --border-radius-input: 0px;
   --border-width-input: 2px;
   --border-style-input: solid;
-  --border-bottom-width-input: 2px;
+  --border-bottom-width-select: 2px;
 }
 
 a {

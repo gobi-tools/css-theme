@@ -42,7 +42,7 @@
   --color-bg-dark: #1c1917;
   --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
   /* style elements */
-  --border-radius-highlights: 6px;
+  --border-radius-code: 6px;
 
   --border-radius-blocks: 0px;
   --border-style-blocks: solid;
@@ -63,7 +63,7 @@
   --border-radius-input: 4px;
   --border-width-input: 2px;
   --border-style-input: solid;
-  --border-bottom-width-input: 2px;
+  --border-bottom-width-select: 2px;
 }
 
 blockquote {
