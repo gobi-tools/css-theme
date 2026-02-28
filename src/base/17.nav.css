@@ -89,7 +89,7 @@ nav :is(ul, ol)>li>:is(ul, ol) {
 
 nav :is(ul, ol)>li>:is(ul, ol) {
   border-style: solid;
-  border-width: var(--border-width-nav);
+  border-width: var(--border-width-expanded-nav);
 }
 
 /* different layouts */

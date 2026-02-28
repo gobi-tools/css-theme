@@ -1,11 +1,11 @@
 /* base */
 
 nav>ol>li[aria-selected="true"] {
-  border-bottom: 4px solid light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
+  border-bottom: var(--border-width-horz-tabs) solid light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
 }
 
 nav ol>li {
-  border-bottom: 4px solid var(--color-bg);
+  border-bottom: var(--border-width-horz-tabs) solid var(--color-bg);
   padding-inline: var(--space-5);
 }
 
@@ -14,8 +14,8 @@ nav ol>li {
 @container navigation (max-width: 600px) {
   nav>ol>li[aria-selected="true"] {
     border-bottom: none;
-    padding-left: calc(var(--space-6) - 3px) !important;
-    border-left: 3px solid light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
+    padding-left: calc(var(--space-6) - var(--border-width-vert-tabs)) !important;
+    border-left: var(--border-width-vert-tabs) solid light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
     background-color: light-dark(var(--color-primary-light-2), var(--color-accent-dark-2));
   }
 

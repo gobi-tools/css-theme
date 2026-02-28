@@ -87,6 +87,8 @@
   
   /* -code applis to "kbd", "code", "var", "mark"  */
   --border-radius-code: 6px;
+  --border-style-code: none;
+  --border-width-code: 0px;
 
   /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 0px;
@@ -111,9 +113,11 @@
   /* -bottom-nav applies to "main"???? */
   --height-bottom-nav: 77px;
   /* -nav applies to "nav" elements */
-  --border-width-nav: 2px;
+  --border-width-expanded-nav: 2px;      /* for expanded nav sub-elements */
+  --border-width-horz-tabs: 4px;/* for horizontally aligned tabs */
+  --border-width-vert-tabs: 3px;/* for vertically aligned tabs */
 
-  /* -note applies to elements with the "card" class and to fieldsets  */
+  /* -note applies to elements with the "card" class and to "fieldsets"  */
   --border-radius-note: 6px;
   --border-style-note: solid;
   --border-width-note: 2px;

@@ -67,17 +67,18 @@ code,
 kbd,
 var,
 mark {
+  border-color: var(--color-accent);
   background: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }
 
 pre {
-  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2)) !important;
-  border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1)) !important;
-  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark)) !important;
+  background: transparent !important;
 }
 
-pre>* {
-  background: transparent !important;
+pre>code {
+  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
+  border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1));
+  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
 }
 
 kbd>*,
@@ -93,9 +94,11 @@ kbd,
 var,
 mark {
   border-radius: var(--border-radius-code);
+  border-width: var(--border-width-code);
+  border-style: var(--border-style-code);
 }
 
-pre {
+pre>code {
   border-radius: var(--border-radius-blocks);
   border-style: var(--border-style-blocks);
   border-width: var(--border-width-blocks);
