@@ -51,15 +51,18 @@
   --border-top-blocks: 0px none;
   --border-bottom-blocks: 0px none;
 
+   /* -button applies to: "button" (& "grouped" buttons) */
+  --border-radius-button: 20px;
+  --border-left-button: 2px solid;
+  --border-right-button: 2px solid;
+  --border-top-button: 2px solid;
+  --border-bottom-button: 2px solid;
+
   --border-radius-note: 4px;
   --border-style-note: solid;
   --border-width-note: 2px;
   --border-bottom-width-note: 2px;
-
-  --border-radius-action: 20px;
-  --border-width-action: 2px;
-  --border-bottom-width-action: 2px;
-
+  
   --border-radius-input: 4px;
   --border-width-input: 2px;
   --border-style-input: solid;
@@ -73,14 +76,14 @@ blockquote {
 .group>:is(button,
   input,
   select):first-child {
-  border-top-left-radius: var(--border-radius-action);
-  border-bottom-left-radius: var(--border-radius-action);
-  padding-left: calc(var(--border-radius-action) / 1.35) !important;
+  border-top-left-radius: var(--border-radius-button);
+  border-bottom-left-radius: var(--border-radius-button);
+  padding-left: calc(var(--border-radius-button) / 1.35) !important;
 }
 
 .group>:is(button,
   input,
   select):last-child {
-  border-top-right-radius: var(--border-radius-action);
-  border-bottom-right-radius: var(--border-radius-action);
+  border-top-right-radius: var(--border-radius-button);
+  border-bottom-right-radius: var(--border-radius-button);
 }

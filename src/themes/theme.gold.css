@@ -32,7 +32,7 @@
   --color-accent-light-2: #f3f4f6;
   --color-accent-dark-1: #374151;
   --color-accent-dark-2: #1f2937;
-  
+
   /* colors - text */
   --color-txt-on-light: #111827;
   --color-txt-on-dark: #f9fafb;
@@ -41,7 +41,7 @@
   --color-bg-light: #ffffff;
   --color-bg-dark: #111827;
   --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
-  
+
   /* -code applis to "kbd", "code", "var", "mark"  */
   --border-radius-code: 0px;
 
@@ -52,14 +52,17 @@
   --border-top-blocks: 2px solid;
   --border-bottom-blocks: 2px solid;
 
+  /* -button applies to: "button" (& "grouped" buttons) */
+  --border-radius-button: 0px;
+  --border-left-button: 2px solid;
+  --border-right-button: 2px solid;
+  --border-top-button: 2px solid;
+  --border-bottom-button: 2px solid;
+
   --border-radius-note: 0px;
   --border-style-note: solid;
   --border-width-note: 2px;
   --border-bottom-width-note: 2px;
-
-  --border-radius-action: 0px;
-  --border-width-action: 2px;
-  --border-bottom-width-action: 2px;
 
   --border-radius-input: 0px;
   --border-width-input: 2px;
@@ -71,6 +74,8 @@ a {
   color: light-dark(var(--color-accent-dark-2), var(--color-accent-light-2));
 }
 
-blockquote, pre>code, .card {
+blockquote,
+pre>code,
+.card {
   border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
 }

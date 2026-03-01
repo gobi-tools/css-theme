@@ -52,14 +52,17 @@
   --border-top-blocks: 2px solid;
   --border-bottom-blocks: 2px solid;
 
+   /* -button applies to: "button" (& "grouped" buttons) */
+  --border-radius-button: 0px;
+  --border-left-button: 2px solid;
+  --border-right-button: 2px solid;
+  --border-top-button: 2px solid;
+  --border-bottom-button: 2px solid;
+
   --border-radius-note: 4px;
   --border-style-note: solid;
   --border-width-note: 2px;
   --border-bottom-width-note: 2px;
-
-  --border-radius-action: 0px;
-  --border-width-action: 2px;
-  --border-bottom-width-action: 2px;
 
   --border-radius-input: 0px;
   --border-width-input: 2px;
