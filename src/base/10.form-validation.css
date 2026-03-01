@@ -21,7 +21,7 @@
   color: light-dark(var(--color-error), var(--color-error-light-1));
 }
 
-:is(input, textarea):placeholder-shown {
+:is(input, textarea):placeholder-shown:not(:focus) {
   background: var(--color-bg) !important;
   border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1)) !important;
 }
