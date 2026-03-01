@@ -89,7 +89,7 @@
   --border-right-code: 0px none;
   --border-top-code: 0px none;
   --border-bottom-code: 0px none;
-  
+
   /* -blocks applies to to: "blockquote", "pre" */
   --border-radius-blocks: 0px;
   --border-left-blocks: 4px solid;
@@ -106,11 +106,29 @@
   --border-bottom-button: 2px solid;
 
   /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
-  --height-input: 41.48px; 
+  --height-input: 41.48px;
   --border-radius-input: 6px;
-  --border-width-input: 2px;
-  --border-style-input: solid;
+
+  --border-left-width-input: 2px;
+  --border-left-style-input: solid;
+  --border-right-width-input: 2px;
+  --border-right-style-input: solid;
+  --border-top-width-input: 2px;
+  --border-top-style-input: solid;
+  --border-bottom-width-input: 2px;
+  --border-bottom-style-input: solid;
+
+  --border-left-width-select: 2px;
+  --border-left-style-select: solid;
+  --border-right-width-select: 2px;
+  --border-right-style-select: solid;
+  --border-top-width-select: 2px;
+  --border-top-style-select: solid;
   --border-bottom-width-select: 2px;
+  --border-bottom-style-select: solid;
+
+  --outline-input: 2px solid;
+  --outline-offset-input: -2px;
 
   /* -dialog applies to: "dialog" */
   --border-radius-dialog: 6px;
@@ -118,9 +136,12 @@
   /* -bottom-nav applies to "main"???? */
   --height-bottom-nav: 77px;
   /* -nav applies to "nav" elements */
-  --border-width-expanded-nav: 2px;      /* for expanded nav sub-elements */
-  --border-width-horz-tabs: 4px;/* for horizontally aligned tabs */
-  --border-width-vert-tabs: 3px;/* for vertically aligned tabs */
+  --border-width-expanded-nav: 2px;
+  /* for expanded nav sub-elements */
+  --border-width-horz-tabs: 4px;
+  /* for horizontally aligned tabs */
+  --border-width-vert-tabs: 3px;
+  /* for vertically aligned tabs */
 
   /* -note applies to: "fieldsets", "card" class  */
   --border-radius-note: 6px;

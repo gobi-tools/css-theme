@@ -59,6 +59,48 @@ select {
   font-weight: bold;
 }
 
+/* theme style */
+
+input,
+select,
+textarea {
+  border-radius: var(--border-radius-input);
+  
+  border-left-width: var(--border-left-width-input);
+  border-left-style: var(--border-left-style-input);
+  border-right-width: var(--border-right-width-input);
+  border-right-style: var(--border-right-style-input);
+  border-top-width: var(--border-top-width-input);
+  border-top-style: var(--border-top-style-input);
+  border-bottom-width: var(--border-bottom-width-input);
+  border-bottom-style: var(--border-bottom-style-input);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: var(--outline-input);
+  outline-offset: var(--outline-offset-input);
+}
+
+select {
+  border-left-width: var(--border-left-width-select);
+  border-left-style: var(--border-left-style-select);
+  border-right-width: var(--border-right-width-select);
+  border-right-style: var(--border-right-style-select);
+  border-top-width: var(--border-top-width-select);
+  border-top-style: var(--border-top-style-select);
+  border-bottom-width: var(--border-bottom-width-select);
+  border-bottom-style: var(--border-bottom-style-select);
+}
+
+fieldset {
+  border-style: var(--border-style-note);
+  border-radius: var(--border-radius-note);
+  border-width: var(--border-width-note);
+  border-bottom-width: var( --border-bottom-width-note);
+}
+
 /* theme colors */
 
 fieldset,
@@ -89,33 +131,4 @@ textarea:focus {
 
 fieldset {
   background: light-dark(var(--color-bg), var(--color-accent-dark-2));
-}
-
-/* theme style */
-
-input,
-select,
-textarea {
-  border-style: var(--border-style-input);
-  border-width: var(--border-width-input);
-  border-radius: var(--border-radius-input);
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline-style: var(--border-style-input);
-  outline-width: var(--border-width-input);
-  outline-offset: calc(-1 * var(--border-width-input));
-}
-
-select {
-  border-bottom-width: var(--border-bottom-width-select);
-}
-
-fieldset {
-  border-style: var(--border-style-note);
-  border-radius: var(--border-radius-note);
-  border-width: var(--border-width-note);
-  border-bottom-width: var( --border-bottom-width-note);
 }

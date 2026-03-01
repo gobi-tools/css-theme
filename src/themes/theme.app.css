@@ -57,15 +57,14 @@
   --border-top-button: 2px solid;
   --border-bottom-button: 5px solid;
 
+  /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
+  --border-radius-input: 4px;
+  --border-bottom-width-select: 5px;
+
   --border-radius-note: 4px;
   --border-style-note: solid;
   --border-width-note: 2px;
   --border-bottom-width-note: 5px;
-
-  --border-radius-input: 4px;
-  --border-width-input: 2px;
-  --border-style-input: solid;
-  --border-bottom-width-select: 5px;
 }
 
 button,
