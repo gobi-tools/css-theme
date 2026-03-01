@@ -82,24 +82,26 @@
   --color-bg-dark: #111827;
   --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
 
-  /* -small-elem applies to "mark" */
-  --height-small-elem: 32px;
-  
-  /* -code applis to "kbd", "code", "var", "mark"  */
+  /* -code applis to: "kbd", "code", "var", "mark"  */
+  --height-small-code: 32px;
   --border-radius-code: 6px;
   --border-left-code: 0px none;
   --border-right-code: 0px none;
   --border-top-code: 0px none;
   --border-bottom-code: 0px none;
   
-  /* -blocks applies to to: "blockquote", "pre", "dialog" */
+  /* -blocks applies to to: "blockquote", "pre" */
   --border-radius-blocks: 0px;
   --border-left-blocks: 4px solid;
   --border-right-blocks: 0px solid;
   --border-top-blocks: 0px none;
   --border-bottom-blocks: 0px none;
 
+  /* -dialog applies to: "dialog" */
+  --border-radius-dialog: 6px;
+
   /* -action applies to: "button" (& "grouped" buttons) */
+  --height-button: 41.48px;
   --border-radius-action: 6px;
   --border-width-action: 2px;
   --border-bottom-width-action: 2px;
@@ -118,7 +120,7 @@
   --border-width-horz-tabs: 4px;/* for horizontally aligned tabs */
   --border-width-vert-tabs: 3px;/* for vertically aligned tabs */
 
-  /* -note applies to elements with the "card" class and to "fieldsets"  */
+  /* -note applies to: "fieldsets", "card" class  */
   --border-radius-note: 6px;
   --border-style-note: solid;
   --border-width-note: 2px;

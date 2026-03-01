@@ -14,7 +14,7 @@ button,
 input[type=submit],
 input[type=reset] {
   cursor: pointer;
-  min-height: var(--height-input);
+  min-height: var(--height-button);
   min-width: auto;
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);

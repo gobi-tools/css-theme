@@ -1,13 +1,3 @@
-/* vertical layout */
-
-pre {
-  margin-bottom: var(--space-6);
-}
-
-pre:has(+ figcaption) {
-  margin-bottom: 0;
-}
-
 /* horizontal layout */
 
 mark+mark,
@@ -16,10 +6,6 @@ code+code {
 }
 
 /* base */
-
-pre {
-  padding: 0 !important;
-}
 
 code,
 kbd,
@@ -31,29 +17,14 @@ mark {
 }
 
 mark {
-  height: var(--height-small-elem);
+  height: var(--height-small-code);
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
 }
 
-pre,
-pre>code {
-  display: block;
-  text-align: left;
-}
-
-pre>code {
-  text-wrap: auto;
-  word-wrap: break-word;
-  word-break: break-all;
-  white-space: break-spaces !important;
-  padding: var(--space-6);
-}
-
 /* typography */
 
-pre,
 code,
 kbd,
 var {
@@ -74,14 +45,6 @@ mark {
   border-bottom: var(--border-bottom-code);
 }
 
-pre>code {
-  border-radius: var(--border-radius-blocks);
-  border-left: var(--border-left-blocks);
-  border-right: var(--border-right-blocks);
-  border-top: var(--border-top-blocks);
-  border-bottom: var(--border-bottom-blocks);
-}
-
 /* theme colors */
 
 code,
@@ -90,16 +53,6 @@ var,
 mark {
   border-color: var(--color-accent);
   background: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
-}
-
-pre {
-  background: transparent !important;
-}
-
-pre>code {
-  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
-  border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1));
-  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
 }
 
 kbd>*,

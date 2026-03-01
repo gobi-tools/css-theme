@@ -21,7 +21,7 @@ dialog {
 /* theme styles */ 
 
 dialog {
-  border-radius: var(--border-radius-blocks);
+  border-radius: var(--border-radius-dialog);
 }
 
 /* theme colors */
