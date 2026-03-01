@@ -110,10 +110,15 @@
   /* -button applies to: "button" (& "grouped" buttons) */
   --height-button: 41.48px;
   --border-radius-button: 6px;
-  --border-left-button: 2px solid;
-  --border-right-button: 2px solid;
-  --border-top-button: 2px solid;
-  --border-bottom-button: 2px solid;
+
+  --border-left-width-button: 2px;
+  --border-left-style-button: solid;
+  --border-right-width-button: 2px;
+  --border-right-style-button: solid;
+  --border-top-width-button: 2px;
+  --border-top-style-button: solid;
+  --border-bottom-width-button: 2px;
+  --border-bottom-style-button: solid;
 
   /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
   --height-input: 41.48px;

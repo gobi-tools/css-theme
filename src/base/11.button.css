@@ -65,10 +65,15 @@ button,
 input[type=submit],
 input[type=reset] {
   border-radius: var(--border-radius-button);
-  border-left: var(--border-left-button);
-  border-right: var(--border-right-button);
-  border-top: var(--border-top-button);
-  border-bottom: var(--border-bottom-button);
+
+  border-left-width: var(--border-left-width-button);
+  border-left-style: var(--border-left-style-button);
+  border-right-width: var(--border-right-width-button);
+  border-right-style: var(--border-right-style-button);
+  border-top-width: var(--border-top-width-button);
+  border-top-style: var(--border-top-style-button);
+  border-bottom-width: var(--border-bottom-width-button);
+  border-bottom-style: var(--border-bottom-style-button);
 }
 
 /* theme colors */

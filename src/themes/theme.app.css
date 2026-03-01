@@ -56,10 +56,7 @@
 
   /* -button applies to: "button" (& "grouped" buttons) */
   --border-radius-button: 4px;
-  --border-left-button: 2px solid;
-  --border-right-button: 2px solid;
-  --border-top-button: 2px solid;
-  --border-bottom-button: 5px solid;
+  --border-bottom-width-button: 5px;
 
   /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
   --border-radius-input: 4px;
