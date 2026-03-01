@@ -52,7 +52,7 @@
 }
 
 .group>:is(:first-child):is(button, input[type=submit], input[type=reset]) {
-  border-right: var(--border-left-button);
+  /* border-right: var(--border-left-button); */
   /* border-right-width: var(--border-width-button); */
 }
 
