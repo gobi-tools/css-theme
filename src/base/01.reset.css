@@ -160,15 +160,12 @@
   --border-bottom-width-card: 2px;
   --border-bottom-style-card: solid;
 
-  /* -bottom-nav applies to "main"???? */
-  --height-bottom-nav: 77px;
-  /* -nav applies to "nav" elements */
+  /* -nav applies to: "nav" */
   --border-width-expanded-nav: 2px;
-  /* for expanded nav sub-elements */
+  
+  /* -tabs applies to: "tab" (nav>ol) */
   --border-width-horz-tabs: 4px;
-  /* for horizontally aligned tabs */
   --border-width-vert-tabs: 3px;
-  /* for vertically aligned tabs */
 }
 
 * {
