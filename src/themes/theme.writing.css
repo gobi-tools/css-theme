@@ -53,10 +53,8 @@
   /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
   --border-radius-input: 4px;
 
-  --border-radius-note: 4px;
-  --border-style-note: solid;
-  --border-width-note: 2px;
-  --border-bottom-width-note: 2px;
+  /* -note applies to: "fieldsets", "card" class  */
+  --border-radius-card: 4px;
 }
 
 blockquote {

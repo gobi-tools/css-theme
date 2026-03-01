@@ -148,6 +148,18 @@
   /* -dialog applies to: "dialog" */
   --border-radius-dialog: 6px;
 
+  /* -note applies to: "fieldsets", "card" class  */
+  --border-radius-card: 6px;
+
+  --border-left-width-card: 2px;
+  --border-left-style-card: solid;
+  --border-right-width-card: 2px;
+  --border-right-style-card: solid;
+  --border-top-width-card: 2px;
+  --border-top-style-card: solid;
+  --border-bottom-width-card: 2px;
+  --border-bottom-style-card: solid;
+
   /* -bottom-nav applies to "main"???? */
   --height-bottom-nav: 77px;
   /* -nav applies to "nav" elements */
@@ -157,12 +169,6 @@
   /* for horizontally aligned tabs */
   --border-width-vert-tabs: 3px;
   /* for vertically aligned tabs */
-
-  /* -note applies to: "fieldsets", "card" class  */
-  --border-radius-note: 6px;
-  --border-style-note: solid;
-  --border-width-note: 2px;
-  --border-bottom-width-note: 2px;
 }
 
 * {

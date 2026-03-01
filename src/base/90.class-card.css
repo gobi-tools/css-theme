@@ -52,8 +52,14 @@
 /* theme styles */
 
 .card {
-  border-radius: var(--border-radius-note);
-  border-width: var(--border-width-note);
-  border-style: var(--border-style-note);
-  border-bottom-width: var(--border-bottom-width-note);
+  border-radius: var(--border-radius-card);
+
+  border-left-width: var(--border-left-width-card);
+  border-left-style: var(--border-left-style-card);
+  border-right-width: var(--border-right-width-card);
+  border-right-style: var(--border-right-style-card);
+  border-top-width: var(--border-top-width-card);
+  border-top-style: var(--border-top-style-card);
+  border-bottom-width: var(--border-bottom-width-card);
+  border-bottom-style: var(--border-bottom-style-card);
 }

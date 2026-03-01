@@ -40,6 +40,7 @@
   --color-bg-light: #ffffff;
   --color-bg-dark: #111827;
   --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
+  
   /* -code applis to "kbd", "code", "var", "mark"  */
   --border-radius-code: 6px;
 
@@ -62,10 +63,9 @@
   --border-radius-input: 4px;
   --border-bottom-width-select: 5px;
 
-  --border-radius-note: 4px;
-  --border-style-note: solid;
-  --border-width-note: 2px;
-  --border-bottom-width-note: 5px;
+  /* -note applies to: "fieldsets", "card" class  */
+  --border-radius-card: 4px;
+  --border-bottom-width-card: 5px;
 }
 
 button,
