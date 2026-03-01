@@ -42,15 +42,15 @@
   --color-bg-dark: #fff8dc;
   --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
   
-  /* style elements */
+  /* -code applis to "kbd", "code", "var", "mark"  */
   --border-radius-code: 6px;
 
+  /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 0px;
-  --border-style-blocks: solid;
-  --border-width-blocks: 2px;
-  --border-left-style-blocks: solid;
-  --border-left-width-blocks: 2px;
-  --border-bottom-width-blocks: 2px;
+  --border-left-blocks: 2px solid;
+  --border-right-blocks: 2px solid;
+  --border-top-blocks: 2px solid;
+  --border-bottom-blocks: 2px solid;;
 
   --border-radius-note: 4px;
   --border-style-note: solid;

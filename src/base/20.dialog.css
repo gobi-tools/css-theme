@@ -18,6 +18,12 @@ dialog {
   width: min(100% - var(--space-9), var(--width-dialog));
 }
 
+/* theme styles */ 
+
+dialog {
+  border-radius: var(--border-radius-blocks);
+}
+
 /* theme colors */
 
 dialog {
@@ -27,10 +33,4 @@ dialog {
 dialog::backdrop {
    backdrop-filter: blur(4px);
   background: rgba(0, 0, 0, 0.5);
-}
-
-/* theme styles */ 
-
-dialog {
-  border-radius: var(--border-radius-blocks);
 }

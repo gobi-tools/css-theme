@@ -22,20 +22,19 @@ blockquote {
   word-wrap: break-word;
 }
 
+/* theme styles */
+
+blockquote {
+  border-radius: var(--border-radius-blocks);
+  border-left: var(--border-left-blocks);
+  border-right: var(--border-right-blocks);
+  border-top: var(--border-top-blocks);
+  border-bottom: var(--border-bottom-blocks);
+}
+
 /* theme colors */
 
 blockquote {
   background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
   border-color: var(--color-accent-dark-1);
-}
-
-/* theme styles */
-
-blockquote {
-  border-radius: var(--border-radius-blocks);
-  border-style: var(--border-style-blocks);
-  border-width: var(--border-width-blocks);
-  border-left-style: var(--border-left-style-blocks);
-  border-left-width: var(--border-left-width-blocks);
-  border-bottom-width: var(--border-bottom-width-blocks);
 }

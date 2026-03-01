@@ -61,6 +61,27 @@ var {
   font-size: var(--font-size-sm);
 }
 
+/* theme styles */
+
+code,
+kbd,
+var,
+mark {
+  border-radius: var(--border-radius-code);
+  border-left: var(--border-left-code);
+  border-right: var(--border-right-code);
+  border-top: var(--border-top-code);
+  border-bottom: var(--border-bottom-code);
+}
+
+pre>code {
+  border-radius: var(--border-radius-blocks);
+  border-left: var(--border-left-blocks);
+  border-right: var(--border-right-blocks);
+  border-top: var(--border-top-blocks);
+  border-bottom: var(--border-bottom-blocks);
+}
+
 /* theme colors */
 
 code,
@@ -85,24 +106,4 @@ kbd>*,
 var>*,
 mark>* {
   color: currentColor !important;
-}
-
-/* theme styles */
-
-code,
-kbd,
-var,
-mark {
-  border-radius: var(--border-radius-code);
-  border-width: var(--border-width-code);
-  border-style: var(--border-style-code);
-}
-
-pre>code {
-  border-radius: var(--border-radius-blocks);
-  border-style: var(--border-style-blocks);
-  border-width: var(--border-width-blocks);
-  border-left-style: var(--border-left-style-blocks);
-  border-left-width: var(--border-left-width-blocks);
-  border-bottom-width: var(--border-bottom-width-blocks);
 }

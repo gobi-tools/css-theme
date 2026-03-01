@@ -87,16 +87,17 @@
   
   /* -code applis to "kbd", "code", "var", "mark"  */
   --border-radius-code: 6px;
-  --border-style-code: none;
-  --border-width-code: 0px;
-
+  --border-left-code: 0px none;
+  --border-right-code: 0px none;
+  --border-top-code: 0px none;
+  --border-bottom-code: 0px none;
+  
   /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 0px;
-  --border-style-blocks: solid;
-  --border-width-blocks: 0px;
-  --border-left-style-blocks: solid;
-  --border-left-width-blocks: 4px;
-  --border-bottom-width-blocks: 0px;
+  --border-left-blocks: 4px solid;
+  --border-right-blocks: 0px solid;
+  --border-top-blocks: 0px none;
+  --border-bottom-blocks: 0px none;
 
   /* -action applies to: "button" (& "grouped" buttons) */
   --border-radius-action: 6px;
