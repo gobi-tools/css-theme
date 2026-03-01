@@ -39,10 +39,15 @@ kbd,
 var,
 mark {
   border-radius: var(--border-radius-code);
-  border-left: var(--border-left-code);
-  border-right: var(--border-right-code);
-  border-top: var(--border-top-code);
-  border-bottom: var(--border-bottom-code);
+
+  border-left-width: var(--border-left-width-code);
+  border-left-style: var(--border-left-style-code);
+  border-right-width: var(--border-right-width-code);
+  border-right-style: var(--border-right-style-code);
+  border-top-width: var(--border-top-width-code);
+  border-top-style: var(--border-top-style-code);
+  border-bottom-width: var(--border-bottom-width-code);
+  border-bottom-style: var(--border-bottom-style-code);
 }
 
 /* theme colors */

@@ -85,10 +85,14 @@
   /* -code applis to: "kbd", "code", "var", "mark"  */
   --height-small-code: 32px;
   --border-radius-code: 6px;
-  --border-left-code: 0px none;
-  --border-right-code: 0px none;
-  --border-top-code: 0px none;
-  --border-bottom-code: 0px none;
+  --border-left-width-code: 0px;
+  --border-left-style-code: none;
+  --border-right-width-code: 0px;
+  --border-right-style-code: none;
+  --border-top-width-code: 0px;
+  --border-top-style-code: none;
+  --border-bottom-width-code: 0px;
+  --border-bottom-style-code: none;
 
   /* -blocks applies to to: "blockquote", "pre" */
   --border-radius-blocks: 0px;
