@@ -45,10 +45,15 @@ pre>code {
 blockquote,
 pre>code {
   border-radius: var(--border-radius-blocks);
-  border-left: var(--border-left-blocks);
-  border-right: var(--border-right-blocks);
-  border-top: var(--border-top-blocks);
-  border-bottom: var(--border-bottom-blocks);
+
+  border-left-width: var(--border-left-width-blocks);
+  border-left-style: var(--border-left-style-blocks);
+  border-right-width: var(--border-right-width-blocks);
+  border-right-style: var(--border-right-style-blocks);
+  border-top-width: var(--border-top-width-blocks);
+  border-top-style: var(--border-top-style-blocks);
+  border-bottom-width: var(--border-bottom-width-blocks);
+  border-bottom-style: var(--border-bottom-style-blocks);
 }
 
 /* theme colors */

@@ -47,10 +47,14 @@
 
   /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 0px;
-  --border-left-blocks: 2px solid;
-  --border-right-blocks: 2px solid;
-  --border-top-blocks: 2px solid;
-  --border-bottom-blocks: 2px solid;
+  --border-left-width-blocks: 2px;
+  --border-left-style-blocks: solid;
+  --border-right-width-blocks: 2px;
+  --border-right-style-blocks: solid;
+  --border-top-width-blocks: 2px;
+  --border-top-style-blocks: solid;
+  --border-bottom-width-blocks: 2px;
+  --border-bottom-style-blocks: solid;
 
    /* -button applies to: "button" (& "grouped" buttons) */
   --border-radius-button: 0px;

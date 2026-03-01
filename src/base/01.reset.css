@@ -84,6 +84,7 @@
 
   /* -code applis to: "kbd", "code", "var", "mark"  */
   --height-small-code: 32px;
+
   --border-radius-code: 6px;
   --border-left-width-code: 0px;
   --border-left-style-code: none;
@@ -96,10 +97,15 @@
 
   /* -blocks applies to to: "blockquote", "pre" */
   --border-radius-blocks: 0px;
-  --border-left-blocks: 4px solid;
-  --border-right-blocks: 0px solid;
-  --border-top-blocks: 0px none;
-  --border-bottom-blocks: 0px none;
+
+  --border-left-width-blocks: 4px;
+  --border-left-style-blocks: solid;
+  --border-right-width-blocks: 0px;
+  --border-right-style-blocks: none;
+  --border-top-width-blocks: 0px;
+  --border-top-style-blocks: none;
+  --border-bottom-width-blocks: 0px;
+  --border-bottom-style-blocks: none;
 
   /* -button applies to: "button" (& "grouped" buttons) */
   --height-button: 41.48px;

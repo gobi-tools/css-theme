@@ -46,10 +46,6 @@
 
   /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 0px;
-  --border-left-blocks: 4px solid;
-  --border-right-blocks: 0px none;
-  --border-top-blocks: 0px none;
-  --border-bottom-blocks: 0px none;
 
    /* -button applies to: "button" (& "grouped" buttons) */
   --border-radius-button: 20px;
