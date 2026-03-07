@@ -27,9 +27,10 @@ pairings:
       --color-accent-dk: color-mix(in oklch, var(--color-accent) 65%, black);
 
       --color-primary: #526cfe;
-      --color-primary-tx: color-mix(in oklch, var(--color-primary) 85%, black);
+      --color-primary-bg: color-mix(in oklch, var(--color-primary) 30%, white);
       --color-primary-dk: color-mix(in oklch, var(--color-primary) 65%, black);
-
+      --color-primary-sk: color-mix(in oklch, var(--color-primary) 85%, black);
+      
       --color-secondary: #8b5cf6;
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
     }
@@ -82,11 +83,11 @@ pairings:
     }
 
     a {
-      color: var(--color-primary-tx);
+      color: var(--color-primary-sk);
     }
 
     a:hover {
-      color: var(--color-primary-fg);
+      color: var(--color-primary-dk);
     }
 
     button[type=reset] {
@@ -106,6 +107,18 @@ pairings:
     }
     select {
       color: var(--color-primary);
+    }
+
+    nav>ol {
+      list-style-type: none;
+    }
+    nav>ol>li[aria-selected="true"] {
+      padding-block: 8px;
+      background: var(--color-primary-bg);
+      border-left: 3px solid var(--color-primary-dk);
+    }
+    nav>ol>li>a {
+      text-decoration: none;
     }
 
     .card {
@@ -181,6 +194,19 @@ function abc() {
         </p>
       </fieldset>
     </form>
+
+    <br/>
+    <br/>
+    <nav>
+      <ol>
+        <li aria-selected="true">
+          <a href="">Test 1</a>
+        </li>
+        <li>
+          <a href="">Test 1</a>
+        </li>
+      </ol>
+    </nav>
   </main>
 </body>
 
