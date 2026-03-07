@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<!--
+pairings:
+- bg: #f8f9eb, accent: #bdd47d, primary: #ffa200, secondary: #D47DBD
+- bg: #ffffff, accent: #00bfa5, primary: #526cfe, secondary: #8b5cf6
+-->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
   <title>Layouts</title>
 
-  <!-- <link rel="stylesheet" href="../../dist/theme.min.css"> -->
-
   <style>
-    /* form {
-      display: flex;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: 16px;
+    :root {
+      --color-bg: #ffffff;
+
+      --color-accent: #00bfa5;
+      --color-accent-bg: color-mix(in oklch, var(--color-accent) 30%, white);
+      --color-accent-fg: color-mix(in oklch, var(--color-accent) 60%, white);
+      --color-accent-dk: color-mix(in oklch, var(--color-accent) 65%, black);
+
+      --color-primary: #526cfe;
+      --color-primary-tx: color-mix(in oklch, var(--color-primary) 85%, black);
+      --color-primary-dk: color-mix(in oklch, var(--color-primary) 65%, black);
+
+      --color-secondary: #8b5cf6;
+      --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
     }
 
-    .name {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 160px;;
+    * {
+      box-sizing: border-box;
+      border-spacing: 0;
+      margin: 0;
     }
-
-    .email {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 160px;
-    }
-
-    button {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 160px;
-    } */
 
     main {
-      container-type: inline-size;
+      margin-inline: 40px;
     }
 
-    form {
-      --min: 160px;
-      --gap: 16px;
-
-      display: grid;
-      gap: var(--gap);
-
-      /* Prefer filling a single row left→right */
-      grid-auto-flow: column;
-      grid-auto-columns: minmax(var(--min), 1fr);
-
-      align-items: end;
+    body {
+      background: var(--color-bg);
     }
 
-    /* When the container is too narrow, stack */
-    @container (max-width: 600px) {
-      form {
-        grid-auto-flow: row;
-        grid-auto-columns: initial;
-        grid-template-columns: 1fr;
-      }
+    p {
+      padding: 0;
+      margin: 0px;
+      margin-block: 10px;
+    }
+
+    blockquote {
+      padding: 6px;
+      background: var(--color-accent-bg);
+      border-left: 5px solid var(--color-accent-dk);
+    }
+
+    mark {
+      padding: 4px;
+      border-radius: 6px;
+      background: var(--color-accent-fg);
+    }
+
+    pre>code {
+      display: block;
+      text-align: left;
+      padding: 6px;
+      background: var(--color-accent-bg);
+      border-left: 5px solid var(--color-secondary);
+    }
+    
+    button {
+      border: 2px solid var(--color-primary);
+      background: var(--color-primary);
+      padding-block: 10px;
+      padding-inline: 20px;
+    }
+
+    a {
+      color: var(--color-primary-tx);
+    }
+    a:hover {
+      color: var(--color-primary-fg);
+    }
+
+    button[type=reset] {
+      background: var(--color-bg);
+    }
+
+    .card {
+      padding: 8px;
+      background: var(--color-secondary-bg);
     }
   </style>
 </head>
 
 <body>
   <main>
+    <p>
     <form>
-      <input type="text" id="name" class="name" placeholder="Name..." />
-      <input type="email" id="email" class="email" placeholder="test@test.com" />
-      <button type="submit" value="Submit">Submit</button>
+      <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'bg')" />
+      <input id="color-sel" type="color" value="#00bfa5" onchange="onColorChange(this, 'accent')" />
+      <input id="color-sel" type="color" value="#526cfe" onchange="onColorChange(this, 'primary')" />
+      <input id="color-sel" type="color" value="#8b5cf6" onchange="onColorChange(this, 'secondary')" />
     </form>
+    </p>
+    <p>
+      This is some <a href="">test</a>.
+    </p>
+    <p>
+      <mark>Update</mark>
+    </p>
+    <blockquote>
+      <p>
+        This is good
+      </p>
+      <p>
+        <mark>Update</mark>
+      </p>
+    </blockquote>
+
+    <pre>
+      <code>
+function abc() { 
+  console.log('abc');
+}
+      </code>
+    </pre>
+
+    <details class="card">
+      <summary>Title</summary>
+      <p>
+        Lorem ipsum
+      </p>
+    </details>
+
+    <p>
+      <button>Test</button>
+      <button type="reset">Reset</button>
+    </p>
   </main>
 </body>
+
+<script type="text/javascript">
+  function onColorChange(t, col) {
+    const color = t.value;
+    document.documentElement.style.setProperty('--color-' + col, color)
+    console.log(color);
+  }
+</script>
 
 </html>
