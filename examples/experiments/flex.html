@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<!--
-pairings:
-- [BOTH] bg: #ffffff, txt: #212121|#ffffff, primary: #526cfe, secondary: #8b5cf6
-- [LIGT] bg: #f8f9eb, txt: #212121|#ffffff, primary: #ffa200, secondary: #D47DBD
-- [DARK] bg: #1d2f21, txt: #ffffff|#ffffff, primary: #ffe229, secondary: #f75f5f 
-- [DARK] bg: #FFE3F3, txt: #1F26FF|#ffffff. pri,ary: #526cfe, secomdaru: #ffffff
--->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
   <title>Layouts</title>
 
+  <!--
+   bg -> faint
+   fg -> muted
+   dk -> ???
+   sk -> inked 
+   -->
+
   <style>
     :root {
       --color-bg: #ffffff;
-
       --color-txt: #212121;
       --color-txt-on-dark: #ffffff;
+      --color-primary: #526cfe;
+      --color-secondary: #8b5cf6;
 
       --color-txt-bg: color-mix(in srgb, var(--color-txt) 14%, transparent);
       --color-txt-fg: color-mix(in srgb, var(--color-txt) 50%, transparent);
@@ -29,13 +29,10 @@ pairings:
       --color-accent-fg: color-mix(in srgb, var(--color-txt) 14%, transparent);
       --color-accent-dk: color-mix(in oklch, var(--color-txt) 75%, white);
 
-      --color-primary: #526cfe;
-      --color-primary-bg: color-mix(in oklch, var(--color-primary) 30%, white);
+      --color-primary-bg: color-mix(in srgb, var(--color-primary) 8%, transparent);
       --color-primary-dk: color-mix(in oklch, var(--color-primary) 65%, black);
       --color-primary-sk: color-mix(in oklch, var(--color-primary) 85%, black);
-      --color-primary-tx: color-mix(in oklch, var(--color-primary) 0%, white);
 
-      --color-secondary: #8b5cf6;
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
       --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 60%, white);
     }
@@ -47,10 +44,8 @@ pairings:
 
         --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
 
-        --color-primary-bg: color-mix(in srgb, var(--color-primary) 8%, transparent);
         --color-primary-dk: color-mix(in oklch, var(--color-primary) 25%, white);
         --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
-        --color-primary-tx: color-mix(in oklch, var(--color-primary) 0%, white);
 
         --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
         --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 70%, white);
@@ -104,7 +99,11 @@ pairings:
       color: var(--color-txt-fg);
     }
 
-    fieldset,
+    fieldset {
+      background: light-dark(var(--color-bg), var(--color-accent-bg));
+      border: 1px solid var(--color-txt-bg);
+    }
+
     input {
       background: var(--color-bg);
       border: 1px solid var(--color-txt-bg);
@@ -112,7 +111,7 @@ pairings:
     }
 
     select {
-      background: var(--color-accent-bg);
+      background: light-dark(var(--color-accent-bg), var(--color-bg));
       border: 1px solid var(--color-txt-bg);
       color: var(--color-primary-sk);
     }
