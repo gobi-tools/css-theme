@@ -23,8 +23,7 @@ pairings:
       --color-txt-on-dark: #ffffff;
 
       --color-txt-bg: color-mix(in srgb, var(--color-txt) 14%, transparent);
-      /* --color-txt-bg: color-mix(in oklch, var(--color-txt) 30%, white); */
-      --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, white);
+      --color-txt-fg: color-mix(in srgb, var(--color-txt) 50%, transparent);
 
       --color-accent-bg: color-mix(in srgb, var(--color-txt) 8%, transparent);
       --color-accent-fg: color-mix(in srgb, var(--color-txt) 14%, transparent);
@@ -45,9 +44,6 @@ pairings:
       :root {
         --color-bg: #111827;
         --color-txt: #d8eaff;
-        
-        /* --color-txt-bg: color-mix(in oklch, var(--color-txt) 40%, black); */
-        --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, black);
 
         --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
 
@@ -204,32 +200,33 @@ pairings:
       <label>
         <span>Theme</span>
         <select id="theme-sel" onchange="onThemeChange(this)">
-          <option value="default">Default</option>
-          <option value="sunset">Sunset</option>
-          <option value="green">Green</option>
-          <option value="pink">Pink</option>
-          <option value="bold">Bold</option>
+          <option value="default">Default (light)</option>
+          <option value="sunset">Sunset (light)</option>
+          <option value="pink">Pink (light)</option>
+          <option value="bold">Bold (light)</option>
+          <option value="green">Green (dark)</option>
+          <option value="betty">Betty (dark)</option>
         </select>
       </label>
       <label>
         <span>Bg</span>
-        <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'bg')" />
+        <input id="color-bg" type="color" value="#ffffff" onchange="onColorChange(this, 'bg')" />
       </label>
       <label>
         <span>Txt</span>
-        <input id="color-sel" type="color" value="#212121" onchange="onColorChange(this, 'txt')" />
+        <input id="color-txt" type="color" value="#212121" onchange="onColorChange(this, 'txt')" />
       </label>
       <label>
         <span>Txt (Dark)</span>
-        <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'txt-on-dark')" />
+        <input id="color-txt-on-dark" type="color" value="#ffffff" onchange="onColorChange(this, 'txt-on-dark')" />
       </label>
       <label>
         <span>Primary</span>
-        <input id="color-sel" type="color" value="#526cfe" onchange="onColorChange(this, 'primary')" />
+        <input id="color-primary" type="color" value="#526cfe" onchange="onColorChange(this, 'primary')" />
       </label>
       <label>
         <span>Secondary</span>
-        <input id="color-sel" type="color" value="#8b5cf6" onchange="onColorChange(this, 'secondary')" />
+        <input id="color-secondary" type="color" value="#8b5cf6" onchange="onColorChange(this, 'secondary')" />
       </label>
     </form>
     </p>
@@ -309,52 +306,62 @@ function abc() {
     const theme = t.value;
     switch (theme) {
       case 'default': {
-        onColorChange({ value: '#ffffff' }, 'bg');
-        onColorChange({ value: '#212121' }, 'txt');
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark');
-        onColorChange({ value: '#526cfe' }, 'primary');
-        onColorChange({ value: '#8b5cf6' }, 'secondary');
+        onColorChange({ value: '#ffffff' }, 'bg', true);
+        onColorChange({ value: '#212121' }, 'txt', true);
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
+        onColorChange({ value: '#526cfe' }, 'primary', true);
+        onColorChange({ value: '#8b5cf6' }, 'secondary', true);
         break;
       }
       case 'sunset': {
-        onColorChange({ value: '#f8f9eb' }, 'bg');
-        onColorChange({ value: '#212121' }, 'txt');
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark');
-        onColorChange({ value: '#ffa200' }, 'primary');
-        onColorChange({ value: '#D47DBD' }, 'secondary');
+        onColorChange({ value: '#f8f9eb' }, 'bg', true);
+        onColorChange({ value: '#212121' }, 'txt', true);
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
+        onColorChange({ value: '#ffa200' }, 'primary', true);
+        onColorChange({ value: '#D47DBD' }, 'secondary', true);
         break;
       }
       case 'green': {
-        onColorChange({ value: '#1d2f21' }, 'bg');
-        onColorChange({ value: '#ffffff' }, 'txt');
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark');
-        onColorChange({ value: '#ffe229' }, 'primary');
-        onColorChange({ value: '#f75f5f' }, 'secondary');
+        onColorChange({ value: '#1d2f21' }, 'bg', true);
+        onColorChange({ value: '#ffffff' }, 'txt', true);
+        onColorChange({ value: '#1d2f21' }, 'txt-on-dark', true);
+        onColorChange({ value: '#ffe229' }, 'primary', true);
+        onColorChange({ value: '#f75f5f' }, 'secondary', true);
         break;
       }
       case 'pink': {
-        onColorChange({ value: '#FFE3F3' }, 'bg');
-        onColorChange({ value: '#1F26FF' }, 'txt');
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark');
-        onColorChange({ value: '#526cfe' }, 'primary');
-        onColorChange({ value: '#ffffff' }, 'secondary');
+        onColorChange({ value: '#FFE3F3' }, 'bg', true);
+        onColorChange({ value: '#1F26FF' }, 'txt', true);
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
+        onColorChange({ value: '#526cfe' }, 'primary', true);
+        onColorChange({ value: '#ffffff' }, 'secondary', true);
         break;
       }
       case 'bold': {
-        onColorChange({ value: '#fff8dc' }, 'bg');
-        onColorChange({ value: '#111827' }, 'txt');
-        onColorChange({ value: '#f9fafb' }, 'txt-on-dark');
-        onColorChange({ value: '#111111' }, 'primary');
-        onColorChange({ value: '#808080' }, 'secondary');
+        onColorChange({ value: '#fff8dc' }, 'bg', true);
+        onColorChange({ value: '#111827' }, 'txt', true);
+        onColorChange({ value: '#f9fafb' }, 'txt-on-dark', true);
+        onColorChange({ value: '#111111' }, 'primary', true);
+        onColorChange({ value: '#808080' }, 'secondary', true);
+        break;
+      }
+      case 'betty': {
+        onColorChange({ value: '#201b24' }, 'bg', true);
+        onColorChange({ value: '#e3dff2' }, 'txt', true);
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
+        onColorChange({ value: '#ff69b4' }, 'primary', true);
+        onColorChange({ value: '#201b24' }, 'secondary', true);
         break;
       }
     }
   }
 
-  function onColorChange(t, col) {
+  function onColorChange(t, col, over) {
     const color = t.value;
-    document.documentElement.style.setProperty('--color-' + col, color)
-    console.log(color);
+    document.documentElement.style.setProperty('--color-' + col, color);
+    if (over === true) {
+      document.getElementById('color-' + col).value = color;
+    }
   }
 </script>
 
