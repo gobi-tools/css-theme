@@ -33,7 +33,10 @@ pairings:
 
       --color-secondary: #8b5cf6;
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
+      --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 60%, white);
     }
+
+    @media (prefers-color-scheme: dark) {}
 
     /** COLORS **/
 
@@ -101,6 +104,10 @@ pairings:
 
     .card {
       background: var(--color-secondary-bg);
+    }
+
+    .card:hover {
+      background: var(--color-secondary-fg);
     }
 
     /** OTHER STYLES **/
