@@ -22,6 +22,8 @@ pairings:
       --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, white);
 
       --color-accent: #00bfa5;
+      /* --color-accent-bg: color-mix(in srgb, var(--color-accent) 12%, transparent);
+      --color-accent-fg: color-mix(in srgb, var(--color-accent) 22%, transparent); */
       --color-accent-bg: color-mix(in oklch, var(--color-accent) 30%, white);
       --color-accent-fg: color-mix(in oklch, var(--color-accent) 60%, white);
       --color-accent-dk: color-mix(in oklch, var(--color-accent) 65%, black);
@@ -36,7 +38,15 @@ pairings:
       --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 60%, white);
     }
 
-    @media (prefers-color-scheme: dark) {}
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #111827;
+
+        --color-txt: #d8eaff;
+        --color-txt-bg: color-mix(in oklch, var(--color-txt) 40%, black);
+        --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, black);
+      }
+    }
 
     /** COLORS **/
 
