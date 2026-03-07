@@ -3,8 +3,8 @@
 
 <!--
 pairings:
-- bg: #f8f9eb, accent: #bdd47d, primary: #ffa200, secondary: #D47DBD
-- bg: #ffffff, accent: #00bfa5, primary: #526cfe, secondary: #8b5cf6
+- bg: #f8f9eb, txt: #212121, accent: #bdd47d, primary: #ffa200, secondary: #D47DBD
+- bg: #ffffff, txt: #212121, accent: #00bfa5, primary: #526cfe, secondary: #8b5cf6
 -->
 
 <head>
@@ -16,6 +16,10 @@ pairings:
   <style>
     :root {
       --color-bg: #ffffff;
+
+      --color-txt: #212121;
+      --color-txt-bg: color-mix(in oklch, var(--color-txt) 30%, white);
+      --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, white);
 
       --color-accent: #00bfa5;
       --color-accent-bg: color-mix(in oklch, var(--color-accent) 30%, white);
@@ -69,7 +73,7 @@ pairings:
       background: var(--color-accent-bg);
       border-left: 5px solid var(--color-secondary);
     }
-    
+
     button {
       border: 2px solid var(--color-primary);
       background: var(--color-primary);
@@ -80,12 +84,28 @@ pairings:
     a {
       color: var(--color-primary-tx);
     }
+
     a:hover {
       color: var(--color-primary-fg);
     }
 
     button[type=reset] {
       background: var(--color-bg);
+    }
+
+    input::placeholder {
+      color: var(--color-txt-fg);
+    }
+    input:not([type=color]), select {
+      width: 100%;
+      height: 40px;
+    }
+    fieldset, input, select {
+      border: 1px solid var(--color-txt-bg);
+      color: var(--color-txt);
+    }
+    select {
+      color: var(--color-primary);
     }
 
     .card {
@@ -100,6 +120,7 @@ pairings:
     <p>
     <form>
       <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'bg')" />
+      <input id="color-sel" type="color" value="#212121" onchange="onColorChange(this, 'txt')" />
       <input id="color-sel" type="color" value="#00bfa5" onchange="onColorChange(this, 'accent')" />
       <input id="color-sel" type="color" value="#526cfe" onchange="onColorChange(this, 'primary')" />
       <input id="color-sel" type="color" value="#8b5cf6" onchange="onColorChange(this, 'secondary')" />
@@ -135,10 +156,31 @@ function abc() {
       </p>
     </details>
 
-    <p>
-      <button>Test</button>
-      <button type="reset">Reset</button>
-    </p>
+    <br />
+    <br />
+
+    <form>
+      <fieldset>
+        <legend>Form</legend>
+
+        <p>
+          <label>Email</label>
+          <input type="email" placeholder="Email" />
+        </p>
+        <p>
+          <label>Option</label>
+          <select>
+            <option>Full</option>
+            <option>Fast</option>
+          </select>
+        </p>
+        <br />
+        <p>
+          <button>Test</button>
+          <button type="reset">Reset</button>
+        </p>
+      </fieldset>
+    </form>
   </main>
 </body>
 
