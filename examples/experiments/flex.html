@@ -44,9 +44,9 @@ pairings:
     @media (prefers-color-scheme: dark) {
       :root {
         --color-bg: #111827;
-
         --color-txt: #d8eaff;
-        --color-txt-bg: color-mix(in oklch, var(--color-txt) 40%, black);
+        
+        /* --color-txt-bg: color-mix(in oklch, var(--color-txt) 40%, black); */
         --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, black);
 
         --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
@@ -208,6 +208,7 @@ pairings:
           <option value="sunset">Sunset</option>
           <option value="green">Green</option>
           <option value="pink">Pink</option>
+          <option value="bold">Bold</option>
         </select>
       </label>
       <label>
@@ -337,6 +338,14 @@ function abc() {
         onColorChange({ value: '#ffffff' }, 'txt-on-dark');
         onColorChange({ value: '#526cfe' }, 'primary');
         onColorChange({ value: '#ffffff' }, 'secondary');
+        break;
+      }
+      case 'bold': {
+        onColorChange({ value: '#fff8dc' }, 'bg');
+        onColorChange({ value: '#111827' }, 'txt');
+        onColorChange({ value: '#f9fafb' }, 'txt-on-dark');
+        onColorChange({ value: '#111111' }, 'primary');
+        onColorChange({ value: '#808080' }, 'secondary');
         break;
       }
     }
