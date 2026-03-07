@@ -3,8 +3,9 @@
 
 <!--
 pairings:
-- bg: #f8f9eb, txt: #212121, accent: #bdd47d, primary: #ffa200, secondary: #D47DBD
-- bg: #ffffff, txt: #212121, accent: #00bfa5, primary: #526cfe, secondary: #8b5cf6
+- [LIGT] bg: #f8f9eb, txt: #212121, primary: #ffa200, secondary: #D47DBD
+- [LIGH] bg: #ffffff, txt: #212121, primary: #526cfe, secondary: #8b5cf6
+- [DARK] bg: #1d2f21, txt: #ffffff, primary: #ffe229, secondary: #f75f5f 
 -->
 
 <head>
@@ -18,20 +19,20 @@ pairings:
       --color-bg: #ffffff;
 
       --color-txt: #212121;
+      --color-txt-on-dark: #ffffff; 
+
       --color-txt-bg: color-mix(in oklch, var(--color-txt) 30%, white);
       --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, white);
 
-      --color-accent: #00bfa5;
-      /* --color-accent-bg: color-mix(in srgb, var(--color-accent) 12%, transparent);
-      --color-accent-fg: color-mix(in srgb, var(--color-accent) 22%, transparent); */
-      --color-accent-bg: color-mix(in oklch, var(--color-accent) 30%, white);
-      --color-accent-fg: color-mix(in oklch, var(--color-accent) 60%, white);
-      --color-accent-dk: color-mix(in oklch, var(--color-accent) 65%, black);
+      --color-accent-bg: color-mix(in srgb, var(--color-txt) 8%, transparent);
+      --color-accent-fg: color-mix(in srgb, var(--color-txt) 14%, transparent);
+      --color-accent-dk: color-mix(in oklch, var(--color-txt) 75%, white);
 
       --color-primary: #526cfe;
       --color-primary-bg: color-mix(in oklch, var(--color-primary) 30%, white);
       --color-primary-dk: color-mix(in oklch, var(--color-primary) 65%, black);
       --color-primary-sk: color-mix(in oklch, var(--color-primary) 85%, black);
+      --color-primary-tx: color-mix(in oklch, var(--color-primary) 0%, white);
 
       --color-secondary: #8b5cf6;
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
@@ -45,6 +46,16 @@ pairings:
         --color-txt: #d8eaff;
         --color-txt-bg: color-mix(in oklch, var(--color-txt) 40%, black);
         --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, black);
+
+        --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
+
+        --color-primary-bg: color-mix(in srgb, var(--color-primary) 8%, transparent);
+        --color-primary-dk: color-mix(in oklch, var(--color-primary) 25%, white);
+        --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
+        --color-primary-tx: color-mix(in oklch, var(--color-primary) 0%, white);
+
+        --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
+        --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 70%, white);
       }
     }
 
@@ -60,6 +71,7 @@ pairings:
 
     blockquote {
       background: var(--color-accent-bg);
+      /* border-left: 5px solid var(--color-txt); */
       border-left: 5px solid var(--color-accent-dk);
     }
 
@@ -75,7 +87,10 @@ pairings:
     button {
       border: 2px solid var(--color-primary);
       background: var(--color-primary);
-      color: var(--color-primary-bg);
+      /* color: var(--color-primary-bg); */
+      /* color: var(--color-primary-tx); */
+      /* color:var(--color-bg); */
+      color: var(--color-txt-on-dark);
     }
 
     button[type=reset] {
@@ -187,11 +202,26 @@ pairings:
   <main>
     <p>
     <form>
-      <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'bg')" />
-      <input id="color-sel" type="color" value="#212121" onchange="onColorChange(this, 'txt')" />
-      <input id="color-sel" type="color" value="#00bfa5" onchange="onColorChange(this, 'accent')" />
-      <input id="color-sel" type="color" value="#526cfe" onchange="onColorChange(this, 'primary')" />
-      <input id="color-sel" type="color" value="#8b5cf6" onchange="onColorChange(this, 'secondary')" />
+      <label>
+        <span>Bg</span>
+        <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'bg')" />
+      </label>
+      <label>
+        <span>Txt</span>
+         <input id="color-sel" type="color" value="#212121" onchange="onColorChange(this, 'txt')" />
+      </label>
+      <label>
+        <span>Txt (Dark)</span>
+         <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'txt-on-dark')" />
+      </label>
+      <label>
+        <span>Primary</span>
+        <input id="color-sel" type="color" value="#526cfe" onchange="onColorChange(this, 'primary')" />
+      </label>
+      <label>
+        <span>Secondary</span>
+        <input id="color-sel" type="color" value="#8b5cf6" onchange="onColorChange(this, 'secondary')" />
+      </label>
     </form>
     </p>
     <p>
