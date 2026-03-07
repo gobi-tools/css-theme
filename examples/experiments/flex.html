@@ -3,10 +3,10 @@
 
 <!--
 pairings:
+- [BOTH] bg: #ffffff, txt: #212121|#ffffff, primary: #526cfe, secondary: #8b5cf6
 - [LIGT] bg: #f8f9eb, txt: #212121|#ffffff, primary: #ffa200, secondary: #D47DBD
-- [LIGH] bg: #ffffff, txt: #212121|#ffffff, primary: #526cfe, secondary: #8b5cf6
 - [DARK] bg: #1d2f21, txt: #ffffff|#ffffff, primary: #ffe229, secondary: #f75f5f 
-- [NEUT] bg: #FFE3F3, txt: #1F26FF|#ffffff. pri,ary: #526cfe, secomdaru: #ffffff
+- [DARK] bg: #FFE3F3, txt: #1F26FF|#ffffff. pri,ary: #526cfe, secomdaru: #ffffff
 -->
 
 <head>
@@ -20,9 +20,10 @@ pairings:
       --color-bg: #ffffff;
 
       --color-txt: #212121;
-      --color-txt-on-dark: #ffffff; 
+      --color-txt-on-dark: #ffffff;
 
-      --color-txt-bg: color-mix(in oklch, var(--color-txt) 30%, white);
+      --color-txt-bg: color-mix(in srgb, var(--color-txt) 14%, transparent);
+      /* --color-txt-bg: color-mix(in oklch, var(--color-txt) 30%, white); */
       --color-txt-fg: color-mix(in oklch, var(--color-txt) 60%, white);
 
       --color-accent-bg: color-mix(in srgb, var(--color-txt) 8%, transparent);
@@ -173,7 +174,7 @@ pairings:
     }
 
     input:not([type=color]),
-    select {
+    select:not(#theme-sel) {
       width: 100%;
       height: 40px;
     }
@@ -201,16 +202,25 @@ pairings:
     <p>
     <form>
       <label>
+        <span>Theme</span>
+        <select id="theme-sel" onchange="onThemeChange(this)">
+          <option value="default">Default</option>
+          <option value="sunset">Sunset</option>
+          <option value="green">Green</option>
+          <option value="pink">Pink</option>
+        </select>
+      </label>
+      <label>
         <span>Bg</span>
         <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'bg')" />
       </label>
       <label>
         <span>Txt</span>
-         <input id="color-sel" type="color" value="#212121" onchange="onColorChange(this, 'txt')" />
+        <input id="color-sel" type="color" value="#212121" onchange="onColorChange(this, 'txt')" />
       </label>
       <label>
         <span>Txt (Dark)</span>
-         <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'txt-on-dark')" />
+        <input id="color-sel" type="color" value="#ffffff" onchange="onColorChange(this, 'txt-on-dark')" />
       </label>
       <label>
         <span>Primary</span>
@@ -294,6 +304,44 @@ function abc() {
 </body>
 
 <script type="text/javascript">
+  function onThemeChange(t) {
+    const theme = t.value;
+    switch (theme) {
+      case 'default': {
+        onColorChange({ value: '#ffffff' }, 'bg');
+        onColorChange({ value: '#212121' }, 'txt');
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark');
+        onColorChange({ value: '#526cfe' }, 'primary');
+        onColorChange({ value: '#8b5cf6' }, 'secondary');
+        break;
+      }
+      case 'sunset': {
+        onColorChange({ value: '#f8f9eb' }, 'bg');
+        onColorChange({ value: '#212121' }, 'txt');
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark');
+        onColorChange({ value: '#ffa200' }, 'primary');
+        onColorChange({ value: '#D47DBD' }, 'secondary');
+        break;
+      }
+      case 'green': {
+        onColorChange({ value: '#1d2f21' }, 'bg');
+        onColorChange({ value: '#ffffff' }, 'txt');
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark');
+        onColorChange({ value: '#ffe229' }, 'primary');
+        onColorChange({ value: '#f75f5f' }, 'secondary');
+        break;
+      }
+      case 'pink': {
+        onColorChange({ value: '#FFE3F3' }, 'bg');
+        onColorChange({ value: '#1F26FF' }, 'txt');
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark');
+        onColorChange({ value: '#526cfe' }, 'primary');
+        onColorChange({ value: '#ffffff' }, 'secondary');
+        break;
+      }
+    }
+  }
+
   function onColorChange(t, col) {
     const color = t.value;
     document.documentElement.style.setProperty('--color-' + col, color)
