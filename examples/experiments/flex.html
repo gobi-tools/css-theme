@@ -174,7 +174,7 @@
     }
 
     input:not([type=color]),
-    select:not(#theme-sel) {
+    select:not(#theme-sel):not(#mode-sel) {
       width: 100%;
       height: 40px;
     }
@@ -221,6 +221,15 @@
           <option value="bold">Bold (light)</option>
           <option value="green">Green (dark)</option>
           <option value="betty">Betty (dark)</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Mode</span>
+        <select id="mode-sel" onchange="onModeChange(this)">
+          <option value="normal">Normal</option>
+          <option value="error">Error</option>
+          <option value="success">Success</option>
         </select>
       </label>
     </form>
@@ -330,11 +339,9 @@ function abc() {
     }
   }
 
-  function onColorChange(t, col, over) {
-    const color = t.value;
-    if (over === true) {
-      document.getElementById('color-' + col).value = color;
-    }
+  function onModeChange(t) {
+    const mode = t.value;
+    console.log(mode);
   }
 </script>
 
