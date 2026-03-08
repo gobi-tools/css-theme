@@ -15,7 +15,19 @@
 
   <style>
     :root,
-    :root[data-theme='light'] {
+    :root[data-theme='light'],
+    .success {
+      /* default example of all colors
+      --color-bg: #ffffff;
+      --color-txt: #212121;
+      --color-txt-on-dark: #ffffff;
+      --color-primary: #526cfe;
+      --color-secondary: #8b5cf6; */
+
+      /* semantic meaning colors */
+      --color-success: #23b157;
+      --color-error: #ef4444;
+
       --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
       --color-txt-fg: color-mix(in srgb, var(--color-txt) 50%, transparent);
 
@@ -24,7 +36,6 @@
       --color-accent-dk: color-mix(in oklch, var(--color-txt) 75%, white);
 
       --color-primary-bg: color-mix(in srgb, var(--color-primary) 8%, transparent);
-      --color-primary-dk: color-mix(in oklch, var(--color-primary) 65%, black);
       --color-primary-sk: color-mix(in oklch, var(--color-primary) 85%, black);
 
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
@@ -34,7 +45,6 @@
     :root[data-theme='dark'] {
       --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
 
-      --color-primary-dk: color-mix(in oklch, var(--color-primary) 25%, white);
       --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
 
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
@@ -45,7 +55,6 @@
       :root {
         --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
 
-        --color-primary-dk: color-mix(in oklch, var(--color-primary) 25%, white);
         --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
 
         --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
@@ -85,7 +94,11 @@
 
     button[type=reset] {
       background: var(--color-bg);
-      color: var(--color-primary-dk);
+      color: var(--color-txt);
+    }
+
+    button:hover {
+      filter: brightness(90%);
     }
 
     a {
@@ -93,7 +106,19 @@
     }
 
     a:hover {
-      color: var(--color-primary-dk);
+      filter: brightness(50%);
+    }
+
+    :root[data-theme='dark'] {
+      a:hover {
+        filter: brightness(70%);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      a:hover {
+        filter: brightness(70%);
+      }
     }
 
     input::placeholder {
@@ -123,7 +148,7 @@
 
     nav>ol>li[aria-selected="true"] {
       background: var(--color-primary-bg);
-      border-left: 3px solid var(--color-primary-dk);
+      border-left: 3px solid var(--color-primary-sk);
     }
 
     .card {
@@ -133,6 +158,21 @@
     .card:hover {
       background: var(--color-secondary-fg);
     }
+
+    /* .success {
+      --color-primary: var(--color-success);
+      --color-secondary: var(--color-success);
+      --color-accent-bg: color-mix(in srgb, var(--color-success) 20%, transparent);
+      --color-accent-fg: color-mix(in srgb, var(--color-success) 35%, transparent);
+      --color-accent-dk: color-mix(in oklch, var(--color-success) 90%, white);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .success {
+        --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
+        --color-secondary-fg: color-mix(in oklch, var(--color-success) 80%, black);
+      }
+    } */
 
     /** OTHER STYLES **/
 
@@ -234,7 +274,7 @@
       </label>
     </form>
     </p>
-    <hr/>
+    <hr />
     <p>
       This is some <a href="">test</a>.
     </p>
@@ -320,18 +360,18 @@ function abc() {
     delete document.documentElement.dataset.theme;
 
     switch (theme) {
-      case 'default': 
-      case 'writing': 
+      case 'default':
+      case 'writing':
       case 'scholar': {
         break;
       }
-      case 'pink': 
+      case 'pink':
       case 'sunset': {
         document.documentElement.dataset.theme = 'light';
         break;
       }
-      case 'bold': 
-      case 'green': 
+      case 'bold':
+      case 'green':
       case 'betty': {
         document.documentElement.dataset.theme = 'dark';
         break;
