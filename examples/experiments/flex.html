@@ -117,6 +117,10 @@
       color: var(--color-primary-sk);
     }
 
+    option {
+      background: var(--color-bg);
+    }
+
     nav>ol>li[aria-selected="true"] {
       background: var(--color-primary-bg);
       border-left: 3px solid var(--color-primary-dk);
@@ -219,28 +223,9 @@
           <option value="betty">Betty (dark)</option>
         </select>
       </label>
-      <label>
-        <span>Bg</span>
-        <input id="color-bg" type="color" value="#ffffff" onchange="onColorChange(this, 'bg')" />
-      </label>
-      <label>
-        <span>Txt</span>
-        <input id="color-txt" type="color" value="#212121" onchange="onColorChange(this, 'txt')" />
-      </label>
-      <label>
-        <span>Txt (Dark)</span>
-        <input id="color-txt-on-dark" type="color" value="#ffffff" onchange="onColorChange(this, 'txt-on-dark')" />
-      </label>
-      <label>
-        <span>Primary</span>
-        <input id="color-primary" type="color" value="#526cfe" onchange="onColorChange(this, 'primary')" />
-      </label>
-      <label>
-        <span>Secondary</span>
-        <input id="color-secondary" type="color" value="#8b5cf6" onchange="onColorChange(this, 'secondary')" />
-      </label>
     </form>
     </p>
+    <hr/>
     <p>
       This is some <a href="">test</a>.
     </p>
@@ -326,73 +311,20 @@ function abc() {
     delete document.documentElement.dataset.theme;
 
     switch (theme) {
-      case 'default': {
-        onColorChange({ value: '#ffffff' }, 'bg', true);
-        onColorChange({ value: '#212121' }, 'txt', true);
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
-        onColorChange({ value: '#526cfe' }, 'primary', true);
-        onColorChange({ value: '#8b5cf6' }, 'secondary', true);
-        break;
-      }
-      case 'writing': {
-        onColorChange({ value: '#fbfaf7' }, 'bg', true);
-        onColorChange({ value: '#121417' }, 'txt', true);
-        onColorChange({ value: '#f9fafb' }, 'txt-on-dark', true);
-        onColorChange({ value: '#0b6b3a' }, 'primary', true);
-        onColorChange({ value: '#109953' }, 'secondary', true);
-        break;
-      }
+      case 'default': 
+      case 'writing': 
       case 'scholar': {
-        onColorChange({ value: '#eff1f5' }, 'bg', true);
-        onColorChange({ value: '#4c4f69' }, 'txt', true);
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
-        onColorChange({ value: '#1e66f5' }, 'primary', true);
-        onColorChange({ value: '#8839ef' }, 'secondary', true);
         break;
       }
-      case 'pink': {
-        document.documentElement.dataset.theme = 'light';
-        onColorChange({ value: '#FFE3F3' }, 'bg', true);
-        onColorChange({ value: '#1F26FF' }, 'txt', true);
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
-        onColorChange({ value: '#526cfe' }, 'primary', true);
-        onColorChange({ value: '#ffffff' }, 'secondary', true);
-        break;
-      }
+      case 'pink': 
       case 'sunset': {
         document.documentElement.dataset.theme = 'light';
-        onColorChange({ value: '#f8f9eb' }, 'bg', true);
-        onColorChange({ value: '#212121' }, 'txt', true);
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
-        onColorChange({ value: '#ffa200' }, 'primary', true);
-        onColorChange({ value: '#D47DBD' }, 'secondary', true);
         break;
       }
-      case 'bold': {
-        document.documentElement.dataset.theme = 'light';
-        onColorChange({ value: '#fff8dc' }, 'bg', true);
-        onColorChange({ value: '#111827' }, 'txt', true);
-        onColorChange({ value: '#f9fafb' }, 'txt-on-dark', true);
-        onColorChange({ value: '#111111' }, 'primary', true);
-        onColorChange({ value: '#808080' }, 'secondary', true);
-        break;
-      }
-      case 'green': {
-        document.documentElement.dataset.theme = 'dark';
-        onColorChange({ value: '#1d2f21' }, 'bg', true);
-        onColorChange({ value: '#ffffff' }, 'txt', true);
-        onColorChange({ value: '#1d2f21' }, 'txt-on-dark', true);
-        onColorChange({ value: '#ffe229' }, 'primary', true);
-        onColorChange({ value: '#f75f5f' }, 'secondary', true);
-        break;
-      }
+      case 'bold': 
+      case 'green': 
       case 'betty': {
         document.documentElement.dataset.theme = 'dark';
-        onColorChange({ value: '#201b24' }, 'bg', true);
-        onColorChange({ value: '#e3dff2' }, 'txt', true);
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
-        onColorChange({ value: '#ff69b4' }, 'primary', true);
-        onColorChange({ value: '#1f7047' }, 'secondary', true);
         break;
       }
     }
@@ -400,7 +332,6 @@ function abc() {
 
   function onColorChange(t, col, over) {
     const color = t.value;
-    // document.documentElement.style.setProperty('--color-' + col, color);
     if (over === true) {
       document.getElementById('color-' + col).value = color;
     }
