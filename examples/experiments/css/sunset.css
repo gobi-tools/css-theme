@@ -1,0 +1,8 @@
+:root {
+  color-scheme: light only;
+  --color-bg: #f8f9eb;
+  --color-txt: #212121;
+  --color-txt-on-dark: #ffffff;
+  --color-primary: #ffa200;
+  --color-secondary: #D47DBD;
+}

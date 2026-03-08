@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
   <title>Layouts</title>
-
   <!--
    bg -> faint
    fg -> muted
@@ -15,14 +14,9 @@
    -->
 
   <style>
-    :root {
-      --color-bg: #ffffff;
-      --color-txt: #212121;
-      --color-txt-on-dark: #ffffff;
-      --color-primary: #526cfe;
-      --color-secondary: #8b5cf6;
-
-      --color-txt-bg: color-mix(in srgb, var(--color-txt) 14%, transparent);
+    :root,
+    :root[data-theme='light'] {
+      --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
       --color-txt-fg: color-mix(in srgb, var(--color-txt) 50%, transparent);
 
       --color-accent-bg: color-mix(in srgb, var(--color-txt) 8%, transparent);
@@ -35,6 +29,16 @@
 
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
       --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 60%, white);
+    }
+
+    :root[data-theme='dark'] {
+      --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
+
+      --color-primary-dk: color-mix(in oklch, var(--color-primary) 25%, white);
+      --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
+
+      --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
+      --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 70%, white);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -101,18 +105,18 @@
 
     fieldset {
       background: light-dark(var(--color-bg), var(--color-accent-bg));
-      border: 1px solid var(--color-txt-bg);
+      border: 1px solid var(--color-border);
     }
 
     input {
       background: var(--color-bg);
-      border: 1px solid var(--color-txt-bg);
+      border: 1px solid var(--color-border);
       color: var(--color-txt);
     }
 
     select {
       background: light-dark(var(--color-accent-bg), var(--color-bg));
-      border: 1px solid var(--color-txt-bg);
+      border: 1px solid var(--color-border);
       color: var(--color-primary-sk);
     }
 
@@ -190,6 +194,14 @@
       padding: 8px;
     }
   </style>
+
+  <link rel="stylesheet" id="theme-default" href="css/default.css">
+  <link rel="stylesheet" id="theme-writing" href="css/writing.css">
+  <link rel="stylesheet" id="theme-sunset" href="css/sunset.css">
+  <link rel="stylesheet" id="theme-bold" href="css/bold.css">
+  <link rel="stylesheet" id="theme-pink" href="css/pink.css">
+  <link rel="stylesheet" id="theme-green" href="css/green.css">
+  <link rel="stylesheet" id="theme-betty" href="css/betty.css">
 </head>
 
 <body>
@@ -199,7 +211,8 @@
       <label>
         <span>Theme</span>
         <select id="theme-sel" onchange="onThemeChange(this)">
-          <option value="default">Default (light)</option>
+          <option value="default">Default (light / dark)</option>
+          <option value="writing">Writing (light / dark)</option>
           <option value="sunset">Sunset (light)</option>
           <option value="pink">Pink (light)</option>
           <option value="bold">Bold (light)</option>
@@ -301,8 +314,18 @@ function abc() {
 </body>
 
 <script type="text/javascript">
+  (() => {
+    onThemeChange({ value: 'default' });
+  })();
+
   function onThemeChange(t) {
     const theme = t.value;
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+      link.disabled = true;
+    });
+    document.getElementById('theme-' + theme).disabled = false;
+    delete document.documentElement.dataset.theme;
+
     switch (theme) {
       case 'default': {
         onColorChange({ value: '#ffffff' }, 'bg', true);
@@ -312,23 +335,16 @@ function abc() {
         onColorChange({ value: '#8b5cf6' }, 'secondary', true);
         break;
       }
-      case 'sunset': {
-        onColorChange({ value: '#f8f9eb' }, 'bg', true);
-        onColorChange({ value: '#212121' }, 'txt', true);
-        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
-        onColorChange({ value: '#ffa200' }, 'primary', true);
-        onColorChange({ value: '#D47DBD' }, 'secondary', true);
-        break;
-      }
-      case 'green': {
-        onColorChange({ value: '#1d2f21' }, 'bg', true);
-        onColorChange({ value: '#ffffff' }, 'txt', true);
-        onColorChange({ value: '#1d2f21' }, 'txt-on-dark', true);
-        onColorChange({ value: '#ffe229' }, 'primary', true);
-        onColorChange({ value: '#f75f5f' }, 'secondary', true);
+      case 'writing': {
+        onColorChange({ value: '#fbfaf7' }, 'bg', true);
+        onColorChange({ value: '#121417' }, 'txt', true);
+        onColorChange({ value: '#f9fafb' }, 'txt-on-dark', true);
+        onColorChange({ value: '#0b6b3a' }, 'primary', true);
+        onColorChange({ value: '#109953' }, 'secondary', true);
         break;
       }
       case 'pink': {
+        document.documentElement.dataset.theme = 'light';
         onColorChange({ value: '#FFE3F3' }, 'bg', true);
         onColorChange({ value: '#1F26FF' }, 'txt', true);
         onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
@@ -336,7 +352,17 @@ function abc() {
         onColorChange({ value: '#ffffff' }, 'secondary', true);
         break;
       }
+      case 'sunset': {
+        document.documentElement.dataset.theme = 'light';
+        onColorChange({ value: '#f8f9eb' }, 'bg', true);
+        onColorChange({ value: '#212121' }, 'txt', true);
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
+        onColorChange({ value: '#ffa200' }, 'primary', true);
+        onColorChange({ value: '#D47DBD' }, 'secondary', true);
+        break;
+      }
       case 'bold': {
+        document.documentElement.dataset.theme = 'light';
         onColorChange({ value: '#fff8dc' }, 'bg', true);
         onColorChange({ value: '#111827' }, 'txt', true);
         onColorChange({ value: '#f9fafb' }, 'txt-on-dark', true);
@@ -344,12 +370,22 @@ function abc() {
         onColorChange({ value: '#808080' }, 'secondary', true);
         break;
       }
+      case 'green': {
+        document.documentElement.dataset.theme = 'dark';
+        onColorChange({ value: '#1d2f21' }, 'bg', true);
+        onColorChange({ value: '#ffffff' }, 'txt', true);
+        onColorChange({ value: '#1d2f21' }, 'txt-on-dark', true);
+        onColorChange({ value: '#ffe229' }, 'primary', true);
+        onColorChange({ value: '#f75f5f' }, 'secondary', true);
+        break;
+      }
       case 'betty': {
+        document.documentElement.dataset.theme = 'dark';
         onColorChange({ value: '#201b24' }, 'bg', true);
         onColorChange({ value: '#e3dff2' }, 'txt', true);
         onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
         onColorChange({ value: '#ff69b4' }, 'primary', true);
-        onColorChange({ value: '#201b24' }, 'secondary', true);
+        onColorChange({ value: '#1f7047' }, 'secondary', true);
         break;
       }
     }
@@ -357,7 +393,7 @@ function abc() {
 
   function onColorChange(t, col, over) {
     const color = t.value;
-    document.documentElement.style.setProperty('--color-' + col, color);
+    // document.documentElement.style.setProperty('--color-' + col, color);
     if (over === true) {
       document.getElementById('color-' + col).value = color;
     }
