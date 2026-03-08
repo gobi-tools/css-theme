@@ -19,7 +19,6 @@
     .success,
     .error {
       --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
-      --color-txt-fg: color-mix(in srgb, var(--color-txt) 50%, transparent);
 
       --color-accent-bg: color-mix(in srgb, var(--color-txt) 8%, transparent);
       --color-accent-fg: color-mix(in srgb, var(--color-txt) 14%, transparent);
@@ -89,7 +88,7 @@
     }
 
     input::placeholder {
-      color: var(--color-txt-fg);
+      filter: opacity(70%);
     }
 
     fieldset {
