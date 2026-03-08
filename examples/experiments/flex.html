@@ -194,6 +194,7 @@
 
   <link rel="stylesheet" id="theme-default" href="css/default.css">
   <link rel="stylesheet" id="theme-writing" href="css/writing.css">
+  <link rel="stylesheet" id="theme-scholar" href="css/scholar.css">
   <link rel="stylesheet" id="theme-sunset" href="css/sunset.css">
   <link rel="stylesheet" id="theme-bold" href="css/bold.css">
   <link rel="stylesheet" id="theme-pink" href="css/pink.css">
@@ -210,6 +211,7 @@
         <select id="theme-sel" onchange="onThemeChange(this)">
           <option value="default">Default (light / dark)</option>
           <option value="writing">Writing (light / dark)</option>
+          <option value="scholar">Scholar (light / dark)</option>
           <option value="sunset">Sunset (light)</option>
           <option value="pink">Pink (light)</option>
           <option value="bold">Bold (light)</option>
@@ -338,6 +340,14 @@ function abc() {
         onColorChange({ value: '#f9fafb' }, 'txt-on-dark', true);
         onColorChange({ value: '#0b6b3a' }, 'primary', true);
         onColorChange({ value: '#109953' }, 'secondary', true);
+        break;
+      }
+      case 'scholar': {
+        onColorChange({ value: '#eff1f5' }, 'bg', true);
+        onColorChange({ value: '#4c4f69' }, 'txt', true);
+        onColorChange({ value: '#ffffff' }, 'txt-on-dark', true);
+        onColorChange({ value: '#1e66f5' }, 'primary', true);
+        onColorChange({ value: '#8839ef' }, 'secondary', true);
         break;
       }
       case 'pink': {
