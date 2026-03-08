@@ -1,7 +1,8 @@
 :root {
+  color-scheme: light only;
   --color-bg: #fff8dc;
   --color-txt: #111827;
   --color-txt-on-dark: #f9fafb;
   --color-primary: #111111;
-  --color-secondary: #808080;
+  --color-secondary: #d694e7;
 }

@@ -159,7 +159,7 @@
       background: var(--color-secondary-fg);
     }
 
-    /* .success {
+    .success {
       --color-primary: var(--color-success);
       --color-secondary: var(--color-success);
       --color-accent-bg: color-mix(in srgb, var(--color-success) 20%, transparent);
@@ -172,7 +172,7 @@
         --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
         --color-secondary-fg: color-mix(in oklch, var(--color-success) 80%, black);
       }
-    } */
+    }
 
     /** OTHER STYLES **/
 
@@ -366,11 +366,11 @@ function abc() {
         break;
       }
       case 'pink':
-      case 'sunset': {
+      case 'sunset':
+      case 'bold': {
         document.documentElement.dataset.theme = 'light';
         break;
       }
-      case 'bold':
       case 'green':
       case 'betty': {
         document.documentElement.dataset.theme = 'dark';
