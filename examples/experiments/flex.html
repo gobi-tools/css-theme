@@ -122,30 +122,7 @@
       background: var(--color-secondary-bg);
     }
 
-
-    /* .success,
-    :root[data-theme='light'].success {
-      --color-primary: var(--color-success);
-      --color-secondary: var(--color-success);
-
-      --color-accent-bg: color-mix(in srgb, var(--color-success) 20%, transparent);
-      --color-accent-fg: color-mix(in srgb, var(--color-success) 35%, transparent);
-      --color-accent-dk: color-mix(in oklch, var(--color-success) 90%, white);
-
-      --color-primary-sk: color-mix(in oklch, var(--color-primary) 85%, black);
-      --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .success {
-        --color-accent-bg: color-mix(in srgb, var(--color-success) 35%, transparent);
-        --color-accent-fg: color-mix(in srgb, var(--color-success) 45%, transparent);
-        --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
-
-        --color-primary-sk: color-mix(in oklch, var(--color-success) 50%, white);
-        --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
-      }
-    } */
+    /** COLORS - SEMANTIC **/
 
     .success {
       --color-primary: var(--color-success);
@@ -165,11 +142,13 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      .success {
-        --color-accent-bg: color-mix(in srgb, var(--color-success) 45%, transparent);
-        --color-accent-fg: color-mix(in srgb, var(--color-success) 55%, transparent);
-        --color-primary-sk: color-mix(in oklch, var(--color-success) 50%, white);
-        --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
+      :root:not([data-theme]) {
+        .success {
+          --color-accent-bg: color-mix(in srgb, var(--color-success) 45%, transparent);
+          --color-accent-fg: color-mix(in srgb, var(--color-success) 55%, transparent);
+          --color-primary-sk: color-mix(in oklch, var(--color-success) 50%, white);
+          --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
+        }
       }
     }
 
@@ -191,11 +170,13 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      .error {
-        --color-accent-bg: color-mix(in srgb, var(--color-error) 45%, transparent);
-        --color-accent-fg: color-mix(in srgb, var(--color-error) 55%, transparent);
-        --color-primary-sk: color-mix(in oklch, var(--color-error) 50%, white);
-        --color-secondary-bg: color-mix(in oklch, var(--color-error) 70%, black);
+      :root:not([data-theme]) {
+        .error {
+          --color-accent-bg: color-mix(in srgb, var(--color-error) 45%, transparent);
+          --color-accent-fg: color-mix(in srgb, var(--color-error) 55%, transparent);
+          --color-primary-sk: color-mix(in oklch, var(--color-error) 50%, white);
+          --color-secondary-bg: color-mix(in oklch, var(--color-error) 70%, black);
+        }
       }
     }
 
