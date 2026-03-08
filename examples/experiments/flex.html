@@ -39,7 +39,6 @@
       --color-primary-sk: color-mix(in oklch, var(--color-primary) 85%, black);
 
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
-      --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 60%, white);
     }
 
     :root[data-theme='dark'] {
@@ -48,7 +47,6 @@
       --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
 
       --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
-      --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 70%, white);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -58,7 +56,6 @@
         --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
 
         --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
-        --color-secondary-fg: color-mix(in oklch, var(--color-secondary) 70%, white);
       }
     }
 
@@ -97,28 +94,8 @@
       color: var(--color-txt);
     }
 
-    button:hover {
-      filter: brightness(90%);
-    }
-
     a {
       color: var(--color-primary-sk);
-    }
-
-    a:hover {
-      filter: brightness(50%);
-    }
-
-    :root[data-theme='dark'] {
-      a:hover {
-        filter: brightness(70%);
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      a:hover {
-        filter: brightness(70%);
-      }
     }
 
     input::placeholder {
@@ -155,10 +132,6 @@
       background: var(--color-secondary-bg);
     }
 
-    .card:hover {
-      background: var(--color-secondary-fg);
-    }
-
     .success {
       --color-primary: var(--color-success);
       --color-secondary: var(--color-success);
@@ -169,8 +142,8 @@
 
     @media (prefers-color-scheme: dark) {
       .success {
+        --color-primary-sk: color-mix(in oklch, var(--color-primary) 50%, white);
         --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
-        --color-secondary-fg: color-mix(in oklch, var(--color-success) 80%, black);
       }
     }
 
@@ -234,6 +207,50 @@
     .card {
       padding: 8px;
     }
+
+    button:hover {
+      filter: brightness(90%);
+    }
+
+    .card:hover {
+      filter: brightness(90%);
+    }
+
+    a:hover {
+      filter: brightness(50%);
+    }
+
+    :root[data-theme='light'] {
+      button:hover {
+        filter: brightness(90%);
+      }
+
+      .card:hover {
+        filter: brightness(90%);
+      }
+
+      a:hover {
+        filter: brightness(50%);
+      }
+    }
+
+    :root[data-theme='dark'] {
+
+      a:hover,
+      button:hover,
+      .card:hover {
+        filter: brightness(110%);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      a:hover,
+      button:hover,
+      .card:hover {
+        filter: brightness(110%);
+      }
+    }
   </style>
 
   <link rel="stylesheet" id="theme-default" href="css/default.css">
@@ -276,12 +293,12 @@
     </p>
     <hr />
     <p>
-      This is some <a href="">test</a>.
+      This is some <a id="example-link" href="">test</a>.
     </p>
     <p>
       <mark>Update</mark>
     </p>
-    <blockquote>
+    <blockquote id="example-blockquote">
       <p>
         This is good
       </p>
@@ -298,7 +315,7 @@ function abc() {
       </code>
     </pre>
 
-    <details class="card">
+    <details id="example-details" class="card">
       <summary>Title</summary>
       <p>
         Lorem ipsum
@@ -318,15 +335,15 @@ function abc() {
         </p>
         <p>
           <label>Option</label>
-          <select>
+          <select id="example-select">
             <option>Full</option>
             <option>Fast</option>
           </select>
         </p>
         <br />
         <p>
-          <button>Test</button>
-          <button type="reset">Reset</button>
+          <button id="example-button-normal">Test</button>
+          <button id="example-button-reset" type="reset">Reset</button>
         </p>
       </fieldset>
     </form>
@@ -335,7 +352,7 @@ function abc() {
     <br />
     <nav>
       <ol>
-        <li aria-selected="true">
+        <li id="example-tab" aria-selected="true">
           <a href="">Test 1</a>
         </li>
         <li>
@@ -381,7 +398,25 @@ function abc() {
 
   function onModeChange(t) {
     const mode = t.value;
-    console.log(mode);
+    addClass('example-link', mode);
+    addClass('example-blockquote', mode);
+    addClass('example-details', mode);
+    addClass('example-select', mode);
+    addClass('example-button-normal', mode);
+    addClass('example-button-reset', mode);
+    addClass('example-tab', mode);
+  }
+
+  function addClass(id, cls) {
+    const element = document.getElementById(id);
+    const classList = element.classList;
+    if (cls === 'success' || cls === 'error') {
+      classList.add(cls);
+    } else {
+      classList.remove('success');
+      classList.remove('error');
+    }
+    element.classList = classList;
   }
 </script>
 
