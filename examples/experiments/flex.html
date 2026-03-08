@@ -16,18 +16,8 @@
   <style>
     :root,
     :root[data-theme='light'],
-    .success {
-      /* default example of all colors
-      --color-bg: #ffffff;
-      --color-txt: #212121;
-      --color-txt-on-dark: #ffffff;
-      --color-primary: #526cfe;
-      --color-secondary: #8b5cf6; */
-
-      /* semantic meaning colors */
-      --color-success: #23b157;
-      --color-error: #ef4444;
-
+    .success,
+    .error {
       --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
       --color-txt-fg: color-mix(in srgb, var(--color-txt) 50%, transparent);
 
@@ -132,6 +122,31 @@
       background: var(--color-secondary-bg);
     }
 
+
+    /* .success,
+    :root[data-theme='light'].success {
+      --color-primary: var(--color-success);
+      --color-secondary: var(--color-success);
+
+      --color-accent-bg: color-mix(in srgb, var(--color-success) 20%, transparent);
+      --color-accent-fg: color-mix(in srgb, var(--color-success) 35%, transparent);
+      --color-accent-dk: color-mix(in oklch, var(--color-success) 90%, white);
+
+      --color-primary-sk: color-mix(in oklch, var(--color-primary) 85%, black);
+      --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .success {
+        --color-accent-bg: color-mix(in srgb, var(--color-success) 35%, transparent);
+        --color-accent-fg: color-mix(in srgb, var(--color-success) 45%, transparent);
+        --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
+
+        --color-primary-sk: color-mix(in oklch, var(--color-success) 50%, white);
+        --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
+      }
+    } */
+
     .success {
       --color-primary: var(--color-success);
       --color-secondary: var(--color-success);
@@ -140,10 +155,47 @@
       --color-accent-dk: color-mix(in oklch, var(--color-success) 90%, white);
     }
 
+    :root[data-theme='dark'] {
+      .success {
+        --color-accent-bg: color-mix(in srgb, var(--color-success) 45%, transparent);
+        --color-accent-fg: color-mix(in srgb, var(--color-success) 55%, transparent);
+        --color-primary-sk: color-mix(in oklch, var(--color-success) 50%, white);
+        --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
+      }
+    }
+
     @media (prefers-color-scheme: dark) {
       .success {
-        --color-primary-sk: color-mix(in oklch, var(--color-primary) 50%, white);
+        --color-accent-bg: color-mix(in srgb, var(--color-success) 45%, transparent);
+        --color-accent-fg: color-mix(in srgb, var(--color-success) 55%, transparent);
+        --color-primary-sk: color-mix(in oklch, var(--color-success) 50%, white);
         --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
+      }
+    }
+
+    .error {
+      --color-primary: var(--color-error);
+      --color-secondary: var(--color-error);
+      --color-accent-bg: color-mix(in srgb, var(--color-error) 20%, transparent);
+      --color-accent-fg: color-mix(in srgb, var(--color-error) 35%, transparent);
+      --color-accent-dk: color-mix(in oklch, var(--color-error) 90%, white);
+    }
+
+    :root[data-theme='dark'] {
+      .error {
+        --color-accent-bg: color-mix(in srgb, var(--color-error) 45%, transparent);
+        --color-accent-fg: color-mix(in srgb, var(--color-error) 55%, transparent);
+        --color-primary-sk: color-mix(in oklch, var(--color-error) 50%, white);
+        --color-secondary-bg: color-mix(in oklch, var(--color-error) 70%, black);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .error {
+        --color-accent-bg: color-mix(in srgb, var(--color-error) 45%, transparent);
+        --color-accent-fg: color-mix(in srgb, var(--color-error) 55%, transparent);
+        --color-primary-sk: color-mix(in oklch, var(--color-error) 50%, white);
+        --color-secondary-bg: color-mix(in oklch, var(--color-error) 70%, black);
       }
     }
 
@@ -342,6 +394,7 @@ function abc() {
         </p>
         <br />
         <p>
+          <button>Click</button>
           <button id="example-button-normal">Test</button>
           <button id="example-button-reset" type="reset">Reset</button>
         </p>
@@ -410,11 +463,11 @@ function abc() {
   function addClass(id, cls) {
     const element = document.getElementById(id);
     const classList = element.classList;
+    classList.remove('success');
+    classList.remove('error');
+
     if (cls === 'success' || cls === 'error') {
       classList.add(cls);
-    } else {
-      classList.remove('success');
-      classList.remove('error');
     }
     element.classList = classList;
   }

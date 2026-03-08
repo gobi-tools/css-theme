@@ -4,6 +4,9 @@
   --color-txt-on-dark: #f9fafb;
   --color-primary: #0b6b3a;
   --color-secondary: #109953;
+
+  --color-success: #23b157;
+  --color-error: #ef4444;
 }
 
 @media (prefers-color-scheme: dark) {

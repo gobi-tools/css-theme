@@ -5,4 +5,7 @@
   --color-txt-on-dark: #f9fafb;
   --color-primary: #111111;
   --color-secondary: #d694e7;
+
+  --color-success: #708d3a;
+  --color-error: #c2412f;
 }
