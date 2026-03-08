@@ -6,13 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
   <title>Layouts</title>
-  <!--
-   bg -> faint
-   fg -> muted
-   dk -> ???
-   sk -> inked 
-   -->
-
   <style>
     :root,
     :root[data-theme='light'],
@@ -20,31 +13,31 @@
     .error {
       --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
 
-      --color-accent-bg: color-mix(in srgb, var(--color-txt) 8%, transparent);
-      --color-accent-fg: color-mix(in srgb, var(--color-txt) 14%, transparent);
-      --color-accent-dk: color-mix(in oklch, var(--color-txt) 75%, white);
+      --color-accent-faint: color-mix(in srgb, var(--color-txt) 8%, transparent);
+      --color-accent-muted: color-mix(in srgb, var(--color-txt) 14%, transparent);
+      --color-accent-inked: color-mix(in oklch, var(--color-txt) 75%, white);
 
-      --color-primary-bg: color-mix(in srgb, var(--color-primary) 8%, transparent);
-      --color-primary-sk: color-mix(in oklch, var(--color-primary) 85%, black);
+      --color-primary-faint: color-mix(in srgb, var(--color-primary) 8%, transparent);
+      --color-primary-inked: color-mix(in oklch, var(--color-primary) 85%, black);
 
-      --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 30%, white);
+      --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 30%, white);
     }
 
     :root[data-theme='dark'] {
-      --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
+      --color-accent-inked: color-mix(in oklch, var(--color-txt) 50%, black);
 
-      --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
+      --color-primary-inked: color-mix(in oklch, var(--color-primary) 35%, white);
 
-      --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
+      --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 90%, black);
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --color-accent-dk: color-mix(in oklch, var(--color-txt) 50%, black);
+        --color-accent-inked: color-mix(in oklch, var(--color-txt) 50%, black);
 
-        --color-primary-sk: color-mix(in oklch, var(--color-primary) 35%, white);
+        --color-primary-inked: color-mix(in oklch, var(--color-primary) 35%, white);
 
-        --color-secondary-bg: color-mix(in oklch, var(--color-secondary) 90%, black);
+        --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 90%, black);
       }
     }
 
@@ -59,16 +52,16 @@
     }
 
     blockquote {
-      background: var(--color-accent-bg);
-      border-left: 5px solid var(--color-accent-dk);
+      background: var(--color-accent-faint);
+      border-left: 5px solid var(--color-accent-inked);
     }
 
     mark {
-      background: var(--color-accent-fg);
+      background: var(--color-accent-muted);
     }
 
     pre>code {
-      background: var(--color-accent-bg);
+      background: var(--color-accent-faint);
       border-left: 5px solid var(--color-secondary);
     }
 
@@ -84,7 +77,7 @@
     }
 
     a {
-      color: var(--color-primary-sk);
+      color: var(--color-primary-inked);
     }
 
     input::placeholder {
@@ -92,7 +85,7 @@
     }
 
     fieldset {
-      background: light-dark(var(--color-bg), var(--color-accent-bg));
+      background: light-dark(var(--color-bg), var(--color-accent-faint));
       border: 1px solid var(--color-border);
     }
 
@@ -103,9 +96,9 @@
     }
 
     select {
-      background: light-dark(var(--color-accent-bg), var(--color-bg));
+      background: light-dark(var(--color-accent-faint), var(--color-bg));
       border: 1px solid var(--color-border);
-      color: var(--color-primary-sk);
+      color: var(--color-primary-inked);
     }
 
     option {
@@ -113,12 +106,12 @@
     }
 
     nav>ol>li[aria-selected="true"] {
-      background: var(--color-primary-bg);
-      border-left: 3px solid var(--color-primary-sk);
+      background: var(--color-primary-faint);
+      border-left: 3px solid var(--color-primary-inked);
     }
 
     .card {
-      background: var(--color-secondary-bg);
+      background: var(--color-secondary-muted);
     }
 
     /** COLORS - SEMANTIC **/
@@ -126,27 +119,27 @@
     .success {
       --color-primary: var(--color-success);
       --color-secondary: var(--color-success);
-      --color-accent-bg: color-mix(in srgb, var(--color-success) 20%, transparent);
-      --color-accent-fg: color-mix(in srgb, var(--color-success) 35%, transparent);
-      --color-accent-dk: color-mix(in oklch, var(--color-success) 90%, white);
+      --color-accent-faint: color-mix(in srgb, var(--color-success) 20%, transparent);
+      --color-accent-muted: color-mix(in srgb, var(--color-success) 35%, transparent);
+      --color-accent-inked: color-mix(in oklch, var(--color-success) 90%, white);
     }
 
     :root[data-theme='dark'] {
       .success {
-        --color-accent-bg: color-mix(in srgb, var(--color-success) 45%, transparent);
-        --color-accent-fg: color-mix(in srgb, var(--color-success) 55%, transparent);
-        --color-primary-sk: color-mix(in oklch, var(--color-success) 50%, white);
-        --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
+        --color-accent-faint: color-mix(in srgb, var(--color-success) 45%, transparent);
+        --color-accent-muted: color-mix(in srgb, var(--color-success) 55%, transparent);
+        --color-primary-inked: color-mix(in oklch, var(--color-success) 50%, white);
+        --color-secondary-muted: color-mix(in oklch, var(--color-success) 70%, black);
       }
     }
 
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
         .success {
-          --color-accent-bg: color-mix(in srgb, var(--color-success) 45%, transparent);
-          --color-accent-fg: color-mix(in srgb, var(--color-success) 55%, transparent);
-          --color-primary-sk: color-mix(in oklch, var(--color-success) 50%, white);
-          --color-secondary-bg: color-mix(in oklch, var(--color-success) 70%, black);
+          --color-accent-faint: color-mix(in srgb, var(--color-success) 45%, transparent);
+          --color-accent-muted: color-mix(in srgb, var(--color-success) 55%, transparent);
+          --color-primary-inked: color-mix(in oklch, var(--color-success) 50%, white);
+          --color-secondary-muted: color-mix(in oklch, var(--color-success) 70%, black);
         }
       }
     }
@@ -154,27 +147,27 @@
     .error {
       --color-primary: var(--color-error);
       --color-secondary: var(--color-error);
-      --color-accent-bg: color-mix(in srgb, var(--color-error) 20%, transparent);
-      --color-accent-fg: color-mix(in srgb, var(--color-error) 35%, transparent);
-      --color-accent-dk: color-mix(in oklch, var(--color-error) 90%, white);
+      --color-accent-faint: color-mix(in srgb, var(--color-error) 20%, transparent);
+      --color-accent-muted: color-mix(in srgb, var(--color-error) 35%, transparent);
+      --color-accent-inked: color-mix(in oklch, var(--color-error) 90%, white);
     }
 
     :root[data-theme='dark'] {
       .error {
-        --color-accent-bg: color-mix(in srgb, var(--color-error) 45%, transparent);
-        --color-accent-fg: color-mix(in srgb, var(--color-error) 55%, transparent);
-        --color-primary-sk: color-mix(in oklch, var(--color-error) 50%, white);
-        --color-secondary-bg: color-mix(in oklch, var(--color-error) 70%, black);
+        --color-accent-faint: color-mix(in srgb, var(--color-error) 45%, transparent);
+        --color-accent-muted: color-mix(in srgb, var(--color-error) 55%, transparent);
+        --color-primary-inked: color-mix(in oklch, var(--color-error) 50%, white);
+        --color-secondary-muted: color-mix(in oklch, var(--color-error) 70%, black);
       }
     }
 
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
         .error {
-          --color-accent-bg: color-mix(in srgb, var(--color-error) 45%, transparent);
-          --color-accent-fg: color-mix(in srgb, var(--color-error) 55%, transparent);
-          --color-primary-sk: color-mix(in oklch, var(--color-error) 50%, white);
-          --color-secondary-bg: color-mix(in oklch, var(--color-error) 70%, black);
+          --color-accent-faint: color-mix(in srgb, var(--color-error) 45%, transparent);
+          --color-accent-muted: color-mix(in srgb, var(--color-error) 55%, transparent);
+          --color-primary-inked: color-mix(in oklch, var(--color-error) 50%, white);
+          --color-secondary-muted: color-mix(in oklch, var(--color-error) 70%, black);
         }
       }
     }
