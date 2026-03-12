@@ -1,17 +1,10 @@
 :root {
-  --color-bg: #fbfaf7;
-  --color-txt: #121417;
+  --color-bg: light-dark(#fbfaf7, #0b0d12);
+  --color-txt: light-dark(#121417, #d8eaff);
   --color-txt-on-dark: #f9fafb;
   --color-primary: #8b5e3c;
   --color-secondary: #109953;
 
   --color-success: #23b157;
   --color-error: #ef4444;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #0b0d12;
-    --color-txt: #d8eaff;
-  }
 }

@@ -1,23 +1,10 @@
 :root {
-  --color-bg: #eff1f5;
-  --color-txt: #4c4f69;
-  --color-txt-on-dark: #ffffff;
-  --color-primary: #1e66f5;
-  --color-secondary: #8839ef;
+  --color-bg: light-dark(#eff1f5, #2d2a2e);
+  --color-txt: light-dark(#4c4f69, #fcfcfa);
+  --color-txt-on-dark: light-dark(#ffffff, #2d2a2e);
+  --color-primary: light-dark(#1e66f5, #ffd866);
+  --color-secondary: light-dark(#8839ef, #F51E66);
 
-  --color-success: #23b157;
-  --color-error: #ef4444;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #2d2a2e;
-    --color-txt: #fcfcfa;
-    --color-txt-on-dark: #2d2a2e;
-    --color-primary: #ffd866;
-    --color-secondary: #F51E66;
-
-    --color-success: #6eed9c;
-    --color-error: #fa8f8f;
-  }
+  --color-success: light-dark(#23b157, #6eed9c);
+  --color-error: light-dark(#ef4444, #fa8f8f);
 }
