@@ -5,7 +5,22 @@
   --color-txt-on-dark: #ffffff;
   --color-primary: #ff69b4;
   --color-secondary: #1f7047;
-  
+
   --color-success: #23b157;
   --color-error: #ef4444;
+}
+
+:root {
+  /** OVERRIDE-TO-DARK **/
+  --color-accent-inked: color-mix(in oklch, var(--color-txt) 50%, black);
+
+  --color-primary-inked: color-mix(in oklch, var(--color-primary) 35%, white);
+
+  --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 90%, black);
+
+  a:hover,
+  button:hover,
+  .card:hover {
+    filter: brightness(110%);
+  }
 }

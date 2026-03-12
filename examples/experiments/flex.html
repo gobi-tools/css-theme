@@ -19,7 +19,7 @@
     }
 
     :root,
-    :root[data-theme='light'],
+    /* :root[data-theme='light'], */
     .success,
     .error {
       --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
@@ -47,13 +47,13 @@
       }
     }
 
-    :root[data-theme='dark'] {
+    /* :root[data-theme='dark'] {
       --color-accent-inked: color-mix(in oklch, var(--color-txt) 50%, black);
 
       --color-primary-inked: color-mix(in oklch, var(--color-primary) 35%, white);
 
       --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 90%, black);
-    }
+    } */
 
     /** COLORS **/
 
@@ -138,17 +138,20 @@
       --color-accent-inked: color-mix(in oklch, var(--color-success) 90%, white);
     }
 
-    :root[data-theme='dark'] {
+    /* :root[data-theme='dark'] {
       .success {
         --color-accent-faint: color-mix(in srgb, var(--color-success) 45%, transparent);
         --color-accent-muted: color-mix(in srgb, var(--color-success) 55%, transparent);
         --color-primary-inked: color-mix(in oklch, var(--color-success) 50%, white);
         --color-secondary-muted: color-mix(in oklch, var(--color-success) 70%, black);
       }
-    }
+    } */
 
     @media (prefers-color-scheme: dark) {
-      :root:not([data-theme]) {
+      :root
+
+      /*:not([data-theme])*/
+        {
         .success {
           --color-accent-faint: color-mix(in srgb, var(--color-success) 45%, transparent);
           --color-accent-muted: color-mix(in srgb, var(--color-success) 55%, transparent);
@@ -166,17 +169,20 @@
       --color-accent-inked: color-mix(in oklch, var(--color-error) 90%, white);
     }
 
-    :root[data-theme='dark'] {
+    /* :root[data-theme='dark'] {
       .error {
         --color-accent-faint: color-mix(in srgb, var(--color-error) 45%, transparent);
         --color-accent-muted: color-mix(in srgb, var(--color-error) 55%, transparent);
         --color-primary-inked: color-mix(in oklch, var(--color-error) 50%, white);
         --color-secondary-muted: color-mix(in oklch, var(--color-error) 70%, black);
       }
-    }
+    } */
 
     @media (prefers-color-scheme: dark) {
-      :root:not([data-theme]) {
+      :root
+
+      /*:not([data-theme])*/
+        {
         .error {
           --color-accent-faint: color-mix(in srgb, var(--color-error) 45%, transparent);
           --color-accent-muted: color-mix(in srgb, var(--color-error) 55%, transparent);
@@ -247,10 +253,7 @@
       padding: 8px;
     }
 
-    button:hover {
-      filter: brightness(90%);
-    }
-
+    button:hover,
     .card:hover {
       filter: brightness(90%);
     }
@@ -259,7 +262,7 @@
       filter: brightness(50%);
     }
 
-    :root[data-theme='light'] {
+    /* :root[data-theme='light'] {
       button:hover {
         filter: brightness(90%);
       }
@@ -271,16 +274,16 @@
       a:hover {
         filter: brightness(50%);
       }
-    }
+    } */
 
-    :root[data-theme='dark'] {
+    /* :root[data-theme='dark'] {
 
       a:hover,
       button:hover,
       .card:hover {
         filter: brightness(110%);
       }
-    }
+    } */
 
     @media (prefers-color-scheme: dark) {
 
@@ -416,24 +419,24 @@ function abc() {
     document.getElementById('theme-' + theme).disabled = false;
     delete document.documentElement.dataset.theme;
 
-    switch (theme) {
-      case 'default':
-      case 'writing':
-      case 'scholar': {
-        break;
-      }
-      case 'pink':
-      case 'sunset':
-      case 'bold': {
-        document.documentElement.dataset.theme = 'light';
-        break;
-      }
-      case 'green':
-      case 'betty': {
-        document.documentElement.dataset.theme = 'dark';
-        break;
-      }
-    }
+    // switch (theme) {
+    //   case 'default':
+    //   case 'writing':
+    //   case 'scholar': {
+    //     break;
+    //   }
+    //   case 'pink':
+    //   case 'sunset':
+    //   case 'bold': {
+    //     document.documentElement.dataset.theme = 'light';
+    //     break;
+    //   }
+    //   case 'green':
+    //   case 'betty': {
+    //     document.documentElement.dataset.theme = 'dark';
+    //     break;
+    //   }
+    // }
   }
 
   function onModeChange(t) {

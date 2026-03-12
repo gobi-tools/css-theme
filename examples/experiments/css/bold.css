@@ -9,3 +9,24 @@
   --color-success: #708d3a;
   --color-error: #c2412f;
 }
+
+@media (prefers-color-scheme: dark) {
+
+  /** OVERRIDE-TO-LIGHT **/
+  :root {
+    --color-accent-inked: color-mix(in oklch, var(--color-txt) 75%, white);
+
+    --color-primary-inked: color-mix(in oklch, var(--color-primary) 85%, black);
+
+    --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 30%, white);
+
+    button:hover,
+    .card:hover {
+      filter: brightness(90%);
+    }
+
+    a:hover {
+      filter: brightness(50%);
+    }
+  }
+}
