@@ -114,39 +114,37 @@
     .success {
       --color-primary: var(--color-success);
       --color-secondary: var(--color-success);
-      --color-accent-faint: color-mix(in srgb, var(--color-success) 20%, transparent);
-      --color-accent-muted: color-mix(in srgb, var(--color-success) 35%, transparent);
-      --color-accent-inked: color-mix(in oklch, var(--color-success) 90%, white);
-    }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        .success {
-          --color-accent-faint: color-mix(in srgb, var(--color-success) 45%, transparent);
-          --color-accent-muted: color-mix(in srgb, var(--color-success) 55%, transparent);
-          --color-primary-inked: color-mix(in oklch, var(--color-success) 50%, white);
-          --color-secondary-muted: color-mix(in oklch, var(--color-success) 70%, black);
-        }
-      }
+      --color-accent-faint: light-dark(color-mix(in srgb, var(--color-success) 20%, transparent),
+          color-mix(in srgb, var(--color-success) 45%, transparent));
+      --color-accent-muted: light-dark(color-mix(in srgb, var(--color-success) 35%, transparent),
+          color-mix(in srgb, var(--color-success) 55%, transparent));
+      --color-accent-inked: light-dark(color-mix(in oklch, var(--color-success) 90%, white),
+          color-mix(in oklch, var(--color-error) 50%, black));
+
+      --color-primary-inked: light-dark(color-mix(in oklch, var(--color-success) 85%, black),
+          color-mix(in oklch, var(--color-success) 50%, white));
+
+      --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-success) 30%, white),
+          color-mix(in oklch, var(--color-success) 70%, black));
     }
 
     .error {
       --color-primary: var(--color-error);
       --color-secondary: var(--color-error);
-      --color-accent-faint: color-mix(in srgb, var(--color-error) 20%, transparent);
-      --color-accent-muted: color-mix(in srgb, var(--color-error) 35%, transparent);
-      --color-accent-inked: color-mix(in oklch, var(--color-error) 90%, white);
-    }
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        .error {
-          --color-accent-faint: color-mix(in srgb, var(--color-error) 45%, transparent);
-          --color-accent-muted: color-mix(in srgb, var(--color-error) 55%, transparent);
-          --color-primary-inked: color-mix(in oklch, var(--color-error) 50%, white);
-          --color-secondary-muted: color-mix(in oklch, var(--color-error) 70%, black);
-        }
-      }
+      --color-accent-faint: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
+          color-mix(in srgb, var(--color-error) 45%, transparent));
+      --color-accent-muted: light-dark(color-mix(in srgb, var(--color-error) 35%, transparent),
+          color-mix(in srgb, var(--color-error) 55%, transparent));
+      --color-accent-inked: light-dark(color-mix(in oklch, var(--color-error) 90%, white),
+          color-mix(in oklch, var(--color-error) 50%, black));
+
+      --color-primary-inked: light-dark(color-mix(in oklch, var(--color-error) 85%, black),
+          color-mix(in oklch, var(--color-error) 50%, white));
+
+      --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-error) 30%, white),
+          color-mix(in oklch, var(--color-error) 70%, black));
     }
 
     /** OTHER STYLES **/
