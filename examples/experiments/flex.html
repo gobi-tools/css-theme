@@ -7,6 +7,17 @@
   <meta name="color-scheme" content="light dark">
   <title>Layouts</title>
   <style>
+    :root {
+      --color-bg: #ffffff;
+      --color-txt: #212121;
+      --color-txt-on-dark: #ffffff;
+      --color-primary: #526cfe;
+      --color-secondary: #8b5cf6;
+
+      --color-success: #23b157;
+      --color-error: #ef4444;
+    }
+
     :root,
     :root[data-theme='light'],
     .success,
@@ -23,22 +34,25 @@
       --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 30%, white);
     }
 
-    :root[data-theme='dark'] {
-      --color-accent-inked: color-mix(in oklch, var(--color-txt) 50%, black);
-
-      --color-primary-inked: color-mix(in oklch, var(--color-primary) 35%, white);
-
-      --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 90%, black);
-    }
-
     @media (prefers-color-scheme: dark) {
       :root {
+        --color-bg: #111827;
+        --color-txt: #d8eaff;
+
         --color-accent-inked: color-mix(in oklch, var(--color-txt) 50%, black);
 
         --color-primary-inked: color-mix(in oklch, var(--color-primary) 35%, white);
 
         --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 90%, black);
       }
+    }
+
+    :root[data-theme='dark'] {
+      --color-accent-inked: color-mix(in oklch, var(--color-txt) 50%, black);
+
+      --color-primary-inked: color-mix(in oklch, var(--color-primary) 35%, white);
+
+      --color-secondary-muted: color-mix(in oklch, var(--color-secondary) 90%, black);
     }
 
     /** COLORS **/
