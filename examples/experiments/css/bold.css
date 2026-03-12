@@ -9,17 +9,3 @@
   --color-success: #708d3a;
   --color-error: #c2412f;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /** OVERRIDE-TO-LIGHT **/
-    button:hover,
-    .card:hover {
-      filter: brightness(90%);
-    }
-
-    a:hover {
-      filter: brightness(50%);
-    }
-  }
-}

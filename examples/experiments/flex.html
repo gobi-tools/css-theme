@@ -61,14 +61,23 @@
       background: var(--color-primary);
       color: var(--color-txt-on-dark);
     }
+    button:hover {
+      background: color-mix(in oklab, var(--color-primary) 90%, light-dark(black, white));
+    }
 
     button[type=reset] {
       background: var(--color-bg);
       color: var(--color-txt);
     }
+    button[type=reset]:hover {
+      background: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
+    }
 
     a {
       color: var(--color-primary-inked);
+    }
+    a:hover {
+      color: color-mix(in oklch, var(--color-primary-inked) 70%, light-dark(black, white));
     }
 
     input::placeholder {
@@ -104,6 +113,9 @@
     .card {
       background: var(--color-secondary-muted);
     }
+    .card:hover {
+      background: color-mix(in oklab, var(--color-secondary-muted) 90%, light-dark(black, white));
+    }
 
     /** COLORS - SEMANTIC **/
 
@@ -116,7 +128,7 @@
       --color-accent-muted: light-dark(color-mix(in srgb, var(--color-success) 35%, transparent),
           color-mix(in srgb, var(--color-success) 55%, transparent));
       --color-accent-inked: light-dark(color-mix(in oklch, var(--color-success) 90%, white),
-          color-mix(in oklch, var(--color-error) 50%, black));
+          color-mix(in oklch, var(--color-success) 50%, black));
 
       --color-primary-inked: light-dark(color-mix(in oklch, var(--color-success) 85%, black),
           color-mix(in oklch, var(--color-success) 50%, white));
@@ -202,24 +214,6 @@
 
     .card {
       padding: 8px;
-    }
-
-    button:hover,
-    .card:hover {
-      filter: brightness(90%);
-    }
-
-    a:hover {
-      filter: brightness(50%);
-    }
-
-    @media (prefers-color-scheme: dark) {
-
-      a:hover,
-      button:hover,
-      .card:hover {
-        filter: brightness(110%);
-      }
     }
   </style>
 

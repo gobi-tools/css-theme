@@ -9,12 +9,3 @@
   --color-success: #23b157;
   --color-error: #ef4444;
 }
-
-:root {
-  /** OVERRIDE-TO-DARK **/
-  a:hover,
-  button:hover,
-  .card:hover {
-    filter: brightness(110%);
-  }
-}
