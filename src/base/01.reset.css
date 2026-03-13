@@ -44,7 +44,7 @@
   --font-family-head: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-mono: monospace;
   /* colors - base */
-  --color-primary-light-1: #93c5fd;
+  /* --color-primary-light-1: #93c5fd;
   --color-primary-light-2: #dbeafe;
   --color-primary: #3b82f6;
   --color-primary-dark-1: #2563eb;
@@ -72,15 +72,15 @@
   --color-accent-light-2: #f3f4f6;
   --color-accent: #9a9a9a;
   --color-accent-dark-1: #374151;
-  --color-accent-dark-2: #1f2937;
+  --color-accent-dark-2: #1f2937; */
   /* colors - text */
-  --color-txt-on-light: #111827;
+  /* --color-txt-on-light: #111827;
   --color-txt-on-dark: #f9fafb;
-  --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
+  --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark)); */
   /* colors - bg */
-  --color-bg-light: #ffffff;
+  /* --color-bg-light: #ffffff;
   --color-bg-dark: #111827;
-  --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
+  --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark)); */
 
   /* -code applis to: "kbd", "code", "var", "mark"  */
   --height-small-code: 32px;
@@ -162,11 +162,45 @@
 
   /* -nav applies to: "nav" */
   --border-width-expanded-nav: 2px;
-  
+
   /* -tabs applies to: "tab" (nav>ol) */
   --border-width-horz-tabs: 4px;
   --border-width-vert-tabs: 3px;
 }
+
+/* theme colors */
+
+:root {
+  --color-bg: light-dark(#ffffff, #111827);
+  --color-txt: light-dark(#212121, #d8eaff);
+  --color-txt-on-dark: #ffffff;
+  --color-primary: #526cfe;
+  --color-secondary: #8b5cf6;
+
+  --color-success: #23b157;
+  --color-error: #ef4444;
+
+  --color-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
+
+  --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
+
+  --color-accent-faint: color-mix(in srgb, var(--color-txt) 8%, transparent);
+  --color-accent-muted: color-mix(in srgb, var(--color-txt) 14%, transparent);
+  --color-accent-inked: light-dark(color-mix(in oklch, var(--color-txt) 75%, white),
+      color-mix(in oklch, var(--color-txt) 50%, black));
+
+  --color-primary-hover: color-mix(in oklab, var(--color-primary) 90%, light-dark(black, white));
+  --color-primary-faint: color-mix(in srgb, var(--color-primary) 8%, transparent);
+  --color-primary-inked: light-dark(color-mix(in oklch, var(--color-primary) 85%, black),
+      color-mix(in oklch, var(--color-primary) 35%, white));
+  --color-primary-inked-hover: color-mix(in oklch, var(--color-primary-inked) 70%, light-dark(black, white));
+
+  --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-secondary) 30%, white),
+      color-mix(in oklch, var(--color-secondary) 90%, black));
+  --color-secondary-muted-hover: color-mix(in oklab, var(--color-secondary-muted) 90%, light-dark(black, white));
+}
+
+/* base */
 
 * {
   /* border: 1px solid red; */

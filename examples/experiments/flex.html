@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light dark">
   <title>Layouts</title>
   <style>
-    :root {
+    :root, .success, .error {
       --color-bg: light-dark(#ffffff, #111827);
       --color-txt: light-dark(#212121, #d8eaff);
       --color-txt-on-dark: #ffffff;
@@ -17,6 +17,8 @@
       --color-success: #23b157;
       --color-error: #ef4444;
 
+      --color-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
+
       --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
 
       --color-accent-faint: color-mix(in srgb, var(--color-txt) 8%, transparent);
@@ -24,12 +26,15 @@
       --color-accent-inked: light-dark(color-mix(in oklch, var(--color-txt) 75%, white),
           color-mix(in oklch, var(--color-txt) 50%, black));
 
+      --color-primary-hover: color-mix(in oklab, var(--color-primary) 90%, light-dark(black, white));
       --color-primary-faint: color-mix(in srgb, var(--color-primary) 8%, transparent);
       --color-primary-inked: light-dark(color-mix(in oklch, var(--color-primary) 85%, black),
           color-mix(in oklch, var(--color-primary) 35%, white));
-
+      --color-primary-inked-hover: color-mix(in oklch, var(--color-primary-inked) 70%, light-dark(black, white));
+      
       --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-secondary) 30%, white),
           color-mix(in oklch, var(--color-secondary) 90%, black));
+      --color-secondary-muted-hover: color-mix(in oklab, var(--color-secondary-muted) 90%, light-dark(black, white));
     }
 
     /** COLORS **/
@@ -61,23 +66,26 @@
       background: var(--color-primary);
       color: var(--color-txt-on-dark);
     }
+
     button:hover {
-      background: color-mix(in oklab, var(--color-primary) 90%, light-dark(black, white));
+      background: var(--color-primary-hover);
     }
 
     button[type=reset] {
       background: var(--color-bg);
       color: var(--color-txt);
     }
+
     button[type=reset]:hover {
-      background: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
+      background: var(--color-bg-hover);
     }
 
     a {
       color: var(--color-primary-inked);
     }
+
     a:hover {
-      color: color-mix(in oklch, var(--color-primary-inked) 70%, light-dark(black, white));
+      color: var(--color-primary-inked-hover)
     }
 
     input::placeholder {
@@ -113,8 +121,9 @@
     .card {
       background: var(--color-secondary-muted);
     }
+
     .card:hover {
-      background: color-mix(in oklab, var(--color-secondary-muted) 90%, light-dark(black, white));
+      background: var(--color-secondary-muted-hover);
     }
 
     /** COLORS - SEMANTIC **/
@@ -340,25 +349,6 @@ function abc() {
     });
     document.getElementById('theme-' + theme).disabled = false;
     delete document.documentElement.dataset.theme;
-
-    // switch (theme) {
-    //   case 'default':
-    //   case 'writing':
-    //   case 'scholar': {
-    //     break;
-    //   }
-    //   case 'pink':
-    //   case 'sunset':
-    //   case 'bold': {
-    //     document.documentElement.dataset.theme = 'light';
-    //     break;
-    //   }
-    //   case 'green':
-    //   case 'betty': {
-    //     document.documentElement.dataset.theme = 'dark';
-    //     break;
-    //   }
-    // }
   }
 
   function onModeChange(t) {
