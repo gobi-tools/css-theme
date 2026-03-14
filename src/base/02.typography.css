@@ -144,8 +144,7 @@ hr {
 }
 
 [aria-selected="true"] a {
-  /* color: var(--color-) */
-  color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
+  color: var(--color-primary-inked-hover);
 }
 
 /* different layouts */

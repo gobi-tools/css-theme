@@ -59,8 +59,8 @@ pre>code {
 /* theme colors */
 
 blockquote {
-  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
-  border-color: var(--color-accent-dark-1);
+  background: var(--color-accent-faint);
+  border-color: var(--color-accent-inked);
 }
 
 pre {
@@ -68,7 +68,6 @@ pre {
 }
 
 pre>code {
-  background: light-dark(var(--color-accent-light-2), var(--color-accent-dark-2));
-  border-color: light-dark(var(--color-secondary-dark-1), var(--color-secondary-dark-1));
-  color: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
+  background: var(--color-accent-faint);
+  border-color: var(--color-secondary);
 }

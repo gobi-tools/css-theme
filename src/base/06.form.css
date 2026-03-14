@@ -32,7 +32,7 @@ select,
 textarea {
   display: block;
   width: 100%;
-  min-width: 0; 
+  min-width: 0;
   padding: var(--space-3);
   min-height: var(--height-input);
   text-align: left;
@@ -65,7 +65,7 @@ input,
 select,
 textarea {
   border-radius: var(--border-radius-input);
-  
+
   border-left-width: var(--border-left-width-input);
   border-left-style: var(--border-left-style-input);
   border-right-width: var(--border-right-width-input);
@@ -96,7 +96,7 @@ select {
 
 fieldset {
   border-radius: var(--border-radius-card);
-  
+
   border-left-width: var(--border-left-width-card);
   border-left-style: var(--border-left-style-card);
   border-right-width: var(--border-right-width-card);
@@ -114,17 +114,19 @@ input,
 select,
 textarea {
   background: var(--color-bg);
-  border-color: light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
+  border-color: var(--color-border);
+  color: var(--color-txt);
   accent-color: var(--color-secondary);
 }
 
 select {
-  background: light-dark(var(--color-accent-light-2), var(--color-bg));
-  color: light-dark(var(--color-primary-dark-1), var(--color-primary-light-1));
+  background: light-dark(var(--color-accent-faint), var(--color-bg));
+  border-color: var(--color-border);
+  color: var(--color-primary-inked);
 }
 
 :is(input, select, textarea)::placeholder {
-  color: var(--color-accent);
+  filter: opacity(70%);
 }
 
 fieldset:focus,
@@ -136,5 +138,6 @@ textarea:focus {
 }
 
 fieldset {
-  background: light-dark(var(--color-bg), var(--color-accent-dark-2));
+  background: light-dark(var(--color-bg), var(--color-accent-faint));
+  border-color: var(--color-border);
 }

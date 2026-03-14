@@ -1,41 +1,40 @@
 /* theme styles */
-
 .success {
-  --color-accent-light-1: var(--color-success-light-1);
-  --color-accent-light-2: var(--color-success-light-2);
-  --color-accent: var(--color-success);
-  --color-accent-dark-1: var(--color-success-dark-1);
-  --color-accent-dark-2: var(--color-success-dark-2);
+    --color-primary: var(--color-success);
+    --color-secondary: var(--color-success);
 
-  --color-primary: var(--color-success);
-  --color-primary-light-1: var(--color-success-light-1);
-  --color-primary-light-2: var(--color-success-light-2);
-  --color-primary-dark-1: var(--color-success-dark-1);
-  --color-primary-dark-2: var(--color-success-dark-2);
+    --color-border: color-mix(in srgb, var(--color-success) 40%, transparent);
 
-  --color-secondary: var(--color-success);
-  --color-secondary-light-1: var(--color-success-light-1);
-  --color-secondary-light-2: var(--color-success-light-2);
-  --color-secondary-dark-1: var(--color-success-dark-1);
-  --color-secondary-dark-2: var(--color-success-dark-2);
+    --color-accent-faint: light-dark(color-mix(in srgb, var(--color-success) 20%, transparent),
+            color-mix(in srgb, var(--color-success) 45%, transparent));
+    --color-accent-muted: light-dark(color-mix(in srgb, var(--color-success) 35%, transparent),
+            color-mix(in srgb, var(--color-success) 55%, transparent));
+    --color-accent-inked: light-dark(color-mix(in oklch, var(--color-success) 90%, white),
+            color-mix(in oklch, var(--color-success) 90%, white));
+
+    --color-primary-inked: light-dark(color-mix(in oklch, var(--color-success) 85%, black),
+            color-mix(in oklch, var(--color-success) 50%, white));
+
+    --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-success) 30%, white),
+            color-mix(in oklch, var(--color-success) 70%, black));
 }
 
 .error {
-  --color-accent-light-1: var(--color-error-light-1);
-  --color-accent-light-2: var(--color-error-light-2);
-  --color-accent: var(--color-error);
-  --color-accent-dark-1: var(--color-error-dark-1);
-  --color-accent-dark-2: var(--color-error-dark-2);
+    --color-primary: var(--color-error);
+    --color-secondary: var(--color-error);
 
-  --color-primary: var(--color-error);
-  --color-primary-light-1: var(--color-error-light-1);
-  --color-primary-light-2: var(--color-error-light-2);
-  --color-primary-dark-1: var(--color-error-dark-1);
-  --color-primary-dark-2: var(--color-error-dark-2);
+    --color-border: color-mix(in srgb, var(--color-error) 40%, transparent);
 
-  --color-secondary: var(--color-error);
-  --color-secondary-light-1: var(--color-error-light-1);
-  --color-secondary-light-2: var(--color-error-light-2);
-  --color-secondary-dark-1: var(--color-error-dark-1);
-  --color-secondary-dark-2: var(--color-error-dark-2);
+    --color-accent-faint: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
+            color-mix(in srgb, var(--color-error) 45%, transparent));
+    --color-accent-muted: light-dark(color-mix(in srgb, var(--color-error) 35%, transparent),
+            color-mix(in srgb, var(--color-error) 55%, transparent));
+    --color-accent-inked: light-dark(color-mix(in oklch, var(--color-error) 90%, white),
+            color-mix(in oklch, var(--color-error) 90%, white));
+
+    --color-primary-inked: light-dark(color-mix(in oklch, var(--color-error) 85%, black),
+            color-mix(in oklch, var(--color-error) 50%, white));
+
+    --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-error) 30%, white),
+            color-mix(in oklch, var(--color-error) 70%, black));
 }

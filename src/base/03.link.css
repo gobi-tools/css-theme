@@ -7,9 +7,9 @@ a {
 /* theme colors */
 
 a {
-  color: light-dark(var(--color-primary), var(--color-primary-light-1));
+  color: var(--color-primary-inked);
 }
 
 a:hover {
-  color: light-dark(var(--color-primary-dark-2), var(--color-primary-light-2));
+  color: var(--color-primary-inked-hover);
 }

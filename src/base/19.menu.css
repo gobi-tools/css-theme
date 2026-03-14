@@ -68,14 +68,15 @@ header:has(> menu):not(.disable-mobile) {
     width: 100%;
     left: 0;
     bottom: 0;
-    background: var(--color-bg);
-    border-top: 1px solid light-dark(var(--color-accent-light-1), var(--color-accent-dark-1));
     padding-inline: var(--space-6);
     padding-block: 0;
     margin: 0;
     justify-content: center;
     gap: 0;
     flex-direction: row;
+    /* theme colors */
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
   }
 
   menu>li {

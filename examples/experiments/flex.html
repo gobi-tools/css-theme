@@ -7,7 +7,9 @@
   <meta name="color-scheme" content="light dark">
   <title>Layouts</title>
   <style>
-    :root, .success, .error {
+    :root,
+    .success,
+    .error {
       --color-bg: light-dark(#ffffff, #111827);
       --color-txt: light-dark(#212121, #d8eaff);
       --color-txt-on-dark: #ffffff;
@@ -31,7 +33,7 @@
       --color-primary-inked: light-dark(color-mix(in oklch, var(--color-primary) 85%, black),
           color-mix(in oklch, var(--color-primary) 35%, white));
       --color-primary-inked-hover: color-mix(in oklch, var(--color-primary-inked) 70%, light-dark(black, white));
-      
+
       --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-secondary) 30%, white),
           color-mix(in oklch, var(--color-secondary) 90%, black));
       --color-secondary-muted-hover: color-mix(in oklab, var(--color-secondary-muted) 90%, light-dark(black, white));
@@ -85,7 +87,7 @@
     }
 
     a:hover {
-      color: var(--color-primary-inked-hover)
+      color: var(--color-primary-inked-hover);
     }
 
     input::placeholder {
@@ -118,8 +120,18 @@
       border-left: 3px solid var(--color-primary-inked);
     }
 
+    th,
+    td {
+      border-bottom: 1px solid var(--color-accent-inked);
+    }
+
+    tr:hover {
+      background-color: var(--color-accent-faint);
+    }
+
     .card {
       background: var(--color-secondary-muted);
+      border: 2px solid var(--color-border);
     }
 
     .card:hover {
@@ -132,12 +144,14 @@
       --color-primary: var(--color-success);
       --color-secondary: var(--color-success);
 
+      --color-border: color-mix(in srgb, var(--color-success) 40%, transparent);
+
       --color-accent-faint: light-dark(color-mix(in srgb, var(--color-success) 20%, transparent),
           color-mix(in srgb, var(--color-success) 45%, transparent));
       --color-accent-muted: light-dark(color-mix(in srgb, var(--color-success) 35%, transparent),
           color-mix(in srgb, var(--color-success) 55%, transparent));
       --color-accent-inked: light-dark(color-mix(in oklch, var(--color-success) 90%, white),
-          color-mix(in oklch, var(--color-success) 50%, black));
+          color-mix(in oklch, var(--color-success) 90%, white));
 
       --color-primary-inked: light-dark(color-mix(in oklch, var(--color-success) 85%, black),
           color-mix(in oklch, var(--color-success) 50%, white));
@@ -150,12 +164,14 @@
       --color-primary: var(--color-error);
       --color-secondary: var(--color-error);
 
+      --color-border: color-mix(in srgb, var(--color-error) 40%, transparent);
+
       --color-accent-faint: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
           color-mix(in srgb, var(--color-error) 45%, transparent));
       --color-accent-muted: light-dark(color-mix(in srgb, var(--color-error) 35%, transparent),
           color-mix(in srgb, var(--color-error) 55%, transparent));
       --color-accent-inked: light-dark(color-mix(in oklch, var(--color-error) 90%, white),
-          color-mix(in oklch, var(--color-error) 50%, black));
+          color-mix(in oklch, var(--color-error) 90%, white));
 
       --color-primary-inked: light-dark(color-mix(in oklch, var(--color-error) 85%, black),
           color-mix(in oklch, var(--color-error) 50%, white));
@@ -219,6 +235,11 @@
 
     nav>ol>li>a {
       text-decoration: none;
+    }
+
+    table {
+      width: 100%;
+      border: none;
     }
 
     .card {
@@ -294,6 +315,25 @@ function abc() {
         Lorem ipsum
       </p>
     </details>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Col 1</th>
+          <th>Col 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1</td>
+          <td>Row 2</td>
+        </tr>
+        <tr>
+          <td>Row 1</td>
+          <td>Row 2</td>
+        </tr>
+      </tbody>
+    </table>
 
     <br />
     <br />
