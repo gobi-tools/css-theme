@@ -1,10 +1,10 @@
 :root {
   /* typography - font type */
-  --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-family-head: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-body: monospace;
+  --font-family-head: monospace;
   --font-family-mono: monospace;
   /* -code applis to "kbd", "code", "var", "mark"  */
-  --border-radius-code: 6px;
+  --border-radius-code: 0px;
 
   /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 0px;
@@ -25,18 +25,20 @@
 
   /* -note applies to: "fieldsets", "card" class  */
   --border-radius-card: 0px;
-
-  /* color-scheme: light only; */
 }
 
 :root {
   color-scheme: light only;
-  --color-bg: #fff8dc;
-  --color-txt: #111827;
-  --color-txt-on-dark: #f9fafb;
-  --color-primary: #111111;
-  --color-secondary: #d694e7;
+  --color-bg: #FFE3F3;
+  --color-txt: #1F26FF;
+  --color-txt-on-dark: #ffffff;
+  --color-primary: #526cfe;
+  --color-secondary: #ffffff;
+  
+  --color-success: #0026ff;
+  --color-error: #C026D3;
+}
 
-  --color-success: #708d3a;
-  --color-error: #c2412f;
+blockquote, pre>code {
+  border-color: var(--color-primary);
 }

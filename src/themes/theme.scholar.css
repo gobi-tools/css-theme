@@ -1,0 +1,35 @@
+:root {
+  /* typography - font type */
+  --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-head: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-mono: monospace;
+  /* -code applis to "kbd", "code", "var", "mark"  */
+  --border-radius-code: 4px;
+
+  /* -blocks applies to to: "blockquote", "pre", "dialog" */
+  --border-radius-blocks: 0px;
+  --border-left-width-blocks: 0px;
+  --border-left-style-blocks: none;
+  --border-top-width-blocks: 4px;
+  --border-top-style-blocks: solid;
+
+  /* -button applies to: "button" (& "grouped" buttons) */
+  --border-radius-button: 4px;
+
+  /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
+  --border-radius-input: 4px;
+
+  /* -note applies to: "fieldsets", "card" class  */
+  --border-radius-card: 4px;
+}
+
+:root {
+  --color-bg: light-dark(#eff1f5, #2d2a2e);
+  --color-txt: light-dark(#4c4f69, #fcfcfa);
+  --color-txt-on-dark: light-dark(#ffffff, #2d2a2e);
+  --color-primary: light-dark(#1e66f5, #ffd866);
+  --color-secondary: light-dark(#8839ef, #F51E66);
+
+  --color-success: light-dark(#23b157, #6eed9c);
+  --color-error: light-dark(#ef4444, #fa8f8f);
+}

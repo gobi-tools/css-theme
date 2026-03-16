@@ -4,49 +4,37 @@
   --font-family-head: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-mono: monospace;
   /* -code applis to "kbd", "code", "var", "mark"  */
-  --border-radius-code: 6px;
+  --border-radius-code: 0px;
 
   /* -blocks applies to to: "blockquote", "pre", "dialog" */
-  --border-radius-blocks: 4px;
+  --border-radius-blocks: 0px;
   --border-left-width-blocks: 2px;
   --border-left-style-blocks: solid;
   --border-right-width-blocks: 2px;
   --border-right-style-blocks: solid;
   --border-top-width-blocks: 2px;
   --border-top-style-blocks: solid;
-  --border-bottom-width-blocks: 5px;
+  --border-bottom-width-blocks: 2px;
   --border-bottom-style-blocks: solid;
 
   /* -button applies to: "button" (& "grouped" buttons) */
-  --border-radius-button: 4px;
-  --border-bottom-width-button: 5px;
+  --border-radius-button: 0px;
 
   /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
-  --border-radius-input: 4px;
-  --border-bottom-width-select: 5px;
-
+  --border-radius-input: 0px;
+  
   /* -note applies to: "fieldsets", "card" class  */
-  --border-radius-card: 4px;
-  --border-bottom-width-card: 5px;
+  --border-radius-card: 0px;
 }
 
 :root {
-  --color-bg: light-dark(#ffffff, #111827);
-  --color-txt: light-dark(#212121, #d8eaff);
+  color-scheme: light only;
+  --color-bg: #f8f9eb;
+  --color-txt: #212121;
   --color-txt-on-dark: #ffffff;
-  --color-primary: #526cfe;
-  --color-secondary: #8b5cf6;
+  --color-primary: #ffa200;
+  --color-secondary: #D47DBD;
 
   --color-success: #23b157;
-  --color-error: #ef4444;
-}
-
-button,
-input[type=submit],
-blockquote {
-  border-color: var(--color-primary-inked);
-}
-
-pre>code {
-  border: none;
+  --color-error: #d6c124;
 }

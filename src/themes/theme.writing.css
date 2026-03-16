@@ -3,51 +3,13 @@
   --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-head: serif;
   --font-family-mono: monospace;
-  /* colors - base */
-  --color-primary-light-2: #f3e5d0;
-  --color-primary-light-1: #c19a6b;
-  --color-primary: #8b5e3c;
-  --color-primary-dark-1: #704214;
-  --color-primary-dark-2: #3e2723;
-
-  --color-secondary-light-2: #f3f6e5;
-  --color-secondary-light-1: #c9d7a8;
-  --color-secondary: #7a8b4c;
-  --color-secondary-dark-1: #566c2f;
-  --color-secondary-dark-2: #3a4a1e;
-
-  --color-success-light-2: #dcfce7;
-  --color-success-light-1: #4ade80;
-  --color-success: #23b157;
-  --color-success-dark-1: #16a34a;
-  --color-success-dark-2: #14532d;
-
-  --color-error-light-2: #fee2e2;
-  --color-error-light-1: #ffa5a5;
-  --color-error: #ef4444;
-  --color-error-dark-1: #dc2626;
-  --color-error-dark-2: #7f1d1d;
-
-  --color-accent-light-2: #f3f4f6;
-  --color-accent-light-1: #e5e7eb;
-  --color-accent: #6b7280;
-  --color-accent-dark-1: #4b5563;
-  --color-accent-dark-2: #2d2d2d;
-  /* colors - text */
-  --color-txt-on-light: #2d2d2d;
-  --color-txt-on-dark: #f3f4f6;
-  --color-txt: light-dark(var(--color-txt-on-light), var(--color-txt-on-dark));
-  /* colors - bg */
-  --color-bg-light: #fffaf5;
-  --color-bg-dark: #1c1917;
-  --color-bg: light-dark(var(--color-bg-light), var(--color-bg-dark));
   /* -code applis to "kbd", "code", "var", "mark"  */
   --border-radius-code: 6px;
 
   /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 0px;
 
-   /* -button applies to: "button" (& "grouped" buttons) */
+  /* -button applies to: "button" (& "grouped" buttons) */
   --border-radius-button: 20px;
 
   /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
@@ -55,6 +17,17 @@
 
   /* -note applies to: "fieldsets", "card" class  */
   --border-radius-card: 4px;
+}
+
+:root {
+  --color-bg: light-dark(#fbfaf7, #0b0d12);
+  --color-txt: light-dark(#121417, #d8eaff);
+  --color-txt-on-dark: #f9fafb;
+  --color-primary: #8b5e3c;
+  --color-secondary: #109953;
+
+  --color-success: #23b157;
+  --color-error: #ef4444;
 }
 
 blockquote {
