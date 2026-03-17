@@ -1,0 +1,40 @@
+:root {
+  /* typography - font type */
+  --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-head: serif;
+  --font-family-mono: monospace;
+  /* -code applis to "kbd", "code", "var", "mark"  */
+  --border-radius-code: 0px;
+
+  /* -blocks applies to to: "blockquote", "pre", "dialog" */
+  --border-radius-blocks: 0px;
+  --border-left-width-blocks: 2px;
+  --border-left-style-blocks: solid;
+  --border-right-width-blocks: 2px;
+  --border-right-style-blocks: solid;
+  --border-top-width-blocks: 2px;
+  --border-top-style-blocks: solid;
+  --border-bottom-width-blocks: 2px;
+  --border-bottom-style-blocks: solid;
+
+  /* -button applies to: "button" (& "grouped" buttons) */
+  --border-radius-button: 0px;
+
+  /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
+  --border-radius-input: 0px;
+
+  /* -note applies to: "fieldsets", "card" class  */
+  --border-radius-card: 0px;
+}
+
+:root {
+  color-scheme: dark only;
+  --color-bg: #121212;
+  --color-txt: #fffff0;
+  --color-txt-on-dark: #fffff0;
+  --color-primary: #ab8c52;
+  --color-secondary: #ff00;
+
+  --color-success: #23b157;
+  --color-error: #d6c124;
+}
