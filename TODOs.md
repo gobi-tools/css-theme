@@ -1,5 +1,8 @@
 Features
 --------
+- [ ] organise mobile nav a bit better (like here: https://sharif.io/posts)
+- [ ] code + figcaption should go together 
+
 - [ ] breadcrumbs navigation elements
 - [ ] pagination elements
 - [ ] group dialogs with the same name into an accordion menu

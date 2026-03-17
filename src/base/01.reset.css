@@ -134,15 +134,6 @@
 :root,
 .success,
 .error {
-  --color-bg: light-dark(#ffffff, #111827);
-  --color-txt: light-dark(#212121, #d8eaff);
-  --color-txt-on-dark: #ffffff;
-  --color-primary: #526cfe;
-  --color-secondary: #8b5cf6;
-
-  --color-success: #23b157;
-  --color-error: #ef4444;
-
   --color-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
 
   --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
