@@ -41,48 +41,48 @@ export class RouteMaster {
   static baseRoute: string = '';
 
   static home(theme: EThemes): string {
-    console.log('base route', RouteMaster.baseRoute);
-    const base = RouteMaster.baseRoute === '' ? '/' : `/${RouteMaster.baseRoute}/`;
+    const base = RouteMaster.getBase();
     return `${base}${theme}/`;
   }
 
   static doc(route: EDoc, theme: EThemes): string {
+    const base = RouteMaster.getBase();
     switch (route) {
       // basics
-      case EDoc.Typographty: return `/${theme}/pages/docs/basics/${htmlName(Typography)}`;
-      case EDoc.Buttons: return `/${theme}/pages/docs/basics/${htmlName(Buttons)}`;
-      case EDoc.Blockquotes: return `/${theme}/pages/docs/basics/${htmlName(Blockquotes)}`;
-      case EDoc.Code: return `/${theme}/pages/docs/basics/${htmlName(Code)}`;
-      case EDoc.Figures: return `/${theme}/pages/docs/basics/${htmlName(Figures)}`;
-      case EDoc.Lists: return `/${theme}/pages/docs/basics/${htmlName(Lists)}`;
-      case EDoc.Links: return `/${theme}/pages/docs/basics/${htmlName(Links)}`;
-      case EDoc.Summary: return `/${theme}/pages/docs/basics/${htmlName(Summary)}`;
-      case EDoc.Table: return `/${theme}/pages/docs/basics/${htmlName(Table)}`;
-      case EDoc.Tags: return `/${theme}/pages/docs/basics/${htmlName(Tags)}`;
+      case EDoc.Typographty: return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
+      case EDoc.Buttons: return `${base}${theme}/pages/docs/basics/${htmlName(Buttons)}`;
+      case EDoc.Blockquotes: return `${base}${theme}/pages/docs/basics/${htmlName(Blockquotes)}`;
+      case EDoc.Code: return `${base}${theme}/pages/docs/basics/${htmlName(Code)}`;
+      case EDoc.Figures: return `${base}${theme}/pages/docs/basics/${htmlName(Figures)}`;
+      case EDoc.Lists: return `${base}${theme}/pages/docs/basics/${htmlName(Lists)}`;
+      case EDoc.Links: return `${base}${theme}/pages/docs/basics/${htmlName(Links)}`;
+      case EDoc.Summary: return `${base}${theme}/pages/docs/basics/${htmlName(Summary)}`;
+      case EDoc.Table: return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
+      case EDoc.Tags: return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
       // forms
-      case EDoc.FormsCheck: return `/${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
-      case EDoc.FormsDisabled: return `/${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
-      case EDoc.FormsGrouped: return `/${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
-      case EDoc.FormsNormal: return `/${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
-      case EDoc.FormsValidation: return `/${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
+      case EDoc.FormsCheck: return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
+      case EDoc.FormsDisabled: return `${base}${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
+      case EDoc.FormsGrouped: return `${base}${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
+      case EDoc.FormsNormal: return `${base}${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
+      case EDoc.FormsValidation: return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
       // modal
-      case EDoc.Modal: return `/${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
+      case EDoc.Modal: return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
       // navigation
-      case EDoc.Navigation: return `/${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
-      case EDoc.Tabs: return `/${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
-      case EDoc.Menu: return `/${theme}/pages/docs/navigation/${htmlName(Menu)}`;
+      case EDoc.Navigation: return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
+      case EDoc.Tabs: return `${base}${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
+      case EDoc.Menu: return `${base}${theme}/pages/docs/navigation/${htmlName(Menu)}`;
       // extra
-      case EDoc.DarkMode: return `/${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
-      case EDoc.Icons: return `/${theme}/pages/docs/extra/${htmlName(Icons)}`;
-      case EDoc.Mobile: return `/${theme}/pages/docs/extra/${htmlName(Mobile)}`;
+      case EDoc.DarkMode: return `${base}${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
+      case EDoc.Icons: return `${base}${theme}/pages/docs/extra/${htmlName(Icons)}`;
+      case EDoc.Mobile: return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
       // custom
-      case EDoc.Cards: return `/${theme}/pages/docs/custom/${htmlName(Cards)}`;
-      case EDoc.Classes: return `/${theme}/pages/docs/custom/${htmlName(Classes)}`;
-      case EDoc.Columns: return `/${theme}/pages/docs/custom/${htmlName(Columns)}`;
-      case EDoc.Containers: return `/${theme}/pages/docs/custom/${htmlName(Containers)}`;
-      case EDoc.Groups: return `/${theme}/pages/docs/custom/${htmlName(Groups)}`;
-      case EDoc.Heroes: return `/${theme}/pages/docs/custom/${htmlName(Heroes)}`;
-      case EDoc.Theming: return `/${theme}/pages/docs/custom/${htmlName(Theming)}`;
+      case EDoc.Cards: return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
+      case EDoc.Classes: return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
+      case EDoc.Columns: return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
+      case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
+      case EDoc.Groups: return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
+      case EDoc.Heroes: return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
+      case EDoc.Theming: return `${base}${theme}/pages/docs/custom/${htmlName(Theming)}`;
     }
   }
 
@@ -151,16 +151,21 @@ export class RouteMaster {
   }
 
   static showcase(route: EShowcase, theme: EThemes): string {
+    const base = RouteMaster.getBase();
     switch (route) {
-      case EShowcase.DekstopMenu: return `/${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
-      case EShowcase.LayoutHeroSimple: return `/${theme}/pages/showcase/${htmlName(LayoutHeroSimple)}`;
-      case EShowcase.LayoutHeroSub: return `/${theme}/pages/showcase/${htmlName(LayoutHeroSub)}`;
-      case EShowcase.MobileColumns: return `/${theme}/pages/showcase/${htmlName(MobileColumns)}`;
-      case EShowcase.MobileMenu: return `/${theme}/pages/showcase/${htmlName(MobileMenu)}`;
-      case EShowcase.MobileNav: return `/${theme}/pages/showcase/${htmlName(MobileNav)}`;
-      case EShowcase.MobileTabsNav: return `/${theme}/pages/showcase/${htmlName(MobileTabs)}`;
-      case EShowcase.MobileTypography: return `/${theme}/pages/showcase/${htmlName(MobileTypography)}`;
+      case EShowcase.DekstopMenu: return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
+      case EShowcase.LayoutHeroSimple: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSimple)}`;
+      case EShowcase.LayoutHeroSub: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSub)}`;
+      case EShowcase.MobileColumns: return `${base}${theme}/pages/showcase/${htmlName(MobileColumns)}`;
+      case EShowcase.MobileMenu: return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
+      case EShowcase.MobileNav: return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;
+      case EShowcase.MobileTabsNav: return `${base}${theme}/pages/showcase/${htmlName(MobileTabs)}`;
+      case EShowcase.MobileTypography: return `${base}${theme}/pages/showcase/${htmlName(MobileTypography)}`;
     }
+  }
+
+  private static getBase(): string {
+    return RouteMaster.baseRoute === '' ? '/' : `/${RouteMaster.baseRoute}/`;
   }
 }
 

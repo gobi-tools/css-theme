@@ -6,7 +6,7 @@ import { RouteMaster } from "../utils/routes";
 export default function DocLayout({ theme, children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(undefined);
   const [selectedDoc, setSelectedDoc] = useState<EDoc | undefined>(undefined);
-
+  
   const toggleMenuOpen = () => {
     setIsMenuOpen(isMenuOpen === undefined ? true : false);
   };
@@ -147,7 +147,7 @@ export default function DocLayout({ theme, children }) {
               </li>
               <li aria-selected={selectedDoc === EDoc.Containers}>
                 <a href={RouteMaster.doc(EDoc.Containers, theme)}>Containers</a>
-              </li>              
+              </li>
               <li aria-selected={selectedDoc === EDoc.Groups}>
                 <a href={RouteMaster.doc(EDoc.Groups, theme)}>Groups</a>
               </li>

@@ -7,12 +7,12 @@ export default function HomeLayout({ theme, children }) {
   const [baseRoute, setBaseRoute] = useState(undefined);
 
   useEffect(() => {
-    console.log('I AM HERE');
     if (typeof window !== 'undefined') {
       const path = window.location.pathname;
-      RouteMaster.baseRoute = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : '';
-      console.log('set route to', RouteMaster.baseRoute);
-      setBaseRoute(RouteMaster.baseRoute);
+      const baseRoute = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : '';
+      RouteMaster.baseRoute = baseRoute;
+      setBaseRoute(baseRoute);
+      console.log('set state base route to', baseRoute);
     }
   }, [baseRoute]);
   

@@ -3412,76 +3412,76 @@ function Theming({ theme }) {
 var RouteMaster = class _RouteMaster {
   static baseRoute = "";
   static home(theme) {
-    console.log("base route", _RouteMaster.baseRoute);
-    const base = _RouteMaster.baseRoute === "" ? "/" : `/${_RouteMaster.baseRoute}/`;
+    const base = _RouteMaster.getBase();
     return `${base}${theme}/`;
   }
   static doc(route, theme) {
+    const base = _RouteMaster.getBase();
     switch (route) {
       // basics
       case "typography" /* Typographty */:
-        return `/${theme}/pages/docs/basics/${htmlName(Typography)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
       case "buttons" /* Buttons */:
-        return `/${theme}/pages/docs/basics/${htmlName(Buttons)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Buttons)}`;
       case "blockquotes" /* Blockquotes */:
-        return `/${theme}/pages/docs/basics/${htmlName(Blockquotes)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Blockquotes)}`;
       case "code" /* Code */:
-        return `/${theme}/pages/docs/basics/${htmlName(Code)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Code)}`;
       case "figures" /* Figures */:
-        return `/${theme}/pages/docs/basics/${htmlName(Figures)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Figures)}`;
       case "lists" /* Lists */:
-        return `/${theme}/pages/docs/basics/${htmlName(Lists)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Lists)}`;
       case "links" /* Links */:
-        return `/${theme}/pages/docs/basics/${htmlName(Links)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Links)}`;
       case "summary" /* Summary */:
-        return `/${theme}/pages/docs/basics/${htmlName(Summary)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Summary)}`;
       case "table" /* Table */:
-        return `/${theme}/pages/docs/basics/${htmlName(Table)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
       case "tags" /* Tags */:
-        return `/${theme}/pages/docs/basics/${htmlName(Tags)}`;
+        return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
       // forms
       case "forms-check" /* FormsCheck */:
-        return `/${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
       case "forms-disabled" /* FormsDisabled */:
-        return `/${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
       case "forms-grouped" /* FormsGrouped */:
-        return `/${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
       case "forms-normal" /* FormsNormal */:
-        return `/${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
       case "forms-validation" /* FormsValidation */:
-        return `/${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
       // modal
       case "modal" /* Modal */:
-        return `/${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
+        return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
       // navigation
       case "navigation" /* Navigation */:
-        return `/${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
+        return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
       case "tabs" /* Tabs */:
-        return `/${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
+        return `${base}${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
       case "menu" /* Menu */:
-        return `/${theme}/pages/docs/navigation/${htmlName(Menu)}`;
+        return `${base}${theme}/pages/docs/navigation/${htmlName(Menu)}`;
       // extra
       case "dark-mode" /* DarkMode */:
-        return `/${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
+        return `${base}${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
       case "icons" /* Icons */:
-        return `/${theme}/pages/docs/extra/${htmlName(Icons)}`;
+        return `${base}${theme}/pages/docs/extra/${htmlName(Icons)}`;
       case "mobile" /* Mobile */:
-        return `/${theme}/pages/docs/extra/${htmlName(Mobile)}`;
+        return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
       // custom
       case "cards" /* Cards */:
-        return `/${theme}/pages/docs/custom/${htmlName(Cards)}`;
+        return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
       case "classes" /* Classes */:
-        return `/${theme}/pages/docs/custom/${htmlName(Classes)}`;
+        return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
       case "cols" /* Columns */:
-        return `/${theme}/pages/docs/custom/${htmlName(Columns)}`;
+        return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
       case "containers" /* Containers */:
-        return `/${theme}/pages/docs/custom/${htmlName(Containers)}`;
+        return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case "groups" /* Groups */:
-        return `/${theme}/pages/docs/custom/${htmlName(Groups)}`;
+        return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
       case "heroes" /* Heroes */:
-        return `/${theme}/pages/docs/custom/${htmlName(Heroes)}`;
+        return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
       case "theming" /* Theming */:
-        return `/${theme}/pages/docs/custom/${htmlName(Theming)}`;
+        return `${base}${theme}/pages/docs/custom/${htmlName(Theming)}`;
     }
   }
   static getDocFromRoute(path) {
@@ -3575,24 +3575,28 @@ var RouteMaster = class _RouteMaster {
     return void 0;
   }
   static showcase(route, theme) {
+    const base = _RouteMaster.getBase();
     switch (route) {
       case "desktop-menu" /* DekstopMenu */:
-        return `/${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
+        return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
       case "layout-hero-simple" /* LayoutHeroSimple */:
-        return `/${theme}/pages/showcase/${htmlName(LayoutHeroSimple)}`;
+        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSimple)}`;
       case "layout-hero-sub" /* LayoutHeroSub */:
-        return `/${theme}/pages/showcase/${htmlName(LayoutHeroSub)}`;
+        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSub)}`;
       case "mobile-columns" /* MobileColumns */:
-        return `/${theme}/pages/showcase/${htmlName(MobileColumns)}`;
+        return `${base}${theme}/pages/showcase/${htmlName(MobileColumns)}`;
       case "mobile-menu" /* MobileMenu */:
-        return `/${theme}/pages/showcase/${htmlName(MobileMenu)}`;
+        return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
       case "mobile-nav" /* MobileNav */:
-        return `/${theme}/pages/showcase/${htmlName(MobileNav)}`;
+        return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;
       case "mobile-tabs-nav" /* MobileTabsNav */:
-        return `/${theme}/pages/showcase/${htmlName(MobileTabs)}`;
+        return `${base}${theme}/pages/showcase/${htmlName(MobileTabs)}`;
       case "mobile-typography" /* MobileTypography */:
-        return `/${theme}/pages/showcase/${htmlName(MobileTypography)}`;
+        return `${base}${theme}/pages/showcase/${htmlName(MobileTypography)}`;
     }
+  }
+  static getBase() {
+    return _RouteMaster.baseRoute === "" ? "/" : `/${_RouteMaster.baseRoute}/`;
   }
 };
 function htmlName(elem) {
@@ -3672,12 +3676,12 @@ import { Fragment as Fragment9, jsx as jsx38, jsxs as jsxs38 } from "https://esm
 function HomeLayout({ theme, children }) {
   const [baseRoute, setBaseRoute] = useState5(void 0);
   useEffect(() => {
-    console.log("I AM HERE");
     if (typeof window !== "undefined") {
       const path = window.location.pathname;
-      RouteMaster.baseRoute = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : "";
-      console.log("set route to", RouteMaster.baseRoute);
-      setBaseRoute(RouteMaster.baseRoute);
+      const baseRoute2 = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : "";
+      RouteMaster.baseRoute = baseRoute2;
+      setBaseRoute(baseRoute2);
+      console.log("set state base route to", baseRoute2);
     }
   }, [baseRoute]);
   return /* @__PURE__ */ jsxs38(Fragment9, { children: [
