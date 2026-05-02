@@ -1,12 +1,12 @@
 @font-face {
   font-family: "FontWithASyntaxHighlighter";
-  src: url("./FontWithASyntaxHighlighter-Regular-Dark.woff2") format("woff2");
+  src: url("https://github.com/gobi-tools/css-theme/raw/refs/heads/main/public/FontWithASyntaxHighlighter-Regular-Dark.woff2") format("woff2");
 }
 
 @media (prefers-color-scheme: light) {
   @font-face {
     font-family: "FontWithASyntaxHighlighter";
-    src: url("./FontWithASyntaxHighlighter-Regular-Light.woff2") format("woff2");
+    src: url("https://github.com/gobi-tools/css-theme/raw/refs/heads/main/public/FontWithASyntaxHighlighter-Regular-Light.woff2") format("woff2");
   }
 }
 

@@ -34,7 +34,7 @@ export default function Document({ theme, children }) {
         <meta name="color-scheme" content="light dark" />
 
         <link rel="stylesheet" href={`https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@refs/heads/main/dist/theme.${theme}.min.css`}/>
-        <link rel="stylesheet" href={`https://raw.githubusercontent.com/gobi-tools/css-theme/refs/heads/main/pages/res/custom.${typography}.css`}/>
+        <link rel="stylesheet" href={`https://raw.githubusercontent.com/gobi-tools/css-theme/refs/heads/main/public/custom.${typography}.css`}/>
       </head>
       <body>
         <div className="container-wide">
