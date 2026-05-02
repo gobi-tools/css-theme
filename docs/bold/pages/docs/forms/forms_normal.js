@@ -1899,6 +1899,7 @@ function DialogModal(props) {
 // pages/pages/docs/navigation/Navigation.tsx
 import { jsx as jsx19, jsxs as jsxs19 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Navigation({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs19(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs19("section", { className: "row", children: [
       /* @__PURE__ */ jsxs19("div", { children: [
@@ -2106,7 +2107,7 @@ function Navigation({ theme }) {
       /* @__PURE__ */ jsxs19("div", { children: [
         /* @__PURE__ */ jsx19("p", { children: "Finally, the navigation bar is responsive. On large displays it expands horizontally and on smaller displays it switches to a vertical layout." }),
         /* @__PURE__ */ jsxs19("figure", { children: [
-          /* @__PURE__ */ jsx19("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-nav" /* MobileNav */, theme) }),
+          /* @__PURE__ */ jsx19("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-nav" /* MobileNav */, theme, route) }),
           /* @__PURE__ */ jsx19("figcaption", { children: "Showcase of navigation on a smaller device" })
         ] })
       ] }),
@@ -2185,6 +2186,7 @@ function Tab3() {
   ] });
 }
 function Tabs({ theme }) {
+  const route = useRoute();
   const [selected, setSelected] = useState5("tab-1");
   return /* @__PURE__ */ jsxs20(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs20("section", { className: "row", children: [
@@ -2251,7 +2253,7 @@ function Tabs({ theme }) {
       /* @__PURE__ */ jsxs20("div", { children: [
         /* @__PURE__ */ jsx20("p", { children: "It's also responsive. On larger screens it will expand horizontally, whilst on smaller screens (or smaller containers in general) it will expand vertically." }),
         /* @__PURE__ */ jsxs20("figure", { children: [
-          /* @__PURE__ */ jsx20("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-tabs-nav" /* MobileTabsNav */, theme) }),
+          /* @__PURE__ */ jsx20("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-tabs-nav" /* MobileTabsNav */, theme, route) }),
           /* @__PURE__ */ jsx20("figcaption", { children: "Showcase of tabbed navigation in a smaller container or device." })
         ] })
       ] }),
@@ -2285,6 +2287,7 @@ function Tabs({ theme }) {
 // pages/pages/docs/navigation/Menu.tsx
 import { jsx as jsx21, jsxs as jsxs21 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Menu({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs21(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs21("section", { className: "row", children: [
       /* @__PURE__ */ jsxs21("div", { children: [
@@ -2337,7 +2340,7 @@ function Menu({ theme }) {
           " element) will automatically move from the top of the page to the bottom, mimicking the classic mobile navigation."
         ] }),
         /* @__PURE__ */ jsxs21("figure", { children: [
-          /* @__PURE__ */ jsx21("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-menu" /* MobileMenu */, theme) }),
+          /* @__PURE__ */ jsx21("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-menu" /* MobileMenu */, theme, route) }),
           /* @__PURE__ */ jsx21("figcaption", { children: "Showcase of menu navigation on smaller device" })
         ] })
       ] }),
@@ -3170,6 +3173,7 @@ function Classes({ theme }) {
 // pages/pages/docs/custom/Columns.tsx
 import { jsx as jsx35, jsxs as jsxs35 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Columns({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs35(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs35("section", { className: "row", children: [
       /* @__PURE__ */ jsxs35("div", { children: [
@@ -3239,7 +3243,7 @@ function Columns({ theme }) {
           ", etc)."
         ] }),
         /* @__PURE__ */ jsxs35("figure", { children: [
-          /* @__PURE__ */ jsx35("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-columns" /* MobileColumns */, theme) }),
+          /* @__PURE__ */ jsx35("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-columns" /* MobileColumns */, theme, route) }),
           /* @__PURE__ */ jsx35("figcaption", { children: "Showcase of columns on a smaller device." })
         ] })
       ] }),
@@ -3439,6 +3443,7 @@ function Groups({ theme }) {
 // pages/pages/docs/custom/Heroes.tsx
 import { jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Heroes({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs38(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs38("section", { className: "row", children: [
       /* @__PURE__ */ jsxs38("div", { children: [
@@ -3452,7 +3457,7 @@ function Heroes({ theme }) {
           /* @__PURE__ */ jsx38("code", { children: "hero" }),
           " class to highlight the main webpage navigation."
         ] }),
-        /* @__PURE__ */ jsx38("iframe", { scrolling: "no", width: "100%", height: 275, src: RouteMaster.showcase("layout-hero-simple" /* LayoutHeroSimple */, theme) })
+        /* @__PURE__ */ jsx38("iframe", { scrolling: "no", width: "100%", height: 275, src: RouteMaster.showcase("layout-hero-simple" /* LayoutHeroSimple */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx38("div", { children: /* @__PURE__ */ jsx38("pre", { children: /* @__PURE__ */ jsx38("code", { children: `<header class="hero">
   <nav>
@@ -3469,7 +3474,7 @@ function Heroes({ theme }) {
     /* @__PURE__ */ jsxs38("section", { className: "row", children: [
       /* @__PURE__ */ jsxs38("div", { children: [
         /* @__PURE__ */ jsx38("p", { children: "You can also create more complex layouts, to highlight a call to action for a web page." }),
-        /* @__PURE__ */ jsx38("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showcase("layout-hero-sub" /* LayoutHeroSub */, theme) })
+        /* @__PURE__ */ jsx38("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showcase("layout-hero-sub" /* LayoutHeroSub */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx38("div", { children: /* @__PURE__ */ jsx38("pre", { children: /* @__PURE__ */ jsx38("code", { children: `<header>
   <nav>

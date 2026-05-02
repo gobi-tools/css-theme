@@ -1,8 +1,11 @@
 import DocLayout from "../../../common/components/DocsLayout";
+import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
 import { EShowcase } from "../../../common/utils/types";
 
 export default function Heroes({ theme }) {
+  const route = useRoute();
+  
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -15,7 +18,7 @@ export default function Heroes({ theme }) {
             For example, you can use the <code>hero</code> class to highlight the
             main webpage navigation.
           </p>
-          <iframe scrolling="no" width="100%" height={275} src={RouteMaster.showcase(EShowcase.LayoutHeroSimple, theme)} />
+          <iframe scrolling="no" width="100%" height={275} src={RouteMaster.showcase(EShowcase.LayoutHeroSimple, theme, route)} />
         </div>
         <div>
           <pre><code>
@@ -40,7 +43,7 @@ export default function Heroes({ theme }) {
             You can also create more complex layouts, to highlight 
             a call to action for a web page.
           </p>
-          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showcase(EShowcase.LayoutHeroSub, theme)} />
+          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showcase(EShowcase.LayoutHeroSub, theme, route)} />
         </div>
         <div>
           <pre><code>

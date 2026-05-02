@@ -1,8 +1,11 @@
 import DocLayout from "../../../common/components/DocsLayout";
+import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
 import { EShowcase } from "../../../common/utils/types";
 
 export default function Menu({ theme }) {
+  const route = useRoute();
+    
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -64,7 +67,7 @@ export default function Menu({ theme }) {
             classic mobile navigation.
           </p>
           <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileMenu, theme)} />
+            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileMenu, theme, route)} />
             <figcaption>Showcase of menu navigation on smaller device</figcaption>
           </figure>
         </div>
