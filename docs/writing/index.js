@@ -16,7 +16,6 @@ function useRoute() {
       const path = window.location.pathname;
       const baseRoute = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : "";
       setRoute(baseRoute);
-      console.log("Set route to", baseRoute);
     }
   }, []);
   return route;
