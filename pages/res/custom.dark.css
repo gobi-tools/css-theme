@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "FontWithASyntaxHighlighter";
+  src: url("./FontWithASyntaxHighlighter-Regular-Dark.woff2") format("woff2");
+}
+
+pre>code {
+  font-family: "FontWithASyntaxHighlighter", monospace;
+}

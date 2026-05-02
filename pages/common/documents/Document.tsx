@@ -1,3 +1,4 @@
+import { PUB_SUBDOMAIN } from "../utils/constants";
 import { EThemes } from "../utils/types";
 
 type TThemeMode = 'light-dark' | 'light' | 'dark';
@@ -33,8 +34,10 @@ export default function Document({ theme, children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="color-scheme" content="light dark" />
 
-        <link rel="stylesheet" href={`https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@refs/heads/main/dist/theme.${theme}.min.css`}/>
-        <link rel="stylesheet" href={`https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@refs/heads/main/public/custom.${typography}.css`}/>
+        <link rel="stylesheet" href={`/res/theme.${theme}.min.css`}/>
+        <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/res/theme.${theme}.min.css`}/>
+        <link rel="stylesheet" href={`/res/custom.${typography}.css`}/>
+        <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/res/custom.${typography}.css`}/>
       </head>
       <body>
         <div className="container-wide">
