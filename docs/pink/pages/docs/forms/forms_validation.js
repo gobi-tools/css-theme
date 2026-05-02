@@ -3402,72 +3402,7 @@ var RouteMaster = class _RouteMaster {
   }
   static doc(route, theme) {
     const base = _RouteMaster.getBase();
-    switch (route) {
-      // basics
-      case "typography" /* Typographty */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
-      case "buttons" /* Buttons */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Buttons)}`;
-      case "blockquotes" /* Blockquotes */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Blockquotes)}`;
-      case "code" /* Code */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Code)}`;
-      case "figures" /* Figures */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Figures)}`;
-      case "lists" /* Lists */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Lists)}`;
-      case "links" /* Links */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Links)}`;
-      case "summary" /* Summary */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Summary)}`;
-      case "table" /* Table */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
-      case "tags" /* Tags */:
-        return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
-      // forms
-      case "forms-check" /* FormsCheck */:
-        return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
-      case "forms-disabled" /* FormsDisabled */:
-        return `${base}${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
-      case "forms-grouped" /* FormsGrouped */:
-        return `${base}${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
-      case "forms-normal" /* FormsNormal */:
-        return `${base}${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
-      case "forms-validation" /* FormsValidation */:
-        return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
-      // modal
-      case "modal" /* Modal */:
-        return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
-      // navigation
-      case "navigation" /* Navigation */:
-        return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
-      case "tabs" /* Tabs */:
-        return `${base}${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
-      case "menu" /* Menu */:
-        return `${base}${theme}/pages/docs/navigation/${htmlName(Menu)}`;
-      // extra
-      case "dark-mode" /* DarkMode */:
-        return `${base}${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
-      case "icons" /* Icons */:
-        return `${base}${theme}/pages/docs/extra/${htmlName(Icons)}`;
-      case "mobile" /* Mobile */:
-        return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
-      // custom
-      case "cards" /* Cards */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
-      case "classes" /* Classes */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
-      case "cols" /* Columns */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
-      case "containers" /* Containers */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
-      case "groups" /* Groups */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
-      case "heroes" /* Heroes */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
-      case "theming" /* Theming */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Theming)}`;
-    }
+    return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
   }
   static getDocFromRoute(path) {
     const items = path.split("/docs/");
