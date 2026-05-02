@@ -1,8 +1,11 @@
 import HomeLayout from "./common/components/HomeLayout";
+import { useRoute } from "./common/effects/useRoute";
 import { RouteMaster } from "./common/utils/routes";
 import { EDoc, EThemes } from "./common/utils/types";
 
 export default function Index(props: { theme: EThemes }) {
+  const route = useRoute();
+
   return (
     <HomeLayout theme={props.theme}>
       <section>
@@ -18,7 +21,7 @@ export default function Index(props: { theme: EThemes }) {
       </section>
       <section className="align-center">
         <p>
-          <a href={RouteMaster.doc(EDoc.Typographty, props.theme)}>
+          <a href={RouteMaster.doc(EDoc.Typographty, props.theme, route)}>
             <button>
               Documentation
             </button>

@@ -40,51 +40,50 @@ import Theming from "../../pages/docs/custom/Theming";
 export class RouteMaster {
   static baseRoute: string = '';
 
-  static home(theme: EThemes): string {
-    const base = RouteMaster.getBase();
+  static home(theme: EThemes, domain: string): string {
+    const base = RouteMaster.getBase(domain);
     return `${base}${theme}/`;
   }
 
-  static doc(route: EDoc, theme: EThemes): string {
-    const base = RouteMaster.getBase();
-    return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
-    // switch (route) {
-    //   // basics
-    //   case EDoc.Typographty: return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
-    //   case EDoc.Buttons: return `${base}${theme}/pages/docs/basics/${htmlName(Buttons)}`;
-    //   case EDoc.Blockquotes: return `${base}${theme}/pages/docs/basics/${htmlName(Blockquotes)}`;
-    //   case EDoc.Code: return `${base}${theme}/pages/docs/basics/${htmlName(Code)}`;
-    //   case EDoc.Figures: return `${base}${theme}/pages/docs/basics/${htmlName(Figures)}`;
-    //   case EDoc.Lists: return `${base}${theme}/pages/docs/basics/${htmlName(Lists)}`;
-    //   case EDoc.Links: return `${base}${theme}/pages/docs/basics/${htmlName(Links)}`;
-    //   case EDoc.Summary: return `${base}${theme}/pages/docs/basics/${htmlName(Summary)}`;
-    //   case EDoc.Table: return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
-    //   case EDoc.Tags: return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
-    //   // forms
-    //   case EDoc.FormsCheck: return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
-    //   case EDoc.FormsDisabled: return `${base}${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
-    //   case EDoc.FormsGrouped: return `${base}${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
-    //   case EDoc.FormsNormal: return `${base}${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
-    //   case EDoc.FormsValidation: return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
-    //   // modal
-    //   case EDoc.Modal: return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
-    //   // navigation
-    //   case EDoc.Navigation: return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
-    //   case EDoc.Tabs: return `${base}${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
-    //   case EDoc.Menu: return `${base}${theme}/pages/docs/navigation/${htmlName(Menu)}`;
-    //   // extra
-    //   case EDoc.DarkMode: return `${base}${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
-    //   case EDoc.Icons: return `${base}${theme}/pages/docs/extra/${htmlName(Icons)}`;
-    //   case EDoc.Mobile: return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
-    //   // custom
-    //   case EDoc.Cards: return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
-    //   case EDoc.Classes: return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
-    //   case EDoc.Columns: return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
-    //   case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
-    //   case EDoc.Groups: return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
-    //   case EDoc.Heroes: return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
-    //   case EDoc.Theming: return `${base}${theme}/pages/docs/custom/${htmlName(Theming)}`;
-    // }
+  static doc(route: EDoc, theme: EThemes, domain: string): string {
+    const base = RouteMaster.getBase(domain);
+    switch (route) {
+      // basics
+      case EDoc.Typographty: return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
+      case EDoc.Buttons: return `${base}${theme}/pages/docs/basics/${htmlName(Buttons)}`;
+      case EDoc.Blockquotes: return `${base}${theme}/pages/docs/basics/${htmlName(Blockquotes)}`;
+      case EDoc.Code: return `${base}${theme}/pages/docs/basics/${htmlName(Code)}`;
+      case EDoc.Figures: return `${base}${theme}/pages/docs/basics/${htmlName(Figures)}`;
+      case EDoc.Lists: return `${base}${theme}/pages/docs/basics/${htmlName(Lists)}`;
+      case EDoc.Links: return `${base}${theme}/pages/docs/basics/${htmlName(Links)}`;
+      case EDoc.Summary: return `${base}${theme}/pages/docs/basics/${htmlName(Summary)}`;
+      case EDoc.Table: return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
+      case EDoc.Tags: return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
+      // forms
+      case EDoc.FormsCheck: return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
+      case EDoc.FormsDisabled: return `${base}${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
+      case EDoc.FormsGrouped: return `${base}${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
+      case EDoc.FormsNormal: return `${base}${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
+      case EDoc.FormsValidation: return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
+      // modal
+      case EDoc.Modal: return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
+      // navigation
+      case EDoc.Navigation: return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
+      case EDoc.Tabs: return `${base}${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
+      case EDoc.Menu: return `${base}${theme}/pages/docs/navigation/${htmlName(Menu)}`;
+      // extra
+      case EDoc.DarkMode: return `${base}${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
+      case EDoc.Icons: return `${base}${theme}/pages/docs/extra/${htmlName(Icons)}`;
+      case EDoc.Mobile: return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
+      // custom
+      case EDoc.Cards: return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
+      case EDoc.Classes: return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
+      case EDoc.Columns: return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
+      case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
+      case EDoc.Groups: return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
+      case EDoc.Heroes: return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
+      case EDoc.Theming: return `${base}${theme}/pages/docs/custom/${htmlName(Theming)}`;
+    }
   }
 
   static getDocFromRoute(path: string): EDoc | undefined {
@@ -151,8 +150,8 @@ export class RouteMaster {
     return undefined;
   }
 
-  static showcase(route: EShowcase, theme: EThemes): string {
-    const base = RouteMaster.getBase();
+  static showcase(route: EShowcase, theme: EThemes, domain: string): string {
+    const base = RouteMaster.getBase(domain);
     switch (route) {
       case EShowcase.DekstopMenu: return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
       case EShowcase.LayoutHeroSimple: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSimple)}`;
@@ -165,8 +164,9 @@ export class RouteMaster {
     }
   }
 
-  private static getBase(): string {
-    return RouteMaster.baseRoute === '' ? '/' : `/${RouteMaster.baseRoute}/`;
+  private static getBase(domain?: string): string {
+    if (!domain) return '/';
+    return domain === '' ? '/' : `/${domain}/`;
   }
 }
 

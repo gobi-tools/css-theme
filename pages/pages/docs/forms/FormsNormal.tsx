@@ -2,8 +2,10 @@ import { useState } from "react";
 import { EDoc, ELinks } from "../../../common/utils/types";
 import { RouteMaster } from "../../../common/utils/routes";
 import DocLayout from "../../../common/components/DocsLayout";
+import { useRoute } from "../../../common/effects/useRoute";
 
 export default function FormsNormal({ theme }) {
+  const route = useRoute();
   const [volume, setVolume] = useState(50);
 
   return (
@@ -176,15 +178,15 @@ export default function FormsNormal({ theme }) {
             </p>
             <p>
               In the example above
-              we're separating inputs into two separate <a href={RouteMaster.doc(EDoc.Columns, theme)}>columns</a>, so we
+              we're separating inputs into two separate <a href={RouteMaster.doc(EDoc.Columns, theme, route)}>columns</a>, so we
               can pack more information in the same space.
             </p>
             <p>
-              We're also using <a href={RouteMaster.doc(EDoc.Blockquotes, theme)}>blockquotes</a> to highlight important information.
+              We're also using <a href={RouteMaster.doc(EDoc.Blockquotes, theme, route)}>blockquotes</a> to highlight important information.
             </p>
             <p>
               We're using both <code>submit</code> and <code>reset</code> type inputs.
-              Please note these inputs are styled to look exactly like <a href={RouteMaster.doc(EDoc.Blockquotes, theme)}>buttons</a>.
+              Please note these inputs are styled to look exactly like <a href={RouteMaster.doc(EDoc.Blockquotes, theme, route)}>buttons</a>.
             </p>
           </div>
           <div>

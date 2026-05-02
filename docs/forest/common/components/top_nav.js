@@ -2,26 +2,32 @@
 import React from "https://esm.sh/react@19.2.0";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
+// pages/common/effects/useRoute.ts
+import { useState, useEffect } from "https://esm.sh/react@19.2.0";
+
 // pages/common/utils/constants.ts
 var PUB_SUBDOMAIN = "css-theme";
+
+// pages/common/effects/useRoute.ts
+function useRoute() {
+  const [route, setRoute] = useState(void 0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const path = window.location.pathname;
+      const baseRoute = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : "";
+      setRoute(baseRoute);
+      console.log("Set route to", baseRoute);
+    }
+  }, []);
+  return route;
+}
 
 // pages/common/components/DocsLayout.tsx
 import { useEffect as useEffect2, useState as useState2 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/components/HomeLayout.tsx
-import { useEffect, useState } from "https://esm.sh/react@19.2.0";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function HomeLayout({ theme, children }) {
-  const [baseRoute, setBaseRoute] = useState(void 0);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const path = window.location.pathname;
-      const baseRoute2 = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : "";
-      RouteMaster.baseRoute = baseRoute2;
-      setBaseRoute(baseRoute2);
-      console.log("set state base route to", baseRoute2);
-    }
-  }, [baseRoute]);
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx(TopNav, { theme }),
     /* @__PURE__ */ jsx("main", { children: /* @__PURE__ */ jsx("article", { children }) })
@@ -34,6 +40,7 @@ var PRODUCT_NAME = "CSS Theme";
 // pages/common/components/DocsLayout.tsx
 import { jsx as jsx2, jsxs as jsxs2 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function DocLayout({ theme, children }) {
+  const route = useRoute();
   const [isMenuOpen, setIsMenuOpen] = useState2(void 0);
   const [selectedDoc, setSelectedDoc] = useState2(void 0);
   const toggleMenuOpen = () => {
@@ -65,53 +72,53 @@ function DocLayout({ theme, children }) {
       /* @__PURE__ */ jsxs2("nav", { className: isMenuOpen === false ? "hide-on-mobile" : isMenuOpen === void 0 ? "hide-on-mobile" : "", children: [
         /* @__PURE__ */ jsx2("b", { children: "Basics" }),
         /* @__PURE__ */ jsxs2("ol", { children: [
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "typography" /* Typographty */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("typography" /* Typographty */, theme), children: "Typography" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "buttons" /* Buttons */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme), children: "Buttons" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "tags" /* Tags */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("tags" /* Tags */, theme), children: "Tags" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "links" /* Links */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("links" /* Links */, theme), children: "Links" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "lists" /* Lists */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("lists" /* Lists */, theme), children: "Lists" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "blockquotes" /* Blockquotes */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme), children: "Blokquotes" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "summary" /* Summary */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("summary" /* Summary */, theme), children: "Summary" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "code" /* Code */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("code" /* Code */, theme), children: "Code" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "table" /* Table */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("table" /* Table */, theme), children: "Table" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "figures" /* Figures */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("figures" /* Figures */, theme), children: "Figures" }) })
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "typography" /* Typographty */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("typography" /* Typographty */, theme, route), children: "Typography" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "buttons" /* Buttons */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme, route), children: "Buttons" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "tags" /* Tags */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("tags" /* Tags */, theme, route), children: "Tags" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "links" /* Links */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("links" /* Links */, theme, route), children: "Links" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "lists" /* Lists */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("lists" /* Lists */, theme, route), children: "Lists" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "blockquotes" /* Blockquotes */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme, route), children: "Blokquotes" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "summary" /* Summary */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("summary" /* Summary */, theme, route), children: "Summary" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "code" /* Code */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("code" /* Code */, theme, route), children: "Code" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "table" /* Table */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "Table" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "figures" /* Figures */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("figures" /* Figures */, theme, route), children: "Figures" }) })
         ] }),
         /* @__PURE__ */ jsx2("br", {}),
         /* @__PURE__ */ jsx2("b", { children: "Forms" }),
         /* @__PURE__ */ jsxs2("ol", { children: [
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-normal" /* FormsNormal */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-normal" /* FormsNormal */, theme), children: "Normal" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-check" /* FormsCheck */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-check" /* FormsCheck */, theme), children: "Checks & Radios" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-grouped" /* FormsGrouped */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-grouped" /* FormsGrouped */, theme), children: "Grouped" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-disabled" /* FormsDisabled */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-disabled" /* FormsDisabled */, theme), children: "Disabled" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-validation" /* FormsValidation */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-validation" /* FormsValidation */, theme), children: "Validation" }) })
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-normal" /* FormsNormal */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-normal" /* FormsNormal */, theme, route), children: "Normal" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-check" /* FormsCheck */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-check" /* FormsCheck */, theme, route), children: "Checks & Radios" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-grouped" /* FormsGrouped */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-grouped" /* FormsGrouped */, theme, route), children: "Grouped" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-disabled" /* FormsDisabled */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-disabled" /* FormsDisabled */, theme, route), children: "Disabled" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "forms-validation" /* FormsValidation */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("forms-validation" /* FormsValidation */, theme, route), children: "Validation" }) })
         ] }),
         /* @__PURE__ */ jsx2("br", {}),
         /* @__PURE__ */ jsx2("b", { children: "Dialogs" }),
-        /* @__PURE__ */ jsx2("ol", { children: /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "modal" /* Modal */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("modal" /* Modal */, theme), children: "Modal" }) }) }),
+        /* @__PURE__ */ jsx2("ol", { children: /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "modal" /* Modal */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("modal" /* Modal */, theme, route), children: "Modal" }) }) }),
         /* @__PURE__ */ jsx2("br", {}),
         /* @__PURE__ */ jsx2("b", { children: "Navigation" }),
         /* @__PURE__ */ jsxs2("ol", { children: [
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "navigation" /* Navigation */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme), children: "Basic" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "tabs" /* Tabs */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("tabs" /* Tabs */, theme), children: "Tabs" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "menu" /* Menu */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("menu" /* Menu */, theme), children: "Menu" }) })
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "navigation" /* Navigation */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "Basic" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "tabs" /* Tabs */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("tabs" /* Tabs */, theme, route), children: "Tabs" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "menu" /* Menu */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("menu" /* Menu */, theme, route), children: "Menu" }) })
         ] }),
         /* @__PURE__ */ jsx2("br", {}),
         /* @__PURE__ */ jsx2("b", { children: "Extra" }),
         /* @__PURE__ */ jsxs2("ol", { children: [
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "dark-mode" /* DarkMode */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("dark-mode" /* DarkMode */, theme), children: "Dark Mode" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "icons" /* Icons */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("icons" /* Icons */, theme), children: "Icons" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "mobile" /* Mobile */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme), children: "Mobile" }) })
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "dark-mode" /* DarkMode */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("dark-mode" /* DarkMode */, theme, route), children: "Dark Mode" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "icons" /* Icons */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("icons" /* Icons */, theme, route), children: "Icons" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "mobile" /* Mobile */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "Mobile" }) })
         ] }),
         /* @__PURE__ */ jsx2("br", {}),
         /* @__PURE__ */ jsx2("b", { children: "Custom" }),
         /* @__PURE__ */ jsxs2("ol", { children: [
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "cards" /* Cards */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("cards" /* Cards */, theme), children: "Cards" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "heroes" /* Heroes */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme), children: "Heroes" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "cols" /* Columns */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("cols" /* Columns */, theme), children: "Columns" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("containers" /* Containers */, theme), children: "Containers" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("groups" /* Groups */, theme), children: "Groups" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "classes" /* Classes */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("classes" /* Classes */, theme), children: "Classes" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "theming" /* Theming */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("theming" /* Theming */, theme), children: "Theming" }) })
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "cards" /* Cards */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "Cards" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "heroes" /* Heroes */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme, route), children: "Heroes" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "cols" /* Columns */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "Columns" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "Containers" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "classes" /* Classes */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "Classes" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "theming" /* Theming */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("theming" /* Theming */, theme, route), children: "Theming" }) })
         ] }),
         /* @__PURE__ */ jsx2("br", {})
       ] })
@@ -123,6 +130,7 @@ function DocLayout({ theme, children }) {
 // pages/pages/docs/basics/Buttons.tsx
 import { jsx as jsx3, jsxs as jsxs3 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Buttons({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs3(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs3("section", { className: "row", children: [
       /* @__PURE__ */ jsxs3("div", { children: [
@@ -316,7 +324,7 @@ function Buttons({ theme }) {
         ] }),
         /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsxs3("small", { children: [
           "You can learn more about classes ",
-          /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("classes" /* Classes */, theme), children: "here" }),
+          /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -405,7 +413,7 @@ function Buttons({ theme }) {
         ] }),
         /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsxs3("small", { children: [
           "You can learn more about groups ",
-          /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("groups" /* Groups */, theme), children: "here" }),
+          /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -560,6 +568,7 @@ function Typography({ theme }) {
 // pages/pages/docs/basics/Blockquotes.tsx
 import { jsx as jsx5, jsxs as jsxs5 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Blockquotes({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs5(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs5("section", { className: "row", children: [
       /* @__PURE__ */ jsxs5("div", { children: [
@@ -607,7 +616,7 @@ function Blockquotes({ theme }) {
         ] }),
         /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsxs5("small", { children: [
           "You can learn more about groups ",
-          /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("groups" /* Groups */, theme), children: "here" }),
+          /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
           "."
         ] }) }),
         /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsxs5("small", { children: [
@@ -651,7 +660,7 @@ function Blockquotes({ theme }) {
         ] }),
         /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsxs5("small", { children: [
           "You can learn more about classes ",
-          /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("classes" /* Classes */, theme), children: "here" }),
+          /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -749,6 +758,7 @@ function Figures({ theme }) {
 // pages/pages/docs/basics/Links.tsx
 import { jsx as jsx8, jsxs as jsxs8 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Links({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsx8(DocLayout, { theme, children: /* @__PURE__ */ jsxs8("section", { className: "row", children: [
     /* @__PURE__ */ jsxs8("div", { children: [
       /* @__PURE__ */ jsxs8("p", { children: [
@@ -775,7 +785,7 @@ function Links({ theme }) {
       ] }),
       /* @__PURE__ */ jsx8("p", { children: /* @__PURE__ */ jsxs8("small", { children: [
         "You can learn more about classes ",
-        /* @__PURE__ */ jsx8("a", { href: RouteMaster.doc("classes" /* Classes */, theme), children: "here" }),
+        /* @__PURE__ */ jsx8("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
         "."
       ] }) })
     ] }),
@@ -788,6 +798,7 @@ function Links({ theme }) {
 // pages/pages/docs/basics/Summary.tsx
 import { jsx as jsx9, jsxs as jsxs9 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Summary({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs9(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs9("section", { className: "row", children: [
       /* @__PURE__ */ jsxs9("div", { children: [
@@ -837,12 +848,12 @@ function Summary({ theme }) {
         ] }),
         /* @__PURE__ */ jsx9("p", { children: /* @__PURE__ */ jsxs9("small", { children: [
           "You can learn more about classes ",
-          /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("classes" /* Classes */, theme), children: "here" }),
+          /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
           "."
         ] }) }),
         /* @__PURE__ */ jsx9("p", { children: /* @__PURE__ */ jsxs9("small", { children: [
           "You can learn more about cards ",
-          /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("cards" /* Cards */, theme), children: "here" }),
+          /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -876,6 +887,7 @@ function Summary({ theme }) {
 // pages/pages/docs/basics/Table.tsx
 import { jsx as jsx10, jsxs as jsxs10 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Table({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs10(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs10("section", { className: "row", children: [
       /* @__PURE__ */ jsxs10("div", { children: [
@@ -991,12 +1003,12 @@ function Table({ theme }) {
         ] }),
         /* @__PURE__ */ jsx10("p", { children: /* @__PURE__ */ jsxs10("small", { children: [
           "You can learn more about classes ",
-          /* @__PURE__ */ jsx10("a", { href: RouteMaster.doc("classes" /* Classes */, theme), children: "here" }),
+          /* @__PURE__ */ jsx10("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
           "."
         ] }) }),
         /* @__PURE__ */ jsx10("p", { children: /* @__PURE__ */ jsxs10("small", { children: [
           "You can learn more about images ",
-          /* @__PURE__ */ jsx10("a", { href: RouteMaster.doc("figures" /* Figures */, theme), children: "here" }),
+          /* @__PURE__ */ jsx10("a", { href: RouteMaster.doc("figures" /* Figures */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -1039,6 +1051,7 @@ function Table({ theme }) {
 // pages/pages/docs/basics/Tags.tsx
 import { jsx as jsx11, jsxs as jsxs11 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Tags({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs11(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs11("section", { className: "row", children: [
       /* @__PURE__ */ jsxs11("div", { children: [
@@ -1110,7 +1123,7 @@ function Tags({ theme }) {
         ] }),
         /* @__PURE__ */ jsx11("p", { children: /* @__PURE__ */ jsxs11("small", { children: [
           "You can learn more about icons ",
-          /* @__PURE__ */ jsx11("a", { href: RouteMaster.doc("icons" /* Icons */, theme), children: "here" }),
+          /* @__PURE__ */ jsx11("a", { href: RouteMaster.doc("icons" /* Icons */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -1138,7 +1151,7 @@ function Tags({ theme }) {
         ] }),
         /* @__PURE__ */ jsx11("p", { children: /* @__PURE__ */ jsxs11("small", { children: [
           "You can learn more about classes ",
-          /* @__PURE__ */ jsx11("a", { href: RouteMaster.doc("classes" /* Classes */, theme), children: "here" }),
+          /* @__PURE__ */ jsx11("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -1177,7 +1190,7 @@ function Tags({ theme }) {
         ] }),
         /* @__PURE__ */ jsx11("p", { children: /* @__PURE__ */ jsxs11("small", { children: [
           "You can learn more about groups ",
-          /* @__PURE__ */ jsx11("a", { href: RouteMaster.doc("groups" /* Groups */, theme), children: "here" }),
+          /* @__PURE__ */ jsx11("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -1597,6 +1610,7 @@ function FormsGrouped({ theme }) {
 import { useState as useState4 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx16, jsxs as jsxs16 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FormsNormal({ theme }) {
+  const route = useRoute();
   const [volume, setVolume] = useState4(50);
   return /* @__PURE__ */ jsxs16(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs16("section", { className: "row", children: [
@@ -1734,12 +1748,12 @@ function FormsNormal({ theme }) {
         /* @__PURE__ */ jsx16("p", { children: "You can make forms as simple or as complex as you want." }),
         /* @__PURE__ */ jsxs16("p", { children: [
           "In the example above we're separating inputs into two separate ",
-          /* @__PURE__ */ jsx16("a", { href: RouteMaster.doc("cols" /* Columns */, theme), children: "columns" }),
+          /* @__PURE__ */ jsx16("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "columns" }),
           ", so we can pack more information in the same space."
         ] }),
         /* @__PURE__ */ jsxs16("p", { children: [
           "We're also using ",
-          /* @__PURE__ */ jsx16("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme), children: "blockquotes" }),
+          /* @__PURE__ */ jsx16("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme, route), children: "blockquotes" }),
           " to highlight important information."
         ] }),
         /* @__PURE__ */ jsxs16("p", { children: [
@@ -1748,7 +1762,7 @@ function FormsNormal({ theme }) {
           " and ",
           /* @__PURE__ */ jsx16("code", { children: "reset" }),
           " type inputs. Please note these inputs are styled to look exactly like ",
-          /* @__PURE__ */ jsx16("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme), children: "buttons" }),
+          /* @__PURE__ */ jsx16("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme, route), children: "buttons" }),
           "."
         ] })
       ] }),
@@ -2843,6 +2857,7 @@ function Icons({ theme }) {
 // pages/pages/docs/extra/Mobile.tsx
 import { jsx as jsx32, jsxs as jsxs32 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Mobile({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs32(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs32("section", { className: "row", children: [
       /* @__PURE__ */ jsxs32("div", { children: [
@@ -2854,10 +2869,10 @@ function Mobile({ theme }) {
         ] }),
         /* @__PURE__ */ jsx32("p", { children: "Most elements, like paragraphs of text, buttons, etc, will layout or cascade naturally." }),
         /* @__PURE__ */ jsxs32("figure", { children: [
-          /* @__PURE__ */ jsx32("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-typography" /* MobileTypography */, theme) }),
+          /* @__PURE__ */ jsx32("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-typography" /* MobileTypography */, theme, route) }),
           /* @__PURE__ */ jsxs32("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("typography" /* Typographty */, theme), children: "here" })
+            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("typography" /* Typographty */, theme, route), children: "here" })
           ] })
         ] })
       ] }),
@@ -2870,12 +2885,12 @@ function Mobile({ theme }) {
       /* @__PURE__ */ jsxs32("div", { children: [
         /* @__PURE__ */ jsx32("p", { children: "Navigation elements are one example where there's a distinct transition between wide and narrow displays. In wide displays they're arranged horizontally whist in narrow displays they're aranged vertically, to conserve space." }),
         /* @__PURE__ */ jsxs32("figure", { children: [
-          /* @__PURE__ */ jsx32("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-nav" /* MobileNav */, theme) }),
+          /* @__PURE__ */ jsx32("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-nav" /* MobileNav */, theme, route) }),
           /* @__PURE__ */ jsxs32("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme), children: "here" }),
+            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "here" }),
             " or ",
-            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("tabs" /* Tabs */, theme), children: "here" }),
+            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("tabs" /* Tabs */, theme, route), children: "here" }),
             "."
           ] })
         ] })
@@ -2893,10 +2908,10 @@ function Mobile({ theme }) {
       /* @__PURE__ */ jsxs32("div", { children: [
         /* @__PURE__ */ jsx32("p", { children: "Header menu elements are another example. On wide displays they are arrange horizontally, at the top of the page. On narrow displays they still maintain the horizontal arrangement, but are displayed at the bottom of the page, to simulate mobile app displays." }),
         /* @__PURE__ */ jsxs32("figure", { children: [
-          /* @__PURE__ */ jsx32("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-menu" /* MobileMenu */, theme) }),
+          /* @__PURE__ */ jsx32("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-menu" /* MobileMenu */, theme, route) }),
           /* @__PURE__ */ jsxs32("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("menu" /* Menu */, theme), children: "here" }),
+            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("menu" /* Menu */, theme, route), children: "here" }),
             "."
           ] })
         ] })
@@ -2916,10 +2931,10 @@ function Mobile({ theme }) {
           " class also behave differentely. In wide displats, they're arrange horizontally, with a gap between them. In narrow displays the flip to a vertical arrangement, with no gap between them."
         ] }),
         /* @__PURE__ */ jsxs32("figure", { children: [
-          /* @__PURE__ */ jsx32("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-columns" /* MobileColumns */, theme) }),
+          /* @__PURE__ */ jsx32("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-columns" /* MobileColumns */, theme, route) }),
           /* @__PURE__ */ jsxs32("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("cols" /* Columns */, theme), children: "here" }),
+            /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
             "."
           ] })
         ] })
@@ -2952,6 +2967,7 @@ function Mobile({ theme }) {
 // pages/pages/docs/custom/Cards.tsx
 import { jsx as jsx33, jsxs as jsxs33 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Cards({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsxs33(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs33("section", { className: "row", children: [
       /* @__PURE__ */ jsxs33("div", { children: [
@@ -3000,7 +3016,7 @@ function Cards({ theme }) {
         ] }),
         /* @__PURE__ */ jsx33("p", { children: /* @__PURE__ */ jsxs33("small", { children: [
           "You can learn more about classes ",
-          /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("classes" /* Classes */, theme), children: "here" }),
+          /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -3097,12 +3113,12 @@ function Cards({ theme }) {
         ] }),
         /* @__PURE__ */ jsx33("p", { children: /* @__PURE__ */ jsxs33("small", { children: [
           "You can learn more about groups ",
-          /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("groups" /* Groups */, theme), children: "here" }),
+          /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
           "."
         ] }) }),
         /* @__PURE__ */ jsx33("p", { children: /* @__PURE__ */ jsxs33("small", { children: [
           "You can learn more about columns ",
-          /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("cols" /* Columns */, theme), children: "here" }),
+          /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -3136,6 +3152,7 @@ function Cards({ theme }) {
 // pages/pages/docs/custom/Classes.tsx
 import { jsx as jsx34, jsxs as jsxs34 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Classes({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsx34(DocLayout, { theme, children: /* @__PURE__ */ jsx34("section", { children: /* @__PURE__ */ jsxs34("div", { children: [
     /* @__PURE__ */ jsxs34("p", { children: [
       PRODUCT_NAME,
@@ -3152,7 +3169,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "align-center" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Aligns elements centrally on the horizontal axis. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3160,7 +3177,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "card" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Transforms an element into a card. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("cards" /* Cards */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3168,7 +3185,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "circle" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Rounds the edges off an element so it's a perfect circle. Useful for images. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("table" /* Table */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3178,7 +3195,7 @@ function Classes({ theme }) {
             "Sets the maximum size of the container to ",
             /* @__PURE__ */ jsx34("code", { children: "var(--width-container-medium)" }),
             ". See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("containers" /* Containers */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3188,7 +3205,7 @@ function Classes({ theme }) {
             "Sets the maximum size of the container to ",
             /* @__PURE__ */ jsx34("code", { children: "var(--width-container-narrow)" }),
             ". See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("containers" /* Containers */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3198,7 +3215,7 @@ function Classes({ theme }) {
             "Sets the maximum size of the container to ",
             /* @__PURE__ */ jsx34("code", { children: "var(--width-container-wide)" }),
             ". See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("containers" /* Containers */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3206,9 +3223,9 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "error" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Applies an error-type style of an element by changing its background, foreground or text color. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("tags" /* Tags */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("tags" /* Tags */, theme, route), children: "here" }),
             " or ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("table" /* Table */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3218,7 +3235,7 @@ function Classes({ theme }) {
             "Used in between ",
             /* @__PURE__ */ jsx34("code", { children: "col" }),
             " elements. Provides a gap between them so they can be separated into left and right sides. Has no effect on mobile displays. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3226,7 +3243,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "group" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Groups various elements, like buttons or inputs, together, horizontally. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("groups" /* Groups */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3234,7 +3251,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "hero" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Transform an element into a hero (or banner). See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3242,7 +3259,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "hide-on-mobile" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Hides an element if on small displays. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3250,7 +3267,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "hide-on-desktop" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Hides an element if on large displays. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3260,7 +3277,7 @@ function Classes({ theme }) {
             "Transforms child elements into horizontally aligned columns. Also the ",
             /* @__PURE__ */ jsx34("code", { children: "col-N" }),
             " class. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("cols" /* Columns */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3268,9 +3285,9 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx34("td", { children: /* @__PURE__ */ jsx34("code", { children: "success" }) }),
           /* @__PURE__ */ jsxs34("td", { children: [
             "Applies a success-type style to an element by changing its background, foreground or text color. See ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme, route), children: "here" }),
             " or ",
-            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("summary" /* Summary */, theme), children: "here" }),
+            /* @__PURE__ */ jsx34("a", { href: RouteMaster.doc("summary" /* Summary */, theme, route), children: "here" }),
             "."
           ] })
         ] })
@@ -3669,13 +3686,78 @@ function Theming({ theme }) {
 // pages/common/utils/routes.ts
 var RouteMaster = class _RouteMaster {
   static baseRoute = "";
-  static home(theme) {
-    const base = _RouteMaster.getBase();
+  static home(theme, domain) {
+    const base = _RouteMaster.getBase(domain);
     return `${base}${theme}/`;
   }
-  static doc(route, theme) {
-    const base = _RouteMaster.getBase();
-    return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
+  static doc(route, theme, domain) {
+    const base = _RouteMaster.getBase(domain);
+    switch (route) {
+      // basics
+      case "typography" /* Typographty */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Typography)}`;
+      case "buttons" /* Buttons */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Buttons)}`;
+      case "blockquotes" /* Blockquotes */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Blockquotes)}`;
+      case "code" /* Code */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Code)}`;
+      case "figures" /* Figures */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Figures)}`;
+      case "lists" /* Lists */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Lists)}`;
+      case "links" /* Links */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Links)}`;
+      case "summary" /* Summary */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Summary)}`;
+      case "table" /* Table */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
+      case "tags" /* Tags */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
+      // forms
+      case "forms-check" /* FormsCheck */:
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
+      case "forms-disabled" /* FormsDisabled */:
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
+      case "forms-grouped" /* FormsGrouped */:
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
+      case "forms-normal" /* FormsNormal */:
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
+      case "forms-validation" /* FormsValidation */:
+        return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
+      // modal
+      case "modal" /* Modal */:
+        return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
+      // navigation
+      case "navigation" /* Navigation */:
+        return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
+      case "tabs" /* Tabs */:
+        return `${base}${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
+      case "menu" /* Menu */:
+        return `${base}${theme}/pages/docs/navigation/${htmlName(Menu)}`;
+      // extra
+      case "dark-mode" /* DarkMode */:
+        return `${base}${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
+      case "icons" /* Icons */:
+        return `${base}${theme}/pages/docs/extra/${htmlName(Icons)}`;
+      case "mobile" /* Mobile */:
+        return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
+      // custom
+      case "cards" /* Cards */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
+      case "classes" /* Classes */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
+      case "cols" /* Columns */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
+      case "containers" /* Containers */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
+      case "groups" /* Groups */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
+      case "heroes" /* Heroes */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
+      case "theming" /* Theming */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Theming)}`;
+    }
   }
   static getDocFromRoute(path) {
     const items = path.split("/docs/");
@@ -3767,8 +3849,8 @@ var RouteMaster = class _RouteMaster {
     }
     return void 0;
   }
-  static showcase(route, theme) {
-    const base = _RouteMaster.getBase();
+  static showcase(route, theme, domain) {
+    const base = _RouteMaster.getBase(domain);
     switch (route) {
       case "desktop-menu" /* DekstopMenu */:
         return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
@@ -3788,8 +3870,9 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/showcase/${htmlName(MobileTypography)}`;
     }
   }
-  static getBase() {
-    return _RouteMaster.baseRoute === "" ? "/" : `/${_RouteMaster.baseRoute}/`;
+  static getBase(domain) {
+    if (!domain) return "/";
+    return domain === "" ? "/" : `/${domain}/`;
   }
 };
 function htmlName(elem) {
@@ -3802,6 +3885,7 @@ function toKebabCase(str) {
 // pages/common/components/TopNav.tsx
 import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function TopNav({ theme }) {
+  const route = useRoute();
   const onThemeChange = (e) => {
     const newTheme = e.target.value;
     if (typeof window !== "undefined") {
@@ -3824,7 +3908,7 @@ function TopNav({ theme }) {
     }
   };
   return /* @__PURE__ */ jsx40("nav", { children: /* @__PURE__ */ jsxs40("ul", { children: [
-    /* @__PURE__ */ jsx40("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs40("a", { href: RouteMaster.home(theme), children: [
+    /* @__PURE__ */ jsx40("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs40("a", { href: RouteMaster.home(theme, route), children: [
       /* @__PURE__ */ jsxs40("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
         /* @__PURE__ */ jsx40("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
         /* @__PURE__ */ jsx40("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })

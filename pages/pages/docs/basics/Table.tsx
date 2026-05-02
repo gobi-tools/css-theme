@@ -1,8 +1,11 @@
 import DocLayout from "../../../common/components/DocsLayout";
+import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
 import { EDoc } from "../../../common/utils/types";
 
 export default function Table({ theme }) {
+  const route = useRoute();
+    
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -147,12 +150,12 @@ export default function Table({ theme }) {
           </table>
           <p>
             <small>
-              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme)}>here</a>.
+              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
             </small>
           </p>
           <p>
             <small>
-              You can learn more about images <a href={RouteMaster.doc(EDoc.Figures, theme)}>here</a>.
+              You can learn more about images <a href={RouteMaster.doc(EDoc.Figures, theme, route)}>here</a>.
             </small>
           </p>
         </div>

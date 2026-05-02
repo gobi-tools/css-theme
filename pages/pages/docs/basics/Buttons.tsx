@@ -1,8 +1,11 @@
 import DocLayout from "../../../common/components/DocsLayout";
+import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
 import { EDoc } from "../../../common/utils/types";
 
 export default function Buttons({ theme }) {
+  const route = useRoute();
+    
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -152,7 +155,7 @@ export default function Buttons({ theme }) {
           </p>
           <p>
             <small>
-              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme)}>here</a>.
+              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
             </small>
           </p>
         </div>
@@ -208,7 +211,7 @@ export default function Buttons({ theme }) {
           </p>
           <p>
             <small>
-              You can learn more about groups <a href={RouteMaster.doc(EDoc.Groups, theme)}>here</a>.
+              You can learn more about groups <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>here</a>.
             </small>
           </p>
         </div>
