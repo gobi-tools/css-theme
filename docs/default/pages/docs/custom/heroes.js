@@ -3505,7 +3505,8 @@ var RouteMaster = class _RouteMaster {
   static baseRoute = "";
   static home(theme) {
     console.log("base route", _RouteMaster.baseRoute);
-    return `/${theme}/`;
+    const base = _RouteMaster.baseRoute === "" ? "/" : `/${_RouteMaster.baseRoute}/`;
+    return `${base}${theme}/`;
   }
   static doc(route, theme) {
     switch (route) {

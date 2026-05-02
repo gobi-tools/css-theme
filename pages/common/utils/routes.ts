@@ -42,7 +42,8 @@ export class RouteMaster {
 
   static home(theme: EThemes): string {
     console.log('base route', RouteMaster.baseRoute);
-    return `/${theme}/`;
+    const base = RouteMaster.baseRoute === '' ? '/' : `/${RouteMaster.baseRoute}/`;
+    return `${base}${theme}/`;
   }
 
   static doc(route: EDoc, theme: EThemes): string {
