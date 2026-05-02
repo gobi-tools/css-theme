@@ -3,7 +3,6 @@ import { RouteMaster } from "./common/utils/routes";
 import { EDoc, EThemes } from "./common/utils/types";
 
 export default function Index(props: { theme: EThemes }) {
-
   return (
     <HomeLayout theme={props.theme}>
       <section>

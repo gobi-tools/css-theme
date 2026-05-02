@@ -3,9 +3,12 @@ import React from "https://esm.sh/react@19.2.0";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
 // pages/pages/docs/forms/FormsCheckbox.tsx
-import { useState as useState6 } from "https://esm.sh/react@19.2.0";
+import { useState as useState7 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/components/DocsLayout.tsx
+import { useEffect as useEffect2, useState as useState6 } from "https://esm.sh/react@19.2.0";
+
+// pages/common/components/HomeLayout.tsx
 import { useEffect, useState as useState5 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/utils/constants.ts
@@ -3406,8 +3409,10 @@ function Theming({ theme }) {
 }
 
 // pages/common/utils/routes.ts
-var RouteMaster = class {
+var RouteMaster = class _RouteMaster {
+  static baseRoute = "";
   static home(theme) {
+    console.log("base route", _RouteMaster.baseRoute);
     return `/${theme}/`;
   }
   static doc(route, theme) {
@@ -3664,6 +3669,16 @@ function TopNav({ theme }) {
 // pages/common/components/HomeLayout.tsx
 import { Fragment as Fragment9, jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function HomeLayout({ theme, children }) {
+  const [baseRoute, setBaseRoute] = useState5(void 0);
+  useEffect(() => {
+    console.log("I AM HERE");
+    if (typeof window !== "undefined") {
+      const path = window.location.pathname;
+      RouteMaster.baseRoute = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : "";
+      console.log("set route to", RouteMaster.baseRoute);
+      setBaseRoute(RouteMaster.baseRoute);
+    }
+  }, [baseRoute]);
   return /* @__PURE__ */ jsxs38(Fragment9, { children: [
     /* @__PURE__ */ jsx38(TopNav, { theme }),
     /* @__PURE__ */ jsx38("main", { children: /* @__PURE__ */ jsx38("article", { children }) })
@@ -3673,12 +3688,12 @@ function HomeLayout({ theme, children }) {
 // pages/common/components/DocsLayout.tsx
 import { jsx as jsx39, jsxs as jsxs39 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function DocLayout({ theme, children }) {
-  const [isMenuOpen, setIsMenuOpen] = useState5(void 0);
-  const [selectedDoc, setSelectedDoc] = useState5(void 0);
+  const [isMenuOpen, setIsMenuOpen] = useState6(void 0);
+  const [selectedDoc, setSelectedDoc] = useState6(void 0);
   const toggleMenuOpen = () => {
     setIsMenuOpen(isMenuOpen === void 0 ? true : false);
   };
-  useEffect(() => {
+  useEffect2(() => {
     if (typeof window !== "undefined") {
       const doc = RouteMaster.getDocFromRoute(window.location.pathname);
       setSelectedDoc(doc);
@@ -3762,7 +3777,7 @@ function DocLayout({ theme, children }) {
 // pages/pages/docs/forms/FormsCheckbox.tsx
 import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FormsCheckbox({ theme }) {
-  const [radio, setRadio] = useState6("bread");
+  const [radio, setRadio] = useState7("bread");
   return /* @__PURE__ */ jsxs40(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs40("section", { className: "row", children: [
       /* @__PURE__ */ jsxs40("div", { children: [

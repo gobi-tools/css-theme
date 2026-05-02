@@ -3,12 +3,15 @@ import React from "https://esm.sh/react@19.2.0";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
 // pages/pages/showcase/MobileTabs.tsx
-import { useState as useState6 } from "https://esm.sh/react@19.2.0";
+import { useState as useState7 } from "https://esm.sh/react@19.2.0";
 
 // pages/pages/docs/navigation/Tabs.tsx
-import { useState as useState5 } from "https://esm.sh/react@19.2.0";
+import { useState as useState6 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/components/DocsLayout.tsx
+import { useEffect as useEffect2, useState as useState5 } from "https://esm.sh/react@19.2.0";
+
+// pages/common/components/HomeLayout.tsx
 import { useEffect, useState as useState4 } from "https://esm.sh/react@19.2.0";
 
 // pages/pages/docs/basics/Buttons.tsx
@@ -174,7 +177,7 @@ function Tab3() {
 // pages/pages/showcase/MobileTabs.tsx
 import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTabs() {
-  const [selected, setSelected] = useState6("tab-1");
+  const [selected, setSelected] = useState7("tab-1");
   return /* @__PURE__ */ jsx40("main", { children: /* @__PURE__ */ jsxs40("div", { style: { display: "flex", flexDirection: "row", gap: "var(--space-6)" }, children: [
     /* @__PURE__ */ jsx40("aside", { children: /* @__PURE__ */ jsx40("nav", { children: /* @__PURE__ */ jsxs40("ol", { children: [
       /* @__PURE__ */ jsx40("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs40("a", { onClick: () => setSelected("tab-1"), children: [

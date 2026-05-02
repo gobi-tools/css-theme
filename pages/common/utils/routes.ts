@@ -38,7 +38,10 @@ import Heroes from "../../pages/docs/custom/Heroes";
 import Theming from "../../pages/docs/custom/Theming";
 
 export class RouteMaster {
+  static baseRoute: string = '';
+
   static home(theme: EThemes): string {
+    console.log('base route', RouteMaster.baseRoute);
     return `/${theme}/`;
   }
 

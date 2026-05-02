@@ -3,12 +3,15 @@ import React from "https://esm.sh/react@19.2.0";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
 // pages/pages/docs/forms/FormsNormal.tsx
-import { useState as useState6 } from "https://esm.sh/react@19.2.0";
+import { useState as useState7 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/utils/types.ts
 var PRODUCT_NAME = "CSS Theme";
 
 // pages/common/components/DocsLayout.tsx
+import { useEffect as useEffect2, useState as useState2 } from "https://esm.sh/react@19.2.0";
+
+// pages/common/components/HomeLayout.tsx
 import { useEffect, useState } from "https://esm.sh/react@19.2.0";
 
 // pages/common/utils/constants.ts
@@ -82,6 +85,16 @@ function TopNav({ theme }) {
 // pages/common/components/HomeLayout.tsx
 import { Fragment, jsx as jsx2, jsxs as jsxs2 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function HomeLayout({ theme, children }) {
+  const [baseRoute, setBaseRoute] = useState(void 0);
+  useEffect(() => {
+    console.log("I AM HERE");
+    if (typeof window !== "undefined") {
+      const path = window.location.pathname;
+      RouteMaster.baseRoute = path.includes(PUB_SUBDOMAIN) ? PUB_SUBDOMAIN : "";
+      console.log("set route to", RouteMaster.baseRoute);
+      setBaseRoute(RouteMaster.baseRoute);
+    }
+  }, [baseRoute]);
   return /* @__PURE__ */ jsxs2(Fragment, { children: [
     /* @__PURE__ */ jsx2(TopNav, { theme }),
     /* @__PURE__ */ jsx2("main", { children: /* @__PURE__ */ jsx2("article", { children }) })
@@ -91,12 +104,12 @@ function HomeLayout({ theme, children }) {
 // pages/common/components/DocsLayout.tsx
 import { jsx as jsx3, jsxs as jsxs3 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function DocLayout({ theme, children }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(void 0);
-  const [selectedDoc, setSelectedDoc] = useState(void 0);
+  const [isMenuOpen, setIsMenuOpen] = useState2(void 0);
+  const [selectedDoc, setSelectedDoc] = useState2(void 0);
   const toggleMenuOpen = () => {
     setIsMenuOpen(isMenuOpen === void 0 ? true : false);
   };
-  useEffect(() => {
+  useEffect2(() => {
     if (typeof window !== "undefined") {
       const doc = RouteMaster.getDocFromRoute(window.location.pathname);
       setSelectedDoc(doc);
@@ -1302,10 +1315,10 @@ function Lists({ theme }) {
 }
 
 // pages/pages/docs/forms/FormsCheckbox.tsx
-import { useState as useState2 } from "https://esm.sh/react@19.2.0";
+import { useState as useState3 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx14, jsxs as jsxs14 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FormsCheckbox({ theme }) {
-  const [radio, setRadio] = useState2("bread");
+  const [radio, setRadio] = useState3("bread");
   return /* @__PURE__ */ jsxs14(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs14("section", { className: "row", children: [
       /* @__PURE__ */ jsxs14("div", { children: [
@@ -1651,12 +1664,12 @@ function FormsGrouped({ theme }) {
 }
 
 // pages/pages/docs/forms/FormsValidation.tsx
-import { useState as useState3 } from "https://esm.sh/react@19.2.0";
+import { useState as useState4 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx17, jsxs as jsxs17 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FormsValidation({ theme }) {
-  const [name, setName] = useState3("a");
-  const [email, setEmail] = useState3("");
-  const [comment, setComment] = useState3("");
+  const [name, setName] = useState4("a");
+  const [email, setEmail] = useState4("");
+  const [comment, setComment] = useState4("");
   return /* @__PURE__ */ jsxs17(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs17("section", { className: "row", children: [
       /* @__PURE__ */ jsxs17("div", { children: [
@@ -2118,7 +2131,7 @@ function Navigation({ theme }) {
 }
 
 // pages/pages/docs/navigation/Tabs.tsx
-import { useState as useState4 } from "https://esm.sh/react@19.2.0";
+import { useState as useState5 } from "https://esm.sh/react@19.2.0";
 import { Fragment as Fragment2, jsx as jsx20, jsxs as jsxs20 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Tab1() {
   return /* @__PURE__ */ jsxs20(Fragment2, { children: [
@@ -2160,7 +2173,7 @@ function Tab3() {
   ] });
 }
 function Tabs({ theme }) {
-  const [selected, setSelected] = useState4("tab-1");
+  const [selected, setSelected] = useState5("tab-1");
   return /* @__PURE__ */ jsxs20(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs20("section", { className: "row", children: [
       /* @__PURE__ */ jsxs20("div", { children: [
@@ -2482,10 +2495,10 @@ function MobileNav() {
 }
 
 // pages/pages/showcase/MobileTabs.tsx
-import { useState as useState5 } from "https://esm.sh/react@19.2.0";
+import { useState as useState6 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx28, jsxs as jsxs28 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTabs() {
-  const [selected, setSelected] = useState5("tab-1");
+  const [selected, setSelected] = useState6("tab-1");
   return /* @__PURE__ */ jsx28("main", { children: /* @__PURE__ */ jsxs28("div", { style: { display: "flex", flexDirection: "row", gap: "var(--space-6)" }, children: [
     /* @__PURE__ */ jsx28("aside", { children: /* @__PURE__ */ jsx28("nav", { children: /* @__PURE__ */ jsxs28("ol", { children: [
       /* @__PURE__ */ jsx28("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs28("a", { onClick: () => setSelected("tab-1"), children: [
@@ -3527,8 +3540,10 @@ function Theming({ theme }) {
 }
 
 // pages/common/utils/routes.ts
-var RouteMaster = class {
+var RouteMaster = class _RouteMaster {
+  static baseRoute = "";
   static home(theme) {
+    console.log("base route", _RouteMaster.baseRoute);
     return `/${theme}/`;
   }
   static doc(route, theme) {
@@ -3720,7 +3735,7 @@ function toKebabCase(str) {
 // pages/pages/docs/forms/FormsNormal.tsx
 import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FormsNormal({ theme }) {
-  const [volume, setVolume] = useState6(50);
+  const [volume, setVolume] = useState7(50);
   return /* @__PURE__ */ jsxs40(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs40("section", { className: "row", children: [
       /* @__PURE__ */ jsxs40("div", { children: [
