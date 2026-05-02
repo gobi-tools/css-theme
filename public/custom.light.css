@@ -1,6 +1,6 @@
 @font-face {
   font-family: "FontWithASyntaxHighlighter";
-  src: url("https://github.com/gobi-tools/css-theme/raw/refs/heads/main/public/FontWithASyntaxHighlighter-Regular-Light.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@raw/refs/heads/main/public/FontWithASyntaxHighlighter-Regular-Light.woff2") format("woff2");
 }
 
 pre>code {
