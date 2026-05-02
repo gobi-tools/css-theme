@@ -12,7 +12,7 @@ var PRODUCT_NAME = "CSS Theme";
 import { useEffect, useState } from "https://esm.sh/react@19.2.0";
 
 // pages/common/utils/constants.ts
-var PUB_SUBDOMAIN = "react-url";
+var PUB_SUBDOMAIN = "css-theme";
 
 // pages/common/components/TopNav.tsx
 import { jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";

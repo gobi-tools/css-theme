@@ -6,7 +6,7 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { useEffect, useState as useState6 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/utils/constants.ts
-var PUB_SUBDOMAIN = "react-url";
+var PUB_SUBDOMAIN = "css-theme";
 
 // pages/common/utils/types.ts
 var PRODUCT_NAME = "CSS Theme";

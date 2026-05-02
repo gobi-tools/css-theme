@@ -1,1 +1,1 @@
-export const PUB_SUBDOMAIN = 'react-url';
+export const PUB_SUBDOMAIN = 'css-theme';
