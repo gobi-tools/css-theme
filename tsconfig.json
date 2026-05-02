@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "nodenext",
+    "moduleResolution": "NodeNext",
+    "jsx": "react-jsx",
+    "rootDir": "pages",
+    "outDir": "docs",
+    "verbatimModuleSyntax": false
+  },
+  "include": [
+    "pages"
+  ]
+}

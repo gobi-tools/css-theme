@@ -53,6 +53,8 @@ Improvements
 
 Bugs
 ----
+- [ ] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
+- [ ] nav item with icon + text on mobile is not aligned correctly vertically
 - [x] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
         - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px

@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsx scripts/build.ts && css-minify -d tmp/ -o /dist"
+    "build": "tsx scripts/build.ts && css-minify -d tmp/ -o /dist",
+    "docs": "tsx pages/prerender.ts"
   },
   "keywords": [],
   "author": "Gabriel Coman",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^25.0.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "css-minify": "^2.1.0",
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-srv": "^0.0.53"
   }
 }

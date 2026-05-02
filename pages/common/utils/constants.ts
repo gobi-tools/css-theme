@@ -1,0 +1,1 @@
+export const PUB_SUBDOMAIN = 'react-url';
