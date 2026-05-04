@@ -16,7 +16,6 @@ export default function FormsGrouped({ theme }) {
               <input type="submit" value="Subscribe" />
             </div>
           </form>
-          <br />
         </div>
         <div>
           <pre><code>{`<form>
@@ -54,7 +53,6 @@ export default function FormsGrouped({ theme }) {
               <input type="submit" value="Search" />
             </div>
           </form>
-          <br />
         </div>
         <div>
           <pre><code>
@@ -89,7 +87,6 @@ export default function FormsGrouped({ theme }) {
             </fieldset>
 
           </form>
-          <br />
         </div>
         <div>
           <pre><code>

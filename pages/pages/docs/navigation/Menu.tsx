@@ -39,7 +39,6 @@ export default function Menu({ theme }) {
               </a>
             </li>
           </menu>
-          <br />
         </div>
         <div>
           <pre><code>

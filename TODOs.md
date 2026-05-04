@@ -16,8 +16,8 @@ Features
 Improvements
 ------------
 - [x] if I have a nav with the "card" role, it looks fairly ok; but the padding-block could be 0 to make it look even better
-- [ ] fieldsets, cards all have padding-bottom: 0 
-  -> is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
+- [ ] fieldsets, cards all have padding-bottom: 0; is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
+- [ ] input elements inside a "group" element maintain their bottom padding/marging; should they? what about if they're inside a form?
 - [x] decide on class-based versions for various roles & types (columns, note, etc)
   -> Sorted it here: https://gobi-tools.github.io/css-theme/default/pages/docs/custom/classes.html
 - [ ] redo the horizontal spacing to be based on "ch"
@@ -30,12 +30,11 @@ Improvements
 
 Bugs
 ----
+- [x] should rows in width<600px have a 0px gap in "92.class-rows.css"?  
 - [x] group + row does not vertically center elements correctly
 - [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
 - [ ] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
 - [ ] On mobile Safari, the datepicker has no placeholder text; example [here](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_grouped.html) 
-- [ ] input elements inside a "group" element maintain their bottom padding/marging; should they?
-- [ ] should rows in width<600px have a 0px gap in "92.class-rows.css"?  
 - [x] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
         - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px
@@ -61,15 +60,15 @@ Bugs
 
 Docs
 ----
-- [ ] On [summary](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/summary.html) page, on mobile,
+- [x] On [summary](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/summary.html) page, on mobile,
   the vertical distance between demo & code is too small
 - [ ] Clicking the "menu sub-nav" button on mobile only works once  
 - [ ] [Table](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/table.html) example on mobile does not look good
-- [ ] [Form/Checkbox](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_checkbox.html) last example: distance
+- [x] [Form/Checkbox](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_checkbox.html) last example: distance
   between example & code on mobile is too small
 - [ ] The search & select menu [here](https://gobi-tools.github.io/css-theme/default/pages/docs/navigation/navigation.html) does 
 not appear OK on small screens; so remove one of the menus;
 - [x] Remove the .png icon example from [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html)
-- [ ] Also [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html), the vertical spacing between 
+- [x] Also [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html), the vertical spacing between 
   example & code on mobile is too small
 - [x] remove the theming docs part

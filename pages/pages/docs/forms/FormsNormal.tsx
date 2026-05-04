@@ -196,7 +196,7 @@ export default function FormsNormal({ theme }) {
     <legend>Order details</legend>
 
     <!-- name row -->
-    <div class="row">
+    <div class="row disable-mobile">
       <div>
         <label for="first-name">First name</label>
         <input type="text" id="first-name" placeholder="First name" />
@@ -214,7 +214,7 @@ export default function FormsNormal({ theme }) {
       Order total is <b>$33.59</b>
     </blockquote>
 
-    <div class="row">
+    <div class="row disable-mobile">
       <div>
         <input tye="reset" class="error" value="Reset" />
       </div>

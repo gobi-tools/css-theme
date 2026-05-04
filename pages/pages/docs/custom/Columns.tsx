@@ -35,7 +35,6 @@ export default function Columns({ theme }) {
               </div>
             </div>
           </div>
-          <br />
         </div>
         <div>
           <pre><code>
@@ -140,7 +139,6 @@ export default function Columns({ theme }) {
               </div>
             </div>
           </div>
-          <br />
         </div>
         <div>
           <pre><code>

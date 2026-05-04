@@ -13,29 +13,18 @@ export default function FormsDisabled({ theme }) {
             <fieldset>
               <legend>Disabled form</legend>
 
-              <div className="row">
-                <div>
-                  <label htmlFor="email">Email</label>
-                  <input type="email" id="email" placeholder="N/A" disabled />
-                </div>
-                <div>
-                  <label htmlFor="address">Address</label>
-                  <input type="text" id="address" placeholder="Address" disabled />
-                </div>
-              </div>
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" placeholder="N/A" disabled />
 
-              <label form="delivery">Delivery</label>
+              <label htmlFor="address">Address</label>
+              <input type="text" id="address" placeholder="Address" disabled />
+
+              <label htmlFor="delivery">Delivery</label>
               <select id="delivery" defaultValue={"fast"} disabled>
                 <option value="fast">Fast</option>
                 <option value="standard">Standard</option>
               </select>
-
-              <div className="row">
-                <div></div>
-                <div>
-                  <input type="submit" value={"Submit"} disabled />
-                </div>
-              </div>
+              <input type="submit" value={"Submit"} disabled />
             </fieldset>
           </form>
         </div>
@@ -45,29 +34,19 @@ export default function FormsDisabled({ theme }) {
   <fieldset>
     <legend>Disabled form</legend>
 
-    <div class="row">
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="N/A" disabled />
-      </div>
-      <div>
-        <label for="address">Address</label>
-        <input type="text" id="address" placeholder="Address" disabled />
-      </div>
-    </div>
-
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="N/A" disabled />
+    
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Address" disabled />
+    
     <label form="delivery">Delivery</label>
     <select id="delivery" disabled>
       <option value="fast" selected>Fast</option>
       <option value="standard">Standard</option>
     </select>
-
-    <div class="row">
-      <div></div>
-      <div>
-        <input type="submit" value="Submit" disabled />
-      </div>
-    </div>
+    
+    <input type="submit" value="Submit" disabled />
   </fieldset>
 </form>`}
           </code></pre>

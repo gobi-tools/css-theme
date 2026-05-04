@@ -1326,8 +1326,7 @@ function FormsGrouped({ theme }) {
         /* @__PURE__ */ jsx12("form", { children: /* @__PURE__ */ jsxs12("div", { className: "group", children: [
           /* @__PURE__ */ jsx12("input", { id: "email", type: "email", placeholder: "Email" }),
           /* @__PURE__ */ jsx12("input", { type: "submit", value: "Subscribe" })
-        ] }) }),
-        /* @__PURE__ */ jsx12("br", {})
+        ] }) })
       ] }),
       /* @__PURE__ */ jsx12("div", { children: /* @__PURE__ */ jsx12("pre", { children: /* @__PURE__ */ jsx12("code", { children: `<form>
   <div class="group">
@@ -1360,8 +1359,7 @@ function FormsGrouped({ theme }) {
           ) }),
           /* @__PURE__ */ jsx12("input", { type: "search", id: "search", placeholder: "Search" }),
           /* @__PURE__ */ jsx12("input", { type: "submit", value: "Search" })
-        ] }) }),
-        /* @__PURE__ */ jsx12("br", {})
+        ] }) })
       ] }),
       /* @__PURE__ */ jsx12("div", { children: /* @__PURE__ */ jsx12("pre", { children: /* @__PURE__ */ jsx12("code", { children: `<form>
   <div class="group">
@@ -1390,8 +1388,7 @@ function FormsGrouped({ theme }) {
             /* @__PURE__ */ jsx12("input", { type: "date", id: "delivery-date" }),
             /* @__PURE__ */ jsx12("input", { type: "submit", value: "Confirm" })
           ] })
-        ] }) }),
-        /* @__PURE__ */ jsx12("br", {})
+        ] }) })
       ] }),
       /* @__PURE__ */ jsx12("div", { children: /* @__PURE__ */ jsx12("pre", { children: /* @__PURE__ */ jsx12("code", { children: `<form>
   <fieldset>
@@ -1606,7 +1603,7 @@ function FormsNormal({ theme }) {
     <legend>Order details</legend>
 
     <!-- name row -->
-    <div class="row">
+    <div class="row disable-mobile">
       <div>
         <label for="first-name">First name</label>
         <input type="text" id="first-name" placeholder="First name" />
@@ -1624,7 +1621,7 @@ function FormsNormal({ theme }) {
       Order total is <b>$33.59</b>
     </blockquote>
 
-    <div class="row">
+    <div class="row disable-mobile">
       <div>
         <input tye="reset" class="error" value="Reset" />
       </div>
@@ -2281,8 +2278,7 @@ function Menu({ theme }) {
             ] }),
             /* @__PURE__ */ jsx18("span", { children: "Profile" })
           ] }) })
-        ] }),
-        /* @__PURE__ */ jsx18("br", {})
+        ] })
       ] }),
       /* @__PURE__ */ jsx18("div", { children: /* @__PURE__ */ jsx18("pre", { children: /* @__PURE__ */ jsx18("code", { children: `<main>
   <menu>
@@ -3159,8 +3155,7 @@ function Columns({ theme }) {
             /* @__PURE__ */ jsx32("div", { className: "col", children: /* @__PURE__ */ jsx32("code", { style: { width: "100%" }, children: "col" }) }),
             /* @__PURE__ */ jsx32("div", { className: "col", children: /* @__PURE__ */ jsx32("code", { style: { width: "100%" }, children: "col" }) })
           ] })
-        ] }),
-        /* @__PURE__ */ jsx32("br", {})
+        ] })
       ] }),
       /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<div class="row">
   <div class="col">...</div>
@@ -3233,8 +3228,7 @@ function Columns({ theme }) {
         /* @__PURE__ */ jsx32("div", { className: "card", children: /* @__PURE__ */ jsxs32("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx32("img", { width: "80", height: "80", src: "https://picsum.photos/80/80", alt: "ssample image " }),
           /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }) })
-        ] }) }),
-        /* @__PURE__ */ jsx32("br", {})
+        ] }) })
       ] }),
       /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<div class="row">
   <p width="80" height="80" ...>
@@ -3316,7 +3310,7 @@ function Groups({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("pre", { children: /* @__PURE__ */ jsx34("code", { children: `<p class="group">
-  <button>Option 1</button>
+  <button>Option 1</button>f
   <button type="reset">Option 2</button>
 </p>` }) }) })
     ] }),
@@ -3377,8 +3371,7 @@ function Groups({ theme }) {
             }
           ),
           /* @__PURE__ */ jsx34("b", { children: "Test Address, SE11 8CL" })
-        ] }),
-        /* @__PURE__ */ jsx34("br", {})
+        ] })
       ] }),
       /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("pre", { children: /* @__PURE__ */ jsx34("code", { children: `<div class="group">
   <svg width="20" height="20" ...></svg>
@@ -3833,54 +3826,35 @@ function FormsDisabled({ theme }) {
       ] }),
       /* @__PURE__ */ jsx39("form", { children: /* @__PURE__ */ jsxs39("fieldset", { children: [
         /* @__PURE__ */ jsx39("legend", { children: "Disabled form" }),
-        /* @__PURE__ */ jsxs39("div", { className: "row", children: [
-          /* @__PURE__ */ jsxs39("div", { children: [
-            /* @__PURE__ */ jsx39("label", { htmlFor: "email", children: "Email" }),
-            /* @__PURE__ */ jsx39("input", { type: "email", id: "email", placeholder: "N/A", disabled: true })
-          ] }),
-          /* @__PURE__ */ jsxs39("div", { children: [
-            /* @__PURE__ */ jsx39("label", { htmlFor: "address", children: "Address" }),
-            /* @__PURE__ */ jsx39("input", { type: "text", id: "address", placeholder: "Address", disabled: true })
-          ] })
-        ] }),
-        /* @__PURE__ */ jsx39("label", { form: "delivery", children: "Delivery" }),
+        /* @__PURE__ */ jsx39("label", { htmlFor: "email", children: "Email" }),
+        /* @__PURE__ */ jsx39("input", { type: "email", id: "email", placeholder: "N/A", disabled: true }),
+        /* @__PURE__ */ jsx39("label", { htmlFor: "address", children: "Address" }),
+        /* @__PURE__ */ jsx39("input", { type: "text", id: "address", placeholder: "Address", disabled: true }),
+        /* @__PURE__ */ jsx39("label", { htmlFor: "delivery", children: "Delivery" }),
         /* @__PURE__ */ jsxs39("select", { id: "delivery", defaultValue: "fast", disabled: true, children: [
           /* @__PURE__ */ jsx39("option", { value: "fast", children: "Fast" }),
           /* @__PURE__ */ jsx39("option", { value: "standard", children: "Standard" })
         ] }),
-        /* @__PURE__ */ jsxs39("div", { className: "row", children: [
-          /* @__PURE__ */ jsx39("div", {}),
-          /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsx39("input", { type: "submit", value: "Submit", disabled: true }) })
-        ] })
+        /* @__PURE__ */ jsx39("input", { type: "submit", value: "Submit", disabled: true })
       ] }) })
     ] }),
     /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsx39("pre", { children: /* @__PURE__ */ jsx39("code", { children: `<form>
   <fieldset>
     <legend>Disabled form</legend>
 
-    <div class="row">
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="N/A" disabled />
-      </div>
-      <div>
-        <label for="address">Address</label>
-        <input type="text" id="address" placeholder="Address" disabled />
-      </div>
-    </div>
-
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="N/A" disabled />
+    
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Address" disabled />
+    
     <label form="delivery">Delivery</label>
     <select id="delivery" disabled>
       <option value="fast" selected>Fast</option>
       <option value="standard">Standard</option>
     </select>
-
-    <div class="row">
-      <div></div>
-      <div>
-        <input type="submit" value="Submit" disabled />
-      </div>
-    </div>
+    
+    <input type="submit" value="Submit" disabled />
   </fieldset>
 </form>` }) }) })
   ] }) });

@@ -21,7 +21,7 @@ export default function Groups({ theme }) {
         <div>
           <pre><code>
             {`<p class="group">
-  <button>Option 1</button>
+  <button>Option 1</button>f
   <button type="reset">Option 2</button>
 </p>`}
           </code></pre>
@@ -99,7 +99,6 @@ export default function Groups({ theme }) {
             </svg>
             <b>Test Address, SE11 8CL</b>
           </div>
-          <br />
         </div>
         <div>
           <pre><code>
