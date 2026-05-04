@@ -24,10 +24,6 @@ export default function Icons({ theme }) {
                 Home
               </span>
             </button>
-
-            <button type="reset">
-              <img width="20" height="20" src="/res/badge-check.png" />
-            </button>
           </p>
         </div>
         <div>

@@ -69,7 +69,7 @@ Docs
   between example & code on mobile is too small
 - [ ] The search & select menu [here](https://gobi-tools.github.io/css-theme/default/pages/docs/navigation/navigation.html) does 
 not appear OK on small screens; so remove one of the menus;
-- [ ] Remove the .png icon example from [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html)
+- [x] Remove the .png icon example from [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html)
 - [ ] Also [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html), the vertical spacing between 
   example & code on mobile is too small
 - [x] remove the theming docs part
