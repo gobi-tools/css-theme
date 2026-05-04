@@ -1,6 +1,6 @@
 Features
 --------
-- [ ] organise mobile nav a bit better (like here: https://sharif.io/posts)
+- [x] organise mobile nav a bit better (like here: https://sharif.io/posts)
 - [ ] code + figcaption should go together 
 
 - [ ] breadcrumbs navigation elements
@@ -8,11 +8,11 @@ Features
 - [ ] group dialogs with the same name into an accordion menu
 - [x] navigation
   - [ ] navigation of various widths (super skinny, skinny, horizontal, etc, like the side menu of CircleCI)
-  - [x] "menu" type navigation on desktop should also look like https://retiready.co.uk/ (e.g. a bit of "mobile-on-desktop" feel)
+  - [x] "menu" type navigation on desktop should also look like the mobile one
 - [x] forms
   - [x] validation states
 - [ ] animations
-- [ ] "search" form item
+- [ ] create an "search" form item
 
 Improvements
 ------------
@@ -28,16 +28,18 @@ Improvements
   https://docs.soda.io/data-testing/git-managed-data-contracts/install-and-configure 
 - [ ] have a full-screen width dimension
 - [ ] pre>code elements should have horizontal scrolling enabled
+- [ ] redo CSS with nesting
+- [ ] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.
 
 Bugs
 ----
-- [x] should rows in width<600px have a 0px gap in "92.class-rows.css"?  
-- [x] group + row does not vertically center elements correctly
 - [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
 - [ ] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
 - [ ] On mobile Safari, the datepicker has no placeholder text; example [here](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_grouped.html) 
 - [ ] on really small devices (iPhone SE), the last form on [this page](http://localhost:8081/default/pages/docs/forms/forms_normal.html) does not respect
   column widths (e.g. they are unqeual)
+- [x] should rows in width<600px have a 0px gap in "92.class-rows.css"?  
+- [x] group + row does not vertically center elements correctly
 - [x] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
         - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px

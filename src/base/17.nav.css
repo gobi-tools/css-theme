@@ -101,22 +101,24 @@ nav:has(> :is(ul, ol)):not(.disable-mobile) {
 
 @container navigation (max-width: 600px) {
   nav :is(ul, ol) {
+    margin-top: var(--space-7);
+
     flex-direction: column;
     align-items: start;
-    gap: 0;
+    gap: var(--space-5);
+
+    &>li {
+      padding: 0;
+      width: 100%;
+
+      & :is(ul, ol) {
+        width: 50%;
+      }
+    }
   }
 
-  nav :is(ul, ol):first-child>li {
-    padding-bottom: 0;
-  }
-
-  nav :is(ul, ol)>li {
-    padding-left: 0;
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
-  }
-
-  nav :is(ul, ol)>li>:is(ul, ol) {
-    width: 50%;
+  nav :is(ol) {
+    margin-top: 0;
+    gap: var(--space-1);
   }
 }

@@ -3,11 +3,3 @@
 .gap {
   flex-grow: 1;
 }
-
-/* different layouts */
-
-@container (max-width: 600px) {
-  .gap {
-    display: none !important;
-  }
-}
