@@ -35,7 +35,6 @@ import Columns from "../../pages/docs/custom/Columns";
 import Containers from "../../pages/docs/custom/Containers";
 import Groups from "../../pages/docs/custom/Groups";
 import Heroes from "../../pages/docs/custom/Heroes";
-import Theming from "../../pages/docs/custom/Theming";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -82,7 +81,6 @@ export class RouteMaster {
       case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case EDoc.Groups: return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
       case EDoc.Heroes: return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
-      case EDoc.Theming: return `${base}${theme}/pages/docs/custom/${htmlName(Theming)}`;
     }
   }
 
@@ -142,7 +140,6 @@ export class RouteMaster {
           case htmlName(Containers): return EDoc.Containers;
           case htmlName(Groups): return EDoc.Groups;
           case htmlName(Heroes): return EDoc.Heroes;
-          case htmlName(Theming): return EDoc.Theming;
         }
       }
     }

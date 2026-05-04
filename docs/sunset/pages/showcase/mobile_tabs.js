@@ -120,92 +120,89 @@ import { jsx as jsx33, jsxs as jsxs33 } from "https://esm.sh/react@19.2.0/jsx-ru
 // pages/pages/docs/custom/Heroes.tsx
 import { jsx as jsx34, jsxs as jsxs34 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/docs/custom/Theming.tsx
+// pages/common/components/TopNav.tsx
 import { jsx as jsx35, jsxs as jsxs35 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/common/components/TopNav.tsx
-import { jsx as jsx36, jsxs as jsxs36 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-
 // pages/common/components/HomeLayout.tsx
-import { Fragment as Fragment8, jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { Fragment as Fragment8, jsx as jsx36, jsxs as jsxs36 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/common/components/DocsLayout.tsx
-import { jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/pages/docs/navigation/Tabs.tsx
-import { Fragment as Fragment9, jsx as jsx39, jsxs as jsxs39 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { Fragment as Fragment9, jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Tab1() {
-  return /* @__PURE__ */ jsxs39(Fragment9, { children: [
-    /* @__PURE__ */ jsx39("h4", { children: "Home" }),
-    /* @__PURE__ */ jsx39("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-    /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("button", { children: "Edit" }) })
+  return /* @__PURE__ */ jsxs38(Fragment9, { children: [
+    /* @__PURE__ */ jsx38("h4", { children: "Home" }),
+    /* @__PURE__ */ jsx38("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
+    /* @__PURE__ */ jsx38("p", { children: /* @__PURE__ */ jsx38("button", { children: "Edit" }) })
   ] });
 }
 function Tab2() {
-  return /* @__PURE__ */ jsxs39(Fragment9, { children: [
-    /* @__PURE__ */ jsx39("h4", { children: "Projects" }),
-    /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsxs39("ul", { children: [
-      /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsx39("a", { href: "", children: "user123/test" }) }),
-      /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsx39("a", { href: "", children: "user123/notes" }) }),
-      /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsx39("a", { href: "", children: "user_451/financials" }) })
+  return /* @__PURE__ */ jsxs38(Fragment9, { children: [
+    /* @__PURE__ */ jsx38("h4", { children: "Projects" }),
+    /* @__PURE__ */ jsx38("p", { children: /* @__PURE__ */ jsxs38("ul", { children: [
+      /* @__PURE__ */ jsx38("li", { children: /* @__PURE__ */ jsx38("a", { href: "", children: "user123/test" }) }),
+      /* @__PURE__ */ jsx38("li", { children: /* @__PURE__ */ jsx38("a", { href: "", children: "user123/notes" }) }),
+      /* @__PURE__ */ jsx38("li", { children: /* @__PURE__ */ jsx38("a", { href: "", children: "user_451/financials" }) })
     ] }) })
   ] });
 }
 function Tab3() {
-  return /* @__PURE__ */ jsxs39(Fragment9, { children: [
-    /* @__PURE__ */ jsx39("h4", { children: "Users" }),
-    /* @__PURE__ */ jsx39("div", { className: "group", children: /* @__PURE__ */ jsxs39("div", { className: "row", children: [
-      /* @__PURE__ */ jsx39("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/80/80", alt: "profile pic" }),
-      /* @__PURE__ */ jsxs39("div", { children: [
-        /* @__PURE__ */ jsx39("b", { children: "user123" }),
-        /* @__PURE__ */ jsx39("br", {}),
-        /* @__PURE__ */ jsx39("span", { children: "active" })
+  return /* @__PURE__ */ jsxs38(Fragment9, { children: [
+    /* @__PURE__ */ jsx38("h4", { children: "Users" }),
+    /* @__PURE__ */ jsx38("div", { className: "group", children: /* @__PURE__ */ jsxs38("div", { className: "row", children: [
+      /* @__PURE__ */ jsx38("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/80/80", alt: "profile pic" }),
+      /* @__PURE__ */ jsxs38("div", { children: [
+        /* @__PURE__ */ jsx38("b", { children: "user123" }),
+        /* @__PURE__ */ jsx38("br", {}),
+        /* @__PURE__ */ jsx38("span", { children: "active" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx39("br", {}),
-    /* @__PURE__ */ jsx39("div", { className: "group", children: /* @__PURE__ */ jsxs39("div", { className: "row", children: [
-      /* @__PURE__ */ jsx39("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/40/40", alt: "profile pic" }),
-      /* @__PURE__ */ jsxs39("div", { children: [
-        /* @__PURE__ */ jsx39("b", { children: "user_451" }),
-        /* @__PURE__ */ jsx39("br", {}),
-        /* @__PURE__ */ jsx39("span", { children: "active" })
+    /* @__PURE__ */ jsx38("br", {}),
+    /* @__PURE__ */ jsx38("div", { className: "group", children: /* @__PURE__ */ jsxs38("div", { className: "row", children: [
+      /* @__PURE__ */ jsx38("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/40/40", alt: "profile pic" }),
+      /* @__PURE__ */ jsxs38("div", { children: [
+        /* @__PURE__ */ jsx38("b", { children: "user_451" }),
+        /* @__PURE__ */ jsx38("br", {}),
+        /* @__PURE__ */ jsx38("span", { children: "active" })
       ] })
     ] }) })
   ] });
 }
 
 // pages/pages/showcase/MobileTabs.tsx
-import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx39, jsxs as jsxs39 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTabs() {
   const [selected, setSelected] = useState7("tab-1");
-  return /* @__PURE__ */ jsx40("main", { children: /* @__PURE__ */ jsxs40("div", { style: { display: "flex", flexDirection: "row", gap: "var(--space-6)" }, children: [
-    /* @__PURE__ */ jsx40("aside", { children: /* @__PURE__ */ jsx40("nav", { children: /* @__PURE__ */ jsxs40("ol", { children: [
-      /* @__PURE__ */ jsx40("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs40("a", { onClick: () => setSelected("tab-1"), children: [
-        /* @__PURE__ */ jsxs40("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx40("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-          /* @__PURE__ */ jsx40("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+  return /* @__PURE__ */ jsx39("main", { children: /* @__PURE__ */ jsxs39("div", { style: { display: "flex", flexDirection: "row", gap: "var(--space-6)" }, children: [
+    /* @__PURE__ */ jsx39("aside", { children: /* @__PURE__ */ jsx39("nav", { children: /* @__PURE__ */ jsxs39("ol", { children: [
+      /* @__PURE__ */ jsx39("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs39("a", { onClick: () => setSelected("tab-1"), children: [
+        /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx39("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+          /* @__PURE__ */ jsx39("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
         ] }),
-        /* @__PURE__ */ jsx40("span", { children: "Home" })
+        /* @__PURE__ */ jsx39("span", { children: "Home" })
       ] }) }),
-      /* @__PURE__ */ jsx40("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs40("a", { onClick: () => setSelected("tab-2"), children: [
-        /* @__PURE__ */ jsxs40("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx40("path", { d: "M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" }),
-          /* @__PURE__ */ jsx40("circle", { cx: "12", cy: "13", r: "1" })
+      /* @__PURE__ */ jsx39("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs39("a", { onClick: () => setSelected("tab-2"), children: [
+        /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx39("path", { d: "M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" }),
+          /* @__PURE__ */ jsx39("circle", { cx: "12", cy: "13", r: "1" })
         ] }),
-        /* @__PURE__ */ jsx40("span", { children: "Projects" })
+        /* @__PURE__ */ jsx39("span", { children: "Projects" })
       ] }) }),
-      /* @__PURE__ */ jsx40("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs40("a", { onClick: () => setSelected("tab-3"), children: [
-        /* @__PURE__ */ jsxs40("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx40("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
-          /* @__PURE__ */ jsx40("circle", { cx: "12", cy: "7", r: "4" })
+      /* @__PURE__ */ jsx39("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs39("a", { onClick: () => setSelected("tab-3"), children: [
+        /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx39("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
+          /* @__PURE__ */ jsx39("circle", { cx: "12", cy: "7", r: "4" })
         ] }),
-        /* @__PURE__ */ jsx40("span", { children: "Users" })
+        /* @__PURE__ */ jsx39("span", { children: "Users" })
       ] }) })
     ] }) }) }),
-    /* @__PURE__ */ jsxs40("div", { className: "card", style: { flexGrow: 1 }, children: [
-      selected === "tab-1" ? /* @__PURE__ */ jsx40(Tab1, {}) : null,
-      selected === "tab-2" ? /* @__PURE__ */ jsx40(Tab2, {}) : null,
-      selected === "tab-3" ? /* @__PURE__ */ jsx40(Tab3, {}) : null
+    /* @__PURE__ */ jsxs39("div", { className: "card", style: { flexGrow: 1 }, children: [
+      selected === "tab-1" ? /* @__PURE__ */ jsx39(Tab1, {}) : null,
+      selected === "tab-2" ? /* @__PURE__ */ jsx39(Tab2, {}) : null,
+      selected === "tab-3" ? /* @__PURE__ */ jsx39(Tab3, {}) : null
     ] })
   ] }) });
 }

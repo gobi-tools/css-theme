@@ -72,4 +72,4 @@ not appear OK on small screens; so remove one of the menus;
 - [ ] Remove the .png icon example from [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html)
 - [ ] Also [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html), the vertical spacing between 
   example & code on mobile is too small
-- [ ] remove the theming docs part
+- [x] remove the theming docs part

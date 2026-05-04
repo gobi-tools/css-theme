@@ -156,13 +156,8 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Classes}>
                 <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>Classes</a>
               </li>
-
-              <li aria-selected={selectedDoc === EDoc.Theming}>
-                <a href={RouteMaster.doc(EDoc.Theming, theme, route)}>Theming</a>
-              </li>
             </ol>
             <br />
-
           </nav>
         </aside>
         <div>

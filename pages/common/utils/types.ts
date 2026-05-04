@@ -36,8 +36,6 @@ export enum EDoc {
   Groups = 'groups',
   // custom - classes
   Classes = 'classes',
-  // custom - theming
-  Theming = 'theming',
 };
 
 export enum EShowcase {
