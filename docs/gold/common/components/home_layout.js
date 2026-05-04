@@ -31,11 +31,8 @@ var PRODUCT_NAME = "CSS Theme";
 import { jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function DocLayout({ theme, children }) {
   const route = useRoute();
-  const [isMenuOpen, setIsMenuOpen] = useState2(void 0);
+  const [isMenuOpen, setIsMenuOpen] = useState2(false);
   const [selectedDoc, setSelectedDoc] = useState2(void 0);
-  const toggleMenuOpen = () => {
-    setIsMenuOpen(isMenuOpen === void 0 ? true : false);
-  };
   useEffect2(() => {
     if (typeof window !== "undefined") {
       const doc = RouteMaster.getDocFromRoute(window.location.pathname);
@@ -46,7 +43,7 @@ function DocLayout({ theme, children }) {
     /* @__PURE__ */ jsxs("aside", { children: [
       /* @__PURE__ */ jsxs("div", { className: "hide-on-desktop group", children: [
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
-          /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("button", { onClick: toggleMenuOpen, children: isMenuOpen ? /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+          /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("button", { onClick: () => setIsMenuOpen(!isMenuOpen), children: isMenuOpen ? /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
             /* @__PURE__ */ jsx("path", { d: "M18 6 6 18" }),
             /* @__PURE__ */ jsx("path", { d: "m6 6 12 12" })
           ] }) : /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [

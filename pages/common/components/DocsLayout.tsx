@@ -6,13 +6,9 @@ import { useRoute } from "../effects/useRoute";
 
 export default function DocLayout({ theme, children }) {
   const route = useRoute();
-  const [isMenuOpen, setIsMenuOpen] = useState(undefined);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedDoc, setSelectedDoc] = useState<EDoc | undefined>(undefined);
   
-  const toggleMenuOpen = () => {
-    setIsMenuOpen(isMenuOpen === undefined ? true : false);
-  };
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const doc = RouteMaster.getDocFromRoute(window.location.pathname)
@@ -27,7 +23,7 @@ export default function DocLayout({ theme, children }) {
           <div className="hide-on-desktop group">
             <div className="row">
               <div>
-                <button onClick={toggleMenuOpen}>
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                   {
                     isMenuOpen ?
                       (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>) :
