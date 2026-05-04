@@ -12,49 +12,30 @@ Features
 - [x] forms
   - [x] validation states
 - [ ] animations
-- [ ] have the following classes:
-  - [x] .is-banner
-  - [x] .container-medium
-  - [x] .container-wide
-  - [x] .container-narrow
-  - [x] .is-pulled-center
-  - [c] .gap
-  - [x] .success
-  - [x] .error
-  - [x] .hide-on-desktop
-  - [x] .hide-on-mobile
-  - [x] .disable-mobile
-  - [ ] .is-bg-primary
-  - [ ] .is-bg-secondary
-  - [ ] .is-bg-accent
-  - [ ] .is-bg-success
-  - [ ] .is-bg-error
-  - [ ] .is-rounded
-  - [x] .circle
-  - [ ] .group
-  - [ ] .is-row (?)
 
 Improvements
 ------------
 - [x] if I have a nav with the "card" role, it looks fairly ok; but the padding-block could be 0 to make it look even better
 - [ ] fieldsets, cards all have padding-bottom: 0 
   -> is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
-- [ ] decide on class-based versions for various roles & types (columns, note, etc)
+- [x] decide on class-based versions for various roles & types (columns, note, etc)
+  -> Sorted it here: https://gobi-tools.github.io/css-theme/default/pages/docs/custom/classes.html
 - [ ] redo the horizontal spacing to be based on "ch"
 - [ ] redo aside and any other fixed widths to be based on "ch"
 - [ ] redo the mobile & container logic (based on "ch", like here: https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
-- [ ] change "mobile & desktop" only class naming to something like:
- - .hide-on-desktop --> .is-mobile-visible (?)
- - .hide-on-mobile --> .is-desktop-visible (?)
- - .disable-mobile --> .hide-on-mobile
 - [ ] for Tab like navigation, is it possible to have N layers, like Soda docs
   https://docs.soda.io/data-testing/git-managed-data-contracts/install-and-configure 
 - [ ] have a full-screen width dimension
+- [ ] pre>code elements should have horizontal scrolling enabled
 
 Bugs
 ----
+- [x] group + row does not vertically center elements correctly
+- [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
 - [ ] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
-- [ ] nav item with icon + text on mobile is not aligned correctly vertically
+- [ ] On mobile Safari, the datepicker has no placeholder text; example [here](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_grouped.html) 
+- [ ] input elements inside a "group" element maintain their bottom padding/marging; should they?
+- [ ] should rows in width<600px have a 0px gap in "92.class-rows.css"?  
 - [x] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
         - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px
@@ -77,3 +58,18 @@ Bugs
 - [x] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [x] code, kbd, etc, elements should have display: inline-block
 - [x] make the .gap class not visible on mobile
+
+Docs
+----
+- [ ] On [summary](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/summary.html) page, on mobile,
+  the vertical distance between demo & code is too small
+- [ ] Clicking the "menu sub-nav" button on mobile only works once  
+- [ ] [Table](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/table.html) example on mobile does not look good
+- [ ] [Form/Checkbox](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_checkbox.html) last example: distance
+  between example & code on mobile is too small
+- [ ] The search & select menu [here](https://gobi-tools.github.io/css-theme/default/pages/docs/navigation/navigation.html) does 
+not appear OK on small screens; so remove one of the menus;
+- [ ] Remove the .png icon example from [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html)
+- [ ] Also [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html), the vertical spacing between 
+  example & code on mobile is too small
+- [ ] remove the theming docs part
