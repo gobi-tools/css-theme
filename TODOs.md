@@ -35,6 +35,8 @@ Bugs
 - [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
 - [ ] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
 - [ ] On mobile Safari, the datepicker has no placeholder text; example [here](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_grouped.html) 
+- [ ] on really small devices (iPhone SE), the last form on [this page](http://localhost:8081/default/pages/docs/forms/forms_normal.html) does not respect
+  column widths (e.g. they are unqeual)
 - [x] form elements (textarea, inputs) in a couple of layouts (http://localhost/docs/forms-normal?theme=default&width=medium) 
       on smaller devices (but not yet mobile) are not aligning correclty (e.g. 782px)
         - [x] fixed for http://localhost/docs/forms-normal?theme=default&width=medium at 782px

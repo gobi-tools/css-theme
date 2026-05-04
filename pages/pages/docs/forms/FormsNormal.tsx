@@ -34,27 +34,37 @@ export default function FormsNormal({ theme }) {
           <pre><code>
             {`<form>
   <fieldset>
-    <legend>Login</legend>
+    <legend>
+      Login
+    </legend>
 
-    <label for="email">Email</label>
+    <label for="email">
+      Email
+    </label>
     <input 
       type="email" 
       name="email"
-      placeholder="Email Address" 
-      id="email" />
+      placeholder="..." 
+      id="email"/>
 
-    <label for="password">Password</label>
+    <label for="password">
+      Password
+    </label>
     <input 
       type="password" 
       name="password"
       id="password" 
-      placeholder="Password" />
+      placeholder="..."/>
     
-    <input type="submit" value="Login" />
+    <input 
+      type="submit" 
+      value="Login"/>
 
     <p>
       Don't have an account?
-      <a href="...">Sign up</a>.
+      <a href="...">
+        Sign up
+      </a>.
     </p>
   </fieldset>
 </form>`}
@@ -81,8 +91,11 @@ export default function FormsNormal({ theme }) {
     rows="4" 
     id="textarea" 
     name="textarea"
-    placeholder="Write your comments..."></textarea>
-  <input type="submit" value="Comment" />
+    placeholder="...">
+  </textarea>
+  <input 
+    type="submit" 
+    value="Comment"/>
 </form>`}
           </code></pre>
         </div>
@@ -113,7 +126,9 @@ export default function FormsNormal({ theme }) {
     max="100" 
     step="1" 
     value="50"/>
-  <input type="submit" value="Tune" />
+  <input 
+    type="submit" 
+    value="Tune"/>
 </form>`}
           </code></pre>
         </div>
@@ -193,17 +208,32 @@ export default function FormsNormal({ theme }) {
             <pre><code>
               {`<form>
   <fieldset>
-    <legend>Order details</legend>
+    <legend>
+      Order details
+    </legend>
 
     <!-- name row -->
-    <div class="row disable-mobile">
+    <div 
+      class="row disable-mobile">
       <div>
-        <label for="first-name">First name</label>
-        <input type="text" id="first-name" placeholder="First name" />
+        <label 
+          for="first-name">
+          First name
+        </label>
+        <input 
+          type="text" 
+          id="first-name" 
+          placeholder="..."/>
       </div>
       <div>
-        <label for="last-name">Last name</label>
-        <input type="text" id="last-name" placeholder="Last name" />
+        <label 
+          for="last-name">
+          Last name
+        </label>
+        <input 
+          type="text" 
+          id="last-name" 
+          placeholder="..."/>
       </div>
     </div>
 
@@ -211,16 +241,23 @@ export default function FormsNormal({ theme }) {
     <!-- .... -->
 
     <blockquote class="success">
-      Order total is <b>$33.59</b>
+      Order total is 
+      <b>$33.59</b>
     </blockquote>
 
-    <div class="row disable-mobile">
+    <div 
+      class="row disable-mobile">
       <div>
-        <input tye="reset" class="error" value="Reset" />
+        <input 
+          type="reset" 
+          class="error" 
+          value="Reset"//>
       </div>
       <div></div>
       <div>
-        <input type="submit" value="Confirm" /> 
+        <input 
+          type="submit" 
+          value="Confirm"/> 
       </div>
     </div>
   </fieldset>

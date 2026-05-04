@@ -20,8 +20,13 @@ export default function FormsGrouped({ theme }) {
         <div>
           <pre><code>{`<form>
   <div class="group">
-    <input id="email" type="email" placeholder="Email"/>
-    <input type="submit" value="Subscribe"/>
+    <input 
+      id="email" 
+      type="email" 
+      placeholder="Email"/>
+    <input 
+      type="submit" 
+      value="Subscribe"/>
   </div>
 </form>`}</code></pre>
         </div>
@@ -58,9 +63,16 @@ export default function FormsGrouped({ theme }) {
           <pre><code>
             {`<form>
   <div class="group">
-    <button disabled><svg ...></svg></button>
-    <input id="search" type="search" placeholder="Search"/>
-    <input type="submit" value="Search"/>
+    <button disabled>
+      <svg ...></svg>
+    </button>
+    <input 
+      id="search" 
+      type="search" 
+      placeholder="Search"/>
+    <input 
+      type="submit" 
+      value="Search"/>
   </div>
 </form>`}
           </code></pre>
@@ -92,14 +104,27 @@ export default function FormsGrouped({ theme }) {
           <pre><code>
             {`<form>
   <fieldset>
-    <legend>Selection</legend>
+    <legend>
+      Selection
+    </legend>
     <div class="group">
       <select id="delivery">
-        <option value="fast" selected>Fast</option>
-        <option value="standard">Standard</option>
+        <option 
+          value="fast" 
+          selected>
+          Fast
+        </option>
+        <option 
+          value="standard">
+          Standard
+        </option>
       </select>
-      <input type="date" id="delivery-date" />
-      <input type="submit" value="Confirm" />
+      <input 
+        type="date" 
+        id="delivery-date"/>
+      <input 
+        type="submit" 
+        value="Confirm"/>
     </div>
   </fieldset>
 </form>`}

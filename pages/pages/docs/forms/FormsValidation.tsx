@@ -71,9 +71,13 @@ export default function FormsValidation({ theme }) {
           <pre><code>
             {`<form action="/" method="post">
   <fieldset>
-    <legend>Input</legend>
+    <legend>
+      Input
+    </legend>
 
-    <label for="name">Name</label>
+    <label for="name">
+      Name
+    </label>
     <input
       id="name"
       name="name"
@@ -81,34 +85,44 @@ export default function FormsValidation({ theme }) {
       placeholder="Name..."
       pattern=".{4,100}"
       title="Name ..."
-      value="a" />
+      value="a"/>
     <div className="error">
-      <small>Enter ...</small>
+      <small>
+        Enter ...
+      </small>
     </div>
 
-    <label for="email">Email</label>
+    <label for="email">
+      Email
+    </label>
     <input 
       id="email" 
       name="email" 
       type="email" 
       required 
-      placeholder="Email..." />
+      placeholder="Email..."/>
 
-    <label for="comment">Comment</label>
+    <label for="comment">
+      Comment
+    </label>
     <textarea
       rows="5"
       id="comment"
       name="comment"
-      placeholder="Enter your comment"
+      placeholder="..."
       required
       minLength="10"
-      maxLength="500"></textarea>
+      maxLength="500">
+    </textarea>
     <div className="error">
-      <small>Enter ...</small>
+      <small>
+        Enter ...
+      </small>
     </div>
     
-    <input type="submit" value="Submit" />
-    
+    <input 
+      type="submit" 
+      value="Submit"/>
   </fieldset>
 </form>`}
           </code></pre>
@@ -148,24 +162,46 @@ export default function FormsValidation({ theme }) {
           <pre><code>
             {`<form>
   <fieldset>
-    <legend>Countries</legent>
+    <legend>
+      Countries
+    </legent>
     
-    <select id="country" name="country" required>
-      <option value="" disabled selected hidden>
-        Please select a country
+    <select 
+      id="country" 
+      name="country" 
+      required>
+      <option 
+        value="" 
+        disabled 
+        selected 
+        hidden>
+        Please select 
+        a country
       </option>
 
-      <option value="uk">United Kingdom</option>
-      <option value="fr">France</option>
-      <option value="de">Germany</option>
+      <option value="uk">
+        United Kingdom
+      </option>
+      <option value="fr">
+        France
+      </option>
+      <option value="de">
+        Germany
+      </option>
     </select>
 
     <label>
-      <input type="checkbox" name="terms" required />
-      I accept the terms and conditions
+      <input 
+        type="checkbox" 
+        name="terms" 
+        required/>
+      I accept the 
+      terms and conditions
     </label>
 
-    <input type="submit" value="Submit" />
+    <input 
+      type="submit" 
+      value="Submit"/>
   </fieldset>
 </form>`}
           </code></pre>

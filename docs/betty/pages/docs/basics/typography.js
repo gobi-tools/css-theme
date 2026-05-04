@@ -1302,21 +1302,49 @@ function FormsDisabled({ theme }) {
     ] }),
     /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsx11("pre", { children: /* @__PURE__ */ jsx11("code", { children: `<form>
   <fieldset>
-    <legend>Disabled form</legend>
+    <legend>
+      Disabled form
+    </legend>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="N/A" disabled />
+    <label for="email">
+      Email
+    </label>
+    <input 
+      type="email" 
+      id="email" 
+      placeholder="N/A" 
+      disabled/>
     
-    <label for="address">Address</label>
-    <input type="text" id="address" placeholder="Address" disabled />
+    <label for="address">
+      Address
+    </label>
+    <input 
+      type="text" 
+      id="address" 
+      placeholder="Address" 
+      disabled/>
     
-    <label form="delivery">Delivery</label>
-    <select id="delivery" disabled>
-      <option value="fast" selected>Fast</option>
-      <option value="standard">Standard</option>
+    <label form="delivery">
+      Delivery
+    </label>
+    <select 
+      id="delivery" 
+      disabled>
+      <option 
+        value="fast" 
+        selected>
+        Fast
+      </option>
+      <option 
+        value="standard">
+        Standard
+      </option>
     </select>
     
-    <input type="submit" value="Submit" disabled />
+    <input 
+      type="submit" 
+      value="Submit" 
+      disabled/>
   </fieldset>
 </form>` }) }) })
   ] }) });
@@ -1340,8 +1368,13 @@ function FormsGrouped({ theme }) {
       ] }),
       /* @__PURE__ */ jsx12("div", { children: /* @__PURE__ */ jsx12("pre", { children: /* @__PURE__ */ jsx12("code", { children: `<form>
   <div class="group">
-    <input id="email" type="email" placeholder="Email"/>
-    <input type="submit" value="Subscribe"/>
+    <input 
+      id="email" 
+      type="email" 
+      placeholder="Email"/>
+    <input 
+      type="submit" 
+      value="Subscribe"/>
   </div>
 </form>` }) }) })
     ] }),
@@ -1373,9 +1406,16 @@ function FormsGrouped({ theme }) {
       ] }),
       /* @__PURE__ */ jsx12("div", { children: /* @__PURE__ */ jsx12("pre", { children: /* @__PURE__ */ jsx12("code", { children: `<form>
   <div class="group">
-    <button disabled><svg ...></svg></button>
-    <input id="search" type="search" placeholder="Search"/>
-    <input type="submit" value="Search"/>
+    <button disabled>
+      <svg ...></svg>
+    </button>
+    <input 
+      id="search" 
+      type="search" 
+      placeholder="Search"/>
+    <input 
+      type="submit" 
+      value="Search"/>
   </div>
 </form>` }) }) })
     ] }),
@@ -1402,14 +1442,27 @@ function FormsGrouped({ theme }) {
       ] }),
       /* @__PURE__ */ jsx12("div", { children: /* @__PURE__ */ jsx12("pre", { children: /* @__PURE__ */ jsx12("code", { children: `<form>
   <fieldset>
-    <legend>Selection</legend>
+    <legend>
+      Selection
+    </legend>
     <div class="group">
       <select id="delivery">
-        <option value="fast" selected>Fast</option>
-        <option value="standard">Standard</option>
+        <option 
+          value="fast" 
+          selected>
+          Fast
+        </option>
+        <option 
+          value="standard">
+          Standard
+        </option>
       </select>
-      <input type="date" id="delivery-date" />
-      <input type="submit" value="Confirm" />
+      <input 
+        type="date" 
+        id="delivery-date"/>
+      <input 
+        type="submit" 
+        value="Confirm"/>
     </div>
   </fieldset>
 </form>` }) }) })
@@ -1477,27 +1530,37 @@ function FormsNormal({ theme }) {
       ] }),
       /* @__PURE__ */ jsx13("div", { children: /* @__PURE__ */ jsx13("pre", { children: /* @__PURE__ */ jsx13("code", { children: `<form>
   <fieldset>
-    <legend>Login</legend>
+    <legend>
+      Login
+    </legend>
 
-    <label for="email">Email</label>
+    <label for="email">
+      Email
+    </label>
     <input 
       type="email" 
       name="email"
-      placeholder="Email Address" 
-      id="email" />
+      placeholder="..." 
+      id="email"/>
 
-    <label for="password">Password</label>
+    <label for="password">
+      Password
+    </label>
     <input 
       type="password" 
       name="password"
       id="password" 
-      placeholder="Password" />
+      placeholder="..."/>
     
-    <input type="submit" value="Login" />
+    <input 
+      type="submit" 
+      value="Login"/>
 
     <p>
       Don't have an account?
-      <a href="...">Sign up</a>.
+      <a href="...">
+        Sign up
+      </a>.
     </p>
   </fieldset>
 </form>` }) }) })
@@ -1515,8 +1578,11 @@ function FormsNormal({ theme }) {
     rows="4" 
     id="textarea" 
     name="textarea"
-    placeholder="Write your comments..."></textarea>
-  <input type="submit" value="Comment" />
+    placeholder="...">
+  </textarea>
+  <input 
+    type="submit" 
+    value="Comment"/>
 </form>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs13("section", { className: "row", children: [
@@ -1540,7 +1606,9 @@ function FormsNormal({ theme }) {
     max="100" 
     step="1" 
     value="50"/>
-  <input type="submit" value="Tune" />
+  <input 
+    type="submit" 
+    value="Tune"/>
 </form>` }) }) })
     ] }),
     /* @__PURE__ */ jsx13("section", { children: /* @__PURE__ */ jsxs13("div", { className: "row", children: [
@@ -1610,17 +1678,32 @@ function FormsNormal({ theme }) {
       ] }),
       /* @__PURE__ */ jsx13("div", { children: /* @__PURE__ */ jsx13("pre", { children: /* @__PURE__ */ jsx13("code", { children: `<form>
   <fieldset>
-    <legend>Order details</legend>
+    <legend>
+      Order details
+    </legend>
 
     <!-- name row -->
-    <div class="row disable-mobile">
+    <div 
+      class="row disable-mobile">
       <div>
-        <label for="first-name">First name</label>
-        <input type="text" id="first-name" placeholder="First name" />
+        <label 
+          for="first-name">
+          First name
+        </label>
+        <input 
+          type="text" 
+          id="first-name" 
+          placeholder="..."/>
       </div>
       <div>
-        <label for="last-name">Last name</label>
-        <input type="text" id="last-name" placeholder="Last name" />
+        <label 
+          for="last-name">
+          Last name
+        </label>
+        <input 
+          type="text" 
+          id="last-name" 
+          placeholder="..."/>
       </div>
     </div>
 
@@ -1628,16 +1711,23 @@ function FormsNormal({ theme }) {
     <!-- .... -->
 
     <blockquote class="success">
-      Order total is <b>$33.59</b>
+      Order total is 
+      <b>$33.59</b>
     </blockquote>
 
-    <div class="row disable-mobile">
+    <div 
+      class="row disable-mobile">
       <div>
-        <input tye="reset" class="error" value="Reset" />
+        <input 
+          type="reset" 
+          class="error" 
+          value="Reset"//>
       </div>
       <div></div>
       <div>
-        <input type="submit" value="Confirm" /> 
+        <input 
+          type="submit" 
+          value="Confirm"/> 
       </div>
     </div>
   </fieldset>
@@ -1723,9 +1813,13 @@ function FormsValidation({ theme }) {
       ] }),
       /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsx14("pre", { children: /* @__PURE__ */ jsx14("code", { children: `<form action="/" method="post">
   <fieldset>
-    <legend>Input</legend>
+    <legend>
+      Input
+    </legend>
 
-    <label for="name">Name</label>
+    <label for="name">
+      Name
+    </label>
     <input
       id="name"
       name="name"
@@ -1733,34 +1827,44 @@ function FormsValidation({ theme }) {
       placeholder="Name..."
       pattern=".{4,100}"
       title="Name ..."
-      value="a" />
+      value="a"/>
     <div className="error">
-      <small>Enter ...</small>
+      <small>
+        Enter ...
+      </small>
     </div>
 
-    <label for="email">Email</label>
+    <label for="email">
+      Email
+    </label>
     <input 
       id="email" 
       name="email" 
       type="email" 
       required 
-      placeholder="Email..." />
+      placeholder="Email..."/>
 
-    <label for="comment">Comment</label>
+    <label for="comment">
+      Comment
+    </label>
     <textarea
       rows="5"
       id="comment"
       name="comment"
-      placeholder="Enter your comment"
+      placeholder="..."
       required
       minLength="10"
-      maxLength="500"></textarea>
+      maxLength="500">
+    </textarea>
     <div className="error">
-      <small>Enter ...</small>
+      <small>
+        Enter ...
+      </small>
     </div>
     
-    <input type="submit" value="Submit" />
-    
+    <input 
+      type="submit" 
+      value="Submit"/>
   </fieldset>
 </form>` }) }) })
     ] }),
@@ -1792,24 +1896,46 @@ function FormsValidation({ theme }) {
       ] }),
       /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsx14("pre", { children: /* @__PURE__ */ jsx14("code", { children: `<form>
   <fieldset>
-    <legend>Countries</legent>
+    <legend>
+      Countries
+    </legent>
     
-    <select id="country" name="country" required>
-      <option value="" disabled selected hidden>
-        Please select a country
+    <select 
+      id="country" 
+      name="country" 
+      required>
+      <option 
+        value="" 
+        disabled 
+        selected 
+        hidden>
+        Please select 
+        a country
       </option>
 
-      <option value="uk">United Kingdom</option>
-      <option value="fr">France</option>
-      <option value="de">Germany</option>
+      <option value="uk">
+        United Kingdom
+      </option>
+      <option value="fr">
+        France
+      </option>
+      <option value="de">
+        Germany
+      </option>
     </select>
 
     <label>
-      <input type="checkbox" name="terms" required />
-      I accept the terms and conditions
+      <input 
+        type="checkbox" 
+        name="terms" 
+        required/>
+      I accept the 
+      terms and conditions
     </label>
 
-    <input type="submit" value="Submit" />
+    <input 
+      type="submit" 
+      value="Submit"/>
   </fieldset>
 </form>` }) }) })
     ] })

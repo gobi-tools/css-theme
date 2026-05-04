@@ -32,21 +32,49 @@ export default function FormsDisabled({ theme }) {
           <pre><code>
             {`<form>
   <fieldset>
-    <legend>Disabled form</legend>
+    <legend>
+      Disabled form
+    </legend>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="N/A" disabled />
+    <label for="email">
+      Email
+    </label>
+    <input 
+      type="email" 
+      id="email" 
+      placeholder="N/A" 
+      disabled/>
     
-    <label for="address">Address</label>
-    <input type="text" id="address" placeholder="Address" disabled />
+    <label for="address">
+      Address
+    </label>
+    <input 
+      type="text" 
+      id="address" 
+      placeholder="Address" 
+      disabled/>
     
-    <label form="delivery">Delivery</label>
-    <select id="delivery" disabled>
-      <option value="fast" selected>Fast</option>
-      <option value="standard">Standard</option>
+    <label form="delivery">
+      Delivery
+    </label>
+    <select 
+      id="delivery" 
+      disabled>
+      <option 
+        value="fast" 
+        selected>
+        Fast
+      </option>
+      <option 
+        value="standard">
+        Standard
+      </option>
     </select>
     
-    <input type="submit" value="Submit" disabled />
+    <input 
+      type="submit" 
+      value="Submit" 
+      disabled/>
   </fieldset>
 </form>`}
           </code></pre>
