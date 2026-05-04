@@ -27,7 +27,6 @@ export default function Navigation({ theme }) {
               </li>
             </ul>
           </nav>
-          <br />
           <p>
             Links may contain icons to enhance the look and feel of the navigation bar as well as collapsible items.
           </p>
@@ -57,7 +56,6 @@ export default function Navigation({ theme }) {
               </li>
             </ul>
           </nav>
-          <br />
           <p>
             Navigtion items may use the <code>aria-selected</code> attribute to denote they are selected.
           </p>

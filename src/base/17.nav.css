@@ -1,5 +1,9 @@
 /* vertical layout */
 
+nav {
+  margin-bottom: var(--space-6);
+}
+
 nav :is(ul, ol) {
   margin-bottom: 0;
 }
@@ -17,13 +21,6 @@ nav :is(ul, ol)>li>:is(ul, ol)>li {
 }
 
 /* base */
-
-body>nav,
-header>nav {
-  z-index: 41;
-  padding-top: var(--space-3);
-  padding-bottom: var(--space-3);
-}
 
 nav :is(ul, ol) {
   display: flex;
@@ -101,8 +98,6 @@ nav:has(> :is(ul, ol)):not(.disable-mobile) {
 
 @container navigation (max-width: 600px) {
   nav :is(ul, ol) {
-    margin-top: var(--space-7);
-
     flex-direction: column;
     align-items: start;
     gap: var(--space-5);
@@ -118,7 +113,6 @@ nav:has(> :is(ul, ol)):not(.disable-mobile) {
   }
 
   nav :is(ol) {
-    margin-top: 0;
     gap: var(--space-1);
   }
 }

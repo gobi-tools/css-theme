@@ -28,7 +28,7 @@ import { useEffect as useEffect2, useState as useState2 } from "https://esm.sh/r
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function HomeLayout({ theme, children }) {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx(TopNav, { theme }),
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx(TopNav, { theme }) }),
     /* @__PURE__ */ jsx("main", { children: /* @__PURE__ */ jsx("article", { children }) })
   ] });
 }
@@ -2197,7 +2197,6 @@ function Navigation({ theme }) {
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "Item 2" }) }),
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "Item 3" }) })
         ] }) }),
-        /* @__PURE__ */ jsx19("br", {}),
         /* @__PURE__ */ jsx19("p", { children: "Links may contain icons to enhance the look and feel of the navigation bar as well as collapsible items." }),
         /* @__PURE__ */ jsx19("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs19("ul", { children: [
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsxs19("a", { href: "", children: [
@@ -2229,7 +2228,6 @@ function Navigation({ theme }) {
             ] })
           ] })
         ] }) }),
-        /* @__PURE__ */ jsx19("br", {}),
         /* @__PURE__ */ jsxs19("p", { children: [
           "Navigtion items may use the ",
           /* @__PURE__ */ jsx19("code", { children: "aria-selected" }),
@@ -2701,7 +2699,7 @@ function DesktopMenu() {
 import { Fragment as Fragment4, jsx as jsx23, jsxs as jsxs23 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeroSimple() {
   return /* @__PURE__ */ jsxs23(Fragment4, { children: [
-    /* @__PURE__ */ jsx23("header", { className: "hero", style: { backgroundColor: "light-dark(var(--color-secondary-light-2), var(--color-accent-dark-2))" }, children: /* @__PURE__ */ jsx23("nav", { children: /* @__PURE__ */ jsx23("ul", { children: /* @__PURE__ */ jsx23("li", { children: /* @__PURE__ */ jsx23("a", { href: "", children: "Home" }) }) }) }) }),
+    /* @__PURE__ */ jsx23("header", { className: "hero", children: /* @__PURE__ */ jsx23("nav", { children: /* @__PURE__ */ jsx23("ul", { children: /* @__PURE__ */ jsx23("li", { children: /* @__PURE__ */ jsx23("a", { href: "", children: "Home" }) }) }) }) }),
     /* @__PURE__ */ jsxs23("main", { children: [
       /* @__PURE__ */ jsx23("h1", { children: "Title" }),
       /* @__PURE__ */ jsx23("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })

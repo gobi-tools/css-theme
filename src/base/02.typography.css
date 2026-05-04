@@ -26,11 +26,7 @@ p {
   margin-bottom: var(--space-6);
 }
 
-main {
-  margin-top: var(--space-8);
-}
-
-main>* {
+* {
   margin-top: 0;
 }
 
@@ -43,8 +39,8 @@ footer {
   margin-bottom: var(--space-8);
 }
 
-header>:not(nav):not(menu) {
-  padding-top: var(--space-9);
+header {
+  padding-top: var(--space-3);
 }
 
 section {
@@ -148,6 +144,17 @@ hr {
 }
 
 /* different layouts */
+
+*:has(header) {
+  container-type: inline-size;
+  container-name: header;
+}
+
+@container header (max-width: 600px) {
+  header {
+    padding-top: var(--space-7);
+  }
+}
 
 @container (max-width: 600px) {
   footer {

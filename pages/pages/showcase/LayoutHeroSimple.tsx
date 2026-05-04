@@ -1,7 +1,7 @@
 export default function LayoutHeroSimple() {
   return (
     <>
-      <header className="hero" style={{ backgroundColor: 'light-dark(var(--color-secondary-light-2), var(--color-accent-dark-2))' }}>
+      <header className="hero">
         <nav>
           <ul>
             <li><a href="">Home</a></li>

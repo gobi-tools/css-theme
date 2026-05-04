@@ -3,7 +3,9 @@ import TopNav from "./TopNav";
 export default function HomeLayout({ theme, children }) {
   return (
     <>
-      <TopNav theme={theme} />
+      <header>
+        <TopNav theme={theme} />
+      </header>
       <main>
         <article>
           {children}

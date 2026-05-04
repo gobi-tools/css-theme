@@ -2343,7 +2343,7 @@ function DesktopMenu() {
 import { Fragment as Fragment3, jsx as jsx20, jsxs as jsxs20 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeroSimple() {
   return /* @__PURE__ */ jsxs20(Fragment3, { children: [
-    /* @__PURE__ */ jsx20("header", { className: "hero", style: { backgroundColor: "light-dark(var(--color-secondary-light-2), var(--color-accent-dark-2))" }, children: /* @__PURE__ */ jsx20("nav", { children: /* @__PURE__ */ jsx20("ul", { children: /* @__PURE__ */ jsx20("li", { children: /* @__PURE__ */ jsx20("a", { href: "", children: "Home" }) }) }) }) }),
+    /* @__PURE__ */ jsx20("header", { className: "hero", children: /* @__PURE__ */ jsx20("nav", { children: /* @__PURE__ */ jsx20("ul", { children: /* @__PURE__ */ jsx20("li", { children: /* @__PURE__ */ jsx20("a", { href: "", children: "Home" }) }) }) }) }),
     /* @__PURE__ */ jsxs20("main", { children: [
       /* @__PURE__ */ jsx20("h1", { children: "Title" }),
       /* @__PURE__ */ jsx20("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
@@ -3795,7 +3795,7 @@ function TopNav({ theme }) {
 import { Fragment as Fragment9, jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function HomeLayout({ theme, children }) {
   return /* @__PURE__ */ jsxs37(Fragment9, { children: [
-    /* @__PURE__ */ jsx37(TopNav, { theme }),
+    /* @__PURE__ */ jsx37("header", { children: /* @__PURE__ */ jsx37(TopNav, { theme }) }),
     /* @__PURE__ */ jsx37("main", { children: /* @__PURE__ */ jsx37("article", { children }) })
   ] });
 }
@@ -3906,7 +3906,6 @@ function Navigation({ theme }) {
           /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsx39("a", { href: "", children: "Item 2" }) }),
           /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsx39("a", { href: "", children: "Item 3" }) })
         ] }) }),
-        /* @__PURE__ */ jsx39("br", {}),
         /* @__PURE__ */ jsx39("p", { children: "Links may contain icons to enhance the look and feel of the navigation bar as well as collapsible items." }),
         /* @__PURE__ */ jsx39("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs39("ul", { children: [
           /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsxs39("a", { href: "", children: [
@@ -3938,7 +3937,6 @@ function Navigation({ theme }) {
             ] })
           ] })
         ] }) }),
-        /* @__PURE__ */ jsx39("br", {}),
         /* @__PURE__ */ jsxs39("p", { children: [
           "Navigtion items may use the ",
           /* @__PURE__ */ jsx39("code", { children: "aria-selected" }),
