@@ -2296,15 +2296,7 @@ function Navigation({ theme }) {
             ] }),
             /* @__PURE__ */ jsx19("span", { children: "Home" })
           ] }) }),
-          /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsxs19("a", { href: "", children: [
-            /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-              /* @__PURE__ */ jsx19("path", { d: "m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" }),
-              /* @__PURE__ */ jsx19("path", { d: "m18 15 4-4" }),
-              /* @__PURE__ */ jsx19("path", { d: "m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" })
-            ] }),
-            /* @__PURE__ */ jsx19("span", { children: "Docs" })
-          ] }) }),
-          /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsxs19("select", { id: "selector", defaultValue: "opt-1", children: [
+          /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsxs19("select", { id: "selector", defaultValue: "opt-1", style: { minWidth: "100px" }, children: [
             /* @__PURE__ */ jsx19("option", { value: "opt-1", children: "Val 1" }),
             /* @__PURE__ */ jsx19("option", { value: "opt-2", children: "Val 2" }),
             /* @__PURE__ */ jsx19("option", { value: "opt-3", children: "Val 3" })

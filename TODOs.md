@@ -69,7 +69,7 @@ Docs
 - [ ] [Table](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/table.html) example on mobile does not look good
 - [x] [Form/Checkbox](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_checkbox.html) last example: distance
   between example & code on mobile is too small
-- [ ] The search & select menu [here](https://gobi-tools.github.io/css-theme/default/pages/docs/navigation/navigation.html) does 
+- [x] The search & select menu [here](https://gobi-tools.github.io/css-theme/default/pages/docs/navigation/navigation.html) does 
 not appear OK on small screens; so remove one of the menus;
 - [x] Remove the .png icon example from [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html)
 - [x] Also [here](https://gobi-tools.github.io/css-theme/default/pages/docs/extra/icons.html), the vertical spacing between 
