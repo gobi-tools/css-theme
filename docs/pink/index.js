@@ -134,7 +134,9 @@ function Buttons({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<button>Button</button>
-<button type="reset">Button</button>` }) }) })
+<button type="reset">
+  Button
+</button>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs2("section", { className: "row", children: [
       /* @__PURE__ */ jsxs2("div", { children: [
@@ -148,8 +150,14 @@ function Buttons({ theme }) {
           /* @__PURE__ */ jsx2("button", { type: "reset", disabled: true, children: "Disabled" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<button disabled>Button</button>
-<button type="reset" disabled>Button</button>` }) }) })
+      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<button disabled>
+  Button
+</button>
+<button 
+  type="reset" 
+  disabled>
+  Button
+</button>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs2("section", { className: "row", children: [
       /* @__PURE__ */ jsxs2("div", { children: [
@@ -209,13 +217,13 @@ function Buttons({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<!-- left hand side icon -->
+      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<!-- left side icon -->
 <button>
   <svg ...></svg>
   <span>Home</span> 
 </button>
 
-<!-- right hand side icon -->
+<!-- right side icon -->
 <button type="reset">
   <span>Play</span>
   <svg ...></svg>
@@ -269,14 +277,12 @@ function Buttons({ theme }) {
           ) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<div>
-  <button>
-    <svg ...></svg>
-  </button>
-  <button type="reset">
-    <dvg ...></svg>
-  </button>
-</div>` }) }) })
+      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<button>
+  <svg ...></svg>
+</button>
+<button type="reset">
+  <dvg ...></svg>
+</button>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs2("section", { className: "row", children: [
       /* @__PURE__ */ jsxs2("div", { children: [
@@ -317,9 +323,14 @@ function Buttons({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<button class="success">Confirm</button>
+      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<button 
+  class="success">
+  Confirm
+</button>
 
-<button type="reset" class="error">
+<button 
+  type="reset" 
+  class="error">
   <svg ...></svg>
   <span>Cancel</span>
 </button>` }) }) })
@@ -407,15 +418,27 @@ function Buttons({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<p class="group">
-  <button>Button 1</button>
-  <button type="reset">Button 2</button>
-  <button type="reset">Button 3</button>
+  <button>
+    Button 1
+  </button>
+  <button type="reset">
+    Button 2
+  </button>
+  <button type="reset">
+    Button 3
+  </button>
 </p>
 
 <p class="group">
-  <button type="reset"><svg ...></svg></button>
-  <button type="reset"><svg ...></svg></button>
-  <button><svg ...></svg></button>
+  <button type="reset">
+    <svg ...></svg>
+  </button>
+  <button type="reset">
+    <svg ...></svg>
+  </button>
+  <button>
+    <svg ...></svg>
+  </button>
 </p>` }) }) })
     ] })
   ] });
@@ -435,7 +458,16 @@ function Typography({ theme }) {
         /* @__PURE__ */ jsx3("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." })
       ] }),
       /* @__PURE__ */ jsx3("div", { children: /* @__PURE__ */ jsx3("pre", { children: /* @__PURE__ */ jsx3("code", { children: `<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Lorem ipsum dolor sit amet, 
+  consectetur adipiscing elit, 
+  sed do eiusmod tempor 
+  incididunt ut labore et 
+  dolore magna aliqua. 
+  Ut enim ad minim veniam, 
+  quis nostrud exercitation 
+  ullamco laboris nisi ut 
+  aliquip ex ea 
+  commodo consequat.
 </p>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs3("section", { className: "row", children: [
@@ -449,86 +481,32 @@ function Typography({ theme }) {
           /* @__PURE__ */ jsx3("code", { children: "em" }),
           " tags and many more."
         ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text with ",
-          /* @__PURE__ */ jsx3("i", { children: "italic" }),
-          " style"
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text with ",
-          /* @__PURE__ */ jsx3("em", { children: "emphasized" }),
-          " style"
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text containing a ",
-          /* @__PURE__ */ jsx3("dfn", { children: "definition" })
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text containing a ",
-          /* @__PURE__ */ jsx3("cite", { children: "citation" })
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text with ",
-          /* @__PURE__ */ jsx3("b", { children: "bold" }),
-          " style"
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text with ",
-          /* @__PURE__ */ jsx3("strong", { children: "strong" }),
-          " style"
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text with ",
-          /* @__PURE__ */ jsx3("del", { children: "deleted" }),
-          " style"
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text with ",
-          /* @__PURE__ */ jsx3("s", { children: "corrected" }),
-          " style"
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text with ",
-          /* @__PURE__ */ jsx3("u", { children: "underlined" }),
-          " style"
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text containing a ",
-          /* @__PURE__ */ jsx3("q", { children: "quotation" })
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text containing a ",
-          /* @__PURE__ */ jsx3("small", { children: "smaller" }),
-          " section"
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text containing a ",
-          /* @__PURE__ */ jsx3("sub", { children: "subscript" })
-        ] }),
-        /* @__PURE__ */ jsxs3("p", { children: [
-          "Text containing a ",
-          /* @__PURE__ */ jsx3("sup", { children: "supescript" }),
-          " section"
-        ] })
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("i", { children: "italic" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("em", { children: "emphasized" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("dfn", { children: "definition" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("cite", { children: "citation" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("b", { children: "bold" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("strong", { children: "strong" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("del", { children: "deleted" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("s", { children: "corrected" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("u", { children: "underlined" }) }),
+        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsx3("q", { children: "quotation" }) })
       ] }),
-      /* @__PURE__ */ jsx3("div", { children: /* @__PURE__ */ jsx3("pre", { children: /* @__PURE__ */ jsx3("code", { children: `<p>Text with <i>italic</i> style</p>
-<p>Text with <em>emphasized</em> style</p>
-<p>Text containing a <dfn>definition</dfn></p>
-<p>Text containing a <cite>citation</cite></p>
+      /* @__PURE__ */ jsx3("div", { children: /* @__PURE__ */ jsx3("pre", { children: /* @__PURE__ */ jsx3("code", { children: `<i>italic</i>
+<em>emphasized</em>
+<dfn>definition</dfn>
+<cite>citation</cite>
 
-<p>Text with <b>bold</b> style</p>
-<p>Text with <strong>strong</strong> style</p>
+<b>bold</b>
+<strong>strong</strong>
+<del>deleted</del>
+<s>corrected</s>
+<u>underlined</u>
+<q>quotation</q>
 
-<p>Text with <del>deleted</del> style</p>
-<p>Text with <s>corrected</s> style</p>
-
-<p>Text with <u>underlined</u> style</p>
-
-<p>Text containing a <q>quotation</q></p>
-
-<p>Text containing a <small>smaller</small> section</p>
-<p>Text containing a <sub>subscript</sub></p>
-<p>Text containing a <sup>supescript</sup> section</p>` }) }) })
+<small>smaller</small>
+<sub>subscript</sub>
+<sup>supescript</sup>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs3("section", { className: "row", children: [
       /* @__PURE__ */ jsxs3("div", { children: [
@@ -564,7 +542,9 @@ function Blockquotes({ theme }) {
         /* @__PURE__ */ jsx4("p", { children: "Blockquotes (or block quotations) are visually separate from the surrounding text." }),
         /* @__PURE__ */ jsx4("blockquote", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
       ] }),
-      /* @__PURE__ */ jsx4("div", { children: /* @__PURE__ */ jsx4("pre", { children: /* @__PURE__ */ jsx4("code", { children: `<blockquote>Lorem ipsum ...</blockquote>` }) }) })
+      /* @__PURE__ */ jsx4("div", { children: /* @__PURE__ */ jsx4("pre", { children: /* @__PURE__ */ jsx4("code", { children: `<blockquote>
+  Lorem ipsum ...
+</blockquote>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs4("section", { className: "row", children: [
       /* @__PURE__ */ jsxs4("div", { children: [
@@ -614,7 +594,11 @@ function Blockquotes({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx4("div", { children: /* @__PURE__ */ jsx4("pre", { children: /* @__PURE__ */ jsx4("code", { children: `<blockquote>Press <kbd>Ctrl + Q</kbd> to quit</blockquote>
+      /* @__PURE__ */ jsx4("div", { children: /* @__PURE__ */ jsx4("pre", { children: /* @__PURE__ */ jsx4("code", { children: `<blockquote>
+  Press 
+  <kbd>Ctrl + Q</kbd>
+  to quit
+</blockquote>
             
 <blockquote>
   <span class="group">
@@ -623,7 +607,9 @@ function Blockquotes({ theme }) {
   </span>
   <br/>
   <p>
-    Your package will be delivered on <b>Tuesday at 08:00.</b>
+    Your package will 
+    be delivered on 
+    <b>Tuesday at 08:00</b>.
   </p>
 </blockquote>` }) }) })
     ] }),
@@ -655,12 +641,18 @@ function Blockquotes({ theme }) {
       ] }),
       /* @__PURE__ */ jsx4("div", { children: /* @__PURE__ */ jsx4("pre", { children: /* @__PURE__ */ jsx4("code", { children: `<blockquote class="success">
   <h4>Success</h4>
-  <p>The operation was completed successfully</p>
+  <p>
+    The operation was 
+    completed successfully
+  </p>
 </blockquote>
 
 <blockquote class="error">
   <p>Unknown error</p>
-  <code>Server responsed with <b>Error 500</b></code>
+  <code>
+    Server responsed with 
+    <b>Error 500</b>
+  </code>
 </blockquote>` }) }) })
     ] })
   ] });
@@ -689,9 +681,16 @@ function Code({ theme }) {
         "."
       ] })
     ] }),
-    /* @__PURE__ */ jsx5("div", { children: /* @__PURE__ */ jsx5("pre", { children: /* @__PURE__ */ jsx5("code", { children: `<p>Inline code <code>...</code></p>
-<p>Keyboard shortcut <kbd>...</kbd></p>
-<pre><code>....</code></pre>` }) }) })
+    /* @__PURE__ */ jsx5("div", { children: /* @__PURE__ */ jsx5("pre", { children: /* @__PURE__ */ jsx5("code", { children: `<p>
+  Inline code <code>...</code>
+</p>
+<p>
+  Keyboard shortcut 
+  <kbd>...</kbd>
+</p>
+<pre>
+  <code>....</code>
+</pre>` }) }) })
   ] }) }) });
 }
 
@@ -708,8 +707,14 @@ function Figures({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx6("div", { children: /* @__PURE__ */ jsx6("pre", { children: /* @__PURE__ */ jsx6("code", { children: `<figure>
-  <img width="640" height="480" src="..." alt="ssample image " />
-  <figcaption>Sample caption</figcaption>
+  <img 
+    width="640" 
+    height="480" 
+    src="..." 
+    alt="ssample image " />
+  <figcaption>
+    Sample caption
+  </figcaption>
 </figure>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs6("section", { className: "row", children: [
@@ -729,16 +734,33 @@ function Figures({ theme }) {
       ] }),
       /* @__PURE__ */ jsx6("div", { children: /* @__PURE__ */ jsx6("pre", { children: /* @__PURE__ */ jsx6("code", { children: `<figure>
   <figure>
-    <img width="200" height="240" src="..." alt="first image" />
-    <figcaption>Caption for the first image</figcaption>
+    <img 
+      width="200" 
+      height="240" 
+      src="..." 
+      alt="first image" />
+    <figcaption>
+      Caption for the 
+      first image
+    </figcaption>
   </figure>
   
   <figure>
-    <img width="240" height="240" src="..." alt="second image" />
-    <figcaption>Caption for the second image</figcaption>
+    <img 
+      width="240" 
+      height="240" 
+      src="..." 
+      alt="second image" />
+    <figcaption>
+      Caption for the 
+      second image
+    </figcaption>
   </figure>
   
-  <figcaption>Caption for the figure group</figcaption>
+  <figcaption>
+    Caption for the 
+    figure group
+  </figcaption>
 </figure>` }) }) })
     ] })
   ] });
@@ -778,9 +800,19 @@ function Links({ theme }) {
         "."
       ] }) })
     ] }),
-    /* @__PURE__ */ jsx7("div", { children: /* @__PURE__ */ jsx7("pre", { children: /* @__PURE__ */ jsx7("code", { children: `<a href="">link</a>
-<a href="" class="success">success</a>
-<a href="" class="error">error</a>` }) }) })
+    /* @__PURE__ */ jsx7("div", { children: /* @__PURE__ */ jsx7("pre", { children: /* @__PURE__ */ jsx7("code", { children: `<a href="...">
+  link
+</a>
+<a 
+  href="..." 
+  class="success">
+  success
+</a>
+<a 
+  href="..." 
+  class="error">
+  error
+</a>` }) }) })
   ] }) });
 }
 
@@ -826,8 +858,8 @@ function Summary({ theme }) {
         /* @__PURE__ */ jsxs8("details", { className: "card success", children: [
           /* @__PURE__ */ jsx8("summary", { children: "Success" }),
           /* @__PURE__ */ jsxs8("p", { children: [
-            "Operation finished with ",
-            /* @__PURE__ */ jsx8("code", { children: "e29c147b-27f9-4fda-9cf8-eeca6abb1c41" })
+            "Operation finished ",
+            /* @__PURE__ */ jsx8("code", { children: "OK" })
           ] })
         ] }),
         /* @__PURE__ */ jsxs8("details", { className: "card error", children: [
@@ -849,14 +881,22 @@ function Summary({ theme }) {
       /* @__PURE__ */ jsx8("div", { children: /* @__PURE__ */ jsx8("pre", { children: /* @__PURE__ */ jsx8("code", { children: `<details class="card">
   <summary>Note</summary>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit 
+    amet, consectetur 
+    adipiscing elit, 
+    sed do eiusmod tempor 
+    incididunt ut labore 
+    et dolore magna aliqua.
   </p>
 </details>
             
 <details class="card success">
   <summary>Success</summary>
   <p>
-    Operation finished with <code>e29c147b-27f9-4fda-9cf8-eeca6abb1c41</code>
+    Operation finished 
+    <code>
+      OK
+    </code>
   </p>
 </details>
   
@@ -1006,14 +1046,18 @@ function Table({ theme }) {
     <tr>
       <th></th>
       <th>ID</th>
-      <th>Username</th>
+      <th>User</th>
       <th>Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <img class="circle" width="32" height="32" src="..."/>
+        <img 
+          class="circle" 
+          width="32" 
+          height="32" 
+          src="..."/>
       </td>
       <td>
         <code>...</code>
@@ -1023,10 +1067,10 @@ function Table({ theme }) {
       </td>
       <td>
         <button>
-          <svg aria-label="Edit" ...></svg>
+          <svg...></svg>
         </button>
         <button class="error">
-          <avg aria-label="Delete" ...></svg>
+          <avg...></svg>
         </button>
       </td>
     </tr>
@@ -1144,8 +1188,12 @@ function Tags({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx10("div", { children: /* @__PURE__ */ jsx10("pre", { children: /* @__PURE__ */ jsx10("code", { children: `<mark class="success">Process OK</mark>
-<mark class="error">Error 400</mark>` }) }) })
+      /* @__PURE__ */ jsx10("div", { children: /* @__PURE__ */ jsx10("pre", { children: /* @__PURE__ */ jsx10("code", { children: `<mark class="success">
+  Process OK
+</mark>
+<mark class="error">
+  Error 400
+</mark>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs10("section", { className: "row", children: [
       /* @__PURE__ */ jsxs10("div", { children: [
@@ -1184,8 +1232,12 @@ function Tags({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx10("div", { children: /* @__PURE__ */ jsx10("pre", { children: /* @__PURE__ */ jsx10("code", { children: `<p class="group">
-  <mark>npm</mark>
-  <mark class="success">1.0.3</mark>
+  <mark>
+    npm
+  </mark>
+  <mark class="success">
+    1.0.3
+  </mark>
   <mark class="error">
     <svg ...></svg>
   </mark>

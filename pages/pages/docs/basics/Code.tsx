@@ -25,9 +25,16 @@ export default function Code({ theme }) {
           </div>
           <div>
             <pre><code>
-              {`<p>Inline code <code>...</code></p>
-<p>Keyboard shortcut <kbd>...</kbd></p>
-<pre><code>....</code></pre>`}
+              {`<p>
+  Inline code <code>...</code>
+</p>
+<p>
+  Keyboard shortcut 
+  <kbd>...</kbd>
+</p>
+<pre>
+  <code>....</code>
+</pre>`}
             </code></pre>
           </div>
         </div>

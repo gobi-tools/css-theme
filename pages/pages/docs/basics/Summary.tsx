@@ -59,7 +59,7 @@ export default function Summary({ theme }) {
           <details className="card success">
             <summary>Success</summary>
             <p>
-              Operation finished with <code>e29c147b-27f9-4fda-9cf8-eeca6abb1c41</code>
+              Operation finished <code>OK</code>
             </p>
           </details>
           <details className="card error">
@@ -87,14 +87,22 @@ export default function Summary({ theme }) {
             {`<details class="card">
   <summary>Note</summary>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit 
+    amet, consectetur 
+    adipiscing elit, 
+    sed do eiusmod tempor 
+    incididunt ut labore 
+    et dolore magna aliqua.
   </p>
 </details>
             
 <details class="card success">
   <summary>Success</summary>
   <p>
-    Operation finished with <code>e29c147b-27f9-4fda-9cf8-eeca6abb1c41</code>
+    Operation finished 
+    <code>
+      OK
+    </code>
   </p>
 </details>
   

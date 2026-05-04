@@ -35,7 +35,8 @@ pre>code {
   text-align: left;
   text-wrap: auto;
   word-wrap: break-word;
-  word-break: break-all;
+  /* word-break: break-all; */
+  word-break: auto-phrase;
   white-space: break-spaces !important;
   padding: var(--space-6);
 }

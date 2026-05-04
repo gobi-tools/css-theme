@@ -17,8 +17,14 @@ export default function Figures({ theme }) {
         <div>
           <pre><code>
             {`<figure>
-  <img width="640" height="480" src="..." alt="ssample image " />
-  <figcaption>Sample caption</figcaption>
+  <img 
+    width="640" 
+    height="480" 
+    src="..." 
+    alt="ssample image " />
+  <figcaption>
+    Sample caption
+  </figcaption>
 </figure>`}
           </code></pre>
         </div>
@@ -47,16 +53,33 @@ export default function Figures({ theme }) {
           <pre><code>
             {`<figure>
   <figure>
-    <img width="200" height="240" src="..." alt="first image" />
-    <figcaption>Caption for the first image</figcaption>
+    <img 
+      width="200" 
+      height="240" 
+      src="..." 
+      alt="first image" />
+    <figcaption>
+      Caption for the 
+      first image
+    </figcaption>
   </figure>
   
   <figure>
-    <img width="240" height="240" src="..." alt="second image" />
-    <figcaption>Caption for the second image</figcaption>
+    <img 
+      width="240" 
+      height="240" 
+      src="..." 
+      alt="second image" />
+    <figcaption>
+      Caption for the 
+      second image
+    </figcaption>
   </figure>
   
-  <figcaption>Caption for the figure group</figcaption>
+  <figcaption>
+    Caption for the 
+    figure group
+  </figcaption>
 </figure>`}
           </code></pre>
         </div>

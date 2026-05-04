@@ -166,14 +166,18 @@ export default function Table({ theme }) {
     <tr>
       <th></th>
       <th>ID</th>
-      <th>Username</th>
+      <th>User</th>
       <th>Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <img class="circle" width="32" height="32" src="..."/>
+        <img 
+          class="circle" 
+          width="32" 
+          height="32" 
+          src="..."/>
       </td>
       <td>
         <code>...</code>
@@ -183,10 +187,10 @@ export default function Table({ theme }) {
       </td>
       <td>
         <button>
-          <svg aria-label="Edit" ...></svg>
+          <svg...></svg>
         </button>
         <button class="error">
-          <avg aria-label="Delete" ...></svg>
+          <avg...></svg>
         </button>
       </td>
     </tr>

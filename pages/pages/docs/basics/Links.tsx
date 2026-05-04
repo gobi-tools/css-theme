@@ -32,9 +32,19 @@ export default function Links({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<a href="">link</a>
-<a href="" class="success">success</a>
-<a href="" class="error">error</a>`}
+            {`<a href="...">
+  link
+</a>
+<a 
+  href="..." 
+  class="success">
+  success
+</a>
+<a 
+  href="..." 
+  class="error">
+  error
+</a>`}
           </code></pre>
         </div>
       </section>

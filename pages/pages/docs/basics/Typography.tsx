@@ -18,7 +18,16 @@ export default function Typography({ theme }) {
         <div>
           <pre><code>
             {`<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Lorem ipsum dolor sit amet, 
+  consectetur adipiscing elit, 
+  sed do eiusmod tempor 
+  incididunt ut labore et 
+  dolore magna aliqua. 
+  Ut enim ad minim veniam, 
+  quis nostrud exercitation 
+  ullamco laboris nisi ut 
+  aliquip ex ea 
+  commodo consequat.
 </p>`}
           </code></pre>
         </div>
@@ -30,70 +39,67 @@ export default function Typography({ theme }) {
             and many more.
           </p>
           <p>
-            Text with <i>italic</i> style
+            <i>italic</i>
           </p>
           <p>
-            Text with <em>emphasized</em> style
+            <em>emphasized</em>
           </p>
           <p>
-            Text containing a <dfn>definition</dfn>
+            <dfn>definition</dfn>
           </p>
           <p>
-            Text containing a <cite>citation</cite>
+            <cite>citation</cite>
           </p>
 
           <p>
-            Text with <b>bold</b> style
+            <b>bold</b>
           </p>
           <p>
-            Text with <strong>strong</strong> style
+            <strong>strong</strong>
           </p>
 
           <p>
-            Text with <del>deleted</del> style
+            <del>deleted</del>
           </p>
           <p>
-            Text with <s>corrected</s> style
+            <s>corrected</s>
           </p>
 
           <p>
-            Text with <u>underlined</u> style
+            <u>underlined</u>
           </p>
 
           <p>
-            Text containing a <q>quotation</q>
+            <q>quotation</q>
           </p>
 
-          <p>
-            Text containing a <small>smaller</small> section
+          {/* <p>
+            <small>smaller</small>
           </p>
           <p>
-            Text containing a <sub>subscript</sub>
+            <sub>subscript</sub>
           </p>
           <p>
-            Text containing a <sup>supescript</sup> section
-          </p>
+            <sup>supescript</sup>
+          </p> */}
         </div>
         <div>
           <pre><code>
-            {`<p>Text with <i>italic</i> style</p>
-<p>Text with <em>emphasized</em> style</p>
-<p>Text containing a <dfn>definition</dfn></p>
-<p>Text containing a <cite>citation</cite></p>
+            {`<i>italic</i>
+<em>emphasized</em>
+<dfn>definition</dfn>
+<cite>citation</cite>
 
-<p>Text with <b>bold</b> style</p>
-<p>Text with <strong>strong</strong> style</p>
+<b>bold</b>
+<strong>strong</strong>
+<del>deleted</del>
+<s>corrected</s>
+<u>underlined</u>
+<q>quotation</q>
 
-<p>Text with <del>deleted</del> style</p>
-<p>Text with <s>corrected</s> style</p>
-
-<p>Text with <u>underlined</u> style</p>
-
-<p>Text containing a <q>quotation</q></p>
-
-<p>Text containing a <small>smaller</small> section</p>
-<p>Text containing a <sub>subscript</sub></p>
-<p>Text containing a <sup>supescript</sup> section</p>`}
+<small>smaller</small>
+<sub>subscript</sub>
+<sup>supescript</sup>`}
           </code></pre>
         </div>
       </section>

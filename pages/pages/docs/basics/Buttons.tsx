@@ -21,7 +21,9 @@ export default function Buttons({ theme }) {
         <div>
           <pre><code>
             {`<button>Button</button>
-<button type="reset">Button</button>`}
+<button type="reset">
+  Button
+</button>`}
           </code></pre>
         </div>
       </section>
@@ -39,8 +41,14 @@ export default function Buttons({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<button disabled>Button</button>
-<button type="reset" disabled>Button</button>`}
+            {`<button disabled>
+  Button
+</button>
+<button 
+  type="reset" 
+  disabled>
+  Button
+</button>`}
           </code></pre>
         </div>
       </section>
@@ -81,13 +89,13 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>{`<!-- left hand side icon -->
+          <pre><code>{`<!-- left side icon -->
 <button>
   <svg ...></svg>
   <span>Home</span> 
 </button>
 
-<!-- right hand side icon -->
+<!-- right side icon -->
 <button type="reset">
   <span>Play</span>
   <svg ...></svg>
@@ -123,14 +131,12 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>{`<div>
-  <button>
-    <svg ...></svg>
-  </button>
-  <button type="reset">
-    <dvg ...></svg>
-  </button>
-</div>`}
+          <pre><code>{`<button>
+  <svg ...></svg>
+</button>
+<button type="reset">
+  <dvg ...></svg>
+</button>`}
           </code></pre>
         </div>
       </section>
@@ -160,9 +166,14 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>{`<button class="success">Confirm</button>
+          <pre><code>{`<button 
+  class="success">
+  Confirm
+</button>
 
-<button type="reset" class="error">
+<button 
+  type="reset" 
+  class="error">
   <svg ...></svg>
   <span>Cancel</span>
 </button>`}
@@ -217,15 +228,27 @@ export default function Buttons({ theme }) {
         </div>
         <div>
           <pre><code>{`<p class="group">
-  <button>Button 1</button>
-  <button type="reset">Button 2</button>
-  <button type="reset">Button 3</button>
+  <button>
+    Button 1
+  </button>
+  <button type="reset">
+    Button 2
+  </button>
+  <button type="reset">
+    Button 3
+  </button>
 </p>
 
 <p class="group">
-  <button type="reset"><svg ...></svg></button>
-  <button type="reset"><svg ...></svg></button>
-  <button><svg ...></svg></button>
+  <button type="reset">
+    <svg ...></svg>
+  </button>
+  <button type="reset">
+    <svg ...></svg>
+  </button>
+  <button>
+    <svg ...></svg>
+  </button>
 </p>`}
           </code></pre>
         </div>

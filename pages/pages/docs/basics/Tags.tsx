@@ -89,8 +89,12 @@ export default function Tags({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<mark class="success">Process OK</mark>
-<mark class="error">Error 400</mark>`}
+            {`<mark class="success">
+  Process OK
+</mark>
+<mark class="error">
+  Error 400
+</mark>`}
           </code></pre>
         </div>
       </section>
@@ -124,8 +128,12 @@ export default function Tags({ theme }) {
         <div>
           <pre><code>
             {`<p class="group">
-  <mark>npm</mark>
-  <mark class="success">1.0.3</mark>
+  <mark>
+    npm
+  </mark>
+  <mark class="success">
+    1.0.3
+  </mark>
   <mark class="error">
     <svg ...></svg>
   </mark>

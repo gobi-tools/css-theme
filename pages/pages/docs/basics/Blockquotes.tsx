@@ -19,7 +19,9 @@ export default function Blockquotes({ theme }) {
           </blockquote>
         </div>
         <div>
-          <pre><code>{`<blockquote>Lorem ipsum ...</blockquote>`}</code></pre>
+          <pre><code>{`<blockquote>
+  Lorem ipsum ...
+</blockquote>`}</code></pre>
         </div>
       </section>
 
@@ -62,7 +64,11 @@ export default function Blockquotes({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<blockquote>Press <kbd>Ctrl + Q</kbd> to quit</blockquote>
+            {`<blockquote>
+  Press 
+  <kbd>Ctrl + Q</kbd>
+  to quit
+</blockquote>
             
 <blockquote>
   <span class="group">
@@ -71,7 +77,9 @@ export default function Blockquotes({ theme }) {
   </span>
   <br/>
   <p>
-    Your package will be delivered on <b>Tuesday at 08:00.</b>
+    Your package will 
+    be delivered on 
+    <b>Tuesday at 08:00</b>.
   </p>
 </blockquote>`}
           </code></pre>
@@ -102,12 +110,18 @@ export default function Blockquotes({ theme }) {
           <pre><code>
             {`<blockquote class="success">
   <h4>Success</h4>
-  <p>The operation was completed successfully</p>
+  <p>
+    The operation was 
+    completed successfully
+  </p>
 </blockquote>
 
 <blockquote class="error">
   <p>Unknown error</p>
-  <code>Server responsed with <b>Error 500</b></code>
+  <code>
+    Server responsed with 
+    <b>Error 500</b>
+  </code>
 </blockquote>`}
           </code></pre>
         </div>

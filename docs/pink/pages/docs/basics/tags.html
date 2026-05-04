@@ -6,10 +6,18 @@
 &lt;mark&gt;
   &lt;span&gt;error&lt;/span&gt;
   &lt;svg ...&gt;&lt;/svg&gt;
-&lt;/mark&gt;</code></pre></div></section><section class="row"><div><p>You  can assign the <code>success</code> and <code>error</code> classes to change the appearance of the highlighted content.</p><p><mark class="success">Process OK</mark><mark class="error">Error 400</mark></p><p><small>You can learn more about classes <a href="/pink/pages/docs/custom/classes.html">here</a>.</small></p></div><div><pre><code>&lt;mark class=&quot;success&quot;&gt;Process OK&lt;/mark&gt;
-&lt;mark class=&quot;error&quot;&gt;Error 400&lt;/mark&gt;</code></pre></div></section><section class="row"><div><p>Finally, if you wrap a number of highlighted pieces of text in a html element with the <code>group</code> class, they will be grouped together.</p><p class="group"><mark>npm</mark><mark class="success">1.0.3</mark><mark class="error"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></mark></p><p><small>You can learn more about groups <a href="/pink/pages/docs/custom/groups.html">here</a>.</small></p></div><div><pre><code>&lt;p class=&quot;group&quot;&gt;
-  &lt;mark&gt;npm&lt;/mark&gt;
-  &lt;mark class=&quot;success&quot;&gt;1.0.3&lt;/mark&gt;
+&lt;/mark&gt;</code></pre></div></section><section class="row"><div><p>You  can assign the <code>success</code> and <code>error</code> classes to change the appearance of the highlighted content.</p><p><mark class="success">Process OK</mark><mark class="error">Error 400</mark></p><p><small>You can learn more about classes <a href="/pink/pages/docs/custom/classes.html">here</a>.</small></p></div><div><pre><code>&lt;mark class=&quot;success&quot;&gt;
+  Process OK
+&lt;/mark&gt;
+&lt;mark class=&quot;error&quot;&gt;
+  Error 400
+&lt;/mark&gt;</code></pre></div></section><section class="row"><div><p>Finally, if you wrap a number of highlighted pieces of text in a html element with the <code>group</code> class, they will be grouped together.</p><p class="group"><mark>npm</mark><mark class="success">1.0.3</mark><mark class="error"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></mark></p><p><small>You can learn more about groups <a href="/pink/pages/docs/custom/groups.html">here</a>.</small></p></div><div><pre><code>&lt;p class=&quot;group&quot;&gt;
+  &lt;mark&gt;
+    npm
+  &lt;/mark&gt;
+  &lt;mark class=&quot;success&quot;&gt;
+    1.0.3
+  &lt;/mark&gt;
   &lt;mark class=&quot;error&quot;&gt;
     &lt;svg ...&gt;&lt;/svg&gt;
   &lt;/mark&gt;
