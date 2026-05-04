@@ -28,7 +28,9 @@ export default function Mobile({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<!-- elements that reize naturally on mobile -->
+            {`<!-- elements that -->
+<!-- resize naturally -->
+<!-- on mobile -->
 <p>
   Lorem ipsum ....
 </p>`}

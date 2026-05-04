@@ -150,7 +150,10 @@ export default function Cards({ theme }) {
         <div>
           <pre><code>
             {`<div class="card">
-  <img height="80" src="..." alt="..." />
+  <img 
+    height="80" 
+    src="..." 
+    alt="..." />
   <p>
     Lorem ipsum ...
   </p>
@@ -184,13 +187,20 @@ export default function Cards({ theme }) {
         <div>
           <pre><code>
             {`<div class="card">
-  <img height="160" src="..." alt="..." />
-  <h4>Title</h4>
+  <img 
+    height="160" 
+    src="..." 
+    alt="..." />
+  <h4>
+    Title
+  </h4>
   <p>
     Lorem ipsum ...
   </p>
   <p>
-    <button>Button</button>
+    <button>
+      Button
+    </button>
   </p>
 </div>`}
           </code></pre>
@@ -243,11 +253,18 @@ export default function Cards({ theme }) {
             {`<div class="card">
   <div class="group">
     <div className="row">
-      <img width="80" height="80" src="..." />
+      <img 
+        width="80" 
+        height="80" 
+        src="..."/>
       <div>
-        <b>Title</b>
-        <br />
-        <span>Subtitle</span>
+        <b>
+          Title
+        </b>
+        <br/>
+        <span>
+          Subtitle
+        </span>
       </div>
     </div>
   </div>
@@ -255,12 +272,18 @@ export default function Cards({ theme }) {
     Lorem ipsum ...
   </p>
   <p>
-    <mark>v12.5.3</mark>
-    <mark class="success">success</mark>
+    <mark>
+      v12.5.3
+    </mark>
+    <mark class="success">
+      success
+    </mark>
   </p>
-  <hr />
+  <hr/>
   <p>
-    <button>Button</button>
+    <button>
+      Button
+    </button>
   </p>
 </div>`}
           </code></pre>

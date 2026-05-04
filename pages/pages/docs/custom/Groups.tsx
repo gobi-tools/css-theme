@@ -21,8 +21,12 @@ export default function Groups({ theme }) {
         <div>
           <pre><code>
             {`<p class="group">
-  <button>Option 1</button>f
-  <button type="reset">Option 2</button>
+  <button>
+    Option 1
+  </button>f
+  <button type="reset">
+    Option 2
+  </button>
 </p>`}
           </code></pre>
         </div>
@@ -42,8 +46,13 @@ export default function Groups({ theme }) {
         <div>
           <pre><code>
             {`<p class="group">
-  <mark>#test</mark>
-  <mark className="success">v1.0.0</mark>
+  <mark>
+    #test
+  </mark>
+  <mark 
+    className="success">
+    v1.0.0
+  </mark>
 </p>`}
           </code></pre>
         </div>
@@ -68,9 +77,17 @@ export default function Groups({ theme }) {
           <pre><code>
             {`<form>
   <div class="group">
-    <input id="email" type="email" placeholder="Email" />
-    <input id="password" type="password" placeholder="Password" />
-    <input type="submit" value={"Login"} />
+    <input 
+      id="email" 
+      type="email" 
+      placeholder="Email"/>
+    <input 
+      id="password" 
+      type="password" 
+      placeholder="Password"/>
+    <input 
+      type="submit" 
+      value={"Login"}/>
   </div>
 </form>`}
           </code></pre>
@@ -103,8 +120,13 @@ export default function Groups({ theme }) {
         <div>
           <pre><code>
             {`<div class="group">
-  <svg width="20" height="20" ...></svg>
-  <b>Test Address, SE11 8CL</b>
+  <svg 
+    width="20" 
+    height="20" ...>
+  </svg>
+  <b>
+    Test Address, SE11 8CL
+  </b>
 </div>`}
           </code></pre>
         </div>
@@ -124,8 +146,16 @@ export default function Groups({ theme }) {
         <div>
           <pre><code>
             {`<p class="group">
-  <img width="80" height="80" src="https://picsum.photos/80/80" alt="image 1" />
-  <img width="80" height="80" src="https://picsum.photos/120/120" alt="image 2" />
+  <img 
+    width="80" 
+    height="80" 
+    src="..." 
+    alt="image 1"/>
+  <img 
+    width="80" 
+    height="80" 
+    src="..." 
+    alt="image 2"/>
 </p>`}
           </code></pre>
         </div>

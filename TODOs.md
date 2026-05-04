@@ -12,6 +12,7 @@ Features
 - [x] forms
   - [x] validation states
 - [ ] animations
+- [ ] "search" form item
 
 Improvements
 ------------

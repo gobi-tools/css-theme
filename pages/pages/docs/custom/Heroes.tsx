@@ -25,9 +25,13 @@ export default function Heroes({ theme }) {
             {`<header class="hero">
   <nav>
     <ul>
-      <li><a href="...">Home</a></li>
+      <li>
+        <a href="...">
+          Home
+        </a>
+      </li>
     </ul>
-  </nav<
+  </nav>
 </header>
 <main>
   <h1>Title</h1>
@@ -50,16 +54,28 @@ export default function Heroes({ theme }) {
             {`<header>
   <nav>
     <ul>
-      <li><a href="...">Home</a></li>
+      <li>
+        <a href="...">
+          Home
+        </a>
+      </li>
     </ul>
   </nav>
   <div class="hero align-center">
-    <h2>My blog</h2>
-    <p>Lorem ipsum...</p>
+    <h2>
+      My blog
+    </h2>
+    <p>
+      Lorem ipsum...
+    </p>
     <form action="...">
       <div class="group">
-        <input type="email placeholder="name@example.com"/>
-        <input type="submit" value="Subscribe"/>
+        <input 
+          type="email" 
+          placeholder="..."/>
+        <input 
+          type="submit" 
+          value="Subscribe"/>
       </div>
     </form>
   </div>

@@ -2950,11 +2950,15 @@ function DarkMode({ theme }) {
     ] }),
     /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsx30("pre", { children: /* @__PURE__ */ jsx30("code", { children: `<html>
   <head>
-    <!-- enable both light and dark variants -->
-    <meta name="color-scheme" content="light dark"/>
+    <!-- both variants -->
+    <meta 
+      name="color-scheme" 
+      content="light dark"/>
     
-    <!-- enable only dark variant -->
-    <meta name="color-scheme" content="dark"/>
+    <!-- only dark variant -->
+    <meta 
+      name="color-scheme" 
+      content="dark"/>
   </head>
 </html>` }) }) })
   ] }) });
@@ -2996,13 +3000,13 @@ function Icons({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx31("div", { children: /* @__PURE__ */ jsx31("pre", { children: /* @__PURE__ */ jsx31("code", { children: `<p>
-  <!-- icon button with <svg> element -->
+  <!-- with <svg> element -->
   <button>
     <svg ...></svg>
     <span>Home</span>
   </button>
 
-  <!-- icon button with <img> -->
+  <!-- with <img> element -->
   <button>
     <img src="..."/>
   </button>
@@ -3034,8 +3038,12 @@ function Icons({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx31("div", { children: /* @__PURE__ */ jsx31("pre", { children: /* @__PURE__ */ jsx31("code", { children: `<div class="group">
-  <svg width="20" height="20" ...></svg>
-  <b>Test Address, SE11 8CL</b>
+  <svg 
+    width="20" 
+    height="20" ...></svg>
+  <b>
+    Test Address, SE11 8CL
+  </b>
 </div>` }) }) })
     ] })
   ] });
@@ -3063,7 +3071,9 @@ function Mobile({ theme }) {
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<!-- elements that reize naturally on mobile -->
+      /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<!-- elements that -->
+<!-- resize naturally -->
+<!-- on mobile -->
 <p>
   Lorem ipsum ....
 </p>` }) }) })
@@ -3250,7 +3260,10 @@ function Cards({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx33("div", { children: /* @__PURE__ */ jsx33("pre", { children: /* @__PURE__ */ jsx33("code", { children: `<div class="card">
-  <img height="80" src="..." alt="..." />
+  <img 
+    height="80" 
+    src="..." 
+    alt="..." />
   <p>
     Lorem ipsum ...
   </p>
@@ -3268,13 +3281,20 @@ function Cards({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx33("div", { children: /* @__PURE__ */ jsx33("pre", { children: /* @__PURE__ */ jsx33("code", { children: `<div class="card">
-  <img height="160" src="..." alt="..." />
-  <h4>Title</h4>
+  <img 
+    height="160" 
+    src="..." 
+    alt="..." />
+  <h4>
+    Title
+  </h4>
   <p>
     Lorem ipsum ...
   </p>
   <p>
-    <button>Button</button>
+    <button>
+      Button
+    </button>
   </p>
 </div>` }) }) })
     ] }),
@@ -3312,11 +3332,18 @@ function Cards({ theme }) {
       /* @__PURE__ */ jsx33("div", { children: /* @__PURE__ */ jsx33("pre", { children: /* @__PURE__ */ jsx33("code", { children: `<div class="card">
   <div class="group">
     <div className="row">
-      <img width="80" height="80" src="..." />
+      <img 
+        width="80" 
+        height="80" 
+        src="..."/>
       <div>
-        <b>Title</b>
-        <br />
-        <span>Subtitle</span>
+        <b>
+          Title
+        </b>
+        <br/>
+        <span>
+          Subtitle
+        </span>
       </div>
     </div>
   </div>
@@ -3324,12 +3351,18 @@ function Cards({ theme }) {
     Lorem ipsum ...
   </p>
   <p>
-    <mark>v12.5.3</mark>
-    <mark class="success">success</mark>
+    <mark>
+      v12.5.3
+    </mark>
+    <mark class="success">
+      success
+    </mark>
   </p>
-  <hr />
+  <hr/>
   <p>
-    <button>Button</button>
+    <button>
+      Button
+    </button>
   </p>
 </div>` }) }) })
     ] })
@@ -3541,7 +3574,7 @@ function Columns({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35("pre", { children: /* @__PURE__ */ jsx35("code", { children: `<div class="row">
-  <div class="col-2"><code>...</code></div>
+  <div class="col-2">...</div>
   <div class="col">...</div>
   <div class="col-6">...</div>
 </div>` }) }) })
@@ -3561,10 +3594,14 @@ function Columns({ theme }) {
       ] }),
       /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35("pre", { children: /* @__PURE__ */ jsx35("code", { children: `<div class="row">
   <div>
-    <p><code>...</code></p>
+    <p>
+      <code>...</code>
+    </p>
   </div>
   <div>
-    <p><code>...</code></p>
+    <p>
+      <code>...</code>
+    </p>
   </div>
 </div>` }) }) })
     ] }),
@@ -3587,7 +3624,9 @@ function Columns({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35("pre", { children: /* @__PURE__ */ jsx35("code", { children: `<div class="row">
-  <p width="80" height="80" ...>
+  <p 
+    width="80" 
+    height="80" ...>
     <svg .../>
   </p>
   <div>...</div>
@@ -3666,8 +3705,12 @@ function Groups({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("pre", { children: /* @__PURE__ */ jsx37("code", { children: `<p class="group">
-  <button>Option 1</button>f
-  <button type="reset">Option 2</button>
+  <button>
+    Option 1
+  </button>f
+  <button type="reset">
+    Option 2
+  </button>
 </p>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs37("section", { className: "row", children: [
@@ -3683,8 +3726,13 @@ function Groups({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("pre", { children: /* @__PURE__ */ jsx37("code", { children: `<p class="group">
-  <mark>#test</mark>
-  <mark className="success">v1.0.0</mark>
+  <mark>
+    #test
+  </mark>
+  <mark 
+    className="success">
+    v1.0.0
+  </mark>
 </p>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs37("section", { className: "row", children: [
@@ -3698,9 +3746,17 @@ function Groups({ theme }) {
       ] }),
       /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("pre", { children: /* @__PURE__ */ jsx37("code", { children: `<form>
   <div class="group">
-    <input id="email" type="email" placeholder="Email" />
-    <input id="password" type="password" placeholder="Password" />
-    <input type="submit" value={"Login"} />
+    <input 
+      id="email" 
+      type="email" 
+      placeholder="Email"/>
+    <input 
+      id="password" 
+      type="password" 
+      placeholder="Password"/>
+    <input 
+      type="submit" 
+      value={"Login"}/>
   </div>
 </form>` }) }) })
     ] }),
@@ -3730,8 +3786,13 @@ function Groups({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("pre", { children: /* @__PURE__ */ jsx37("code", { children: `<div class="group">
-  <svg width="20" height="20" ...></svg>
-  <b>Test Address, SE11 8CL</b>
+  <svg 
+    width="20" 
+    height="20" ...>
+  </svg>
+  <b>
+    Test Address, SE11 8CL
+  </b>
 </div>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs37("section", { className: "row", children: [
@@ -3743,8 +3804,16 @@ function Groups({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("pre", { children: /* @__PURE__ */ jsx37("code", { children: `<p class="group">
-  <img width="80" height="80" src="https://picsum.photos/80/80" alt="image 1" />
-  <img width="80" height="80" src="https://picsum.photos/120/120" alt="image 2" />
+  <img 
+    width="80" 
+    height="80" 
+    src="..." 
+    alt="image 1"/>
+  <img 
+    width="80" 
+    height="80" 
+    src="..." 
+    alt="image 2"/>
 </p>` }) }) })
     ] })
   ] });
@@ -3772,9 +3841,13 @@ function Heroes({ theme }) {
       /* @__PURE__ */ jsx38("div", { children: /* @__PURE__ */ jsx38("pre", { children: /* @__PURE__ */ jsx38("code", { children: `<header class="hero">
   <nav>
     <ul>
-      <li><a href="...">Home</a></li>
+      <li>
+        <a href="...">
+          Home
+        </a>
+      </li>
     </ul>
-  </nav<
+  </nav>
 </header>
 <main>
   <h1>Title</h1>
@@ -3789,16 +3862,28 @@ function Heroes({ theme }) {
       /* @__PURE__ */ jsx38("div", { children: /* @__PURE__ */ jsx38("pre", { children: /* @__PURE__ */ jsx38("code", { children: `<header>
   <nav>
     <ul>
-      <li><a href="...">Home</a></li>
+      <li>
+        <a href="...">
+          Home
+        </a>
+      </li>
     </ul>
   </nav>
   <div class="hero align-center">
-    <h2>My blog</h2>
-    <p>Lorem ipsum...</p>
+    <h2>
+      My blog
+    </h2>
+    <p>
+      Lorem ipsum...
+    </p>
     <form action="...">
       <div class="group">
-        <input type="email placeholder="name@example.com"/>
-        <input type="submit" value="Subscribe"/>
+        <input 
+          type="email" 
+          placeholder="..."/>
+        <input 
+          type="submit" 
+          value="Subscribe"/>
       </div>
     </form>
   </div>

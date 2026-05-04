@@ -8,18 +8,24 @@
   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;</code></pre></div></section><section class="row"><div><p>This system uses the same naming convention as the popular <a href="https://getbootstrap.com/docs/5.3/examples/grid/" target="_blanl">Bootstrap CSS library</a>. And just like Bootstrap, columns can have various widths, by using the <code>col-2</code> to <code>col-6</code> classes.</p><div class="card"><div class="row disable-mobile"><div class="col-2"><code style="width:100%">col-2</code></div><div class="col"><code style="width:100%">col</code></div><div class="col-6"><code style="width:100%">col-6</code></div></div></div></div><div><pre><code>&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-2&quot;&gt;&lt;code&gt;...&lt;/code&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;col-6&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;</code></pre></div></section><section class="row"><div><p>Columns are fully responsive. On smaller devices they transition to a row based layout, with columns being laid out vertically, one below the other.</p><p>In such a layout the gap that&#x27;s usually present in a horizontal layout dissapears. This means that each element within a column must provide its owne element with bottom padding (like a <code>p</code>, etc).</p><figure><iframe scrolling="no" width="100%" height="300" src="/bold/pages/showcase/mobile_columns.html"></iframe><figcaption>Showcase of columns on a smaller device.</figcaption></figure></div><div><pre><code>&lt;div class=&quot;row&quot;&gt;
   &lt;div&gt;
-    &lt;p&gt;&lt;code&gt;...&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;
+      &lt;code&gt;...&lt;/code&gt;
+    &lt;/p&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    &lt;p&gt;&lt;code&gt;...&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;
+      &lt;code&gt;...&lt;/code&gt;
+    &lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></section><section class="row"><div><p>Finally, you can even omit the <code>col</code> class entirely. A <b>div</b> element will expand to fill as much width as available. Multiple <b>divs</b> will eqpand equaly. And any other element (like an <b>image</b>, etc) will expand naturally. This makes layouts like the one below possible and easy to write.</p><div class="card"><div class="row disable-mobile"><img width="80" height="80" src="https://picsum.photos/80/80" alt="ssample image "/><div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></div></div></div><div><pre><code>&lt;div class=&quot;row&quot;&gt;
-  &lt;p width=&quot;80&quot; height=&quot;80&quot; ...&gt;
+  &lt;p 
+    width=&quot;80&quot; 
+    height=&quot;80&quot; ...&gt;
     &lt;svg .../&gt;
   &lt;/p&gt;
   &lt;div&gt;...&lt;/div&gt;

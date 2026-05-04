@@ -14,27 +14,44 @@
     Lorem ipsum ...
   &lt;/p&gt;
 &lt;/div&gt;</code></pre></div></section><section class="row"><div><p>Likewise, the first image tag used in a card will be styled as a header image.</p><div class="row disable-mobile"><div><div class="card"><img height="80" src="https://picsum.photos/320/80" alt="header image"/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div><div><div class="card error"><img height="80" src="https://picsum.photos/420/80" alt="header image"/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></div></div><div><pre><code>&lt;div class=&quot;card&quot;&gt;
-  &lt;img height=&quot;80&quot; src=&quot;...&quot; alt=&quot;...&quot; /&gt;
+  &lt;img 
+    height=&quot;80&quot; 
+    src=&quot;...&quot; 
+    alt=&quot;...&quot; /&gt;
   &lt;p&gt;
     Lorem ipsum ...
   &lt;/p&gt;
 &lt;/div&gt;</code></pre></div></section><section class="row"><div><p>You can combine elements inside a card to produce quite compelx results, as the example below shows.</p><p>By adding a header image, a title, paragraph and a button, we&#x27;ve created an interesting visual element in a few lines of HTML.</p><div class="card"><img height="160" src="https://picsum.photos/480/160" alt="header image"/><h4>Title</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><button>Button</button></p></div></div><div><pre><code>&lt;div class=&quot;card&quot;&gt;
-  &lt;img height=&quot;160&quot; src=&quot;...&quot; alt=&quot;...&quot; /&gt;
-  &lt;h4&gt;Title&lt;/h4&gt;
+  &lt;img 
+    height=&quot;160&quot; 
+    src=&quot;...&quot; 
+    alt=&quot;...&quot; /&gt;
+  &lt;h4&gt;
+    Title
+  &lt;/h4&gt;
   &lt;p&gt;
     Lorem ipsum ...
   &lt;/p&gt;
   &lt;p&gt;
-    &lt;button&gt;Button&lt;/button&gt;
+    &lt;button&gt;
+      Button
+    &lt;/button&gt;
   &lt;/p&gt;
 &lt;/div&gt;</code></pre></div></section><section class="row"><div><p>If we combine groups, columns and cards, we can experiment with even more daring layouts. All without having to write any custom CSS.</p><div class="card"><div class="group"><div class="row"><img width="80" height="80" src="https://picsum.photos/80/80" alt="header image"/><div><b>Title</b><br/><span>Subtitle</span></div></div></div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><mark>v12.5.3</mark><mark class="success">success</mark></p><hr/><p><button>Button</button></p></div><p><small>You can learn more about groups <a href="/betty/pages/docs/custom/groups.html">here</a>.</small></p><p><small>You can learn more about columns <a href="/betty/pages/docs/custom/columns.html">here</a>.</small></p></div><div><pre><code>&lt;div class=&quot;card&quot;&gt;
   &lt;div class=&quot;group&quot;&gt;
     &lt;div className=&quot;row&quot;&gt;
-      &lt;img width=&quot;80&quot; height=&quot;80&quot; src=&quot;...&quot; /&gt;
+      &lt;img 
+        width=&quot;80&quot; 
+        height=&quot;80&quot; 
+        src=&quot;...&quot;/&gt;
       &lt;div&gt;
-        &lt;b&gt;Title&lt;/b&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Subtitle&lt;/span&gt;
+        &lt;b&gt;
+          Title
+        &lt;/b&gt;
+        &lt;br/&gt;
+        &lt;span&gt;
+          Subtitle
+        &lt;/span&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -42,11 +59,17 @@
     Lorem ipsum ...
   &lt;/p&gt;
   &lt;p&gt;
-    &lt;mark&gt;v12.5.3&lt;/mark&gt;
-    &lt;mark class=&quot;success&quot;&gt;success&lt;/mark&gt;
+    &lt;mark&gt;
+      v12.5.3
+    &lt;/mark&gt;
+    &lt;mark class=&quot;success&quot;&gt;
+      success
+    &lt;/mark&gt;
   &lt;/p&gt;
-  &lt;hr /&gt;
+  &lt;hr/&gt;
   &lt;p&gt;
-    &lt;button&gt;Button&lt;/button&gt;
+    &lt;button&gt;
+      Button
+    &lt;/button&gt;
   &lt;/p&gt;
 &lt;/div&gt;</code></pre></div></section></div></div></article></main></div><script>globalThis.__INITIAL_PROPS__ = {"theme":"betty"};</script><script type="module" src="./cards.js"></script></div></body></html>

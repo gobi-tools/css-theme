@@ -29,13 +29,13 @@ export default function Icons({ theme }) {
         <div>
           <pre><code>
             {`<p>
-  <!-- icon button with <svg> element -->
+  <!-- with <svg> element -->
   <button>
     <svg ...></svg>
     <span>Home</span>
   </button>
 
-  <!-- icon button with <img> -->
+  <!-- with <img> element -->
   <button>
     <img src="..."/>
   </button>
@@ -69,8 +69,12 @@ export default function Icons({ theme }) {
         <div>
           <pre><code>
             {`<div class="group">
-  <svg width="20" height="20" ...></svg>
-  <b>Test Address, SE11 8CL</b>
+  <svg 
+    width="20" 
+    height="20" ...></svg>
+  <b>
+    Test Address, SE11 8CL
+  </b>
 </div>`}
           </code></pre>
         </div>

@@ -16,18 +16,6 @@ export default function DarkMode({ theme }) {
           <p>
             For light / dark themes, if you force light or dark modes by specifing the corresponding color scheme.
           </p>
-
-          {/* <p>
-            Dark Mode is supported by default on the themes where it makes sense, no JavaScript required.
-            By default the <i>light</i> variant of any theme will be rendered.
-          </p>
-          <p>
-            To make it so the variant changes automatically with system settings, you can add
-            the <code>color-scheme</code> meta tag to your HTML document.
-          </p>
-          <p>
-            You can also force a light or dark variant through the same mechanism.
-          </p> */}
           <table>
             <thead>
               <tr>
@@ -97,11 +85,15 @@ export default function DarkMode({ theme }) {
           <pre><code>
             {`<html>
   <head>
-    <!-- enable both light and dark variants -->
-    <meta name="color-scheme" content="light dark"/>
+    <!-- both variants -->
+    <meta 
+      name="color-scheme" 
+      content="light dark"/>
     
-    <!-- enable only dark variant -->
-    <meta name="color-scheme" content="dark"/>
+    <!-- only dark variant -->
+    <meta 
+      name="color-scheme" 
+      content="dark"/>
   </head>
 </html>`}
           </code></pre>

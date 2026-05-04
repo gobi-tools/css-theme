@@ -74,7 +74,7 @@ export default function Columns({ theme }) {
         <div>
           <pre><code>
             {`<div class="row">
-  <div class="col-2"><code>...</code></div>
+  <div class="col-2">...</div>
   <div class="col">...</div>
   <div class="col-6">...</div>
 </div>`}
@@ -109,10 +109,14 @@ export default function Columns({ theme }) {
           <pre><code>
             {`<div class="row">
   <div>
-    <p><code>...</code></p>
+    <p>
+      <code>...</code>
+    </p>
   </div>
   <div>
-    <p><code>...</code></p>
+    <p>
+      <code>...</code>
+    </p>
   </div>
 </div>`}
           </code></pre>
@@ -143,7 +147,9 @@ export default function Columns({ theme }) {
         <div>
           <pre><code>
             {`<div class="row">
-  <p width="80" height="80" ...>
+  <p 
+    width="80" 
+    height="80" ...>
     <svg .../>
   </p>
   <div>...</div>
