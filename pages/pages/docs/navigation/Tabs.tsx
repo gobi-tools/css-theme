@@ -126,9 +126,11 @@ export default function Tabs({ theme }) {
   <nav>
     <ol>
       <li>
-        <a onclick="... display content-1 ...">
+        <a onclick="...">
           <svg ...></svg>
-          <span>Home</span>
+          <span>
+            Home
+          </span>
         </a>
       </li>
       <li>...</li>
@@ -136,11 +138,15 @@ export default function Tabs({ theme }) {
     </ol>
   </nav>
   <div>
-    <!-- content is displayed only when -->
-    <!-- the relevant tab is selected --> 
-    <div id="content-1">...</div>
-    <div id="content-2">...</div>
-    <div id="content-3">...</div>
+    <div id="content-1">
+      ...
+    </div>
+    <div id="content-2">
+      ...
+    </div>
+    <div id="content-3">
+      ...
+    </div>
   </div>
 </main>`}
           </code></pre>
@@ -170,9 +176,11 @@ export default function Tabs({ theme }) {
     <nav>
       <ol>
         <li>
-          <a onclick="... display content-1 ...">
+          <a onclick="...">
             <svg ...></svg>
-            <span>Home</span>
+            <span>
+              Home
+            </span>
           </a>
         </li>
         <li>...</li>
@@ -181,11 +189,15 @@ export default function Tabs({ theme }) {
     </nav>
   </aside>
   <div>
-    <!-- content is displayed only when -->
-    <!-- the relevant tab is selected --> 
-    <div id="content-1">...</div>
-    <div id="content-2">...</div>
-    <div id="content-3">...</div>
+    <div id="content-1">
+      ...
+    </div>
+    <div id="content-2">
+      ...
+    </div>
+    <div id="content-3">
+      ...
+    </div>
   </div>
 </div>`}
           </code></pre>

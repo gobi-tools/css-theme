@@ -40,7 +40,8 @@ export default function Modal({ theme }) {
           formNoValidate>
           Cancel
         </button>
-        <div class="gap"></div>
+        <div class="gap">
+        </div>
         <button value="confirm">
           Confirm
         </button>

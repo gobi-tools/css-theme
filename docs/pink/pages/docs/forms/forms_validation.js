@@ -1855,7 +1855,8 @@ function Modal({ theme }) {
           formNoValidate>
           Cancel
         </button>
-        <div class="gap"></div>
+        <div class="gap">
+        </div>
         <button value="confirm">
           Confirm
         </button>
@@ -1943,22 +1944,30 @@ function Navigation({ theme }) {
     <ul>
       <!-- simple nav item -->
       <li>
-        <a href="...">Item 1</a>
-      </li>
-      <!-- selected item -->
-      <li aria-selected>
-        <a href="...">Item 2</a>
-      </li>
-      <!-- nav item with icon -->
-      <li>
-        <a href="">
-          <svg ...></svg>
-          <span>Item 3</span>
+        <a href="...">
+          Item 1
         </a>
-        <!-- collapsible navigation tree -->
+      </li>
+      <!-- selected -->
+      <li aria-selected>
+        <a href="...">
+          Item 2
+        </a>
+      </li>
+      <!-- with icon -->
+      <li>
+        <a href="...">
+          <svg ...></svg>
+          <span>
+            Item 3
+          </span>
+        </a>
+        <!-- collapsible -->
         <ul>
           <li>
-            <a href="...">Option 1</a>
+            <a href="...">
+              Option 1
+            </a>
           </li>
           ...
         </ul>
@@ -2004,13 +2013,18 @@ function Navigation({ theme }) {
         /* @__PURE__ */ jsx16("br", {})
       ] }),
       /* @__PURE__ */ jsx16("div", { children: /* @__PURE__ */ jsx16("pre", { children: /* @__PURE__ */ jsx16("code", { children: `<li>
-  <img height="24" src="..." alt="logo" />
+  <img 
+    height="24" 
+    src="..." 
+    alt="logo"/>
 </li>
 <li>
   <select>...</select>
 </li>
 <li>
-  <input type="search" placeholder="Search..."/>
+  <input 
+    type="search" 
+    placeholder="Search..."/>
 </li>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs16("section", { className: "row", children: [
@@ -2114,8 +2128,16 @@ function Navigation({ theme }) {
           <span>More</span>
         </a>
         <ul>
-          <li><a href="...">Option 1</a><li>
-          <li><a href="...">Option 2</a><li>
+          <li>
+            <a href="...">
+              Option 1
+            </a>
+          <li>
+          <li>
+            <a href="...">
+              Option 2
+            </a>
+          <li>
         </ul>
       </li>
     </ul>
@@ -2213,9 +2235,11 @@ function Tabs({ theme }) {
   <nav>
     <ol>
       <li>
-        <a onclick="... display content-1 ...">
+        <a onclick="...">
           <svg ...></svg>
-          <span>Home</span>
+          <span>
+            Home
+          </span>
         </a>
       </li>
       <li>...</li>
@@ -2223,11 +2247,15 @@ function Tabs({ theme }) {
     </ol>
   </nav>
   <div>
-    <!-- content is displayed only when -->
-    <!-- the relevant tab is selected --> 
-    <div id="content-1">...</div>
-    <div id="content-2">...</div>
-    <div id="content-3">...</div>
+    <div id="content-1">
+      ...
+    </div>
+    <div id="content-2">
+      ...
+    </div>
+    <div id="content-3">
+      ...
+    </div>
   </div>
 </main>` }) }) })
     ] }),
@@ -2244,9 +2272,11 @@ function Tabs({ theme }) {
     <nav>
       <ol>
         <li>
-          <a onclick="... display content-1 ...">
+          <a onclick="...">
             <svg ...></svg>
-            <span>Home</span>
+            <span>
+              Home
+            </span>
           </a>
         </li>
         <li>...</li>
@@ -2255,11 +2285,15 @@ function Tabs({ theme }) {
     </nav>
   </aside>
   <div>
-    <!-- content is displayed only when -->
-    <!-- the relevant tab is selected --> 
-    <div id="content-1">...</div>
-    <div id="content-2">...</div>
-    <div id="content-3">...</div>
+    <div id="content-1">
+      ...
+    </div>
+    <div id="content-2">
+      ...
+    </div>
+    <div id="content-3">
+      ...
+    </div>
   </div>
 </div>` }) }) })
     ] })

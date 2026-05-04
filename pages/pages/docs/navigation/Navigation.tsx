@@ -83,22 +83,30 @@ export default function Navigation({ theme }) {
     <ul>
       <!-- simple nav item -->
       <li>
-        <a href="...">Item 1</a>
-      </li>
-      <!-- selected item -->
-      <li aria-selected>
-        <a href="...">Item 2</a>
-      </li>
-      <!-- nav item with icon -->
-      <li>
-        <a href="">
-          <svg ...></svg>
-          <span>Item 3</span>
+        <a href="...">
+          Item 1
         </a>
-        <!-- collapsible navigation tree -->
+      </li>
+      <!-- selected -->
+      <li aria-selected>
+        <a href="...">
+          Item 2
+        </a>
+      </li>
+      <!-- with icon -->
+      <li>
+        <a href="...">
+          <svg ...></svg>
+          <span>
+            Item 3
+          </span>
+        </a>
+        <!-- collapsible -->
         <ul>
           <li>
-            <a href="...">Option 1</a>
+            <a href="...">
+              Option 1
+            </a>
           </li>
           ...
         </ul>
@@ -146,13 +154,18 @@ export default function Navigation({ theme }) {
         <div>
           <pre><code>
             {`<li>
-  <img height="24" src="..." alt="logo" />
+  <img 
+    height="24" 
+    src="..." 
+    alt="logo"/>
 </li>
 <li>
   <select>...</select>
 </li>
 <li>
-  <input type="search" placeholder="Search..."/>
+  <input 
+    type="search" 
+    placeholder="Search..."/>
 </li>`}
           </code></pre>
         </div>
@@ -288,8 +301,16 @@ export default function Navigation({ theme }) {
           <span>More</span>
         </a>
         <ul>
-          <li><a href="...">Option 1</a><li>
-          <li><a href="...">Option 2</a><li>
+          <li>
+            <a href="...">
+              Option 1
+            </a>
+          <li>
+          <li>
+            <a href="...">
+              Option 2
+            </a>
+          <li>
         </ul>
       </li>
     </ul>
