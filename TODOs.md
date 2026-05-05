@@ -13,6 +13,8 @@ Features
   - [x] validation states
 - [ ] animations
 - [ ] create an "search" form item
+- [ ] loading state with aria-busy
+- [x] screenshot tests
 
 Improvements
 ------------

@@ -613,7 +613,7 @@ function Figures({ theme }) {
       /* @__PURE__ */ jsxs5("div", { children: [
         /* @__PURE__ */ jsx5("p", { children: "Figures can contain a single image and an associated caption." }),
         /* @__PURE__ */ jsxs5("figure", { children: [
-          /* @__PURE__ */ jsx5("img", { width: "640", height: "480", src: "https://picsum.photos/640/480", alt: "ssample image " }),
+          /* @__PURE__ */ jsx5("img", { width: "640", height: "480", src: "https://picsum.photos/id/16/640/480", alt: "ssample image " }),
           /* @__PURE__ */ jsx5("figcaption", { children: "Sample caption" })
         ] })
       ] }),
@@ -633,11 +633,11 @@ function Figures({ theme }) {
         /* @__PURE__ */ jsx5("p", { children: "Or they can contain multiple figures, each with its own separate caption, as well as a caption for the parent figure." }),
         /* @__PURE__ */ jsxs5("figure", { children: [
           /* @__PURE__ */ jsxs5("figure", { children: [
-            /* @__PURE__ */ jsx5("img", { width: "200", height: "240", src: "https://picsum.photos/200/240", alt: "first image" }),
+            /* @__PURE__ */ jsx5("img", { width: "200", height: "240", src: "https://picsum.photos/id/16/200/240", alt: "first image" }),
             /* @__PURE__ */ jsx5("figcaption", { children: "Caption for the first image" })
           ] }),
           /* @__PURE__ */ jsxs5("figure", { children: [
-            /* @__PURE__ */ jsx5("img", { width: "240", height: "240", src: "https://picsum.photos/240/240", alt: "second image" }),
+            /* @__PURE__ */ jsx5("img", { width: "240", height: "240", src: "https://picsum.photos/id/16/240/240", alt: "second image" }),
             /* @__PURE__ */ jsx5("figcaption", { children: "Caption for the second image" })
           ] }),
           /* @__PURE__ */ jsx5("figcaption", { children: "Caption for the figure group" })
@@ -892,7 +892,7 @@ function Table({ theme }) {
           ] }) }),
           /* @__PURE__ */ jsxs8("tbody", { children: [
             /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/80/80", alt: "profile pic" }) }),
+              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }) }),
               /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("code", { children: "04b720d8" }) }),
               /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "@user-1" }) }),
               /* @__PURE__ */ jsxs8("td", { children: [
@@ -908,7 +908,7 @@ function Table({ theme }) {
               ] })
             ] }),
             /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/40/40", alt: "profile pic" }) }),
+              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }) }),
               /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("code", { children: "3edf8166" }) }),
               /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "@user-253" }) }),
               /* @__PURE__ */ jsxs8("td", { children: [
@@ -924,7 +924,7 @@ function Table({ theme }) {
               ] })
             ] }),
             /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/32/32", alt: "profile pic" }) }),
+              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/32/32", alt: "profile pic" }) }),
               /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("code", { children: "90b4e981" }) }),
               /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "@user-1182" }) }),
               /* @__PURE__ */ jsxs8("td", { children: [
@@ -2199,7 +2199,7 @@ function Tab3() {
   return /* @__PURE__ */ jsxs17(Fragment, { children: [
     /* @__PURE__ */ jsx17("h4", { children: "Users" }),
     /* @__PURE__ */ jsx17("div", { className: "group", children: /* @__PURE__ */ jsxs17("div", { className: "row", children: [
-      /* @__PURE__ */ jsx17("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/80/80", alt: "profile pic" }),
+      /* @__PURE__ */ jsx17("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }),
       /* @__PURE__ */ jsxs17("div", { children: [
         /* @__PURE__ */ jsx17("b", { children: "user123" }),
         /* @__PURE__ */ jsx17("br", {}),
@@ -2208,7 +2208,7 @@ function Tab3() {
     ] }) }),
     /* @__PURE__ */ jsx17("br", {}),
     /* @__PURE__ */ jsx17("div", { className: "group", children: /* @__PURE__ */ jsxs17("div", { className: "row", children: [
-      /* @__PURE__ */ jsx17("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/40/40", alt: "profile pic" }),
+      /* @__PURE__ */ jsx17("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
       /* @__PURE__ */ jsxs17("div", { children: [
         /* @__PURE__ */ jsx17("b", { children: "user_451" }),
         /* @__PURE__ */ jsx17("br", {}),
@@ -2977,11 +2977,11 @@ function Cards({ theme }) {
         /* @__PURE__ */ jsx30("p", { children: "Likewise, the first image tag used in a card will be styled as a header image." }),
         /* @__PURE__ */ jsxs30("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsxs30("div", { className: "card", children: [
-            /* @__PURE__ */ jsx30("img", { height: "80", src: "https://picsum.photos/320/80", alt: "header image" }),
+            /* @__PURE__ */ jsx30("img", { height: "80", src: "https://picsum.photos/id/16/320/80", alt: "header image" }),
             /* @__PURE__ */ jsx30("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
           /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsxs30("div", { className: "card error", children: [
-            /* @__PURE__ */ jsx30("img", { height: "80", src: "https://picsum.photos/420/80", alt: "header image" }),
+            /* @__PURE__ */ jsx30("img", { height: "80", src: "https://picsum.photos/id/16/420/80", alt: "header image" }),
             /* @__PURE__ */ jsx30("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
         ] })
@@ -3001,7 +3001,7 @@ function Cards({ theme }) {
         /* @__PURE__ */ jsx30("p", { children: "You can combine elements inside a card to produce quite compelx results, as the example below shows." }),
         /* @__PURE__ */ jsx30("p", { children: "By adding a header image, a title, paragraph and a button, we've created an interesting visual element in a few lines of HTML." }),
         /* @__PURE__ */ jsxs30("div", { className: "card", children: [
-          /* @__PURE__ */ jsx30("img", { height: "160", src: "https://picsum.photos/480/160", alt: "header image" }),
+          /* @__PURE__ */ jsx30("img", { height: "160", src: "https://picsum.photos/id/16/480/160", alt: "header image" }),
           /* @__PURE__ */ jsx30("h4", { children: "Title" }),
           /* @__PURE__ */ jsx30("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
           /* @__PURE__ */ jsx30("p", { children: /* @__PURE__ */ jsx30("button", { children: "Button" }) })
@@ -3030,7 +3030,7 @@ function Cards({ theme }) {
         /* @__PURE__ */ jsx30("p", { children: "If we combine groups, columns and cards, we can experiment with even more daring layouts. All without having to write any custom CSS." }),
         /* @__PURE__ */ jsxs30("div", { className: "card", children: [
           /* @__PURE__ */ jsx30("div", { className: "group", children: /* @__PURE__ */ jsxs30("div", { className: "row", children: [
-            /* @__PURE__ */ jsx30("img", { width: "80", height: "80", src: "https://picsum.photos/80/80", alt: "header image" }),
+            /* @__PURE__ */ jsx30("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "header image" }),
             /* @__PURE__ */ jsxs30("div", { children: [
               /* @__PURE__ */ jsx30("b", { children: "Title" }),
               /* @__PURE__ */ jsx30("br", {}),
@@ -3346,7 +3346,7 @@ function Columns({ theme }) {
           ", etc) will expand naturally. This makes layouts like the one below possible and easy to write."
         ] }),
         /* @__PURE__ */ jsx32("div", { className: "card", children: /* @__PURE__ */ jsxs32("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx32("img", { width: "80", height: "80", src: "https://picsum.photos/80/80", alt: "ssample image " }),
+          /* @__PURE__ */ jsx32("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "ssample image " }),
           /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }) })
         ] }) })
       ] }),
@@ -3526,8 +3526,8 @@ function Groups({ theme }) {
       /* @__PURE__ */ jsxs34("div", { children: [
         /* @__PURE__ */ jsx34("p", { children: "Other elements, such as images, can also be grouped, although the impact isn't as pronounced." }),
         /* @__PURE__ */ jsxs34("p", { className: "group", children: [
-          /* @__PURE__ */ jsx34("img", { width: "80", height: "80", src: "https://picsum.photos/80/80", alt: "image 1" }),
-          /* @__PURE__ */ jsx34("img", { width: "80", height: "80", src: "https://picsum.photos/120/120", alt: "image 2" })
+          /* @__PURE__ */ jsx34("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "image 1" }),
+          /* @__PURE__ */ jsx34("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/120/120", alt: "image 2" })
         ] })
       ] }),
       /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("pre", { children: /* @__PURE__ */ jsx34("code", { children: `<p class="group">

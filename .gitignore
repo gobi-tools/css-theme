@@ -1,2 +1,4 @@
 node_modules
 tmp
+.DEV.md
+tests/visual.spec.ts-snapshots

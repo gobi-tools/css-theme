@@ -134,7 +134,7 @@ export default function Columns({ theme }) {
           </p>
           <div className="card">
             <div className="row disable-mobile">
-              <img width="80" height="80" src="https://picsum.photos/80/80" alt="ssample image " />
+              <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="ssample image " />
               <div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

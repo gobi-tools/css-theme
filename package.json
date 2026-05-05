@@ -4,12 +4,15 @@
   "type": "module",
   "scripts": {
     "build": "tsx scripts/build.ts && css-minify -d tmp/ -o /dist",
-    "docs": "tsx pages/prerender.ts"
+    "docs": "tsx pages/prerender.ts",
+    "test:visual": "npx playwright test",
+    "test:visual:update": "npx playwright test --update-snapshots"
   },
   "keywords": [],
   "author": "Gabriel Coman",
   "license": "MIT",
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "@types/node": "^25.0.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -18,6 +21,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "fast-glob": "^3.3.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-srv": "^0.0.53"

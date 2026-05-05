@@ -139,8 +139,8 @@ export default function Groups({ theme }) {
             although the impact isn't as pronounced.
           </p>
           <p className="group">
-            <img width="80" height="80" src="https://picsum.photos/80/80" alt="image 1" />
-            <img width="80" height="80" src="https://picsum.photos/120/120" alt="image 2" />
+            <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="image 1" />
+            <img width="80" height="80" src="https://picsum.photos/id/16/120/120" alt="image 2" />
           </p>
         </div>
         <div>

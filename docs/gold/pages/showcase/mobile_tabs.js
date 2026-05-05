@@ -152,7 +152,7 @@ function Tab3() {
   return /* @__PURE__ */ jsxs38(Fragment9, { children: [
     /* @__PURE__ */ jsx38("h4", { children: "Users" }),
     /* @__PURE__ */ jsx38("div", { className: "group", children: /* @__PURE__ */ jsxs38("div", { className: "row", children: [
-      /* @__PURE__ */ jsx38("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/80/80", alt: "profile pic" }),
+      /* @__PURE__ */ jsx38("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }),
       /* @__PURE__ */ jsxs38("div", { children: [
         /* @__PURE__ */ jsx38("b", { children: "user123" }),
         /* @__PURE__ */ jsx38("br", {}),
@@ -161,7 +161,7 @@ function Tab3() {
     ] }) }),
     /* @__PURE__ */ jsx38("br", {}),
     /* @__PURE__ */ jsx38("div", { className: "group", children: /* @__PURE__ */ jsxs38("div", { className: "row", children: [
-      /* @__PURE__ */ jsx38("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/40/40", alt: "profile pic" }),
+      /* @__PURE__ */ jsx38("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
       /* @__PURE__ */ jsxs38("div", { children: [
         /* @__PURE__ */ jsx38("b", { children: "user_451" }),
         /* @__PURE__ */ jsx38("br", {}),

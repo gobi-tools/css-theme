@@ -131,7 +131,7 @@ export default function Cards({ theme }) {
           <div className="row disable-mobile">
             <div>
               <div className="card">
-                <img height="80" src="https://picsum.photos/320/80" alt="header image" />
+                <img height="80" src="https://picsum.photos/id/16/320/80" alt="header image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -139,7 +139,7 @@ export default function Cards({ theme }) {
             </div>
             <div>
               <div className="card error">
-                <img height="80" src="https://picsum.photos/420/80" alt="header image" />
+                <img height="80" src="https://picsum.photos/id/16/420/80" alt="header image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -173,7 +173,7 @@ export default function Cards({ theme }) {
             interesting visual element in a few lines of HTML.
           </p>
           <div className="card">
-            <img height="160" src="https://picsum.photos/480/160" alt="header image" />
+            <img height="160" src="https://picsum.photos/id/16/480/160" alt="header image" />
             <h4>Title</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -216,7 +216,7 @@ export default function Cards({ theme }) {
           <div className="card">
             <div className="group">
               <div className="row">
-                <img width="80" height="80" src="https://picsum.photos/80/80" alt="header image" />
+                <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="header image" />
                 <div>
                   <b>Title</b>
                   <br />

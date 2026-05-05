@@ -89,7 +89,7 @@ export default function Table({ theme }) {
             <tbody>
               <tr>
                 <td>
-                  <img className="circle" width="32" height="32" src="https://picsum.photos/80/80" alt="profile pic" />
+                  <img className="circle" width="32" height="32" src="https://picsum.photos/id/16/80/80" alt="profile pic" />
                 </td>
                 <td>
                   <code>04b720d8</code>
@@ -109,7 +109,7 @@ export default function Table({ theme }) {
 
               <tr>
                 <td>
-                  <img className="circle" width="32" height="32" src="https://picsum.photos/40/40" alt="profile pic" />
+                  <img className="circle" width="32" height="32" src="https://picsum.photos/id/16/40/40" alt="profile pic" />
                 </td>
                 <td>
                   <code>3edf8166</code>
@@ -129,7 +129,7 @@ export default function Table({ theme }) {
 
               <tr>
                 <td>
-                  <img className="circle" width="32" height="32" src="https://picsum.photos/32/32" alt="profile pic" />
+                  <img className="circle" width="32" height="32" src="https://picsum.photos/id/16/32/32" alt="profile pic" />
                 </td>
                 <td>
                   <code>90b4e981</code>

@@ -10,7 +10,7 @@ export default function Figures({ theme }) {
             associated caption.
           </p>
           <figure>
-            <img width="640" height="480" src="https://picsum.photos/640/480" alt="ssample image " />
+            <img width="640" height="480" src="https://picsum.photos/id/16/640/480" alt="ssample image " />
             <figcaption>Sample caption</figcaption>
           </figure>
         </div>
@@ -39,11 +39,11 @@ export default function Figures({ theme }) {
           </p>
           <figure>
             <figure>
-              <img width="200" height="240" src="https://picsum.photos/200/240" alt="first image" />
+              <img width="200" height="240" src="https://picsum.photos/id/16/200/240" alt="first image" />
               <figcaption>Caption for the first image</figcaption>
             </figure>
             <figure>
-              <img width="240" height="240" src="https://picsum.photos/240/240" alt="second image" />
+              <img width="240" height="240" src="https://picsum.photos/id/16/240/240" alt="second image" />
               <figcaption>Caption for the second image</figcaption>
             </figure>
             <figcaption>Caption for the figure group</figcaption>
