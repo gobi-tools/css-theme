@@ -28,7 +28,7 @@ export default function Classes({ theme }) {
               <tr>
                 <td><code>align-center</code></td>
                 <td>
-                  Aligns elements centrally on the horizontal axis. See <a href={RouteMaster.doc(EDoc.Heroes, theme, route)}>here</a>.
+                  Aligns elements centrally on the horizontal axis. See <a href={RouteMaster.doc(EDoc.Header, theme, route)}>here</a>.
                 </td>
               </tr>
               <tr>
@@ -79,12 +79,6 @@ export default function Classes({ theme }) {
                 <td><code>group</code></td>
                 <td>
                   Groups various elements, like buttons or inputs, together, horizontally. See <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>here</a>.
-                </td>
-              </tr>
-              <tr>
-                <td><code>hero</code></td>
-                <td>
-                  Transform an element into a hero (or banner). See <a href={RouteMaster.doc(EDoc.Heroes, theme, route)}>here</a>.
                 </td>
               </tr>
               <tr>

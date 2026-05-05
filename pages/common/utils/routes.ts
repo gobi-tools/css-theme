@@ -19,8 +19,8 @@ import Navigation from "../../pages/docs/navigation/Navigation";
 import Tabs from "../../pages/docs/navigation/Tabs";
 import Menu from "../../pages/docs/navigation/Menu";
 import DesktopMenu from "../../pages/showcase/DekstopMenu";
-import LayoutHeroSimple from "../../pages/showcase/LayoutHeroSimple";
-import LayoutHeroSub from "../../pages/showcase/LayoutHeroSub";
+import LayoutHeaderNav from "../../pages/showcase/LayoutHeaderNav";
+import LayoutHeaderComplex from "../../pages/showcase/LayoutHeaderComplex";
 import MobileColumns from "../../pages/showcase/MobileColumns";
 import MobileMenu from "../../pages/showcase/MobileMenu";
 import MobileNav from "../../pages/showcase/MobileNav";
@@ -34,7 +34,7 @@ import Classes from "../../pages/docs/custom/Classes";
 import Columns from "../../pages/docs/custom/Columns";
 import Containers from "../../pages/docs/custom/Containers";
 import Groups from "../../pages/docs/custom/Groups";
-import Heroes from "../../pages/docs/custom/Heroes";
+import Header from "../../pages/docs/layout/Header";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -64,6 +64,8 @@ export class RouteMaster {
       case EDoc.FormsGrouped: return `${base}${theme}/pages/docs/forms/${htmlName(FormsGrouped)}`;
       case EDoc.FormsNormal: return `${base}${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
       case EDoc.FormsValidation: return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
+      // layout
+      case EDoc.Header: return `${base}${theme}/pages/docs/layout/${htmlName(Header)}`;
       // modal
       case EDoc.Modal: return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
       // navigation
@@ -80,7 +82,6 @@ export class RouteMaster {
       case EDoc.Columns: return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
       case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case EDoc.Groups: return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
-      case EDoc.Heroes: return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
     }
   }
 
@@ -113,6 +114,11 @@ export class RouteMaster {
           case htmlName(FormsValidation): return EDoc.FormsValidation;
         }
       }
+      case 'layout': {
+        switch (doc) {
+          case htmlName(Header): return EDoc.Header;
+        }
+      }
       case 'dialogs': {
         switch (doc) {
           case htmlName(Modal): return EDoc.Modal;
@@ -139,7 +145,6 @@ export class RouteMaster {
           case htmlName(Columns): return EDoc.Columns;
           case htmlName(Containers): return EDoc.Containers;
           case htmlName(Groups): return EDoc.Groups;
-          case htmlName(Heroes): return EDoc.Heroes;
         }
       }
     }
@@ -151,8 +156,8 @@ export class RouteMaster {
     const base = RouteMaster.getBase(domain);
     switch (route) {
       case EShowcase.DekstopMenu: return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
-      case EShowcase.LayoutHeroSimple: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSimple)}`;
-      case EShowcase.LayoutHeroSub: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSub)}`;
+      case EShowcase.LayoutHeaderSimple: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderNav)}`;
+      case EShowcase.LayoutHeaderComplex: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderComplex)}`;
       case EShowcase.MobileColumns: return `${base}${theme}/pages/showcase/${htmlName(MobileColumns)}`;
       case EShowcase.MobileMenu: return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
       case EShowcase.MobileNav: return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;

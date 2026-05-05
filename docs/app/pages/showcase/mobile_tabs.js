@@ -75,10 +75,10 @@ import { jsx as jsx18, jsxs as jsxs18 } from "https://esm.sh/react@19.2.0/jsx-ru
 // pages/pages/showcase/DekstopMenu.tsx
 import { Fragment, jsx as jsx19, jsxs as jsxs19 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/showcase/LayoutHeroSimple.tsx
+// pages/pages/showcase/LayoutHeaderNav.tsx
 import { Fragment as Fragment2, jsx as jsx20, jsxs as jsxs20 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/showcase/LayoutHeroSub.tsx
+// pages/pages/showcase/LayoutHeaderComplex.tsx
 import { Fragment as Fragment3, jsx as jsx21, jsxs as jsxs21 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/pages/showcase/MobileColumns.tsx
@@ -117,7 +117,7 @@ import { jsx as jsx32, jsxs as jsxs32 } from "https://esm.sh/react@19.2.0/jsx-ru
 // pages/pages/docs/custom/Groups.tsx
 import { jsx as jsx33, jsxs as jsxs33 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/docs/custom/Heroes.tsx
+// pages/pages/docs/layout/Header.tsx
 import { jsx as jsx34, jsxs as jsxs34 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/common/components/TopNav.tsx

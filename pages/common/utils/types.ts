@@ -17,9 +17,11 @@ export enum EDoc {
   FormsGrouped = 'forms-grouped',
   FormsDisabled = 'forms-disabled',
   FormsValidation = 'forms-validation', 
+  // layout
+  Header = 'header',
   // dialogs
   Modal = 'modal',
-  // navitation
+  // navigation
   Navigation = 'navigation',
   Menu = 'menu',
   Tabs = 'tabs',
@@ -29,7 +31,6 @@ export enum EDoc {
   Mobile = 'mobile',
   // custom - elements
   Cards = 'cards',
-  Heroes = 'heroes',
   // custom - layout
   Columns = 'cols',
   Containers = 'containers',
@@ -45,8 +46,8 @@ export enum EShowcase {
   MobileTabsNav = 'mobile-tabs-nav',
   MobileColumns = 'mobile-columns',
   MobileTypography = 'mobile-typography',
-  LayoutHeroSimple = 'layout-hero-simple',
-  LayoutHeroSub = 'layout-hero-sub',
+  LayoutHeaderSimple = 'layout-header-simple',
+  LayoutHeaderComplex = 'layout-header-sub',
 };
 
 export enum ELinks {

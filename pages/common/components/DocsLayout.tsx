@@ -95,6 +95,14 @@ export default function DocLayout({ theme, children }) {
             </ol>
             <br />
 
+            <b>Layout</b>
+            <ol>
+              <li aria-selected={selectedDoc === EDoc.Header}>
+                <a href={RouteMaster.doc(EDoc.Header, theme, route)}>Headers</a>
+              </li>
+            </ol>
+            <br />
+
             <b>Dialogs</b>
             <ol>
               <li aria-selected={selectedDoc === EDoc.Modal}>
@@ -136,10 +144,6 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Cards}>
                 <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>Cards</a>
               </li>
-              <li aria-selected={selectedDoc === EDoc.Heroes}>
-                <a href={RouteMaster.doc(EDoc.Heroes, theme, route)}>Heroes</a>
-              </li>
-
               <li aria-selected={selectedDoc === EDoc.Columns}>
                 <a href={RouteMaster.doc(EDoc.Columns, theme, route)}>Columns</a>
               </li>

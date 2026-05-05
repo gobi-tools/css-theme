@@ -2548,11 +2548,14 @@ function DesktopMenu() {
   ] });
 }
 
-// pages/pages/showcase/LayoutHeroSimple.tsx
+// pages/pages/showcase/LayoutHeaderNav.tsx
 import { Fragment as Fragment3, jsx as jsx20, jsxs as jsxs20 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function LayoutHeroSimple() {
+function LayoutHeaderNav() {
   return /* @__PURE__ */ jsxs20(Fragment3, { children: [
-    /* @__PURE__ */ jsx20("header", { className: "hero", children: /* @__PURE__ */ jsx20("nav", { children: /* @__PURE__ */ jsx20("ul", { children: /* @__PURE__ */ jsx20("li", { children: /* @__PURE__ */ jsx20("a", { href: "", children: "Home" }) }) }) }) }),
+    /* @__PURE__ */ jsx20("header", { children: /* @__PURE__ */ jsx20("nav", { children: /* @__PURE__ */ jsxs20("ul", { children: [
+      /* @__PURE__ */ jsx20("li", { children: /* @__PURE__ */ jsx20("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx20("li", { children: /* @__PURE__ */ jsx20("a", { href: "", children: "About" }) })
+    ] }) }) }),
     /* @__PURE__ */ jsxs20("main", { children: [
       /* @__PURE__ */ jsx20("h1", { children: "Title" }),
       /* @__PURE__ */ jsx20("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
@@ -2560,13 +2563,13 @@ function LayoutHeroSimple() {
   ] });
 }
 
-// pages/pages/showcase/LayoutHeroSub.tsx
+// pages/pages/showcase/LayoutHeaderComplex.tsx
 import { Fragment as Fragment4, jsx as jsx21, jsxs as jsxs21 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function LayoutHeroSub() {
+function LayoutHeaderComplex() {
   return /* @__PURE__ */ jsxs21(Fragment4, { children: [
     /* @__PURE__ */ jsxs21("header", { children: [
       /* @__PURE__ */ jsx21("nav", { children: /* @__PURE__ */ jsx21("ul", { children: /* @__PURE__ */ jsx21("li", { children: /* @__PURE__ */ jsx21("a", { href: "", children: "Home" }) }) }) }),
-      /* @__PURE__ */ jsxs21("div", { className: "hero align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
+      /* @__PURE__ */ jsxs21("div", { className: "align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
         /* @__PURE__ */ jsx21("h2", { children: "My blog" }),
         /* @__PURE__ */ jsx21("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
         /* @__PURE__ */ jsx21("form", { children: /* @__PURE__ */ jsxs21("div", { className: "group", children: [
@@ -3232,7 +3235,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx31("td", { children: /* @__PURE__ */ jsx31("code", { children: "align-center" }) }),
           /* @__PURE__ */ jsxs31("td", { children: [
             "Aligns elements centrally on the horizontal axis. See ",
-            /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("header" /* Header */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3307,14 +3310,6 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsxs31("td", { children: [
             "Groups various elements, like buttons or inputs, together, horizontally. See ",
             /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
-            "."
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxs31("tr", { children: [
-          /* @__PURE__ */ jsx31("td", { children: /* @__PURE__ */ jsx31("code", { children: "hero" }) }),
-          /* @__PURE__ */ jsxs31("td", { children: [
-            "Transform an element into a hero (or banner). See ",
-            /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3662,31 +3657,31 @@ function Groups({ theme }) {
   ] });
 }
 
-// pages/pages/docs/custom/Heroes.tsx
+// pages/pages/docs/layout/Header.tsx
 import { jsx as jsx35, jsxs as jsxs35 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function Heroes({ theme }) {
+function Header({ theme }) {
   const route = useRoute();
   return /* @__PURE__ */ jsxs35(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs35("section", { className: "row", children: [
       /* @__PURE__ */ jsxs35("div", { children: [
         /* @__PURE__ */ jsxs35("p", { children: [
           "A ",
-          /* @__PURE__ */ jsx35("b", { children: "hero" }),
-          " is a section that spans the whole width of the viewport, used to highlight important parts of a website."
+          /* @__PURE__ */ jsx35("code", { children: "header" }),
+          " is used to define the introductory content of a page or section. We can use it, for example, to hold navigation elements:"
         ] }),
-        /* @__PURE__ */ jsxs35("p", { children: [
-          "For example, you can use the ",
-          /* @__PURE__ */ jsx35("code", { children: "hero" }),
-          " class to highlight the main webpage navigation."
-        ] }),
-        /* @__PURE__ */ jsx35("iframe", { scrolling: "no", width: "100%", height: 275, src: RouteMaster.showcase("layout-hero-simple" /* LayoutHeroSimple */, theme, route) })
+        /* @__PURE__ */ jsx35("iframe", { scrolling: "no", width: "100%", height: 275, src: RouteMaster.showcase("layout-header-simple" /* LayoutHeaderSimple */, theme, route) })
       ] }),
-      /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35("pre", { children: /* @__PURE__ */ jsx35("code", { children: `<header class="hero">
+      /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35("pre", { children: /* @__PURE__ */ jsx35("code", { children: `<header>
   <nav>
     <ul>
       <li>
         <a href="...">
           Home
+        </a>
+      </li>
+      <li>
+        <a href="...">
+          About
         </a>
       </li>
     </ul>
@@ -3699,8 +3694,8 @@ function Heroes({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs35("section", { className: "row", children: [
       /* @__PURE__ */ jsxs35("div", { children: [
-        /* @__PURE__ */ jsx35("p", { children: "You can also create more complex layouts, to highlight a call to action for a web page." }),
-        /* @__PURE__ */ jsx35("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showcase("layout-hero-sub" /* LayoutHeroSub */, theme, route) })
+        /* @__PURE__ */ jsx35("p", { children: "Inside a header you can create more complex layouts, to highlight a call to action, a brand promo, etc." }),
+        /* @__PURE__ */ jsx35("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showcase("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35("pre", { children: /* @__PURE__ */ jsx35("code", { children: `<header>
   <nav>
@@ -3712,7 +3707,7 @@ function Heroes({ theme }) {
       </li>
     </ul>
   </nav>
-  <div class="hero align-center">
+  <div class="align-center">
     <h2>
       My blog
     </h2>
@@ -3781,6 +3776,9 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/docs/forms/${htmlName(FormsNormal)}`;
       case "forms-validation" /* FormsValidation */:
         return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
+      // layout
+      case "header" /* Header */:
+        return `${base}${theme}/pages/docs/layout/${htmlName(Header)}`;
       // modal
       case "modal" /* Modal */:
         return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
@@ -3809,8 +3807,6 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case "groups" /* Groups */:
         return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
-      case "heroes" /* Heroes */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Heroes)}`;
     }
   }
   static getDocFromRoute(path) {
@@ -3856,6 +3852,12 @@ var RouteMaster = class _RouteMaster {
             return "forms-validation" /* FormsValidation */;
         }
       }
+      case "layout": {
+        switch (doc) {
+          case htmlName(Header):
+            return "header" /* Header */;
+        }
+      }
       case "dialogs": {
         switch (doc) {
           case htmlName(Modal):
@@ -3894,8 +3896,6 @@ var RouteMaster = class _RouteMaster {
             return "containers" /* Containers */;
           case htmlName(Groups):
             return "groups" /* Groups */;
-          case htmlName(Heroes):
-            return "heroes" /* Heroes */;
         }
       }
     }
@@ -3906,10 +3906,10 @@ var RouteMaster = class _RouteMaster {
     switch (route) {
       case "desktop-menu" /* DekstopMenu */:
         return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
-      case "layout-hero-simple" /* LayoutHeroSimple */:
-        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSimple)}`;
-      case "layout-hero-sub" /* LayoutHeroSub */:
-        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeroSub)}`;
+      case "layout-header-simple" /* LayoutHeaderSimple */:
+        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderNav)}`;
+      case "layout-header-sub" /* LayoutHeaderComplex */:
+        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderComplex)}`;
       case "mobile-columns" /* MobileColumns */:
         return `${base}${theme}/pages/showcase/${htmlName(MobileColumns)}`;
       case "mobile-menu" /* MobileMenu */:
@@ -4062,6 +4062,9 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx38("li", { "aria-selected": selectedDoc === "forms-validation" /* FormsValidation */, children: /* @__PURE__ */ jsx38("a", { href: RouteMaster.doc("forms-validation" /* FormsValidation */, theme, route), children: "Validation" }) })
         ] }),
         /* @__PURE__ */ jsx38("br", {}),
+        /* @__PURE__ */ jsx38("b", { children: "Layout" }),
+        /* @__PURE__ */ jsx38("ol", { children: /* @__PURE__ */ jsx38("li", { "aria-selected": selectedDoc === "header" /* Header */, children: /* @__PURE__ */ jsx38("a", { href: RouteMaster.doc("header" /* Header */, theme, route), children: "Headers" }) }) }),
+        /* @__PURE__ */ jsx38("br", {}),
         /* @__PURE__ */ jsx38("b", { children: "Dialogs" }),
         /* @__PURE__ */ jsx38("ol", { children: /* @__PURE__ */ jsx38("li", { "aria-selected": selectedDoc === "modal" /* Modal */, children: /* @__PURE__ */ jsx38("a", { href: RouteMaster.doc("modal" /* Modal */, theme, route), children: "Modal" }) }) }),
         /* @__PURE__ */ jsx38("br", {}),
@@ -4082,7 +4085,6 @@ function DocLayout({ theme, children }) {
         /* @__PURE__ */ jsx38("b", { children: "Custom" }),
         /* @__PURE__ */ jsxs38("ol", { children: [
           /* @__PURE__ */ jsx38("li", { "aria-selected": selectedDoc === "cards" /* Cards */, children: /* @__PURE__ */ jsx38("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "Cards" }) }),
-          /* @__PURE__ */ jsx38("li", { "aria-selected": selectedDoc === "heroes" /* Heroes */, children: /* @__PURE__ */ jsx38("a", { href: RouteMaster.doc("heroes" /* Heroes */, theme, route), children: "Heroes" }) }),
           /* @__PURE__ */ jsx38("li", { "aria-selected": selectedDoc === "cols" /* Columns */, children: /* @__PURE__ */ jsx38("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "Columns" }) }),
           /* @__PURE__ */ jsx38("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx38("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "Containers" }) }),
           /* @__PURE__ */ jsx38("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx38("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) }),

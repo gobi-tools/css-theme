@@ -31,7 +31,7 @@ Improvements
 - [ ] have a full-screen width dimension
 - [ ] pre>code elements should have horizontal scrolling enabled
 - [ ] redo CSS with nesting
-- [ ] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.
+- [x] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.  
 
 Bugs
 ----
@@ -67,6 +67,9 @@ Bugs
 
 Docs
 ----
+- [ ] add examples for section headers
+- [ ] add docs for footer
+- [ ] add docs for main
 - [x] On [summary](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/summary.html) page, on mobile,
   the vertical distance between demo & code is too small
 - [x] Clicking the "menu sub-nav" button on mobile only works once  
