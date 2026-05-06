@@ -29,8 +29,10 @@ nav :is(ul, ol) {
 
 nav :is(ul, ol)>li {
   display: inline-block;
-  padding-block: var(--space-3);
-  padding-inline: 0;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 nav a {
@@ -51,7 +53,8 @@ nav :is(ul, ol)>li:hover>ul {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  padding-inline: var(--space-7);
+  padding-left: var(--space-7);
+  padding-right: var(--space-7);
   padding: var(--space-6);
   align-items: start;
   min-width: 150px;

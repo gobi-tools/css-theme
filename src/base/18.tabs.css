@@ -1,7 +1,8 @@
 /* base */
 
 nav ol>li {
-  padding-inline: var(--space-5);
+  padding-left: var(--space-5);
+  padding-right: var(--space-5);
 }
 
 /* theme colors */
@@ -29,11 +30,15 @@ nav>ol>li[aria-selected="true"] {
     border-left-color: var(--color-primary-inked-hover);
   }
 
+  nav>ol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
   nav>ol>li {
     align-content: center;
     width: 100%;
-    padding-top: var(--space-1);
-    padding-bottom: var(--space-1);
     padding-left: var(--space-6) !important;
     border-bottom: none;
   }

@@ -12,7 +12,8 @@ kbd,
 var,
 mark {
   padding: var(--space-2);
-  padding-inline: var(--space-3);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
   display: inline-block;
 }
 

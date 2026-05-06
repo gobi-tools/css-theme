@@ -68,8 +68,10 @@ header:has(> menu):not(.disable-mobile) {
     width: 100%;
     left: 0;
     bottom: 0;
-    padding-inline: var(--space-6);
-    padding-block: 0;
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+    padding-top: 0;
+    padding-bottom: 0;
     margin: 0;
     justify-content: center;
     gap: 0;
@@ -80,7 +82,8 @@ header:has(> menu):not(.disable-mobile) {
   }
 
   menu>li {
-    padding-inline: 0;
+    padding-left: 0;
+    padding-right: 0;
     flex-grow: 1;
     flex-basis: 999px;
   }
