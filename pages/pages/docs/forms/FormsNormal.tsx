@@ -18,11 +18,15 @@ export default function FormsNormal({ theme }) {
             form. There is no JavaScript required and no extra CSS.
           </p>
           <form>
-            <label htmlFor="email">Email</label>
-            <input type="email" placeholder="Email Address" id="email"/>
+            <label htmlFor="email">
+              <span>Email</span>
+              <input type="email" placeholder="Email Address" id="email" />
+            </label>
 
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" placeholder="Password" />
+            <label htmlFor="password">
+              <span>Password</span>
+              <input type="password" id="password" placeholder="Password" />
+            </label>
 
             <input type="submit" value={"Login"} />
             <p>
@@ -39,22 +43,26 @@ export default function FormsNormal({ theme }) {
     </legend>
 
     <label for="email">
-      Email
+      <span>
+        Email
+      </span>
+      <input 
+        type="email" 
+        name="email"
+        placeholder="..." 
+        id="email"/>
     </label>
-    <input 
-      type="email" 
-      name="email"
-      placeholder="..." 
-      id="email"/>
 
     <label for="password">
-      Password
+      <span>
+        Password
+      </span>
+      <input 
+        type="password" 
+        name="password"
+        id="password" 
+        placeholder="..."/>  
     </label>
-    <input 
-      type="password" 
-      name="password"
-      id="password" 
-      placeholder="..."/>
     
     <input 
       type="submit" 
@@ -107,8 +115,12 @@ export default function FormsNormal({ theme }) {
             Ranged inputs are also supported.
           </p>
           <form>
-            <label htmlFor="volume">Volume (range)</label>
-            <input type="range" id="volume" name="volume" min={0} max={100} step={1} value={volume} onChange={(e) => setVolume(Number(e.target.value))}/>
+            <label htmlFor="volume">
+              <span>
+                Volume (range)
+              </span>
+              <input type="range" id="volume" name="volume" min={0} max={100} step={1} value={volume} onChange={(e) => setVolume(Number(e.target.value))} />
+            </label>
             <input type="submit" value={"Tune"} />
           </form>
         </div>
@@ -116,16 +128,18 @@ export default function FormsNormal({ theme }) {
           <pre><code>
             {`<form>
   <label for="volume">
-    Volume (range)
+    <span>
+      Volume (range)
+    </span>
+    <input 
+      type="range" 
+      id="volume" 
+      name="volume" 
+      min="0" 
+      max="100" 
+      step="1" 
+      value="50"/>
   </label>
-  <input 
-    type="range" 
-    id="volume" 
-    name="volume" 
-    min="0" 
-    max="100" 
-    step="1" 
-    value="50"/>
   <input 
     type="submit" 
     value="Tune"/>
@@ -133,7 +147,7 @@ export default function FormsNormal({ theme }) {
           </code></pre>
         </div>
       </section>
-      
+
       <section>
         <div className="row">
           <div>
@@ -148,26 +162,34 @@ export default function FormsNormal({ theme }) {
 
                 <div className="row disable-mobile">
                   <div>
-                    <label htmlFor="first-name">First name</label>
-                    <input type="text" id="first-name" placeholder="First name" />
+                    <label htmlFor="first-name">
+                      <span>First name</span>
+                      <input type="text" id="first-name" placeholder="First name" />
+                    </label>
                   </div>
                   <div>
-                    <label htmlFor="last-name">Last name</label>
-                    <input type="text" id="last-name" placeholder="Last name" />
+                    <label htmlFor="last-name">
+                      <span>Last name</span>
+                      <input type="text" id="last-name" placeholder="Last name" />
+                    </label>
                   </div>
                 </div>
 
                 <div className="row disable-mobile">
                   <div>
-                    <label htmlFor="delivery">Delivery Time</label>
-                    <select id="delivery" defaultValue={"mornibgt"}>
-                      <option value="morning">Morning</option>
-                      <option value="evening">Evening</option>
-                    </select>
+                    <label htmlFor="delivery">
+                      <span>Delivery Time</span>
+                      <select id="delivery" defaultValue={"mornibgt"}>
+                        <option value="morning">Morning</option>
+                        <option value="evening">Evening</option>
+                      </select>
+                    </label>
                   </div>
                   <div>
-                    <label htmlFor="delivery-date">Delivery Date</label>
+                    <label htmlFor="delivery-date">
+                      <span>Delivery Date</span>
                     <input type="date" id="delivery-date" />
+                    </label>
                   </div>
                 </div>
 
@@ -218,22 +240,26 @@ export default function FormsNormal({ theme }) {
       <div>
         <label 
           for="first-name">
-          First name
+          <span>
+            First name
+          </span>
+          <input 
+            type="text" 
+            id="first-name" 
+            placeholder="..."/>
         </label>
-        <input 
-          type="text" 
-          id="first-name" 
-          placeholder="..."/>
       </div>
       <div>
         <label 
           for="last-name">
-          Last name
+          <span>
+            Last name
+          </span>
+          <input 
+            type="text" 
+            id="last-name" 
+            placeholder="..."/>
         </label>
-        <input 
-          type="text" 
-          id="last-name" 
-          placeholder="..."/>
       </div>
     </div>
 

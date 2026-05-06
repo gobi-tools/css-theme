@@ -1220,44 +1220,42 @@ function FormsCheckbox({ theme }) {
         /* @__PURE__ */ jsx11("p", { children: "To allow multiple items to be selected, you can use lighlty styled checkbox inputs." }),
         /* @__PURE__ */ jsxs11("form", { children: [
           /* @__PURE__ */ jsx11("p", { children: /* @__PURE__ */ jsx11("b", { children: "Options" }) }),
-          /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsxs11("label", { htmlFor: "egg", children: [
+          /* @__PURE__ */ jsxs11("label", { htmlFor: "egg", children: [
             /* @__PURE__ */ jsx11("input", { type: "checkbox", id: "egg", name: "sandwich", value: "egg" }),
             /* @__PURE__ */ jsx11("span", { children: "Egg" })
-          ] }) }),
-          /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsxs11("label", { htmlFor: "cheese", children: [
+          ] }),
+          /* @__PURE__ */ jsxs11("label", { htmlFor: "cheese", children: [
             /* @__PURE__ */ jsx11("input", { type: "checkbox", id: "cheese", name: "sandwich", value: "cheese" }),
             /* @__PURE__ */ jsx11("span", { children: "Cheese" })
-          ] }) }),
-          /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsxs11("label", { htmlFor: "ham", children: [
+          ] }),
+          /* @__PURE__ */ jsxs11("label", { htmlFor: "ham", children: [
             /* @__PURE__ */ jsx11("input", { type: "checkbox", id: "ham", name: "sandwich", value: "ham" }),
             /* @__PURE__ */ jsx11("span", { children: "Ham" })
-          ] }) })
+          ] })
         ] }),
         /* @__PURE__ */ jsx11("p", { children: "These work well even for complex, multi-line, checkboxes" }),
         /* @__PURE__ */ jsxs11("form", { children: [
           /* @__PURE__ */ jsx11("p", { children: /* @__PURE__ */ jsx11("b", { children: "Todos" }) }),
-          /* @__PURE__ */ jsxs11("div", { children: [
-            /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsxs11("label", { htmlFor: "friday", children: [
-              /* @__PURE__ */ jsx11("input", { type: "checkbox", id: "friday", name: "todos", value: "friday" }),
-              /* @__PURE__ */ jsxs11("span", { children: [
-                /* @__PURE__ */ jsx11("b", { children: "Friday" }),
-                /* @__PURE__ */ jsx11("br", {}),
-                /* @__PURE__ */ jsx11("span", { children: "- Order lunch" }),
-                /* @__PURE__ */ jsx11("br", {}),
-                /* @__PURE__ */ jsx11("span", { children: "- Go to work" }),
-                /* @__PURE__ */ jsx11("span", { children: "- Eat lunch" })
-              ] })
-            ] }) }),
-            /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsxs11("label", { htmlFor: "saturday", children: [
-              /* @__PURE__ */ jsx11("input", { type: "checkbox", id: "saturday", name: "todos", value: "saturday" }),
-              /* @__PURE__ */ jsxs11("span", { children: [
-                /* @__PURE__ */ jsx11("b", { children: "Saturday" }),
-                /* @__PURE__ */ jsx11("br", {}),
-                /* @__PURE__ */ jsx11("span", { children: "- Order lunch" }),
-                /* @__PURE__ */ jsx11("br", {}),
-                /* @__PURE__ */ jsx11("span", { children: "- Eat lunch" })
-              ] })
-            ] }) })
+          /* @__PURE__ */ jsxs11("label", { htmlFor: "friday", children: [
+            /* @__PURE__ */ jsx11("input", { type: "checkbox", id: "friday", name: "todos", value: "friday" }),
+            /* @__PURE__ */ jsxs11("span", { children: [
+              /* @__PURE__ */ jsx11("b", { children: "Friday" }),
+              /* @__PURE__ */ jsx11("br", {}),
+              /* @__PURE__ */ jsx11("span", { children: "- Order lunch" }),
+              /* @__PURE__ */ jsx11("br", {}),
+              /* @__PURE__ */ jsx11("span", { children: "- Go to work" }),
+              /* @__PURE__ */ jsx11("span", { children: "- Eat lunch" })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs11("label", { htmlFor: "saturday", children: [
+            /* @__PURE__ */ jsx11("input", { type: "checkbox", id: "saturday", name: "todos", value: "saturday" }),
+            /* @__PURE__ */ jsxs11("span", { children: [
+              /* @__PURE__ */ jsx11("b", { children: "Saturday" }),
+              /* @__PURE__ */ jsx11("br", {}),
+              /* @__PURE__ */ jsx11("span", { children: "- Order lunch" }),
+              /* @__PURE__ */ jsx11("br", {}),
+              /* @__PURE__ */ jsx11("span", { children: "- Eat lunch" })
+            ] })
           ] })
         ] })
       ] }),
@@ -1266,16 +1264,14 @@ function FormsCheckbox({ theme }) {
     <div>
       <p><b>Options</b></p>
 
-      <div>
-        <label for="egg">
-          <input 
-            type="checkbox" 
-            id="egg" 
-            name="sandwich" 
-            value="egg" />
-          <span>Egg</span>
-        </label>
-      </div>
+      <label for="egg">
+        <input 
+          type="checkbox" 
+          id="egg" 
+          name="sandwich" 
+          value="egg" />
+        <span>Egg</span>
+      </label>
       ...
     </div>
     ...
@@ -1285,35 +1281,30 @@ function FormsCheckbox({ theme }) {
     /* @__PURE__ */ jsxs11("section", { className: "row", children: [
       /* @__PURE__ */ jsxs11("div", { children: [
         /* @__PURE__ */ jsx11("p", { children: "If you want only one item to be selected out of a list of multiple options, you can use radio inputs." }),
-        /* @__PURE__ */ jsx11("form", { children: /* @__PURE__ */ jsxs11("div", { children: [
+        /* @__PURE__ */ jsxs11("form", { children: [
           /* @__PURE__ */ jsx11("p", { children: /* @__PURE__ */ jsx11("b", { children: "Wrapping" }) }),
-          /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsxs11("label", { htmlFor: "bread", children: [
+          /* @__PURE__ */ jsxs11("label", { htmlFor: "bread", children: [
             /* @__PURE__ */ jsx11("input", { type: "radio", id: "bread", name: "radio", value: "bread", checked: radio === "bread", onChange: (e) => setRadio(e.target.value) }),
             /* @__PURE__ */ jsx11("span", { children: "Bread" })
-          ] }) }),
-          /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsxs11("label", { htmlFor: "salad", children: [
+          ] }),
+          /* @__PURE__ */ jsxs11("label", { htmlFor: "salad", children: [
             /* @__PURE__ */ jsx11("input", { type: "radio", id: "salad", name: "radio", value: "salad", checked: radio === "salad", onChange: (e) => setRadio(e.target.value) }),
             /* @__PURE__ */ jsx11("span", { children: "Salad" })
-          ] }) })
-        ] }) })
+          ] })
+        ] })
       ] }),
       /* @__PURE__ */ jsx11("div", { children: /* @__PURE__ */ jsx11("pre", { children: /* @__PURE__ */ jsx11("code", { children: `<form>
   <div className="row">
-    <div>
-      <p><b>Wrapping</b></p>
+    <p><b>Wrapping</b></p>
 
-      <div>
-        <label for="bread">
-          <input 
-            type="radio" 
-            id="bread" 
-            name="radio" 
-            value="bread" />
-          <span>Bread</span>
-        </label>
-      </div>
-      ...
-    </div>
+    <label for="bread">
+      <input 
+        type="radio" 
+        id="bread" 
+        name="radio" 
+        value="bread" />
+      <span>Bread</span>
+    </label>
     ...
   </div>
 </form>` }) }) })
@@ -1376,14 +1367,20 @@ function FormsDisabled({ theme }) {
       ] }),
       /* @__PURE__ */ jsx12("form", { children: /* @__PURE__ */ jsxs12("fieldset", { children: [
         /* @__PURE__ */ jsx12("legend", { children: "Disabled form" }),
-        /* @__PURE__ */ jsx12("label", { htmlFor: "email", children: "Email" }),
-        /* @__PURE__ */ jsx12("input", { type: "email", id: "email", placeholder: "N/A", disabled: true }),
-        /* @__PURE__ */ jsx12("label", { htmlFor: "address", children: "Address" }),
-        /* @__PURE__ */ jsx12("input", { type: "text", id: "address", placeholder: "Address", disabled: true }),
-        /* @__PURE__ */ jsx12("label", { htmlFor: "delivery", children: "Delivery" }),
-        /* @__PURE__ */ jsxs12("select", { id: "delivery", defaultValue: "fast", disabled: true, children: [
-          /* @__PURE__ */ jsx12("option", { value: "fast", children: "Fast" }),
-          /* @__PURE__ */ jsx12("option", { value: "standard", children: "Standard" })
+        /* @__PURE__ */ jsxs12("label", { htmlFor: "email", children: [
+          /* @__PURE__ */ jsx12("span", { children: "Email" }),
+          /* @__PURE__ */ jsx12("input", { type: "email", id: "email", placeholder: "N/A", disabled: true })
+        ] }),
+        /* @__PURE__ */ jsxs12("label", { htmlFor: "address", children: [
+          /* @__PURE__ */ jsx12("span", { children: "Address" }),
+          /* @__PURE__ */ jsx12("input", { type: "text", id: "address", placeholder: "Address", disabled: true })
+        ] }),
+        /* @__PURE__ */ jsxs12("label", { htmlFor: "delivery", children: [
+          /* @__PURE__ */ jsx12("span", { children: "Delivery" }),
+          /* @__PURE__ */ jsxs12("select", { id: "delivery", defaultValue: "fast", disabled: true, children: [
+            /* @__PURE__ */ jsx12("option", { value: "fast", children: "Fast" }),
+            /* @__PURE__ */ jsx12("option", { value: "standard", children: "Standard" })
+          ] })
         ] }),
         /* @__PURE__ */ jsx12("input", { type: "submit", value: "Submit", disabled: true })
       ] }) })
@@ -1395,39 +1392,45 @@ function FormsDisabled({ theme }) {
     </legend>
 
     <label for="email">
-      Email
+      <span>
+        Email
+      </span>
+      <input 
+        type="email" 
+        id="email" 
+        placeholder="N/A" 
+        disabled/>
     </label>
-    <input 
-      type="email" 
-      id="email" 
-      placeholder="N/A" 
-      disabled/>
-    
+        
     <label for="address">
-      Address
+      <span>
+        Address
+      </span>
+      <input 
+        type="text" 
+        id="address" 
+        placeholder="Address" 
+        disabled/>
     </label>
-    <input 
-      type="text" 
-      id="address" 
-      placeholder="Address" 
-      disabled/>
     
     <label form="delivery">
-      Delivery
+      <span>
+        Delivery
+      </span>
+      <select 
+        id="delivery" 
+        disabled>
+        <option 
+          value="fast" 
+          selected>
+          Fast
+        </option>
+        <option 
+          value="standard">
+          Standard
+        </option>
+      </select>
     </label>
-    <select 
-      id="delivery" 
-      disabled>
-      <option 
-        value="fast" 
-        selected>
-        Fast
-      </option>
-      <option 
-        value="standard">
-        Standard
-      </option>
-    </select>
     
     <input 
       type="submit" 
@@ -1604,10 +1607,14 @@ function FormsNormal({ theme }) {
           " are supported and can be easily arranged into a pleasantly looking and functional form. There is no JavaScript required and no extra CSS."
         ] }),
         /* @__PURE__ */ jsxs14("form", { children: [
-          /* @__PURE__ */ jsx14("label", { htmlFor: "email", children: "Email" }),
-          /* @__PURE__ */ jsx14("input", { type: "email", placeholder: "Email Address", id: "email" }),
-          /* @__PURE__ */ jsx14("label", { htmlFor: "password", children: "Password" }),
-          /* @__PURE__ */ jsx14("input", { type: "password", id: "password", placeholder: "Password" }),
+          /* @__PURE__ */ jsxs14("label", { htmlFor: "email", children: [
+            /* @__PURE__ */ jsx14("span", { children: "Email" }),
+            /* @__PURE__ */ jsx14("input", { type: "email", placeholder: "Email Address", id: "email" })
+          ] }),
+          /* @__PURE__ */ jsxs14("label", { htmlFor: "password", children: [
+            /* @__PURE__ */ jsx14("span", { children: "Password" }),
+            /* @__PURE__ */ jsx14("input", { type: "password", id: "password", placeholder: "Password" })
+          ] }),
           /* @__PURE__ */ jsx14("input", { type: "submit", value: "Login" }),
           /* @__PURE__ */ jsxs14("p", { children: [
             "Don't have an account? ",
@@ -1623,22 +1630,26 @@ function FormsNormal({ theme }) {
     </legend>
 
     <label for="email">
-      Email
+      <span>
+        Email
+      </span>
+      <input 
+        type="email" 
+        name="email"
+        placeholder="..." 
+        id="email"/>
     </label>
-    <input 
-      type="email" 
-      name="email"
-      placeholder="..." 
-      id="email"/>
 
     <label for="password">
-      Password
+      <span>
+        Password
+      </span>
+      <input 
+        type="password" 
+        name="password"
+        id="password" 
+        placeholder="..."/>  
     </label>
-    <input 
-      type="password" 
-      name="password"
-      id="password" 
-      placeholder="..."/>
     
     <input 
       type="submit" 
@@ -1677,23 +1688,27 @@ function FormsNormal({ theme }) {
       /* @__PURE__ */ jsxs14("div", { children: [
         /* @__PURE__ */ jsx14("p", { children: "Ranged inputs are also supported." }),
         /* @__PURE__ */ jsxs14("form", { children: [
-          /* @__PURE__ */ jsx14("label", { htmlFor: "volume", children: "Volume (range)" }),
-          /* @__PURE__ */ jsx14("input", { type: "range", id: "volume", name: "volume", min: 0, max: 100, step: 1, value: volume, onChange: (e) => setVolume(Number(e.target.value)) }),
+          /* @__PURE__ */ jsxs14("label", { htmlFor: "volume", children: [
+            /* @__PURE__ */ jsx14("span", { children: "Volume (range)" }),
+            /* @__PURE__ */ jsx14("input", { type: "range", id: "volume", name: "volume", min: 0, max: 100, step: 1, value: volume, onChange: (e) => setVolume(Number(e.target.value)) })
+          ] }),
           /* @__PURE__ */ jsx14("input", { type: "submit", value: "Tune" })
         ] })
       ] }),
       /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsx14("pre", { children: /* @__PURE__ */ jsx14("code", { children: `<form>
   <label for="volume">
-    Volume (range)
+    <span>
+      Volume (range)
+    </span>
+    <input 
+      type="range" 
+      id="volume" 
+      name="volume" 
+      min="0" 
+      max="100" 
+      step="1" 
+      value="50"/>
   </label>
-  <input 
-    type="range" 
-    id="volume" 
-    name="volume" 
-    min="0" 
-    max="100" 
-    step="1" 
-    value="50"/>
   <input 
     type="submit" 
     value="Tune"/>
@@ -1711,27 +1726,27 @@ function FormsNormal({ theme }) {
         /* @__PURE__ */ jsx14("form", { children: /* @__PURE__ */ jsxs14("fieldset", { children: [
           /* @__PURE__ */ jsx14("legend", { children: "Details" }),
           /* @__PURE__ */ jsxs14("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsxs14("div", { children: [
-              /* @__PURE__ */ jsx14("label", { htmlFor: "first-name", children: "First name" }),
+            /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsxs14("label", { htmlFor: "first-name", children: [
+              /* @__PURE__ */ jsx14("span", { children: "First name" }),
               /* @__PURE__ */ jsx14("input", { type: "text", id: "first-name", placeholder: "First name" })
-            ] }),
-            /* @__PURE__ */ jsxs14("div", { children: [
-              /* @__PURE__ */ jsx14("label", { htmlFor: "last-name", children: "Last name" }),
+            ] }) }),
+            /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsxs14("label", { htmlFor: "last-name", children: [
+              /* @__PURE__ */ jsx14("span", { children: "Last name" }),
               /* @__PURE__ */ jsx14("input", { type: "text", id: "last-name", placeholder: "Last name" })
-            ] })
+            ] }) })
           ] }),
           /* @__PURE__ */ jsxs14("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsxs14("div", { children: [
-              /* @__PURE__ */ jsx14("label", { htmlFor: "delivery", children: "Delivery Time" }),
+            /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsxs14("label", { htmlFor: "delivery", children: [
+              /* @__PURE__ */ jsx14("span", { children: "Delivery Time" }),
               /* @__PURE__ */ jsxs14("select", { id: "delivery", defaultValue: "mornibgt", children: [
                 /* @__PURE__ */ jsx14("option", { value: "morning", children: "Morning" }),
                 /* @__PURE__ */ jsx14("option", { value: "evening", children: "Evening" })
               ] })
-            ] }),
-            /* @__PURE__ */ jsxs14("div", { children: [
-              /* @__PURE__ */ jsx14("label", { htmlFor: "delivery-date", children: "Delivery Date" }),
+            ] }) }),
+            /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsxs14("label", { htmlFor: "delivery-date", children: [
+              /* @__PURE__ */ jsx14("span", { children: "Delivery Date" }),
               /* @__PURE__ */ jsx14("input", { type: "date", id: "delivery-date" })
-            ] })
+            ] }) })
           ] }),
           /* @__PURE__ */ jsxs14("blockquote", { className: "success", children: [
             "Order total is ",
@@ -1776,22 +1791,26 @@ function FormsNormal({ theme }) {
       <div>
         <label 
           for="first-name">
-          First name
+          <span>
+            First name
+          </span>
+          <input 
+            type="text" 
+            id="first-name" 
+            placeholder="..."/>
         </label>
-        <input 
-          type="text" 
-          id="first-name" 
-          placeholder="..."/>
       </div>
       <div>
         <label 
           for="last-name">
-          Last name
+          <span>
+            Last name
+          </span>
+          <input 
+            type="text" 
+            id="last-name" 
+            placeholder="..."/>
         </label>
-        <input 
-          type="text" 
-          id="last-name" 
-          placeholder="..."/>
       </div>
     </div>
 
@@ -1852,50 +1871,56 @@ function FormsValidation({ theme }) {
         ] }),
         /* @__PURE__ */ jsx15("form", { action: "", method: "post", children: /* @__PURE__ */ jsxs15("fieldset", { children: [
           /* @__PURE__ */ jsx15("legend", { children: "Input" }),
-          /* @__PURE__ */ jsx15("label", { htmlFor: "name", children: "Name" }),
-          /* @__PURE__ */ jsx15(
-            "input",
-            {
-              id: "name",
-              name: "name",
-              required: true,
-              placeholder: "Name...",
-              pattern: ".{4,100}",
-              title: "Name must be at least 4 characters",
-              value: name,
-              onChange: (e) => setName(e.target.value)
-            }
-          ),
-          /* @__PURE__ */ jsx15("div", { className: "error", children: /* @__PURE__ */ jsx15("small", { children: "Enter a name between 4 and 100 characters" }) }),
-          /* @__PURE__ */ jsx15("label", { htmlFor: "email", children: "Email" }),
-          /* @__PURE__ */ jsx15(
-            "input",
-            {
-              id: "email",
-              name: "email",
-              type: "email",
-              required: true,
-              placeholder: "Email...",
-              value: email,
-              onChange: (e) => setEmail(e.target.value)
-            }
-          ),
-          /* @__PURE__ */ jsx15("label", { htmlFor: "comment", children: "Comment" }),
-          /* @__PURE__ */ jsx15(
-            "textarea",
-            {
-              rows: 5,
-              id: "comment",
-              name: "comment",
-              placeholder: "Enter your comment",
-              required: true,
-              minLength: 10,
-              maxLength: 500,
-              value: comment,
-              onChange: (e) => setComment(e.target.value)
-            }
-          ),
-          /* @__PURE__ */ jsx15("div", { className: "error", children: /* @__PURE__ */ jsx15("small", { children: "Enter a meaningful comment" }) }),
+          /* @__PURE__ */ jsxs15("label", { htmlFor: "name", children: [
+            /* @__PURE__ */ jsx15("span", { children: "Name" }),
+            /* @__PURE__ */ jsx15(
+              "input",
+              {
+                id: "name",
+                name: "name",
+                required: true,
+                placeholder: "Name...",
+                pattern: ".{4,100}",
+                title: "Name must be at least 4 characters",
+                value: name,
+                onChange: (e) => setName(e.target.value)
+              }
+            ),
+            /* @__PURE__ */ jsx15("div", { className: "error", children: /* @__PURE__ */ jsx15("small", { className: "error", children: "Enter a name between 4 and 100 characters" }) })
+          ] }),
+          /* @__PURE__ */ jsxs15("label", { htmlFor: "email", children: [
+            /* @__PURE__ */ jsx15("span", { children: "Email" }),
+            /* @__PURE__ */ jsx15(
+              "input",
+              {
+                id: "email",
+                name: "email",
+                type: "email",
+                required: true,
+                placeholder: "Email...",
+                value: email,
+                onChange: (e) => setEmail(e.target.value)
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxs15("label", { htmlFor: "comment", children: [
+            /* @__PURE__ */ jsx15("span", { children: "Comment" }),
+            /* @__PURE__ */ jsx15(
+              "textarea",
+              {
+                rows: 5,
+                id: "comment",
+                name: "comment",
+                placeholder: "Enter your comment",
+                required: true,
+                minLength: 10,
+                maxLength: 500,
+                value: comment,
+                onChange: (e) => setComment(e.target.value)
+              }
+            ),
+            /* @__PURE__ */ jsx15("div", { className: "error", children: /* @__PURE__ */ jsx15("small", { children: "Enter a meaningful comment" }) })
+          ] }),
           /* @__PURE__ */ jsx15("input", { type: "submit", value: "Submit" })
         ] }) })
       ] }),
@@ -1906,49 +1931,55 @@ function FormsValidation({ theme }) {
     </legend>
 
     <label for="name">
-      Name
+      <span>
+        Name
+      </span>
+      <input
+        id="name"
+        name="name"
+        required
+        placeholder="Name..."
+        pattern=".{4,100}"
+        title="Name ..."
+        value="a"/>
+      <div className="error">
+        <small>
+          Enter ...
+        </small>
+      </div>
     </label>
-    <input
-      id="name"
-      name="name"
-      required
-      placeholder="Name..."
-      pattern=".{4,100}"
-      title="Name ..."
-      value="a"/>
-    <div className="error">
-      <small>
-        Enter ...
-      </small>
-    </div>
-
+    
     <label for="email">
-      Email
+      <span>
+        Email
+      </span>
+      <input 
+        id="email" 
+        name="email" 
+        type="email" 
+        required 
+        placeholder="Email..."/>
     </label>
-    <input 
-      id="email" 
-      name="email" 
-      type="email" 
-      required 
-      placeholder="Email..."/>
 
     <label for="comment">
-      Comment
+      <span>
+        Comment
+      </span>
+      <textarea
+        rows="5"
+        id="comment"
+        name="comment"
+        placeholder="..."
+        required
+        minLength="10"
+        maxLength="500">
+      </textarea>
+      <div className="error">
+        <small>
+          Enter ...
+        </small>
+      </div>
     </label>
-    <textarea
-      rows="5"
-      id="comment"
-      name="comment"
-      placeholder="..."
-      required
-      minLength="10"
-      maxLength="500">
-    </textarea>
-    <div className="error">
-      <small>
-        Enter ...
-      </small>
-    </div>
     
     <input 
       type="submit" 

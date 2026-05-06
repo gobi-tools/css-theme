@@ -29,40 +29,49 @@ export default function FormsValidation({ theme }) {
             <fieldset>
               <legend>Input</legend>
 
-              <label htmlFor="name">Name</label>
-              <input
-                id="name"
-                name="name"
-                required
-                placeholder="Name..."
-                pattern=".{4,100}"
-                title="Name must be at least 4 characters"
-                value={name}
-                onChange={(e) => setName(e.target.value)} />
-              <div className="error"><small>Enter a name between 4 and 100 characters</small></div>
+              <label htmlFor="name">
+                <span>Name</span>
+                <input
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Name..."
+                  pattern=".{4,100}"
+                  title="Name must be at least 4 characters"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)} />
+                <div className="error">
+                  <small className="error">Enter a name between 4 and 100 characters</small>
+                </div>
+              </label>
 
-              <label htmlFor="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                placeholder="Email..."
-                value={email}
-                onChange={(e) => setEmail(e.target.value)} />
+              <label htmlFor="email">
+                <span>Email</span>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Email..."
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)} />
+              </label>
 
-              <label htmlFor="comment">Comment</label>
-              <textarea
-                rows={5}
-                id="comment"
-                name="comment"
-                placeholder="Enter your comment"
-                required
-                minLength={10}
-                maxLength={500}
-                value={comment}
-                onChange={(e) => setComment(e.target.value)}></textarea>
-              <div className="error"><small>Enter a meaningful comment</small></div>
+              <label htmlFor="comment">
+                <span>Comment</span>
+                <textarea
+                  rows={5}
+                  id="comment"
+                  name="comment"
+                  placeholder="Enter your comment"
+                  required
+                  minLength={10}
+                  maxLength={500}
+                  value={comment}
+                  onChange={(e) => setComment(e.target.value)}></textarea>
+                <div className="error"><small>Enter a meaningful comment</small></div>
+              </label>
+
               <input type="submit" value="Submit" />
             </fieldset>
           </form>
@@ -76,49 +85,55 @@ export default function FormsValidation({ theme }) {
     </legend>
 
     <label for="name">
-      Name
+      <span>
+        Name
+      </span>
+      <input
+        id="name"
+        name="name"
+        required
+        placeholder="Name..."
+        pattern=".{4,100}"
+        title="Name ..."
+        value="a"/>
+      <div className="error">
+        <small>
+          Enter ...
+        </small>
+      </div>
     </label>
-    <input
-      id="name"
-      name="name"
-      required
-      placeholder="Name..."
-      pattern=".{4,100}"
-      title="Name ..."
-      value="a"/>
-    <div className="error">
-      <small>
-        Enter ...
-      </small>
-    </div>
-
+    
     <label for="email">
-      Email
+      <span>
+        Email
+      </span>
+      <input 
+        id="email" 
+        name="email" 
+        type="email" 
+        required 
+        placeholder="Email..."/>
     </label>
-    <input 
-      id="email" 
-      name="email" 
-      type="email" 
-      required 
-      placeholder="Email..."/>
 
     <label for="comment">
-      Comment
+      <span>
+        Comment
+      </span>
+      <textarea
+        rows="5"
+        id="comment"
+        name="comment"
+        placeholder="..."
+        required
+        minLength="10"
+        maxLength="500">
+      </textarea>
+      <div className="error">
+        <small>
+          Enter ...
+        </small>
+      </div>
     </label>
-    <textarea
-      rows="5"
-      id="comment"
-      name="comment"
-      placeholder="..."
-      required
-      minLength="10"
-      maxLength="500">
-    </textarea>
-    <div className="error">
-      <small>
-        Enter ...
-      </small>
-    </div>
     
     <input 
       type="submit" 

@@ -13,17 +13,24 @@ export default function FormsDisabled({ theme }) {
             <fieldset>
               <legend>Disabled form</legend>
 
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" placeholder="N/A" disabled />
+              <label htmlFor="email">
+                <span>Email</span>
+                <input type="email" id="email" placeholder="N/A" disabled />
+              </label>
 
-              <label htmlFor="address">Address</label>
-              <input type="text" id="address" placeholder="Address" disabled />
-
-              <label htmlFor="delivery">Delivery</label>
-              <select id="delivery" defaultValue={"fast"} disabled>
+              <label htmlFor="address">
+                <span>Address</span>
+                <input type="text" id="address" placeholder="Address" disabled />
+              </label>
+              
+              <label htmlFor="delivery">
+                <span>Delivery</span>
+                <select id="delivery" defaultValue={"fast"} disabled>
                 <option value="fast">Fast</option>
                 <option value="standard">Standard</option>
               </select>
+              </label>
+              
               <input type="submit" value={"Submit"} disabled />
             </fieldset>
           </form>
@@ -37,39 +44,45 @@ export default function FormsDisabled({ theme }) {
     </legend>
 
     <label for="email">
-      Email
+      <span>
+        Email
+      </span>
+      <input 
+        type="email" 
+        id="email" 
+        placeholder="N/A" 
+        disabled/>
     </label>
-    <input 
-      type="email" 
-      id="email" 
-      placeholder="N/A" 
-      disabled/>
-    
+        
     <label for="address">
-      Address
+      <span>
+        Address
+      </span>
+      <input 
+        type="text" 
+        id="address" 
+        placeholder="Address" 
+        disabled/>
     </label>
-    <input 
-      type="text" 
-      id="address" 
-      placeholder="Address" 
-      disabled/>
     
     <label form="delivery">
-      Delivery
+      <span>
+        Delivery
+      </span>
+      <select 
+        id="delivery" 
+        disabled>
+        <option 
+          value="fast" 
+          selected>
+          Fast
+        </option>
+        <option 
+          value="standard">
+          Standard
+        </option>
+      </select>
     </label>
-    <select 
-      id="delivery" 
-      disabled>
-      <option 
-        value="fast" 
-        selected>
-        Fast
-      </option>
-      <option 
-        value="standard">
-        Standard
-      </option>
-    </select>
     
     <input 
       type="submit" 
