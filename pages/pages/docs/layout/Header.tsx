@@ -5,14 +5,14 @@ import { EShowcase } from "../../../common/utils/types";
 
 export default function Header({ theme }) {
   const route = useRoute();
-  
+
   return (
     <DocLayout theme={theme}>
       <section className="row">
         <div>
           <p>
-            A <code>header</code> is used to define the introductory content of a page or section. 
-            We can use it, for example, to hold navigation elements:
+            A <code>header</code> is used to define the introductory content of a page or section.
+            The simplest top level header can contain a navigation element:
           </p>
           <iframe scrolling="no" width="100%" height={275} src={RouteMaster.showcase(EShowcase.LayoutHeaderSimple, theme, route)} />
         </div>
@@ -45,9 +45,13 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
+            More compelx headers can contain both the navigation as well as a
+            call to action, a brand promo, etc.
+          </p>
+          {/* <p>
             Inside a header you can create more complex layouts, to highlight 
             a call to action, a brand promo, etc.
-          </p>
+          </p> */}
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showcase(EShowcase.LayoutHeaderComplex, theme, route)} />
         </div>
         <div>
@@ -84,6 +88,39 @@ export default function Header({ theme }) {
 <main>
   <h1>Title</h1>
   <p>Lorem ipsum...</p>
+</main>`}
+          </code></pre>
+        </div>
+      </section>
+
+      <section className="row">
+        <div>
+          <p>
+            Section headers can be combined with other elements to form banners:
+          </p>
+          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showcase(EShowcase.LayoutHeaderSection, theme, route)} />
+        </div>
+        <div>
+          <pre><code>
+            {`>main>
+  <section>
+    <header>
+      <div>
+        <div class="group">
+          <div class="row">
+            <div>
+              ...
+            </div>
+            <div class="gap">
+            </div>
+            <button>
+              ...
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
 </main>`}
           </code></pre>
         </div>

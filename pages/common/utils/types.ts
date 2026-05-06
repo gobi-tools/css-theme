@@ -48,6 +48,7 @@ export enum EShowcase {
   MobileTypography = 'mobile-typography',
   LayoutHeaderSimple = 'layout-header-simple',
   LayoutHeaderComplex = 'layout-header-sub',
+  LayoutHeaderSection = 'layout-header-section',
 };
 
 export enum ELinks {

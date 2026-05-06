@@ -35,6 +35,7 @@ import Columns from "../../pages/docs/custom/Columns";
 import Containers from "../../pages/docs/custom/Containers";
 import Groups from "../../pages/docs/custom/Groups";
 import Header from "../../pages/docs/layout/Header";
+import LayoutHeaderSection from "../../pages/showcase/LayoutHeaderSection";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -158,6 +159,7 @@ export class RouteMaster {
       case EShowcase.DekstopMenu: return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
       case EShowcase.LayoutHeaderSimple: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderNav)}`;
       case EShowcase.LayoutHeaderComplex: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderComplex)}`;
+      case EShowcase.LayoutHeaderSection: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderSection)}`;
       case EShowcase.MobileColumns: return `${base}${theme}/pages/showcase/${htmlName(MobileColumns)}`;
       case EShowcase.MobileMenu: return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
       case EShowcase.MobileNav: return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;

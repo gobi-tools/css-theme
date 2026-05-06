@@ -4,10 +4,12 @@ header > :not(:is(nav, menu)) {
   width: 100vw !important;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding-top: var(--space-8);
 
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+  
   &>* {
-    width: min(100% - var(--space-9), var(--width-page));
+    width: min(100% - var(--space-9), var(--width-page)) !important;
     margin-inline: auto;
   }
 }
