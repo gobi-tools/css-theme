@@ -9,7 +9,7 @@
 }
 
 .card>:nth-child(2) {
-  margin-top: var(--space-8);
+  margin-top: var(--space-6);
 }
 
 .card>img:first-child {

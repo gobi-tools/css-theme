@@ -1,19 +1,28 @@
-/* vertical layout */ 
+/* vertical layout */
 
 details {
   margin-bottom: var(--space-2);
 }
 
-details>:nth-child(2) {
+/* details>:nth-child(2) {
   margin-top: var(--space-4);
-}
+} */
 
-/* base */ 
+/* base */
 
 details {
   display: block;
   text-align: left;
   overflow: hidden;
+  /* display: flex;
+  flex-direction: column;
+  gap: var(--space-3); */
+}
+
+details:open {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 
 summary {

@@ -31,9 +31,6 @@
 
 .group>:is(button, input[type=submit], input[type=reset], mark) {
   width: auto;
-  /* @todo: buttons & inputs have different margin-bottom (0 vs space-6 
-     so this becomes important
-     */
   align-self: flex-start;
 }
 

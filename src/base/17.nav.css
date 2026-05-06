@@ -1,7 +1,7 @@
 /* vertical layout */
 
 nav {
-  margin-bottom: var(--space-6);
+  /* margin-bottom: var(--space-6); */
 }
 
 nav :is(ul, ol) {
