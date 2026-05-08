@@ -1,12 +1,12 @@
 /* vertical layout */
 
 table {
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-l);
 }
 
 th,
 td {
-  padding-right: var(--space-6);
+  padding-right: var(--space-m);
 }
 
 /* base */
@@ -25,8 +25,8 @@ td {
 
 th,
 td {
-  padding-top: var(--space-3);
-  padding-bottom: var(--space-3);
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
 }
 
 tr:last-child>th,
@@ -36,12 +36,12 @@ tr:last-child>td {
 
 th:first-child,
 td:first-child {
-  padding-left: var(--space-3);
+  padding-left: var(--space-xs);
 }
 
 th:last-child,
 td:last-child {
-  padding-right: var(--space-3);
+  padding-right: var(--space-xs);
 }
 
 /* theme colors */

@@ -2,33 +2,33 @@
 
 h1,
 h2 {
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-l);
 }
 
 h3,
 h4,
 h5,
 h6 {
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-l);
 }
 
 p {
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-m);
 }
 
 section {
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-xl);
 }
 
 hr {
-  margin-top: var(--space-7) !important;
-  margin-bottom: var(--space-7) !important;
+  margin-top: var(--space-l) !important;
+  margin-bottom: var(--space-l) !important;
 }
 
 /* horizontal layout */ 
 
 body>* {
-  width: min(100% - var(--space-9), var(--width-page));
+  width: min(100% - var(--space-l), var(--width-page));
   margin-inline: auto;
 }
 
@@ -125,7 +125,7 @@ hr {
 
 @container header (max-width: 600px) {
   header {
-    padding-top: var(--space-7);
+    padding-top: var(--space-l);
   }
 }
 
@@ -135,6 +135,6 @@ hr {
   }
 
   aside {
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-m);
   }
 }

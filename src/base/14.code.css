@@ -2,7 +2,7 @@
 
 mark+mark,
 code+code {
-  margin-left: var(--space-2);
+  margin-left: var(--space-2xs);
 }
 
 /* base */
@@ -11,9 +11,9 @@ code,
 kbd,
 var,
 mark {
-  padding: var(--space-2);
-  padding-left: var(--space-3);
-  padding-right: var(--space-3);
+  padding: var(--space-2xs);
+  padding-left: var(--space-xs);
+  padding-right: var(--space-xs);
   display: inline-block;
 }
 

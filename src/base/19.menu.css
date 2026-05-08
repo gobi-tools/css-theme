@@ -13,7 +13,7 @@ menu>li {
 menu {
   display: flex;
   list-style-type: none;
-  gap: var(--space-9);
+  gap: var(--space-l);
   align-items: center;
   list-style-type: none;
   margin-left: 0;
@@ -24,8 +24,8 @@ menu>li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: var(--space-6);
-  padding-bottom: var(--space-3);
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-xs);
   max-width: 100px;
 }
 
@@ -68,8 +68,8 @@ header:has(> menu):not(.disable-mobile) {
     width: 100%;
     left: 0;
     bottom: 0;
-    padding-left: var(--space-6);
-    padding-right: var(--space-6);
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
     padding-top: 0;
     padding-bottom: 0;
     justify-content: center;

@@ -2,7 +2,7 @@
 
 blockquote,
 pre {
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-m);
 }
 
 blockquote>:last-child,
@@ -15,7 +15,7 @@ pre:has(+ figcaption) {
 blockquote {
   display: block;
   text-align: left;
-  padding: var(--space-6);
+  padding: var(--space-m);
   text-wrap: auto;
   word-wrap: break-word;
 }
@@ -34,7 +34,7 @@ pre>code {
   /* word-break: break-all; */
   word-break: auto-phrase;
   white-space: break-spaces !important;
-  padding: var(--space-6);
+  padding: var(--space-m);
 }
 
 /* theme styles */

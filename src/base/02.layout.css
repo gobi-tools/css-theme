@@ -1,16 +1,13 @@
 /* vertical layout */ 
 
 body {
-  /* display: flex;
-  flex-direction: column; */
   min-height: 100vh;
-  /* gap: var(--space-3); */
 }
 
 body, #root {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-l);
 }
 
 main {
@@ -20,5 +17,5 @@ main {
 header {
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-sm);
 }

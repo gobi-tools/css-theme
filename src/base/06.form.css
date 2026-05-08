@@ -3,7 +3,7 @@
 form, fieldset {
   display: flex;
   flex-direction: column;
-  gap: var(--space-6);
+  gap: var(--space-m);
 
   &>* {
     margin-bottom: 0 !important;
@@ -11,13 +11,13 @@ form, fieldset {
 }
 
 fieldset {
-  padding: var(--space-6);
+  padding: var(--space-m);
 }
 
 /* horizontal layout */
 
 form {
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-m);
 }
 
 /* base */
@@ -36,7 +36,7 @@ textarea {
   display: block;
   width: 100%;
   min-width: 0;
-  padding: var(--space-3);
+  padding: var(--space-xs);
   min-height: var(--height-input);
   text-align: left;
 }

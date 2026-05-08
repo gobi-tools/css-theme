@@ -1,7 +1,7 @@
 /* vertical layout */
 
 dialog {
-  margin-top: var(--space-10);
+  margin-top: var(--space-xl);
 }
 
 /* horizontal layout */
@@ -14,8 +14,8 @@ dialog {
 
 dialog {
   border: none;
-  padding: var(--space-6);
-  width: min(100% - var(--space-9), var(--width-dialog));
+  padding: var(--space-m);
+  width: min(100% - var(--space-l), var(--width-dialog));
 }
 
 /* theme styles */

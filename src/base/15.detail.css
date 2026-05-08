@@ -1,7 +1,7 @@
 /* vertical layout */
 
 details {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-2xs);
 }
 
 /* base */
@@ -15,7 +15,7 @@ details {
 details:open {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-xs);
 }
 details:not(:open) {
   gap: 0;

@@ -6,12 +6,12 @@
 /* if a label contains check | radios, it gets the right margin */
 label:has(> input[type="checkbox"]),
 label:has(> input[type="radio"]) {
-  margin-right: var(--space-7);
+  margin-right: var(--space-l);
 }
 
 /* input[type=checkbox],
 input[type=radio] {
-  margin-right: var(--space-3);
+  margin-right: var(--space-xs);
 } */
 
 /* if a label contains check | radios, they won't have right margin */
@@ -39,5 +39,5 @@ label:has(> input[type="checkbox"]),
 label:has(> input[type="radio"]) {
   display: inline-flex;
   align-items: baseline;
-  gap: var(--space-3);
+  gap: var(--space-xs);
 }

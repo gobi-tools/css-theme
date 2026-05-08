@@ -1,10 +1,11 @@
+
 /* horizontal layout */
 
 svg:has(+*),
 *:has(+svg),
 button > img:has(+*),
 button>*:has(+img) {
-  margin-right: var(--space-2) !important;
+  margin-right: var(--space-2xs) !important;
 }
 
 /* base */
@@ -19,8 +20,8 @@ svg, button>img {
 }
 
 :is(button, input[type=submit], input[type=reset]):has(:is(svg:only-child, img:only-child)) {
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
 }
 
 mark>:is(svg, img),
