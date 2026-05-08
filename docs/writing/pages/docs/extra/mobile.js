@@ -775,8 +775,10 @@ function Summary({ theme }) {
         ] }),
         /* @__PURE__ */ jsxs7("details", { className: "card error", children: [
           /* @__PURE__ */ jsx7("summary", { children: "Error" }),
-          /* @__PURE__ */ jsx7("p", { children: "Unknown error occurred" }),
-          /* @__PURE__ */ jsx7("p", { children: /* @__PURE__ */ jsx7("button", { children: "Ack" }) })
+          /* @__PURE__ */ jsxs7("div", { children: [
+            /* @__PURE__ */ jsx7("p", { children: "Unknown error occurred" }),
+            /* @__PURE__ */ jsx7("button", { children: "Ack" })
+          ] })
         ] }),
         /* @__PURE__ */ jsx7("p", { children: /* @__PURE__ */ jsxs7("small", { children: [
           "You can learn more about classes ",
@@ -813,12 +815,12 @@ function Summary({ theme }) {
   
 <details class="card error">
   <summary>Error</summary>
-  <p>
-    Unknown error occurred
-  </p>
-  <p>
+  <div>
+    <p>
+      Unknown error occurred
+    </p>
     <button>Ack</button>
-  </p>
+  </div>
 </details>` }) }) })
     ] })
   ] });
@@ -2989,21 +2991,22 @@ function Cards({ theme }) {
         ] }),
         /* @__PURE__ */ jsxs30("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsxs30("div", { className: "card", children: [
-            /* @__PURE__ */ jsx30("b", { children: "Title" }),
-            /* @__PURE__ */ jsx30("br", {}),
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            /* @__PURE__ */ jsx30("span", { children: /* @__PURE__ */ jsx30("b", { children: "Title" }) }),
+            /* @__PURE__ */ jsx30("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
           /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsxs30("div", { className: "card success", children: [
-            /* @__PURE__ */ jsx30("b", { children: "Title" }),
-            /* @__PURE__ */ jsx30("br", {}),
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            /* @__PURE__ */ jsx30("span", { children: /* @__PURE__ */ jsx30("b", { children: "Title" }) }),
+            /* @__PURE__ */ jsx30("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
         ] })
       ] }),
       /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsx30("pre", { children: /* @__PURE__ */ jsx30("code", { children: `<div class="card">
-  <b>Title</b>
-  <br />
-  Lorem ipsum ...
+  <span>
+    <b>Title</b>
+  </span>
+  <p>
+    Lorem ipsum ...
+  </p>
 </div>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs30("section", { className: "row", children: [

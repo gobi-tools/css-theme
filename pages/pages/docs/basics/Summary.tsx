@@ -5,7 +5,7 @@ import { EDoc } from "../../../common/utils/types";
 
 export default function Summary({ theme }) {
   const route = useRoute();
-    
+
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -64,12 +64,12 @@ export default function Summary({ theme }) {
           </details>
           <details className="card error">
             <summary>Error</summary>
-            <p>
-              Unknown error occurred
-            </p>
-            <p>
+            <div>
+              <p>
+                Unknown error occurred
+              </p>
               <button>Ack</button>
-            </p>
+            </div>
           </details>
           <p>
             <small>
@@ -108,12 +108,12 @@ export default function Summary({ theme }) {
   
 <details class="card error">
   <summary>Error</summary>
-  <p>
-    Unknown error occurred
-  </p>
-  <p>
+  <div>
+    <p>
+      Unknown error occurred
+    </p>
     <button>Ack</button>
-  </p>
+  </div>
 </details>`}
           </code></pre>
         </div>

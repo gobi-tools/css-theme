@@ -5,7 +5,7 @@ import { EDoc } from "../../../common/utils/types";
 
 export default function Cards({ theme }) {
   const route = useRoute();
-    
+
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -18,16 +18,18 @@ export default function Cards({ theme }) {
           <div className="row disable-mobile">
             <div>
               <div className="card">
-                <b>Title</b>
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span><b>Title</b></span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </div>
             </div>
             <div>
               <div className="card success">
-                <b>Title</b>
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span><b>Title</b></span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </div>
             </div>
           </div>
@@ -35,9 +37,12 @@ export default function Cards({ theme }) {
         <div>
           <pre><code>
             {`<div class="card">
-  <b>Title</b>
-  <br />
-  Lorem ipsum ...
+  <span>
+    <b>Title</b>
+  </span>
+  <p>
+    Lorem ipsum ...
+  </p>
 </div>`}
           </code></pre>
         </div>

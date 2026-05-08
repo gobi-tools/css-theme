@@ -4,7 +4,7 @@
   &lt;p&gt;Details&lt;/p&gt;
 &lt;/details&gt;
 
-&lt;details&gt;...&lt;/details&gt;</code></pre></div></section><section class="row"><div><p>The basic summary can be combined both with the <code>card</code> class as well as the <code>success</code> and <code>error</code> classes to form a more visually appealing element.</p><details class="card"><summary>Note</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details><details class="card success"><summary>Success</summary><p>Operation finished <code>OK</code></p></details><details class="card error"><summary>Error</summary><p>Unknown error occurred</p><p><button>Ack</button></p></details><p><small>You can learn more about classes <a href="/app/pages/docs/custom/classes.html">here</a>.</small></p><p><small>You can learn more about cards <a href="/app/pages/docs/custom/cards.html">here</a>.</small></p></div><div><pre><code>&lt;details class=&quot;card&quot;&gt;
+&lt;details&gt;...&lt;/details&gt;</code></pre></div></section><section class="row"><div><p>The basic summary can be combined both with the <code>card</code> class as well as the <code>success</code> and <code>error</code> classes to form a more visually appealing element.</p><details class="card"><summary>Note</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details><details class="card success"><summary>Success</summary><p>Operation finished <code>OK</code></p></details><details class="card error"><summary>Error</summary><div><p>Unknown error occurred</p><button>Ack</button></div></details><p><small>You can learn more about classes <a href="/app/pages/docs/custom/classes.html">here</a>.</small></p><p><small>You can learn more about cards <a href="/app/pages/docs/custom/cards.html">here</a>.</small></p></div><div><pre><code>&lt;details class=&quot;card&quot;&gt;
   &lt;summary&gt;Note&lt;/summary&gt;
   &lt;p&gt;
     Lorem ipsum dolor sit 
@@ -28,10 +28,10 @@
   
 &lt;details class=&quot;card error&quot;&gt;
   &lt;summary&gt;Error&lt;/summary&gt;
-  &lt;p&gt;
-    Unknown error occurred
-  &lt;/p&gt;
-  &lt;p&gt;
+  &lt;div&gt;
+    &lt;p&gt;
+      Unknown error occurred
+    &lt;/p&gt;
     &lt;button&gt;Ack&lt;/button&gt;
-  &lt;/p&gt;
+  &lt;/div&gt;
 &lt;/details&gt;</code></pre></div></section></div></div></article></main></div><script>globalThis.__INITIAL_PROPS__ = {"theme":"app"};</script><script type="module" src="./summary.js"></script></div></body></html>
