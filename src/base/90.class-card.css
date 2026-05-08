@@ -8,6 +8,10 @@
   margin-bottom: 0;
 }
 
+.card>*:last-child {
+  margin-bottom: var(--space-sm);
+}
+
 .card>*:not(img) {
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
@@ -16,10 +20,6 @@
 .card>*:first-child:not(img) {
   padding-top: var(--space-sm);
   padding-bottom: var(--space-sm);
-}
-
-.card>*:last-child {
-  margin-bottom: var(--space-sm);
 }
 
 /* horizontal layout */
