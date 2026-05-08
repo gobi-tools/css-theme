@@ -1,9 +1,3 @@
-/* vertical layout */
-
-svg {
-  margin: 0;
-}
-
 /* horizontal layout */
 
 svg:has(+*),
