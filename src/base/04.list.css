@@ -6,15 +6,6 @@ dl {
   margin-bottom: var(--space-m);
 }
 
-ul li,
-ol li {
-  margin-bottom: var(--space-2xs);
-}
-
-dd {
-  margin-bottom: var(--space-xs);
-}
-
 /* horizontal layout */
 
 ul,
@@ -27,8 +18,11 @@ ol {
 ul,
 ol,
 dl {
-  display: block;
+  /* display: block; */
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
 }
 
 dt {
