@@ -1,7 +1,7 @@
 /* vertical layout */
 
 .card {
-  /* margin-bottom: var(--space-m); */
+  margin-bottom: var(--space-m);
 }
 
 .card>* {
