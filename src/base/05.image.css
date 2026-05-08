@@ -1,7 +1,7 @@
 /* vertical layout */
 
 figure {
-  margin-bottom: var(--space-l);
+  /* margin-bottom: var(--space-l); */
 }
 
 img:has(+ figcaption) {

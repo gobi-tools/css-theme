@@ -17,7 +17,7 @@ fieldset {
 /* horizontal layout */
 
 form {
-  margin-bottom: var(--space-m);
+  /* margin-bottom: var(--space-m); */
 }
 
 /* base */

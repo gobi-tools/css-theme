@@ -2,7 +2,7 @@
 
 blockquote,
 pre {
-  margin-bottom: var(--space-m);
+  /* margin-bottom: var(--space-m); */
 }
 
 blockquote>:last-child,

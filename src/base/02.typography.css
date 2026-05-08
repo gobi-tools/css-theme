@@ -6,20 +6,20 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: var(--space-l);
+  /* margin-bottom: var(--space-l); */
 }
 
 p {
-  margin-bottom: var(--space-m);
+  /* margin-bottom: var(--space-m); */
 }
 
 section {
-  margin-bottom: var(--space-xl);
+  /* margin-bottom: var(--space-xl); */
 }
 
 hr {
-  margin-top: var(--space-l) !important;
-  margin-bottom: var(--space-l) !important;
+  /* margin-top: var(--space-l) !important; */
+  /* margin-bottom: var(--space-l) !important; */
 }
 
 /* horizontal layout */ 
@@ -132,6 +132,6 @@ hr {
   }
 
   aside {
-    margin-bottom: var(--space-m);
+    /* margin-bottom: var(--space-m); */
   }
 }
