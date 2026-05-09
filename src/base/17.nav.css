@@ -7,7 +7,8 @@ nav :is(ul, ol) {
 nav>:is(ul, ol) {
   display: flex;
   flex-direction: row;
-  gap: var(--space-l);
+  /* otherwise they will be squished together */
+  gap: var(--space-m);
 
   align-items: center;
 }
