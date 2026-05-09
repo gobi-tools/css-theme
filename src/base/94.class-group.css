@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
   /* prevents breaking parent width */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .group>* {
