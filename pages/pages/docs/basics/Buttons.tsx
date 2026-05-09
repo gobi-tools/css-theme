@@ -220,6 +220,14 @@ export default function Buttons({ theme }) {
               </svg>
             </button>
           </p>
+
+          <p className="group">
+            <button type="reset">Prev</button>
+            <button type="reset">1</button>
+            <button type="reset">2</button>
+            <button type="reset">3</button>
+            <button type="reset">Next</button>
+          </p>
           <p>
             <small>
               You can learn more about groups <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>here</a>.
@@ -248,6 +256,16 @@ export default function Buttons({ theme }) {
   </button>
   <button>
     <svg ...></svg>
+  </button>
+</p>
+
+<p class="group">
+  <button type="reset">
+    Prev
+  </button>
+  ...
+  <button>
+    Next
   </button>
 </p>`}
           </code></pre>

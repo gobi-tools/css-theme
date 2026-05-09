@@ -325,6 +325,13 @@ function Buttons({ theme }) {
             }
           ) })
         ] }),
+        /* @__PURE__ */ jsxs("p", { className: "group", children: [
+          /* @__PURE__ */ jsx("button", { type: "reset", children: "Prev" }),
+          /* @__PURE__ */ jsx("button", { type: "reset", children: "1" }),
+          /* @__PURE__ */ jsx("button", { type: "reset", children: "2" }),
+          /* @__PURE__ */ jsx("button", { type: "reset", children: "3" }),
+          /* @__PURE__ */ jsx("button", { type: "reset", children: "Next" })
+        ] }),
         /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsxs("small", { children: [
           "You can learn more about groups ",
           /* @__PURE__ */ jsx("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
@@ -352,6 +359,16 @@ function Buttons({ theme }) {
   </button>
   <button>
     <svg ...></svg>
+  </button>
+</p>
+
+<p class="group">
+  <button type="reset">
+    Prev
+  </button>
+  ...
+  <button>
+    Next
   </button>
 </p>` }) }) })
     ] })

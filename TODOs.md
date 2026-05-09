@@ -4,7 +4,7 @@ Features
 - [x] code + figcaption should go together 
 
 - [ ] breadcrumbs navigation elements
-- [ ] pagination elements
+- [x] pagination elements
 - [x] group details+summary with the same name into an accordion menu
 - [x] navigation
   - [ ] navigation of various widths (super skinny, skinny, horizontal, etc, like the side menu of CircleCI)
