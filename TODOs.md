@@ -34,9 +34,9 @@ Improvements
 
 Bugs
 ----
+- [ ] elements with display: flex and flex-direction: row tend to push outside of the boundary of the screen (check pagination buttons, etc)
 - [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
 - [ ] on really small devices (iPhone SE), the last form on [this page](http://localhost:8081/default/pages/docs/forms/forms_normal.html) does not respect column widths (e.g. they are unqeual)
-- [x] elements with display: flex and flex-direction: row tend to push outside of the boundary of the screen (check pagination buttons, etc)
 - [x] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
 - [x] should rows in width<600px have a 0px gap in "92.class-rows.css"?  
 - [x] group + row does not vertically center elements correctly
