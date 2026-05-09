@@ -1,7 +1,7 @@
 Features
 --------
 - [x] organise mobile nav a bit better (like here: https://sharif.io/posts)
-- [ ] code + figcaption should go together 
+- [x] code + figcaption should go together 
 
 - [ ] breadcrumbs navigation elements
 - [ ] pagination elements
@@ -18,9 +18,10 @@ Features
 
 Improvements
 ------------
+- [ ] redo CSS with nesting
 - [x] if I have a nav with the "card" role, it looks fairly ok; but the padding-block could be 0 to make it look even better
-- [ ] fieldsets, cards all have padding-bottom: 0; is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
-- [ ] input elements inside a "group" element maintain their bottom padding/marging; should they? what about if they're inside a form?
+- [x] fieldsets, cards all have padding-bottom: 0; is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
+- [x] input elements inside a "group" element maintain their bottom padding/marging; should they? what about if they're inside a form?
 - [x] decide on class-based versions for various roles & types (columns, note, etc)
   -> Sorted it here: https://gobi-tools.github.io/css-theme/default/pages/docs/custom/classes.html
 - [ ] redo the horizontal spacing to be based on "ch"
@@ -30,13 +31,12 @@ Improvements
   https://docs.soda.io/data-testing/git-managed-data-contracts/install-and-configure 
 - [ ] have a full-screen width dimension
 - [ ] pre>code elements should have horizontal scrolling enabled
-- [ ] redo CSS with nesting
 - [x] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.  
 
 Bugs
 ----
 - [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
-- [ ] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
+- [x] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
 - [ ] On mobile Safari, the datepicker has no placeholder text; example [here](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_grouped.html) 
 - [ ] on really small devices (iPhone SE), the last form on [this page](http://localhost:8081/default/pages/docs/forms/forms_normal.html) does not respect
   column widths (e.g. they are unqeual)
@@ -67,7 +67,7 @@ Bugs
 
 Docs
 ----
-- [ ] add examples for section headers
+- [x] add examples for section headers
 - [ ] add docs for footer
 - [ ] add docs for main
 - [x] On [summary](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/summary.html) page, on mobile,
