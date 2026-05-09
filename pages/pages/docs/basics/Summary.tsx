@@ -44,7 +44,7 @@ export default function Summary({ theme }) {
       <section className="row">
         <div>
           <p>
-            The basic summary can be combined both with
+            This basic summary can be combined both with
             the <code>card</code> class as well as
             the <code>success</code> and <code>error</code> classes
             to form a more visually appealing element.
@@ -115,6 +115,58 @@ export default function Summary({ theme }) {
     <button>Ack</button>
   </div>
 </details>`}
+          </code></pre>
+        </div>
+      </section>
+
+      <section className="row">
+        <div>
+          <p>
+            Finally, by giving a group of summary elements the
+            same name, you can form an accordion menu:
+          </p>
+          <details name="menu" className="card">
+            <summary>Option 1</summary>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </details>
+          <details name="menu" className="card" open>
+            <summary>Option 2</summary>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </details>
+          <details name="menu" className="card">
+            <summary>Option 3</summary>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </details>
+        </div>
+        <div>
+          <pre><code>
+            {`<details 
+  class="card" 
+  name="menu">
+  <summary>Option 1</summary>
+  <p>...</p>
+</details>
+
+<details 
+  class="card" 
+  name="menu">
+  <summary>Option 2</summary>
+  <p>...</p>
+</details>
+
+<details 
+  class="card" 
+  name="menu">
+  <summary>Option 3</summary>
+  <p>...</p>
+</details>
+            `}
           </code></pre>
         </div>
       </section>

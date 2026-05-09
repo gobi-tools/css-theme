@@ -13,3 +13,25 @@ details:not([open]) {
 summary {
   cursor: pointer;
 }
+
+details[name]:has(+ details[name]),
+details[name]+details[name] {
+  &:not([open])>:is(summary) {
+    background-color: light-dark(var(--color-bg), var(--color-accent-faint));
+
+    &:hover {
+      background-color: var(--color-secondary-muted-hover);
+    }
+  }
+}
+
+details[name]:has(+ details[name]) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+}
+
+details[name]+details[name] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

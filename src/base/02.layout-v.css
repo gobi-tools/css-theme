@@ -118,6 +118,10 @@ details:not([open]) {
   gap: 0 !important;
 }
 
+details[name]:has(+ details[name]) {
+  margin-bottom: 0;
+}
+
 .card {
   display: flex;
   flex-direction: column;

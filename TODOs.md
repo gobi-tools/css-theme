@@ -5,14 +5,13 @@ Features
 
 - [ ] breadcrumbs navigation elements
 - [ ] pagination elements
-- [ ] group dialogs with the same name into an accordion menu
+- [x] group details+summary with the same name into an accordion menu
 - [x] navigation
   - [ ] navigation of various widths (super skinny, skinny, horizontal, etc, like the side menu of CircleCI)
   - [x] "menu" type navigation on desktop should also look like the mobile one
 - [x] forms
   - [x] validation states
 - [ ] animations
-- [ ] create an "search" form item
 - [ ] loading state with aria-busy
 - [x] screenshot tests
 
@@ -70,7 +69,7 @@ Bugs/Platform
 - [ ][Mobile Safari] Check & radio button widget & text are not centrally v-aligned
 - [x][Mobile Safari/Chrome] Summary with .card class has extra bottom padding or gap
 - [x][Mobile Safari/Chrome] Normal navigation example makes the whole viewport too wide, generating horizontal scrolling
-- [ ][Mobile Safari/Chrome] Selector colors are off on all themes;
+- [x][Mobile Safari/Chrome] Selector colors are off on all themes;
 
 Docs
 ----
