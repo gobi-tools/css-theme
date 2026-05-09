@@ -7,7 +7,6 @@ body>* {
 
 /* base */ 
 
-/* header, */
 footer {
   display: block;
   text-align: left;
@@ -94,12 +93,6 @@ hr {
 *:has(header) {
   container-type: inline-size;
   container-name: header;
-}
-
-@container header (max-width: 600px) {
-  header {
-    padding-top: var(--space-l);
-  }
 }
 
 @container (max-width: 600px) {

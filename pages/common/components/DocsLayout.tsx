@@ -8,7 +8,7 @@ export default function DocLayout({ theme, children }) {
   const route = useRoute();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedDoc, setSelectedDoc] = useState<EDoc | undefined>(undefined);
-  
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const doc = RouteMaster.getDocFromRoute(window.location.pathname)
@@ -40,8 +40,8 @@ export default function DocLayout({ theme, children }) {
             <hr />
           </div>
           <nav className={isMenuOpen === false ? "hide-on-mobile" : (isMenuOpen === undefined ? "hide-on-mobile" : "")}>
-            <b>Basics</b>
             <ol>
+              <b>Basics</b>
               <li aria-selected={selectedDoc === EDoc.Typographty}>
                 <a href={RouteMaster.doc(EDoc.Typographty, theme, route)}>Typography</a>
               </li>
@@ -73,10 +73,9 @@ export default function DocLayout({ theme, children }) {
                 <a href={RouteMaster.doc(EDoc.Figures, theme, route)}>Figures</a>
               </li>
             </ol>
-            <br />
 
-            <b>Forms</b>
             <ol>
+              <b>Forms</b>
               <li aria-selected={selectedDoc === EDoc.FormsNormal}>
                 <a href={RouteMaster.doc(EDoc.FormsNormal, theme, route)}>Normal</a>
               </li>
@@ -93,26 +92,23 @@ export default function DocLayout({ theme, children }) {
                 <a href={RouteMaster.doc(EDoc.FormsValidation, theme, route)}>Validation</a>
               </li>
             </ol>
-            <br />
 
-            <b>Layout</b>
             <ol>
+              <b>Layout</b>
               <li aria-selected={selectedDoc === EDoc.Header}>
                 <a href={RouteMaster.doc(EDoc.Header, theme, route)}>Headers</a>
               </li>
             </ol>
-            <br />
 
-            <b>Dialogs</b>
             <ol>
+              <b>Dialogs</b>
               <li aria-selected={selectedDoc === EDoc.Modal}>
                 <a href={RouteMaster.doc(EDoc.Modal, theme, route)}>Modal</a>
               </li>
             </ol>
-            <br />
 
-            <b>Navigation</b>
             <ol>
+              <b>Navigation</b>
               <li aria-selected={selectedDoc === EDoc.Navigation}>
                 <a href={RouteMaster.doc(EDoc.Navigation, theme, route)}>Basic</a>
               </li>
@@ -123,10 +119,9 @@ export default function DocLayout({ theme, children }) {
                 <a href={RouteMaster.doc(EDoc.Menu, theme, route)}>Menu</a>
               </li>
             </ol>
-            <br />
 
-            <b>Extra</b>
             <ol>
+              <b>Extra</b>
               <li aria-selected={selectedDoc === EDoc.DarkMode}>
                 <a href={RouteMaster.doc(EDoc.DarkMode, theme, route)}>Dark Mode</a>
               </li>
@@ -137,10 +132,9 @@ export default function DocLayout({ theme, children }) {
                 <a href={RouteMaster.doc(EDoc.Mobile, theme, route)}>Mobile</a>
               </li>
             </ol>
-            <br />
 
-            <b>Custom</b>
             <ol>
+              <b>Custom</b>
               <li aria-selected={selectedDoc === EDoc.Cards}>
                 <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>Cards</a>
               </li>
@@ -157,7 +151,6 @@ export default function DocLayout({ theme, children }) {
                 <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>Classes</a>
               </li>
             </ol>
-            <br />
           </nav>
         </aside>
         <div>

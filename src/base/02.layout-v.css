@@ -1,4 +1,4 @@
-/* vertical layout */
+/* misc */
 
 body {
   min-height: 100vh;
@@ -8,7 +8,25 @@ main {
   flex: 1;
 }
 
-/* self displays */
+/* self layout: top margins */
+
+main {
+  margin-top: var(--space-l);
+}
+
+header {
+  margin-top: var(--space-m);
+}
+
+dialog {
+  margin-top: var(--space-xl);
+}
+
+hr {
+  margin-top: var(--space-l) !important;
+}
+
+/* self layout: bottom margins */
 
 details {
   margin-bottom: var(--space-2xs);
@@ -36,7 +54,6 @@ h6 {
 }
 
 hr {
-  margin-top: var(--space-l) !important;
   margin-bottom: var(--space-l) !important;
 }
 
@@ -52,32 +69,11 @@ section {
   margin-bottom: var(--space-xl);
 }
 
-dialog {
-  margin-top: var(--space-xl);
-}
-
 *:has(+ figcaption) {
   margin-bottom: 0;
 }
 
-nav :is(ul, ol) {
-  margin-bottom: 0;
-}
-
 /* child displays */
-
-body,
-#root {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-l);
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
 
 blockquote {
   display: flex;
@@ -126,6 +122,16 @@ details:not(:open) {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+
+  &>* {
+    margin-bottom: 0;
+  }
+}
+
+header> :not(:is(nav, menu)) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
 
   &>* {
     margin-bottom: 0;
