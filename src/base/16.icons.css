@@ -1,13 +1,3 @@
-
-/* horizontal layout */
-
-svg:has(+*),
-*:has(+svg),
-button > img:has(+*),
-button>*:has(+img) {
-  margin-right: var(--space-2xs) !important;
-}
-
 /* base */
 
 svg, button>img {
