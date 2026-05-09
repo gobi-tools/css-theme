@@ -222,15 +222,11 @@ export default function Buttons({ theme }) {
           </p>
 
           <p className="group">
-            <button type="reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6" /></svg>
-            </button>
+            <button type="reset">Prev</button>
             <button type="reset">1</button>
             <button type="reset">2</button>
             <button type="reset">3</button>
-            <button type="reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
-            </button>
+            <button type="reset">Next</button>
           </p>
           <p>
             <small>
@@ -253,26 +249,26 @@ export default function Buttons({ theme }) {
 
 <p class="group">
   <button type="reset">
-    <svg ...></svg>
+    <
   </button>
   <button type="reset">
     <svg ...></svg>
   </button>
   <button>
-    <svg ...></svg>
+    >
   </button>
 </p>
 
 <p class="group">
   <button type="reset">
-    <svg ...></svg>
+    Prev
   </button>
   <button type="reset">
     1
   </button>
   ...
   <button>
-    <svg ...></svg>
+    Next
   </button>
 </p>`}
           </code></pre>

@@ -7,7 +7,7 @@ input[type=reset] {
   min-height: var(--height-button);
   min-width: auto;
   padding-block: var(--space-xs);
-  padding-inline: var(--space-l);
+  padding-inline: var(--space-m);
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
