@@ -1,7 +1,6 @@
 /* horizontal layout */
 
-mark+mark,
-code+code {
+mark+mark  {
   margin-left: var(--space-2xs);
 }
 

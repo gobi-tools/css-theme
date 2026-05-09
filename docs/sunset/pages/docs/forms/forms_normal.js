@@ -2585,8 +2585,8 @@ function LayoutHeaderComplex() {
 import { Fragment as Fragment6, jsx as jsx25, jsxs as jsxs25 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileColumns() {
   return /* @__PURE__ */ jsx25(Fragment6, { children: /* @__PURE__ */ jsx25("main", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsx25("article", { children: /* @__PURE__ */ jsxs25("div", { className: "row", children: [
-    /* @__PURE__ */ jsx25("div", { children: /* @__PURE__ */ jsx25("p", { children: /* @__PURE__ */ jsx25("code", { style: { width: "100%" }, children: "col" }) }) }),
-    /* @__PURE__ */ jsx25("div", { children: /* @__PURE__ */ jsx25("p", { children: /* @__PURE__ */ jsx25("code", { style: { width: "100%" }, children: "col" }) }) })
+    /* @__PURE__ */ jsx25("div", { children: /* @__PURE__ */ jsx25("code", { style: { width: "100%" }, children: "col" }) }),
+    /* @__PURE__ */ jsx25("div", { children: /* @__PURE__ */ jsx25("code", { style: { width: "100%" }, children: "col" }) })
   ] }) }) }) });
 }
 

@@ -2673,8 +2673,8 @@ function LayoutHeaderComplex() {
 import { Fragment as Fragment5, jsx as jsx23, jsxs as jsxs23 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileColumns() {
   return /* @__PURE__ */ jsx23(Fragment5, { children: /* @__PURE__ */ jsx23("main", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsx23("article", { children: /* @__PURE__ */ jsxs23("div", { className: "row", children: [
-    /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("p", { children: /* @__PURE__ */ jsx23("code", { style: { width: "100%" }, children: "col" }) }) }),
-    /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("p", { children: /* @__PURE__ */ jsx23("code", { style: { width: "100%" }, children: "col" }) }) })
+    /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("code", { style: { width: "100%" }, children: "col" }) }),
+    /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("code", { style: { width: "100%" }, children: "col" }) })
   ] }) }) }) });
 }
 

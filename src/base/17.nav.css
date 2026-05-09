@@ -8,7 +8,6 @@ nav>:is(ul, ol) {
   align-items: center;
   list-style-type: none;
   margin-left: 0;
-  overflow: visible;
 }
 
 nav>:is(ul, ol)>li {

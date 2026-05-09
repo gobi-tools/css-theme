@@ -2,8 +2,7 @@
 
 header > :not(:is(nav, menu)) {
   width: 100vw !important;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  margin-inline: calc(50% - 50vw);
 
   padding: var(--space-m);
   

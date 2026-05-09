@@ -5,14 +5,10 @@ export default function MobileColumns() {
         <article>
           <div className="row">
             <div>
-              <p>
-                <code style={{ width: '100%' }}>col</code>
-              </p>
+              <code style={{ width: '100%' }}>col</code>
             </div>
             <div>
-              <p>
-                <code style={{ width: '100%' }}>col</code>
-              </p>
+              <code style={{ width: '100%' }}>col</code>
             </div>
           </div>
         </article>

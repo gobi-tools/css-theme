@@ -33,10 +33,6 @@
   flex: 0 6 50%;
 }
 
-:is(.row, .col, .col-2, .col-3, .col-4, .col-5, .col-6)>:not(div) {
-  margin-left: 0;
-}
-
 /* different layouts */
 
 *:has(>.row:not(.disable-mobile)) {
