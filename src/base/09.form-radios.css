@@ -1,25 +1,3 @@
-/* vertical layout */
-
-
-/* horizontal layout */
-
-/* if a label contains check | radios, it gets the right margin */
-label:has(> input[type="checkbox"]),
-label:has(> input[type="radio"]) {
-  margin-right: var(--space-l);
-}
-
-/* input[type=checkbox],
-input[type=radio] {
-  margin-right: var(--space-xs);
-} */
-
-/* if a label contains check | radios, they won't have right margin */
-/* label > input[type="checkbox"],
-label > input[type="radio"] {
-  margin-right: 0;
-} */
-
 /* base */
 
 input[type=checkbox],
@@ -29,6 +7,15 @@ input[type=radio] {
   min-width: auto;
   padding: auto;
   min-height: auto;
+}
+
+/* 
+ * if a label contains check | radios, 
+ * it gets the right margin 
+ */
+label:has(> input[type="checkbox"]),
+label:has(> input[type="radio"]) {
+  margin-right: var(--space-l);
 }
 
 /* 

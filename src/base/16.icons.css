@@ -20,8 +20,7 @@ svg, button>img {
 }
 
 :is(button, input[type=submit], input[type=reset]):has(:is(svg:only-child, img:only-child)) {
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
+  padding-inline: var(--space-sm);
 }
 
 mark>:is(svg, img),

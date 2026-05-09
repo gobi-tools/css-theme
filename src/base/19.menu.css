@@ -25,7 +25,7 @@ menu>li {
 menu>li>a {
   display: inline-flex;
   flex-direction: column;
-  
+
   text-decoration: none;
   align-items: center;
   vertical-align: middle;

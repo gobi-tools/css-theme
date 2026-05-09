@@ -1,8 +1,7 @@
 /* base */
 
 nav ol>li {
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
+  padding-inline: var(--space-sm);
 }
 
 /* theme colors */

@@ -21,8 +21,7 @@ td {
 
 th,
 td {
-  padding-top: var(--space-xs);
-  padding-bottom: var(--space-xs);
+  padding-block: var(--space-xs);
 }
 
 tr:last-child>th,
