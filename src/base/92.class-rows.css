@@ -2,8 +2,10 @@
 
 .row {
   display: flex;
-  align-items: stretch;
+  flex-direction: row;
   gap: var(--space-l);
+  align-items: stretch;
+  
   width: 100%;
 }
 
@@ -45,8 +47,5 @@
 @container rows (max-width: 600px) {
   :not(.group)>.row:not(.disable-mobile) {
     flex-direction: column;
-  }
-  :not(.group)>.row:not(.disable-mobile)>:is(.col, div)>:last-child {
-    margin-bottom: 0;
   }
 }

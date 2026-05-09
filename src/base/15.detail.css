@@ -1,9 +1,3 @@
-/* vertical layout */
-
-details {
-  margin-bottom: var(--space-2xs);
-}
-
 /* base */
 
 details {
@@ -12,13 +6,8 @@ details {
   overflow: hidden;
 }
 
-details:open {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-}
 details:not(:open) {
-  gap: 0;
+  padding-bottom: 0;
 }
 
 summary {

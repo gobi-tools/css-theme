@@ -33,11 +33,11 @@ export default function Blockquotes({ theme }) {
             code, icons, and many other elements.
           </p>
           <blockquote>
-            Press <kbd>Ctrl + Q</kbd> to quit
+            <p>Press <kbd>Ctrl + Q</kbd> to quit</p>
           </blockquote>
 
           <blockquote>
-            <span className="group">
+            <p className="group">
               <svg xmlns=" http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="10" />
@@ -45,8 +45,7 @@ export default function Blockquotes({ theme }) {
                 <path d="M12 8h.01" />
               </svg>
               <span>Information</span>
-            </span>
-            <br />
+            </p>
             <p>
               Your package will be delivered on <b>Tuesday at 08:00.</b>
             </p>
@@ -65,17 +64,18 @@ export default function Blockquotes({ theme }) {
         <div>
           <pre><code>
             {`<blockquote>
-  Press 
-  <kbd>Ctrl + Q</kbd>
-  to quit
+  <p>
+    Press 
+    <kbd>Ctrl + Q</kbd>
+    to quit
+  </p>
 </blockquote>
             
 <blockquote>
-  <span class="group">
+  <p class="group">
     <svg ... ></svg>
     <span>Information</span>
-  </span>
-  <br/>
+  </p>
   <p>
     Your package will 
     be delivered on 

@@ -1,23 +1,10 @@
-/* vertical layout */
-
-blockquote,
-pre {
-  margin-bottom: var(--space-m);
-}
-
-blockquote>:last-child,
-pre:has(+ figcaption) {
-  margin-bottom: 0;
-}
-
 /* base */
 
 blockquote {
-  display: block;
   text-align: left;
-  padding: var(--space-m);
   text-wrap: auto;
   word-wrap: break-word;
+  padding: var(--space-m);
 }
 
 pre {

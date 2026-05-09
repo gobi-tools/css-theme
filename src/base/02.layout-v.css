@@ -1,0 +1,133 @@
+/* vertical layout */
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* self displays */
+
+details {
+  margin-bottom: var(--space-2xs);
+}
+
+p,
+ul,
+ol,
+dl,
+form,
+table,
+blockquote,
+pre,
+.card {
+  margin-bottom: var(--space-m);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: var(--space-l);
+}
+
+hr {
+  margin-top: var(--space-l) !important;
+  margin-bottom: var(--space-l) !important;
+}
+
+figure {
+  margin-bottom: var(--space-l);
+
+  &>figure {
+    margin-bottom: 0;
+  }
+}
+
+section {
+  margin-bottom: var(--space-xl);
+}
+
+dialog {
+  margin-top: var(--space-xl);
+}
+
+*:has(+ figcaption) {
+  margin-bottom: 0;
+}
+
+nav :is(ul, ol) {
+  margin-bottom: 0;
+}
+
+/* child displays */
+
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+
+  &>* {
+    margin-bottom: 0;
+  }
+}
+
+form,
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+
+  &>* {
+    margin-bottom: 0 !important;
+  }
+}
+
+ul,
+ol,
+dl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+details:open {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+
+  &>* {
+    margin-bottom: 0;
+  }
+}
+
+details:not(:open) {
+  gap: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  &>* {
+    margin-bottom: 0;
+  }
+}

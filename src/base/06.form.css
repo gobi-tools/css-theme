@@ -1,29 +1,8 @@
-/* vertical layout */
-
-form, fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-m);
-
-  &>* {
-    margin-bottom: 0 !important;
-  }
-}
-
-fieldset {
-  padding: var(--space-m);
-}
-
-/* horizontal layout */
-
-form {
-  margin-bottom: var(--space-m);
-}
-
 /* base */
 
 fieldset {
   text-align: left;
+  padding: var(--space-m);
 }
 
 select {

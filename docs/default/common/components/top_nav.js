@@ -557,13 +557,13 @@ function Blockquotes({ theme }) {
     /* @__PURE__ */ jsxs5("section", { className: "row", children: [
       /* @__PURE__ */ jsxs5("div", { children: [
         /* @__PURE__ */ jsx5("p", { children: "It's not just text that can be included in a blockquote element, but code, icons, and many other elements." }),
-        /* @__PURE__ */ jsxs5("blockquote", { children: [
+        /* @__PURE__ */ jsx5("blockquote", { children: /* @__PURE__ */ jsxs5("p", { children: [
           "Press ",
           /* @__PURE__ */ jsx5("kbd", { children: "Ctrl + Q" }),
           " to quit"
-        ] }),
+        ] }) }),
         /* @__PURE__ */ jsxs5("blockquote", { children: [
-          /* @__PURE__ */ jsxs5("span", { className: "group", children: [
+          /* @__PURE__ */ jsxs5("p", { className: "group", children: [
             /* @__PURE__ */ jsxs5(
               "svg",
               {
@@ -585,7 +585,6 @@ function Blockquotes({ theme }) {
             ),
             /* @__PURE__ */ jsx5("span", { children: "Information" })
           ] }),
-          /* @__PURE__ */ jsx5("br", {}),
           /* @__PURE__ */ jsxs5("p", { children: [
             "Your package will be delivered on ",
             /* @__PURE__ */ jsx5("b", { children: "Tuesday at 08:00." })
@@ -603,17 +602,18 @@ function Blockquotes({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx5("div", { children: /* @__PURE__ */ jsx5("pre", { children: /* @__PURE__ */ jsx5("code", { children: `<blockquote>
-  Press 
-  <kbd>Ctrl + Q</kbd>
-  to quit
+  <p>
+    Press 
+    <kbd>Ctrl + Q</kbd>
+    to quit
+  </p>
 </blockquote>
             
 <blockquote>
-  <span class="group">
+  <p class="group">
     <svg ... ></svg>
     <span>Information</span>
-  </span>
-  <br/>
+  </p>
   <p>
     Your package will 
     be delivered on 
@@ -680,7 +680,10 @@ function Code({ theme }) {
         "Keyboard shortcut ",
         /* @__PURE__ */ jsx6("kbd", { children: "Ctrl + S" })
       ] }),
-      /* @__PURE__ */ jsx6("pre", { children: /* @__PURE__ */ jsx6("code", { children: "console.log('abc')" }) }),
+      /* @__PURE__ */ jsxs6("figure", { children: [
+        /* @__PURE__ */ jsx6("pre", { children: /* @__PURE__ */ jsx6("code", { children: "console.log('abc')" }) }),
+        /* @__PURE__ */ jsx6("figcaption", { children: "Code block" })
+      ] }),
       /* @__PURE__ */ jsxs6("p", { children: [
         "The theme doesn't handle syntax highlighting out of the box. That can be handled separately, by using a system such as ",
         /* @__PURE__ */ jsx6("a", { href: "http://hilite.me/" /* Syntax_Hilite */, target: "_blank", children: "hilite.me" }),
@@ -2547,7 +2550,6 @@ function Tabs({ theme }) {
             /* @__PURE__ */ jsx20("span", { children: "Users" })
           ] }) })
         ] }) }),
-        /* @__PURE__ */ jsx20("br", {}),
         /* @__PURE__ */ jsxs20("div", { className: "card", children: [
           selected === "tab-1" ? /* @__PURE__ */ jsx20(Tab1, {}) : null,
           selected === "tab-2" ? /* @__PURE__ */ jsx20(Tab2, {}) : null,

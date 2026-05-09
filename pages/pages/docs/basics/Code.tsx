@@ -17,7 +17,10 @@ export default function Code({ theme }) {
             <p>
               Keyboard shortcut <kbd>{"Ctrl + S"}</kbd>
             </p>
+            <figure>
             <pre><code>{"console.log('abc')"}</code></pre>
+            <figcaption>Code block</figcaption>
+            </figure>
             <p>
               The theme doesn't handle syntax highlighting out of the box.
               That can be handled separately, by using a system such as <a href={ELinks.Syntax_Hilite} target="_blank">hilite.me</a> or <a href={ELinks.Syntax_HighlightJS} target="_blank">higlightjs.org</a>.

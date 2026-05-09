@@ -1,17 +1,3 @@
-/* vertical layout */
-
-figure {
-  margin-bottom: var(--space-l);
-}
-
-img:has(+ figcaption) {
-  margin-bottom: 0;
-}
-
-figure>figure {
-  margin: 0;
-}
-
 /* horizontal layout */ 
 
 img {

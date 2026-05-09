@@ -2,8 +2,10 @@
 
 menu {
   display: flex;
-  list-style-type: none;
+  flex-direction: row;
   gap: var(--space-l);
+
+  list-style-type: none;
   align-items: center;
   list-style-type: none;
   margin-left: 0;
@@ -12,6 +14,7 @@ menu {
 
 menu>li {
   display: flex;
+
   align-items: center;
   justify-content: center;
   padding-top: var(--space-m);
@@ -20,9 +23,10 @@ menu>li {
 }
 
 menu>li>a {
-  flex-direction: column;
-  text-decoration: none;
   display: inline-flex;
+  flex-direction: column;
+  
+  text-decoration: none;
   align-items: center;
   vertical-align: middle;
 }
@@ -58,21 +62,13 @@ header:has(> menu):not(.disable-mobile) {
     width: 100%;
     left: 0;
     bottom: 0;
-    padding-left: var(--space-m);
-    padding-right: var(--space-m);
-    padding-top: 0;
-    padding-bottom: 0;
     justify-content: center;
     gap: 0;
-    flex-direction: row;
-    /* theme colors */
     background: var(--color-bg);
     border-top: 1px solid var(--color-border);
   }
 
   menu>li {
-    padding-left: 0;
-    padding-right: 0;
     flex-grow: 1;
     flex-basis: 999px;
   }

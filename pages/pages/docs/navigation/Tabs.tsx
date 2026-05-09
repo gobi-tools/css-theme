@@ -113,7 +113,6 @@ export default function Tabs({ theme }) {
               </li>
             </ol>
           </nav>
-          <br />
           <div className="card">
             {selected === 'tab-1' ? <Tab1 /> : null}
             {selected === 'tab-2' ? <Tab2 /> : null}

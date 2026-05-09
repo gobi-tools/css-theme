@@ -457,7 +457,10 @@ function Code({ theme }) {
         "Keyboard shortcut ",
         /* @__PURE__ */ jsx3("kbd", { children: "Ctrl + S" })
       ] }),
-      /* @__PURE__ */ jsx3("pre", { children: /* @__PURE__ */ jsx3("code", { children: "console.log('abc')" }) }),
+      /* @__PURE__ */ jsxs3("figure", { children: [
+        /* @__PURE__ */ jsx3("pre", { children: /* @__PURE__ */ jsx3("code", { children: "console.log('abc')" }) }),
+        /* @__PURE__ */ jsx3("figcaption", { children: "Code block" })
+      ] }),
       /* @__PURE__ */ jsxs3("p", { children: [
         "The theme doesn't handle syntax highlighting out of the box. That can be handled separately, by using a system such as ",
         /* @__PURE__ */ jsx3("a", { href: "http://hilite.me/" /* Syntax_Hilite */, target: "_blank", children: "hilite.me" }),
@@ -2324,7 +2327,6 @@ function Tabs({ theme }) {
             /* @__PURE__ */ jsx17("span", { children: "Users" })
           ] }) })
         ] }) }),
-        /* @__PURE__ */ jsx17("br", {}),
         /* @__PURE__ */ jsxs17("div", { className: "card", children: [
           selected === "tab-1" ? /* @__PURE__ */ jsx17(Tab1, {}) : null,
           selected === "tab-2" ? /* @__PURE__ */ jsx17(Tab2, {}) : null,
@@ -4120,13 +4122,13 @@ function Blockquotes({ theme }) {
     /* @__PURE__ */ jsxs40("section", { className: "row", children: [
       /* @__PURE__ */ jsxs40("div", { children: [
         /* @__PURE__ */ jsx40("p", { children: "It's not just text that can be included in a blockquote element, but code, icons, and many other elements." }),
-        /* @__PURE__ */ jsxs40("blockquote", { children: [
+        /* @__PURE__ */ jsx40("blockquote", { children: /* @__PURE__ */ jsxs40("p", { children: [
           "Press ",
           /* @__PURE__ */ jsx40("kbd", { children: "Ctrl + Q" }),
           " to quit"
-        ] }),
+        ] }) }),
         /* @__PURE__ */ jsxs40("blockquote", { children: [
-          /* @__PURE__ */ jsxs40("span", { className: "group", children: [
+          /* @__PURE__ */ jsxs40("p", { className: "group", children: [
             /* @__PURE__ */ jsxs40(
               "svg",
               {
@@ -4148,7 +4150,6 @@ function Blockquotes({ theme }) {
             ),
             /* @__PURE__ */ jsx40("span", { children: "Information" })
           ] }),
-          /* @__PURE__ */ jsx40("br", {}),
           /* @__PURE__ */ jsxs40("p", { children: [
             "Your package will be delivered on ",
             /* @__PURE__ */ jsx40("b", { children: "Tuesday at 08:00." })
@@ -4166,17 +4167,18 @@ function Blockquotes({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx40("div", { children: /* @__PURE__ */ jsx40("pre", { children: /* @__PURE__ */ jsx40("code", { children: `<blockquote>
-  Press 
-  <kbd>Ctrl + Q</kbd>
-  to quit
+  <p>
+    Press 
+    <kbd>Ctrl + Q</kbd>
+    to quit
+  </p>
 </blockquote>
             
 <blockquote>
-  <span class="group">
+  <p class="group">
     <svg ... ></svg>
     <span>Information</span>
-  </span>
-  <br/>
+  </p>
   <p>
     Your package will 
     be delivered on 

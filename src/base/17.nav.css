@@ -1,25 +1,18 @@
-/* vertical layout */
-
-nav :is(ul, ol) {
-  margin-bottom: 0;
-}
-
 /* base */
 
-nav :is(ul, ol) {
+nav>:is(ul, ol) {
   display: flex;
   flex-direction: row;
   gap: var(--space-l);
+
   align-items: center;
   list-style-type: none;
   margin-left: 0;
   overflow: visible;
 }
 
-nav :is(ul, ol)>li {
+nav>:is(ul, ol)>li {
   display: inline-block;
-  padding-top: var(--space-xs);
-  padding-bottom: var(--space-xs);
   padding-left: 0;
   padding-right: 0;
 }
@@ -32,20 +25,15 @@ nav a {
 }
 
 nav :is(ul, ol)>li>ul {
-  display: none;
+  visibility:hidden;
   width: auto;
   position: absolute;
   z-index: 42;
 }
 
 nav :is(ul, ol)>li:hover>ul {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-  padding-left: var(--space-l);
-  padding-right: var(--space-l);
+  visibility: visible;
   padding: var(--space-sm);
-  align-items: start;
   min-width: 150px;
 }
 
@@ -85,7 +73,7 @@ nav:has(> :is(ul, ol)):not(.disable-mobile) {
 }
 
 @container navigation (max-width: 600px) {
-  nav :is(ul, ol) {
+  nav>:is(ul, ol) {
     flex-direction: column;
     align-items: start;
     gap: var(--space-m);

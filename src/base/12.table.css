@@ -1,9 +1,5 @@
 /* vertical layout */
 
-table {
-  margin-bottom: var(--space-l);
-}
-
 th,
 td {
   padding-right: var(--space-m);
