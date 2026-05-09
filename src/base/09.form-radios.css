@@ -9,14 +9,7 @@ input[type=radio] {
   min-height: auto;
 }
 
-/* 
- * if a label contains check | radios, 
- * it gets the right margin 
- */
-label:has(> input[type="checkbox"]),
-label:has(> input[type="radio"]) {
-  margin-right: var(--space-l);
-}
+
 
 /* 
  * make labels that are parts of checboxes and radio buttons 

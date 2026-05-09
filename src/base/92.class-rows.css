@@ -3,7 +3,7 @@
 .row {
   display: flex;
   flex-direction: row;
-  gap: var(--space-l);
+  gap: var(--space-m);
   align-items: stretch;
   
   width: 100%;
