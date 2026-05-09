@@ -1,12 +1,15 @@
 /* base */
 
+nav :is(ul, ol) {
+  list-style-type: none;
+}
+
 nav>:is(ul, ol) {
   display: flex;
   flex-direction: row;
   gap: var(--space-l);
 
   align-items: center;
-  list-style-type: none;
 }
 
 nav>:is(ul, ol)>li {
@@ -22,7 +25,7 @@ nav a {
 }
 
 nav :is(ul, ol)>li>ul {
-  visibility:hidden;
+  visibility: hidden;
   width: auto;
   position: absolute;
   z-index: 42;

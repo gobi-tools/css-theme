@@ -30,23 +30,4 @@
     &lt;/label&gt;
     ...
   &lt;/div&gt;
-&lt;/form&gt;</code></pre></div></section><section class="row"><div><p>To handle the majority of edge cases gracefully it&#x27;s best practice to place the checkbox or radio <code>input</code> element inside a <code>label</code> element. This will ensure vertical and horizontal alignment is consistent.</p><p>You can also place the inputs and labels as siblings and alignment will still work, although multiline labels won&#x27;t look right and clicking on the label won&#x27;t automatically select the corresponding input.</p><form><p><b>Extras</b></p><div><input type="checkbox" id="pickles" name="pickles" value="pickles"/><label for="pickes">Pickles</label></div><div><input type="checkbox" id="mustard" name="mustard" value="mustard"/><label for="mustard">Mustard</label></div></form></div><div><pre><code>&lt;form&gt;
-  &lt;div className=&quot;row&quot;&gt;
-    &lt;div&gt;
-      &lt;p&gt;&lt;b&gt;Extras&lt;/b&gt;&lt;/p&gt;
-
-      &lt;div&gt;
-        &lt;input 
-          type=&quot;checkbox&quot; 
-          id=&quot;pickles&quot; 
-          name=&quot;pickles&quot; 
-          value=&quot;pickles&quot; /&gt;
-        &lt;label for=&quot;pickles&quot;&gt;
-          Pickless
-        &lt;/label&gt;
-      &lt;/div&gt;
-      ...
-    &lt;/div&gt;
-    ...
-  &lt;/div&gt;
 &lt;/form&gt;</code></pre></div></section></div></div></article></main></div><script>globalThis.__INITIAL_PROPS__ = {"theme":"sunset"};</script><script type="module" src="./forms_checkbox.js"></script></div></body></html>

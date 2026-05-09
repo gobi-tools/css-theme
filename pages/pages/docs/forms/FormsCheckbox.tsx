@@ -122,59 +122,6 @@ export default function FormsCheckbox({ theme }) {
           </code></pre>
         </div>
       </section>
-
-      <section className="row">
-        <div>
-          <p>
-            To handle the majority of edge cases gracefully it's
-            best practice to place the checkbox or radio <code>input</code> element
-            inside a <code>label</code> element. This will ensure
-            vertical and horizontal alignment is consistent.
-          </p>
-          <p>
-            You can also place the inputs and labels as siblings and
-            alignment will still work, although multiline labels won't look right
-            and clicking on the label won't automatically select the corresponding input.
-          </p>
-          <form>
-            <p>
-              <b>Extras</b>
-            </p>
-            <div>
-              <input type="checkbox" name="pickles" id="pickles" value="pickles" />
-              <label htmlFor="pickes">Pickles</label>
-            </div>
-            <div>
-              <input type="checkbox" name="mustard" id="mustard" value="mustard" />
-              <label htmlFor="mustard">Mustard</label>
-            </div>
-          </form>
-        </div>
-        <div>
-          <pre><code>
-            {`<form>
-  <div className="row">
-    <div>
-      <p><b>Extras</b></p>
-
-      <div>
-        <input 
-          type="checkbox" 
-          id="pickles" 
-          name="pickles" 
-          value="pickles" />
-        <label for="pickles">
-          Pickless
-        </label>
-      </div>
-      ...
-    </div>
-    ...
-  </div>
-</form>`}
-          </code></pre>
-        </div>
-      </section>
     </DocLayout>
   );
 }

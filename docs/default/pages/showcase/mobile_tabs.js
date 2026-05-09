@@ -162,7 +162,6 @@ function Tab3() {
         /* @__PURE__ */ jsx39("span", { children: "active" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx39("br", {}),
     /* @__PURE__ */ jsx39("div", { className: "group", children: /* @__PURE__ */ jsxs39("div", { className: "row", children: [
       /* @__PURE__ */ jsx39("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
       /* @__PURE__ */ jsxs39("div", { children: [

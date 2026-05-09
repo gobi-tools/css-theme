@@ -56,7 +56,6 @@ export function Tab3() {
           </div>
         </div>
       </div>
-      <br />
       <div className="group">
         <div className="row">
           <img className="circle" width="36" height="36" src="https://picsum.photos/id/16/40/40" alt="profile pic" />

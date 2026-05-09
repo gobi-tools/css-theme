@@ -1398,49 +1398,6 @@ function FormsCheckbox({ theme }) {
     ...
   </div>
 </form>` }) }) })
-    ] }),
-    /* @__PURE__ */ jsxs12("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs12("div", { children: [
-        /* @__PURE__ */ jsxs12("p", { children: [
-          "To handle the majority of edge cases gracefully it's best practice to place the checkbox or radio ",
-          /* @__PURE__ */ jsx12("code", { children: "input" }),
-          " element inside a ",
-          /* @__PURE__ */ jsx12("code", { children: "label" }),
-          " element. This will ensure vertical and horizontal alignment is consistent."
-        ] }),
-        /* @__PURE__ */ jsx12("p", { children: "You can also place the inputs and labels as siblings and alignment will still work, although multiline labels won't look right and clicking on the label won't automatically select the corresponding input." }),
-        /* @__PURE__ */ jsxs12("form", { children: [
-          /* @__PURE__ */ jsx12("p", { children: /* @__PURE__ */ jsx12("b", { children: "Extras" }) }),
-          /* @__PURE__ */ jsxs12("div", { children: [
-            /* @__PURE__ */ jsx12("input", { type: "checkbox", name: "pickles", id: "pickles", value: "pickles" }),
-            /* @__PURE__ */ jsx12("label", { htmlFor: "pickes", children: "Pickles" })
-          ] }),
-          /* @__PURE__ */ jsxs12("div", { children: [
-            /* @__PURE__ */ jsx12("input", { type: "checkbox", name: "mustard", id: "mustard", value: "mustard" }),
-            /* @__PURE__ */ jsx12("label", { htmlFor: "mustard", children: "Mustard" })
-          ] })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsx12("div", { children: /* @__PURE__ */ jsx12("pre", { children: /* @__PURE__ */ jsx12("code", { children: `<form>
-  <div className="row">
-    <div>
-      <p><b>Extras</b></p>
-
-      <div>
-        <input 
-          type="checkbox" 
-          id="pickles" 
-          name="pickles" 
-          value="pickles" />
-        <label for="pickles">
-          Pickless
-        </label>
-      </div>
-      ...
-    </div>
-    ...
-  </div>
-</form>` }) }) })
     ] })
   ] });
 }
@@ -2492,7 +2449,6 @@ function Tab3() {
         /* @__PURE__ */ jsx19("span", { children: "active" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx19("br", {}),
     /* @__PURE__ */ jsx19("div", { className: "group", children: /* @__PURE__ */ jsxs19("div", { className: "row", children: [
       /* @__PURE__ */ jsx19("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
       /* @__PURE__ */ jsxs19("div", { children: [
