@@ -461,7 +461,7 @@ function Buttons({ theme }) {
     1
   </button>
   ...
-  <button>
+  <button type="reset">
     Next
   </button>
 </p>` }) }) })
