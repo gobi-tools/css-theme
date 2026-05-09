@@ -1,0 +1,26 @@
+
+/* .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumb li + li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li + li::before {
+  content: "";
+  width: 0.4em;
+  height: 0.4em;
+  margin-inline: 0.8em;
+
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+
+  transform: rotate(45deg);
+  opacity: 0.5;
+} */

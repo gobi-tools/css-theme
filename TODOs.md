@@ -4,6 +4,11 @@ Features
 - [x] code + figcaption should go together 
 
 - [ ] breadcrumbs navigation elements (e.g. https://getbootstrap.com/docs/5.0/components/breadcrumb/)
+      Actually switch navigation to be a bit like this: 
+      - nav > ul     → hierarchical/site navigation
+      - nav > ol     → breadcrumbs/path navigation
+      - menu         → local actions / simple tabs / controls (formerly "nav > ol")
+      - nav > menu   → navigational tab bar (formerly "menu")
 - [x] pagination elements
 - [x] group details+summary with the same name into an accordion menu
 - [x] navigation
