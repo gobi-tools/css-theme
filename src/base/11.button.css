@@ -1,13 +1,3 @@
-/* horizontal layout */
-
-button+button,
-input[type=submit]+input[type=submit],
-input[type=submit]+input[type=reset],
-input[type=reset]+input[type=reset],
-input[type=reset]+input[type=submit] {
-  margin-left: var(--space-2xs);
-}
-
 /* base */
 
 button,

@@ -1,9 +1,3 @@
-/* horizontal layout */
-
-mark+mark  {
-  margin-left: var(--space-2xs);
-}
-
 /* base */
 
 code,

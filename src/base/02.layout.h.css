@@ -1,1 +1,48 @@
-/* horizontal layot */
+/* horizontal layout: inline margins & widths */
+
+body>* {
+  width: min(100% - var(--space-l), var(--width-page));
+  margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+dialog {
+  margin-inline: auto;
+}
+
+header > :not(:is(nav, menu)) {
+  width: 100vw !important;
+  margin-inline: calc(50% - 50vw);
+
+  &>* {
+    width: min(100% - var(--space-l), var(--width-page)) !important;
+    margin-inline: auto;
+  }
+}
+
+/* horizontal layout: left margins */
+
+img+img,
+mark+mark,
+button+button,
+input[type=submit]+input[type=submit],
+input[type=submit]+input[type=reset],
+input[type=reset]+input[type=reset],
+input[type=reset]+input[type=submit] {
+  margin-left: var(--space-2xs);
+}
+
+ul,
+ol {
+  margin-left: var(--space-l);
+}
+
+nav>:is(ul, ol) {
+  margin-left: 0;
+}
+
+/* horizontal layout: right margins */

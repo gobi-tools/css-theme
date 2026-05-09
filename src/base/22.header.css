@@ -1,13 +1,5 @@
-/* horizontal layout */
+/* base */
 
 header > :not(:is(nav, menu)) {
-  width: 100vw !important;
-  margin-inline: calc(50% - 50vw);
-
   padding: var(--space-m);
-  
-  &>* {
-    width: min(100% - var(--space-l), var(--width-page)) !important;
-    margin-inline: auto;
-  }
 }
