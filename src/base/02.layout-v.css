@@ -115,7 +115,7 @@ details:open {
 }
 
 details:not(:open) {
-  gap: 0;
+  gap: 0 !important;
 }
 
 .card {

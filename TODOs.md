@@ -37,7 +37,6 @@ Bugs
 ----
 - [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
 - [x] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
-- [ ] On mobile Safari, the datepicker has no placeholder text; example [here](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_grouped.html) 
 - [ ] on really small devices (iPhone SE), the last form on [this page](http://localhost:8081/default/pages/docs/forms/forms_normal.html) does not respect
   column widths (e.g. they are unqeual)
 - [x] should rows in width<600px have a 0px gap in "92.class-rows.css"?  
@@ -64,6 +63,13 @@ Bugs
 - [x] on mobile Chrome (browser), submit & reset input types have left-aligned text, instead of centered 
 - [x] code, kbd, etc, elements should have display: inline-block
 - [x] make the .gap class not visible on mobile
+
+Bugs/Platform
+-------------
+- [ ][Mobile Safari] The datepicker has no placeholder text; example [here](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_grouped.html) 
+- [ ][Mobile Safari] Check &  radio button widget & text are not centrally v-aligned
+- [ ][Mobile Safari] Summary with .card class has extra bottom padding or gap
+
 
 Docs
 ----
