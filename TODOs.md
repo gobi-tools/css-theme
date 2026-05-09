@@ -70,7 +70,7 @@ Bugs/Platform
 - [ ][Mobile Safari] Check & radio button widget & text are not centrally v-aligned
 - [x][Mobile Safari/Chrome] Summary with .card class has extra bottom padding or gap
 - [x][Mobile Safari/Chrome] Normal navigation example makes the whole viewport too wide, generating horizontal scrolling
-- [ ][Mobile Safari/Chrome] Selector colors are off on Pink & Gold themes
+- [ ][Mobile Safari/Chrome] Selector colors are off on all themes;
 
 Docs
 ----

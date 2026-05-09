@@ -105,6 +105,7 @@ select {
   background: light-dark(var(--color-accent-faint), var(--color-bg));
   border-color: var(--color-border);
   color: var(--color-primary-inked);
+  accent-color: var(--color-primary-inked);
 }
 
 :is(input, select, textarea)::placeholder {
