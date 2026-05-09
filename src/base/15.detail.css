@@ -6,7 +6,7 @@ details {
   overflow: hidden;
 }
 
-details:not(:open) {
+details:not([open]) {
   padding-bottom: 0 !important;
 }
 
