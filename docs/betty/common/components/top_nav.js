@@ -2645,7 +2645,7 @@ function Menu({ theme }) {
       /* @__PURE__ */ jsxs21("div", { children: [
         /* @__PURE__ */ jsx21("p", { children: "Menu type navigation can be used both as the top level navigation as well as part of various page elements." }),
         /* @__PURE__ */ jsx21("p", { children: "It's best suited when each navigation item is paired with a specific icon." }),
-        /* @__PURE__ */ jsxs21("menu", { className: "disable-mobile", children: [
+        /* @__PURE__ */ jsx21("nav", { children: /* @__PURE__ */ jsxs21("menu", { className: "disable-mobile", children: [
           /* @__PURE__ */ jsx21("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs21("a", { href: "", children: [
             /* @__PURE__ */ jsxs21("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx21("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
@@ -2669,7 +2669,7 @@ function Menu({ theme }) {
             ] }),
             /* @__PURE__ */ jsx21("span", { children: "Profile" })
           ] }) })
-        ] })
+        ] }) })
       ] }),
       /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<main>
   <menu>
@@ -2790,7 +2790,7 @@ function MobileColumns() {
 import { Fragment as Fragment7, jsx as jsx26, jsxs as jsxs26 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileMenu() {
   return /* @__PURE__ */ jsxs26(Fragment7, { children: [
-    /* @__PURE__ */ jsx26("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs26("menu", { children: [
+    /* @__PURE__ */ jsx26("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx26("nav", { children: /* @__PURE__ */ jsxs26("menu", { children: [
       /* @__PURE__ */ jsx26("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs26("a", { href: "", children: [
         /* @__PURE__ */ jsxs26("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx26("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
@@ -2814,7 +2814,7 @@ function MobileMenu() {
         ] }),
         /* @__PURE__ */ jsx26("span", { children: "Profile" })
       ] }) })
-    ] }) }),
+    ] }) }) }),
     /* @__PURE__ */ jsx26("main", { children: /* @__PURE__ */ jsxs26("article", { children: [
       /* @__PURE__ */ jsx26("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx26("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })

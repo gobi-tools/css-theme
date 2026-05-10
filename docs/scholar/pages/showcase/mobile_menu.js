@@ -6,7 +6,7 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileMenu() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs("menu", { children: [
+    /* @__PURE__ */ jsx("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("menu", { children: [
       /* @__PURE__ */ jsx("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs("a", { href: "", children: [
         /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
@@ -30,7 +30,7 @@ function MobileMenu() {
         ] }),
         /* @__PURE__ */ jsx("span", { children: "Profile" })
       ] }) })
-    ] }) }),
+    ] }) }) }),
     /* @__PURE__ */ jsx("main", { children: /* @__PURE__ */ jsxs("article", { children: [
       /* @__PURE__ */ jsx("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
