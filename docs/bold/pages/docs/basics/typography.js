@@ -2687,7 +2687,7 @@ import { jsx as jsx25, jsxs as jsxs25 } from "https://esm.sh/react@19.2.0/jsx-ru
 function MobileTabs() {
   const [selected, setSelected] = useState6("tab-1");
   return /* @__PURE__ */ jsx25("main", { children: /* @__PURE__ */ jsxs25("div", { style: { display: "flex", flexDirection: "row", gap: "var(--space-6)" }, children: [
-    /* @__PURE__ */ jsx25("aside", { children: /* @__PURE__ */ jsx25("nav", { children: /* @__PURE__ */ jsxs25("ol", { children: [
+    /* @__PURE__ */ jsx25("aside", { children: /* @__PURE__ */ jsx25("div", { children: /* @__PURE__ */ jsxs25("menu", { children: [
       /* @__PURE__ */ jsx25("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs25("a", { onClick: () => setSelected("tab-1"), children: [
         /* @__PURE__ */ jsxs25("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
           /* @__PURE__ */ jsx25("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
@@ -4098,8 +4098,8 @@ function DocLayout({ theme, children }) {
         ] }),
         /* @__PURE__ */ jsx39("hr", {})
       ] }),
-      /* @__PURE__ */ jsxs39("nav", { className: isMenuOpen === false ? "hide-on-mobile" : isMenuOpen === void 0 ? "hide-on-mobile" : "", children: [
-        /* @__PURE__ */ jsxs39("ol", { children: [
+      /* @__PURE__ */ jsxs39("div", { className: isMenuOpen === false ? "hide-on-mobile" : isMenuOpen === void 0 ? "hide-on-mobile" : "", children: [
+        /* @__PURE__ */ jsxs39("menu", { children: [
           /* @__PURE__ */ jsx39("b", { children: "Basics" }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "typography" /* Typographty */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("typography" /* Typographty */, theme, route), children: "Typography" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "buttons" /* Buttons */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme, route), children: "Buttons" }) }),
@@ -4112,7 +4112,7 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "table" /* Table */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "Table" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "figures" /* Figures */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("figures" /* Figures */, theme, route), children: "Figures" }) })
         ] }),
-        /* @__PURE__ */ jsxs39("ol", { children: [
+        /* @__PURE__ */ jsxs39("menu", { children: [
           /* @__PURE__ */ jsx39("b", { children: "Forms" }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "forms-normal" /* FormsNormal */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("forms-normal" /* FormsNormal */, theme, route), children: "Normal" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "forms-check" /* FormsCheck */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("forms-check" /* FormsCheck */, theme, route), children: "Checks & Radios" }) }),
@@ -4120,27 +4120,27 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "forms-disabled" /* FormsDisabled */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("forms-disabled" /* FormsDisabled */, theme, route), children: "Disabled" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "forms-validation" /* FormsValidation */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("forms-validation" /* FormsValidation */, theme, route), children: "Validation" }) })
         ] }),
-        /* @__PURE__ */ jsxs39("ol", { children: [
+        /* @__PURE__ */ jsxs39("menu", { children: [
           /* @__PURE__ */ jsx39("b", { children: "Layout" }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "header" /* Header */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("header" /* Header */, theme, route), children: "Headers" }) })
         ] }),
-        /* @__PURE__ */ jsxs39("ol", { children: [
+        /* @__PURE__ */ jsxs39("menu", { children: [
           /* @__PURE__ */ jsx39("b", { children: "Dialogs" }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "modal" /* Modal */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("modal" /* Modal */, theme, route), children: "Modal" }) })
         ] }),
-        /* @__PURE__ */ jsxs39("ol", { children: [
+        /* @__PURE__ */ jsxs39("menu", { children: [
           /* @__PURE__ */ jsx39("b", { children: "Navigation" }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "navigation" /* Navigation */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "Basic" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "tabs" /* Tabs */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("tabs" /* Tabs */, theme, route), children: "Tabs" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "menu" /* Menu */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("menu" /* Menu */, theme, route), children: "Menu" }) })
         ] }),
-        /* @__PURE__ */ jsxs39("ol", { children: [
+        /* @__PURE__ */ jsxs39("menu", { children: [
           /* @__PURE__ */ jsx39("b", { children: "Extra" }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "dark-mode" /* DarkMode */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("dark-mode" /* DarkMode */, theme, route), children: "Dark Mode" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "icons" /* Icons */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("icons" /* Icons */, theme, route), children: "Icons" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "mobile" /* Mobile */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "Mobile" }) })
         ] }),
-        /* @__PURE__ */ jsxs39("ol", { children: [
+        /* @__PURE__ */ jsxs39("menu", { children: [
           /* @__PURE__ */ jsx39("b", { children: "Custom" }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "cards" /* Cards */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "Cards" }) }),
           /* @__PURE__ */ jsx39("li", { "aria-selected": selectedDoc === "cols" /* Columns */, children: /* @__PURE__ */ jsx39("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "Columns" }) }),

@@ -178,7 +178,7 @@ import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-ru
 function MobileTabs() {
   const [selected, setSelected] = useState7("tab-1");
   return /* @__PURE__ */ jsx40("main", { children: /* @__PURE__ */ jsxs40("div", { style: { display: "flex", flexDirection: "row", gap: "var(--space-6)" }, children: [
-    /* @__PURE__ */ jsx40("aside", { children: /* @__PURE__ */ jsx40("nav", { children: /* @__PURE__ */ jsxs40("ol", { children: [
+    /* @__PURE__ */ jsx40("aside", { children: /* @__PURE__ */ jsx40("div", { children: /* @__PURE__ */ jsxs40("menu", { children: [
       /* @__PURE__ */ jsx40("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs40("a", { onClick: () => setSelected("tab-1"), children: [
         /* @__PURE__ */ jsxs40("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
           /* @__PURE__ */ jsx40("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
