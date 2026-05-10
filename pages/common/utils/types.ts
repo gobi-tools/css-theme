@@ -23,6 +23,7 @@ export enum EDoc {
   Modal = 'modal',
   // navigation
   Navigation = 'navigation',
+  Breadcrumbs = 'breadcrumbs',
   Menu = 'menu',
   Tabs = 'tabs',
   // extra

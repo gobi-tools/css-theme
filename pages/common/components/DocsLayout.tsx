@@ -112,11 +112,14 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Navigation}>
                 <a href={RouteMaster.doc(EDoc.Navigation, theme, route)}>Basic</a>
               </li>
-              <li aria-selected={selectedDoc === EDoc.Tabs}>
-                <a href={RouteMaster.doc(EDoc.Tabs, theme, route)}>Tabs</a>
+              <li aria-selected={selectedDoc === EDoc.Breadcrumbs}>
+                <a href={RouteMaster.doc(EDoc.Breadcrumbs, theme, route)}>Breadcrumbs</a>
               </li>
               <li aria-selected={selectedDoc === EDoc.Menu}>
                 <a href={RouteMaster.doc(EDoc.Menu, theme, route)}>Menu</a>
+              </li>
+              <li aria-selected={selectedDoc === EDoc.Tabs}>
+                <a href={RouteMaster.doc(EDoc.Tabs, theme, route)}>Tabs</a>
               </li>
             </menu>
 

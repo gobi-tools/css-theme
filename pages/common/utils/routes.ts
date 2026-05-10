@@ -36,6 +36,7 @@ import Containers from "../../pages/docs/custom/Containers";
 import Groups from "../../pages/docs/custom/Groups";
 import Header from "../../pages/docs/layout/Header";
 import LayoutHeaderSection from "../../pages/showcase/LayoutHeaderSection";
+import Breadcrumbs from "../../pages/docs/navigation/Breadcrumbs";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -71,6 +72,7 @@ export class RouteMaster {
       case EDoc.Modal: return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
       // navigation
       case EDoc.Navigation: return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
+      case EDoc.Breadcrumbs: return `${base}${theme}/pages/docs/navigation/${htmlName(Breadcrumbs)}`;
       case EDoc.Tabs: return `${base}${theme}/pages/docs/navigation/${htmlName(Tabs)}`;
       case EDoc.Menu: return `${base}${theme}/pages/docs/navigation/${htmlName(Menu)}`;
       // extra
@@ -128,6 +130,7 @@ export class RouteMaster {
       case 'navigation': {
         switch (doc) {
           case htmlName(Navigation): return EDoc.Navigation;
+          case htmlName(Breadcrumbs): return EDoc.Breadcrumbs;
           case htmlName(Tabs): return EDoc.Tabs;
           case htmlName(Menu): return EDoc.Menu;
         }
