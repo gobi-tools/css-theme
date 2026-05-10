@@ -1,6 +1,6 @@
 /* base */
 
-nav :is(ul, ol) {
+nav :is(ul, ol), menu {
   list-style-type: none;
 }
 

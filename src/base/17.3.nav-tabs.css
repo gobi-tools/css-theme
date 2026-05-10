@@ -1,3 +1,32 @@
+menu {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-m);
+
+  align-items: center;
+}
+
+menu>li {
+  padding-inline: var(--space-sm);
+  padding-bottom: var(--space-xs);
+}
+
+/* theme colors */
+
+menu>li {
+  border-bottom-width: var(--border-width-horz-tabs);
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-bg);
+}
+
+menu>li[aria-selected="true"] {
+  border-bottom-color: var(--color-primary-inked-hover);
+}
+
+/**********/
+/* TO DEL */
+/**********/
+
 /* base */
 
 nav ol>li {
@@ -23,7 +52,6 @@ nav>ol>li[aria-selected="true"] {
   nav>ol>li[aria-selected="true"] {
     border-bottom: none;
     padding-left: calc(var(--space-m) - var(--border-width-vert-tabs)) !important;
-    /* theme colors */
     background-color: var(--color-primary-faint);;
     border-left-width: var(--border-width-vert-tabs);
     border-left-style: solid;

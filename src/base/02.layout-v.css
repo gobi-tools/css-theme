@@ -40,8 +40,13 @@ form,
 table,
 blockquote,
 pre,
+menu,
 .card {
   margin-bottom: var(--space-m);
+}
+
+nav>menu {
+  margin-bottom: 0;
 }
 
 h1,

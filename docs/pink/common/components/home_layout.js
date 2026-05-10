@@ -2529,7 +2529,7 @@ function Tabs({ theme }) {
           /* @__PURE__ */ jsx19("code", { children: "nav" }),
           " element."
         ] }),
-        /* @__PURE__ */ jsx19("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs19("ol", { children: [
+        /* @__PURE__ */ jsx19("div", { className: "disable-mobile", children: /* @__PURE__ */ jsxs19("menu", { children: [
           /* @__PURE__ */ jsx19("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs19("a", { onClick: () => setSelected("tab-1"), children: [
             /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
               /* @__PURE__ */ jsx19("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
