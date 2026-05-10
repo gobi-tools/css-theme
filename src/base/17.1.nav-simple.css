@@ -1,9 +1,5 @@
 /* base */
 
-nav :is(ul, ol) {
-  list-style-type: none;
-}
-
 nav>:is(ul, ol) {
   display: flex;
   flex-direction: row;
@@ -16,13 +12,6 @@ nav>:is(ul, ol) {
 nav>:is(ul, ol)>li {
   display: inline-block;
   padding-inline: 0;
-}
-
-nav a {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
 }
 
 nav :is(ul, ol)>li>ul {
