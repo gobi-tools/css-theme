@@ -40,7 +40,7 @@ export enum EDoc {
   Classes = 'classes',
 };
 
-export enum EShowcase {
+export enum EExamples {
   MobileNav = 'mobile-nav',
   MobileBreadcrumbs = 'mobile-breadcrumbs',
   MobileMenu = 'mobile-menu',

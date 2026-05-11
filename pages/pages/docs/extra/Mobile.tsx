@@ -1,7 +1,7 @@
 import DocsLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
-import { EDoc, EShowcase } from "../../../common/utils/types";
+import { EDoc, EExamples } from "../../../common/utils/types";
 
 export default function Mobile({ theme }) {
   const route = useRoute();
@@ -22,7 +22,7 @@ export default function Mobile({ theme }) {
             or cascade naturally.
           </p>
           <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileTypography, theme, route)} />
+            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileTypography, theme, route)} />
             <figcaption>More information <a href={RouteMaster.doc(EDoc.Typographty, theme, route)}>here</a></figcaption>
           </figure>
         </div>
@@ -47,7 +47,7 @@ export default function Mobile({ theme }) {
             conserve space.
           </p>
           <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileNav, theme, route)} />
+            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileNav, theme, route)} />
             <figcaption>More information <a href={RouteMaster.doc(EDoc.Navigation, theme, route)}>here</a> or <a href={RouteMaster.doc(EDoc.Tabs, theme, route)}>here</a>.</figcaption>
           </figure>
         </div>
@@ -74,7 +74,7 @@ export default function Mobile({ theme }) {
             simulate mobile app displays.
           </p>
           <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileMenu, theme, route)} />
+            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileMenu, theme, route)} />
             <figcaption>More information <a href={RouteMaster.doc(EDoc.Menu, theme, route)}>here</a>.</figcaption>
           </figure>
         </div>
@@ -98,7 +98,7 @@ export default function Mobile({ theme }) {
             In narrow displays the flip to a vertical arrangement, with no gap between them.
           </p>
           <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileColumns, theme, route)} />
+            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileColumns, theme, route)} />
             <figcaption>More information <a href={RouteMaster.doc(EDoc.Columns, theme, route)}>here</a>.</figcaption>
           </figure>
         </div>

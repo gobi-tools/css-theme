@@ -1,5 +1,5 @@
 import Buttons from "../../pages/docs/basics/Buttons";
-import { EDoc, EShowcase, EThemes } from "./types";
+import { EDoc, EExamples, EThemes } from "./types";
 import Typography from "../../pages/docs/basics/Typography";
 import Blockquotes from "../../pages/docs/basics/Blockquotes";
 import Code from "../../pages/docs/basics/Code";
@@ -18,14 +18,6 @@ import Modal from "../../pages/docs/dialogs/Modal";
 import Navigation from "../../pages/docs/navigation/Navigation";
 import Tabs from "../../pages/docs/navigation/Tabs";
 import Menu from "../../pages/docs/navigation/Menu";
-import DesktopMenu from "../../pages/showcase/DekstopMenu";
-import LayoutHeaderNav from "../../pages/showcase/LayoutHeaderNav";
-import LayoutHeaderComplex from "../../pages/showcase/LayoutHeaderComplex";
-import MobileColumns from "../../pages/showcase/MobileColumns";
-import MobileMenu from "../../pages/showcase/MobileMenu";
-import MobileNav from "../../pages/showcase/MobileNav";
-import MobileTabs from "../../pages/showcase/MobileTabs";
-import MobileTypography from "../../pages/showcase/MobileTypography";
 import DarkMode from "../../pages/docs/extra/DarkMode";
 import Icons from "../../pages/docs/extra/Icons";
 import Mobile from "../../pages/docs/extra/Mobile";
@@ -35,9 +27,17 @@ import Columns from "../../pages/docs/custom/Columns";
 import Containers from "../../pages/docs/custom/Containers";
 import Groups from "../../pages/docs/custom/Groups";
 import Header from "../../pages/docs/layout/Header";
-import LayoutHeaderSection from "../../pages/showcase/LayoutHeaderSection";
 import Breadcrumbs from "../../pages/docs/navigation/Breadcrumbs";
-import MobileBreadcrumbs from "../../pages/showcase/MobileBreadcrumbs";
+import LayoutHeaderSection from "../../pages/examples/LayoutHeaderSection";
+import MobileBreadcrumbs from "../../pages/examples/MobileBreadcrumbs";
+import DesktopMenu from "../../pages/examples/DekstopMenu";
+import LayoutHeaderNav from "../../pages/examples/LayoutHeaderNav";
+import LayoutHeaderComplex from "../../pages/examples/LayoutHeaderComplex";
+import MobileColumns from "../../pages/examples/MobileColumns";
+import MobileMenu from "../../pages/examples/MobileMenu";
+import MobileNav from "../../pages/examples/MobileNav";
+import MobileTabs from "../../pages/examples/MobileTabs";
+import MobileTypography from "../../pages/examples/MobileTypography";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -157,19 +157,19 @@ export class RouteMaster {
     return undefined;
   }
 
-  static showcase(route: EShowcase, theme: EThemes, domain: string): string {
+  static example(route: EExamples, theme: EThemes, domain: string): string {
     const base = RouteMaster.getBase(domain);
     switch (route) {
-      case EShowcase.DekstopMenu: return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
-      case EShowcase.LayoutHeaderSimple: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderNav)}`;
-      case EShowcase.LayoutHeaderComplex: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderComplex)}`;
-      case EShowcase.LayoutHeaderSection: return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderSection)}`;
-      case EShowcase.MobileColumns: return `${base}${theme}/pages/showcase/${htmlName(MobileColumns)}`;
-      case EShowcase.MobileMenu: return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
-      case EShowcase.MobileNav: return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;
-      case EShowcase.MobileBreadcrumbs: return `${base}${theme}/pages/showcase/${htmlName(MobileBreadcrumbs)}`;
-      case EShowcase.MobileTabsNav: return `${base}${theme}/pages/showcase/${htmlName(MobileTabs)}`;
-      case EShowcase.MobileTypography: return `${base}${theme}/pages/showcase/${htmlName(MobileTypography)}`;
+      case EExamples.DekstopMenu: return `${base}${theme}/pages/examples/${htmlName(DesktopMenu)}`;
+      case EExamples.LayoutHeaderSimple: return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderNav)}`;
+      case EExamples.LayoutHeaderComplex: return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderComplex)}`;
+      case EExamples.LayoutHeaderSection: return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderSection)}`;
+      case EExamples.MobileColumns: return `${base}${theme}/pages/examples/${htmlName(MobileColumns)}`;
+      case EExamples.MobileMenu: return `${base}${theme}/pages/examples/${htmlName(MobileMenu)}`;
+      case EExamples.MobileNav: return `${base}${theme}/pages/examples/${htmlName(MobileNav)}`;
+      case EExamples.MobileBreadcrumbs: return `${base}${theme}/pages/examples/${htmlName(MobileBreadcrumbs)}`;
+      case EExamples.MobileTabsNav: return `${base}${theme}/pages/examples/${htmlName(MobileTabs)}`;
+      case EExamples.MobileTypography: return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
     }
   }
 

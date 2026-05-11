@@ -2433,7 +2433,7 @@ function Navigation({ theme }) {
       /* @__PURE__ */ jsxs18("div", { children: [
         /* @__PURE__ */ jsx18("p", { children: "Finally, the navigation bar is responsive. On large displays it expands horizontally and on smaller displays it switches to a vertical layout." }),
         /* @__PURE__ */ jsxs18("figure", { children: [
-          /* @__PURE__ */ jsx18("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-nav" /* MobileNav */, theme, route) }),
+          /* @__PURE__ */ jsx18("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-nav" /* MobileNav */, theme, route) }),
           /* @__PURE__ */ jsx18("figcaption", { children: "Showcase of navigation on a smaller device" })
         ] })
       ] }),
@@ -2592,7 +2592,7 @@ function Tabs({ theme }) {
       /* @__PURE__ */ jsxs19("div", { children: [
         /* @__PURE__ */ jsx19("p", { children: "Tabs are responsive. On larger screens they will expand horizontally, whilst on smaller screens (or smaller containers in general) they will expand vertically." }),
         /* @__PURE__ */ jsxs19("figure", { children: [
-          /* @__PURE__ */ jsx19("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-tabs-nav" /* MobileTabsNav */, theme, route) }),
+          /* @__PURE__ */ jsx19("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-tabs-nav" /* MobileTabsNav */, theme, route) }),
           /* @__PURE__ */ jsx19("figcaption", { children: "Showcase of tabbed navigation in a smaller container or device." })
         ] })
       ] }),
@@ -2682,7 +2682,7 @@ function Menu({ theme }) {
           " element) will automatically move from the top of the page to the bottom, mimicking the classic mobile navigation."
         ] }),
         /* @__PURE__ */ jsxs20("figure", { children: [
-          /* @__PURE__ */ jsx20("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-menu" /* MobileMenu */, theme, route) }),
+          /* @__PURE__ */ jsx20("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-menu" /* MobileMenu */, theme, route) }),
           /* @__PURE__ */ jsx20("figcaption", { children: "Showcase of menu navigation on smaller device" })
         ] })
       ] }),
@@ -2697,289 +2697,83 @@ function Menu({ theme }) {
   ] });
 }
 
-// pages/pages/showcase/DekstopMenu.tsx
-import { Fragment as Fragment2, jsx as jsx21, jsxs as jsxs21 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function DesktopMenu() {
-  return /* @__PURE__ */ jsxs21(Fragment2, { children: [
-    /* @__PURE__ */ jsx21("header", { style: { maxWidth: "600px" }, className: "disable-mobile", children: /* @__PURE__ */ jsxs21("menu", { children: [
-      /* @__PURE__ */ jsx21("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs21("a", { href: "", children: [
-        /* @__PURE__ */ jsxs21("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-          /* @__PURE__ */ jsx21("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-          /* @__PURE__ */ jsx21("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
-        ] }),
-        /* @__PURE__ */ jsx21("span", { children: "Home" })
-      ] }) }),
-      /* @__PURE__ */ jsx21("li", { children: /* @__PURE__ */ jsxs21("a", { href: "", children: [
-        /* @__PURE__ */ jsxs21("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx21("path", { d: "M4 11a9 9 0 0 1 9 9" }),
-          /* @__PURE__ */ jsx21("path", { d: "M4 4a16 16 0 0 1 16 16" }),
-          /* @__PURE__ */ jsx21("circle", { cx: "5", cy: "19", r: "1" })
-        ] }),
-        /* @__PURE__ */ jsx21("span", { children: "Latest" })
-      ] }) }),
-      /* @__PURE__ */ jsx21("li", { children: /* @__PURE__ */ jsxs21("a", { href: "", children: [
-        /* @__PURE__ */ jsxs21("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx21("path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2" }),
-          /* @__PURE__ */ jsx21("path", { d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" }),
-          /* @__PURE__ */ jsx21("circle", { cx: "10", cy: "7", r: "4" })
-        ] }),
-        /* @__PURE__ */ jsx21("span", { children: "Profile" })
-      ] }) })
-    ] }) }),
-    /* @__PURE__ */ jsx21("main", { children: /* @__PURE__ */ jsxs21("article", { children: [
-      /* @__PURE__ */ jsx21("h1", { children: "Heading 1" }),
-      /* @__PURE__ */ jsx21("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
-  ] });
-}
-
-// pages/pages/showcase/LayoutHeaderNav.tsx
-import { Fragment as Fragment3, jsx as jsx22, jsxs as jsxs22 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function LayoutHeaderNav() {
-  return /* @__PURE__ */ jsxs22(Fragment3, { children: [
-    /* @__PURE__ */ jsx22("header", { children: /* @__PURE__ */ jsx22("nav", { children: /* @__PURE__ */ jsxs22("ul", { children: [
-      /* @__PURE__ */ jsx22("li", { children: /* @__PURE__ */ jsx22("a", { href: "", children: "Home" }) }),
-      /* @__PURE__ */ jsx22("li", { children: /* @__PURE__ */ jsx22("a", { href: "", children: "About" }) })
-    ] }) }) }),
-    /* @__PURE__ */ jsxs22("main", { children: [
-      /* @__PURE__ */ jsx22("h1", { children: "Title" }),
-      /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] })
-  ] });
-}
-
-// pages/pages/showcase/LayoutHeaderComplex.tsx
-import { Fragment as Fragment4, jsx as jsx23, jsxs as jsxs23 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function LayoutHeaderComplex() {
-  return /* @__PURE__ */ jsxs23(Fragment4, { children: [
-    /* @__PURE__ */ jsxs23("header", { children: [
-      /* @__PURE__ */ jsx23("nav", { children: /* @__PURE__ */ jsx23("ul", { children: /* @__PURE__ */ jsx23("li", { children: /* @__PURE__ */ jsx23("a", { href: "", children: "Home" }) }) }) }),
-      /* @__PURE__ */ jsxs23("div", { className: "align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
-        /* @__PURE__ */ jsx23("h2", { children: "My blog" }),
-        /* @__PURE__ */ jsx23("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-        /* @__PURE__ */ jsx23("form", { children: /* @__PURE__ */ jsxs23("div", { className: "group", children: [
-          /* @__PURE__ */ jsx23("input", { type: "email", placeholder: "name@example.com" }),
-          /* @__PURE__ */ jsx23("input", { type: "submit", value: "Subscribe" })
-        ] }) })
-      ] })
-    ] }),
-    /* @__PURE__ */ jsxs23("main", { children: [
-      /* @__PURE__ */ jsx23("h1", { children: "Title" }),
-      /* @__PURE__ */ jsx23("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] })
-  ] });
-}
-
-// pages/pages/showcase/MobileColumns.tsx
-import { Fragment as Fragment5, jsx as jsx24, jsxs as jsxs24 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function MobileColumns() {
-  return /* @__PURE__ */ jsx24(Fragment5, { children: /* @__PURE__ */ jsx24("main", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsx24("article", { children: /* @__PURE__ */ jsxs24("div", { className: "row", children: [
-    /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("code", { style: { width: "100%" }, children: "col" }) }),
-    /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("code", { style: { width: "100%" }, children: "col" }) })
-  ] }) }) }) });
-}
-
-// pages/pages/showcase/MobileMenu.tsx
-import { Fragment as Fragment6, jsx as jsx25, jsxs as jsxs25 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function MobileMenu() {
-  return /* @__PURE__ */ jsxs25(Fragment6, { children: [
-    /* @__PURE__ */ jsx25("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx25("nav", { children: /* @__PURE__ */ jsxs25("menu", { children: [
-      /* @__PURE__ */ jsx25("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs25("a", { href: "", children: [
-        /* @__PURE__ */ jsxs25("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-          /* @__PURE__ */ jsx25("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-          /* @__PURE__ */ jsx25("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
-        ] }),
-        /* @__PURE__ */ jsx25("span", { children: "Home" })
-      ] }) }),
-      /* @__PURE__ */ jsx25("li", { children: /* @__PURE__ */ jsxs25("a", { href: "", children: [
-        /* @__PURE__ */ jsxs25("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx25("path", { d: "M4 11a9 9 0 0 1 9 9" }),
-          /* @__PURE__ */ jsx25("path", { d: "M4 4a16 16 0 0 1 16 16" }),
-          /* @__PURE__ */ jsx25("circle", { cx: "5", cy: "19", r: "1" })
-        ] }),
-        /* @__PURE__ */ jsx25("span", { children: "Latest" })
-      ] }) }),
-      /* @__PURE__ */ jsx25("li", { children: /* @__PURE__ */ jsxs25("a", { href: "", children: [
-        /* @__PURE__ */ jsxs25("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx25("path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2" }),
-          /* @__PURE__ */ jsx25("path", { d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" }),
-          /* @__PURE__ */ jsx25("circle", { cx: "10", cy: "7", r: "4" })
-        ] }),
-        /* @__PURE__ */ jsx25("span", { children: "Profile" })
-      ] }) })
-    ] }) }) }),
-    /* @__PURE__ */ jsx25("main", { children: /* @__PURE__ */ jsxs25("article", { children: [
-      /* @__PURE__ */ jsx25("h1", { children: "Heading 1" }),
-      /* @__PURE__ */ jsx25("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
-  ] });
-}
-
-// pages/pages/showcase/MobileNav.tsx
-import { Fragment as Fragment7, jsx as jsx26, jsxs as jsxs26 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function MobileNav() {
-  return /* @__PURE__ */ jsxs26(Fragment7, { children: [
-    /* @__PURE__ */ jsx26("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx26("nav", { children: /* @__PURE__ */ jsxs26("ul", { children: [
-      /* @__PURE__ */ jsx26("li", { children: /* @__PURE__ */ jsxs26("a", { href: "", children: [
-        /* @__PURE__ */ jsxs26("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx26("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-          /* @__PURE__ */ jsx26("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
-        ] }),
-        /* @__PURE__ */ jsx26("span", { children: "Home" })
-      ] }) }),
-      /* @__PURE__ */ jsx26("li", { children: /* @__PURE__ */ jsxs26("a", { href: "", children: [
-        /* @__PURE__ */ jsxs26("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx26("path", { d: "m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" }),
-          /* @__PURE__ */ jsx26("path", { d: "m18 15 4-4" }),
-          /* @__PURE__ */ jsx26("path", { d: "m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" })
-        ] }),
-        /* @__PURE__ */ jsx26("span", { children: "Docs" })
-      ] }) }),
-      /* @__PURE__ */ jsxs26("li", { children: [
-        /* @__PURE__ */ jsxs26("a", { href: "", children: [
-          /* @__PURE__ */ jsxs26("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", className: "lucide lucide-circle-chevron-right-icon lucide-circle-chevron-right", children: [
-            /* @__PURE__ */ jsx26("circle", { cx: "12", cy: "12", r: "10" }),
-            /* @__PURE__ */ jsx26("path", { d: "m10 8 4 4-4 4" })
-          ] }),
-          /* @__PURE__ */ jsx26("span", { children: "More" })
-        ] }),
-        /* @__PURE__ */ jsxs26("ul", { children: [
-          /* @__PURE__ */ jsx26("li", { children: /* @__PURE__ */ jsx26("a", { href: "", children: "Option 1" }) }),
-          /* @__PURE__ */ jsx26("li", { children: /* @__PURE__ */ jsx26("a", { href: "", children: "Option 2" }) })
-        ] })
-      ] })
-    ] }) }) }),
-    /* @__PURE__ */ jsx26("main", { children: /* @__PURE__ */ jsxs26("article", { children: [
-      /* @__PURE__ */ jsx26("h1", { children: "Heading 1" }),
-      /* @__PURE__ */ jsx26("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
-  ] });
-}
-
-// pages/pages/showcase/MobileTabs.tsx
-import { useState as useState7 } from "https://esm.sh/react@19.2.0";
-import { jsx as jsx27, jsxs as jsxs27 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function MobileTabs() {
-  const [selected, setSelected] = useState7("tab-1");
-  return /* @__PURE__ */ jsx27("main", { children: /* @__PURE__ */ jsxs27("div", { className: "row disable-mobile", children: [
-    /* @__PURE__ */ jsx27("aside", { children: /* @__PURE__ */ jsx27("div", { children: /* @__PURE__ */ jsxs27("menu", { children: [
-      /* @__PURE__ */ jsx27("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs27("a", { onClick: () => setSelected("tab-1"), children: [
-        /* @__PURE__ */ jsxs27("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx27("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-          /* @__PURE__ */ jsx27("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
-        ] }),
-        /* @__PURE__ */ jsx27("span", { children: "Home" })
-      ] }) }),
-      /* @__PURE__ */ jsx27("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs27("a", { onClick: () => setSelected("tab-2"), children: [
-        /* @__PURE__ */ jsxs27("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx27("path", { d: "M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" }),
-          /* @__PURE__ */ jsx27("circle", { cx: "12", cy: "13", r: "1" })
-        ] }),
-        /* @__PURE__ */ jsx27("span", { children: "Projects" })
-      ] }) }),
-      /* @__PURE__ */ jsx27("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs27("a", { onClick: () => setSelected("tab-3"), children: [
-        /* @__PURE__ */ jsxs27("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx27("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
-          /* @__PURE__ */ jsx27("circle", { cx: "12", cy: "7", r: "4" })
-        ] }),
-        /* @__PURE__ */ jsx27("span", { children: "Users" })
-      ] }) })
-    ] }) }) }),
-    /* @__PURE__ */ jsxs27("div", { className: "card", style: { flexGrow: 1 }, children: [
-      selected === "tab-1" ? /* @__PURE__ */ jsx27(Tab1, {}) : null,
-      selected === "tab-2" ? /* @__PURE__ */ jsx27(Tab2, {}) : null,
-      selected === "tab-3" ? /* @__PURE__ */ jsx27(Tab3, {}) : null
-    ] })
-  ] }) });
-}
-
-// pages/pages/showcase/MobileTypography.tsx
-import { Fragment as Fragment8, jsx as jsx28, jsxs as jsxs28 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function MobileTypography() {
-  return /* @__PURE__ */ jsx28(Fragment8, { children: /* @__PURE__ */ jsx28("main", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx28("article", { children: /* @__PURE__ */ jsxs28("p", { children: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
-    /* @__PURE__ */ jsx28("b", { children: "tempor" }),
-    " incididunt ut labore et dolore magna aliqua."
-  ] }) }) }) });
-}
-
 // pages/pages/docs/extra/DarkMode.tsx
-import { jsx as jsx29, jsxs as jsxs29 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx21, jsxs as jsxs21 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function DarkMode({ theme }) {
-  return /* @__PURE__ */ jsx29(DocLayout, { theme, children: /* @__PURE__ */ jsxs29("section", { className: "row", children: [
-    /* @__PURE__ */ jsxs29("div", { children: [
-      /* @__PURE__ */ jsx29("p", { children: `Support for dark mode depends on the specific theme. Some themes have a "light" aspect, some have a "dark" aspect and some change automatically based on the user's prefferences.` }),
-      /* @__PURE__ */ jsxs29("p", { children: [
+  return /* @__PURE__ */ jsx21(DocLayout, { theme, children: /* @__PURE__ */ jsxs21("section", { className: "row", children: [
+    /* @__PURE__ */ jsxs21("div", { children: [
+      /* @__PURE__ */ jsx21("p", { children: `Support for dark mode depends on the specific theme. Some themes have a "light" aspect, some have a "dark" aspect and some change automatically based on the user's prefferences.` }),
+      /* @__PURE__ */ jsxs21("p", { children: [
         "By default you can add a ",
-        /* @__PURE__ */ jsx29("b", { children: "meta" }),
+        /* @__PURE__ */ jsx21("b", { children: "meta" }),
         " tag with the ",
-        /* @__PURE__ */ jsx29("code", { children: "color-scheme" }),
+        /* @__PURE__ */ jsx21("code", { children: "color-scheme" }),
         " name and ",
-        /* @__PURE__ */ jsx29("code", { children: "light dark" }),
+        /* @__PURE__ */ jsx21("code", { children: "light dark" }),
         " value. Themes that support both light and dark modes will adapt dynamically. Themes with only one mode will be unnaffected."
       ] }),
-      /* @__PURE__ */ jsx29("p", { children: "For light / dark themes, if you force light or dark modes by specifing the corresponding color scheme." }),
-      /* @__PURE__ */ jsxs29("table", { children: [
-        /* @__PURE__ */ jsx29("thead", { children: /* @__PURE__ */ jsxs29("tr", { children: [
-          /* @__PURE__ */ jsx29("th", { children: "Theme" }),
-          /* @__PURE__ */ jsx29("th", { children: "Light" }),
-          /* @__PURE__ */ jsx29("th", { children: "Dark" })
+      /* @__PURE__ */ jsx21("p", { children: "For light / dark themes, if you force light or dark modes by specifing the corresponding color scheme." }),
+      /* @__PURE__ */ jsxs21("table", { children: [
+        /* @__PURE__ */ jsx21("thead", { children: /* @__PURE__ */ jsxs21("tr", { children: [
+          /* @__PURE__ */ jsx21("th", { children: "Theme" }),
+          /* @__PURE__ */ jsx21("th", { children: "Light" }),
+          /* @__PURE__ */ jsx21("th", { children: "Dark" })
         ] }) }),
-        /* @__PURE__ */ jsxs29("tbody", { children: [
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Default" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" })
+        /* @__PURE__ */ jsxs21("tbody", { children: [
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Default" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "App" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "App" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Writing" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Writing" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Scholar" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Scholar" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Bold" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u274C" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Bold" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u274C" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Sunset" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u274C" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Sunset" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u274C" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Sunset" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u274C" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Sunset" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u274C" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Green" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u274C" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Green" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u274C" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Betty" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u274C" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Betty" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u274C" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" })
           ] }),
-          /* @__PURE__ */ jsxs29("tr", { children: [
-            /* @__PURE__ */ jsx29("td", { children: "Gold" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u274C" }),
-            /* @__PURE__ */ jsx29("td", { children: "\u2705" })
+          /* @__PURE__ */ jsxs21("tr", { children: [
+            /* @__PURE__ */ jsx21("td", { children: "Gold" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u274C" }),
+            /* @__PURE__ */ jsx21("td", { children: "\u2705" })
           ] })
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ jsx29("div", { children: /* @__PURE__ */ jsx29("pre", { children: /* @__PURE__ */ jsx29("code", { children: `<html>
+    /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<html>
   <head>
     <!-- both variants -->
     <meta 
@@ -2996,15 +2790,15 @@ function DarkMode({ theme }) {
 }
 
 // pages/pages/docs/extra/Icons.tsx
-import { jsx as jsx30, jsxs as jsxs30 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx22, jsxs as jsxs22 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Icons({ theme }) {
-  return /* @__PURE__ */ jsxs30(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs30("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs30("div", { children: [
-        /* @__PURE__ */ jsx30("p", { children: "The framework can combine any svg or raster icon with a multitude of html elements to create more interesting components." }),
-        /* @__PURE__ */ jsx30("p", { children: "When inside buttons the width & height is aligned to match the font size." }),
-        /* @__PURE__ */ jsx30("p", { children: /* @__PURE__ */ jsxs30("button", { children: [
-          /* @__PURE__ */ jsxs30(
+  return /* @__PURE__ */ jsxs22(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs22("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs22("div", { children: [
+        /* @__PURE__ */ jsx22("p", { children: "The framework can combine any svg or raster icon with a multitude of html elements to create more interesting components." }),
+        /* @__PURE__ */ jsx22("p", { children: "When inside buttons the width & height is aligned to match the font size." }),
+        /* @__PURE__ */ jsx22("p", { children: /* @__PURE__ */ jsxs22("button", { children: [
+          /* @__PURE__ */ jsxs22(
             "svg",
             {
               xmlns: "http://www.w3.org/2000/svg",
@@ -3017,8 +2811,8 @@ function Icons({ theme }) {
               strokeLinecap: "round",
               strokeLinejoin: "round",
               children: [
-                /* @__PURE__ */ jsx30("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-                /* @__PURE__ */ jsx30(
+                /* @__PURE__ */ jsx22("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+                /* @__PURE__ */ jsx22(
                   "path",
                   {
                     d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
@@ -3027,10 +2821,10 @@ function Icons({ theme }) {
               ]
             }
           ),
-          /* @__PURE__ */ jsx30("span", { children: "Home" })
+          /* @__PURE__ */ jsx22("span", { children: "Home" })
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsx30("pre", { children: /* @__PURE__ */ jsx30("code", { children: `<p>
+      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<p>
   <!-- with <svg> element -->
   <button>
     <svg ...></svg>
@@ -3043,11 +2837,11 @@ function Icons({ theme }) {
   </button>
 </p>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs30("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs30("div", { children: [
-        /* @__PURE__ */ jsx30("p", { children: "If they are used in a standalone mode then they should have a clear width and height specified." }),
-        /* @__PURE__ */ jsxs30("div", { className: "group", children: [
-          /* @__PURE__ */ jsxs30(
+    /* @__PURE__ */ jsxs22("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs22("div", { children: [
+        /* @__PURE__ */ jsx22("p", { children: "If they are used in a standalone mode then they should have a clear width and height specified." }),
+        /* @__PURE__ */ jsxs22("div", { className: "group", children: [
+          /* @__PURE__ */ jsxs22(
             "svg",
             {
               xmlns: "http://www.w3.org/2000/svg",
@@ -3060,15 +2854,15 @@ function Icons({ theme }) {
               strokeLinecap: "round",
               strokeLinejoin: "round",
               children: [
-                /* @__PURE__ */ jsx30("path", { d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" }),
-                /* @__PURE__ */ jsx30("circle", { cx: "12", cy: "10", r: "3" })
+                /* @__PURE__ */ jsx22("path", { d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" }),
+                /* @__PURE__ */ jsx22("circle", { cx: "12", cy: "10", r: "3" })
               ]
             }
           ),
-          /* @__PURE__ */ jsx30("b", { children: "Test Address, SE11 8CL" })
+          /* @__PURE__ */ jsx22("b", { children: "Test Address, SE11 8CL" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsx30("pre", { children: /* @__PURE__ */ jsx30("code", { children: `<div class="group">
+      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<div class="group">
   <svg 
     width="20" 
     height="20" ...></svg>
@@ -3081,49 +2875,49 @@ function Icons({ theme }) {
 }
 
 // pages/pages/docs/extra/Mobile.tsx
-import { jsx as jsx31, jsxs as jsxs31 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx23, jsxs as jsxs23 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Mobile({ theme }) {
   const route = useRoute();
-  return /* @__PURE__ */ jsxs31(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs31("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs31("div", { children: [
-        /* @__PURE__ */ jsx31("p", { children: "The CSS framework is design to handle various screen sizes, from wide (desktop) to narrow (mobile)." }),
-        /* @__PURE__ */ jsxs31("p", { children: [
+  return /* @__PURE__ */ jsxs23(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs23("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs23("div", { children: [
+        /* @__PURE__ */ jsx23("p", { children: "The CSS framework is design to handle various screen sizes, from wide (desktop) to narrow (mobile)." }),
+        /* @__PURE__ */ jsxs23("p", { children: [
           "The threshold between wide and narrow happens at ",
-          /* @__PURE__ */ jsx31("b", { children: "600px" }),
+          /* @__PURE__ */ jsx23("b", { children: "600px" }),
           "."
         ] }),
-        /* @__PURE__ */ jsx31("p", { children: "Most elements, like paragraphs of text, buttons, etc, will layout or cascade naturally." }),
-        /* @__PURE__ */ jsxs31("figure", { children: [
-          /* @__PURE__ */ jsx31("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-typography" /* MobileTypography */, theme, route) }),
-          /* @__PURE__ */ jsxs31("figcaption", { children: [
+        /* @__PURE__ */ jsx23("p", { children: "Most elements, like paragraphs of text, buttons, etc, will layout or cascade naturally." }),
+        /* @__PURE__ */ jsxs23("figure", { children: [
+          /* @__PURE__ */ jsx23("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-typography" /* MobileTypography */, theme, route) }),
+          /* @__PURE__ */ jsxs23("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("typography" /* Typographty */, theme, route), children: "here" })
+            /* @__PURE__ */ jsx23("a", { href: RouteMaster.doc("typography" /* Typographty */, theme, route), children: "here" })
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx31("div", { children: /* @__PURE__ */ jsx31("pre", { children: /* @__PURE__ */ jsx31("code", { children: `<!-- elements that -->
+      /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("pre", { children: /* @__PURE__ */ jsx23("code", { children: `<!-- elements that -->
 <!-- resize naturally -->
 <!-- on mobile -->
 <p>
   Lorem ipsum ....
 </p>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs31("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs31("div", { children: [
-        /* @__PURE__ */ jsx31("p", { children: "Navigation elements are one example where there's a distinct transition between wide and narrow displays. In wide displays they're arranged horizontally whist in narrow displays they're aranged vertically, to conserve space." }),
-        /* @__PURE__ */ jsxs31("figure", { children: [
-          /* @__PURE__ */ jsx31("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-nav" /* MobileNav */, theme, route) }),
-          /* @__PURE__ */ jsxs31("figcaption", { children: [
+    /* @__PURE__ */ jsxs23("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs23("div", { children: [
+        /* @__PURE__ */ jsx23("p", { children: "Navigation elements are one example where there's a distinct transition between wide and narrow displays. In wide displays they're arranged horizontally whist in narrow displays they're aranged vertically, to conserve space." }),
+        /* @__PURE__ */ jsxs23("figure", { children: [
+          /* @__PURE__ */ jsx23("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-nav" /* MobileNav */, theme, route) }),
+          /* @__PURE__ */ jsxs23("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx23("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "here" }),
             " or ",
-            /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("tabs" /* Tabs */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx23("a", { href: RouteMaster.doc("tabs" /* Tabs */, theme, route), children: "here" }),
             "."
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx31("div", { children: /* @__PURE__ */ jsx31("pre", { children: /* @__PURE__ */ jsx31("code", { children: `<header>
+      /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("pre", { children: /* @__PURE__ */ jsx23("code", { children: `<header>
   <nav>
     <ul>
       <li><a ...>...</a></li>
@@ -3132,90 +2926,90 @@ function Mobile({ theme }) {
   </nav>
 </header>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs31("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs31("div", { children: [
-        /* @__PURE__ */ jsx31("p", { children: "Header menu elements are another example. On wide displays they are arrange horizontally, at the top of the page. On narrow displays they still maintain the horizontal arrangement, but are displayed at the bottom of the page, to simulate mobile app displays." }),
-        /* @__PURE__ */ jsxs31("figure", { children: [
-          /* @__PURE__ */ jsx31("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-menu" /* MobileMenu */, theme, route) }),
-          /* @__PURE__ */ jsxs31("figcaption", { children: [
+    /* @__PURE__ */ jsxs23("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs23("div", { children: [
+        /* @__PURE__ */ jsx23("p", { children: "Header menu elements are another example. On wide displays they are arrange horizontally, at the top of the page. On narrow displays they still maintain the horizontal arrangement, but are displayed at the bottom of the page, to simulate mobile app displays." }),
+        /* @__PURE__ */ jsxs23("figure", { children: [
+          /* @__PURE__ */ jsx23("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-menu" /* MobileMenu */, theme, route) }),
+          /* @__PURE__ */ jsxs23("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("menu" /* Menu */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx23("a", { href: RouteMaster.doc("menu" /* Menu */, theme, route), children: "here" }),
             "."
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx31("div", { children: /* @__PURE__ */ jsx31("pre", { children: /* @__PURE__ */ jsx31("code", { children: `<header>
+      /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("pre", { children: /* @__PURE__ */ jsx23("code", { children: `<header>
   <menu>
     <li><a ...>...</a></li>
     ....
   </menu>
 </header>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs31("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs31("div", { children: [
-        /* @__PURE__ */ jsxs31("p", { children: [
+    /* @__PURE__ */ jsxs23("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs23("div", { children: [
+        /* @__PURE__ */ jsxs23("p", { children: [
           "Finally, elements that have the ",
-          /* @__PURE__ */ jsx31("code", { children: "row" }),
+          /* @__PURE__ */ jsx23("code", { children: "row" }),
           " class also behave differentely. In wide displats, they're arrange horizontally, with a gap between them. In narrow displays the flip to a vertical arrangement, with no gap between them."
         ] }),
-        /* @__PURE__ */ jsxs31("figure", { children: [
-          /* @__PURE__ */ jsx31("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-columns" /* MobileColumns */, theme, route) }),
-          /* @__PURE__ */ jsxs31("figcaption", { children: [
+        /* @__PURE__ */ jsxs23("figure", { children: [
+          /* @__PURE__ */ jsx23("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-columns" /* MobileColumns */, theme, route) }),
+          /* @__PURE__ */ jsxs23("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx31("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx23("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
             "."
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx31("div", { children: /* @__PURE__ */ jsx31("pre", { children: /* @__PURE__ */ jsx31("code", { children: `<div class="row">
+      /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("pre", { children: /* @__PURE__ */ jsx23("code", { children: `<div class="row">
   <div class="col">...</div>
   <div class="col">...</div>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs31("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs31("div", { children: [
-        /* @__PURE__ */ jsxs31("p", { children: [
+    /* @__PURE__ */ jsxs23("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs23("div", { children: [
+        /* @__PURE__ */ jsxs23("p", { children: [
           "You can instruct an element to ignore mobile transitions by applying the ",
-          /* @__PURE__ */ jsx31("code", { children: "disable-mobile" }),
+          /* @__PURE__ */ jsx23("code", { children: "disable-mobile" }),
           " class."
         ] }),
-        /* @__PURE__ */ jsxs31("p", { children: [
+        /* @__PURE__ */ jsxs23("p", { children: [
           "You can also instruct elements to be hidden on mobile, via the ",
-          /* @__PURE__ */ jsx31("code", { children: "hiden-on-mobile" }),
+          /* @__PURE__ */ jsx23("code", { children: "hiden-on-mobile" }),
           " class, or be hidden on desktop, via the ",
-          /* @__PURE__ */ jsx31("code", { children: "hiden-on-desktop" }),
+          /* @__PURE__ */ jsx23("code", { children: "hiden-on-desktop" }),
           " class."
         ] })
       ] }),
-      /* @__PURE__ */ jsx31("div", {})
+      /* @__PURE__ */ jsx23("div", {})
     ] })
   ] });
 }
 
 // pages/pages/docs/custom/Cards.tsx
-import { jsx as jsx32, jsxs as jsxs32 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx24, jsxs as jsxs24 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Cards({ theme }) {
   const route = useRoute();
-  return /* @__PURE__ */ jsxs32(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs32("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs32("div", { children: [
-        /* @__PURE__ */ jsxs32("p", { children: [
+  return /* @__PURE__ */ jsxs24(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs24("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs24("div", { children: [
+        /* @__PURE__ */ jsxs24("p", { children: [
           "By wrapping together a number of HTML elements inside a parent with the ",
-          /* @__PURE__ */ jsx32("code", { children: "card" }),
+          /* @__PURE__ */ jsx24("code", { children: "card" }),
           " class, you can create a basic card-type layout."
         ] }),
-        /* @__PURE__ */ jsxs32("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsxs32("div", { className: "card", children: [
-            /* @__PURE__ */ jsx32("span", { children: /* @__PURE__ */ jsx32("b", { children: "Title" }) }),
-            /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
+        /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
+          /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs24("div", { className: "card", children: [
+            /* @__PURE__ */ jsx24("span", { children: /* @__PURE__ */ jsx24("b", { children: "Title" }) }),
+            /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
-          /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsxs32("div", { className: "card success", children: [
-            /* @__PURE__ */ jsx32("span", { children: /* @__PURE__ */ jsx32("b", { children: "Title" }) }),
-            /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
+          /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs24("div", { className: "card success", children: [
+            /* @__PURE__ */ jsx24("span", { children: /* @__PURE__ */ jsx24("b", { children: "Title" }) }),
+            /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("pre", { children: /* @__PURE__ */ jsx24("code", { children: `<div class="card">
   <span>
     <b>Title</b>
   </span>
@@ -3224,74 +3018,74 @@ function Cards({ theme }) {
   </p>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs32("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs32("div", { children: [
-        /* @__PURE__ */ jsxs32("p", { children: [
+    /* @__PURE__ */ jsxs24("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs24("div", { children: [
+        /* @__PURE__ */ jsxs24("p", { children: [
           "Cards can wrap headings and paragraphs and can be styled with ",
-          /* @__PURE__ */ jsx32("code", { children: "success" }),
+          /* @__PURE__ */ jsx24("code", { children: "success" }),
           " and ",
-          /* @__PURE__ */ jsx32("code", { children: "error" }),
+          /* @__PURE__ */ jsx24("code", { children: "error" }),
           " classes."
         ] }),
-        /* @__PURE__ */ jsxs32("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsxs32("div", { className: "card", children: [
-            /* @__PURE__ */ jsx32("h3", { children: "Title" }),
-            /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
+        /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
+          /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs24("div", { className: "card", children: [
+            /* @__PURE__ */ jsx24("h3", { children: "Title" }),
+            /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
-          /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsxs32("div", { className: "card error", children: [
-            /* @__PURE__ */ jsx32("h3", { children: "Title" }),
-            /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
+          /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs24("div", { className: "card error", children: [
+            /* @__PURE__ */ jsx24("h3", { children: "Title" }),
+            /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
         ] }),
-        /* @__PURE__ */ jsx32("p", { children: /* @__PURE__ */ jsxs32("small", { children: [
+        /* @__PURE__ */ jsx24("p", { children: /* @__PURE__ */ jsxs24("small", { children: [
           "You can learn more about classes ",
-          /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
+          /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<div class="card error">
+      /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("pre", { children: /* @__PURE__ */ jsx24("code", { children: `<div class="card error">
   <h3>Title</h3>
   <p>
     Lorem ipsum ...
   </p>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs32("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs32("div", { children: [
-        /* @__PURE__ */ jsx32("p", { children: "The starting paragraph of a card will be styled so it's more proeminent." }),
-        /* @__PURE__ */ jsxs32("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsxs32("div", { className: "card", children: [
-            /* @__PURE__ */ jsx32("p", { children: "Title" }),
-            /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
+    /* @__PURE__ */ jsxs24("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs24("div", { children: [
+        /* @__PURE__ */ jsx24("p", { children: "The starting paragraph of a card will be styled so it's more proeminent." }),
+        /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
+          /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs24("div", { className: "card", children: [
+            /* @__PURE__ */ jsx24("p", { children: "Title" }),
+            /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
-          /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsxs32("div", { className: "card success", children: [
-            /* @__PURE__ */ jsx32("p", { children: "Title" }),
-            /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
+          /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs24("div", { className: "card success", children: [
+            /* @__PURE__ */ jsx24("p", { children: "Title" }),
+            /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("pre", { children: /* @__PURE__ */ jsx24("code", { children: `<div class="card">
   <p>Title</p>
   <p>
     Lorem ipsum ...
   </p>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs32("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs32("div", { children: [
-        /* @__PURE__ */ jsx32("p", { children: "Likewise, the first image tag used in a card will be styled as a header image." }),
-        /* @__PURE__ */ jsxs32("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsxs32("div", { className: "card", children: [
-            /* @__PURE__ */ jsx32("img", { height: "80", src: "https://picsum.photos/id/16/320/80", alt: "header image" }),
-            /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
+    /* @__PURE__ */ jsxs24("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs24("div", { children: [
+        /* @__PURE__ */ jsx24("p", { children: "Likewise, the first image tag used in a card will be styled as a header image." }),
+        /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
+          /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs24("div", { className: "card", children: [
+            /* @__PURE__ */ jsx24("img", { height: "80", src: "https://picsum.photos/id/16/320/80", alt: "header image" }),
+            /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
-          /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsxs32("div", { className: "card error", children: [
-            /* @__PURE__ */ jsx32("img", { height: "80", src: "https://picsum.photos/id/16/420/80", alt: "header image" }),
-            /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
+          /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs24("div", { className: "card error", children: [
+            /* @__PURE__ */ jsx24("img", { height: "80", src: "https://picsum.photos/id/16/420/80", alt: "header image" }),
+            /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("pre", { children: /* @__PURE__ */ jsx24("code", { children: `<div class="card">
   <img 
     height="80" 
     src="..." 
@@ -3301,18 +3095,18 @@ function Cards({ theme }) {
   </p>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs32("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs32("div", { children: [
-        /* @__PURE__ */ jsx32("p", { children: "You can combine elements inside a card to produce quite compelx results, as the example below shows." }),
-        /* @__PURE__ */ jsx32("p", { children: "By adding a header image, a title, paragraph and a button, we've created an interesting visual element in a few lines of HTML." }),
-        /* @__PURE__ */ jsxs32("div", { className: "card", children: [
-          /* @__PURE__ */ jsx32("img", { height: "160", src: "https://picsum.photos/id/16/480/160", alt: "header image" }),
-          /* @__PURE__ */ jsx32("h4", { children: "Title" }),
-          /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-          /* @__PURE__ */ jsx32("p", { children: /* @__PURE__ */ jsx32("button", { children: "Button" }) })
+    /* @__PURE__ */ jsxs24("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs24("div", { children: [
+        /* @__PURE__ */ jsx24("p", { children: "You can combine elements inside a card to produce quite compelx results, as the example below shows." }),
+        /* @__PURE__ */ jsx24("p", { children: "By adding a header image, a title, paragraph and a button, we've created an interesting visual element in a few lines of HTML." }),
+        /* @__PURE__ */ jsxs24("div", { className: "card", children: [
+          /* @__PURE__ */ jsx24("img", { height: "160", src: "https://picsum.photos/id/16/480/160", alt: "header image" }),
+          /* @__PURE__ */ jsx24("h4", { children: "Title" }),
+          /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
+          /* @__PURE__ */ jsx24("p", { children: /* @__PURE__ */ jsx24("button", { children: "Button" }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("pre", { children: /* @__PURE__ */ jsx24("code", { children: `<div class="card">
   <img 
     height="160" 
     src="..." 
@@ -3330,38 +3124,38 @@ function Cards({ theme }) {
   </p>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs32("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs32("div", { children: [
-        /* @__PURE__ */ jsx32("p", { children: "If we combine groups, columns and cards, we can experiment with even more daring layouts. All without having to write any custom CSS." }),
-        /* @__PURE__ */ jsxs32("div", { className: "card", children: [
-          /* @__PURE__ */ jsx32("div", { className: "group", children: /* @__PURE__ */ jsxs32("div", { className: "row", children: [
-            /* @__PURE__ */ jsx32("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "header image" }),
-            /* @__PURE__ */ jsxs32("div", { children: [
-              /* @__PURE__ */ jsx32("b", { children: "Title" }),
-              /* @__PURE__ */ jsx32("br", {}),
-              /* @__PURE__ */ jsx32("span", { children: "Subtitle" })
+    /* @__PURE__ */ jsxs24("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs24("div", { children: [
+        /* @__PURE__ */ jsx24("p", { children: "If we combine groups, columns and cards, we can experiment with even more daring layouts. All without having to write any custom CSS." }),
+        /* @__PURE__ */ jsxs24("div", { className: "card", children: [
+          /* @__PURE__ */ jsx24("div", { className: "group", children: /* @__PURE__ */ jsxs24("div", { className: "row", children: [
+            /* @__PURE__ */ jsx24("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "header image" }),
+            /* @__PURE__ */ jsxs24("div", { children: [
+              /* @__PURE__ */ jsx24("b", { children: "Title" }),
+              /* @__PURE__ */ jsx24("br", {}),
+              /* @__PURE__ */ jsx24("span", { children: "Subtitle" })
             ] })
           ] }) }),
-          /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-          /* @__PURE__ */ jsxs32("p", { children: [
-            /* @__PURE__ */ jsx32("mark", { children: "v12.5.3" }),
-            /* @__PURE__ */ jsx32("mark", { className: "success", children: "success" })
+          /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
+          /* @__PURE__ */ jsxs24("p", { children: [
+            /* @__PURE__ */ jsx24("mark", { children: "v12.5.3" }),
+            /* @__PURE__ */ jsx24("mark", { className: "success", children: "success" })
           ] }),
-          /* @__PURE__ */ jsx32("hr", {}),
-          /* @__PURE__ */ jsx32("p", { children: /* @__PURE__ */ jsx32("button", { children: "Button" }) })
+          /* @__PURE__ */ jsx24("hr", {}),
+          /* @__PURE__ */ jsx24("p", { children: /* @__PURE__ */ jsx24("button", { children: "Button" }) })
         ] }),
-        /* @__PURE__ */ jsx32("p", { children: /* @__PURE__ */ jsxs32("small", { children: [
+        /* @__PURE__ */ jsx24("p", { children: /* @__PURE__ */ jsxs24("small", { children: [
           "You can learn more about groups ",
-          /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
+          /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
           "."
         ] }) }),
-        /* @__PURE__ */ jsx32("p", { children: /* @__PURE__ */ jsxs32("small", { children: [
+        /* @__PURE__ */ jsx24("p", { children: /* @__PURE__ */ jsxs24("small", { children: [
           "You can learn more about columns ",
-          /* @__PURE__ */ jsx32("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
+          /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx32("div", { children: /* @__PURE__ */ jsx32("pre", { children: /* @__PURE__ */ jsx32("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("pre", { children: /* @__PURE__ */ jsx24("code", { children: `<div class="card">
   <div class="group">
     <div className="row">
       <img 
@@ -3402,136 +3196,136 @@ function Cards({ theme }) {
 }
 
 // pages/pages/docs/custom/Classes.tsx
-import { jsx as jsx33, jsxs as jsxs33 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx25, jsxs as jsxs25 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Classes({ theme }) {
   const route = useRoute();
-  return /* @__PURE__ */ jsx33(DocLayout, { theme, children: /* @__PURE__ */ jsx33("section", { children: /* @__PURE__ */ jsxs33("div", { children: [
-    /* @__PURE__ */ jsxs33("p", { children: [
+  return /* @__PURE__ */ jsx25(DocLayout, { theme, children: /* @__PURE__ */ jsx25("section", { children: /* @__PURE__ */ jsxs25("div", { children: [
+    /* @__PURE__ */ jsxs25("p", { children: [
       PRODUCT_NAME,
       " aims to be plug & play as much as possible. In this section we've also seen a number of CSS classes that can be used to allow it to support many more cases."
     ] }),
-    /* @__PURE__ */ jsx33("p", { children: "Below is the full list of supported classes and the effect they produce:" }),
-    /* @__PURE__ */ jsxs33("table", { children: [
-      /* @__PURE__ */ jsx33("thead", { children: /* @__PURE__ */ jsxs33("tr", { children: [
-        /* @__PURE__ */ jsx33("th", { children: "Class" }),
-        /* @__PURE__ */ jsx33("th", { children: "Effect" })
+    /* @__PURE__ */ jsx25("p", { children: "Below is the full list of supported classes and the effect they produce:" }),
+    /* @__PURE__ */ jsxs25("table", { children: [
+      /* @__PURE__ */ jsx25("thead", { children: /* @__PURE__ */ jsxs25("tr", { children: [
+        /* @__PURE__ */ jsx25("th", { children: "Class" }),
+        /* @__PURE__ */ jsx25("th", { children: "Effect" })
       ] }) }),
-      /* @__PURE__ */ jsxs33("tbody", { children: [
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "align-center" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+      /* @__PURE__ */ jsxs25("tbody", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "align-center" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Aligns elements centrally on the horizontal axis. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("header" /* Header */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("header" /* Header */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "card" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "card" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Transforms an element into a card. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "circle" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "circle" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Rounds the edges off an element so it's a perfect circle. Useful for images. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "container-medium" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "container-medium" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Sets the maximum size of the container to ",
-            /* @__PURE__ */ jsx33("code", { children: "var(--width-container-medium)" }),
+            /* @__PURE__ */ jsx25("code", { children: "var(--width-container-medium)" }),
             ". See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "container-narrow" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "container-narrow" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Sets the maximum size of the container to ",
-            /* @__PURE__ */ jsx33("code", { children: "var(--width-container-narrow)" }),
+            /* @__PURE__ */ jsx25("code", { children: "var(--width-container-narrow)" }),
             ". See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "container-wide" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "container-wide" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Sets the maximum size of the container to ",
-            /* @__PURE__ */ jsx33("code", { children: "var(--width-container-wide)" }),
+            /* @__PURE__ */ jsx25("code", { children: "var(--width-container-wide)" }),
             ". See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "error" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "error" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Applies an error-type style of an element by changing its background, foreground or text color. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("tags" /* Tags */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("tags" /* Tags */, theme, route), children: "here" }),
             " or ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "gap" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "gap" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Used in between ",
-            /* @__PURE__ */ jsx33("code", { children: "col" }),
+            /* @__PURE__ */ jsx25("code", { children: "col" }),
             " elements. Provides a gap between them so they can be separated into left and right sides. Has no effect on mobile displays. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "group" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "group" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Groups various elements, like buttons or inputs, together, horizontally. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "hide-on-mobile" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "hide-on-mobile" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Hides an element if on small displays. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "hide-on-desktop" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "hide-on-desktop" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Hides an element if on large displays. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "row" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "row" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Transforms child elements into horizontally aligned columns. Also the ",
-            /* @__PURE__ */ jsx33("code", { children: "col-N" }),
+            /* @__PURE__ */ jsx25("code", { children: "col-N" }),
             " class. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
-        /* @__PURE__ */ jsxs33("tr", { children: [
-          /* @__PURE__ */ jsx33("td", { children: /* @__PURE__ */ jsx33("code", { children: "success" }) }),
-          /* @__PURE__ */ jsxs33("td", { children: [
+        /* @__PURE__ */ jsxs25("tr", { children: [
+          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "success" }) }),
+          /* @__PURE__ */ jsxs25("td", { children: [
             "Applies a success-type style to an element by changing its background, foreground or text color. See ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme, route), children: "here" }),
             " or ",
-            /* @__PURE__ */ jsx33("a", { href: RouteMaster.doc("summary" /* Summary */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("summary" /* Summary */, theme, route), children: "here" }),
             "."
           ] })
         ] })
@@ -3541,36 +3335,36 @@ function Classes({ theme }) {
 }
 
 // pages/pages/docs/custom/Columns.tsx
-import { jsx as jsx34, jsxs as jsxs34 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx26, jsxs as jsxs26 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Columns({ theme }) {
   const route = useRoute();
-  return /* @__PURE__ */ jsxs34(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs34("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs34("div", { children: [
-        /* @__PURE__ */ jsxs34("p", { children: [
+  return /* @__PURE__ */ jsxs26(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs26("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs26("div", { children: [
+        /* @__PURE__ */ jsxs26("p", { children: [
           "Any layout element, such a or ",
-          /* @__PURE__ */ jsx34("code", { children: "div" }),
+          /* @__PURE__ */ jsx26("code", { children: "div" }),
           " or ",
-          /* @__PURE__ */ jsx34("code", { children: "section" }),
+          /* @__PURE__ */ jsx26("code", { children: "section" }),
           " tag, can arrange its children in columns of equal width, by combining the ",
-          /* @__PURE__ */ jsx34("code", { children: "row" }),
+          /* @__PURE__ */ jsx26("code", { children: "row" }),
           " and ",
-          /* @__PURE__ */ jsx34("code", { children: "col" }),
+          /* @__PURE__ */ jsx26("code", { children: "col" }),
           " classes."
         ] }),
-        /* @__PURE__ */ jsxs34("div", { className: "card", children: [
-          /* @__PURE__ */ jsxs34("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx34("div", { className: "col", children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col" }) }),
-            /* @__PURE__ */ jsx34("div", { className: "col", children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col" }) })
+        /* @__PURE__ */ jsxs26("div", { className: "card", children: [
+          /* @__PURE__ */ jsxs26("div", { className: "row disable-mobile", children: [
+            /* @__PURE__ */ jsx26("div", { className: "col", children: /* @__PURE__ */ jsx26("code", { style: { width: "100%" }, children: "col" }) }),
+            /* @__PURE__ */ jsx26("div", { className: "col", children: /* @__PURE__ */ jsx26("code", { style: { width: "100%" }, children: "col" }) })
           ] }),
-          /* @__PURE__ */ jsxs34("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx34("div", { className: "col", children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col" }) }),
-            /* @__PURE__ */ jsx34("div", { className: "col", children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col" }) }),
-            /* @__PURE__ */ jsx34("div", { className: "col", children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col" }) })
+          /* @__PURE__ */ jsxs26("div", { className: "row disable-mobile", children: [
+            /* @__PURE__ */ jsx26("div", { className: "col", children: /* @__PURE__ */ jsx26("code", { style: { width: "100%" }, children: "col" }) }),
+            /* @__PURE__ */ jsx26("div", { className: "col", children: /* @__PURE__ */ jsx26("code", { style: { width: "100%" }, children: "col" }) }),
+            /* @__PURE__ */ jsx26("div", { className: "col", children: /* @__PURE__ */ jsx26("code", { style: { width: "100%" }, children: "col" }) })
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("pre", { children: /* @__PURE__ */ jsx34("code", { children: `<div class="row">
+      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<div class="row">
   <div class="col">...</div>
   <div class="col">...</div>
 </div>
@@ -3580,43 +3374,43 @@ function Columns({ theme }) {
   <div class="col">...</div>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs34("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs34("div", { children: [
-        /* @__PURE__ */ jsxs34("p", { children: [
+    /* @__PURE__ */ jsxs26("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs26("div", { children: [
+        /* @__PURE__ */ jsxs26("p", { children: [
           "This system uses the same naming convention as the popular ",
-          /* @__PURE__ */ jsx34("a", { href: "https://getbootstrap.com/docs/5.3/examples/grid/" /* Bootstrap */, target: "_blanl", children: "Bootstrap CSS library" }),
+          /* @__PURE__ */ jsx26("a", { href: "https://getbootstrap.com/docs/5.3/examples/grid/" /* Bootstrap */, target: "_blanl", children: "Bootstrap CSS library" }),
           ". And just like Bootstrap, columns can have various widths, by using the ",
-          /* @__PURE__ */ jsx34("code", { children: "col-2" }),
+          /* @__PURE__ */ jsx26("code", { children: "col-2" }),
           " to ",
-          /* @__PURE__ */ jsx34("code", { children: "col-6" }),
+          /* @__PURE__ */ jsx26("code", { children: "col-6" }),
           " classes."
         ] }),
-        /* @__PURE__ */ jsx34("div", { className: "card", children: /* @__PURE__ */ jsxs34("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx34("div", { className: "col-2", children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col-2" }) }),
-          /* @__PURE__ */ jsx34("div", { className: "col", children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col" }) }),
-          /* @__PURE__ */ jsx34("div", { className: "col-6", children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col-6" }) })
+        /* @__PURE__ */ jsx26("div", { className: "card", children: /* @__PURE__ */ jsxs26("div", { className: "row disable-mobile", children: [
+          /* @__PURE__ */ jsx26("div", { className: "col-2", children: /* @__PURE__ */ jsx26("code", { style: { width: "100%" }, children: "col-2" }) }),
+          /* @__PURE__ */ jsx26("div", { className: "col", children: /* @__PURE__ */ jsx26("code", { style: { width: "100%" }, children: "col" }) }),
+          /* @__PURE__ */ jsx26("div", { className: "col-6", children: /* @__PURE__ */ jsx26("code", { style: { width: "100%" }, children: "col-6" }) })
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("pre", { children: /* @__PURE__ */ jsx34("code", { children: `<div class="row">
+      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<div class="row">
   <div class="col-2">...</div>
   <div class="col">...</div>
   <div class="col-6">...</div>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs34("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs34("div", { children: [
-        /* @__PURE__ */ jsx34("p", { children: "Columns are fully responsive. On smaller devices they transition to a row based layout, with columns being laid out vertically, one below the other." }),
-        /* @__PURE__ */ jsxs34("p", { children: [
+    /* @__PURE__ */ jsxs26("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs26("div", { children: [
+        /* @__PURE__ */ jsx26("p", { children: "Columns are fully responsive. On smaller devices they transition to a row based layout, with columns being laid out vertically, one below the other." }),
+        /* @__PURE__ */ jsxs26("p", { children: [
           "In such a layout the gap that's usually present in a horizontal layout dissapears. This means that each element within a column must provide its owne element with bottom padding (like a ",
-          /* @__PURE__ */ jsx34("code", { children: "p" }),
+          /* @__PURE__ */ jsx26("code", { children: "p" }),
           ", etc)."
         ] }),
-        /* @__PURE__ */ jsxs34("figure", { children: [
-          /* @__PURE__ */ jsx34("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-columns" /* MobileColumns */, theme, route) }),
-          /* @__PURE__ */ jsx34("figcaption", { children: "Showcase of columns on a smaller device." })
+        /* @__PURE__ */ jsxs26("figure", { children: [
+          /* @__PURE__ */ jsx26("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-columns" /* MobileColumns */, theme, route) }),
+          /* @__PURE__ */ jsx26("figcaption", { children: "Showcase of columns on a smaller device." })
         ] })
       ] }),
-      /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("pre", { children: /* @__PURE__ */ jsx34("code", { children: `<div class="row">
+      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<div class="row">
   <div>
     <p>
       <code>...</code>
@@ -3629,25 +3423,25 @@ function Columns({ theme }) {
   </div>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs34("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs34("div", { children: [
-        /* @__PURE__ */ jsxs34("p", { children: [
+    /* @__PURE__ */ jsxs26("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs26("div", { children: [
+        /* @__PURE__ */ jsxs26("p", { children: [
           "Finally, you can even omit the ",
-          /* @__PURE__ */ jsx34("code", { children: "col" }),
+          /* @__PURE__ */ jsx26("code", { children: "col" }),
           " class entirely. A ",
-          /* @__PURE__ */ jsx34("b", { children: "div" }),
+          /* @__PURE__ */ jsx26("b", { children: "div" }),
           " element will expand to fill as much width as available. Multiple ",
-          /* @__PURE__ */ jsx34("b", { children: "divs" }),
+          /* @__PURE__ */ jsx26("b", { children: "divs" }),
           " will eqpand equaly. And any other element (like an ",
-          /* @__PURE__ */ jsx34("b", { children: "image" }),
+          /* @__PURE__ */ jsx26("b", { children: "image" }),
           ", etc) will expand naturally. This makes layouts like the one below possible and easy to write."
         ] }),
-        /* @__PURE__ */ jsx34("div", { className: "card", children: /* @__PURE__ */ jsxs34("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx34("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "ssample image " }),
-          /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }) })
+        /* @__PURE__ */ jsx26("div", { className: "card", children: /* @__PURE__ */ jsxs26("div", { className: "row disable-mobile", children: [
+          /* @__PURE__ */ jsx26("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "ssample image " }),
+          /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }) })
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("pre", { children: /* @__PURE__ */ jsx34("code", { children: `<div class="row">
+      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<div class="row">
   <p 
     width="80" 
     height="80" ...>
@@ -3660,38 +3454,38 @@ function Columns({ theme }) {
 }
 
 // pages/pages/docs/custom/Containers.tsx
-import { jsx as jsx35, jsxs as jsxs35 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx27, jsxs as jsxs27 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Containers({ theme }) {
-  return /* @__PURE__ */ jsx35(DocLayout, { theme, children: /* @__PURE__ */ jsxs35("section", { className: "row", children: [
-    /* @__PURE__ */ jsxs35("div", { children: [
-      /* @__PURE__ */ jsx35("p", { children: "There are three classes that allow you to set different content widths:" }),
-      /* @__PURE__ */ jsxs35("table", { children: [
-        /* @__PURE__ */ jsx35("thead", { children: /* @__PURE__ */ jsxs35("tr", { children: [
-          /* @__PURE__ */ jsx35("th", { children: "Class" }),
-          /* @__PURE__ */ jsx35("th", { children: "Width" }),
-          /* @__PURE__ */ jsx35("th", { children: "Info" })
+  return /* @__PURE__ */ jsx27(DocLayout, { theme, children: /* @__PURE__ */ jsxs27("section", { className: "row", children: [
+    /* @__PURE__ */ jsxs27("div", { children: [
+      /* @__PURE__ */ jsx27("p", { children: "There are three classes that allow you to set different content widths:" }),
+      /* @__PURE__ */ jsxs27("table", { children: [
+        /* @__PURE__ */ jsx27("thead", { children: /* @__PURE__ */ jsxs27("tr", { children: [
+          /* @__PURE__ */ jsx27("th", { children: "Class" }),
+          /* @__PURE__ */ jsx27("th", { children: "Width" }),
+          /* @__PURE__ */ jsx27("th", { children: "Info" })
         ] }) }),
-        /* @__PURE__ */ jsxs35("tbody", { children: [
-          /* @__PURE__ */ jsxs35("tr", { children: [
-            /* @__PURE__ */ jsx35("td", { children: /* @__PURE__ */ jsx35("code", { children: "container-narrow" }) }),
-            /* @__PURE__ */ jsx35("td", { children: "800px" }),
-            /* @__PURE__ */ jsx35("td", { children: "This is the default viewport. Suitable for blogs, articles, etc." })
+        /* @__PURE__ */ jsxs27("tbody", { children: [
+          /* @__PURE__ */ jsxs27("tr", { children: [
+            /* @__PURE__ */ jsx27("td", { children: /* @__PURE__ */ jsx27("code", { children: "container-narrow" }) }),
+            /* @__PURE__ */ jsx27("td", { children: "800px" }),
+            /* @__PURE__ */ jsx27("td", { children: "This is the default viewport. Suitable for blogs, articles, etc." })
           ] }),
-          /* @__PURE__ */ jsxs35("tr", { children: [
-            /* @__PURE__ */ jsx35("td", { children: /* @__PURE__ */ jsx35("code", { children: "container-medium" }) }),
-            /* @__PURE__ */ jsx35("td", { children: "1200px" }),
-            /* @__PURE__ */ jsx35("td", { children: "A slighlty larger viewport that allows more content on the screen whilst at the same time still centering it." })
+          /* @__PURE__ */ jsxs27("tr", { children: [
+            /* @__PURE__ */ jsx27("td", { children: /* @__PURE__ */ jsx27("code", { children: "container-medium" }) }),
+            /* @__PURE__ */ jsx27("td", { children: "1200px" }),
+            /* @__PURE__ */ jsx27("td", { children: "A slighlty larger viewport that allows more content on the screen whilst at the same time still centering it." })
           ] }),
-          /* @__PURE__ */ jsxs35("tr", { children: [
-            /* @__PURE__ */ jsx35("td", { children: /* @__PURE__ */ jsx35("code", { children: "container-wide" }) }),
-            /* @__PURE__ */ jsx35("td", { children: "1600px" }),
-            /* @__PURE__ */ jsx35("td", { children: "The largest viewport. Suitable for apps, dashboard, etc." })
+          /* @__PURE__ */ jsxs27("tr", { children: [
+            /* @__PURE__ */ jsx27("td", { children: /* @__PURE__ */ jsx27("code", { children: "container-wide" }) }),
+            /* @__PURE__ */ jsx27("td", { children: "1600px" }),
+            /* @__PURE__ */ jsx27("td", { children: "The largest viewport. Suitable for apps, dashboard, etc." })
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx35("p", { children: "Of course, on mobile devices or tables, the viewport will adjust accordingly." })
+      /* @__PURE__ */ jsx27("p", { children: "Of course, on mobile devices or tables, the viewport will adjust accordingly." })
     ] }),
-    /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35("pre", { children: /* @__PURE__ */ jsx35("code", { children: `<header class="container-medium">
+    /* @__PURE__ */ jsx27("div", { children: /* @__PURE__ */ jsx27("pre", { children: /* @__PURE__ */ jsx27("code", { children: `<header class="container-medium">
   <nav>
     ....
   </nav>
@@ -3706,29 +3500,29 @@ function Containers({ theme }) {
 }
 
 // pages/pages/docs/custom/Groups.tsx
-import { jsx as jsx36, jsxs as jsxs36 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx28, jsxs as jsxs28 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Groups({ theme }) {
-  return /* @__PURE__ */ jsxs36(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs36("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs36("div", { children: [
-        /* @__PURE__ */ jsxs36("p", { children: [
+  return /* @__PURE__ */ jsxs28(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs28("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs28("div", { children: [
+        /* @__PURE__ */ jsxs28("p", { children: [
           "Some elements are visually meant to ",
-          /* @__PURE__ */ jsx36("q", { children: "stick" }),
+          /* @__PURE__ */ jsx28("q", { children: "stick" }),
           " together. In such a case, you can wrap them in a parent that's been given the ",
-          /* @__PURE__ */ jsx36("code", { children: "group" }),
+          /* @__PURE__ */ jsx28("code", { children: "group" }),
           " class."
         ] }),
-        /* @__PURE__ */ jsxs36("p", { children: [
+        /* @__PURE__ */ jsxs28("p", { children: [
           "In the case of a group of ",
-          /* @__PURE__ */ jsx36("code", { children: "buttons" }),
+          /* @__PURE__ */ jsx28("code", { children: "buttons" }),
           ", all horizontal spacing and borders between them dissapear."
         ] }),
-        /* @__PURE__ */ jsxs36("p", { className: "group", children: [
-          /* @__PURE__ */ jsx36("button", { children: "Option 1" }),
-          /* @__PURE__ */ jsx36("button", { type: "reset", children: "Option 2" })
+        /* @__PURE__ */ jsxs28("p", { className: "group", children: [
+          /* @__PURE__ */ jsx28("button", { children: "Option 1" }),
+          /* @__PURE__ */ jsx28("button", { type: "reset", children: "Option 2" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("pre", { children: /* @__PURE__ */ jsx36("code", { children: `<p class="group">
+      /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<p class="group">
   <button>
     Option 1
   </button>f
@@ -3737,19 +3531,19 @@ function Groups({ theme }) {
   </button>
 </p>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs36("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs36("div", { children: [
-        /* @__PURE__ */ jsxs36("p", { children: [
+    /* @__PURE__ */ jsxs28("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs28("div", { children: [
+        /* @__PURE__ */ jsxs28("p", { children: [
           "In the case of a group of ",
-          /* @__PURE__ */ jsx36("code", { children: "marks" }),
+          /* @__PURE__ */ jsx28("code", { children: "marks" }),
           ", they're also pulled together and have any vertical space dissapear."
         ] }),
-        /* @__PURE__ */ jsxs36("p", { className: "group", children: [
-          /* @__PURE__ */ jsx36("mark", { children: "#test" }),
-          /* @__PURE__ */ jsx36("mark", { className: "success", children: "v1.0.0" })
+        /* @__PURE__ */ jsxs28("p", { className: "group", children: [
+          /* @__PURE__ */ jsx28("mark", { children: "#test" }),
+          /* @__PURE__ */ jsx28("mark", { className: "success", children: "v1.0.0" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("pre", { children: /* @__PURE__ */ jsx36("code", { children: `<p class="group">
+      /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<p class="group">
   <mark>
     #test
   </mark>
@@ -3759,16 +3553,16 @@ function Groups({ theme }) {
   </mark>
 </p>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs36("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs36("div", { children: [
-        /* @__PURE__ */ jsx36("p", { children: "Grouping elements really shines in the case of forms and form inputs. You can see below an example of a compact login form." }),
-        /* @__PURE__ */ jsx36("form", { children: /* @__PURE__ */ jsxs36("div", { className: "group", children: [
-          /* @__PURE__ */ jsx36("input", { id: "email", type: "email", placeholder: "Email" }),
-          /* @__PURE__ */ jsx36("input", { id: "password", type: "password", placeholder: "Password" }),
-          /* @__PURE__ */ jsx36("input", { type: "submit", value: "Login" })
+    /* @__PURE__ */ jsxs28("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs28("div", { children: [
+        /* @__PURE__ */ jsx28("p", { children: "Grouping elements really shines in the case of forms and form inputs. You can see below an example of a compact login form." }),
+        /* @__PURE__ */ jsx28("form", { children: /* @__PURE__ */ jsxs28("div", { className: "group", children: [
+          /* @__PURE__ */ jsx28("input", { id: "email", type: "email", placeholder: "Email" }),
+          /* @__PURE__ */ jsx28("input", { id: "password", type: "password", placeholder: "Password" }),
+          /* @__PURE__ */ jsx28("input", { type: "submit", value: "Login" })
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("pre", { children: /* @__PURE__ */ jsx36("code", { children: `<form>
+      /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<form>
   <div class="group">
     <input 
       id="email" 
@@ -3784,11 +3578,11 @@ function Groups({ theme }) {
   </div>
 </form>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs36("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs36("div", { children: [
-        /* @__PURE__ */ jsx36("p", { children: "Grouping elements can be used to style icons and text together." }),
-        /* @__PURE__ */ jsxs36("div", { className: "group", children: [
-          /* @__PURE__ */ jsxs36(
+    /* @__PURE__ */ jsxs28("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs28("div", { children: [
+        /* @__PURE__ */ jsx28("p", { children: "Grouping elements can be used to style icons and text together." }),
+        /* @__PURE__ */ jsxs28("div", { className: "group", children: [
+          /* @__PURE__ */ jsxs28(
             "svg",
             {
               xmlns: "http://www.w3.org/2000/svg",
@@ -3801,15 +3595,15 @@ function Groups({ theme }) {
               strokeLinecap: "round",
               strokeLinejoin: "round",
               children: [
-                /* @__PURE__ */ jsx36("path", { d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" }),
-                /* @__PURE__ */ jsx36("circle", { cx: "12", cy: "10", r: "3" })
+                /* @__PURE__ */ jsx28("path", { d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" }),
+                /* @__PURE__ */ jsx28("circle", { cx: "12", cy: "10", r: "3" })
               ]
             }
           ),
-          /* @__PURE__ */ jsx36("b", { children: "Test Address, SE11 8CL" })
+          /* @__PURE__ */ jsx28("b", { children: "Test Address, SE11 8CL" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("pre", { children: /* @__PURE__ */ jsx36("code", { children: `<div class="group">
+      /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<div class="group">
   <svg 
     width="20" 
     height="20" ...>
@@ -3819,15 +3613,15 @@ function Groups({ theme }) {
   </b>
 </div>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs36("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs36("div", { children: [
-        /* @__PURE__ */ jsx36("p", { children: "Other elements, such as images, can also be grouped, although the impact isn't as pronounced." }),
-        /* @__PURE__ */ jsxs36("p", { className: "group", children: [
-          /* @__PURE__ */ jsx36("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "image 1" }),
-          /* @__PURE__ */ jsx36("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/120/120", alt: "image 2" })
+    /* @__PURE__ */ jsxs28("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs28("div", { children: [
+        /* @__PURE__ */ jsx28("p", { children: "Other elements, such as images, can also be grouped, although the impact isn't as pronounced." }),
+        /* @__PURE__ */ jsxs28("p", { className: "group", children: [
+          /* @__PURE__ */ jsx28("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "image 1" }),
+          /* @__PURE__ */ jsx28("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/120/120", alt: "image 2" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("pre", { children: /* @__PURE__ */ jsx36("code", { children: `<p class="group">
+      /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<p class="group">
   <img 
     width="80" 
     height="80" 
@@ -3844,20 +3638,20 @@ function Groups({ theme }) {
 }
 
 // pages/pages/docs/layout/Header.tsx
-import { jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx29, jsxs as jsxs29 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Header({ theme }) {
   const route = useRoute();
-  return /* @__PURE__ */ jsxs37(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs37("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs37("div", { children: [
-        /* @__PURE__ */ jsxs37("p", { children: [
+  return /* @__PURE__ */ jsxs29(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs29("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs29("div", { children: [
+        /* @__PURE__ */ jsxs29("p", { children: [
           "A ",
-          /* @__PURE__ */ jsx37("code", { children: "header" }),
+          /* @__PURE__ */ jsx29("code", { children: "header" }),
           " is used to define the introductory content of a page or section. The simplest top level header can contain a navigation element:"
         ] }),
-        /* @__PURE__ */ jsx37("iframe", { scrolling: "no", width: "100%", height: 275, src: RouteMaster.showcase("layout-header-simple" /* LayoutHeaderSimple */, theme, route) })
+        /* @__PURE__ */ jsx29("iframe", { scrolling: "no", width: "100%", height: 275, src: RouteMaster.example("layout-header-simple" /* LayoutHeaderSimple */, theme, route) })
       ] }),
-      /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("pre", { children: /* @__PURE__ */ jsx37("code", { children: `<header>
+      /* @__PURE__ */ jsx29("div", { children: /* @__PURE__ */ jsx29("pre", { children: /* @__PURE__ */ jsx29("code", { children: `<header>
   <nav>
     <ul>
       <li>
@@ -3878,12 +3672,12 @@ function Header({ theme }) {
   <p>Lorem ipsum...</p>
 </main>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs37("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs37("div", { children: [
-        /* @__PURE__ */ jsx37("p", { children: "More compelx headers can contain both the navigation as well as a call to action, a brand promo, etc." }),
-        /* @__PURE__ */ jsx37("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showcase("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
+    /* @__PURE__ */ jsxs29("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs29("div", { children: [
+        /* @__PURE__ */ jsx29("p", { children: "More compelx headers can contain both the navigation as well as a call to action, a brand promo, etc." }),
+        /* @__PURE__ */ jsx29("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
       ] }),
-      /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("pre", { children: /* @__PURE__ */ jsx37("code", { children: `<header>
+      /* @__PURE__ */ jsx29("div", { children: /* @__PURE__ */ jsx29("pre", { children: /* @__PURE__ */ jsx29("code", { children: `<header>
   <nav>
     <ul>
       <li>
@@ -3917,12 +3711,12 @@ function Header({ theme }) {
   <p>Lorem ipsum...</p>
 </main>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs37("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs37("div", { children: [
-        /* @__PURE__ */ jsx37("p", { children: "Section headers can be combined with other elements to form banners:" }),
-        /* @__PURE__ */ jsx37("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showcase("layout-header-section" /* LayoutHeaderSection */, theme, route) })
+    /* @__PURE__ */ jsxs29("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs29("div", { children: [
+        /* @__PURE__ */ jsx29("p", { children: "Section headers can be combined with other elements to form banners:" }),
+        /* @__PURE__ */ jsx29("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-section" /* LayoutHeaderSection */, theme, route) })
       ] }),
-      /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("pre", { children: /* @__PURE__ */ jsx37("code", { children: `>main>
+      /* @__PURE__ */ jsx29("div", { children: /* @__PURE__ */ jsx29("pre", { children: /* @__PURE__ */ jsx29("code", { children: `>main>
   <section>
     <header>
       <div>
@@ -3946,66 +3740,45 @@ function Header({ theme }) {
   ] });
 }
 
-// pages/pages/showcase/LayoutHeaderSection.tsx
-import { Fragment as Fragment9, jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function LayoutHeaderSection() {
-  return /* @__PURE__ */ jsxs38(Fragment9, { children: [
-    /* @__PURE__ */ jsx38("header", { children: /* @__PURE__ */ jsx38("nav", { children: /* @__PURE__ */ jsx38("ul", { children: /* @__PURE__ */ jsx38("li", { children: /* @__PURE__ */ jsx38("a", { href: "", children: "Home" }) }) }) }) }),
-    /* @__PURE__ */ jsxs38("main", { children: [
-      /* @__PURE__ */ jsx38("h1", { children: "Title" }),
-      /* @__PURE__ */ jsx38("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-      /* @__PURE__ */ jsx38("section", { children: /* @__PURE__ */ jsx38("header", { children: /* @__PURE__ */ jsx38("div", { style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: /* @__PURE__ */ jsx38("div", { className: "group", children: /* @__PURE__ */ jsxs38("div", { className: "row", children: [
-        /* @__PURE__ */ jsxs38("div", { children: [
-          /* @__PURE__ */ jsx38("b", { children: "Try Now" }),
-          /* @__PURE__ */ jsx38("br", {}),
-          "Subtitle"
-        ] }),
-        /* @__PURE__ */ jsx38("div", { className: "gap" }),
-        /* @__PURE__ */ jsx38("button", { children: "Download" })
-      ] }) }) }) }) })
-    ] })
-  ] });
-}
-
 // pages/pages/docs/navigation/Breadcrumbs.tsx
-import { jsx as jsx39, jsxs as jsxs39 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx30, jsxs as jsxs30 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Breadcrumbs({ theme }) {
   const route = useRoute();
-  return /* @__PURE__ */ jsx39(DocLayout, { theme, children: /* @__PURE__ */ jsxs39("section", { className: "row", children: [
-    /* @__PURE__ */ jsxs39("div", { children: [
-      /* @__PURE__ */ jsxs39("p", { children: [
+  return /* @__PURE__ */ jsx30(DocLayout, { theme, children: /* @__PURE__ */ jsxs30("section", { className: "row", children: [
+    /* @__PURE__ */ jsxs30("div", { children: [
+      /* @__PURE__ */ jsxs30("p", { children: [
         "The breadcrumbs navigaion element is created by placing an ordered list of links inside the ",
-        /* @__PURE__ */ jsx39("code", { children: "nav" }),
+        /* @__PURE__ */ jsx30("code", { children: "nav" }),
         " element."
       ] }),
-      /* @__PURE__ */ jsxs39("p", { children: [
+      /* @__PURE__ */ jsxs30("p", { children: [
         "As with unordered lists, you can denote the selected elment using the ",
-        /* @__PURE__ */ jsx39("code", { children: "aria-selected" }),
+        /* @__PURE__ */ jsx30("code", { children: "aria-selected" }),
         " attribute."
       ] }),
-      /* @__PURE__ */ jsx39("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs39("ol", { children: [
-        /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsx39("a", { href: "", children: "Home" }) }),
-        /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsx39("a", { href: "", children: "Library" }) }),
-        /* @__PURE__ */ jsx39("li", { "aria-selected": true, children: /* @__PURE__ */ jsx39("a", { href: "", children: "Data" }) })
+      /* @__PURE__ */ jsx30("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs30("ol", { children: [
+        /* @__PURE__ */ jsx30("li", { children: /* @__PURE__ */ jsx30("a", { href: "", children: "Home" }) }),
+        /* @__PURE__ */ jsx30("li", { children: /* @__PURE__ */ jsx30("a", { href: "", children: "Library" }) }),
+        /* @__PURE__ */ jsx30("li", { "aria-selected": true, children: /* @__PURE__ */ jsx30("a", { href: "", children: "Data" }) })
       ] }) }),
-      /* @__PURE__ */ jsx39("p", { children: "Likewise, icons can be added to any link element, but unlike normal unordered navigation sub-lists will not be displayed." }),
-      /* @__PURE__ */ jsx39("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs39("ol", { children: [
-        /* @__PURE__ */ jsx39("li", { children: /* @__PURE__ */ jsxs39("a", { href: "", children: [
-          /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-            /* @__PURE__ */ jsx39("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-            /* @__PURE__ */ jsx39("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+      /* @__PURE__ */ jsx30("p", { children: "Likewise, icons can be added to any link element, but unlike normal unordered navigation sub-lists will not be displayed." }),
+      /* @__PURE__ */ jsx30("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs30("ol", { children: [
+        /* @__PURE__ */ jsx30("li", { children: /* @__PURE__ */ jsxs30("a", { href: "", children: [
+          /* @__PURE__ */ jsxs30("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsx30("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+            /* @__PURE__ */ jsx30("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
           ] }),
-          /* @__PURE__ */ jsx39("span", { children: "Home" })
+          /* @__PURE__ */ jsx30("span", { children: "Home" })
         ] }) }),
-        /* @__PURE__ */ jsx39("li", { "aria-selected": true, children: /* @__PURE__ */ jsx39("a", { href: "", children: "Folder" }) })
+        /* @__PURE__ */ jsx30("li", { "aria-selected": true, children: /* @__PURE__ */ jsx30("a", { href: "", children: "Folder" }) })
       ] }) }),
-      /* @__PURE__ */ jsx39("p", { children: "Finally, breadcrumbs are also responsive." }),
-      /* @__PURE__ */ jsxs39("figure", { children: [
-        /* @__PURE__ */ jsx39("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-breadcrumbs" /* MobileBreadcrumbs */, theme, route) }),
-        /* @__PURE__ */ jsx39("figcaption", { children: "Showcase of breadcrumbs on a smaller device" })
+      /* @__PURE__ */ jsx30("p", { children: "Finally, breadcrumbs are also responsive." }),
+      /* @__PURE__ */ jsxs30("figure", { children: [
+        /* @__PURE__ */ jsx30("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-breadcrumbs" /* MobileBreadcrumbs */, theme, route) }),
+        /* @__PURE__ */ jsx30("figcaption", { children: "Showcase of breadcrumbs on a smaller device" })
       ] })
     ] }),
-    /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsx39("pre", { children: /* @__PURE__ */ jsx39("code", { children: `<nav>
+    /* @__PURE__ */ jsx30("div", { children: /* @__PURE__ */ jsx30("pre", { children: /* @__PURE__ */ jsx30("code", { children: `<nav>
   <ol>
     <li>
       <a href="...">
@@ -4030,23 +3803,250 @@ function Breadcrumbs({ theme }) {
   ] }) });
 }
 
-// pages/pages/showcase/MobileBreadcrumbs.tsx
-import { Fragment as Fragment10, jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+// pages/pages/examples/LayoutHeaderSection.tsx
+import { Fragment as Fragment2, jsx as jsx31, jsxs as jsxs31 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function LayoutHeaderSection() {
+  return /* @__PURE__ */ jsxs31(Fragment2, { children: [
+    /* @__PURE__ */ jsx31("header", { children: /* @__PURE__ */ jsx31("nav", { children: /* @__PURE__ */ jsx31("ul", { children: /* @__PURE__ */ jsx31("li", { children: /* @__PURE__ */ jsx31("a", { href: "", children: "Home" }) }) }) }) }),
+    /* @__PURE__ */ jsxs31("main", { children: [
+      /* @__PURE__ */ jsx31("h1", { children: "Title" }),
+      /* @__PURE__ */ jsx31("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
+      /* @__PURE__ */ jsx31("section", { children: /* @__PURE__ */ jsx31("header", { children: /* @__PURE__ */ jsx31("div", { style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: /* @__PURE__ */ jsx31("div", { className: "group", children: /* @__PURE__ */ jsxs31("div", { className: "row", children: [
+        /* @__PURE__ */ jsxs31("div", { children: [
+          /* @__PURE__ */ jsx31("b", { children: "Try Now" }),
+          /* @__PURE__ */ jsx31("br", {}),
+          "Subtitle"
+        ] }),
+        /* @__PURE__ */ jsx31("div", { className: "gap" }),
+        /* @__PURE__ */ jsx31("button", { children: "Download" })
+      ] }) }) }) }) })
+    ] })
+  ] });
+}
+
+// pages/pages/examples/MobileBreadcrumbs.tsx
+import { Fragment as Fragment3, jsx as jsx32, jsxs as jsxs32 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileBreadcrumbs() {
-  return /* @__PURE__ */ jsxs40(Fragment10, { children: [
-    /* @__PURE__ */ jsx40("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx40("nav", { children: /* @__PURE__ */ jsxs40("ol", { children: [
-      /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsx40("a", { href: "", children: "Home" }) }),
-      /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsx40("a", { href: "", children: "Library" }) }),
-      /* @__PURE__ */ jsxs40("li", { "aria-selected": true, children: [
-        /* @__PURE__ */ jsx40("a", { href: "", children: "Data" }),
-        /* @__PURE__ */ jsx40("ul", { children: /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsx40("a", { href: "", children: "Not visible" }) }) })
+  return /* @__PURE__ */ jsxs32(Fragment3, { children: [
+    /* @__PURE__ */ jsx32("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx32("nav", { children: /* @__PURE__ */ jsxs32("ol", { children: [
+      /* @__PURE__ */ jsx32("li", { children: /* @__PURE__ */ jsx32("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx32("li", { children: /* @__PURE__ */ jsx32("a", { href: "", children: "Library" }) }),
+      /* @__PURE__ */ jsxs32("li", { "aria-selected": true, children: [
+        /* @__PURE__ */ jsx32("a", { href: "", children: "Data" }),
+        /* @__PURE__ */ jsx32("ul", { children: /* @__PURE__ */ jsx32("li", { children: /* @__PURE__ */ jsx32("a", { href: "", children: "Not visible" }) }) })
       ] })
     ] }) }) }),
-    /* @__PURE__ */ jsx40("main", { children: /* @__PURE__ */ jsxs40("article", { children: [
-      /* @__PURE__ */ jsx40("h1", { children: "Heading 1" }),
-      /* @__PURE__ */ jsx40("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    /* @__PURE__ */ jsx32("main", { children: /* @__PURE__ */ jsxs32("article", { children: [
+      /* @__PURE__ */ jsx32("h1", { children: "Heading 1" }),
+      /* @__PURE__ */ jsx32("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
     ] }) })
   ] });
+}
+
+// pages/pages/examples/DekstopMenu.tsx
+import { Fragment as Fragment4, jsx as jsx33, jsxs as jsxs33 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function DesktopMenu() {
+  return /* @__PURE__ */ jsxs33(Fragment4, { children: [
+    /* @__PURE__ */ jsx33("header", { style: { maxWidth: "600px" }, className: "disable-mobile", children: /* @__PURE__ */ jsxs33("menu", { children: [
+      /* @__PURE__ */ jsx33("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs33("a", { href: "", children: [
+        /* @__PURE__ */ jsxs33("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+          /* @__PURE__ */ jsx33("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+          /* @__PURE__ */ jsx33("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+        ] }),
+        /* @__PURE__ */ jsx33("span", { children: "Home" })
+      ] }) }),
+      /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsxs33("a", { href: "", children: [
+        /* @__PURE__ */ jsxs33("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx33("path", { d: "M4 11a9 9 0 0 1 9 9" }),
+          /* @__PURE__ */ jsx33("path", { d: "M4 4a16 16 0 0 1 16 16" }),
+          /* @__PURE__ */ jsx33("circle", { cx: "5", cy: "19", r: "1" })
+        ] }),
+        /* @__PURE__ */ jsx33("span", { children: "Latest" })
+      ] }) }),
+      /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsxs33("a", { href: "", children: [
+        /* @__PURE__ */ jsxs33("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx33("path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2" }),
+          /* @__PURE__ */ jsx33("path", { d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" }),
+          /* @__PURE__ */ jsx33("circle", { cx: "10", cy: "7", r: "4" })
+        ] }),
+        /* @__PURE__ */ jsx33("span", { children: "Profile" })
+      ] }) })
+    ] }) }),
+    /* @__PURE__ */ jsx33("main", { children: /* @__PURE__ */ jsxs33("article", { children: [
+      /* @__PURE__ */ jsx33("h1", { children: "Heading 1" }),
+      /* @__PURE__ */ jsx33("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    ] }) })
+  ] });
+}
+
+// pages/pages/examples/LayoutHeaderNav.tsx
+import { Fragment as Fragment5, jsx as jsx34, jsxs as jsxs34 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function LayoutHeaderNav() {
+  return /* @__PURE__ */ jsxs34(Fragment5, { children: [
+    /* @__PURE__ */ jsx34("header", { children: /* @__PURE__ */ jsx34("nav", { children: /* @__PURE__ */ jsxs34("ul", { children: [
+      /* @__PURE__ */ jsx34("li", { children: /* @__PURE__ */ jsx34("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx34("li", { children: /* @__PURE__ */ jsx34("a", { href: "", children: "About" }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsxs34("main", { children: [
+      /* @__PURE__ */ jsx34("h1", { children: "Title" }),
+      /* @__PURE__ */ jsx34("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    ] })
+  ] });
+}
+
+// pages/pages/examples/LayoutHeaderComplex.tsx
+import { Fragment as Fragment6, jsx as jsx35, jsxs as jsxs35 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function LayoutHeaderComplex() {
+  return /* @__PURE__ */ jsxs35(Fragment6, { children: [
+    /* @__PURE__ */ jsxs35("header", { children: [
+      /* @__PURE__ */ jsx35("nav", { children: /* @__PURE__ */ jsx35("ul", { children: /* @__PURE__ */ jsx35("li", { children: /* @__PURE__ */ jsx35("a", { href: "", children: "Home" }) }) }) }),
+      /* @__PURE__ */ jsxs35("div", { className: "align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
+        /* @__PURE__ */ jsx35("h2", { children: "My blog" }),
+        /* @__PURE__ */ jsx35("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
+        /* @__PURE__ */ jsx35("form", { children: /* @__PURE__ */ jsxs35("div", { className: "group", children: [
+          /* @__PURE__ */ jsx35("input", { type: "email", placeholder: "name@example.com" }),
+          /* @__PURE__ */ jsx35("input", { type: "submit", value: "Subscribe" })
+        ] }) })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxs35("main", { children: [
+      /* @__PURE__ */ jsx35("h1", { children: "Title" }),
+      /* @__PURE__ */ jsx35("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    ] })
+  ] });
+}
+
+// pages/pages/examples/MobileColumns.tsx
+import { Fragment as Fragment7, jsx as jsx36, jsxs as jsxs36 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function MobileColumns() {
+  return /* @__PURE__ */ jsx36(Fragment7, { children: /* @__PURE__ */ jsx36("main", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsx36("article", { children: /* @__PURE__ */ jsxs36("div", { className: "row", children: [
+    /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("code", { style: { width: "100%" }, children: "col" }) }),
+    /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("code", { style: { width: "100%" }, children: "col" }) })
+  ] }) }) }) });
+}
+
+// pages/pages/examples/MobileMenu.tsx
+import { Fragment as Fragment8, jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function MobileMenu() {
+  return /* @__PURE__ */ jsxs37(Fragment8, { children: [
+    /* @__PURE__ */ jsx37("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx37("nav", { children: /* @__PURE__ */ jsxs37("menu", { children: [
+      /* @__PURE__ */ jsx37("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs37("a", { href: "", children: [
+        /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+          /* @__PURE__ */ jsx37("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+          /* @__PURE__ */ jsx37("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+        ] }),
+        /* @__PURE__ */ jsx37("span", { children: "Home" })
+      ] }) }),
+      /* @__PURE__ */ jsx37("li", { children: /* @__PURE__ */ jsxs37("a", { href: "", children: [
+        /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx37("path", { d: "M4 11a9 9 0 0 1 9 9" }),
+          /* @__PURE__ */ jsx37("path", { d: "M4 4a16 16 0 0 1 16 16" }),
+          /* @__PURE__ */ jsx37("circle", { cx: "5", cy: "19", r: "1" })
+        ] }),
+        /* @__PURE__ */ jsx37("span", { children: "Latest" })
+      ] }) }),
+      /* @__PURE__ */ jsx37("li", { children: /* @__PURE__ */ jsxs37("a", { href: "", children: [
+        /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx37("path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2" }),
+          /* @__PURE__ */ jsx37("path", { d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" }),
+          /* @__PURE__ */ jsx37("circle", { cx: "10", cy: "7", r: "4" })
+        ] }),
+        /* @__PURE__ */ jsx37("span", { children: "Profile" })
+      ] }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx37("main", { children: /* @__PURE__ */ jsxs37("article", { children: [
+      /* @__PURE__ */ jsx37("h1", { children: "Heading 1" }),
+      /* @__PURE__ */ jsx37("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    ] }) })
+  ] });
+}
+
+// pages/pages/examples/MobileNav.tsx
+import { Fragment as Fragment9, jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function MobileNav() {
+  return /* @__PURE__ */ jsxs38(Fragment9, { children: [
+    /* @__PURE__ */ jsx38("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx38("nav", { children: /* @__PURE__ */ jsxs38("ul", { children: [
+      /* @__PURE__ */ jsx38("li", { children: /* @__PURE__ */ jsxs38("a", { href: "", children: [
+        /* @__PURE__ */ jsxs38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx38("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+          /* @__PURE__ */ jsx38("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+        ] }),
+        /* @__PURE__ */ jsx38("span", { children: "Home" })
+      ] }) }),
+      /* @__PURE__ */ jsx38("li", { children: /* @__PURE__ */ jsxs38("a", { href: "", children: [
+        /* @__PURE__ */ jsxs38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx38("path", { d: "m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" }),
+          /* @__PURE__ */ jsx38("path", { d: "m18 15 4-4" }),
+          /* @__PURE__ */ jsx38("path", { d: "m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" })
+        ] }),
+        /* @__PURE__ */ jsx38("span", { children: "Docs" })
+      ] }) }),
+      /* @__PURE__ */ jsxs38("li", { children: [
+        /* @__PURE__ */ jsxs38("a", { href: "", children: [
+          /* @__PURE__ */ jsxs38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", className: "lucide lucide-circle-chevron-right-icon lucide-circle-chevron-right", children: [
+            /* @__PURE__ */ jsx38("circle", { cx: "12", cy: "12", r: "10" }),
+            /* @__PURE__ */ jsx38("path", { d: "m10 8 4 4-4 4" })
+          ] }),
+          /* @__PURE__ */ jsx38("span", { children: "More" })
+        ] }),
+        /* @__PURE__ */ jsxs38("ul", { children: [
+          /* @__PURE__ */ jsx38("li", { children: /* @__PURE__ */ jsx38("a", { href: "", children: "Option 1" }) }),
+          /* @__PURE__ */ jsx38("li", { children: /* @__PURE__ */ jsx38("a", { href: "", children: "Option 2" }) })
+        ] })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx38("main", { children: /* @__PURE__ */ jsxs38("article", { children: [
+      /* @__PURE__ */ jsx38("h1", { children: "Heading 1" }),
+      /* @__PURE__ */ jsx38("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    ] }) })
+  ] });
+}
+
+// pages/pages/examples/MobileTabs.tsx
+import { useState as useState7 } from "https://esm.sh/react@19.2.0";
+import { jsx as jsx39, jsxs as jsxs39 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function MobileTabs() {
+  const [selected, setSelected] = useState7("tab-1");
+  return /* @__PURE__ */ jsx39("main", { children: /* @__PURE__ */ jsxs39("div", { className: "row disable-mobile", children: [
+    /* @__PURE__ */ jsx39("aside", { children: /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsxs39("menu", { children: [
+      /* @__PURE__ */ jsx39("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs39("a", { onClick: () => setSelected("tab-1"), children: [
+        /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx39("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+          /* @__PURE__ */ jsx39("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+        ] }),
+        /* @__PURE__ */ jsx39("span", { children: "Home" })
+      ] }) }),
+      /* @__PURE__ */ jsx39("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs39("a", { onClick: () => setSelected("tab-2"), children: [
+        /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx39("path", { d: "M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" }),
+          /* @__PURE__ */ jsx39("circle", { cx: "12", cy: "13", r: "1" })
+        ] }),
+        /* @__PURE__ */ jsx39("span", { children: "Projects" })
+      ] }) }),
+      /* @__PURE__ */ jsx39("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs39("a", { onClick: () => setSelected("tab-3"), children: [
+        /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx39("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
+          /* @__PURE__ */ jsx39("circle", { cx: "12", cy: "7", r: "4" })
+        ] }),
+        /* @__PURE__ */ jsx39("span", { children: "Users" })
+      ] }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsxs39("div", { className: "card", style: { flexGrow: 1 }, children: [
+      selected === "tab-1" ? /* @__PURE__ */ jsx39(Tab1, {}) : null,
+      selected === "tab-2" ? /* @__PURE__ */ jsx39(Tab2, {}) : null,
+      selected === "tab-3" ? /* @__PURE__ */ jsx39(Tab3, {}) : null
+    ] })
+  ] }) });
+}
+
+// pages/pages/examples/MobileTypography.tsx
+import { Fragment as Fragment10, jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function MobileTypography() {
+  return /* @__PURE__ */ jsx40(Fragment10, { children: /* @__PURE__ */ jsx40("main", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx40("article", { children: /* @__PURE__ */ jsxs40("p", { children: [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
+    /* @__PURE__ */ jsx40("b", { children: "tempor" }),
+    " incididunt ut labore et dolore magna aliqua."
+  ] }) }) }) });
 }
 
 // pages/common/utils/routes.ts
@@ -4220,29 +4220,29 @@ var RouteMaster = class _RouteMaster {
     }
     return void 0;
   }
-  static showcase(route, theme, domain) {
+  static example(route, theme, domain) {
     const base = _RouteMaster.getBase(domain);
     switch (route) {
       case "desktop-menu" /* DekstopMenu */:
-        return `${base}${theme}/pages/showcase/${htmlName(DesktopMenu)}`;
+        return `${base}${theme}/pages/examples/${htmlName(DesktopMenu)}`;
       case "layout-header-simple" /* LayoutHeaderSimple */:
-        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderNav)}`;
+        return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderNav)}`;
       case "layout-header-sub" /* LayoutHeaderComplex */:
-        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderComplex)}`;
+        return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderComplex)}`;
       case "layout-header-section" /* LayoutHeaderSection */:
-        return `${base}${theme}/pages/showcase/${htmlName(LayoutHeaderSection)}`;
+        return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderSection)}`;
       case "mobile-columns" /* MobileColumns */:
-        return `${base}${theme}/pages/showcase/${htmlName(MobileColumns)}`;
+        return `${base}${theme}/pages/examples/${htmlName(MobileColumns)}`;
       case "mobile-menu" /* MobileMenu */:
-        return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
+        return `${base}${theme}/pages/examples/${htmlName(MobileMenu)}`;
       case "mobile-nav" /* MobileNav */:
-        return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;
+        return `${base}${theme}/pages/examples/${htmlName(MobileNav)}`;
       case "mobile-breadcrumbs" /* MobileBreadcrumbs */:
-        return `${base}${theme}/pages/showcase/${htmlName(MobileBreadcrumbs)}`;
+        return `${base}${theme}/pages/examples/${htmlName(MobileBreadcrumbs)}`;
       case "mobile-tabs-nav" /* MobileTabsNav */:
-        return `${base}${theme}/pages/showcase/${htmlName(MobileTabs)}`;
+        return `${base}${theme}/pages/examples/${htmlName(MobileTabs)}`;
       case "mobile-typography" /* MobileTypography */:
-        return `${base}${theme}/pages/showcase/${htmlName(MobileTypography)}`;
+        return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
     }
   }
   static getBase(domain) {

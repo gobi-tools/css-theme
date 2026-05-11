@@ -1,7 +1,7 @@
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
-import { ELinks, EShowcase } from "../../../common/utils/types";
+import { ELinks, EExamples } from "../../../common/utils/types";
 
 export default function Columns({ theme }) {
   const route = useRoute();
@@ -96,7 +96,7 @@ export default function Columns({ theme }) {
           </p>
 
           <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileColumns, theme, route)} />
+            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileColumns, theme, route)} />
 
             <figcaption>
               Showcase of columns on a smaller device.

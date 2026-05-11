@@ -13,7 +13,10 @@ const themes = Object.keys(EThemes);
 // get all html files
 const files = fg.sync('**/*.html', {
   cwd: DIST_DIR,
-}).filter(f => !f.startsWith('showcase')).map(f => `pages/${f}`);
+})
+  .filter(f => !f.startsWith('examples'))
+  .filter(f => !f.startsWith('showcase'))
+  .map(f => `pages/${f}`);
 files.push('index.html');
 
 const browser = await chromium.launch({

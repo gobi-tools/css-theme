@@ -1,7 +1,7 @@
 import DocLayout from "../../../common/components/DocsLayout"
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes"
-import { EShowcase } from "../../../common/utils/types"
+import { EExamples } from "../../../common/utils/types"
 
 export default function Navigation({ theme }) {
   const route = useRoute();
@@ -266,7 +266,7 @@ export default function Navigation({ theme }) {
             on smaller displays it switches to a vertical layout.
           </p>
           <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileNav, theme, route)} />
+            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileNav, theme, route)} />
             <figcaption>Showcase of navigation on a smaller device</figcaption>
           </figure>
         </div>

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import DocLayout from "../../../common/components/DocsLayout";
 import { RouteMaster } from "../../../common/utils/routes";
-import { EShowcase } from "../../../common/utils/types";
+import { EExamples } from "../../../common/utils/types";
 import { useRoute } from "../../../common/effects/useRoute";
 
 export type TSelectedTab = 'tab-1' | 'tab-2' | 'tab-3';
@@ -153,7 +153,7 @@ export default function Tabs({ theme }) {
             vertically.
           </p>
           <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.showcase(EShowcase.MobileTabsNav, theme, route)} />
+            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileTabsNav, theme, route)} />
 
             <figcaption>
               Showcase of tabbed navigation in a smaller container or device.

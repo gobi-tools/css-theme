@@ -1,7 +1,7 @@
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
-import { EShowcase } from "../../../common/utils/types";
+import { EExamples } from "../../../common/utils/types";
 
 export default function Header({ theme }) {
   const route = useRoute();
@@ -14,7 +14,7 @@ export default function Header({ theme }) {
             A <code>header</code> is used to define the introductory content of a page or section.
             The simplest top level header can contain a navigation element:
           </p>
-          <iframe scrolling="no" width="100%" height={275} src={RouteMaster.showcase(EShowcase.LayoutHeaderSimple, theme, route)} />
+          <iframe scrolling="no" width="100%" height={275} src={RouteMaster.example(EExamples.LayoutHeaderSimple, theme, route)} />
         </div>
         <div>
           <pre><code>
@@ -52,7 +52,7 @@ export default function Header({ theme }) {
             Inside a header you can create more complex layouts, to highlight 
             a call to action, a brand promo, etc.
           </p> */}
-          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showcase(EShowcase.LayoutHeaderComplex, theme, route)} />
+          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderComplex, theme, route)} />
         </div>
         <div>
           <pre><code>
@@ -98,7 +98,7 @@ export default function Header({ theme }) {
           <p>
             Section headers can be combined with other elements to form banners:
           </p>
-          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showcase(EShowcase.LayoutHeaderSection, theme, route)} />
+          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderSection, theme, route)} />
         </div>
         <div>
           <pre><code>
