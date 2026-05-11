@@ -6,7 +6,7 @@ export default function MobileTabs() {
 
   return (
     <main>
-      <div style={{ display: 'flex', flexDirection: 'row', gap: 'var(--space-6)' }}>
+      <div className="row disable-mobile">
         <aside>
           <div>
             <menu>

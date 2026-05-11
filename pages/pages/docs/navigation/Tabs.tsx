@@ -79,15 +79,10 @@ export default function Tabs({ theme }) {
       <section className="row">
         <div>
           <p>
-            Standard navigation is suitable for switching
-            between pages, meaning independent pieces of
-            content on your website.
-          </p>
-          <p>
             Tabbed navigation is suitable for switching
-            between various bits of content within a
+            between various pieces of content within a
             particular page. It can be created
-            by using an ordered list inside a <code>nav</code> element.
+            by using a <code>{'<menu>'}</code> element <b>outside</b> of a <code>{'nav'}</code> element.
           </p>
 
           <div className="disable-mobile">
@@ -121,20 +116,18 @@ export default function Tabs({ theme }) {
         <div>
           <pre><code>
             {`<main>
-  <nav>
-    <ol>
-      <li>
-        <a onclick="...">
-          <svg ...></svg>
-          <span>
-            Home
-          </span>
-        </a>
-      </li>
-      <li>...</li>
-      <li>...</li>
-    </ol>
-  </nav>
+  <menu>
+    <li>
+      <a onclick="...">
+        <svg ...></svg>
+        <span>
+          Home
+        </span>
+      </a>
+    </li>
+    <li>...</li>
+    <li>...</li>
+  </menu>
   <div>
     <div id="content-1">
       ...
@@ -154,9 +147,9 @@ export default function Tabs({ theme }) {
       <section className="row">
         <div>
           <p>
-            It's also responsive. On larger screens it will
-            expand horizontally, whilst on smaller screens (or
-            smaller containers in general) it will expand
+            Tabs are responsive. On larger screens they 
+            will expand horizontally, whilst on smaller screens (or
+            smaller containers in general) they will expand
             vertically.
           </p>
           <figure>
@@ -171,20 +164,18 @@ export default function Tabs({ theme }) {
           <pre><code>
             {`<div className="row">
   <aside>
-    <nav>
-      <ol>
-        <li>
-          <a onclick="...">
-            <svg ...></svg>
-            <span>
-              Home
-            </span>
-          </a>
-        </li>
-        <li>...</li>
-        <li>...</li>
-      </ol>
-    </nav>
+    <menu>
+      <li>
+        <a onclick="...">
+          <svg ...></svg>
+          <span>
+            Home
+          </span>
+        </a>
+      </li>
+      <li>...</li>
+      <li>...</li>
+    </menu>
   </aside>
   <div>
     <div id="content-1">

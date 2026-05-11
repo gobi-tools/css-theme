@@ -2524,9 +2524,12 @@ function Tabs({ theme }) {
   return /* @__PURE__ */ jsxs19(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs19("section", { className: "row", children: [
       /* @__PURE__ */ jsxs19("div", { children: [
-        /* @__PURE__ */ jsx19("p", { children: "Standard navigation is suitable for switching between pages, meaning independent pieces of content on your website." }),
         /* @__PURE__ */ jsxs19("p", { children: [
-          "Tabbed navigation is suitable for switching between various bits of content within a particular page. It can be created by using an ordered list inside a ",
+          "Tabbed navigation is suitable for switching between various pieces of content within a particular page. It can be created by using a ",
+          /* @__PURE__ */ jsx19("code", { children: "<menu>" }),
+          " element ",
+          /* @__PURE__ */ jsx19("b", { children: "outside" }),
+          " of a ",
           /* @__PURE__ */ jsx19("code", { children: "nav" }),
           " element."
         ] }),
@@ -2560,20 +2563,18 @@ function Tabs({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx19("div", { children: /* @__PURE__ */ jsx19("pre", { children: /* @__PURE__ */ jsx19("code", { children: `<main>
-  <nav>
-    <ol>
-      <li>
-        <a onclick="...">
-          <svg ...></svg>
-          <span>
-            Home
-          </span>
-        </a>
-      </li>
-      <li>...</li>
-      <li>...</li>
-    </ol>
-  </nav>
+  <menu>
+    <li>
+      <a onclick="...">
+        <svg ...></svg>
+        <span>
+          Home
+        </span>
+      </a>
+    </li>
+    <li>...</li>
+    <li>...</li>
+  </menu>
   <div>
     <div id="content-1">
       ...
@@ -2589,7 +2590,7 @@ function Tabs({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs19("section", { className: "row", children: [
       /* @__PURE__ */ jsxs19("div", { children: [
-        /* @__PURE__ */ jsx19("p", { children: "It's also responsive. On larger screens it will expand horizontally, whilst on smaller screens (or smaller containers in general) it will expand vertically." }),
+        /* @__PURE__ */ jsx19("p", { children: "Tabs are responsive. On larger screens they will expand horizontally, whilst on smaller screens (or smaller containers in general) they will expand vertically." }),
         /* @__PURE__ */ jsxs19("figure", { children: [
           /* @__PURE__ */ jsx19("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-tabs-nav" /* MobileTabsNav */, theme, route) }),
           /* @__PURE__ */ jsx19("figcaption", { children: "Showcase of tabbed navigation in a smaller container or device." })
@@ -2597,20 +2598,18 @@ function Tabs({ theme }) {
       ] }),
       /* @__PURE__ */ jsx19("div", { children: /* @__PURE__ */ jsx19("pre", { children: /* @__PURE__ */ jsx19("code", { children: `<div className="row">
   <aside>
-    <nav>
-      <ol>
-        <li>
-          <a onclick="...">
-            <svg ...></svg>
-            <span>
-              Home
-            </span>
-          </a>
-        </li>
-        <li>...</li>
-        <li>...</li>
-      </ol>
-    </nav>
+    <menu>
+      <li>
+        <a onclick="...">
+          <svg ...></svg>
+          <span>
+            Home
+          </span>
+        </a>
+      </li>
+      <li>...</li>
+      <li>...</li>
+    </menu>
   </aside>
   <div>
     <div id="content-1">
@@ -2862,7 +2861,7 @@ import { useState as useState7 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx27, jsxs as jsxs27 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTabs() {
   const [selected, setSelected] = useState7("tab-1");
-  return /* @__PURE__ */ jsx27("main", { children: /* @__PURE__ */ jsxs27("div", { style: { display: "flex", flexDirection: "row", gap: "var(--space-6)" }, children: [
+  return /* @__PURE__ */ jsx27("main", { children: /* @__PURE__ */ jsxs27("div", { className: "row disable-mobile", children: [
     /* @__PURE__ */ jsx27("aside", { children: /* @__PURE__ */ jsx27("div", { children: /* @__PURE__ */ jsxs27("menu", { children: [
       /* @__PURE__ */ jsx27("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs27("a", { onClick: () => setSelected("tab-1"), children: [
         /* @__PURE__ */ jsxs27("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [

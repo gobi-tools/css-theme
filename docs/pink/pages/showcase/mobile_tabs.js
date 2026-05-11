@@ -183,7 +183,7 @@ function Tab3() {
 import { jsx as jsx42, jsxs as jsxs42 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTabs() {
   const [selected, setSelected] = useState7("tab-1");
-  return /* @__PURE__ */ jsx42("main", { children: /* @__PURE__ */ jsxs42("div", { style: { display: "flex", flexDirection: "row", gap: "var(--space-6)" }, children: [
+  return /* @__PURE__ */ jsx42("main", { children: /* @__PURE__ */ jsxs42("div", { className: "row disable-mobile", children: [
     /* @__PURE__ */ jsx42("aside", { children: /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsxs42("menu", { children: [
       /* @__PURE__ */ jsx42("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs42("a", { onClick: () => setSelected("tab-1"), children: [
         /* @__PURE__ */ jsxs42("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
