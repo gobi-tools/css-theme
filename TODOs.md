@@ -3,12 +3,7 @@ Features
 - [x] organise mobile nav a bit better (like here: https://sharif.io/posts)
 - [x] code + figcaption should go together 
 
-- [ ] breadcrumbs navigation elements (e.g. https://getbootstrap.com/docs/5.0/components/breadcrumb/)
-      Actually switch navigation to be a bit like this: 
-      - nav > ul     → hierarchical/site navigation
-      - nav > ol     → breadcrumbs/path navigation
-      - menu         → local actions / simple tabs / controls (formerly "nav > ol")
-      - nav > menu   → navigational tab bar (formerly "menu")
+- [x] breadcrumbs navigation elements (e.g. https://getbootstrap.com/docs/5.0/components/breadcrumb/)
 - [ ] carousel
 - [ ] loading state with aria-busy
 - [ ] maybe make horizontal navigation (tabs, etc) be h-scrollable?
