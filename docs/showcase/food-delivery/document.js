@@ -15,7 +15,9 @@ function Document({ children }) {
       /* @__PURE__ */ jsx("meta", { name: "viewport", content: "width=device-width, initial-scale=1.0" }),
       /* @__PURE__ */ jsx("meta", { name: "color-scheme", content: "light dark" }),
       /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/res/theme.default.min.css` }),
-      /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/${PUB_SUBDOMAIN}/res/theme.default.min.css` })
+      /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/${PUB_SUBDOMAIN}/res/theme.default.min.css` }),
+      /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/showcase/food-delivery/custom.css` }),
+      /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/${PUB_SUBDOMAIN}/showcase/food-delivery/custom.css` })
     ] }),
     /* @__PURE__ */ jsx("body", { children: /* @__PURE__ */ jsx("div", { children }) })
   ] });

@@ -15,6 +15,9 @@ export default function Document({ children }) {
 
         <link rel="stylesheet" href={`/res/theme.default.min.css`} />
         <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/res/theme.default.min.css`} />
+
+        <link rel="stylesheet" href={`/showcase/food-delivery/custom.css`} />
+        <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/showcase/food-delivery/custom.css`} />
       </head>
       <body>
         <div>

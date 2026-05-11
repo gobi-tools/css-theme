@@ -55,10 +55,12 @@ export default function Index() {
           <br/>
         </div>
       </header>
+      <br/>
+      <br/>
       <main>
         <section className="row">
           <div className="card">
-            <h1>Become a member</h1>
+            <h2>Become a member</h2>
             <p>
               As a delivery driver, make money and work on your schedule. Sign up in minutes.
             </p>
@@ -78,7 +80,7 @@ export default function Index() {
             </nav>
           </div>
           <div className="card">
-            <h1>Become a merchant</h1>
+            <h2>Become a merchant</h2>
             <p>
               Attract new customers and grow sales, starting with 0% commissions for up to 30 days.
             </p>
@@ -98,7 +100,7 @@ export default function Index() {
             </nav>
           </div>
           <div className="card">
-            <h1>Get the best experience</h1>
+            <h2>Get the best experience</h2>
             <p>
               Experience the best your neighborhood has to offer, all in one app.
             </p>

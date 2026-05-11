@@ -55,10 +55,12 @@ function Index() {
       ] }),
       /* @__PURE__ */ jsx("br", {})
     ] }) }),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsxs("section", { className: "row", children: [
         /* @__PURE__ */ jsxs("div", { className: "card", children: [
-          /* @__PURE__ */ jsx("h1", { children: "Become a member" }),
+          /* @__PURE__ */ jsx("h2", { children: "Become a member" }),
           /* @__PURE__ */ jsx("p", { children: "As a delivery driver, make money and work on your schedule. Sign up in minutes." }),
           /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [
             /* @__PURE__ */ jsx("span", { children: /* @__PURE__ */ jsx("b", { children: "Start earning" }) }),
@@ -69,7 +71,7 @@ function Index() {
           ] }) }) }) })
         ] }),
         /* @__PURE__ */ jsxs("div", { className: "card", children: [
-          /* @__PURE__ */ jsx("h1", { children: "Become a merchant" }),
+          /* @__PURE__ */ jsx("h2", { children: "Become a merchant" }),
           /* @__PURE__ */ jsx("p", { children: "Attract new customers and grow sales, starting with 0% commissions for up to 30 days." }),
           /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [
             /* @__PURE__ */ jsx("span", { children: /* @__PURE__ */ jsx("b", { children: "Sign up" }) }),
@@ -80,7 +82,7 @@ function Index() {
           ] }) }) }) })
         ] }),
         /* @__PURE__ */ jsxs("div", { className: "card", children: [
-          /* @__PURE__ */ jsx("h1", { children: "Get the best experience" }),
+          /* @__PURE__ */ jsx("h2", { children: "Get the best experience" }),
           /* @__PURE__ */ jsx("p", { children: "Experience the best your neighborhood has to offer, all in one app." }),
           /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [
             /* @__PURE__ */ jsx("span", { children: /* @__PURE__ */ jsx("b", { children: "Get the app" }) }),
