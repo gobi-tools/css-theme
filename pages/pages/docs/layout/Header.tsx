@@ -102,7 +102,7 @@ export default function Header({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`>main>
+            {`<main>
   <section>
     <header>
       <div>

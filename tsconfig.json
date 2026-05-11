@@ -4,9 +4,8 @@
     "module": "es2022",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
-    "rootDir": "pages",
-    "outDir": "docs",
-    "verbatimModuleSyntax": false
+    "verbatimModuleSyntax": false,
+    "outDir": "dist"
   },
   "include": [
     "pages"

@@ -5,6 +5,7 @@
   "scripts": {
     "build": "tsx scripts/build.ts && css-minify -d tmp/ -o /dist",
     "docs": "tsx pages/prerender.ts",
+    "showcase": "tsx showcase/prerender.ts",
     "test:visual": "npx playwright test",
     "test:visual:update": "npx playwright test --update-snapshots"
   },
