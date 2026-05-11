@@ -37,6 +37,7 @@ import Groups from "../../pages/docs/custom/Groups";
 import Header from "../../pages/docs/layout/Header";
 import LayoutHeaderSection from "../../pages/showcase/LayoutHeaderSection";
 import Breadcrumbs from "../../pages/docs/navigation/Breadcrumbs";
+import MobileBreadcrumbs from "../../pages/showcase/MobileBreadcrumbs";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -166,6 +167,7 @@ export class RouteMaster {
       case EShowcase.MobileColumns: return `${base}${theme}/pages/showcase/${htmlName(MobileColumns)}`;
       case EShowcase.MobileMenu: return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
       case EShowcase.MobileNav: return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;
+      case EShowcase.MobileBreadcrumbs: return `${base}${theme}/pages/showcase/${htmlName(MobileBreadcrumbs)}`;
       case EShowcase.MobileTabsNav: return `${base}${theme}/pages/showcase/${htmlName(MobileTabs)}`;
       case EShowcase.MobileTypography: return `${base}${theme}/pages/showcase/${htmlName(MobileTypography)}`;
     }

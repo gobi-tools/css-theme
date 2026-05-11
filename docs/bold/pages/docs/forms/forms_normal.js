@@ -2054,7 +2054,7 @@ function Navigation({ theme }) {
     /* @__PURE__ */ jsxs19("section", { className: "row", children: [
       /* @__PURE__ */ jsxs19("div", { children: [
         /* @__PURE__ */ jsxs19("p", { children: [
-          "The most basic navigation element is created by placing an unordered list within a ",
+          "The most basic navigation element is created by placing an unordered list of links within a ",
           /* @__PURE__ */ jsx19("code", { children: "nav" }),
           " element. It's suitable as the top level navigation for a document, where each item can be a link to a different page."
         ] }),
@@ -2063,7 +2063,7 @@ function Navigation({ theme }) {
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "Item 2" }) }),
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "Item 3" }) })
         ] }) }),
-        /* @__PURE__ */ jsx19("p", { children: "Links may contain icons to enhance the look and feel of the navigation bar as well as collapsible items." }),
+        /* @__PURE__ */ jsx19("p", { children: "Links may contain icons to enhance the look and feel of the navigation bar. Sub-lists are rendered as collapsible items." }),
         /* @__PURE__ */ jsx19("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs19("ul", { children: [
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsxs19("a", { href: "", children: [
             /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
@@ -2490,7 +2490,7 @@ function Menu({ theme }) {
           ] }) })
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<main>
+      /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<nav>
   <menu>
     <li aria-selected>
       <a href="...">
@@ -2500,7 +2500,7 @@ function Menu({ theme }) {
     </li>
     ...
   </menu>
-</main>` }) }) })
+</nav>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs21("section", { className: "row", children: [
       /* @__PURE__ */ jsxs21("div", { children: [
@@ -2515,9 +2515,11 @@ function Menu({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<header>
-  <menu>
-    ...
-  </menu>
+  <nav>
+    <menu>
+      ...
+    </menu>
+  </nav>
 </header>` }) }) })
     ] })
   ] });
@@ -3796,10 +3798,83 @@ function LayoutHeaderSection() {
 // pages/pages/docs/navigation/Breadcrumbs.tsx
 import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Breadcrumbs({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsx40(DocLayout, { theme, children: /* @__PURE__ */ jsxs40("section", { className: "row", children: [
-    /* @__PURE__ */ jsx40("div", { children: "anc" }),
-    /* @__PURE__ */ jsx40("div", {})
+    /* @__PURE__ */ jsxs40("div", { children: [
+      /* @__PURE__ */ jsxs40("p", { children: [
+        "The breadcrumbs navigaion element is created by placing an ordered list of links inside the ",
+        /* @__PURE__ */ jsx40("code", { children: "nav" }),
+        " element."
+      ] }),
+      /* @__PURE__ */ jsxs40("p", { children: [
+        "As with unordered lists, you can denote the selected elment using the ",
+        /* @__PURE__ */ jsx40("code", { children: "aria-selected" }),
+        " attribute."
+      ] }),
+      /* @__PURE__ */ jsx40("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs40("ol", { children: [
+        /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsx40("a", { href: "", children: "Home" }) }),
+        /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsx40("a", { href: "", children: "Library" }) }),
+        /* @__PURE__ */ jsx40("li", { "aria-selected": true, children: /* @__PURE__ */ jsx40("a", { href: "", children: "Data" }) })
+      ] }) }),
+      /* @__PURE__ */ jsx40("p", { children: "Likewise, icons can be added to any link element, but unlike normal unordered navigation sub-lists will not be displayed." }),
+      /* @__PURE__ */ jsx40("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs40("ol", { children: [
+        /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsxs40("a", { href: "", children: [
+          /* @__PURE__ */ jsxs40("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsx40("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+            /* @__PURE__ */ jsx40("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+          ] }),
+          /* @__PURE__ */ jsx40("span", { children: "Home" })
+        ] }) }),
+        /* @__PURE__ */ jsx40("li", { "aria-selected": true, children: /* @__PURE__ */ jsx40("a", { href: "", children: "Folder" }) })
+      ] }) }),
+      /* @__PURE__ */ jsx40("p", { children: "Finally, breadcrumbs are also responsive." }),
+      /* @__PURE__ */ jsxs40("figure", { children: [
+        /* @__PURE__ */ jsx40("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-breadcrumbs" /* MobileBreadcrumbs */, theme, route) }),
+        /* @__PURE__ */ jsx40("figcaption", { children: "Showcase of breadcrumbs on a smaller device" })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsx40("div", { children: /* @__PURE__ */ jsx40("pre", { children: /* @__PURE__ */ jsx40("code", { children: `<nav>
+  <ol>
+    <li>
+      <a href="...">
+        <svg ...></svg>
+        <span>
+          Home
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="...">
+        Library
+      </a>
+    </li>
+    <li aria-selected>
+      <a href="...">
+        Data
+      </a>
+    </li>
+  </ol>
+</nav>` }) }) })
   ] }) });
+}
+
+// pages/pages/showcase/MobileBreadcrumbs.tsx
+import { Fragment as Fragment11, jsx as jsx41, jsxs as jsxs41 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function MobileBreadcrumbs() {
+  return /* @__PURE__ */ jsxs41(Fragment11, { children: [
+    /* @__PURE__ */ jsx41("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx41("nav", { children: /* @__PURE__ */ jsxs41("ol", { children: [
+      /* @__PURE__ */ jsx41("li", { children: /* @__PURE__ */ jsx41("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx41("li", { children: /* @__PURE__ */ jsx41("a", { href: "", children: "Library" }) }),
+      /* @__PURE__ */ jsxs41("li", { "aria-selected": true, children: [
+        /* @__PURE__ */ jsx41("a", { href: "", children: "Data" }),
+        /* @__PURE__ */ jsx41("ul", { children: /* @__PURE__ */ jsx41("li", { children: /* @__PURE__ */ jsx41("a", { href: "", children: "Not visible" }) }) })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx41("main", { children: /* @__PURE__ */ jsxs41("article", { children: [
+      /* @__PURE__ */ jsx41("h1", { children: "Heading 1" }),
+      /* @__PURE__ */ jsx41("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    ] }) })
+  ] });
 }
 
 // pages/common/utils/routes.ts
@@ -3990,6 +4065,8 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
       case "mobile-nav" /* MobileNav */:
         return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;
+      case "mobile-breadcrumbs" /* MobileBreadcrumbs */:
+        return `${base}${theme}/pages/showcase/${htmlName(MobileBreadcrumbs)}`;
       case "mobile-tabs-nav" /* MobileTabsNav */:
         return `${base}${theme}/pages/showcase/${htmlName(MobileTabs)}`;
       case "mobile-typography" /* MobileTypography */:
@@ -4009,36 +4086,36 @@ function toKebabCase(str) {
 }
 
 // pages/pages/docs/forms/FormsNormal.tsx
-import { jsx as jsx41, jsxs as jsxs41 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx42, jsxs as jsxs42 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FormsNormal({ theme }) {
   const route = useRoute();
   const [volume, setVolume] = useState7(50);
-  return /* @__PURE__ */ jsxs41(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs41("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs41("div", { children: [
-        /* @__PURE__ */ jsxs41("p", { children: [
+  return /* @__PURE__ */ jsxs42(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs42("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs42("div", { children: [
+        /* @__PURE__ */ jsxs42("p", { children: [
           "All ",
-          /* @__PURE__ */ jsx41("a", { href: "https://www.w3schools.com/html/html_forms.asp" /* HtmlFormsDocs */, target: "_blank", children: "HTML form elements" }),
+          /* @__PURE__ */ jsx42("a", { href: "https://www.w3schools.com/html/html_forms.asp" /* HtmlFormsDocs */, target: "_blank", children: "HTML form elements" }),
           " are supported and can be easily arranged into a pleasantly looking and functional form. There is no JavaScript required and no extra CSS."
         ] }),
-        /* @__PURE__ */ jsxs41("form", { children: [
-          /* @__PURE__ */ jsxs41("label", { htmlFor: "email", children: [
-            /* @__PURE__ */ jsx41("span", { children: "Email" }),
-            /* @__PURE__ */ jsx41("input", { type: "email", placeholder: "Email Address", id: "email" })
+        /* @__PURE__ */ jsxs42("form", { children: [
+          /* @__PURE__ */ jsxs42("label", { htmlFor: "email", children: [
+            /* @__PURE__ */ jsx42("span", { children: "Email" }),
+            /* @__PURE__ */ jsx42("input", { type: "email", placeholder: "Email Address", id: "email" })
           ] }),
-          /* @__PURE__ */ jsxs41("label", { htmlFor: "password", children: [
-            /* @__PURE__ */ jsx41("span", { children: "Password" }),
-            /* @__PURE__ */ jsx41("input", { type: "password", id: "password", placeholder: "Password" })
+          /* @__PURE__ */ jsxs42("label", { htmlFor: "password", children: [
+            /* @__PURE__ */ jsx42("span", { children: "Password" }),
+            /* @__PURE__ */ jsx42("input", { type: "password", id: "password", placeholder: "Password" })
           ] }),
-          /* @__PURE__ */ jsx41("input", { type: "submit", value: "Login" }),
-          /* @__PURE__ */ jsxs41("p", { children: [
+          /* @__PURE__ */ jsx42("input", { type: "submit", value: "Login" }),
+          /* @__PURE__ */ jsxs42("p", { children: [
             "Don't have an account? ",
-            /* @__PURE__ */ jsx41("a", { href: "", children: "Sign up" }),
+            /* @__PURE__ */ jsx42("a", { href: "", children: "Sign up" }),
             "."
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsx41("pre", { children: /* @__PURE__ */ jsx41("code", { children: `<form>
+      /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<form>
   <fieldset>
     <legend>
       Login
@@ -4079,15 +4156,15 @@ function FormsNormal({ theme }) {
   </fieldset>
 </form>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs41("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs41("div", { children: [
-        /* @__PURE__ */ jsx41("p", { children: "Textareas are supported as well and by default they expand to fit the available horizontal space." }),
-        /* @__PURE__ */ jsxs41("form", { children: [
-          /* @__PURE__ */ jsx41("textarea", { rows: 4, id: "textarea", placeholder: "Write your comments..." }),
-          /* @__PURE__ */ jsx41("input", { type: "submit", value: "Comment" })
+    /* @__PURE__ */ jsxs42("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs42("div", { children: [
+        /* @__PURE__ */ jsx42("p", { children: "Textareas are supported as well and by default they expand to fit the available horizontal space." }),
+        /* @__PURE__ */ jsxs42("form", { children: [
+          /* @__PURE__ */ jsx42("textarea", { rows: 4, id: "textarea", placeholder: "Write your comments..." }),
+          /* @__PURE__ */ jsx42("input", { type: "submit", value: "Comment" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsx41("pre", { children: /* @__PURE__ */ jsx41("code", { children: `<form>
+      /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<form>
   <textarea 
     rows="4" 
     id="textarea" 
@@ -4099,18 +4176,18 @@ function FormsNormal({ theme }) {
     value="Comment"/>
 </form>` }) }) })
     ] }),
-    /* @__PURE__ */ jsxs41("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs41("div", { children: [
-        /* @__PURE__ */ jsx41("p", { children: "Ranged inputs are also supported." }),
-        /* @__PURE__ */ jsxs41("form", { children: [
-          /* @__PURE__ */ jsxs41("label", { htmlFor: "volume", children: [
-            /* @__PURE__ */ jsx41("span", { children: "Volume (range)" }),
-            /* @__PURE__ */ jsx41("input", { type: "range", id: "volume", name: "volume", min: 0, max: 100, step: 1, value: volume, onChange: (e) => setVolume(Number(e.target.value)) })
+    /* @__PURE__ */ jsxs42("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs42("div", { children: [
+        /* @__PURE__ */ jsx42("p", { children: "Ranged inputs are also supported." }),
+        /* @__PURE__ */ jsxs42("form", { children: [
+          /* @__PURE__ */ jsxs42("label", { htmlFor: "volume", children: [
+            /* @__PURE__ */ jsx42("span", { children: "Volume (range)" }),
+            /* @__PURE__ */ jsx42("input", { type: "range", id: "volume", name: "volume", min: 0, max: 100, step: 1, value: volume, onChange: (e) => setVolume(Number(e.target.value)) })
           ] }),
-          /* @__PURE__ */ jsx41("input", { type: "submit", value: "Tune" })
+          /* @__PURE__ */ jsx42("input", { type: "submit", value: "Tune" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsx41("pre", { children: /* @__PURE__ */ jsx41("code", { children: `<form>
+      /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<form>
   <label for="volume">
     <span>
       Volume (range)
@@ -4129,72 +4206,72 @@ function FormsNormal({ theme }) {
     value="Tune"/>
 </form>` }) }) })
     ] }),
-    /* @__PURE__ */ jsx41("section", { children: /* @__PURE__ */ jsxs41("div", { className: "row", children: [
-      /* @__PURE__ */ jsxs41("div", { children: [
-        /* @__PURE__ */ jsxs41("p", { children: [
+    /* @__PURE__ */ jsx42("section", { children: /* @__PURE__ */ jsxs42("div", { className: "row", children: [
+      /* @__PURE__ */ jsxs42("div", { children: [
+        /* @__PURE__ */ jsxs42("p", { children: [
           "If you want your forms to stand out more, you can wrap the inputs inside a ",
-          /* @__PURE__ */ jsx41("code", { children: "fieldset" }),
+          /* @__PURE__ */ jsx42("code", { children: "fieldset" }),
           " and assign a ",
-          /* @__PURE__ */ jsx41("code", { children: "legend" }),
+          /* @__PURE__ */ jsx42("code", { children: "legend" }),
           "."
         ] }),
-        /* @__PURE__ */ jsx41("form", { children: /* @__PURE__ */ jsxs41("fieldset", { children: [
-          /* @__PURE__ */ jsx41("legend", { children: "Details" }),
-          /* @__PURE__ */ jsxs41("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsxs41("label", { htmlFor: "first-name", children: [
-              /* @__PURE__ */ jsx41("span", { children: "First name" }),
-              /* @__PURE__ */ jsx41("input", { type: "text", id: "first-name", placeholder: "First name" })
+        /* @__PURE__ */ jsx42("form", { children: /* @__PURE__ */ jsxs42("fieldset", { children: [
+          /* @__PURE__ */ jsx42("legend", { children: "Details" }),
+          /* @__PURE__ */ jsxs42("div", { className: "row disable-mobile", children: [
+            /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsxs42("label", { htmlFor: "first-name", children: [
+              /* @__PURE__ */ jsx42("span", { children: "First name" }),
+              /* @__PURE__ */ jsx42("input", { type: "text", id: "first-name", placeholder: "First name" })
             ] }) }),
-            /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsxs41("label", { htmlFor: "last-name", children: [
-              /* @__PURE__ */ jsx41("span", { children: "Last name" }),
-              /* @__PURE__ */ jsx41("input", { type: "text", id: "last-name", placeholder: "Last name" })
+            /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsxs42("label", { htmlFor: "last-name", children: [
+              /* @__PURE__ */ jsx42("span", { children: "Last name" }),
+              /* @__PURE__ */ jsx42("input", { type: "text", id: "last-name", placeholder: "Last name" })
             ] }) })
           ] }),
-          /* @__PURE__ */ jsxs41("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsxs41("label", { htmlFor: "delivery", children: [
-              /* @__PURE__ */ jsx41("span", { children: "Delivery Time" }),
-              /* @__PURE__ */ jsxs41("select", { id: "delivery", defaultValue: "mornibgt", children: [
-                /* @__PURE__ */ jsx41("option", { value: "morning", children: "Morning" }),
-                /* @__PURE__ */ jsx41("option", { value: "evening", children: "Evening" })
+          /* @__PURE__ */ jsxs42("div", { className: "row disable-mobile", children: [
+            /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsxs42("label", { htmlFor: "delivery", children: [
+              /* @__PURE__ */ jsx42("span", { children: "Delivery Time" }),
+              /* @__PURE__ */ jsxs42("select", { id: "delivery", defaultValue: "mornibgt", children: [
+                /* @__PURE__ */ jsx42("option", { value: "morning", children: "Morning" }),
+                /* @__PURE__ */ jsx42("option", { value: "evening", children: "Evening" })
               ] })
             ] }) }),
-            /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsxs41("label", { htmlFor: "delivery-date", children: [
-              /* @__PURE__ */ jsx41("span", { children: "Delivery Date" }),
-              /* @__PURE__ */ jsx41("input", { type: "date", id: "delivery-date" })
+            /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsxs42("label", { htmlFor: "delivery-date", children: [
+              /* @__PURE__ */ jsx42("span", { children: "Delivery Date" }),
+              /* @__PURE__ */ jsx42("input", { type: "date", id: "delivery-date" })
             ] }) })
           ] }),
-          /* @__PURE__ */ jsxs41("blockquote", { className: "success", children: [
+          /* @__PURE__ */ jsxs42("blockquote", { className: "success", children: [
             "Order total is ",
-            /* @__PURE__ */ jsx41("b", { children: "$33.59" })
+            /* @__PURE__ */ jsx42("b", { children: "$33.59" })
           ] }),
-          /* @__PURE__ */ jsxs41("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsx41("input", { type: "reset", className: "error", value: "Reset" }) }),
-            /* @__PURE__ */ jsx41("div", { className: "gap" }),
-            /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsx41("input", { type: "submit", value: "Confirm" }) })
+          /* @__PURE__ */ jsxs42("div", { className: "row disable-mobile", children: [
+            /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("input", { type: "reset", className: "error", value: "Reset" }) }),
+            /* @__PURE__ */ jsx42("div", { className: "gap" }),
+            /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("input", { type: "submit", value: "Confirm" }) })
           ] })
         ] }) }),
-        /* @__PURE__ */ jsx41("p", { children: "You can make forms as simple or as complex as you want." }),
-        /* @__PURE__ */ jsxs41("p", { children: [
+        /* @__PURE__ */ jsx42("p", { children: "You can make forms as simple or as complex as you want." }),
+        /* @__PURE__ */ jsxs42("p", { children: [
           "In the example above we're separating inputs into two separate ",
-          /* @__PURE__ */ jsx41("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "columns" }),
+          /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "columns" }),
           ", so we can pack more information in the same space."
         ] }),
-        /* @__PURE__ */ jsxs41("p", { children: [
+        /* @__PURE__ */ jsxs42("p", { children: [
           "We're also using ",
-          /* @__PURE__ */ jsx41("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme, route), children: "blockquotes" }),
+          /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme, route), children: "blockquotes" }),
           " to highlight important information."
         ] }),
-        /* @__PURE__ */ jsxs41("p", { children: [
+        /* @__PURE__ */ jsxs42("p", { children: [
           "We're using both ",
-          /* @__PURE__ */ jsx41("code", { children: "submit" }),
+          /* @__PURE__ */ jsx42("code", { children: "submit" }),
           " and ",
-          /* @__PURE__ */ jsx41("code", { children: "reset" }),
+          /* @__PURE__ */ jsx42("code", { children: "reset" }),
           " type inputs. Please note these inputs are styled to look exactly like ",
-          /* @__PURE__ */ jsx41("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme, route), children: "buttons" }),
+          /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme, route), children: "buttons" }),
           "."
         ] })
       ] }),
-      /* @__PURE__ */ jsx41("div", { children: /* @__PURE__ */ jsx41("pre", { children: /* @__PURE__ */ jsx41("code", { children: `<form>
+      /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<form>
   <fieldset>
     <legend>
       Order details

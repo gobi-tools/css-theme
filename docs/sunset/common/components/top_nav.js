@@ -2236,7 +2236,7 @@ function Navigation({ theme }) {
     /* @__PURE__ */ jsxs19("section", { className: "row", children: [
       /* @__PURE__ */ jsxs19("div", { children: [
         /* @__PURE__ */ jsxs19("p", { children: [
-          "The most basic navigation element is created by placing an unordered list within a ",
+          "The most basic navigation element is created by placing an unordered list of links within a ",
           /* @__PURE__ */ jsx19("code", { children: "nav" }),
           " element. It's suitable as the top level navigation for a document, where each item can be a link to a different page."
         ] }),
@@ -2245,7 +2245,7 @@ function Navigation({ theme }) {
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "Item 2" }) }),
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "Item 3" }) })
         ] }) }),
-        /* @__PURE__ */ jsx19("p", { children: "Links may contain icons to enhance the look and feel of the navigation bar as well as collapsible items." }),
+        /* @__PURE__ */ jsx19("p", { children: "Links may contain icons to enhance the look and feel of the navigation bar. Sub-lists are rendered as collapsible items." }),
         /* @__PURE__ */ jsx19("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs19("ul", { children: [
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsxs19("a", { href: "", children: [
             /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
@@ -2672,7 +2672,7 @@ function Menu({ theme }) {
           ] }) })
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<main>
+      /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<nav>
   <menu>
     <li aria-selected>
       <a href="...">
@@ -2682,7 +2682,7 @@ function Menu({ theme }) {
     </li>
     ...
   </menu>
-</main>` }) }) })
+</nav>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs21("section", { className: "row", children: [
       /* @__PURE__ */ jsxs21("div", { children: [
@@ -2697,9 +2697,11 @@ function Menu({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<header>
-  <menu>
-    ...
-  </menu>
+  <nav>
+    <menu>
+      ...
+    </menu>
+  </nav>
 </header>` }) }) })
     ] })
   ] });
@@ -3978,10 +3980,83 @@ function LayoutHeaderSection() {
 // pages/pages/docs/navigation/Breadcrumbs.tsx
 import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Breadcrumbs({ theme }) {
+  const route = useRoute();
   return /* @__PURE__ */ jsx40(DocLayout, { theme, children: /* @__PURE__ */ jsxs40("section", { className: "row", children: [
-    /* @__PURE__ */ jsx40("div", { children: "anc" }),
-    /* @__PURE__ */ jsx40("div", {})
+    /* @__PURE__ */ jsxs40("div", { children: [
+      /* @__PURE__ */ jsxs40("p", { children: [
+        "The breadcrumbs navigaion element is created by placing an ordered list of links inside the ",
+        /* @__PURE__ */ jsx40("code", { children: "nav" }),
+        " element."
+      ] }),
+      /* @__PURE__ */ jsxs40("p", { children: [
+        "As with unordered lists, you can denote the selected elment using the ",
+        /* @__PURE__ */ jsx40("code", { children: "aria-selected" }),
+        " attribute."
+      ] }),
+      /* @__PURE__ */ jsx40("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs40("ol", { children: [
+        /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsx40("a", { href: "", children: "Home" }) }),
+        /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsx40("a", { href: "", children: "Library" }) }),
+        /* @__PURE__ */ jsx40("li", { "aria-selected": true, children: /* @__PURE__ */ jsx40("a", { href: "", children: "Data" }) })
+      ] }) }),
+      /* @__PURE__ */ jsx40("p", { children: "Likewise, icons can be added to any link element, but unlike normal unordered navigation sub-lists will not be displayed." }),
+      /* @__PURE__ */ jsx40("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs40("ol", { children: [
+        /* @__PURE__ */ jsx40("li", { children: /* @__PURE__ */ jsxs40("a", { href: "", children: [
+          /* @__PURE__ */ jsxs40("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsx40("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+            /* @__PURE__ */ jsx40("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+          ] }),
+          /* @__PURE__ */ jsx40("span", { children: "Home" })
+        ] }) }),
+        /* @__PURE__ */ jsx40("li", { "aria-selected": true, children: /* @__PURE__ */ jsx40("a", { href: "", children: "Folder" }) })
+      ] }) }),
+      /* @__PURE__ */ jsx40("p", { children: "Finally, breadcrumbs are also responsive." }),
+      /* @__PURE__ */ jsxs40("figure", { children: [
+        /* @__PURE__ */ jsx40("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.showcase("mobile-breadcrumbs" /* MobileBreadcrumbs */, theme, route) }),
+        /* @__PURE__ */ jsx40("figcaption", { children: "Showcase of breadcrumbs on a smaller device" })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsx40("div", { children: /* @__PURE__ */ jsx40("pre", { children: /* @__PURE__ */ jsx40("code", { children: `<nav>
+  <ol>
+    <li>
+      <a href="...">
+        <svg ...></svg>
+        <span>
+          Home
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="...">
+        Library
+      </a>
+    </li>
+    <li aria-selected>
+      <a href="...">
+        Data
+      </a>
+    </li>
+  </ol>
+</nav>` }) }) })
   ] }) });
+}
+
+// pages/pages/showcase/MobileBreadcrumbs.tsx
+import { Fragment as Fragment11, jsx as jsx41, jsxs as jsxs41 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function MobileBreadcrumbs() {
+  return /* @__PURE__ */ jsxs41(Fragment11, { children: [
+    /* @__PURE__ */ jsx41("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx41("nav", { children: /* @__PURE__ */ jsxs41("ol", { children: [
+      /* @__PURE__ */ jsx41("li", { children: /* @__PURE__ */ jsx41("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx41("li", { children: /* @__PURE__ */ jsx41("a", { href: "", children: "Library" }) }),
+      /* @__PURE__ */ jsxs41("li", { "aria-selected": true, children: [
+        /* @__PURE__ */ jsx41("a", { href: "", children: "Data" }),
+        /* @__PURE__ */ jsx41("ul", { children: /* @__PURE__ */ jsx41("li", { children: /* @__PURE__ */ jsx41("a", { href: "", children: "Not visible" }) }) })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx41("main", { children: /* @__PURE__ */ jsxs41("article", { children: [
+      /* @__PURE__ */ jsx41("h1", { children: "Heading 1" }),
+      /* @__PURE__ */ jsx41("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    ] }) })
+  ] });
 }
 
 // pages/common/utils/routes.ts
@@ -4172,6 +4247,8 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/showcase/${htmlName(MobileMenu)}`;
       case "mobile-nav" /* MobileNav */:
         return `${base}${theme}/pages/showcase/${htmlName(MobileNav)}`;
+      case "mobile-breadcrumbs" /* MobileBreadcrumbs */:
+        return `${base}${theme}/pages/showcase/${htmlName(MobileBreadcrumbs)}`;
       case "mobile-tabs-nav" /* MobileTabsNav */:
         return `${base}${theme}/pages/showcase/${htmlName(MobileTabs)}`;
       case "mobile-typography" /* MobileTypography */:
@@ -4191,7 +4268,7 @@ function toKebabCase(str) {
 }
 
 // pages/common/components/TopNav.tsx
-import { jsx as jsx41, jsxs as jsxs41 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx42, jsxs as jsxs42 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function TopNav({ theme }) {
   const route = useRoute();
   const onThemeChange = (e) => {
@@ -4215,43 +4292,43 @@ function TopNav({ theme }) {
       }
     }
   };
-  return /* @__PURE__ */ jsx41("nav", { children: /* @__PURE__ */ jsxs41("ul", { children: [
-    /* @__PURE__ */ jsx41("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs41("a", { href: RouteMaster.home(theme, route), children: [
-      /* @__PURE__ */ jsxs41("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-        /* @__PURE__ */ jsx41("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-        /* @__PURE__ */ jsx41("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+  return /* @__PURE__ */ jsx42("nav", { children: /* @__PURE__ */ jsxs42("ul", { children: [
+    /* @__PURE__ */ jsx42("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs42("a", { href: RouteMaster.home(theme, route), children: [
+      /* @__PURE__ */ jsxs42("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx42("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+        /* @__PURE__ */ jsx42("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
       ] }),
-      /* @__PURE__ */ jsx41("span", { children: "Home" })
+      /* @__PURE__ */ jsx42("span", { children: "Home" })
     ] }) }),
-    /* @__PURE__ */ jsx41("li", { className: "gap hide-on-mobile" }),
-    /* @__PURE__ */ jsx41("li", { className: "hide-on-desktop", children: /* @__PURE__ */ jsxs41("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: [
-      /* @__PURE__ */ jsxs41("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-        /* @__PURE__ */ jsx41("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
-        /* @__PURE__ */ jsx41("path", { d: "M9 18c-4.51 2-5-2-7-2" })
+    /* @__PURE__ */ jsx42("li", { className: "gap hide-on-mobile" }),
+    /* @__PURE__ */ jsx42("li", { className: "hide-on-desktop", children: /* @__PURE__ */ jsxs42("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: [
+      /* @__PURE__ */ jsxs42("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx42("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
+        /* @__PURE__ */ jsx42("path", { d: "M9 18c-4.51 2-5-2-7-2" })
       ] }),
-      /* @__PURE__ */ jsx41("span", { children: "GitHub" })
+      /* @__PURE__ */ jsx42("span", { children: "GitHub" })
     ] }) }),
-    /* @__PURE__ */ jsx41("li", { children: /* @__PURE__ */ jsxs41("select", { name: "theme-selector", onChange: onThemeChange, children: [
-      /* @__PURE__ */ jsxs41("optgroup", { label: "Light/Dark", children: [
-        /* @__PURE__ */ jsx41("option", { value: "default" /* Default */, selected: theme === "default" /* Default */, children: "Default" }),
-        /* @__PURE__ */ jsx41("option", { value: "app" /* App */, selected: theme === "app" /* App */, children: "App" }),
-        /* @__PURE__ */ jsx41("option", { value: "writing" /* Writing */, selected: theme === "writing" /* Writing */, children: "Writing" }),
-        /* @__PURE__ */ jsx41("option", { value: "scholar" /* Scholar */, selected: theme === "scholar" /* Scholar */, children: "Scholar" })
+    /* @__PURE__ */ jsx42("li", { children: /* @__PURE__ */ jsxs42("select", { name: "theme-selector", onChange: onThemeChange, children: [
+      /* @__PURE__ */ jsxs42("optgroup", { label: "Light/Dark", children: [
+        /* @__PURE__ */ jsx42("option", { value: "default" /* Default */, selected: theme === "default" /* Default */, children: "Default" }),
+        /* @__PURE__ */ jsx42("option", { value: "app" /* App */, selected: theme === "app" /* App */, children: "App" }),
+        /* @__PURE__ */ jsx42("option", { value: "writing" /* Writing */, selected: theme === "writing" /* Writing */, children: "Writing" }),
+        /* @__PURE__ */ jsx42("option", { value: "scholar" /* Scholar */, selected: theme === "scholar" /* Scholar */, children: "Scholar" })
       ] }),
-      /* @__PURE__ */ jsxs41("optgroup", { label: "Light Only", children: [
-        /* @__PURE__ */ jsx41("option", { value: "bold" /* Bold */, selected: theme === "bold" /* Bold */, children: "Bold" }),
-        /* @__PURE__ */ jsx41("option", { value: "sunset" /* Sunset */, selected: theme === "sunset" /* Sunset */, children: "Sunset" }),
-        /* @__PURE__ */ jsx41("option", { value: "pink" /* Pink */, selected: theme === "pink" /* Pink */, children: "Pink" })
+      /* @__PURE__ */ jsxs42("optgroup", { label: "Light Only", children: [
+        /* @__PURE__ */ jsx42("option", { value: "bold" /* Bold */, selected: theme === "bold" /* Bold */, children: "Bold" }),
+        /* @__PURE__ */ jsx42("option", { value: "sunset" /* Sunset */, selected: theme === "sunset" /* Sunset */, children: "Sunset" }),
+        /* @__PURE__ */ jsx42("option", { value: "pink" /* Pink */, selected: theme === "pink" /* Pink */, children: "Pink" })
       ] }),
-      /* @__PURE__ */ jsxs41("optgroup", { label: "Dark Only", children: [
-        /* @__PURE__ */ jsx41("option", { value: "forest" /* Forest */, selected: theme === "forest" /* Forest */, children: "Forest" }),
-        /* @__PURE__ */ jsx41("option", { value: "betty" /* Betty */, selected: theme === "betty" /* Betty */, children: "Betty" }),
-        /* @__PURE__ */ jsx41("option", { value: "gold" /* Gold */, selected: theme === "gold" /* Gold */, children: "Gold" })
+      /* @__PURE__ */ jsxs42("optgroup", { label: "Dark Only", children: [
+        /* @__PURE__ */ jsx42("option", { value: "forest" /* Forest */, selected: theme === "forest" /* Forest */, children: "Forest" }),
+        /* @__PURE__ */ jsx42("option", { value: "betty" /* Betty */, selected: theme === "betty" /* Betty */, children: "Betty" }),
+        /* @__PURE__ */ jsx42("option", { value: "gold" /* Gold */, selected: theme === "gold" /* Gold */, children: "Gold" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx41("li", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx41("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: /* @__PURE__ */ jsx41("button", { type: "reset", children: /* @__PURE__ */ jsxs41("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-      /* @__PURE__ */ jsx41("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
-      /* @__PURE__ */ jsx41("path", { d: "M9 18c-4.51 2-5-2-7-2" })
+    /* @__PURE__ */ jsx42("li", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx42("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: /* @__PURE__ */ jsx42("button", { type: "reset", children: /* @__PURE__ */ jsxs42("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+      /* @__PURE__ */ jsx42("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
+      /* @__PURE__ */ jsx42("path", { d: "M9 18c-4.51 2-5-2-7-2" })
     ] }) }) }) })
   ] }) });
 }

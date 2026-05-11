@@ -42,6 +42,7 @@ export enum EDoc {
 
 export enum EShowcase {
   MobileNav = 'mobile-nav',
+  MobileBreadcrumbs = 'mobile-breadcrumbs',
   MobileMenu = 'mobile-menu',
   DekstopMenu = 'desktop-menu',
   MobileTabsNav = 'mobile-tabs-nav',

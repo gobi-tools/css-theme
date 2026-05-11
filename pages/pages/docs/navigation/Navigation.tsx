@@ -11,7 +11,7 @@ export default function Navigation({ theme }) {
       <section className="row">
         <div>
           <p>
-            The most basic navigation element is created by placing an unordered list within a <code>nav</code> element.
+            The most basic navigation element is created by placing an unordered list of links within a <code>nav</code> element.
             It's suitable as the top level navigation for a document, where each item can be a link to a different page.
           </p>
           <nav className="disable-mobile">
@@ -28,7 +28,7 @@ export default function Navigation({ theme }) {
             </ul>
           </nav>
           <p>
-            Links may contain icons to enhance the look and feel of the navigation bar as well as collapsible items.
+            Links may contain icons to enhance the look and feel of the navigation bar. Sub-lists are rendered as collapsible items.
           </p>
           <nav className="disable-mobile">
             <ul>

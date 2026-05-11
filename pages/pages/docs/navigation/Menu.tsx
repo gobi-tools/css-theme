@@ -44,7 +44,7 @@ export default function Menu({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<main>
+            {`<nav>
   <menu>
     <li aria-selected>
       <a href="...">
@@ -54,7 +54,7 @@ export default function Menu({ theme }) {
     </li>
     ...
   </menu>
-</main>`}
+</nav>`}
           </code></pre>
         </div>
       </section>
@@ -75,9 +75,11 @@ export default function Menu({ theme }) {
         <div>
           <pre><code>
             {`<header>
-  <menu>
-    ...
-  </menu>
+  <nav>
+    <menu>
+      ...
+    </menu>
+  </nav>
 </header>`}
           </code></pre>
         </div>

@@ -9,6 +9,9 @@ Features
       - nav > ol     → breadcrumbs/path navigation
       - menu         → local actions / simple tabs / controls (formerly "nav > ol")
       - nav > menu   → navigational tab bar (formerly "menu")
+- [ ] carousel
+- [ ] loading state with aria-busy
+- [ ] maybe make horizontal navigation (tabs, etc) be h-scrollable?
 - [x] pagination elements
 - [x] group details+summary with the same name into an accordion menu
 - [x] navigation
@@ -17,7 +20,6 @@ Features
 - [x] forms
   - [x] validation states
 - [ ] animations
-- [ ] loading state with aria-busy
 - [x] screenshot tests
 
 Improvements
