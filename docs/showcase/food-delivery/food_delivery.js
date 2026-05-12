@@ -1,10 +1,10 @@
-// showcase/food-delivery/react-srv-hydrate-Index.jsx
+// showcase/food-delivery/react-srv-hydrate-FoodDelivery.jsx
 import React from "https://esm.sh/react@19.2.0";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
-// showcase/food-delivery/Index.tsx
+// showcase/food-delivery/FoodDelivery.tsx
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function Index() {
+function FoodDelivery() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", style: { backgroundColor: "var(--color-primary-faint)" }, children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { className: "gap" }),
@@ -147,7 +147,7 @@ function Index() {
   ] });
 }
 
-// showcase/food-delivery/react-srv-hydrate-Index.jsx
+// showcase/food-delivery/react-srv-hydrate-FoodDelivery.jsx
 var root = document.getElementById("root");
 if (!root) {
   throw new Error("react-srv: Could not find hydration root.");
@@ -156,6 +156,6 @@ if (!globalThis.__REACT_SRV_HYDRATED__) {
   globalThis.__REACT_SRV_HYDRATED__ = true;
   hydrateRoot(
     root,
-    React.createElement(Index, globalThis.__INITIAL_PROPS__ || {})
+    React.createElement(FoodDelivery, globalThis.__INITIAL_PROPS__ || {})
   );
 }

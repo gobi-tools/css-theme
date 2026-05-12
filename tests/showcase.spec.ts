@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-const showcases = ['food-delivery'];
+const showcases = [
+  'food-delivery/food_delivery.html',
+];
 
 for (const showcase of showcases) {
   const route = `/showcase/${showcase}`;
