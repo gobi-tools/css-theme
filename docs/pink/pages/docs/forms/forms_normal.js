@@ -3063,6 +3063,10 @@ function Classes({ theme }) {
           ] })
         ] }),
         /* @__PURE__ */ jsxs26("tr", { children: [
+          /* @__PURE__ */ jsx26("td", { children: /* @__PURE__ */ jsx26("code", { children: "rounded" }) }),
+          /* @__PURE__ */ jsx26("td", { children: "Sighlty rounds off the edges off an element. Useful for images." })
+        ] }),
+        /* @__PURE__ */ jsxs26("tr", { children: [
           /* @__PURE__ */ jsx26("td", { children: /* @__PURE__ */ jsx26("code", { children: "container-medium" }) }),
           /* @__PURE__ */ jsxs26("td", { children: [
             "Sets the maximum size of the container to ",

@@ -2999,6 +2999,10 @@ function Classes({ theme }) {
           ] })
         ] }),
         /* @__PURE__ */ jsxs23("tr", { children: [
+          /* @__PURE__ */ jsx23("td", { children: /* @__PURE__ */ jsx23("code", { children: "rounded" }) }),
+          /* @__PURE__ */ jsx23("td", { children: "Sighlty rounds off the edges off an element. Useful for images." })
+        ] }),
+        /* @__PURE__ */ jsxs23("tr", { children: [
           /* @__PURE__ */ jsx23("td", { children: /* @__PURE__ */ jsx23("code", { children: "container-medium" }) }),
           /* @__PURE__ */ jsxs23("td", { children: [
             "Sets the maximum size of the container to ",

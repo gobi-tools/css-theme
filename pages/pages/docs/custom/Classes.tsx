@@ -44,6 +44,12 @@ export default function Classes({ theme }) {
                 </td>
               </tr>
               <tr>
+                <td><code>rounded</code></td>
+                <td>
+                  Sighlty rounds off the edges off an element. Useful for images.
+                </td>
+              </tr>
+              <tr>
                 <td><code>container-medium</code></td>
                 <td>
                   Sets the maximum size of the container to <code>var(--width-container-medium)</code>. See <a href={RouteMaster.doc(EDoc.Containers, theme, route)}>here</a>.
