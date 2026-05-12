@@ -1,0 +1,7 @@
+/* base */
+
+footer {
+  display: block;
+  text-align: left;
+  font-size: var(--font-size-xsm);
+}

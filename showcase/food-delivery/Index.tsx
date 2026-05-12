@@ -206,6 +206,24 @@ export default function Index() {
           </header>
         </section>
       </main>
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Terms of service</a>
+            </li>
+            <li>
+              <a href="">Privacy</a>
+            </li>
+            <li>
+              <a href="">Locations</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </>
   );
 }
