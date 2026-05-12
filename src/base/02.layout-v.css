@@ -42,12 +42,18 @@ menu,
 }
 
 h1,
-h2,
+h2 {
+  margin-bottom: var(--space-l);
+}
+
 h3,
-h4,
+h4 {
+  margin-bottom: var(--space-m);
+}
+
 h5,
 h6 {
-  margin-bottom: var(--space-l);
+  margin-bottom: var(--space-xs);
 }
 
 hr {
