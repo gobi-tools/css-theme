@@ -15,7 +15,7 @@ main {
 }
 
 header {
-  margin-top: var(--space-m);
+  /* margin-top: var(--space-m); */
 }
 
 dialog {
@@ -45,10 +45,6 @@ menu,
   margin-bottom: var(--space-m);
 }
 
-nav>menu {
-  margin-bottom: 0;
-}
-
 h1,
 h2,
 h3,
@@ -73,6 +69,37 @@ figure {
 section {
   margin-bottom: var(--space-xl);
 }
+
+header>nav>* {
+  margin-bottom: 0;
+}
+
+header {
+  margin-bottom: var(--space-l);
+}
+header:has(+ header) {
+  margin-bottom: 0;
+}
+
+/* nav {
+  margin-bottom: var(--space-m);
+}
+
+nav>* {
+  margin-bottom: 0;
+}
+
+nav:has(+ main) {
+  margin-bottom: var(--space-l);
+}
+
+header:has(+ main) {
+  margin-bottom: var(--space-2xl);
+} */
+
+/* header {
+  margin-bottom: var(--space-2xl);
+} */
 
 *:has(+ figcaption) {
   margin-bottom: 0;
@@ -140,9 +167,21 @@ details[name]:has(+ details[name]) {
 header> :not(:is(nav, menu)) {
   display: flex;
   flex-direction: column;
-  gap: var(--space-m);
+  justify-content: center;
+  aspect-ratio: 16.0 / 9.0;
+  max-height: 40rem;
+  /* gap: var(--space-m); */
 
-  &>* {
+  /* &>* {
     margin-bottom: 0;
+  } */
+}
+section>header>:not(:is(nav, menu)) {
+  aspect-ratio: auto;
+}
+
+@media (max-width: 480px) {
+  header> :not(:is(nav, menu)) {
+    aspect-ratio: 1.0/1.25;
   }
 }

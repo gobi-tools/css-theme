@@ -2,8 +2,8 @@ export default function LayoutHeaderNav() {
   return (
     <>
       <header>
-        <nav>
-          <ul>
+        <nav style={{maxWidth: '600px'}}>
+          <ul >
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
           </ul>

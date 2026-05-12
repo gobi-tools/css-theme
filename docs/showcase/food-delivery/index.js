@@ -6,15 +6,13 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Index() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("header", { style: { marginTop: 0 }, children: /* @__PURE__ */ jsxs("div", { style: { backgroundColor: "var(--color-primary-faint)" }, children: [
-      /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
-        /* @__PURE__ */ jsx("li", { className: "gap" }),
-        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Sign In" }) }),
-        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { type: "reset", children: "Sign Up" }) })
-      ] }) }),
-      /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", style: { backgroundColor: "var(--color-primary-faint)" }, children: /* @__PURE__ */ jsxs("ul", { children: [
+      /* @__PURE__ */ jsx("li", { className: "gap" }),
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Sign In" }) }),
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { type: "reset", children: "Sign Up" }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("div", { style: { backgroundColor: "var(--color-primary-faint)" }, children: /* @__PURE__ */ jsxs("div", { children: [
       /* @__PURE__ */ jsx("h1", { className: "align-center", children: "Restaurants, takeaways, supermarkets and shops. Delivered." }),
-      /* @__PURE__ */ jsx("br", {}),
       /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("div", { className: "group", children: [
         /* @__PURE__ */ jsx("button", { children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
           /* @__PURE__ */ jsx("path", { d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" }),
@@ -52,11 +50,8 @@ function Index() {
           /* @__PURE__ */ jsx("circle", { cx: "12", cy: "7", r: "4" })
         ] }) }),
         /* @__PURE__ */ jsx("button", { type: "reset", children: /* @__PURE__ */ jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: /* @__PURE__ */ jsx("polygon", { points: "3 11 22 2 13 21 11 13 3 11" }) }) })
-      ] }),
-      /* @__PURE__ */ jsx("br", {})
-    ] }) }),
-    /* @__PURE__ */ jsx("br", {}),
-    /* @__PURE__ */ jsx("br", {}),
+      ] })
+    ] }) }) }),
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsxs("section", { className: "row", children: [
         /* @__PURE__ */ jsxs("div", { className: "card", children: [

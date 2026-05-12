@@ -1,8 +1,8 @@
 export default function MobileNav() {
   return (
     <>
-      <header style={{maxWidth: '600px'}}>
-        <nav>
+      <header>
+        <nav style={{maxWidth: '600px'}}>
           <ul>
             <li>
               <a href="">

@@ -1,62 +1,63 @@
 export default function Index() {
   return (
     <>
-      <header style={{ marginTop: 0 }}>
+      <header>
+        <nav className="disable-mobile" style={{ backgroundColor: 'var(--color-primary-faint)' }}>
+          <ul>
+            <li className="gap"></li>
+            <li>
+              <button>Sign In</button>
+            </li>
+            <li>
+              <button type="reset">Sign Up</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <header>
         <div style={{ backgroundColor: 'var(--color-primary-faint)' }}>
-          <nav className="disable-mobile">
-            <ul>
-              <li className="gap"></li>
-              <li>
-                <button>Sign In</button>
-              </li>
-              <li>
-                <button type="reset">Sign Up</button>
-              </li>
-            </ul>
-          </nav>
-          <br/>
-          <h1 className="align-center">
-            Restaurants, takeaways, supermarkets and shops. Delivered. 
-          </h1>
-          <br/>
-          <form>
-            <div className="group">
-              <button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+          <div>
+            <h1 className="align-center">
+              Restaurants, takeaways, supermarkets and shops. Delivered.
+            </h1>
+            <form>
+              <div className="group">
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                </button>
+                <input
+                  id="address-search"
+                  type="search"
+                  placeholder="Enter delivery address">
+                </input>
+                <button type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                </button>
+              </div>
+            </form>
+            <p className="align-center hide-on-mobile">
+              <button type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
+                <span>Sign in for saved address</span>
               </button>
-              <input
-                id="address-search"
-                type="search"
-                placeholder="Enter delivery address">
-              </input>
-              <button type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+              <button type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11" /></svg>
+                <span>Use current location</span>
               </button>
-            </div>
-          </form>
-          <p className="align-center hide-on-mobile">
-            <button type="reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
-              <span>Sign in for saved address</span>
-            </button>
-            <button type="reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11" /></svg>
-              <span>Use current location</span>
-            </button>
-          </p>
-          <p className="hide-on-desktop align-center">
-            <button type="reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
-            </button>
-            <button type="reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11" /></svg>
-            </button>
-          </p>
-          <br/>
+            </p>
+            <p className="hide-on-desktop align-center">
+              <button type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
+              </button>
+              <button type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11" /></svg>
+              </button>
+            </p>
+          </div>
+
+          {/* <br/> */}
         </div>
       </header>
-      <br/>
-      <br/>
       <main>
         <section className="row">
           <div className="card">

@@ -6,7 +6,7 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileNav() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [
         /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
           /* @__PURE__ */ jsx("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),

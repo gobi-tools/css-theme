@@ -1,8 +1,8 @@
 export default function MobileBreadcrumbs() {
   return (
     <>
-      <header style={{maxWidth: '600px'}}>
-        <nav>
+      <header>
+        <nav style={{maxWidth: '600px'}}>
           <ol>
             <li>
               <a href="">Home</a>

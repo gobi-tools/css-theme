@@ -3742,7 +3742,7 @@ function LayoutHeaderSection() {
 import { Fragment as Fragment3, jsx as jsx31, jsxs as jsxs31 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileBreadcrumbs() {
   return /* @__PURE__ */ jsxs31(Fragment3, { children: [
-    /* @__PURE__ */ jsx31("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx31("nav", { children: /* @__PURE__ */ jsxs31("ol", { children: [
+    /* @__PURE__ */ jsx31("header", { children: /* @__PURE__ */ jsx31("nav", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs31("ol", { children: [
       /* @__PURE__ */ jsx31("li", { children: /* @__PURE__ */ jsx31("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx31("li", { children: /* @__PURE__ */ jsx31("a", { href: "", children: "Library" }) }),
       /* @__PURE__ */ jsxs31("li", { "aria-selected": true, children: [
@@ -3797,7 +3797,7 @@ function DesktopMenu() {
 import { Fragment as Fragment5, jsx as jsx33, jsxs as jsxs33 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderNav() {
   return /* @__PURE__ */ jsxs33(Fragment5, { children: [
-    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsx33("nav", { children: /* @__PURE__ */ jsxs33("ul", { children: [
+    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsx33("nav", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs33("ul", { children: [
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "About" }) })
     ] }) }) }),
@@ -3812,17 +3812,15 @@ function LayoutHeaderNav() {
 import { Fragment as Fragment6, jsx as jsx34, jsxs as jsxs34 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderComplex() {
   return /* @__PURE__ */ jsxs34(Fragment6, { children: [
-    /* @__PURE__ */ jsxs34("header", { children: [
-      /* @__PURE__ */ jsx34("nav", { children: /* @__PURE__ */ jsx34("ul", { children: /* @__PURE__ */ jsx34("li", { children: /* @__PURE__ */ jsx34("a", { href: "", children: "Home" }) }) }) }),
-      /* @__PURE__ */ jsxs34("div", { className: "align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
-        /* @__PURE__ */ jsx34("h2", { children: "My blog" }),
-        /* @__PURE__ */ jsx34("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-        /* @__PURE__ */ jsx34("form", { children: /* @__PURE__ */ jsxs34("div", { className: "group", children: [
-          /* @__PURE__ */ jsx34("input", { type: "email", placeholder: "name@example.com" }),
-          /* @__PURE__ */ jsx34("input", { type: "submit", value: "Subscribe" })
-        ] }) })
-      ] })
-    ] }),
+    /* @__PURE__ */ jsx34("header", { children: /* @__PURE__ */ jsx34("nav", { children: /* @__PURE__ */ jsx34("ul", { children: /* @__PURE__ */ jsx34("li", { children: /* @__PURE__ */ jsx34("a", { href: "", children: "Home" }) }) }) }) }),
+    /* @__PURE__ */ jsx34("header", { children: /* @__PURE__ */ jsxs34("div", { className: "align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
+      /* @__PURE__ */ jsx34("h2", { children: "My blog" }),
+      /* @__PURE__ */ jsx34("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
+      /* @__PURE__ */ jsx34("form", { children: /* @__PURE__ */ jsxs34("div", { className: "group", children: [
+        /* @__PURE__ */ jsx34("input", { type: "email", placeholder: "name@example.com" }),
+        /* @__PURE__ */ jsx34("input", { type: "submit", value: "Subscribe" })
+      ] }) })
+    ] }) }),
     /* @__PURE__ */ jsxs34("main", { children: [
       /* @__PURE__ */ jsx34("h1", { children: "Title" }),
       /* @__PURE__ */ jsx34("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
@@ -3879,7 +3877,7 @@ function MobileMenu() {
 import { Fragment as Fragment9, jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileNav() {
   return /* @__PURE__ */ jsxs37(Fragment9, { children: [
-    /* @__PURE__ */ jsx37("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx37("nav", { children: /* @__PURE__ */ jsxs37("ul", { children: [
+    /* @__PURE__ */ jsx37("header", { children: /* @__PURE__ */ jsx37("nav", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs37("ul", { children: [
       /* @__PURE__ */ jsx37("li", { children: /* @__PURE__ */ jsxs37("a", { href: "", children: [
         /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
           /* @__PURE__ */ jsx37("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),

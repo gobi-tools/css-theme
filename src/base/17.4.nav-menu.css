@@ -58,8 +58,9 @@ header:has(nav > menu):not(.disable-mobile) {
 @container menu (max-width: 600px) {
   nav>menu {
     position: fixed;
-    width: 100%;
+    width: 100% !important;
     left: 0;
+    right: 0;
     bottom: 0;
     justify-content: center;
     gap: 0;
@@ -70,5 +71,14 @@ header:has(nav > menu):not(.disable-mobile) {
   nav>menu>li {
     flex-grow: 1;
     flex-basis: 999px;
+  }
+
+  /* note: this is for tabs to not have padding ... */
+  header>nav:is(:first-child) {
+    padding-top: 0;
+  }
+
+  header>nav:is(:last-child) {
+    padding-bottom: 0;
   }
 }

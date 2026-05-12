@@ -6,7 +6,7 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileBreadcrumbs() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("header", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ol", { children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs("ol", { children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Library" }) }),
       /* @__PURE__ */ jsxs("li", { "aria-selected": true, children: [

@@ -7,6 +7,8 @@ export default function LayoutHeaderComplex() {
             <li><a href="">Home</a></li>
           </ul>
         </nav>
+      </header>
+      <header>
         <div className="align-center" style={{ backgroundColor: 'light-dark(var(--color-secondary-muted), var(--color-accent-faint))' }}>
           <h2>My blog</h2>
           <p>
@@ -15,7 +17,7 @@ export default function LayoutHeaderComplex() {
           <form>
             <div className="group">
               <input type="email" placeholder="name@example.com" />
-              <input type="submit" value="Subscribe"/>
+              <input type="submit" value="Subscribe" />
             </div>
           </form>
         </div>
