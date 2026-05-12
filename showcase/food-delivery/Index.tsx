@@ -35,27 +35,16 @@ export default function Index() {
                 </button>
               </div>
             </form>
-            <p className="align-center hide-on-mobile">
-              <button type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
-                <span>Sign in for saved address</span>
-              </button>
+            <p className="align-center">
               <button type="reset">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11" /></svg>
                 <span>Use current location</span>
               </button>
             </p>
-            <p className="hide-on-desktop align-center">
-              <button type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
-              </button>
-              <button type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11" /></svg>
-              </button>
-            </p>
           </div>
         </div>
       </header>
+      <br />
       <main>
         <section className="row">
           <div className="card">
@@ -120,10 +109,12 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="row">
+        <section className="row group">
+          <div className="hide-on-desktop">
+            <img src="https://picsum.photos/id/42/640/480" width={"100%"} />
+          </div>
           <div>
-            <h1>Everything you crave, delivered.</h1>
-            <h4>Your favorite local restaurants</h4>
+            <h2>Everything you crave, delivered.</h2>
             <p>
               Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.
             </p>
@@ -131,17 +122,17 @@ export default function Index() {
               <button>Find restaurants</button>
             </p>
           </div>
-          <div>
+          <div className="hide-on-mobile">
             <img src="https://picsum.photos/id/42/640/480" width={"100%"} />
           </div>
         </section>
 
-        <section className="row">
+        <section className="row group">
           <div>
             <img src="https://picsum.photos/id/103/640/480" width={"100%"} />
           </div>
           <div>
-            <h1>Delivery for less</h1>
+            <h2>Delivery for less</h2>
             <p>
               Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus, it's free for 30 days.
             </p>
@@ -151,20 +142,12 @@ export default function Index() {
           </div>
         </section>
 
-        <section>
-          <header>
-            <div className="align-center" style={{ backgroundImage: 'url("https://picsum.photos/id/130/640/480")', backgroundSize: 'cover' }}>
-              <h1>Get grocery and convenience store essentials</h1>
-              <h4>Grocery delivery, exactly how you want it.</h4>
-              <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</p>
-              <p><button>Shop Groceries</button></p>
-            </div>
-          </header>
-        </section>
-
-        <section className="row">
+        <section className="row group">
+          <div className="hide-on-desktop">
+            <img src="https://picsum.photos/id/348/640/480" width={"100%"} />
+          </div>
           <div>
-            <h1>Convenience stores at your doorstep.</h1>
+            <h2>Convenience stores at your doorstep.</h2>
             <p>
               Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.
             </p>
@@ -172,35 +155,45 @@ export default function Index() {
               <button>Shop now</button>
             </p>
           </div>
-          <div>
+          <div className="hide-on-mobile">
             <img src="https://picsum.photos/id/348/640/480" width={"100%"} />
           </div>
         </section>
 
+        <header>
+          <div className="align-center" style={{ backgroundImage: 'url("https://picsum.photos/id/130/640/480")', backgroundSize: 'cover' }}>
+            <h1>Get grocery and convenience store essentials</h1>
+            <h4>Grocery delivery, exactly how you want it.</h4>
+            <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</p>
+            <p><button>Shop Groceries</button></p>
+          </div>
+        </header>
+
         <section>
-          <header>
+          <header className="align-center">
             <div style={{ backgroundColor: 'var(--color-primary-faint)' }}>
-              <h1 className="align-center">Helping you with to-dos and gifting</h1>
+              <h2>Helping you with to-dos and gifting</h2>
               <div className="row">
                 <div>
-                  <h2>Beauty essentials from top brands</h2>
+                  <h3>Beauty essentials from top brands</h3>
                   <p>Get all your beauty and self-care needs delivered at home or on-the-go</p>
                   <p><button>Show beauty</button></p>
                 </div>
                 <div>
-                  <h2>Flowers for any occasion</h2>
+                  <h3>Flowers for any occasion</h3>
                   <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
                   <p><button>Send flowers</button></p>
                 </div>
               </div>
+              <br/><br/>
               <div className="row">
                 <div>
-                  <h2>Restock the minibar</h2>
+                  <h3>Restock the minibar</h3>
                   <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne and wine delivered fast.</p>
                   <p><button>Show alcohol</button></p>
                 </div>
                 <div>
-                  <h2>What your pets need, and want</h2>
+                  <h3>What your pets need, and want</h3>
                   <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew toys, and even costumes.</p>
                   <p><button>Get pet supplies</button></p>
                 </div>

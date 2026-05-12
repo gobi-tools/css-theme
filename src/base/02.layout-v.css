@@ -151,6 +151,7 @@ header> :not(:is(nav, menu)) {
 
 section>header>:not(:is(nav, menu)) {
   aspect-ratio: auto;
+  max-height: initial;
 }
 
 @media (max-width: 480px) {
