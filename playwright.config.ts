@@ -2,11 +2,33 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
+  workers: 16,
+  fullyParallel: true,
 
   use: {
     baseURL: 'http://localhost:8080',
-    viewport: { width: 1600, height: 2500 },
   },
+
+  projects: [
+    {
+      name: 'desktop',
+      use: {
+        viewport: { width: 1280, height: 3000 },
+      },
+    },
+    {
+      name: 'tablet',
+      use: {
+        viewport: { width: 768, height: 4000 },
+      },
+    },
+    {
+      name: 'mobile',
+      use: {
+        viewport: { width: 375, height: 4500 },
+      },
+    },
+  ],
 
   webServer: {
     command: 'npx http-server ./docs -p 8080',

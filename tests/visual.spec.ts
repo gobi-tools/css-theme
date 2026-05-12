@@ -1,4 +1,4 @@
-import { test, expect, chromium } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import fg from "fast-glob";
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -19,19 +19,12 @@ const files = fg.sync('**/*.html', {
   .map(f => `pages/${f}`);
 files.push('index.html');
 
-const browser = await chromium.launch({
-  executablePath: '/usr/bin/chromium',
-  headless: true,
-});
-
 // run all the tests
 for (const theme of themes) {
   for (const file of files) {
     const route = `/${theme.toLowerCase()}/${file.replace(/\\/g, '/')}`;
 
-    test(`visual: ${route}`, async () => {
-      const page = await browser.newPage();
-
+    test(`visual: ${route}`, async ({ page }) => {
       await page.goto(route);
 
       await page.addStyleTag({
