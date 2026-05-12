@@ -3588,10 +3588,11 @@ function Header({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs28("section", { className: "row", children: [
       /* @__PURE__ */ jsxs28("div", { children: [
-        /* @__PURE__ */ jsx28("p", { children: "More compelx headers can contain both the navigation as well as a call to action, a brand promo, etc." }),
+        /* @__PURE__ */ jsx28("p", { children: "More complex layouts can be created by placing navigation and other types of elements in various headers." }),
         /* @__PURE__ */ jsx28("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
       ] }),
-      /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<header>
+      /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<!-- nav header -->
+<header>
   <nav>
     <ul>
       <li>
@@ -3601,6 +3602,10 @@ function Header({ theme }) {
       </li>
     </ul>
   </nav>
+</header>
+
+<!-- hero header -->
+<header>
   <div class="align-center">
     <h2>
       My blog

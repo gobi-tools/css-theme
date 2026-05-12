@@ -45,18 +45,15 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
-            More compelx headers can contain both the navigation as well as a
-            call to action, a brand promo, etc.
+            More complex layouts can be created by placing navigation and 
+            other types of elements in various headers.
           </p>
-          {/* <p>
-            Inside a header you can create more complex layouts, to highlight 
-            a call to action, a brand promo, etc.
-          </p> */}
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderComplex, theme, route)} />
         </div>
         <div>
           <pre><code>
-            {`<header>
+            {`<!-- nav header -->
+<header>
   <nav>
     <ul>
       <li>
@@ -66,6 +63,10 @@ export default function Header({ theme }) {
       </li>
     </ul>
   </nav>
+</header>
+
+<!-- hero header -->
+<header>
   <div class="align-center">
     <h2>
       My blog
