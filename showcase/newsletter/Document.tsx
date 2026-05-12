@@ -6,7 +6,7 @@ export default function Document({ children }) {
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <title>Showcase - Food Delivery</title>
+        <title>Showcase - Newsletter</title>
 
         <meta name="description" content="CSS Theme Demo" />
         <meta name="author" content="CSS Theme" />
@@ -17,7 +17,7 @@ export default function Document({ children }) {
         <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/res/theme.default.min.css`} />
 
         <link rel="stylesheet" href={`/showcase/food-delivery/custom.css`} />
-        <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/showcase/food-delivery/custom.css`} />
+        <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/showcase/newsletter/custom.css`} />
       </head>
       <body>
         <div>
