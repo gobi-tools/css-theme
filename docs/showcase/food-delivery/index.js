@@ -111,21 +111,24 @@ function Index() {
           /* @__PURE__ */ jsxs("div", { children: [
             /* @__PURE__ */ jsx("h3", { children: "Beauty essentials from top brands" }),
             /* @__PURE__ */ jsx("p", { children: "Get all your beauty and self-care needs delivered at home or on-the-go" }),
-            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Show beauty" }) })
+            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Show beauty" }) }),
+            /* @__PURE__ */ jsx("hr", { className: "hide-on-desktop" })
           ] }),
           /* @__PURE__ */ jsxs("div", { children: [
             /* @__PURE__ */ jsx("h3", { children: "Flowers for any occasion" }),
             /* @__PURE__ */ jsx("p", { children: "Shop hand-picked and thoughtfully-arranged blooms from florists near you." }),
-            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Send flowers" }) })
+            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Send flowers" }) }),
+            /* @__PURE__ */ jsx("hr", { className: "hide-on-desktop" })
           ] })
         ] }),
         /* @__PURE__ */ jsx("br", {}),
-        /* @__PURE__ */ jsx("br", {}),
+        /* @__PURE__ */ jsx("br", { className: "hide-on-mobile" }),
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsxs("div", { children: [
             /* @__PURE__ */ jsx("h3", { children: "Restock the minibar" }),
             /* @__PURE__ */ jsx("p", { children: "Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne and wine delivered fast." }),
-            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Show alcohol" }) })
+            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Show alcohol" }) }),
+            /* @__PURE__ */ jsx("hr", { className: "hide-on-desktop" })
           ] }),
           /* @__PURE__ */ jsxs("div", { children: [
             /* @__PURE__ */ jsx("h3", { children: "What your pets need, and want" }),

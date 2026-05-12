@@ -178,19 +178,23 @@ export default function Index() {
                   <h3>Beauty essentials from top brands</h3>
                   <p>Get all your beauty and self-care needs delivered at home or on-the-go</p>
                   <p><button>Show beauty</button></p>
+                  <hr className="hide-on-desktop"/>
                 </div>
                 <div>
                   <h3>Flowers for any occasion</h3>
                   <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
                   <p><button>Send flowers</button></p>
+                  <hr className="hide-on-desktop"/>
                 </div>
               </div>
-              <br/><br/>
+              <br/>
+              <br className="hide-on-mobile"/>
               <div className="row">
                 <div>
                   <h3>Restock the minibar</h3>
                   <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne and wine delivered fast.</p>
                   <p><button>Show alcohol</button></p>
+                  <hr className="hide-on-desktop"/>
                 </div>
                 <div>
                   <h3>What your pets need, and want</h3>

@@ -80,7 +80,8 @@ header>nav>* {
   margin-bottom: 0;
 }
 
-header:has(+ header) {
+header:has(+ header),
+header:has(+ *>header) {
   margin-bottom: 0;
 }
 
