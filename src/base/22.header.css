@@ -1,22 +1,5 @@
 /* base */
 
-/* header > :not(:is(nav, menu)) {
-  padding-block: var(--space-m);
-} */
-
-/* header>*:first-child {
-  padding-top: var(--space-m);
-} */
-
-/* header>*:last-child {
-  padding-bottom: var(--space-m);
-}
-
-
-header>nav + *{
-  padding-top: var(--space-m);
-} */
-
 header>*:first-child {
   padding-top: var(--space-m);
 }

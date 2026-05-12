@@ -54,8 +54,6 @@ export default function Index() {
               </button>
             </p>
           </div>
-
-          {/* <br/> */}
         </div>
       </header>
       <main>

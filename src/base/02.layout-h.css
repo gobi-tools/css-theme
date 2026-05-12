@@ -13,7 +13,7 @@ dialog {
   margin-inline: auto;
 }
 
-header>* /*:not(:is(nav, menu))*/ {
+header>*{
   width: 100vw !important;
   margin-inline: calc(50% - 50vw);
 

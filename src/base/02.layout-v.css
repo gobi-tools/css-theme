@@ -14,10 +14,6 @@ main {
   margin-top: var(--space-l);
 }
 
-header {
-  /* margin-top: var(--space-m); */
-}
-
 dialog {
   margin-top: var(--space-xl);
 }
@@ -70,36 +66,17 @@ section {
   margin-bottom: var(--space-xl);
 }
 
+header {
+  margin-bottom: var(--space-l);
+}
+
 header>nav>* {
   margin-bottom: 0;
 }
 
-header {
-  margin-bottom: var(--space-l);
-}
 header:has(+ header) {
   margin-bottom: 0;
 }
-
-/* nav {
-  margin-bottom: var(--space-m);
-}
-
-nav>* {
-  margin-bottom: 0;
-}
-
-nav:has(+ main) {
-  margin-bottom: var(--space-l);
-}
-
-header:has(+ main) {
-  margin-bottom: var(--space-2xl);
-} */
-
-/* header {
-  margin-bottom: var(--space-2xl);
-} */
 
 *:has(+ figcaption) {
   margin-bottom: 0;
@@ -170,12 +147,8 @@ header> :not(:is(nav, menu)) {
   justify-content: center;
   aspect-ratio: 16.0 / 9.0;
   max-height: 40rem;
-  /* gap: var(--space-m); */
-
-  /* &>* {
-    margin-bottom: 0;
-  } */
 }
+
 section>header>:not(:is(nav, menu)) {
   aspect-ratio: auto;
 }

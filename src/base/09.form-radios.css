@@ -9,8 +9,6 @@ input[type=radio] {
   min-height: auto;
 }
 
-
-
 /* 
  * make labels that are parts of checboxes and radio buttons 
  * diplay as flex so any inline padding the browser adds is nulliied
