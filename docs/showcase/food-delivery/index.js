@@ -74,16 +74,16 @@ function Index() {
         ] })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row group", children: [
-        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/42/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/42/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("h2", { children: "Everything you crave, delivered." }),
           /* @__PURE__ */ jsx("p", { children: "Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try." }),
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Find restaurants" }) })
         ] }),
-        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/42/640/480", width: "100%" }) })
+        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/42/640/480", width: "100%" }) })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row group", children: [
-        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/103/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/103/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("h2", { children: "Delivery for less" }),
           /* @__PURE__ */ jsx("p", { children: "Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus, it's free for 30 days." }),
@@ -91,13 +91,13 @@ function Index() {
         ] })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row group", children: [
-        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/348/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/348/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("h2", { children: "Convenience stores at your doorstep." }),
           /* @__PURE__ */ jsx("p", { children: "Stock up on snacks, household essentials, candy, or vitamins \u2014 all delivered in under an hour." }),
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Shop now" }) })
         ] }),
-        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/348/640/480", width: "100%" }) })
+        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/348/640/480", width: "100%" }) })
       ] }),
       /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center", style: { backgroundImage: 'url("https://picsum.photos/id/130/640/480")', backgroundSize: "cover" }, children: [
         /* @__PURE__ */ jsx("h1", { children: "Get grocery and convenience store essentials" }),

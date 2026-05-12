@@ -106,7 +106,7 @@
   /* -dialog applies to: "dialog" */
   --border-radius-dialog: 6px;
 
-  /* -note applies to: "fieldsets", "card" class  */
+  /* -card applies to: "fieldsets", "card" class  */
   --border-radius-card: 6px;
 
   --border-left-width-card: 2px;
@@ -124,6 +124,9 @@
   /* -tabs applies to: "tab" (nav>ol) */
   --border-width-horz-tabs: 4px;
   --border-width-vert-tabs: 3px;
+
+  /* -rounded applies to the "rounded" class */
+  --border-radius-rounded: 10px;
 }
 
 /* theme colors */

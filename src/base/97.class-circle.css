@@ -3,3 +3,7 @@
 .circle {
   border-radius: 50%;
 }
+
+.rounded {
+  border-radius: var(--border-radius-rounded);
+}

@@ -111,7 +111,7 @@ export default function Index() {
 
         <section className="row group">
           <div className="hide-on-desktop">
-            <img src="https://picsum.photos/id/42/640/480" width={"100%"} />
+            <img className="rounded" src="https://picsum.photos/id/42/640/480" width={"100%"} />
           </div>
           <div>
             <h2>Everything you crave, delivered.</h2>
@@ -123,13 +123,13 @@ export default function Index() {
             </p>
           </div>
           <div className="hide-on-mobile">
-            <img src="https://picsum.photos/id/42/640/480" width={"100%"} />
+            <img className="rounded" src="https://picsum.photos/id/42/640/480" width={"100%"} />
           </div>
         </section>
 
         <section className="row group">
           <div>
-            <img src="https://picsum.photos/id/103/640/480" width={"100%"} />
+            <img className="rounded" src="https://picsum.photos/id/103/640/480" width={"100%"} />
           </div>
           <div>
             <h2>Delivery for less</h2>
@@ -144,7 +144,7 @@ export default function Index() {
 
         <section className="row group">
           <div className="hide-on-desktop">
-            <img src="https://picsum.photos/id/348/640/480" width={"100%"} />
+            <img className="rounded" src="https://picsum.photos/id/348/640/480" width={"100%"} />
           </div>
           <div>
             <h2>Convenience stores at your doorstep.</h2>
@@ -156,7 +156,7 @@ export default function Index() {
             </p>
           </div>
           <div className="hide-on-mobile">
-            <img src="https://picsum.photos/id/348/640/480" width={"100%"} />
+            <img className="rounded" src="https://picsum.photos/id/348/640/480" width={"100%"} />
           </div>
         </section>
 
