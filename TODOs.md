@@ -1,12 +1,12 @@
 Features
 --------
+- [ ] carousel element
+- [ ] loading state with aria-busy
+- [ ] animations
+
 - [x] organise mobile nav a bit better (like here: https://sharif.io/posts)
 - [x] code + figcaption should go together 
-
 - [x] breadcrumbs navigation elements (e.g. https://getbootstrap.com/docs/5.0/components/breadcrumb/)
-- [ ] carousel
-- [ ] loading state with aria-busy
-- [ ] maybe make horizontal navigation (tabs, etc) be h-scrollable?
 - [x] pagination elements
 - [x] group details+summary with the same name into an accordion menu
 - [x] navigation
@@ -14,24 +14,26 @@ Features
   - [x] "menu" type navigation on desktop should also look like the mobile one
 - [x] forms
   - [x] validation states
-- [ ] animations
 - [x] screenshot tests
 
 Improvements
 ------------
 - [ ] redo CSS with nesting
+- [ ] maybe make horizontal navigation (tabs, etc) be h-scrollable?
+- [ ] turn the “rounded” class into a var for all images
+- [ ] create classes for Primary / Secondary / etc that can be applied for text, elements, etc
+- [ ] classes for inverted colors (?)
+- [ ] redo the horizontal spacing to be based on "ch"
+- [ ] redo aside and any other fixed widths to be based on "ch"
+- [ ] redo the mobile & container logic (based on "ch", like here: https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
+- [ ] for Tab like navigation, is it possible to have N layers, like Soda docs https://docs.soda.io/data-testing/git-managed-data-contracts/install-and-configure 
+- [ ] have a full-screen width dimension
+- [ ] pre>code elements should have horizontal scrolling enabled
 - [x] if I have a nav with the "card" role, it looks fairly ok; but the padding-block could be 0 to make it look even better
 - [x] fieldsets, cards all have padding-bottom: 0; is that a good way to approach this? or is it better to have the same padding as top/left/right and figure out a way to remove buttons, inputs, etc natural bottom padding if they are the last element? 
 - [x] input elements inside a "group" element maintain their bottom padding/marging; should they? what about if they're inside a form?
 - [x] decide on class-based versions for various roles & types (columns, note, etc)
   -> Sorted it here: https://gobi-tools.github.io/css-theme/default/pages/docs/custom/classes.html
-- [ ] redo the horizontal spacing to be based on "ch"
-- [ ] redo aside and any other fixed widths to be based on "ch"
-- [ ] redo the mobile & container logic (based on "ch", like here: https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
-- [ ] for Tab like navigation, is it possible to have N layers, like Soda docs
-  https://docs.soda.io/data-testing/git-managed-data-contracts/install-and-configure 
-- [ ] have a full-screen width dimension
-- [ ] pre>code elements should have horizontal scrolling enabled
 - [x] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.  
 
 Bugs

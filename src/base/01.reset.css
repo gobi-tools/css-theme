@@ -33,6 +33,7 @@
   --font-size-2xl: calc(1.5 * var(--font-size-base));
   --font-size-3xl: calc(2 * var(--font-size-base));
   --font-weight-head: 600;
+  --font-weight-subhead: 600;
   /* ---------------------- */
   /* theme elements         */
   /* ---------------------- */
