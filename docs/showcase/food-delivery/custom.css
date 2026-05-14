@@ -14,3 +14,14 @@
   --color-success: #23b157;
   --color-error: #ef4444;
 }
+
+.big-banner {
+  background-image: url('https://picsum.photos/id/130/640/480');
+  background-size: cover;
+}
+
+@media (prefers-color-scheme: dark) {
+  .big-banner {
+    background-image: url('https://picsum.photos/id/38/640/480');
+  }
+}

@@ -56,11 +56,7 @@ export default function FoodDelivery() {
               <ul>
                 <li>
                   <a href="">
-                    <span>
-                      <b>
-                        Start earning
-                      </b>
-                    </span>
+                    <span><b>Start earning</b></span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                   </a>
                 </li>
@@ -76,11 +72,7 @@ export default function FoodDelivery() {
               <ul>
                 <li>
                   <a href="">
-                    <span>
-                      <b>
-                        Sign up
-                      </b>
-                    </span>
+                    <span><b>Sign up</b></span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                   </a>
                 </li>
@@ -96,11 +88,7 @@ export default function FoodDelivery() {
               <ul>
                 <li>
                   <a href="">
-                    <span>
-                      <b>
-                        Get the app
-                      </b>
-                    </span>
+                    <span><b>Get the app</b></span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                   </a>
                 </li>
@@ -161,7 +149,7 @@ export default function FoodDelivery() {
         </section>
 
         <header>
-          <div className="align-center" style={{ backgroundImage: 'url("https://picsum.photos/id/130/640/480")', backgroundSize: 'cover' }}>
+          <div className="align-center big-banner">
             <h1>Get grocery and convenience store essentials</h1>
             <h4>Grocery delivery, exactly how you want it.</h4>
             <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</p>
@@ -169,42 +157,39 @@ export default function FoodDelivery() {
           </div>
         </header>
 
-        <section>
-          <header className="align-center">
-            <div style={{ backgroundColor: 'var(--color-primary-faint)' }}>
-              <h2>Helping you with to-dos and gifting</h2>
-              <div className="row">
-                <div>
-                  <h3>Beauty essentials from top brands</h3>
-                  <p>Get all your beauty and self-care needs delivered at home or on-the-go</p>
-                  <p><button>Show beauty</button></p>
-                  <hr className="hide-on-desktop"/>
-                </div>
-                <div>
-                  <h3>Flowers for any occasion</h3>
-                  <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
-                  <p><button>Send flowers</button></p>
-                  <hr className="hide-on-desktop"/>
-                </div>
+        <header className="align-center">
+          <div style={{ backgroundColor: 'var(--color-primary-faint)' }}>
+            <div className="row">
+              <div>
+                <h3>Beauty essentials from top brands</h3>
+                <p>Get all your beauty and self-care needs delivered at home or on-the-go</p>
+                <p><button>Show beauty</button></p>
+                <hr className="hide-on-desktop" />
               </div>
-              <br/>
-              <br className="hide-on-mobile"/>
-              <div className="row">
-                <div>
-                  <h3>Restock the minibar</h3>
-                  <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne and wine delivered fast.</p>
-                  <p><button>Show alcohol</button></p>
-                  <hr className="hide-on-desktop"/>
-                </div>
-                <div>
-                  <h3>What your pets need, and want</h3>
-                  <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew toys, and even costumes.</p>
-                  <p><button>Get pet supplies</button></p>
-                </div>
+              <div>
+                <h3>Flowers for any occasion</h3>
+                <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
+                <p><button>Send flowers</button></p>
+                <hr className="hide-on-desktop" />
               </div>
             </div>
-          </header>
-        </section>
+            <br />
+            <br className="hide-on-mobile" />
+            <div className="row">
+              <div>
+                <h3>Restock the minibar</h3>
+                <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne and wine delivered fast.</p>
+                <p><button>Show alcohol</button></p>
+                <hr className="hide-on-desktop" />
+              </div>
+              <div>
+                <h3>What your pets need, and want</h3>
+                <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew toys, and even costumes.</p>
+                <p><button>Get pet supplies</button></p>
+              </div>
+            </div>
+          </div>
+        </header>
       </main>
       <footer>
         <nav>

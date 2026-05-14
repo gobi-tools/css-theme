@@ -79,10 +79,3 @@ hr {
 [aria-selected="true"] a {
   color: var(--color-primary-inked-hover);
 }
-
-/* different layouts */
-
-*:has(header) {
-  container-type: inline-size;
-  container-name: header;
-}

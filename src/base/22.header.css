@@ -7,3 +7,16 @@ header>*:first-child {
 header>*:last-child {
   padding-bottom: var(--space-m);
 }
+
+/* different layouts */
+
+*:has(header) {
+  container-type: inline-size;
+  container-name: header;
+}
+
+@container header (max-width: 600px) {
+  header> :not(:is(nav, menu)) {
+    max-height: initial;
+  }
+}

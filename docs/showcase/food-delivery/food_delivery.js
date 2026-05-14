@@ -99,14 +99,13 @@ function FoodDelivery() {
         ] }),
         /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/348/640/480", width: "100%" }) })
       ] }),
-      /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center", style: { backgroundImage: 'url("https://picsum.photos/id/130/640/480")', backgroundSize: "cover" }, children: [
+      /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center big-banner", children: [
         /* @__PURE__ */ jsx("h1", { children: "Get grocery and convenience store essentials" }),
         /* @__PURE__ */ jsx("h4", { children: "Grocery delivery, exactly how you want it." }),
         /* @__PURE__ */ jsx("p", { children: "Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more." }),
         /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Shop Groceries" }) })
       ] }) }),
-      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { className: "align-center", children: /* @__PURE__ */ jsxs("div", { style: { backgroundColor: "var(--color-primary-faint)" }, children: [
-        /* @__PURE__ */ jsx("h2", { children: "Helping you with to-dos and gifting" }),
+      /* @__PURE__ */ jsx("header", { className: "align-center", children: /* @__PURE__ */ jsxs("div", { style: { backgroundColor: "var(--color-primary-faint)" }, children: [
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsxs("div", { children: [
             /* @__PURE__ */ jsx("h3", { children: "Beauty essentials from top brands" }),
@@ -136,7 +135,7 @@ function FoodDelivery() {
             /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Get pet supplies" }) })
           ] })
         ] })
-      ] }) }) })
+      ] }) })
     ] }),
     /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Terms of service" }) }),
