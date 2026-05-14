@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-family-head: "TikTok Sans", sans-serif;
+  --font-family-body: "Geist", sans-serif;
+
+  --color-bg: light-dark(#FAFAFA, #0F1819);
+  --color-txt: light-dark(#0F1819, #FAFAFA);
+  --color-txt-on-dark: #ffffff;
+  --color-primary: #1C2829;
+  --color-secondary: #364244;
+
+  --color-success: #23b157;
+  --color-error: #ef4444;
+}
