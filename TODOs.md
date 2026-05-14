@@ -3,6 +3,7 @@ Features
 - [ ] carousel element
 - [ ] loading state with aria-busy
 - [ ] animations
+- [ ] picture HTML element
 
 - [x] organise mobile nav a bit better (like here: https://sharif.io/posts)
 - [x] code + figcaption should go together 

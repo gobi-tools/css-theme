@@ -9,7 +9,7 @@ function Newsletter() {
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("img", { className: "circle", width: "30", height: "30", src: "https://picsum.photos/id/42/30/30" }) }),
       /* @__PURE__ */ jsx("li", { className: "gap" }),
-      /* @__PURE__ */ jsx("li", { className: "align-center", children: /* @__PURE__ */ jsx("h3", { children: "My newsletter" }) }),
+      /* @__PURE__ */ jsx("li", { className: "align-center", children: /* @__PURE__ */ jsx("h3", { children: "My Newsletter" }) }),
       /* @__PURE__ */ jsx("li", { className: "gap" }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Subscribe" }) })
     ] }) }) }),
@@ -24,6 +24,7 @@ function Newsletter() {
           /* @__PURE__ */ jsx("span", { children: /* @__PURE__ */ jsx("small", { children: "Published today \u2022 Paid" }) })
         ] })
       ] }) }),
+      /* @__PURE__ */ jsx("hr", {}),
       /* @__PURE__ */ jsxs("div", { className: "row disable-mobile", children: [
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("button", { type: "reset", children: [
@@ -87,8 +88,37 @@ function Newsletter() {
           ] })
         ] }),
         /* @__PURE__ */ jsx("button", { type: "reset", children: "Share" })
+      ] }),
+      /* @__PURE__ */ jsx("hr", {}),
+      /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }),
+      /* @__PURE__ */ jsx("p", { children: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." }),
+      /* @__PURE__ */ jsx("p", { children: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" }),
+      /* @__PURE__ */ jsxs("figure", { children: [
+        /* @__PURE__ */ jsx("img", { width: "100%", height: "480", src: "https://picsum.photos/id/16/640/480", alt: "ssample image " }),
+        /* @__PURE__ */ jsx("figcaption", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
+      ] }),
+      /* @__PURE__ */ jsx("p", { children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident" }),
+      /* @__PURE__ */ jsxs("blockquote", { children: [
+        /* @__PURE__ */ jsx("p", { children: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat" }),
+        /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("i", { children: "Author, quote" }) })
+      ] }),
+      /* @__PURE__ */ jsx("p", { children: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae." }),
+      /* @__PURE__ */ jsx("hr", {}),
+      /* @__PURE__ */ jsxs("div", { className: "align-center row", children: [
+        /* @__PURE__ */ jsx("div", {}),
+        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("form", { children: [
+          /* @__PURE__ */ jsx("p", { children: "This is a reader supported newsletter. Subscribe to get the latest." }),
+          /* @__PURE__ */ jsx("input", { id: "email", required: true, type: "email", placeholder: "Type your email..." }),
+          /* @__PURE__ */ jsx("input", { id: "subscribe", type: "submit", value: "Subscribe" })
+        ] }) }),
+        /* @__PURE__ */ jsx("div", {})
       ] })
-    ] }) })
+    ] }) }),
+    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Terms of service" }) }),
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Privacy" }) }),
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "About" }) })
+    ] }) }) })
   ] });
 }
 

@@ -19,7 +19,7 @@ dialog {
 }
 
 hr {
-  margin-top: var(--space-l) !important;
+  margin-top: var(--space-m) !important;
 }
 
 /* self layout: bottom margins */
@@ -63,7 +63,7 @@ h6:has(+ :is(h6)) {
 }
 
 hr {
-  margin-bottom: var(--space-l) !important;
+  margin-bottom: var(--space-m) !important;
 }
 
 figure {

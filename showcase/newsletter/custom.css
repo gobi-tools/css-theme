@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 :root {
-  --font-weight-subhead: 100;
+  color-scheme: light only;
+
+  --font-family-head: "Fraunces", sans-serif;
+  --font-family-body: "Sora", sans-serif;
+
+  --color-bg: light-dark(#F4F1E8, #1d201a);
+  --color-txt: light-dark(#2D3A1F, #ffffff);
+  --color-txt-on-dark: #ffffff;
+  --color-primary: #2D3A1F;
+  --color-secondary: #B8A678;
+
+  --color-success: #23b157;
+  --color-error: #ef4444;
+
+  --font-weight-subhead: 300;
+
+  --border-radius-code: 6px;
+  --border-radius-blocks: 0px;
+  --border-radius-button: 20px;
+  --border-radius-input: 4px;
+  --border-radius-card: 4px;
+}
+
+blockquote {
+  background: none;
+}
+
+.group>:is(button,
+  input,
+  select):first-child {
+  border-top-left-radius: var(--border-radius-button);
+  border-bottom-left-radius: var(--border-radius-button);
+  padding-left: calc(var(--border-radius-button) / 1.35) !important;
+}
+
+.group>:is(button,
+  input,
+  select):last-child {
+  border-top-right-radius: var(--border-radius-button);
+  border-bottom-right-radius: var(--border-radius-button);
 }
