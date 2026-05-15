@@ -38,3 +38,12 @@
   --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-error) 30%, white),
       color-mix(in oklch, var(--color-error) 70%, black));
 }
+
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-txt-on-dark);
+}
+
+.primary-faint {
+  background-color: var(--color-primary-faint);
+}

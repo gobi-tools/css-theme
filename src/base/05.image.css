@@ -21,3 +21,9 @@ figcaption {
   font-style: italic;
   font-size: var(--font-size-sm);
 }
+
+/* theme style */
+
+img {
+  border-radius: var(--border-radius-img);
+}

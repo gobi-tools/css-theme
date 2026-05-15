@@ -6,7 +6,11 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LandingPage() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
+    /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("div", { className: "align-center", children: [
+      /* @__PURE__ */ jsx("b", { children: "Introducing Hopper" }),
+      "\u2014 The first agentic development environment for the mainframe."
+    ] }) }) }) }),
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "container-wide", children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Platform" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Industries" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Resources" }) }),
@@ -29,7 +33,65 @@ function LandingPage() {
         /* @__PURE__ */ jsx("button", { type: "reset", children: "Read the Announcement" })
       ] }),
       /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Other platforms" }) })
-    ] }) })
+    ] }) }),
+    /* @__PURE__ */ jsxs("main", { children: [
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("figure", { children: /* @__PURE__ */ jsx("img", { className: "rounded", width: "100%", height: "500", src: "https://picsum.photos/id/8/1200/500?grayscale" }) }) }),
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "primary", children: [
+        /* @__PURE__ */ jsx("br", {}),
+        /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+          /* @__PURE__ */ jsxs("div", { children: [
+            /* @__PURE__ */ jsx("h4", { children: "Need access?" }),
+            /* @__PURE__ */ jsx("p", { children: "Fill out the form and we'll send you credentials to try it on for free." })
+          ] }),
+          /* @__PURE__ */ jsx("button", { type: "reset", children: "Request Credentials" })
+        ] }) }),
+        /* @__PURE__ */ jsx("br", {})
+      ] }) }) }),
+      /* @__PURE__ */ jsxs("section", { children: [
+        /* @__PURE__ */ jsx("h2", { children: "Built by leading minds behind the world's most advanced AI and technology" }),
+        /* @__PURE__ */ jsx("p", { children: "Our team unites top researchers, engineers, and strategists from pioneering companies and institutions\u2014all focused on building systems that deliver real impact." })
+      ] }),
+      /* @__PURE__ */ jsx("hr", {}),
+      /* @__PURE__ */ jsxs("section", { children: [
+        /* @__PURE__ */ jsx("div", { className: "align-center", children: /* @__PURE__ */ jsx("h2", { children: "Pricing" }) }),
+        /* @__PURE__ */ jsxs("div", { className: "row", children: [
+          /* @__PURE__ */ jsxs("div", { className: "card", children: [
+            /* @__PURE__ */ jsx("h2", { children: "Hobby" }),
+            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "Free" }) }),
+            /* @__PURE__ */ jsx("p", { children: "Includes:" }),
+            /* @__PURE__ */ jsxs("ul", { children: [
+              /* @__PURE__ */ jsx("li", { children: "No credit card required" }),
+              /* @__PURE__ */ jsx("li", { children: "macOS, Windows, and Linux" }),
+              /* @__PURE__ */ jsx("li", { children: "Connect with mainframe" }),
+              /* @__PURE__ */ jsx("li", { children: "All core Hopper features" })
+            ] }),
+            /* @__PURE__ */ jsx("br", {}),
+            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("button", { children: "Download" }) })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "card", children: [
+            /* @__PURE__ */ jsx("h2", { children: "Eterprise" }),
+            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "Custom" }) }),
+            /* @__PURE__ */ jsx("p", { children: "Everything in Hobby, plus:" }),
+            /* @__PURE__ */ jsxs("ul", { children: [
+              /* @__PURE__ */ jsx("li", { children: "SAML SSO" }),
+              /* @__PURE__ */ jsx("li", { children: "MCP Server Access" }),
+              /* @__PURE__ */ jsx("li", { children: "Admin and Model Controls" }),
+              /* @__PURE__ */ jsx("li", { children: "Org-wide Privacy Controls" })
+            ] }),
+            /* @__PURE__ */ jsx("br", {}),
+            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("button", { children: "Contact Sales" }) })
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsx("hr", {}),
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+        /* @__PURE__ */ jsxs("div", { children: [
+          /* @__PURE__ */ jsx("h4", { children: "Join our Community" }),
+          /* @__PURE__ */ jsx("p", { children: "Connect with builders using Hopper, follow product updates, and swap ideas with the Hypercubic team." })
+        ] }),
+        /* @__PURE__ */ jsx("button", { type: "reset", children: "Join our Discord" })
+      ] }) }) }) }) })
+    ] })
   ] });
 }
 

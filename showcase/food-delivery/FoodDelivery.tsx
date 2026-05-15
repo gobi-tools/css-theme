@@ -2,7 +2,7 @@ export default function FoodDelivery() {
   return (
     <>
       <header>
-        <nav className="disable-mobile" style={{ backgroundColor: 'var(--color-primary-faint)' }}>
+        <nav className="disable-mobile primary-faint">
           <ul>
             <li className="gap"></li>
             <li>
@@ -15,7 +15,7 @@ export default function FoodDelivery() {
         </nav>
       </header>
       <header>
-        <div style={{ backgroundColor: 'var(--color-primary-faint)' }}>
+        <div className="primary-faint">
           <div>
             <h1 className="align-center">
               Restaurants, takeaways, supermarkets and shops. Delivered.
@@ -158,7 +158,7 @@ export default function FoodDelivery() {
         </header>
 
         <header className="align-center">
-          <div style={{ backgroundColor: 'var(--color-primary-faint)' }}>
+          <div className="primary-faint">
             <div className="row">
               <div>
                 <h3>Beauty essentials from top brands</h3>

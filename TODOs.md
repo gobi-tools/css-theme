@@ -19,11 +19,13 @@ Features
 
 Improvements
 ------------
-- [ ] redo CSS with nesting
-- [ ] maybe make horizontal navigation (tabs, etc) be h-scrollable?
 - [ ] turn the “rounded” class into a var for all images
 - [ ] create classes for Primary / Secondary / etc that can be applied for text, elements, etc
-- [ ] classes for inverted colors (?)
+  - [ ] primary
+  - [ ] primary faint (?)
+  - [ ] secondary 
+  - [ ] secondary faint (?)
+- [ ] redo CSS with nesting
 - [ ] redo the horizontal spacing to be based on "ch"
 - [ ] redo aside and any other fixed widths to be based on "ch"
 - [ ] redo the mobile & container logic (based on "ch", like here: https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
@@ -40,8 +42,11 @@ Improvements
 Bugs
 ----
 - [ ] elements with display: flex and flex-direction: row tend to push outside of the boundary of the screen (check pagination buttons, etc)
+  - [ ] maybe make horizontal navigation (tabs, etc) be h-scrollable?
 - [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
 - [ ] on really small devices (iPhone SE), the last form on [this page](http://localhost:8081/default/pages/docs/forms/forms_normal.html) does not respect column widths (e.g. they are unqeual)
+- [ ] when we have <header><div>abc</div></header> the content in the div is not in the center, as I'd expect;
+  - I need to actually have <header><div><div>abc</div></div></header> to work
 - [x] header nav content can jump out on wider containers
 - [x] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
 - [x] should rows in width<600px have a 0px gap in "92.class-rows.css"?  

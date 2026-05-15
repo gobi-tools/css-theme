@@ -6,12 +6,12 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FoodDelivery() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", style: { backgroundColor: "var(--color-primary-faint)" }, children: /* @__PURE__ */ jsxs("ul", { children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile primary-faint", children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { className: "gap" }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Sign In" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { type: "reset", children: "Sign Up" }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("div", { style: { backgroundColor: "var(--color-primary-faint)" }, children: /* @__PURE__ */ jsxs("div", { children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("div", { className: "primary-faint", children: /* @__PURE__ */ jsxs("div", { children: [
       /* @__PURE__ */ jsx("h1", { className: "align-center", children: "Restaurants, takeaways, supermarkets and shops. Delivered." }),
       /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("div", { className: "group", children: [
         /* @__PURE__ */ jsx("button", { children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
@@ -105,7 +105,7 @@ function FoodDelivery() {
         /* @__PURE__ */ jsx("p", { children: "Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more." }),
         /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Shop Groceries" }) })
       ] }) }),
-      /* @__PURE__ */ jsx("header", { className: "align-center", children: /* @__PURE__ */ jsxs("div", { style: { backgroundColor: "var(--color-primary-faint)" }, children: [
+      /* @__PURE__ */ jsx("header", { className: "align-center", children: /* @__PURE__ */ jsxs("div", { className: "primary-faint", children: [
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsxs("div", { children: [
             /* @__PURE__ */ jsx("h3", { children: "Beauty essentials from top brands" }),
