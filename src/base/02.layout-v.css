@@ -81,6 +81,9 @@ section {
 :is(header, footer)>nav * {
   margin-bottom: 0;
 }
+:is(header, footer) :last-child {
+  margin-bottom: 0;
+}
 
 *:has(+ figcaption) {
   margin-bottom: 0;
