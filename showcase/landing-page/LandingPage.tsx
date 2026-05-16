@@ -50,7 +50,7 @@ export default function LandingPage() {
             <img className="rounded" width={"100%"} height={"500"} src="https://picsum.photos/id/8/1200/500?grayscale" />
           </figure>
         </section>
-        <section>
+        {/* <section>
           <header>
             <aside className="primary">
               <br />
@@ -69,7 +69,7 @@ export default function LandingPage() {
               </div>
             </aside>
           </header>
-        </section>
+        </section> */}
         <section>
           <h2>Built by leading minds behind the world's most advanced AI and technology</h2>
           <p>
@@ -137,6 +137,74 @@ export default function LandingPage() {
           </header>
         </section>
       </main>
+      <header>
+        <aside className="primary">
+          {/* <br /> */}
+          <div>
+            <div className="group">
+              <div className="row">
+                <div>
+                  <h4>Need access?</h4>
+                  <p>
+                    Fill out the form and we'll send you credentials to try it on for free.
+                  </p>
+                </div>
+                <button type="reset">Request Credentials</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </header>
+      <footer>
+        <div className="primary-faint">
+          <div className="row">
+            <div>
+              <nav>
+                <ul>
+                  <b>COMPANY</b>
+                  <li>
+                    <a href="">Our Story</a>
+                  </li>
+                  <li>
+                    <a href="">Careers</a>
+                  </li>
+                  <li>
+                    <a href="">Team</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <nav>
+                <ul>
+                  <b>DEVELOPERS</b>
+                  <li>
+                    <a href="">API</a>
+                  </li>
+                  <li>
+                    <a href="">Vulnerabilities</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <nav>
+                <ul>
+                  <b>MORE</b>
+                  <li>
+                    <a href="">About</a>
+                  </li>
+                  <li>
+                    <a href="">Privacy Policy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div className="gap"></div>
+          </div>
+        </div>
+
+      </footer>
     </>
   );
 }

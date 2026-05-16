@@ -5,3 +5,11 @@ footer {
   text-align: left;
   font-size: var(--font-size-xsm);
 }
+
+footer>*:first-child {
+  padding-top: var(--space-m);
+}
+
+footer>*:last-child {
+  padding-bottom: var(--space-m);
+}

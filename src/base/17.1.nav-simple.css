@@ -8,6 +8,10 @@ nav>:is(ul, ol) {
 
   align-items: center;
 }
+/* when in a footer, since the text is smaller, decrease the gap as well */
+footer nav>:is(ul, ol) {
+  gap: var(--space-sm);
+}
 
 nav>:is(ul, ol)>li {
   display: inline-block;

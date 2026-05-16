@@ -36,16 +36,6 @@ function LandingPage() {
     ] }) }),
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("figure", { children: /* @__PURE__ */ jsx("img", { className: "rounded", width: "100%", height: "500", src: "https://picsum.photos/id/8/1200/500?grayscale" }) }) }),
-      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("aside", { className: "primary", children: [
-        /* @__PURE__ */ jsx("br", {}),
-        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
-          /* @__PURE__ */ jsxs("div", { children: [
-            /* @__PURE__ */ jsx("h4", { children: "Need access?" }),
-            /* @__PURE__ */ jsx("p", { children: "Fill out the form and we'll send you credentials to try it on for free." })
-          ] }),
-          /* @__PURE__ */ jsx("button", { type: "reset", children: "Request Credentials" })
-        ] }) }) })
-      ] }) }) }),
       /* @__PURE__ */ jsxs("section", { children: [
         /* @__PURE__ */ jsx("h2", { children: "Built by leading minds behind the world's most advanced AI and technology" }),
         /* @__PURE__ */ jsx("p", { children: "Our team unites top researchers, engineers, and strategists from pioneering companies and institutions\u2014all focused on building systems that deliver real impact." })
@@ -90,7 +80,33 @@ function LandingPage() {
         ] }),
         /* @__PURE__ */ jsx("button", { type: "reset", children: "Join our Discord" })
       ] }) }) }) }) })
-    ] })
+    ] }),
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary", children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+      /* @__PURE__ */ jsxs("div", { children: [
+        /* @__PURE__ */ jsx("h4", { children: "Need access?" }),
+        /* @__PURE__ */ jsx("p", { children: "Fill out the form and we'll send you credentials to try it on for free." })
+      ] }),
+      /* @__PURE__ */ jsx("button", { type: "reset", children: "Request Credentials" })
+    ] }) }) }) }) }),
+    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("div", { className: "primary-faint", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
+        /* @__PURE__ */ jsx("b", { children: "COMPANY" }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Our Story" }) }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Careers" }) }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Team" }) })
+      ] }) }) }),
+      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
+        /* @__PURE__ */ jsx("b", { children: "DEVELOPERS" }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "API" }) }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Vulnerabilities" }) })
+      ] }) }) }),
+      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
+        /* @__PURE__ */ jsx("b", { children: "MORE" }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "About" }) }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Privacy Policy" }) })
+      ] }) }) }),
+      /* @__PURE__ */ jsx("div", { className: "gap" })
+    ] }) }) })
   ] });
 }
 
