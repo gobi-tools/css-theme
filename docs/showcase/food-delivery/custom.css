@@ -3,6 +3,7 @@
 
 :root {
   --font-family-head: "Montserrat", sans-serif;
+  --font-familu-navi:  "Google Sans", sans-serif;
   --font-family-body: "Google Sans", sans-serif;
 
   --color-bg: light-dark(#FAFAFA, #111827);

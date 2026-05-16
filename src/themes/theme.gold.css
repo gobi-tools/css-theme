@@ -1,7 +1,8 @@
 :root {
   /* typography - font type */
-  --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-head: serif;
+  --font-familu-navi: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-mono: monospace;
   /* -code applis to "kbd", "code", "var", "mark"  */
   --border-radius-code: 0px;

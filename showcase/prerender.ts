@@ -3,6 +3,7 @@ import { cp } from "fs/promises";
 import foodDeliveryConfig from './food-delivery/react-srv.config';
 import newsletterConfig from './newsletter/react-srv.config';
 import landingPageConfig from './landing-page/react-srv.config';
+import newspaperConfig from './newspaper/react-srv.config';
 
 (async () => {
   // food delivery
@@ -22,5 +23,11 @@ import landingPageConfig from './landing-page/react-srv.config';
   await landingPageReact.prerender();
   cp('./showcase/landing-page/custom.css', './docs/showcase/landing-page/custom.css');
   console.log('Rendered Landing Page showcase');
+
+  // landing page
+  const newspaperReact = new ReactSrv(newspaperConfig);
+  await newspaperReact.prerender();
+  cp('./showcase/newspaper/custom.css', './docs/showcase/newspaper/custom.css');
+  console.log('Rendered Newspaper showcase');
 })();
 

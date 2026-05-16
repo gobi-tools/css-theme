@@ -183,7 +183,6 @@ export default function LandingPage() {
             <div className="gap"></div>
           </div>
         </div>
-
       </footer>
     </>
   );

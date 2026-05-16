@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  color-scheme: light only;
+
+  --font-family-head: "Gloock", sans-serif;
+  --font-familu-navi: "Inter", serif;
+  --font-family-body: "Inter", serif;
+
+  --color-bg: light-dark(#ffffff, #1d201a);
+  --color-txt: light-dark(#2D3A1F, #ffffff);
+  --color-txt-on-dark: #ffffff;
+  --color-primary: #007aff;
+  --color-secondary: #ffeb2d;
+
+  --color-success: #23b157;
+  --color-error: #ef4444;
+
+  /* --font-weight-subhead: 300; */
+
+  --border-radius-code: 0px;
+  --border-radius-blocks: 0px;
+  --border-radius-button: 0px;
+  --border-radius-input: 0px;
+  --border-radius-card: 0px;
+}
+
+.article-img {
+  aspect-ratio: 16.0 / 9.0;
+}
+
+.row {
+  gap: var(--space-l);
+}
+
+@container rows (max-width: 600px) {
+  .row {
+    gap: var(--space-m)
+  }
+}
