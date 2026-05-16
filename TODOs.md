@@ -76,6 +76,7 @@ Bugs
 
 Bugs/Platform
 -------------
+- [ ][iOS Chrome] bottom tab menu obscures part of the footer
 - [ ][Mobile Safari] The datepicker has no placeholder text; example [here](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_grouped.html) 
 - [ ][Mobile Safari] Check & radio button widget & text are not centrally v-aligned
 - [x][Mobile Safari/Chrome] Summary with .card class has extra bottom padding or gap
