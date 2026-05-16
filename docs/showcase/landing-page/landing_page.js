@@ -35,7 +35,7 @@ function LandingPage() {
       /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Other platforms" }) })
     ] }) }),
     /* @__PURE__ */ jsxs("main", { children: [
-      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("figure", { children: /* @__PURE__ */ jsx("img", { className: "rounded", width: "100%", height: "500", src: "https://picsum.photos/id/8/1200/500?grayscale" }) }) }),
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("figure", { children: /* @__PURE__ */ jsx("img", { className: "rounded", width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://picsum.photos/id/2/1200/500?grayscale" }) }) }),
       /* @__PURE__ */ jsxs("section", { children: [
         /* @__PURE__ */ jsx("h2", { children: "Built by leading minds behind the world's most advanced AI and technology" }),
         /* @__PURE__ */ jsx("p", { children: "Our team unites top researchers, engineers, and strategists from pioneering companies and institutions\u2014all focused on building systems that deliver real impact." })

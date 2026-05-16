@@ -78,17 +78,7 @@ section {
   margin-bottom: var(--space-xl);
 }
 
-header {
-  margin-bottom: var(--space-l);
-}
-
 :is(header, footer)>nav * {
-  margin-bottom: 0;
-}
-
-header:has(+ header),
-header:has(+ footer),
-header:has(+ *>header) {
   margin-bottom: 0;
 }
 

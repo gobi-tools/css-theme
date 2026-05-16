@@ -47,29 +47,9 @@ export default function LandingPage() {
       <main>
         <section>
           <figure>
-            <img className="rounded" width={"100%"} height={"500"} src="https://picsum.photos/id/8/1200/500?grayscale" />
+            <img className="rounded" width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://picsum.photos/id/2/1200/500?grayscale" />
           </figure>
         </section>
-        {/* <section>
-          <header>
-            <aside className="primary">
-              <br />
-              <div>
-                <div className="group">
-                  <div className="row">
-                    <div>
-                      <h4>Need access?</h4>
-                      <p>
-                        Fill out the form and we'll send you credentials to try it on for free.
-                      </p>
-                    </div>
-                    <button type="reset">Request Credentials</button>
-                  </div>
-                </div>
-              </div>
-            </aside>
-          </header>
-        </section> */}
         <section>
           <h2>Built by leading minds behind the world's most advanced AI and technology</h2>
           <p>
