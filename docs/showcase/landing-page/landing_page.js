@@ -6,10 +6,10 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LandingPage() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("div", { className: "align-center", children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary", children: /* @__PURE__ */ jsxs("div", { children: [
       /* @__PURE__ */ jsx("b", { children: "Introducing Hopper" }),
       "\u2014 The first agentic development environment for the mainframe."
-    ] }) }) }) }),
+    ] }) }) }),
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "container-wide", children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Platform" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Industries" }) }),
@@ -36,16 +36,15 @@ function LandingPage() {
     ] }) }),
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("figure", { children: /* @__PURE__ */ jsx("img", { className: "rounded", width: "100%", height: "500", src: "https://picsum.photos/id/8/1200/500?grayscale" }) }) }),
-      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "primary", children: [
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("aside", { className: "primary", children: [
         /* @__PURE__ */ jsx("br", {}),
-        /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsxs("div", { children: [
             /* @__PURE__ */ jsx("h4", { children: "Need access?" }),
             /* @__PURE__ */ jsx("p", { children: "Fill out the form and we'll send you credentials to try it on for free." })
           ] }),
           /* @__PURE__ */ jsx("button", { type: "reset", children: "Request Credentials" })
-        ] }) }),
-        /* @__PURE__ */ jsx("br", {})
+        ] }) }) })
       ] }) }) }),
       /* @__PURE__ */ jsxs("section", { children: [
         /* @__PURE__ */ jsx("h2", { children: "Built by leading minds behind the world's most advanced AI and technology" }),
@@ -84,7 +83,7 @@ function LandingPage() {
         ] })
       ] }),
       /* @__PURE__ */ jsx("hr", {}),
-      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("h4", { children: "Join our Community" }),
           /* @__PURE__ */ jsx("p", { children: "Connect with builders using Hopper, follow product updates, and swap ideas with the Hypercubic team." })

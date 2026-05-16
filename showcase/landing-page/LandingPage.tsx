@@ -1,16 +1,13 @@
 export default function LandingPage() {
   return (
     <>
-      <section>
-        <header>
+      <header>
+        <aside className="primary">
           <div>
-            <div className="align-center">
-              <b>Introducing Hopper</b>
-              — The first agentic development environment for the mainframe.
-            </div>
+            <b>Introducing Hopper</b>— The first agentic development environment for the mainframe.
           </div>
-        </header>
-      </section>
+        </aside>
+      </header>
       <header>
         <nav className="container-wide">
           <ul>
@@ -55,24 +52,22 @@ export default function LandingPage() {
         </section>
         <section>
           <header>
-            <div className="primary">
+            <aside className="primary">
               <br />
-
-              <div className="group">
-                <div className="row">
-                  <div>
-                    <h4>Need access?</h4>
-                    <p>
-                      Fill out the form and we'll send you credentials to try it on for free.
-                    </p>
+              <div>
+                <div className="group">
+                  <div className="row">
+                    <div>
+                      <h4>Need access?</h4>
+                      <p>
+                        Fill out the form and we'll send you credentials to try it on for free.
+                      </p>
+                    </div>
+                    <button type="reset">Request Credentials</button>
                   </div>
-                  <button type="reset">Request Credentials</button>
-
                 </div>
               </div>
-
-              <br />
-            </div>
+            </aside>
           </header>
         </section>
         <section>
@@ -126,7 +121,7 @@ export default function LandingPage() {
         <hr />
         <section>
           <header>
-            <div>
+            <aside>
               <div className="group">
                 <div className="row">
                   <div>
@@ -138,7 +133,7 @@ export default function LandingPage() {
                   <button type="reset">Join our Discord</button>
                 </div>
               </div>
-            </div>
+            </aside>
           </header>
         </section>
       </main>

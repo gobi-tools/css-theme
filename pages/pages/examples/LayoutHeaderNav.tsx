@@ -2,7 +2,7 @@ export default function LayoutHeaderNav() {
   return (
     <>
       <header>
-        <nav style={{maxWidth: '600px'}}>
+        <nav className="disable-mobile">
           <ul >
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>

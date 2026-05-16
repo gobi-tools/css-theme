@@ -3565,7 +3565,11 @@ function Header({ theme }) {
         /* @__PURE__ */ jsxs28("p", { children: [
           "A ",
           /* @__PURE__ */ jsx28("code", { children: "header" }),
-          " is used to define the introductory content of a page or section. The simplest top level header can contain a navigation element:"
+          " is used to define the introductory content of a page or a section. The simplest top level header can contain a navigation element (",
+          /* @__PURE__ */ jsx28("code", { children: "nav" }),
+          " or ",
+          /* @__PURE__ */ jsx28("code", { children: "menu" }),
+          "):"
         ] }),
         /* @__PURE__ */ jsx28("iframe", { scrolling: "no", width: "100%", height: 275, src: RouteMaster.example("layout-header-simple" /* LayoutHeaderSimple */, theme, route) })
       ] }),
@@ -3592,7 +3596,11 @@ function Header({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs28("section", { className: "row", children: [
       /* @__PURE__ */ jsxs28("div", { children: [
-        /* @__PURE__ */ jsx28("p", { children: "More complex layouts can be created by placing navigation and other types of elements in various headers." }),
+        /* @__PURE__ */ jsxs28("p", { children: [
+          'You create more complex "hero" layouts by placing any elemnent (a ',
+          /* @__PURE__ */ jsx28("code", { children: "div" }),
+          ", etc) inside a header."
+        ] }),
         /* @__PURE__ */ jsx28("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<!-- nav header -->
@@ -3636,28 +3644,31 @@ function Header({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs28("section", { className: "row", children: [
       /* @__PURE__ */ jsxs28("div", { children: [
-        /* @__PURE__ */ jsx28("p", { children: "Section headers can be combined with other elements to form banners:" }),
+        /* @__PURE__ */ jsxs28("p", { children: [
+          /* @__PURE__ */ jsx28("code", { children: "headers" }),
+          " and ",
+          /* @__PURE__ */ jsx28("code", { children: "asides" }),
+          ' combine together to form a "banner" element that can be placed at the top of a page or mid-content.'
+        ] }),
         /* @__PURE__ */ jsx28("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-section" /* LayoutHeaderSection */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx28("div", { children: /* @__PURE__ */ jsx28("pre", { children: /* @__PURE__ */ jsx28("code", { children: `<main>
-  <section>
-    <header>
-      <div>
-        <div class="group">
-          <div class="row">
-            <div>
-              ...
-            </div>
-            <div class="gap">
-            </div>
-            <button>
-              ...
-            </button>
+  <header>
+    <aside>
+      <div class="group">
+        <div class="row">
+          <div>
+            ...
           </div>
+          <div class="gap">
+          </div>
+          <button>
+            ...
+          </button>
         </div>
       </div>
-    </header>
-  </section>
+    </aside>
+  </header>
 </main>` }) }) })
     ] })
   ] });
@@ -3730,11 +3741,14 @@ function Breadcrumbs({ theme }) {
 import { Fragment as Fragment2, jsx as jsx30, jsxs as jsxs30 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderSection() {
   return /* @__PURE__ */ jsxs30(Fragment2, { children: [
-    /* @__PURE__ */ jsx30("header", { children: /* @__PURE__ */ jsx30("nav", { children: /* @__PURE__ */ jsx30("ul", { children: /* @__PURE__ */ jsx30("li", { children: /* @__PURE__ */ jsx30("a", { href: "", children: "Home" }) }) }) }) }),
+    /* @__PURE__ */ jsx30("header", { children: /* @__PURE__ */ jsx30("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs30("ul", { children: [
+      /* @__PURE__ */ jsx30("li", { children: /* @__PURE__ */ jsx30("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx30("li", { children: /* @__PURE__ */ jsx30("a", { href: "", children: "About" }) })
+    ] }) }) }),
     /* @__PURE__ */ jsxs30("main", { children: [
       /* @__PURE__ */ jsx30("h1", { children: "Title" }),
       /* @__PURE__ */ jsx30("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-      /* @__PURE__ */ jsx30("section", { children: /* @__PURE__ */ jsx30("header", { children: /* @__PURE__ */ jsx30("div", { style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: /* @__PURE__ */ jsx30("div", { className: "group", children: /* @__PURE__ */ jsxs30("div", { className: "row", children: [
+      /* @__PURE__ */ jsx30("section", { children: /* @__PURE__ */ jsx30("header", { children: /* @__PURE__ */ jsx30("aside", { className: "secondary-faint", children: /* @__PURE__ */ jsx30("div", { className: "group", children: /* @__PURE__ */ jsxs30("div", { className: "row", children: [
         /* @__PURE__ */ jsxs30("div", { children: [
           /* @__PURE__ */ jsx30("b", { children: "Try Now" }),
           /* @__PURE__ */ jsx30("br", {}),
@@ -3806,7 +3820,7 @@ function DesktopMenu() {
 import { Fragment as Fragment5, jsx as jsx33, jsxs as jsxs33 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderNav() {
   return /* @__PURE__ */ jsxs33(Fragment5, { children: [
-    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsx33("nav", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs33("ul", { children: [
+    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsx33("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs33("ul", { children: [
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "About" }) })
     ] }) }) }),
@@ -3821,8 +3835,11 @@ function LayoutHeaderNav() {
 import { Fragment as Fragment6, jsx as jsx34, jsxs as jsxs34 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderComplex() {
   return /* @__PURE__ */ jsxs34(Fragment6, { children: [
-    /* @__PURE__ */ jsx34("header", { children: /* @__PURE__ */ jsx34("nav", { children: /* @__PURE__ */ jsx34("ul", { children: /* @__PURE__ */ jsx34("li", { children: /* @__PURE__ */ jsx34("a", { href: "", children: "Home" }) }) }) }) }),
-    /* @__PURE__ */ jsx34("header", { children: /* @__PURE__ */ jsxs34("div", { className: "align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
+    /* @__PURE__ */ jsx34("header", { children: /* @__PURE__ */ jsx34("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs34("ul", { children: [
+      /* @__PURE__ */ jsx34("li", { children: /* @__PURE__ */ jsx34("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx34("li", { children: /* @__PURE__ */ jsx34("a", { href: "", children: "About" }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx34("header", { children: /* @__PURE__ */ jsxs34("div", { className: "align-center secondary-faint", children: [
       /* @__PURE__ */ jsx34("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx34("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
       /* @__PURE__ */ jsx34("form", { children: /* @__PURE__ */ jsxs34("div", { className: "group", children: [

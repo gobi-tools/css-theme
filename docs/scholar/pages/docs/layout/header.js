@@ -3622,11 +3622,14 @@ function Breadcrumbs({ theme }) {
 import { Fragment as Fragment2, jsx as jsx29, jsxs as jsxs29 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderSection() {
   return /* @__PURE__ */ jsxs29(Fragment2, { children: [
-    /* @__PURE__ */ jsx29("header", { children: /* @__PURE__ */ jsx29("nav", { children: /* @__PURE__ */ jsx29("ul", { children: /* @__PURE__ */ jsx29("li", { children: /* @__PURE__ */ jsx29("a", { href: "", children: "Home" }) }) }) }) }),
+    /* @__PURE__ */ jsx29("header", { children: /* @__PURE__ */ jsx29("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs29("ul", { children: [
+      /* @__PURE__ */ jsx29("li", { children: /* @__PURE__ */ jsx29("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx29("li", { children: /* @__PURE__ */ jsx29("a", { href: "", children: "About" }) })
+    ] }) }) }),
     /* @__PURE__ */ jsxs29("main", { children: [
       /* @__PURE__ */ jsx29("h1", { children: "Title" }),
       /* @__PURE__ */ jsx29("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-      /* @__PURE__ */ jsx29("section", { children: /* @__PURE__ */ jsx29("header", { children: /* @__PURE__ */ jsx29("div", { style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: /* @__PURE__ */ jsx29("div", { className: "group", children: /* @__PURE__ */ jsxs29("div", { className: "row", children: [
+      /* @__PURE__ */ jsx29("section", { children: /* @__PURE__ */ jsx29("header", { children: /* @__PURE__ */ jsx29("aside", { className: "secondary-faint", children: /* @__PURE__ */ jsx29("div", { className: "group", children: /* @__PURE__ */ jsxs29("div", { className: "row", children: [
         /* @__PURE__ */ jsxs29("div", { children: [
           /* @__PURE__ */ jsx29("b", { children: "Try Now" }),
           /* @__PURE__ */ jsx29("br", {}),
@@ -3698,7 +3701,7 @@ function DesktopMenu() {
 import { Fragment as Fragment5, jsx as jsx32, jsxs as jsxs32 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderNav() {
   return /* @__PURE__ */ jsxs32(Fragment5, { children: [
-    /* @__PURE__ */ jsx32("header", { children: /* @__PURE__ */ jsx32("nav", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs32("ul", { children: [
+    /* @__PURE__ */ jsx32("header", { children: /* @__PURE__ */ jsx32("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs32("ul", { children: [
       /* @__PURE__ */ jsx32("li", { children: /* @__PURE__ */ jsx32("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx32("li", { children: /* @__PURE__ */ jsx32("a", { href: "", children: "About" }) })
     ] }) }) }),
@@ -3713,8 +3716,11 @@ function LayoutHeaderNav() {
 import { Fragment as Fragment6, jsx as jsx33, jsxs as jsxs33 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderComplex() {
   return /* @__PURE__ */ jsxs33(Fragment6, { children: [
-    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsx33("nav", { children: /* @__PURE__ */ jsx33("ul", { children: /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "Home" }) }) }) }) }),
-    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("div", { className: "align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
+    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsx33("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs33("ul", { children: [
+      /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "About" }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("div", { className: "align-center secondary-faint", children: [
       /* @__PURE__ */ jsx33("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx33("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
       /* @__PURE__ */ jsx33("form", { children: /* @__PURE__ */ jsxs33("div", { className: "group", children: [
@@ -4241,7 +4247,11 @@ function Header({ theme }) {
         /* @__PURE__ */ jsxs42("p", { children: [
           "A ",
           /* @__PURE__ */ jsx42("code", { children: "header" }),
-          " is used to define the introductory content of a page or section. The simplest top level header can contain a navigation element:"
+          " is used to define the introductory content of a page or a section. The simplest top level header can contain a navigation element (",
+          /* @__PURE__ */ jsx42("code", { children: "nav" }),
+          " or ",
+          /* @__PURE__ */ jsx42("code", { children: "menu" }),
+          "):"
         ] }),
         /* @__PURE__ */ jsx42("iframe", { scrolling: "no", width: "100%", height: 275, src: RouteMaster.example("layout-header-simple" /* LayoutHeaderSimple */, theme, route) })
       ] }),
@@ -4268,7 +4278,11 @@ function Header({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs42("section", { className: "row", children: [
       /* @__PURE__ */ jsxs42("div", { children: [
-        /* @__PURE__ */ jsx42("p", { children: "More complex layouts can be created by placing navigation and other types of elements in various headers." }),
+        /* @__PURE__ */ jsxs42("p", { children: [
+          'You create more complex "hero" layouts by placing any elemnent (a ',
+          /* @__PURE__ */ jsx42("code", { children: "div" }),
+          ", etc) inside a header."
+        ] }),
         /* @__PURE__ */ jsx42("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<!-- nav header -->
@@ -4312,28 +4326,31 @@ function Header({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs42("section", { className: "row", children: [
       /* @__PURE__ */ jsxs42("div", { children: [
-        /* @__PURE__ */ jsx42("p", { children: "Section headers can be combined with other elements to form banners:" }),
+        /* @__PURE__ */ jsxs42("p", { children: [
+          /* @__PURE__ */ jsx42("code", { children: "headers" }),
+          " and ",
+          /* @__PURE__ */ jsx42("code", { children: "asides" }),
+          ' combine together to form a "banner" element that can be placed at the top of a page or mid-content.'
+        ] }),
         /* @__PURE__ */ jsx42("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-section" /* LayoutHeaderSection */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<main>
-  <section>
-    <header>
-      <div>
-        <div class="group">
-          <div class="row">
-            <div>
-              ...
-            </div>
-            <div class="gap">
-            </div>
-            <button>
-              ...
-            </button>
+  <header>
+    <aside>
+      <div class="group">
+        <div class="row">
+          <div>
+            ...
           </div>
+          <div class="gap">
+          </div>
+          <button>
+            ...
+          </button>
         </div>
       </div>
-    </header>
-  </section>
+    </aside>
+  </header>
 </main>` }) }) })
     ] })
   ] });

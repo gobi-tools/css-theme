@@ -11,8 +11,8 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
-            A <code>header</code> is used to define the introductory content of a page or section.
-            The simplest top level header can contain a navigation element:
+            A <code>header</code> is used to define the introductory content of a page or a section.
+            The simplest top level header can contain a navigation element (<code>nav</code> or <code>menu</code>):
           </p>
           <iframe scrolling="no" width="100%" height={275} src={RouteMaster.example(EExamples.LayoutHeaderSimple, theme, route)} />
         </div>
@@ -45,8 +45,8 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
-            More complex layouts can be created by placing navigation and 
-            other types of elements in various headers.
+            You create more complex "hero" layouts by placing any elemnent (a <code>div</code>, etc) 
+            inside a header.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderComplex, theme, route)} />
         </div>
@@ -97,31 +97,30 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
-            Section headers can be combined with other elements to form banners:
+            <code>headers</code> and <code>asides</code> combine together to form a "banner" element
+            that can be placed at the top of a page or mid-content.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderSection, theme, route)} />
         </div>
         <div>
           <pre><code>
             {`<main>
-  <section>
-    <header>
-      <div>
-        <div class="group">
-          <div class="row">
-            <div>
-              ...
-            </div>
-            <div class="gap">
-            </div>
-            <button>
-              ...
-            </button>
+  <header>
+    <aside>
+      <div class="group">
+        <div class="row">
+          <div>
+            ...
           </div>
+          <div class="gap">
+          </div>
+          <button>
+            ...
+          </button>
         </div>
       </div>
-    </header>
-  </section>
+    </aside>
+  </header>
 </main>`}
           </code></pre>
         </div>

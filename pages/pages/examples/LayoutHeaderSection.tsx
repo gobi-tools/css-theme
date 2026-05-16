@@ -2,9 +2,10 @@ export default function LayoutHeaderSection() {
   return (
     <>
       <header>
-        <nav>
-          <ul>
+        <nav className="disable-mobile">
+          <ul >
             <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
           </ul>
         </nav>
       </header>
@@ -15,7 +16,7 @@ export default function LayoutHeaderSection() {
         </p>
         <section>
           <header>
-            <div style={{ backgroundColor: 'light-dark(var(--color-secondary-muted), var(--color-accent-faint))' }}>
+            <aside className="secondary-faint">
               <div className="group">
                 <div className="row">
                   <div>
@@ -27,7 +28,7 @@ export default function LayoutHeaderSection() {
                   <button>Download</button>
                 </div>
               </div>
-            </div>
+            </aside>
           </header>
         </section>
       </main>

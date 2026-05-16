@@ -15,8 +15,8 @@
   --space-2xs: 0.25rem;
   --space-xs: 0.5rem;
   --space-sm: 0.7rem;
-  --space-m: 1rem; 
-  --space-l: 2rem; 
+  --space-m: 1rem;
+  --space-l: 2rem;
   --space-xl: 4rem;
   --space-2xl: 6.5rem;
   /* text size */
@@ -135,6 +135,17 @@
 :root,
 .success,
 .error {
+  /*
+  --color-bg: __THEME__
+  --color-txt: __THEME__
+  --color-txt-on-dark: __THEME__
+  --color-primary: __THEME__
+  --color-secondary: __THEME__
+
+  --color-success: __THEME__
+  --color-error: __THEME__
+  */
+
   --color-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
 
   --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
@@ -158,7 +169,7 @@
 /* base */
 
 * {
-  /* outline: 0.5px solid blue; */
+  /* outline: 0.5px solid red; */
   box-sizing: border-box;
   border-spacing: 0;
   margin: 0;

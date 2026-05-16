@@ -19,12 +19,12 @@ Features
 
 Improvements
 ------------
-- [ ] turn the “rounded” class into a var for all images
+- [x] turn the “rounded” class into a var for all images
 - [ ] create classes for Primary / Secondary / etc that can be applied for text, elements, etc
-  - [ ] primary
-  - [ ] primary faint (?)
+  - [x] primary
+  - [x] primary-faint (?)
   - [ ] secondary 
-  - [ ] secondary faint (?)
+  - [ ] secondary-faint (?)
 - [ ] redo CSS with nesting
 - [ ] redo the horizontal spacing to be based on "ch"
 - [ ] redo aside and any other fixed widths to be based on "ch"

@@ -6,8 +6,11 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LayoutHeaderComplex() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Home" }) }) }) }) }),
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center", style: { backgroundColor: "light-dark(var(--color-secondary-muted), var(--color-accent-faint))" }, children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Home" }) }),
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "About" }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center secondary-faint", children: [
       /* @__PURE__ */ jsx("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
       /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("div", { className: "group", children: [

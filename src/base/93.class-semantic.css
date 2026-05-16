@@ -47,3 +47,12 @@
 .primary-faint {
   background-color: var(--color-primary-faint);
 }
+
+.secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-txt-on-dark);
+}
+
+.secondary-faint {
+  background-color: var(--color-secondary-muted);
+}

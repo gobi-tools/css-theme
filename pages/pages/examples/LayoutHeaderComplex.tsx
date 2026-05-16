@@ -2,14 +2,15 @@ export default function LayoutHeaderComplex() {
   return (
     <>
       <header>
-        <nav>
-          <ul>
+        <nav className="disable-mobile">
+          <ul >
             <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
           </ul>
         </nav>
       </header>
       <header>
-        <div className="align-center" style={{ backgroundColor: 'light-dark(var(--color-secondary-muted), var(--color-accent-faint))' }}>
+        <div className="align-center secondary-faint">
           <h2>My blog</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
