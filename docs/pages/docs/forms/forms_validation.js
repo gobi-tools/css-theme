@@ -575,8 +575,12 @@ function Blockquotes({ theme }) {
         /* @__PURE__ */ jsxs3("p", { children: [
           "Blockquotes can also be styled using the ",
           /* @__PURE__ */ jsx3("code", { children: "success" }),
-          " and ",
+          ", ",
           /* @__PURE__ */ jsx3("code", { children: "error" }),
+          ", ",
+          /* @__PURE__ */ jsx3("code", { children: "primary" }),
+          " and ",
+          /* @__PURE__ */ jsx3("code", { children: "secondary" }),
           " classes."
         ] }),
         /* @__PURE__ */ jsxs3("blockquote", { className: "success", children: [
@@ -585,16 +589,28 @@ function Blockquotes({ theme }) {
         ] }),
         /* @__PURE__ */ jsxs3("blockquote", { className: "error", children: [
           /* @__PURE__ */ jsx3("p", { children: "Unknown error" }),
-          /* @__PURE__ */ jsxs3("code", { children: [
+          /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsxs3("code", { children: [
             "Server responsed with ",
             /* @__PURE__ */ jsx3("b", { children: "Error 500" })
-          ] })
+          ] }) })
         ] }),
-        /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsxs3("small", { children: [
-          "You can learn more about classes ",
-          /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
-          "."
-        ] }) })
+        /* @__PURE__ */ jsx3("blockquote", { className: "primary", children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
+        /* @__PURE__ */ jsx3("blockquote", { className: "secondary", children: /* @__PURE__ */ jsxs3("hgroup", { children: [
+          /* @__PURE__ */ jsx3("h4", { children: "Title" }),
+          /* @__PURE__ */ jsx3("p", { children: "Important Information" })
+        ] }) }),
+        /* @__PURE__ */ jsxs3("hgroup", { children: [
+          /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsxs3("small", { children: [
+            "You can learn more about classes ",
+            /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
+            "."
+          ] }) }),
+          /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsxs3("small", { children: [
+            "You can learn more about semantic colors ",
+            /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("semantic" /* Semantic */, theme, route), children: "here" }),
+            "."
+          ] }) })
+        ] })
       ] }),
       /* @__PURE__ */ jsx3("div", { children: /* @__PURE__ */ jsx3("pre", { children: /* @__PURE__ */ jsx3("code", { children: `<blockquote class="success">
   <h4>Success</h4>
@@ -606,10 +622,26 @@ function Blockquotes({ theme }) {
 
 <blockquote class="error">
   <p>Unknown error</p>
-  <code>
-    Server responsed with 
-    <b>Error 500</b>
-  </code>
+  <p>
+    <code>
+      Server responsed with 
+      <b>Error 500</b>
+    </code>
+  </p>
+</blockquote>
+
+<blockquote class="primary">
+  Lorem ipsum dolor sit amet, 
+  consectetur adipiscing elit
+</blockquote>
+
+<blockquote class="secondary">
+  <hgroup>
+    <h4>Title</h4>
+    <p>
+      Important Information
+    </p>
+  </hgroup>
 </blockquote>` }) }) })
     ] })
   ] });
@@ -4172,6 +4204,7 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "grid" /* Grids */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "Grids" }) }),
           /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "Containers" }) }),
           /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) }),
+          /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "semantic" /* Semantic */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("semantic" /* Semantic */, theme, route), children: "Semantic" }) }),
           /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "classes" /* Classes */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "Classes" }) })
         ] })
       ] })

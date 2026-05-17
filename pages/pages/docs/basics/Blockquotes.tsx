@@ -89,7 +89,7 @@ export default function Blockquotes({ theme }) {
       <section className="row">
         <div>
           <p>
-            Blockquotes can also be styled using the <code>success</code> and <code>error</code> classes.
+            Blockquotes can also be styled using the <code>success</code>, <code>error</code>, <code>primary</code> and <code>secondary</code> classes.
           </p>
           <blockquote className="success">
             <h4>Success</h4>
@@ -98,13 +98,33 @@ export default function Blockquotes({ theme }) {
 
           <blockquote className="error">
             <p>Unknown error</p>
-            <code>Server responsed with <b>Error 500</b></code>
+            <p>
+              <code>Server responsed with <b>Error 500</b></code>
+            </p>
           </blockquote>
-          <p>
-            <small>
-              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
-            </small>
-          </p>
+
+          <blockquote className="primary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </blockquote>
+
+          <blockquote className="secondary">
+            <hgroup>
+              <h4>Title</h4>
+              <p>Important Information</p>
+            </hgroup>
+          </blockquote>
+          <hgroup>
+            <p>
+              <small>
+                You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
+              </small>
+            </p>
+            <p>
+              <small>
+                You can learn more about semantic colors <a href={RouteMaster.doc(EDoc.Semantic, theme, route)}>here</a>.
+              </small>
+            </p>
+          </hgroup>
         </div>
         <div>
           <pre><code>
@@ -118,10 +138,26 @@ export default function Blockquotes({ theme }) {
 
 <blockquote class="error">
   <p>Unknown error</p>
-  <code>
-    Server responsed with 
-    <b>Error 500</b>
-  </code>
+  <p>
+    <code>
+      Server responsed with 
+      <b>Error 500</b>
+    </code>
+  </p>
+</blockquote>
+
+<blockquote class="primary">
+  Lorem ipsum dolor sit amet, 
+  consectetur adipiscing elit
+</blockquote>
+
+<blockquote class="secondary">
+  <hgroup>
+    <h4>Title</h4>
+    <p>
+      Important Information
+    </p>
+  </hgroup>
 </blockquote>`}
           </code></pre>
         </div>

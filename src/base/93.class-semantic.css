@@ -19,6 +19,16 @@
       color-mix(in oklch, var(--color-success) 70%, black));
 }
 
+.success-bg {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+  color: var(--color-txt);
+}
+
+.success-txt {
+  color: var(--color-success);
+}
+
 .error {
   --color-primary: var(--color-error);
   --color-secondary: var(--color-error);
@@ -39,7 +49,47 @@
       color-mix(in oklch, var(--color-error) 70%, black));
 }
 
+.error-bg {
+  background-color: var(--color-error);
+  border-color: var(--color-error);
+  color: var(--color-txt);
+}
+
+.error-txt {
+  color: var(--color-error);
+}
+
 .primary {
+  /* --color-primary: var(--color-success); */
+  --color-secondary: var(--color-primary);
+
+  --color-border: color-mix(in srgb, var(--color-primary) 40%, transparent);
+
+  --color-accent-faint: light-dark(color-mix(in srgb, var(--color-primary) 20%, transparent),
+      color-mix(in srgb, var(--color-primary) 45%, transparent));
+  --color-accent-muted: light-dark(color-mix(in srgb, var(--color-primary) 35%, transparent),
+      color-mix(in srgb, var(--color-primary) 55%, transparent));
+  --color-accent-inked: light-dark(color-mix(in oklch, var(--color-primary) 90%, white),
+      color-mix(in oklch, var(--color-primary) 90%, white));
+
+  /* --color-primary-inked: light-dark(color-mix(in oklch, var(--color-success) 85%, black),
+      color-mix(in oklch, var(--color-success) 50%, white)); */
+
+  --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-primary) 30%, white),
+      color-mix(in oklch, var(--color-primary) 70%, black));
+}
+
+.primary-bg {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-txt-on-dark);
+}
+
+.primary-txt {
+  color: var(--color-primary);
+}
+
+/* .primary {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-txt-on-dark);
@@ -49,16 +99,44 @@
   background-color: var(--color-primary-faint);
   border-color: var(--color-primary);
   color: var(--color-txt);
-}
+} */
 
 .secondary {
+  /* background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-txt-on-dark); */
+
+  --color-primary: var(--color-secondary);
+  /* --color-secondary: var(--color-error); */
+
+  --color-border: color-mix(in srgb, var(--color-secondary) 40%, transparent);
+
+  --color-accent-faint: light-dark(color-mix(in srgb, var(--color-secondary) 20%, transparent),
+      color-mix(in srgb, var(--color-secondary) 45%, transparent));
+  --color-accent-muted: light-dark(color-mix(in srgb, var(--color-secondary) 35%, transparent),
+      color-mix(in srgb, var(--color-secondary) 55%, transparent));
+  --color-accent-inked: light-dark(color-mix(in oklch, var(--color-secondary) 90%, white),
+      color-mix(in oklch, var(--color-secondary) 90%, white));
+
+  --color-primary-inked: light-dark(color-mix(in oklch, var(--color-secondary) 85%, black),
+      color-mix(in oklch, var(--color-secondary) 50%, white));
+
+  /* --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-error) 30%, white),
+      color-mix(in oklch, var(--color-error) 70%, black)); */
+}
+
+.secondary-bg {
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
   color: var(--color-txt-on-dark);
 }
 
-.secondary-faint {
+.secondary-txt {
+  color: var(--color-secondary);
+}
+
+/* .secondary-faint {
   background-color: var(--color-secondary-muted);
   border-color: var(--color-secondary);
   color: var(--color-txt);
-}
+} */
