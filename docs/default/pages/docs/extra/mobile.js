@@ -4275,7 +4275,6 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "grid" /* Grids */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "Grids" }) }),
           /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "Containers" }) }),
           /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) }),
-          /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "semantic" /* Semantic */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("semantic" /* Semantic */, theme, route), children: "Semantic" }) }),
           /* @__PURE__ */ jsx42("li", { "aria-selected": selectedDoc === "classes" /* Classes */, children: /* @__PURE__ */ jsx42("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "Classes" }) })
         ] })
       ] })
