@@ -126,6 +126,33 @@ export default function Typography({ theme }) {
           </code></pre>
         </div>
       </section>
+      <section className="row">
+        <div>
+          <p>
+            As well as the ability to group headings and associated content with <code>hgroup</code>.
+          </p>
+          <hgroup>
+            <h1>Heading 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+          </hgroup>
+        </div>
+        <div>
+          <pre><code>
+            {`<hgroup>
+  <h1>Heading 1</h1>
+  <p>
+    Lorem ipsum dolor sit amet, 
+    consectetur adipiscing elit,
+    sed do eiusmod tempor 
+    incididunt ut labore et 
+    dolore magna aliqua. 
+  </p>
+</hgroup>`}
+          </code></pre>
+        </div>
+      </section>
     </DocLayout>
   );
 }

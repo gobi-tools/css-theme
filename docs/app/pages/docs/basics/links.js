@@ -459,6 +459,29 @@ function Typography({ theme }) {
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>` }) }) })
+    ] }),
+    /* @__PURE__ */ jsxs2("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs2("div", { children: [
+        /* @__PURE__ */ jsxs2("p", { children: [
+          "As well as the ability to group headings and associated content with ",
+          /* @__PURE__ */ jsx2("code", { children: "hgroup" }),
+          "."
+        ] }),
+        /* @__PURE__ */ jsxs2("hgroup", { children: [
+          /* @__PURE__ */ jsx2("h1", { children: "Heading 1" }),
+          /* @__PURE__ */ jsx2("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<hgroup>
+  <h1>Heading 1</h1>
+  <p>
+    Lorem ipsum dolor sit amet, 
+    consectetur adipiscing elit,
+    sed do eiusmod tempor 
+    incididunt ut labore et 
+    dolore magna aliqua. 
+  </p>
+</hgroup>` }) }) })
     ] })
   ] });
 }

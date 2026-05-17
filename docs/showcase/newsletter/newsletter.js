@@ -14,8 +14,10 @@ function Newsletter() {
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Subscribe" }) })
     ] }) }) }),
     /* @__PURE__ */ jsx("main", { children: /* @__PURE__ */ jsxs("section", { children: [
-      /* @__PURE__ */ jsx("h1", { children: "Lorem ipsum dolor sit amet" }),
-      /* @__PURE__ */ jsx("h5", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
+      /* @__PURE__ */ jsxs("hgroup", { children: [
+        /* @__PURE__ */ jsx("h1", { children: "Lorem ipsum dolor sit amet" }),
+        /* @__PURE__ */ jsx("h5", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
+      ] }),
       /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
         /* @__PURE__ */ jsx("img", { className: "circle", width: "40", height: "40", src: "https://picsum.photos/id/50/30/30" }),
         /* @__PURE__ */ jsxs("div", { children: [

@@ -32,9 +32,11 @@ export default function LandingPage() {
       </header>
       <header>
         <div className="align-center">
-          <h1>Hopper</h1>
-          <h4>The first agentic development environment for the mainframe</h4>
-          <p>Use AI agents to navigate TN3270, inspect datasets, write JCL, debug jobs, query VSAM, and operate inside z/OS from a modern development environment.</p>
+          <hgroup>
+            <h1>Hopper</h1>
+            <h4>The first agentic development environment for the mainframe</h4>
+            <p>Use AI agents to navigate TN3270, inspect datasets, write JCL, debug jobs, query VSAM, and operate inside z/OS from a modern development environment.</p>
+          </hgroup>
           <p>
             <button>Download for Linux</button>
             <button type="reset">Read the Announcement</button>
@@ -51,10 +53,12 @@ export default function LandingPage() {
           </figure>
         </section>
         <section>
-          <h2>Built by leading minds behind the world's most advanced AI and technology</h2>
-          <p>
-            Our team unites top researchers, engineers, and strategists from pioneering companies and institutions—all focused on building systems that deliver real impact.
-          </p>
+          <hgroup>
+            <h2>Built by leading minds behind the world's most advanced AI</h2>
+            <p>
+              Our team unites top researchers, engineers, and strategists from pioneering companies and institutions—all focused on building systems that deliver real impact.
+            </p>
+          </hgroup>
         </section>
         <hr />
         <section>
@@ -63,8 +67,10 @@ export default function LandingPage() {
           </div>
           <div className="row">
             <div className="card">
-              <h2>Hobby</h2>
-              <p><b>Free</b></p>
+              <hgroup>
+                <h2>Hobby</h2>
+                <p><b>Free</b></p>
+              </hgroup>
               <p>
                 Includes:
               </p>
@@ -80,8 +86,10 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="card">
-              <h2>Eterprise</h2>
-              <p><b>Custom</b></p>
+              <hgroup>
+                <h2>Eterprise</h2>
+                <p><b>Custom</b></p>
+              </hgroup>
               <p>
                 Everything in Hobby, plus:
               </p>
@@ -105,10 +113,12 @@ export default function LandingPage() {
               <div className="group">
                 <div className="row">
                   <div>
-                    <h4>Join our Community</h4>
-                    <p>
-                      Connect with builders using Hopper, follow product updates, and swap ideas with the Hypercubic team.
-                    </p>
+                    <hgroup>
+                      <h4>Join our Community</h4>
+                      <p>
+                        Connect with builders using Hopper, follow product updates, and swap ideas with the Hypercubic team.
+                      </p>
+                    </hgroup>
                   </div>
                   <button type="reset">Join our Discord</button>
                 </div>
@@ -124,10 +134,12 @@ export default function LandingPage() {
             <div className="group">
               <div className="row">
                 <div>
-                  <h4>Need access?</h4>
-                  <p>
-                    Fill out the form and we'll send you credentials to try it on for free.
-                  </p>
+                  <hgroup>
+                    <h4>Need access?</h4>
+                    <p>
+                      Fill out the form and we'll send you credentials to try it on for free.
+                    </p>
+                  </hgroup>
                 </div>
                 <button type="reset">Request Credentials</button>
               </div>

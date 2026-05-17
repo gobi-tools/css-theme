@@ -102,13 +102,15 @@ export default function FoodDelivery() {
             <img className="rounded" src="https://picsum.photos/id/42/640/480" width={"100%"} />
           </div>
           <div>
-            <h2>Everything you crave, delivered.</h2>
-            <p>
-              Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.
-            </p>
-            <p>
-              <button>Find restaurants</button>
-            </p>
+            <hgroup>
+              <h2>Everything you crave, delivered.</h2>
+              <p>
+                Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.
+              </p>
+              <p>
+                <button>Find restaurants</button>
+              </p>
+            </hgroup>
           </div>
           <div className="hide-on-mobile">
             <img className="rounded" src="https://picsum.photos/id/42/640/480" width={"100%"} />
@@ -120,13 +122,15 @@ export default function FoodDelivery() {
             <img className="rounded" src="https://picsum.photos/id/103/640/480" width={"100%"} />
           </div>
           <div>
-            <h2>Delivery for less</h2>
-            <p>
-              Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus, it's free for 30 days.
-            </p>
-            <p>
-              <button>Get pass</button>
-            </p>
+            <hgroup>
+              <h2>Delivery for less</h2>
+              <p>
+                Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus, it's free for 30 days.
+              </p>
+              <p>
+                <button>Get pass</button>
+              </p>
+            </hgroup>
           </div>
         </section>
 
@@ -135,13 +139,15 @@ export default function FoodDelivery() {
             <img className="rounded" src="https://picsum.photos/id/348/640/480" width={"100%"} />
           </div>
           <div>
-            <h2>Convenience stores at your doorstep.</h2>
-            <p>
-              Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.
-            </p>
-            <p>
-              <button>Shop now</button>
-            </p>
+            <hgroup>
+              <h2>Convenience stores at your doorstep.</h2>
+              <p>
+                Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.
+              </p>
+              <p>
+                <button>Shop now</button>
+              </p>
+            </hgroup>
           </div>
           <div className="hide-on-mobile">
             <img className="rounded" src="https://picsum.photos/id/348/640/480" width={"100%"} />
@@ -150,10 +156,12 @@ export default function FoodDelivery() {
 
         <header>
           <div className="align-center big-banner">
-            <h1>Get grocery and convenience store essentials</h1>
-            <h4>Grocery delivery, exactly how you want it.</h4>
-            <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</p>
-            <p><button>Shop Groceries</button></p>
+            <hgroup>
+              <h1>Get grocery and convenience store essentials</h1>
+              <h4>Grocery delivery, exactly how you want it.</h4>
+              <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</p>
+              <p><button>Shop Groceries</button></p>
+            </hgroup>
           </div>
         </header>
 
@@ -161,31 +169,39 @@ export default function FoodDelivery() {
           <div className="primary-faint">
             <div className="row">
               <div>
-                <h3>Beauty essentials from top brands</h3>
-                <p>Get all your beauty and self-care needs delivered at home or on-the-go</p>
-                <p><button>Show beauty</button></p>
-                <hr className="hide-on-desktop" />
+                <hgroup>
+                  <h3>Beauty essentials from top brands</h3>
+                  <p>Get all your beauty and self-care needs delivered at home or on-the-go</p>
+                  <p><button>Show beauty</button></p>
+                  <hr className="hide-on-desktop" />
+                </hgroup>
               </div>
               <div>
-                <h3>Flowers for any occasion</h3>
-                <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
-                <p><button>Send flowers</button></p>
-                <hr className="hide-on-desktop" />
+                <hgroup>
+                  <h3>Flowers for any occasion</h3>
+                  <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
+                  <p><button>Send flowers</button></p>
+                  <hr className="hide-on-desktop" />
+                </hgroup>
               </div>
             </div>
             <br />
             <br className="hide-on-mobile" />
             <div className="row">
               <div>
-                <h3>Restock the minibar</h3>
-                <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne and wine delivered fast.</p>
-                <p><button>Show alcohol</button></p>
-                <hr className="hide-on-desktop" />
+                <hgroup>
+                  <h3>Restock the minibar</h3>
+                  <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne and wine delivered fast.</p>
+                  <p><button>Show alcohol</button></p>
+                  <hr className="hide-on-desktop" />
+                </hgroup>
               </div>
               <div>
-                <h3>What your pets need, and want</h3>
-                <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew toys, and even costumes.</p>
-                <p><button>Get pet supplies</button></p>
+                <hgroup>
+                  <h3>What your pets need, and want</h3>
+                  <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew toys, and even costumes.</p>
+                  <p><button>Get pet supplies</button></p>
+                </hgroup>
               </div>
             </div>
           </div>

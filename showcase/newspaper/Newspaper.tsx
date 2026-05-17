@@ -46,31 +46,25 @@ export default function Newspaper() {
       <main>
         <section className="row">
           <div className="col">
-            <p>
+            <hgroup>
               <img width={"100%"} className="article-img" src="https://picsum.photos/id/42/420/300" />
-            </p>
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p><i><small>10 minutes ago</small></i></p>
+              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p><i><small>10 minutes ago</small></i></p>
+            </hgroup>
           </div>
           <div className="col-6">
-            <blockquote className="card" style={{ paddingBottom: 'var(--space-l)' }}>
-              <p><b>MOST READ</b></p>
-              <div>
+            <blockquote>
+              <hgroup>
+                <p><b>MOST READ</b></p>
                 <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-              </div>
-              <hr />
-              <div>
+                <hr />
                 <a href="">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a>
-              </div>
-              <hr />
-              <div>
+                <hr/>
                 <a href="">Ut enim ad minim veniam, quis nostrud exercitation</a>
-              </div>
-              <hr />
-              <div>
+                <hr/>
                 <a href="">Ullamco laboris nisi ut aliquip ex ea commodo consequat</a>
-              </div>
+              </hgroup>
             </blockquote>
           </div>
         </section>
@@ -82,8 +76,10 @@ export default function Newspaper() {
             <div>
               <div className="row disable-mobile">
                 <div>
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <hgroup>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </hgroup>
                 </div>
                 <div>
                   <img className="article-img" width={"100%"} src="https://picsum.photos/id/43/300/250" />
@@ -93,8 +89,10 @@ export default function Newspaper() {
             <div>
               <div className="row disable-mobile">
                 <div>
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <hgroup>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </hgroup>
                 </div>
                 <div>
                   <img className="article-img" width={"100%"} src="https://picsum.photos/id/57/300/250" />
@@ -107,8 +105,10 @@ export default function Newspaper() {
             <div>
               <div className="row disable-mobile">
                 <div>
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <hgroup>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </hgroup>
                 </div>
                 <div>
                   <img className="article-img" width={"100%"} src="https://picsum.photos/id/49/300/250" />
@@ -118,8 +118,10 @@ export default function Newspaper() {
             <div>
               <div className="row disable-mobile">
                 <div>
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <hgroup>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </hgroup>
                 </div>
                 <div>
                   <img className="article-img" width={"100%"} src="https://picsum.photos/id/48/300/250" />
@@ -134,27 +136,27 @@ export default function Newspaper() {
           </p>
           <div className="row">
             <div>
-              <p>
+              <hgroup>
                 <img className="article-img" width={"100%"} src="https://picsum.photos/id/76/300/250" />
-              </p>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+              </hgroup>
             </div>
             <div>
-              <p>
+              <hgroup>
                 <img className="article-img" width={"100%"} src="https://picsum.photos/id/84/300/250" />
-              </p>
-              <h4>Ut enim ad minim veniam, quis nostrud exercitation</h4>
+                <h4>Ut enim ad minim veniam, quis nostrud exercitation</h4>
+              </hgroup>
             </div>
             <div>
-              <p>
+              <hgroup>
                 <img className="article-img" width={"100%"} src="https://picsum.photos/id/63/300/250" />
-              </p>
-              <h4>Ullamco laboris nisi ut aliquip ex ea commodo consequat</h4>
+                <h4>Ullamco laboris nisi ut aliquip ex ea commodo consequat</h4>
+              </hgroup>
             </div>
           </div>
         </section>
       </main>
-      <hr/>
+      <hr />
       <footer>
         <div>
           <div className="row">

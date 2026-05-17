@@ -25,9 +25,11 @@ function LandingPage() {
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Request Demo" }) })
     ] }) }) }),
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center", children: [
-      /* @__PURE__ */ jsx("h1", { children: "Hopper" }),
-      /* @__PURE__ */ jsx("h4", { children: "The first agentic development environment for the mainframe" }),
-      /* @__PURE__ */ jsx("p", { children: "Use AI agents to navigate TN3270, inspect datasets, write JCL, debug jobs, query VSAM, and operate inside z/OS from a modern development environment." }),
+      /* @__PURE__ */ jsxs("hgroup", { children: [
+        /* @__PURE__ */ jsx("h1", { children: "Hopper" }),
+        /* @__PURE__ */ jsx("h4", { children: "The first agentic development environment for the mainframe" }),
+        /* @__PURE__ */ jsx("p", { children: "Use AI agents to navigate TN3270, inspect datasets, write JCL, debug jobs, query VSAM, and operate inside z/OS from a modern development environment." })
+      ] }),
       /* @__PURE__ */ jsxs("p", { children: [
         /* @__PURE__ */ jsx("button", { children: "Download for Linux" }),
         /* @__PURE__ */ jsx("button", { type: "reset", children: "Read the Announcement" })
@@ -36,17 +38,19 @@ function LandingPage() {
     ] }) }),
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("figure", { children: /* @__PURE__ */ jsx("img", { className: "rounded", width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://picsum.photos/id/2/1200/500?grayscale" }) }) }),
-      /* @__PURE__ */ jsxs("section", { children: [
-        /* @__PURE__ */ jsx("h2", { children: "Built by leading minds behind the world's most advanced AI and technology" }),
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
+        /* @__PURE__ */ jsx("h2", { children: "Built by leading minds behind the world's most advanced AI" }),
         /* @__PURE__ */ jsx("p", { children: "Our team unites top researchers, engineers, and strategists from pioneering companies and institutions\u2014all focused on building systems that deliver real impact." })
-      ] }),
+      ] }) }),
       /* @__PURE__ */ jsx("hr", {}),
       /* @__PURE__ */ jsxs("section", { children: [
         /* @__PURE__ */ jsx("div", { className: "align-center", children: /* @__PURE__ */ jsx("h2", { children: "Pricing" }) }),
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsxs("div", { className: "card", children: [
-            /* @__PURE__ */ jsx("h2", { children: "Hobby" }),
-            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "Free" }) }),
+            /* @__PURE__ */ jsxs("hgroup", { children: [
+              /* @__PURE__ */ jsx("h2", { children: "Hobby" }),
+              /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "Free" }) })
+            ] }),
             /* @__PURE__ */ jsx("p", { children: "Includes:" }),
             /* @__PURE__ */ jsxs("ul", { children: [
               /* @__PURE__ */ jsx("li", { children: "No credit card required" }),
@@ -58,8 +62,10 @@ function LandingPage() {
             /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("button", { children: "Download" }) })
           ] }),
           /* @__PURE__ */ jsxs("div", { className: "card", children: [
-            /* @__PURE__ */ jsx("h2", { children: "Eterprise" }),
-            /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "Custom" }) }),
+            /* @__PURE__ */ jsxs("hgroup", { children: [
+              /* @__PURE__ */ jsx("h2", { children: "Eterprise" }),
+              /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "Custom" }) })
+            ] }),
             /* @__PURE__ */ jsx("p", { children: "Everything in Hobby, plus:" }),
             /* @__PURE__ */ jsxs("ul", { children: [
               /* @__PURE__ */ jsx("li", { children: "SAML SSO" }),
@@ -74,18 +80,18 @@ function LandingPage() {
       ] }),
       /* @__PURE__ */ jsx("hr", {}),
       /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
-        /* @__PURE__ */ jsxs("div", { children: [
+        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
           /* @__PURE__ */ jsx("h4", { children: "Join our Community" }),
           /* @__PURE__ */ jsx("p", { children: "Connect with builders using Hopper, follow product updates, and swap ideas with the Hypercubic team." })
-        ] }),
+        ] }) }),
         /* @__PURE__ */ jsx("button", { type: "reset", children: "Join our Discord" })
       ] }) }) }) }) })
     ] }),
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary", children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
-      /* @__PURE__ */ jsxs("div", { children: [
+      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
         /* @__PURE__ */ jsx("h4", { children: "Need access?" }),
         /* @__PURE__ */ jsx("p", { children: "Fill out the form and we'll send you credentials to try it on for free." })
-      ] }),
+      ] }) }),
       /* @__PURE__ */ jsx("button", { type: "reset", children: "Request Credentials" })
     ] }) }) }) }) }),
     /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("div", { className: "primary-faint", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [

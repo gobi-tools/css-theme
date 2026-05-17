@@ -20,8 +20,10 @@ export default function Newsletter() {
       </header>
       <main>
         <section>
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+          <hgroup>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+          </hgroup>
           <div className="group">
             <div className="row">
               <img className="circle" width={"40"} height={"40"} src="https://picsum.photos/id/50/30/30" />
@@ -32,7 +34,6 @@ export default function Newsletter() {
               </div>
             </div>
           </div>
-
           <hr />
           <div className="row disable-mobile">
             <div>

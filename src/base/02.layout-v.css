@@ -37,6 +37,7 @@ table,
 blockquote,
 pre,
 menu,
+hgroup,
 .card {
   margin-bottom: var(--space-m);
 }
@@ -138,7 +139,7 @@ details[name]:has(+ details[name]) {
   margin-bottom: 0;
 }
 
-.card {
+.card, hgroup {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);

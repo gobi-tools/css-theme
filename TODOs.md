@@ -19,12 +19,14 @@ Features
 
 Improvements
 ------------
+- [x] hgroup support for better header + subheader cases
 - [x] turn the “rounded” class into a var for all images
 - [ ] create classes for Primary / Secondary / etc that can be applied for text, elements, etc
   - [x] primary
   - [x] primary-faint (?)
   - [ ] secondary 
   - [ ] secondary-faint (?)
+- [ ] row & col-2/3/4/5/6 don't actually work very well; implement tailwind option
 - [ ] redo CSS with nesting
 - [ ] redo the horizontal spacing to be based on "ch"
 - [ ] redo aside and any other fixed widths to be based on "ch"
@@ -38,6 +40,8 @@ Improvements
 - [x] decide on class-based versions for various roles & types (columns, note, etc)
   -> Sorted it here: https://gobi-tools.github.io/css-theme/default/pages/docs/custom/classes.html
 - [x] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.  
+- [ ] prefix all variables with the name so they don't collide with other names
+- [ ] try to match tailwind / blueprint / etc naming 
 
 Bugs
 ----

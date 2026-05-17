@@ -17,25 +17,20 @@
   --color-success: #23b157;
   --color-error: #ef4444;
 
-  /* --font-weight-subhead: 300; */
-
   --border-radius-code: 0px;
   --border-radius-blocks: 0px;
   --border-radius-button: 0px;
   --border-radius-input: 0px;
   --border-radius-card: 0px;
+
+  /* -blocks applies to to: "blockquote", "pre", "dialog" */
+  --border-radius-blocks: 0px;
+  --border-left-width-blocks: 0px;
+  --border-left-style-blocks: none;
+  --border-bottom-width-blocks: 4px;
+  --border-bottom-style-blocks: solid;
 }
 
 .article-img {
   aspect-ratio: 16.0 / 9.0;
-}
-
-.row {
-  gap: var(--space-l);
-}
-
-@container rows (max-width: 600px) {
-  .row {
-    gap: var(--space-m)
-  }
 }
