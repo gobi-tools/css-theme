@@ -100,7 +100,7 @@ export default function Newsletter() {
             Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
           </p>
           <figure>
-            <img width={"100%"} height="480" src="https://picsum.photos/id/16/640/480" alt="ssample image " />
+            <img width={"100%"} src="https://picsum.photos/id/16/640/480" alt="ssample image " />
             <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
           </figure>
           <p>
@@ -117,19 +117,18 @@ export default function Newsletter() {
           </p>
           <hr />
           <div className="align-center row">
-            <div></div>
+            <div className="col-2"></div>
             <div>
               <form>
                 <p>
                   This is a reader supported newsletter. Subscribe to
-                  get the latest.
+                  get the latest article directly in your inbox.
                 </p>
                 <input id="email" required type="email" placeholder="Type your email..." />
-
                 <input id="subscribe" type="submit" value={"Subscribe"} />
               </form>
             </div>
-            <div></div>
+            <div className="col-2"></div>
           </div>
         </section>
       </main>

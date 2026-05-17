@@ -1,7 +1,8 @@
 Features
 --------
-- [ ] carousel element]
-- [ ] loading state with aria-busy
+- [ ] carousel element
+- [ ] loading state with aria-busy (like [pico](https://picocss.com/docs/loading)) 
+  -> more info [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-busy)
 - [ ] animations
 - [ ] picture HTML element
 
@@ -26,7 +27,7 @@ Improvements
   - [x] primary-faint (?)
   - [ ] secondary 
   - [ ] secondary-faint (?)
-- [ ] row & col-2/3/4/5/6 don't actually work very well; implement tailwind option
+- [x] row & col-2/3/4/5/6 don't actually work very well; implement tailwind option
 - [ ] headers & links should look a bit different
 - [ ] redo CSS with nesting
 - [ ] redo the horizontal spacing to be based on "ch"
@@ -43,8 +44,13 @@ Improvements
 - [x] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.  
 - [ ] prefix all variables with the name so they don't collide with other names
 - [ ] try to match tailwind / blueprint / etc naming 
-- [ ][investigate] instead of the "card" class -> do what [picocss](https://picocss.com/docs/card) does and have an article as card 
-- [ ][investigate] instead of the "group" class -> do what [picocss](https://picocss.com/docs/group) does and use the role="group"
+- [ ][investigate] instead of the "card" class 
+  -> do what [picocss](https://picocss.com/docs/card) does and have an article as card 
+  so in this way we get rid of the "card" class ... 
+  but might need to change details to have one style with name and another w/o name
+- [ ][investigate] instead of the "group" class 
+  -> do what [picocss](https://picocss.com/docs/group) does and use the role="group"
+  so in this  way we get rif of more classes
 
 Bugs
 ----

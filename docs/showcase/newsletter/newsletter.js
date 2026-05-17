@@ -96,7 +96,7 @@ function Newsletter() {
       /* @__PURE__ */ jsx("p", { children: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." }),
       /* @__PURE__ */ jsx("p", { children: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" }),
       /* @__PURE__ */ jsxs("figure", { children: [
-        /* @__PURE__ */ jsx("img", { width: "100%", height: "480", src: "https://picsum.photos/id/16/640/480", alt: "ssample image " }),
+        /* @__PURE__ */ jsx("img", { width: "100%", src: "https://picsum.photos/id/16/640/480", alt: "ssample image " }),
         /* @__PURE__ */ jsx("figcaption", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
       ] }),
       /* @__PURE__ */ jsx("p", { children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident" }),
@@ -107,13 +107,13 @@ function Newsletter() {
       /* @__PURE__ */ jsx("p", { children: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae." }),
       /* @__PURE__ */ jsx("hr", {}),
       /* @__PURE__ */ jsxs("div", { className: "align-center row", children: [
-        /* @__PURE__ */ jsx("div", {}),
+        /* @__PURE__ */ jsx("div", { className: "col-2" }),
         /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("form", { children: [
-          /* @__PURE__ */ jsx("p", { children: "This is a reader supported newsletter. Subscribe to get the latest." }),
+          /* @__PURE__ */ jsx("p", { children: "This is a reader supported newsletter. Subscribe to get the latest article directly in your inbox." }),
           /* @__PURE__ */ jsx("input", { id: "email", required: true, type: "email", placeholder: "Type your email..." }),
           /* @__PURE__ */ jsx("input", { id: "subscribe", type: "submit", value: "Subscribe" })
         ] }) }),
-        /* @__PURE__ */ jsx("div", {})
+        /* @__PURE__ */ jsx("div", { className: "col-2" })
       ] })
     ] }) }),
     /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [

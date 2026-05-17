@@ -41,18 +41,24 @@
 
 .primary {
   background-color: var(--color-primary);
+  border-color: var(--color-primary);
   color: var(--color-txt-on-dark);
 }
 
 .primary-faint {
   background-color: var(--color-primary-faint);
+  border-color: var(--color-primary);
+  color: var(--color-txt);
 }
 
 .secondary {
   background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
   color: var(--color-txt-on-dark);
 }
 
 .secondary-faint {
   background-color: var(--color-secondary-muted);
+  border-color: var(--color-secondary);
+  color: var(--color-txt);
 }
