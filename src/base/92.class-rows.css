@@ -4,34 +4,28 @@
   display: flex;
   flex-direction: row;
   gap: var(--space-m);
-  align-items: stretch;
 
+  align-items: stretch;
   width: 100%;
 }
 
-.row :is(.col, div) {
-  flex: 0 4 100%;
+.row > :is(.col, div) {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
-.row .col-2 {
-  flex: 0 2 16.66%;
-}
-
-.row .col-3 {
-  flex: 0 3 25%;
-}
-
-.row .col-4 {
-  flex: 0 4 33.33%;
-}
-
-.row .col-5 {
-  flex: 0 5 41.66%;
-}
-
-.row .col-6 {
-  flex: 0 6 50%;
-}
+.row > .col-1  { flex: 0 0 8.333%; }
+.row > .col-2  { flex: 0 0 16.666%; }
+.row > .col-3  { flex: 0 0 25%; }
+.row > .col-4  { flex: 0 0 33.333%; }
+.row > .col-5  { flex: 0 0 41.666%; }
+.row > .col-6  { flex: 0 0 50%; }
+.row > .col-7  { flex: 0 0 58.333%; }
+.row > .col-8  { flex: 0 0 66.666%; }
+.row > .col-9  { flex: 0 0 75%; }
+.row > .col-10 { flex: 0 0 83.333%; }
+.row > .col-11 { flex: 0 0 91.666%; }
+.row > .col-12 { flex: 0 0 100%; }
 
 /* different layouts */
 
@@ -41,6 +35,10 @@
 }
 
 @container rows (max-width: 600px) {
+  .row > :is(.col, div) {
+    flex: 0 4 100%;
+  }
+
   :not(.group)>.row:not(.disable-mobile) {
     flex-direction: column;
   }

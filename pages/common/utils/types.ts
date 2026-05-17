@@ -33,7 +33,7 @@ export enum EDoc {
   // custom - elements
   Cards = 'cards',
   // custom - layout
-  Columns = 'cols',
+  Grids = 'grid',
   Containers = 'containers',
   Groups = 'groups',
   // custom - classes

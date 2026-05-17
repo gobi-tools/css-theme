@@ -3,7 +3,7 @@ import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
 import { ELinks, EExamples } from "../../../common/utils/types";
 
-export default function Columns({ theme }) {
+export default function Grids({ theme }) {
   const route = useRoute();
   
   return (
@@ -11,8 +11,9 @@ export default function Columns({ theme }) {
       <section className="row">
         <div>
           <p>
-            Any layout element, such a or <code>div</code> or <code>section</code> tag, can
-            arrange its children in columns of equal width, by combining the <code>row</code> and <code>col</code> classes.
+            Any layout element, such as a <code>div</code> or <code>section</code>, can 
+            be transformed into a grid with columns of equal width 
+            using the <code>row</code> and <code>col</code> classes.
           </p>
           <div className="card">
             <div className="row disable-mobile">
@@ -54,8 +55,16 @@ export default function Columns({ theme }) {
       <section className="row">
         <div>
           <p>
-            This system uses the same naming convention as the popular <a href={ELinks.Bootstrap} target="_blanl">Bootstrap CSS library</a>.
-            And just like Bootstrap, columns can have various widths, by using the <code>col-2</code> to <code>col-6</code> classes.
+            Like similar CSS libraries, a grid contains 12 columns.
+          </p>
+          <p>
+            An element with class <code>col-1</code> will span just one 
+            column, whilst an element with class <code>col-4</code> will span 4 columns (or 33.333% of the 
+            available space) and an element with <code>col-12</code> will span the whole width of the grid.
+          </p>
+          <p>
+            Grids can combine columns of multiple widths.
+            The generic <code>col</code> class will fill all available space.
           </p>
           <div className="card">
             <div className="row disable-mobile">
@@ -85,21 +94,15 @@ export default function Columns({ theme }) {
       <section className="row">
         <div>
           <p>
-            Columns are fully responsive.
+            Grids are fully responsive.
             On smaller devices they transition to a row based layout, with
             columns being laid out vertically, one below the other.
           </p>
-          <p>
-            In such a layout the gap that's usually present in a horizontal layout dissapears.
-            This means that each element within a column must provide its owne element 
-            with bottom padding (like a <code>p</code>, etc).
-          </p>
-
           <figure>
             <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileColumns, theme, route)} />
 
             <figcaption>
-              Showcase of columns on a smaller device.
+              Showcase of grids on a smaller device.
             </figcaption>
           </figure>
 

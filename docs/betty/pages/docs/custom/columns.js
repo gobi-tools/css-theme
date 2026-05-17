@@ -4264,11 +4264,11 @@ function Columns({ theme }) {
     /* @__PURE__ */ jsxs42("section", { className: "row", children: [
       /* @__PURE__ */ jsxs42("div", { children: [
         /* @__PURE__ */ jsxs42("p", { children: [
-          "Any layout element, such a or ",
+          "Any layout element, such as a ",
           /* @__PURE__ */ jsx42("code", { children: "div" }),
           " or ",
           /* @__PURE__ */ jsx42("code", { children: "section" }),
-          " tag, can arrange its children in columns of equal width, by combining the ",
+          ", can be divided into equal width columns using the ",
           /* @__PURE__ */ jsx42("code", { children: "row" }),
           " and ",
           /* @__PURE__ */ jsx42("code", { children: "col" }),
@@ -4298,14 +4298,20 @@ function Columns({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs42("section", { className: "row", children: [
       /* @__PURE__ */ jsxs42("div", { children: [
+        /* @__PURE__ */ jsx42("p", { children: "Like similar CSS libraries, a container is divided horizontally into 12 columns." }),
         /* @__PURE__ */ jsxs42("p", { children: [
-          "This system uses the same naming convention as the popular ",
-          /* @__PURE__ */ jsx42("a", { href: "https://getbootstrap.com/docs/5.3/examples/grid/" /* Bootstrap */, target: "_blanl", children: "Bootstrap CSS library" }),
-          ". And just like Bootstrap, columns can have various widths, by using the ",
-          /* @__PURE__ */ jsx42("code", { children: "col-2" }),
-          " to ",
-          /* @__PURE__ */ jsx42("code", { children: "col-6" }),
-          " classes."
+          "An element with class ",
+          /* @__PURE__ */ jsx42("code", { children: "col-1" }),
+          " will naturally span just one column, whilst an element with class ",
+          /* @__PURE__ */ jsx42("code", { children: "col-4" }),
+          " will span 4 columns (or 33.333% of the available space) and finally an element with ",
+          /* @__PURE__ */ jsx42("code", { children: "col-12" }),
+          " will therefore span the whole width of the element."
+        ] }),
+        /* @__PURE__ */ jsxs42("p", { children: [
+          "Layouts can combine columns of multiple widths. The generic ",
+          /* @__PURE__ */ jsx42("code", { children: "col" }),
+          " class will span all available unspecified space."
         ] }),
         /* @__PURE__ */ jsx42("div", { className: "card", children: /* @__PURE__ */ jsxs42("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx42("div", { className: "col-2", children: /* @__PURE__ */ jsx42("code", { style: { width: "100%" }, children: "col-2" }) }),

@@ -249,7 +249,7 @@ export default function Cards({ theme }) {
           </p>
           <p>
             <small>
-              You can learn more about columns <a href={RouteMaster.doc(EDoc.Columns, theme, route)}>here</a>.
+              You can learn more about columns <a href={RouteMaster.doc(EDoc.Grids, theme, route)}>here</a>.
             </small>
           </p>
         </div>

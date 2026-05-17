@@ -215,7 +215,7 @@ export default function FormsNormal({ theme }) {
             </p>
             <p>
               In the example above
-              we're separating inputs into two separate <a href={RouteMaster.doc(EDoc.Columns, theme, route)}>columns</a>, so we
+              we're separating inputs into two separate <a href={RouteMaster.doc(EDoc.Grids, theme, route)}>columns</a>, so we
               can pack more information in the same space.
             </p>
             <p>

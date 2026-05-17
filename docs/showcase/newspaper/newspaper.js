@@ -47,7 +47,7 @@ function Newspaper() {
           /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }),
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("i", { children: /* @__PURE__ */ jsx("small", { children: "10 minutes ago" }) }) })
         ] }) }),
-        /* @__PURE__ */ jsx("div", { className: "col-6", children: /* @__PURE__ */ jsx("blockquote", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
+        /* @__PURE__ */ jsx("div", { className: "col-4", children: /* @__PURE__ */ jsx("blockquote", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "MOST READ" }) }),
           /* @__PURE__ */ jsx("a", { href: "", children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
           /* @__PURE__ */ jsx("hr", {}),
@@ -62,35 +62,35 @@ function Newspaper() {
         /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("mark", { className: "primary", children: "Politics" }) }),
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
+            /* @__PURE__ */ jsx("div", { className: "col", children: /* @__PURE__ */ jsxs("hgroup", { children: [
               /* @__PURE__ */ jsx("h4", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
               /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
             ] }) }),
-            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { className: "article-img", width: "100%", src: "https://picsum.photos/id/43/300/250" }) })
+            /* @__PURE__ */ jsx("div", { className: "col-5", children: /* @__PURE__ */ jsx("img", { className: "article-img", width: "100%", src: "https://picsum.photos/id/43/300/250" }) })
           ] }) }),
           /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
+            /* @__PURE__ */ jsx("div", { className: "col", children: /* @__PURE__ */ jsxs("hgroup", { children: [
               /* @__PURE__ */ jsx("h4", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
               /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
             ] }) }),
-            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { className: "article-img", width: "100%", src: "https://picsum.photos/id/57/300/250" }) })
+            /* @__PURE__ */ jsx("div", { className: "col-5", children: /* @__PURE__ */ jsx("img", { className: "article-img", width: "100%", src: "https://picsum.photos/id/57/300/250" }) })
           ] }) })
         ] }),
         /* @__PURE__ */ jsx("br", {}),
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
+            /* @__PURE__ */ jsx("div", { className: "col", children: /* @__PURE__ */ jsxs("hgroup", { children: [
               /* @__PURE__ */ jsx("h4", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
               /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
             ] }) }),
-            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { className: "article-img", width: "100%", src: "https://picsum.photos/id/49/300/250" }) })
+            /* @__PURE__ */ jsx("div", { className: "col-5", children: /* @__PURE__ */ jsx("img", { className: "article-img", width: "100%", src: "https://picsum.photos/id/49/300/250" }) })
           ] }) }),
           /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("div", { className: "row disable-mobile", children: [
-            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
+            /* @__PURE__ */ jsx("div", { className: "col", children: /* @__PURE__ */ jsxs("hgroup", { children: [
               /* @__PURE__ */ jsx("h4", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
               /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
             ] }) }),
-            /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { className: "article-img", width: "100%", src: "https://picsum.photos/id/48/300/250" }) })
+            /* @__PURE__ */ jsx("div", { className: "col-5", children: /* @__PURE__ */ jsx("img", { className: "article-img", width: "100%", src: "https://picsum.photos/id/48/300/250" }) })
           ] }) })
         ] })
       ] }),

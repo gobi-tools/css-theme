@@ -141,8 +141,8 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Cards}>
                 <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>Cards</a>
               </li>
-              <li aria-selected={selectedDoc === EDoc.Columns}>
-                <a href={RouteMaster.doc(EDoc.Columns, theme, route)}>Columns</a>
+              <li aria-selected={selectedDoc === EDoc.Grids}>
+                <a href={RouteMaster.doc(EDoc.Grids, theme, route)}>Grids</a>
               </li>
               <li aria-selected={selectedDoc === EDoc.Containers}>
                 <a href={RouteMaster.doc(EDoc.Containers, theme, route)}>Containers</a>

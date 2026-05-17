@@ -111,7 +111,7 @@ function DocLayout({ theme, children }) {
         /* @__PURE__ */ jsxs2("menu", { children: [
           /* @__PURE__ */ jsx2("b", { children: "Custom" }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "cards" /* Cards */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "Cards" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "cols" /* Columns */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "Columns" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "grid" /* Grids */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "Grids" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "Containers" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "classes" /* Classes */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "Classes" }) })
@@ -1899,7 +1899,7 @@ function FormsNormal({ theme }) {
         /* @__PURE__ */ jsx16("p", { children: "You can make forms as simple or as complex as you want." }),
         /* @__PURE__ */ jsxs16("p", { children: [
           "In the example above we're separating inputs into two separate ",
-          /* @__PURE__ */ jsx16("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "columns" }),
+          /* @__PURE__ */ jsx16("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "columns" }),
           ", so we can pack more information in the same space."
         ] }),
         /* @__PURE__ */ jsxs16("p", { children: [
@@ -2988,7 +2988,7 @@ function Mobile({ theme }) {
           /* @__PURE__ */ jsx24("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-columns" /* MobileColumns */, theme, route) }),
           /* @__PURE__ */ jsxs24("figcaption", { children: [
             "More information ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "here" }),
             "."
           ] })
         ] })
@@ -3183,7 +3183,7 @@ function Cards({ theme }) {
         ] }) }),
         /* @__PURE__ */ jsx25("p", { children: /* @__PURE__ */ jsxs25("small", { children: [
           "You can learn more about columns ",
-          /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
+          /* @__PURE__ */ jsx25("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -3347,7 +3347,7 @@ function Classes({ theme }) {
             "Transforms child elements into horizontally aligned columns. Also the ",
             /* @__PURE__ */ jsx26("code", { children: "col-N" }),
             " class. See ",
-            /* @__PURE__ */ jsx26("a", { href: RouteMaster.doc("cols" /* Columns */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx26("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "here" }),
             "."
           ] })
         ] }),
@@ -3366,19 +3366,19 @@ function Classes({ theme }) {
   ] }) }) });
 }
 
-// pages/pages/docs/custom/Columns.tsx
+// pages/pages/docs/custom/Grids.tsx
 import { jsx as jsx27, jsxs as jsxs27 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function Columns({ theme }) {
+function Grids({ theme }) {
   const route = useRoute();
   return /* @__PURE__ */ jsxs27(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs27("section", { className: "row", children: [
       /* @__PURE__ */ jsxs27("div", { children: [
         /* @__PURE__ */ jsxs27("p", { children: [
-          "Any layout element, such a or ",
+          "Any layout element, such as a ",
           /* @__PURE__ */ jsx27("code", { children: "div" }),
           " or ",
           /* @__PURE__ */ jsx27("code", { children: "section" }),
-          " tag, can arrange its children in columns of equal width, by combining the ",
+          ", can be transformed into a grid with columns of equal width using the ",
           /* @__PURE__ */ jsx27("code", { children: "row" }),
           " and ",
           /* @__PURE__ */ jsx27("code", { children: "col" }),
@@ -3408,14 +3408,20 @@ function Columns({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs27("section", { className: "row", children: [
       /* @__PURE__ */ jsxs27("div", { children: [
+        /* @__PURE__ */ jsx27("p", { children: "Like similar CSS libraries, a grid contains 12 columns." }),
         /* @__PURE__ */ jsxs27("p", { children: [
-          "This system uses the same naming convention as the popular ",
-          /* @__PURE__ */ jsx27("a", { href: "https://getbootstrap.com/docs/5.3/examples/grid/" /* Bootstrap */, target: "_blanl", children: "Bootstrap CSS library" }),
-          ". And just like Bootstrap, columns can have various widths, by using the ",
-          /* @__PURE__ */ jsx27("code", { children: "col-2" }),
-          " to ",
-          /* @__PURE__ */ jsx27("code", { children: "col-6" }),
-          " classes."
+          "An element with class ",
+          /* @__PURE__ */ jsx27("code", { children: "col-1" }),
+          " will span just one column, whilst an element with class ",
+          /* @__PURE__ */ jsx27("code", { children: "col-4" }),
+          " will span 4 columns (or 33.333% of the available space) and an element with ",
+          /* @__PURE__ */ jsx27("code", { children: "col-12" }),
+          " will span the whole width of the grid."
+        ] }),
+        /* @__PURE__ */ jsxs27("p", { children: [
+          "Grids can combine columns of multiple widths. The generic ",
+          /* @__PURE__ */ jsx27("code", { children: "col" }),
+          " class will fill all available space."
         ] }),
         /* @__PURE__ */ jsx27("div", { className: "card", children: /* @__PURE__ */ jsxs27("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx27("div", { className: "col-2", children: /* @__PURE__ */ jsx27("code", { style: { width: "100%" }, children: "col-2" }) }),
@@ -3431,15 +3437,10 @@ function Columns({ theme }) {
     ] }),
     /* @__PURE__ */ jsxs27("section", { className: "row", children: [
       /* @__PURE__ */ jsxs27("div", { children: [
-        /* @__PURE__ */ jsx27("p", { children: "Columns are fully responsive. On smaller devices they transition to a row based layout, with columns being laid out vertically, one below the other." }),
-        /* @__PURE__ */ jsxs27("p", { children: [
-          "In such a layout the gap that's usually present in a horizontal layout dissapears. This means that each element within a column must provide its owne element with bottom padding (like a ",
-          /* @__PURE__ */ jsx27("code", { children: "p" }),
-          ", etc)."
-        ] }),
+        /* @__PURE__ */ jsx27("p", { children: "Grids are fully responsive. On smaller devices they transition to a row based layout, with columns being laid out vertically, one below the other." }),
         /* @__PURE__ */ jsxs27("figure", { children: [
           /* @__PURE__ */ jsx27("iframe", { scrolling: "no", width: "100%", height: 300, src: RouteMaster.example("mobile-columns" /* MobileColumns */, theme, route) }),
-          /* @__PURE__ */ jsx27("figcaption", { children: "Showcase of columns on a smaller device." })
+          /* @__PURE__ */ jsx27("figcaption", { children: "Showcase of grids on a smaller device." })
         ] })
       ] }),
       /* @__PURE__ */ jsx27("div", { children: /* @__PURE__ */ jsx27("pre", { children: /* @__PURE__ */ jsx27("code", { children: `<div class="row">
@@ -4170,8 +4171,8 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
       case "classes" /* Classes */:
         return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
-      case "cols" /* Columns */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
+      case "grid" /* Grids */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Grids)}`;
       case "containers" /* Containers */:
         return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case "groups" /* Groups */:
@@ -4261,8 +4262,8 @@ var RouteMaster = class _RouteMaster {
             return "cards" /* Cards */;
           case htmlName(Classes):
             return "classes" /* Classes */;
-          case htmlName(Columns):
-            return "cols" /* Columns */;
+          case htmlName(Grids):
+            return "grid" /* Grids */;
           case htmlName(Containers):
             return "containers" /* Containers */;
           case htmlName(Groups):

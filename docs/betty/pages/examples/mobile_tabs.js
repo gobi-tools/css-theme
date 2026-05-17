@@ -87,7 +87,7 @@ import { jsx as jsx22, jsxs as jsxs22 } from "https://esm.sh/react@19.2.0/jsx-ru
 // pages/pages/docs/custom/Classes.tsx
 import { jsx as jsx23, jsxs as jsxs23 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/docs/custom/Columns.tsx
+// pages/pages/docs/custom/Grids.tsx
 import { jsx as jsx24, jsxs as jsxs24 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/pages/docs/custom/Containers.tsx

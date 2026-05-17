@@ -97,7 +97,7 @@ export default function Classes({ theme }) {
                 <td><code>row</code></td>
                 <td>
                   Transforms child elements into horizontally aligned columns. Also the <code>col-N</code> class.
-                  See <a href={RouteMaster.doc(EDoc.Columns, theme, route)}>here</a>.
+                  See <a href={RouteMaster.doc(EDoc.Grids, theme, route)}>here</a>.
                 </td>
               </tr>
               <tr>

@@ -53,7 +53,7 @@ export default function Newspaper() {
               <p><i><small>10 minutes ago</small></i></p>
             </hgroup>
           </div>
-          <div className="col-6">
+          <div className="col-4">
             <blockquote>
               <hgroup>
                 <p><b>MOST READ</b></p>
@@ -75,26 +75,26 @@ export default function Newspaper() {
           <div className="row">
             <div>
               <div className="row disable-mobile">
-                <div>
+                <div className="col">
                   <hgroup>
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </hgroup>
                 </div>
-                <div>
+                <div className="col-5">
                   <img className="article-img" width={"100%"} src="https://picsum.photos/id/43/300/250" />
                 </div>
               </div>
             </div>
             <div>
               <div className="row disable-mobile">
-                <div>
+                <div className="col">
                   <hgroup>
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </hgroup>
                 </div>
-                <div>
+                <div className="col-5">
                   <img className="article-img" width={"100%"} src="https://picsum.photos/id/57/300/250" />
                 </div>
               </div>
@@ -104,26 +104,26 @@ export default function Newspaper() {
           <div className="row">
             <div>
               <div className="row disable-mobile">
-                <div>
+                <div className="col">
                   <hgroup>
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </hgroup>
                 </div>
-                <div>
+                <div className="col-5">
                   <img className="article-img" width={"100%"} src="https://picsum.photos/id/49/300/250" />
                 </div>
               </div>
             </div>
             <div>
               <div className="row disable-mobile">
-                <div>
+                <div className="col">
                   <hgroup>
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </hgroup>
                 </div>
-                <div>
+                <div className="col-5">
                   <img className="article-img" width={"100%"} src="https://picsum.photos/id/48/300/250" />
                 </div>
               </div>

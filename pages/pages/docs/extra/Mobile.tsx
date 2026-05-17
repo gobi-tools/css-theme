@@ -99,7 +99,7 @@ export default function Mobile({ theme }) {
           </p>
           <figure>
             <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileColumns, theme, route)} />
-            <figcaption>More information <a href={RouteMaster.doc(EDoc.Columns, theme, route)}>here</a>.</figcaption>
+            <figcaption>More information <a href={RouteMaster.doc(EDoc.Grids, theme, route)}>here</a>.</figcaption>
           </figure>
         </div>
         <div>

@@ -23,7 +23,7 @@ import Icons from "../../pages/docs/extra/Icons";
 import Mobile from "../../pages/docs/extra/Mobile";
 import Cards from "../../pages/docs/custom/Cards";
 import Classes from "../../pages/docs/custom/Classes";
-import Columns from "../../pages/docs/custom/Columns";
+import Grids from "../../pages/docs/custom/Grids";
 import Containers from "../../pages/docs/custom/Containers";
 import Groups from "../../pages/docs/custom/Groups";
 import Header from "../../pages/docs/layout/Header";
@@ -83,7 +83,7 @@ export class RouteMaster {
       // custom
       case EDoc.Cards: return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
       case EDoc.Classes: return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
-      case EDoc.Columns: return `${base}${theme}/pages/docs/custom/${htmlName(Columns)}`;
+      case EDoc.Grids: return `${base}${theme}/pages/docs/custom/${htmlName(Grids)}`;
       case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case EDoc.Groups: return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
     }
@@ -147,7 +147,7 @@ export class RouteMaster {
         switch (doc) {
           case htmlName(Cards): return EDoc.Cards;
           case htmlName(Classes): return EDoc.Classes;
-          case htmlName(Columns): return EDoc.Columns;
+          case htmlName(Grids): return EDoc.Grids;
           case htmlName(Containers): return EDoc.Containers;
           case htmlName(Groups): return EDoc.Groups;
         }
