@@ -4277,10 +4277,6 @@ function Classes({ theme }) {
           ] })
         ] }),
         /* @__PURE__ */ jsxs42("tr", { children: [
-          /* @__PURE__ */ jsx42("td", { children: /* @__PURE__ */ jsx42("code", { children: "rounded" }) }),
-          /* @__PURE__ */ jsx42("td", { children: "Sighlty rounds off the edges off an element. Useful for images." })
-        ] }),
-        /* @__PURE__ */ jsxs42("tr", { children: [
           /* @__PURE__ */ jsx42("td", { children: /* @__PURE__ */ jsx42("code", { children: "container-medium" }) }),
           /* @__PURE__ */ jsxs42("td", { children: [
             "Sets the maximum size of the container to ",

@@ -1,6 +1,6 @@
 Features
 --------
-- [ ] carousel element
+- [ ] carousel element]
 - [ ] loading state with aria-busy
 - [ ] animations
 - [ ] picture HTML element
@@ -42,6 +42,8 @@ Improvements
 - [x] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.  
 - [ ] prefix all variables with the name so they don't collide with other names
 - [ ] try to match tailwind / blueprint / etc naming 
+- [ ][investigate] instead of the "card" class -> do what [picocss](https://picocss.com/docs/card) does and have an article as card 
+- [ ][investigate] instead of the "group" class -> do what [picocss](https://picocss.com/docs/group) does and use the role="group"
 
 Bugs
 ----

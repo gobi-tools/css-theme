@@ -148,6 +148,9 @@ details[name]:has(+ details[name]) {
     margin-bottom: 0;
   }
 }
+hgroup {
+  gap: var(--space-xs);
+}
 
 header> :not(:is(nav, menu, aside)) {
   display: flex;
