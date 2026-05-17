@@ -27,6 +27,7 @@ Improvements
   - [ ] secondary 
   - [ ] secondary-faint (?)
 - [ ] row & col-2/3/4/5/6 don't actually work very well; implement tailwind option
+- [ ] headers & links should look a bit different
 - [ ] redo CSS with nesting
 - [ ] redo the horizontal spacing to be based on "ch"
 - [ ] redo aside and any other fixed widths to be based on "ch"

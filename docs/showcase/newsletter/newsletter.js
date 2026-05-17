@@ -102,7 +102,7 @@ function Newsletter() {
       /* @__PURE__ */ jsx("p", { children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident" }),
       /* @__PURE__ */ jsxs("blockquote", { children: [
         /* @__PURE__ */ jsx("p", { children: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat" }),
-        /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("i", { children: "Author, quote" }) })
+        /* @__PURE__ */ jsx("cite", { children: "- Author" })
       ] }),
       /* @__PURE__ */ jsx("p", { children: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae." }),
       /* @__PURE__ */ jsx("hr", {}),
