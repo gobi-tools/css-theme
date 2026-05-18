@@ -2,7 +2,7 @@ export default function LandingPage() {
   return (
     <>
       <header>
-        <aside className="primary">
+        <aside className="primary inverted">
           <div>
             <b>Introducing Hopper</b>— The first agentic development environment for the mainframe.
           </div>
@@ -128,7 +128,7 @@ export default function LandingPage() {
         </section>
       </main>
       <header>
-        <aside className="primary">
+        <aside className="primary inverted">
           {/* <br /> */}
           <div>
             <div className="group">
@@ -148,7 +148,7 @@ export default function LandingPage() {
         </aside>
       </header>
       <footer>
-        <div className="primary-faint">
+        <div className="primary">
           <div className="row">
             <div>
               <nav>

@@ -6,7 +6,7 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function LandingPage() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary", children: /* @__PURE__ */ jsxs("div", { children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary inverted", children: /* @__PURE__ */ jsxs("div", { children: [
       /* @__PURE__ */ jsx("b", { children: "Introducing Hopper" }),
       "\u2014 The first agentic development environment for the mainframe."
     ] }) }) }),
@@ -87,14 +87,14 @@ function LandingPage() {
         /* @__PURE__ */ jsx("button", { type: "reset", children: "Join our Discord" })
       ] }) }) }) }) })
     ] }),
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary", children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary inverted", children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
       /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
         /* @__PURE__ */ jsx("h4", { children: "Need access?" }),
         /* @__PURE__ */ jsx("p", { children: "Fill out the form and we'll send you credentials to try it on for free." })
       ] }) }),
       /* @__PURE__ */ jsx("button", { type: "reset", children: "Request Credentials" })
     ] }) }) }) }) }),
-    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("div", { className: "primary-faint", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("div", { className: "primary", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
       /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
         /* @__PURE__ */ jsx("b", { children: "COMPANY" }),
         /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Our Story" }) }),

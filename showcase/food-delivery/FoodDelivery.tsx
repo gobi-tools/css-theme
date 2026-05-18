@@ -2,7 +2,7 @@ export default function FoodDelivery() {
   return (
     <>
       <header>
-        <nav className="disable-mobile primary-faint">
+        <nav className="disable-mobile primary">
           <ul>
             <li className="gap"></li>
             <li>
@@ -15,7 +15,7 @@ export default function FoodDelivery() {
         </nav>
       </header>
       <header>
-        <div className="primary-faint">
+        <div className="primary">
           <div>
             <h1 className="align-center">
               Restaurants, takeaways, supermarkets and shops. Delivered.
@@ -166,7 +166,7 @@ export default function FoodDelivery() {
         </header>
 
         <header className="align-center">
-          <div className="primary-faint">
+          <div className="primary">
             <div className="row">
               <div>
                 <hgroup>

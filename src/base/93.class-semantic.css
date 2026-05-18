@@ -71,23 +71,27 @@
 }
 
 :is(div,
-  article, section, main, aside).primary {
+  article, section, main, aside, header, footer,
+  nav, menu).primary {
   background-color: var(--color-primary-faint);
 }
 
 :is(div,
-  article, section, main, aside).secondary {
+  article, section, main, aside, header, footer,
+  nav, menu).secondary {
   background-color: var(--color-secondary-faint);
 }
 
 :is(div,
-  article, section, main, aside).success {
+  article, section, main, aside, header, footer,
+  nav, menu).success {
   --color-primary: var(--color-success);
   background-color: var(--color-primary-faint);
 }
 
 :is(div,
-  article, section, main, aside).error {
+  article, section, main, aside, header, footer,
+  nav, menu).error {
   --color-primary: var(--color-error);
   background-color: var(--color-primary-faint);
 }
