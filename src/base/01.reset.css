@@ -150,7 +150,13 @@
   --color-error: __THEME__
   */
 
-  /** todo -> create internal colors to be used by the  theme ... */
+  --color-int-bg: var(--color-bg);
+  --color-int-txt: var(--color-txt);
+  --color-int-txt-on-dark: var(--color-txt-on-dark);
+  --color-int-primary: var(--color-primary);
+  --color-int-secondary: var(--color-secondary);
+  --color-int-success: var(--color-success);
+  --color-int-error: var(--color-error);
 
   --color-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
 
