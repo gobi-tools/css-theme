@@ -31,14 +31,14 @@ function Newspaper() {
         /* @__PURE__ */ jsx("span", { children: "Profile" })
       ] }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "secondary inverted", children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "secondary inverted", children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "News" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Politics" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Sports" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Local" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Culture" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Food & Drink" }) })
-    ] }) }) }) }),
+    ] }) }) }),
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsxs("section", { className: "row", children: [
         /* @__PURE__ */ jsx("div", { className: "col", children: /* @__PURE__ */ jsxs("hgroup", { children: [

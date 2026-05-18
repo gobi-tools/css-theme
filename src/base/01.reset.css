@@ -150,6 +150,8 @@
   --color-error: __THEME__
   */
 
+  /** todo -> create internal colors to be used by the  theme ... */
+
   --color-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
 
   --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
