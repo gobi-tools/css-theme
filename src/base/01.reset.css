@@ -165,6 +165,7 @@
       color-mix(in oklch, var(--color-primary) 35%, white));
   --color-primary-inked-hover: color-mix(in oklch, var(--color-primary-inked) 70%, light-dark(black, white));
 
+  --color-secondary-faint: color-mix(in srgb, var(--color-secondary) 8%, transparent);
   --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-secondary) 30%, white),
       color-mix(in oklch, var(--color-secondary) 90%, black));
   --color-secondary-muted-hover: color-mix(in oklab, var(--color-secondary-muted) 90%, light-dark(black, white));
