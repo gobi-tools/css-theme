@@ -43,9 +43,9 @@ td:last-child {
 
 th,
 td {
-  border-bottom: 1px solid var(--color-accent-inked);
+  border-bottom: 1px solid var(--color-int-accent-inked);
 }
 
 tr:hover {
-  background-color: var(--color-accent-faint);
+  background-color: var(--color-int-accent-faint);
 }

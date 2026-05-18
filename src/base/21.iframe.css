@@ -8,5 +8,5 @@ iframe {
 /* theme colors */
 
 iframe {
-  border-color: var(--color-border);
+  border-color: var(--color-int-border);
 }

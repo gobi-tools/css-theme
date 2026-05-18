@@ -96,16 +96,16 @@ input,
 select,
 textarea {
   background: var(--color-bg);
-  border-color: var(--color-border);
+  border-color: var(--color-int-border);
   color: var(--color-txt);
-  accent-color: var(--color-secondary);
+  accent-color: var(--color-int-secondary);
 }
 
 select {
-  background: light-dark(var(--color-accent-faint), var(--color-bg));
-  border-color: var(--color-border);
-  color: var(--color-primary-inked);
-  accent-color: var(--color-primary-inked);
+  background: light-dark(var(--color-int-accent-faint), var(--color-bg));
+  border-color: var(--color-int-border);
+  color: var(--color-int-primary-inked);
+  accent-color: var(--color-int-primary-inked);
 }
 
 :is(input, select, textarea)::placeholder {
@@ -116,11 +116,11 @@ fieldset:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  outline-color: var(--color-primary);
-  border-bottom-color: var(--color-primary);
+  outline-color: var(--color-int-primary);
+  border-bottom-color: var(--color-int-primary);
 }
 
 fieldset {
-  background: light-dark(var(--color-bg), var(--color-accent-faint));
-  border-color: var(--color-border);
+  background: light-dark(var(--color-bg), var(--color-int-accent-faint));
+  border-color: var(--color-int-border);
 }

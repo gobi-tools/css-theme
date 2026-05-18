@@ -43,8 +43,8 @@ pre>code {
 /* theme colors */
 
 blockquote {
-  background: var(--color-accent-faint);
-  border-color: var(--color-accent-inked);
+  background: var(--color-int-accent-faint);
+  border-color: var(--color-int-accent-inked);
 }
 
 pre {
@@ -52,6 +52,6 @@ pre {
 }
 
 pre>code {
-  background: var(--color-accent-faint);
-  border-color: var(--color-secondary);
+  background: var(--color-int-accent-faint);
+  border-color: var(--color-int-secondary);
 }

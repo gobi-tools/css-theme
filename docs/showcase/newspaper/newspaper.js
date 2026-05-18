@@ -31,7 +31,7 @@ function Newspaper() {
         /* @__PURE__ */ jsx("span", { children: "Profile" })
       ] }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "secondary inverted", children: /* @__PURE__ */ jsxs("ul", { children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "secondary inverted", children: /* @__PURE__ */ jsxs("ul", { className: "primary", children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "News" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Politics" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Sports" }) }),

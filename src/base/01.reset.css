@@ -143,7 +143,7 @@
   --color-bg: __THEME__
   --color-txt: __THEME__
   --color-txt-on-dark: __THEME__
-  --color-primary: __THEME__
+  --color-int-primary: __THEME__
   --color-secondary: __THEME__
 
   --color-success: __THEME__
@@ -158,25 +158,25 @@
   --color-int-success: var(--color-success);
   --color-int-error: var(--color-error);
 
-  --color-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
+  --color-int-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
 
-  --color-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
+  --color-int-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
 
-  --color-accent-faint: color-mix(in srgb, var(--color-txt) 8%, transparent);
-  --color-accent-muted: color-mix(in srgb, var(--color-txt) 14%, transparent);
-  --color-accent-inked: light-dark(color-mix(in oklch, var(--color-txt) 75%, white),
+  --color-int-accent-faint: color-mix(in srgb, var(--color-txt) 8%, transparent);
+  --color-int-accent-muted: color-mix(in srgb, var(--color-txt) 14%, transparent);
+  --color-int-accent-inked: light-dark(color-mix(in oklch, var(--color-txt) 75%, white),
       color-mix(in oklch, var(--color-txt) 50%, black));
 
-  --color-primary-hover: color-mix(in oklab, var(--color-primary) 90%, light-dark(black, white));
-  --color-primary-faint: color-mix(in srgb, var(--color-primary) 8%, transparent);
-  --color-primary-inked: light-dark(color-mix(in oklch, var(--color-primary) 85%, black),
+  --color-int-primary-hover: color-mix(in oklab, var(--color-primary) 90%, light-dark(black, white));
+  --color-int-primary-faint: color-mix(in srgb, var(--color-primary) 8%, transparent);
+  --color-int-primary-inked: light-dark(color-mix(in oklch, var(--color-primary) 85%, black),
       color-mix(in oklch, var(--color-primary) 35%, white));
-  --color-primary-inked-hover: color-mix(in oklch, var(--color-primary-inked) 70%, light-dark(black, white));
+  --color-int-primary-inked-hover: color-mix(in oklch, var(--color-int-primary-inked) 70%, light-dark(black, white));
 
-  --color-secondary-faint: color-mix(in srgb, var(--color-secondary) 8%, transparent);
-  --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-secondary) 30%, white),
+  --color-int-secondary-faint: color-mix(in srgb, var(--color-secondary) 8%, transparent);
+  --color-int-secondary-muted: light-dark(color-mix(in oklch, var(--color-secondary) 30%, white),
       color-mix(in oklch, var(--color-secondary) 90%, black));
-  --color-secondary-muted-hover: color-mix(in oklab, var(--color-secondary-muted) 90%, light-dark(black, white));
+  --color-int-secondary-muted-hover: color-mix(in oklab, var(--color-int-secondary-muted) 90%, light-dark(black, white));
 }
 
 /* base */

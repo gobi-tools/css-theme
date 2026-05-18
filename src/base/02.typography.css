@@ -81,5 +81,5 @@ hr {
 }
 
 [aria-selected="true"] a {
-  color: var(--color-primary-inked-hover);
+  color: var(--color-int-primary-inked-hover);
 }

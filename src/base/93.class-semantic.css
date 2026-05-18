@@ -1,141 +1,150 @@
 .success {
-  --color-primary: var(--color-success);
-  --color-secondary: var(--color-success);
+  --color-int-primary: var(--color-success);
+  --color-int-secondary: var(--color-success);
 
-  --color-border: color-mix(in srgb, var(--color-success) 40%, transparent);
+  --color-int-border: color-mix(in srgb, var(--color-success) 40%, transparent);
 
-  --color-accent-faint: light-dark(color-mix(in srgb, var(--color-success) 20%, transparent),
+  --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-success) 20%, transparent),
       color-mix(in srgb, var(--color-success) 45%, transparent));
-  --color-accent-muted: light-dark(color-mix(in srgb, var(--color-success) 35%, transparent),
+  --color-int-accent-muted: light-dark(color-mix(in srgb, var(--color-success) 35%, transparent),
       color-mix(in srgb, var(--color-success) 55%, transparent));
-  --color-accent-inked: light-dark(color-mix(in oklch, var(--color-success) 90%, white),
+  --color-int-accent-inked: light-dark(color-mix(in oklch, var(--color-success) 90%, white),
       color-mix(in oklch, var(--color-success) 90%, white));
 
-  --color-primary-inked: light-dark(color-mix(in oklch, var(--color-success) 85%, black),
+  --color-int-primary-hover: color-mix(in oklab, var(--color-success) 90%, light-dark(black, white));
+  --color-int-primary-inked: light-dark(color-mix(in oklch, var(--color-success) 85%, black),
       color-mix(in oklch, var(--color-success) 50%, white));
 
-  --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-success) 30%, white),
+  --color-int-secondary-muted: light-dark(color-mix(in oklch, var(--color-success) 30%, white),
       color-mix(in oklch, var(--color-success) 70%, black));
 }
 
 .error {
-  --color-primary: var(--color-error);
-  --color-secondary: var(--color-error);
+  --color-int-primary: var(--color-error);
+  --color-int-secondary: var(--color-error);
 
-  --color-border: color-mix(in srgb, var(--color-error) 40%, transparent);
+  --color-int-border: color-mix(in srgb, var(--color-error) 40%, transparent);
 
-  --color-accent-faint: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
+  --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
       color-mix(in srgb, var(--color-error) 45%, transparent));
-  --color-accent-muted: light-dark(color-mix(in srgb, var(--color-error) 35%, transparent),
+  --color-int-accent-muted: light-dark(color-mix(in srgb, var(--color-error) 35%, transparent),
       color-mix(in srgb, var(--color-error) 55%, transparent));
-  --color-accent-inked: light-dark(color-mix(in oklch, var(--color-error) 90%, white),
+  --color-int-accent-inked: light-dark(color-mix(in oklch, var(--color-error) 90%, white),
       color-mix(in oklch, var(--color-error) 90%, white));
 
-  --color-primary-inked: light-dark(color-mix(in oklch, var(--color-error) 85%, black),
+  --color-int-primary-hover: color-mix(in oklab, var(--color-error) 90%, light-dark(black, white));
+  --color-int-primary-inked: light-dark(color-mix(in oklch, var(--color-error) 85%, black),
       color-mix(in oklch, var(--color-error) 50%, white));
 
-  --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-error) 30%, white),
+  --color-int-secondary-muted: light-dark(color-mix(in oklch, var(--color-error) 30%, white),
       color-mix(in oklch, var(--color-error) 70%, black));
 }
 
 .primary {
-  --color-secondary: var(--color-primary);
+  --color-int-primary: var(--color-primary);
+  --color-int-secondary: var(--color-primary);
 
-  --color-border: color-mix(in srgb, var(--color-primary) 40%, transparent);
+  --color-int-border: color-mix(in srgb, var(--color-primary) 40%, transparent);
 
-  --color-accent-faint: light-dark(color-mix(in srgb, var(--color-primary) 20%, transparent),
+  --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-primary) 20%, transparent),
       color-mix(in srgb, var(--color-primary) 45%, transparent));
-  --color-accent-muted: light-dark(color-mix(in srgb, var(--color-primary) 35%, transparent),
+  --color-int-accent-muted: light-dark(color-mix(in srgb, var(--color-primary) 35%, transparent),
       color-mix(in srgb, var(--color-primary) 55%, transparent));
-  --color-accent-inked: light-dark(color-mix(in oklch, var(--color-primary) 90%, white),
+  --color-int-accent-inked: light-dark(color-mix(in oklch, var(--color-primary) 90%, white),
       color-mix(in oklch, var(--color-primary) 90%, white));
 
-  --color-secondary-muted: light-dark(color-mix(in oklch, var(--color-primary) 30%, white),
+  --color-int-primary-hover: color-mix(in oklab, var(--color-primary) 90%, light-dark(black, white));
+  --color-int-primary-inked: light-dark(color-mix(in oklch, var(--color-primary) 85%, black),
+      color-mix(in oklch, var(--color-primary) 35%, white));
+
+  --color-int-secondary-muted: light-dark(color-mix(in oklch, var(--color-primary) 30%, white),
       color-mix(in oklch, var(--color-primary) 70%, black));
 }
 
 .secondary {
-  --color-primary: var(--color-secondary);
+  --color-int-primary: var(--color-secondary);
+  --color-int-secondary: var(--color-secondary);
 
-  --color-border: color-mix(in srgb, var(--color-secondary) 40%, transparent);
+  --color-int-border: color-mix(in srgb, var(--color-secondary) 40%, transparent);
 
-  --color-accent-faint: light-dark(color-mix(in srgb, var(--color-secondary) 20%, transparent),
+  --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-secondary) 20%, transparent),
       color-mix(in srgb, var(--color-secondary) 45%, transparent));
-  --color-accent-muted: light-dark(color-mix(in srgb, var(--color-secondary) 35%, transparent),
+  --color-int-accent-muted: light-dark(color-mix(in srgb, var(--color-secondary) 35%, transparent),
       color-mix(in srgb, var(--color-secondary) 55%, transparent));
-  --color-accent-inked: light-dark(color-mix(in oklch, var(--color-secondary) 90%, white),
+  --color-int-accent-inked: light-dark(color-mix(in oklch, var(--color-secondary) 90%, white),
       color-mix(in oklch, var(--color-secondary) 90%, white));
 
-  --color-primary-inked: light-dark(color-mix(in oklch, var(--color-secondary) 85%, black),
+  --color-int-primary-hover: color-mix(in oklab, var(--color-secondary) 90%, light-dark(black, white));
+  --color-int-primary-inked: light-dark(color-mix(in oklch, var(--color-secondary) 85%, black),
       color-mix(in oklch, var(--color-secondary) 50%, white));
 }
 
 :is(div,
   article, section, main, aside, header, footer,
   nav, menu).primary {
-  background-color: var(--color-primary-faint);
+  background-color: var(--color-int-primary-faint);
 }
 
 :is(div,
   article, section, main, aside, header, footer,
   nav, menu).secondary {
-  background-color: var(--color-secondary-faint);
+  background-color: var(--color-int-secondary-faint);
 }
 
 :is(div,
   article, section, main, aside, header, footer,
   nav, menu).success {
-  --color-primary: var(--color-success);
-  background-color: var(--color-primary-faint);
+  --color-primary: var(--color-int-success);
+  background-color: var(--color-int-primary-faint);
 }
 
 :is(div,
   article, section, main, aside, header, footer,
   nav, menu).error {
-  --color-primary: var(--color-error);
-  background-color: var(--color-primary-faint);
+  --color-primary: var(--color-int-error);
+  background-color: var(--color-int-primary-faint);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
   abbr, cite, q, samp, sub, sub, time, del, ins).primary {
-  color: var(--color-primary);
+  color: var(--color-int-primary);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
   abbr, cite, q, samp, sub, sub, time, del, ins).secondary {
-  color: var(--color-secondary);
+  color: var(--color-int-secondary);
 }
 
 .primary {
   &.inverted {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    color: var(--color-txt-on-dark);
+    background-color: var(--color-int-primary);
+    border-color: var(--color-int-primary);
+    color: var(--color-int-txt-on-dark);
   }
 }
 
 .secondary {
   &.inverted {
-    background-color: var(--color-secondary);
-    border-color: var(--color-secondary);
-    color: var(--color-txt-on-dark);
+    background-color: var(--color-int-secondary);
+    border-color: var(--color-int-secondary);
+    color: var(--color-int-txt-on-dark);
   }
 }
 
 .success {
   &.inverted {
-    background-color: var(--color-success);
-    border-color: var(--color-success);
-    color: var(--color-txt-on-dark);
+    background-color: var(--color-int-success);
+    border-color: var(--color-int-success);
+    color: var(--color-int-txt-on-dark);
   }
 }
 
 .error {
   &.inverted {
-    background-color: var(--color-error);
-    border-color: var(--color-error);
-    color: var(--color-txt-on-dark);
+    background-color: var(--color-int-error);
+    border-color: var(--color-int-error);
+    color: var(--color-int-txt-on-dark);
   }
 }

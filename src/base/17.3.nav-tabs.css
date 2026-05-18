@@ -20,7 +20,7 @@ menu>li {
 }
 
 menu>li[aria-selected="true"] {
-  border-bottom-color: var(--color-primary-inked-hover);
+  border-bottom-color: var(--color-int-primary-inked-hover);
 }
 
 /* different layouts */
@@ -48,9 +48,9 @@ menu>li[aria-selected="true"] {
   menu>li[aria-selected="true"] {
     border-bottom: none;
     padding-left: calc(var(--space-m) - var(--border-width-vert-tabs)) !important;
-    background-color: var(--color-primary-faint);
+    background-color: var(--color-int-primary-faint);
     border-left-width: var(--border-width-vert-tabs);
     border-left-style: solid;
-    border-left-color: var(--color-primary-inked-hover);
+    border-left-color: var(--color-int-primary-inked-hover);
   }
 }

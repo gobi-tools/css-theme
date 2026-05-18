@@ -45,7 +45,7 @@
 button,
 input[type=submit],
 blockquote {
-  border-color: var(--color-primary-inked);
+  border-color: var(--color-int-primary-inked);
 }
 
 pre>code {

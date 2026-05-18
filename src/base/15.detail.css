@@ -17,10 +17,10 @@ summary {
 details[name]:has(+ details[name]),
 details[name]+details[name] {
   &:not([open])>:is(summary) {
-    background-color: light-dark(var(--color-bg), var(--color-accent-faint));
+    background-color: light-dark(var(--color-bg), var(--color-int-accent-faint));
 
     &:hover {
-      background-color: var(--color-secondary-muted-hover);
+      background-color: var(--color-int-secondary-muted-hover);
     }
   }
 }

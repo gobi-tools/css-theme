@@ -49,7 +49,7 @@ code,
 kbd,
 var,
 mark {
-  background: var(--color-accent-muted);
+  background: var(--color-int-accent-muted);
 }
 
 kbd>*,

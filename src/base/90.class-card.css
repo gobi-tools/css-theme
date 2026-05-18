@@ -28,15 +28,15 @@
 /* theme colors */
 
 .card {
-  background: light-dark(var(--color-bg), var(--color-accent-faint));
-  border-color: var(--color-border);
+  background: light-dark(var(--color-bg), var(--color-int-accent-faint));
+  border-color: var(--color-int-border);
 }
 
 .card>:is(p, summary):first-child {
-  background-color: var(--color-secondary-muted);
+  background-color: var(--color-int-secondary-muted);
 
   &:hover {
-    background-color: var(--color-secondary-muted-hover);
+    background-color: var(--color-int-secondary-muted-hover);
   }
 }
 

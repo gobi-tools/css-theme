@@ -65,7 +65,7 @@ header:has(nav > menu):not(.disable-mobile) {
     justify-content: center;
     gap: 0;
     background: var(--color-bg);
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-int-border);
   }
 
   nav>menu>li {

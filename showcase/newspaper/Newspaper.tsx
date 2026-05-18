@@ -33,7 +33,7 @@ export default function Newspaper() {
       </header>
       <header>
         <nav className="secondary inverted">
-          <ul>
+          <ul className="primary">
             <li><a href="">News</a></li>
             <li><a href="">Politics</a></li>
             <li><a href="">Sports</a></li>
