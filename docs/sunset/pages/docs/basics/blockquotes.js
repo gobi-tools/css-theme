@@ -4292,7 +4292,7 @@ function Blockquotes({ theme }) {
           /* @__PURE__ */ jsx43("kbd", { children: "Ctrl + Q" }),
           " to quit"
         ] }) }),
-        /* @__PURE__ */ jsxs43("blockquote", { children: [
+        /* @__PURE__ */ jsx43("blockquote", { children: /* @__PURE__ */ jsxs43("hgroup", { children: [
           /* @__PURE__ */ jsxs43("p", { className: "group", children: [
             /* @__PURE__ */ jsxs43(
               "svg",
@@ -4319,7 +4319,7 @@ function Blockquotes({ theme }) {
             "Your package will be delivered on ",
             /* @__PURE__ */ jsx43("b", { children: "Tuesday at 08:00." })
           ] })
-        ] }),
+        ] }) }),
         /* @__PURE__ */ jsx43("p", { children: /* @__PURE__ */ jsxs43("small", { children: [
           "You can learn more about groups ",
           /* @__PURE__ */ jsx43("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
@@ -4340,15 +4340,17 @@ function Blockquotes({ theme }) {
 </blockquote>
             
 <blockquote>
-  <p class="group">
-    <svg ... ></svg>
-    <span>Information</span>
-  </p>
-  <p>
-    Your package will 
-    be delivered on 
-    <b>Tuesday at 08:00</b>.
-  </p>
+  <hgroup>
+    <p class="group">
+      <svg ... ></svg>
+      <span>Information</span>
+    </p>
+    <p>
+      Your package will 
+      be delivered on 
+      <b>Tuesday at 08:00</b>.
+    </p>
+  </hgroup>
 </blockquote>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs43("section", { className: "row", children: [
@@ -4364,22 +4366,23 @@ function Blockquotes({ theme }) {
           /* @__PURE__ */ jsx43("code", { children: "secondary" }),
           " classes."
         ] }),
-        /* @__PURE__ */ jsxs43("blockquote", { className: "success", children: [
+        /* @__PURE__ */ jsx43("blockquote", { className: "success", children: /* @__PURE__ */ jsxs43("hgroup", { children: [
           /* @__PURE__ */ jsx43("h4", { children: "Success" }),
           /* @__PURE__ */ jsx43("p", { children: "The operation was completed successfully" })
-        ] }),
-        /* @__PURE__ */ jsxs43("blockquote", { className: "error", children: [
+        ] }) }),
+        /* @__PURE__ */ jsx43("blockquote", { className: "error", children: /* @__PURE__ */ jsxs43("hgroup", { children: [
           /* @__PURE__ */ jsx43("p", { children: "Unknown error" }),
           /* @__PURE__ */ jsx43("p", { children: /* @__PURE__ */ jsxs43("code", { children: [
             "Server responsed with ",
             /* @__PURE__ */ jsx43("b", { children: "Error 500" })
           ] }) })
-        ] }),
-        /* @__PURE__ */ jsx43("blockquote", { className: "primary", children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
-        /* @__PURE__ */ jsx43("blockquote", { className: "secondary", children: /* @__PURE__ */ jsxs43("hgroup", { children: [
-          /* @__PURE__ */ jsx43("h4", { children: "Title" }),
-          /* @__PURE__ */ jsx43("p", { children: "Important Information" })
         ] }) }),
+        /* @__PURE__ */ jsx43("blockquote", { className: "primary", children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
+        /* @__PURE__ */ jsx43("blockquote", { className: "secondary", children: /* @__PURE__ */ jsx43("hgroup", { children: /* @__PURE__ */ jsxs43("hgroup", { children: [
+          /* @__PURE__ */ jsx43("h4", { children: "Title" }),
+          /* @__PURE__ */ jsx43("p", { children: "Important Information" }),
+          /* @__PURE__ */ jsx43("p", { children: /* @__PURE__ */ jsx43("button", { children: "Click me" }) })
+        ] }) }) }),
         /* @__PURE__ */ jsxs43("hgroup", { children: [
           /* @__PURE__ */ jsx43("p", { children: /* @__PURE__ */ jsxs43("small", { children: [
             "You can learn more about classes ",
@@ -4394,21 +4397,25 @@ function Blockquotes({ theme }) {
         ] })
       ] }),
       /* @__PURE__ */ jsx43("div", { children: /* @__PURE__ */ jsx43("pre", { children: /* @__PURE__ */ jsx43("code", { children: `<blockquote class="success">
-  <h4>Success</h4>
-  <p>
-    The operation was 
-    completed successfully
-  </p>
+  <hgroup>
+    <h4>Success</h4>
+    <p>
+      The operation was 
+      completed successfully
+    </p>
+  </hgroup>
 </blockquote>
 
 <blockquote class="error">
-  <p>Unknown error</p>
-  <p>
-    <code>
-      Server responsed with 
-      <b>Error 500</b>
-    </code>
-  </p>
+  <hgroup>
+    <p>Unknown error</p>
+    <p>
+      <code>
+        Server responsed with 
+        <b>Error 500</b>
+      </code>
+    </p>
+  </hgroup>
 </blockquote>
 
 <blockquote class="primary">
@@ -4422,6 +4429,9 @@ function Blockquotes({ theme }) {
     <p>
       Important Information
     </p>
+    <button>
+      Click me
+    </button>
   </hgroup>
 </blockquote>` }) }) })
     ] })

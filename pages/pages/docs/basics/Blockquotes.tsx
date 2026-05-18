@@ -37,18 +37,20 @@ export default function Blockquotes({ theme }) {
           </blockquote>
 
           <blockquote>
-            <p className="group">
-              <svg xmlns=" http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 16v-4" />
-                <path d="M12 8h.01" />
-              </svg>
-              <span>Information</span>
-            </p>
-            <p>
-              Your package will be delivered on <b>Tuesday at 08:00.</b>
-            </p>
+            <hgroup>
+              <p className="group">
+                <svg xmlns=" http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 16v-4" />
+                  <path d="M12 8h.01" />
+                </svg>
+                <span>Information</span>
+              </p>
+              <p>
+                Your package will be delivered on <b>Tuesday at 08:00.</b>
+              </p>
+            </hgroup>
           </blockquote>
           <p>
             <small>
@@ -72,15 +74,17 @@ export default function Blockquotes({ theme }) {
 </blockquote>
             
 <blockquote>
-  <p class="group">
-    <svg ... ></svg>
-    <span>Information</span>
-  </p>
-  <p>
-    Your package will 
-    be delivered on 
-    <b>Tuesday at 08:00</b>.
-  </p>
+  <hgroup>
+    <p class="group">
+      <svg ... ></svg>
+      <span>Information</span>
+    </p>
+    <p>
+      Your package will 
+      be delivered on 
+      <b>Tuesday at 08:00</b>.
+    </p>
+  </hgroup>
 </blockquote>`}
           </code></pre>
         </div>
@@ -92,15 +96,19 @@ export default function Blockquotes({ theme }) {
             Blockquotes can also be styled using the <code>success</code>, <code>error</code>, <code>primary</code> and <code>secondary</code> classes.
           </p>
           <blockquote className="success">
-            <h4>Success</h4>
-            <p>The operation was completed successfully</p>
+            <hgroup>
+              <h4>Success</h4>
+              <p>The operation was completed successfully</p>
+            </hgroup>
           </blockquote>
 
           <blockquote className="error">
-            <p>Unknown error</p>
-            <p>
-              <code>Server responsed with <b>Error 500</b></code>
-            </p>
+            <hgroup>
+              <p>Unknown error</p>
+              <p>
+                <code>Server responsed with <b>Error 500</b></code>
+              </p>
+            </hgroup>
           </blockquote>
 
           <blockquote className="primary">
@@ -109,8 +117,11 @@ export default function Blockquotes({ theme }) {
 
           <blockquote className="secondary">
             <hgroup>
-              <h4>Title</h4>
-              <p>Important Information</p>
+              <hgroup>
+                <h4>Title</h4>
+                <p>Important Information</p>
+                <p><button>Click me</button></p>
+              </hgroup>
             </hgroup>
           </blockquote>
           <hgroup>
@@ -129,21 +140,25 @@ export default function Blockquotes({ theme }) {
         <div>
           <pre><code>
             {`<blockquote class="success">
-  <h4>Success</h4>
-  <p>
-    The operation was 
-    completed successfully
-  </p>
+  <hgroup>
+    <h4>Success</h4>
+    <p>
+      The operation was 
+      completed successfully
+    </p>
+  </hgroup>
 </blockquote>
 
 <blockquote class="error">
-  <p>Unknown error</p>
-  <p>
-    <code>
-      Server responsed with 
-      <b>Error 500</b>
-    </code>
-  </p>
+  <hgroup>
+    <p>Unknown error</p>
+    <p>
+      <code>
+        Server responsed with 
+        <b>Error 500</b>
+      </code>
+    </p>
+  </hgroup>
 </blockquote>
 
 <blockquote class="primary">
@@ -157,6 +172,9 @@ export default function Blockquotes({ theme }) {
     <p>
       Important Information
     </p>
+    <button>
+      Click me
+    </button>
   </hgroup>
 </blockquote>`}
           </code></pre>
