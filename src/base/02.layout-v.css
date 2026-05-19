@@ -82,6 +82,7 @@ section {
 :is(header, footer)>nav * {
   margin-bottom: 0;
 }
+
 :is(header, footer) :last-child {
   margin-bottom: 0;
 }
@@ -139,7 +140,8 @@ details[name]:has(+ details[name]) {
   margin-bottom: 0;
 }
 
-.card, hgroup {
+.card,
+hgroup {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -148,6 +150,7 @@ details[name]:has(+ details[name]) {
     margin-bottom: 0;
   }
 }
+
 hgroup {
   gap: var(--space-xs);
 }
@@ -167,7 +170,10 @@ header> :not(:is(nav, menu, aside)) {
 }
 
 @container rows (max-width: 600px) {
-  .row > :is(.col, div) {
+
+  .row> :is(div, .col,
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12):not(:last-child) {
     margin-bottom: 0;
   }
 }

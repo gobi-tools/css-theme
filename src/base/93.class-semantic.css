@@ -116,6 +116,18 @@
   color: var(--color-int-secondary);
 }
 
+:is(h1, h2, h3, h4, h5, h6, p, hgroup,
+  span, strong, em, b, i, small, label, legend,
+  abbr, cite, q, samp, sub, sub, time, del, ins).success:not(.card) {
+  color: var(--color-int-success);
+}
+
+:is(h1, h2, h3, h4, h5, h6, p, hgroup,
+  span, strong, em, b, i, small, label, legend,
+  abbr, cite, q, samp, sub, sub, time, del, ins).error:not(.card) {
+  color: var(--color-int-error);
+}
+
 .primary {
   &.inverted {
     background-color: var(--color-int-primary) !important;

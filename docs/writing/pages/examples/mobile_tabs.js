@@ -3,13 +3,13 @@ import React from "https://esm.sh/react@19.2.0";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
 // pages/pages/examples/MobileTabs.tsx
-import { useState as useState7 } from "https://esm.sh/react@19.2.0";
+import { useState as useState8 } from "https://esm.sh/react@19.2.0";
 
 // pages/pages/docs/navigation/Tabs.tsx
-import { useState as useState6 } from "https://esm.sh/react@19.2.0";
+import { useState as useState7 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/components/DocsLayout.tsx
-import { useEffect as useEffect2, useState as useState5 } from "https://esm.sh/react@19.2.0";
+import { useEffect as useEffect2, useState as useState6 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/effects/useRoute.ts
 import { useState, useEffect } from "https://esm.sh/react@19.2.0";
@@ -130,6 +130,7 @@ import { Fragment as Fragment8, jsx as jsx36, jsxs as jsxs36 } from "https://esm
 import { Fragment as Fragment9, jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/pages/docs/custom/Semantic.tsx
+import { useState as useState5 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/common/components/TopNav.tsx
@@ -185,7 +186,7 @@ function Tab3() {
 // pages/pages/examples/MobileTabs.tsx
 import { jsx as jsx43, jsxs as jsxs43 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTabs() {
-  const [selected, setSelected] = useState7("tab-1");
+  const [selected, setSelected] = useState8("tab-1");
   return /* @__PURE__ */ jsx43("main", { children: /* @__PURE__ */ jsxs43("div", { className: "row disable-mobile", children: [
     /* @__PURE__ */ jsx43("aside", { children: /* @__PURE__ */ jsx43("div", { children: /* @__PURE__ */ jsxs43("menu", { children: [
       /* @__PURE__ */ jsx43("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs43("a", { onClick: () => setSelected("tab-1"), children: [

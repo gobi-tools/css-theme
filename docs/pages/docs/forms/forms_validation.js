@@ -3,10 +3,10 @@ import React from "https://esm.sh/react@19.2.0";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
 // pages/pages/docs/forms/FormsValidation.tsx
-import { useState as useState7 } from "https://esm.sh/react@19.2.0";
+import { useState as useState8 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/components/DocsLayout.tsx
-import { useEffect as useEffect2, useState as useState6 } from "https://esm.sh/react@19.2.0";
+import { useEffect as useEffect2, useState as useState7 } from "https://esm.sh/react@19.2.0";
 
 // pages/common/effects/useRoute.ts
 import { useState, useEffect } from "https://esm.sh/react@19.2.0";
@@ -3835,51 +3835,64 @@ function MobileTypography() {
 }
 
 // pages/pages/docs/custom/Semantic.tsx
+import { useState as useState6 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx39, jsxs as jsxs39 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Semantic({ theme }) {
-  return /* @__PURE__ */ jsxs39(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs39("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs39("div", { children: [
-        /* @__PURE__ */ jsxs39("p", { children: [
-          "You can apply several color modes with the help of few classes like ",
-          /* @__PURE__ */ jsx39("code", { children: "primary" }),
-          ", ",
-          /* @__PURE__ */ jsx39("code", { children: "secondary" }),
-          ", ",
-          /* @__PURE__ */ jsx39("code", { children: "success" }),
-          " and ",
-          /* @__PURE__ */ jsx39("code", { children: "error" }),
-          "."
-        ] }),
-        /* @__PURE__ */ jsxs39("p", { children: [
-          "You can combine them with the ",
-          /* @__PURE__ */ jsx39("code", { children: "inverted" }),
-          " class to obtain various effects. For example, you can apply them to typographical elements:"
-        ] }),
-        /* @__PURE__ */ jsxs39("section", { children: [
-          /* @__PURE__ */ jsxs39("hgroup", { children: [
-            /* @__PURE__ */ jsxs39("h1", { children: [
-              /* @__PURE__ */ jsx39("span", { className: "primary", children: "Lorem ipsum dolor" }),
-              /* @__PURE__ */ jsx39("br", {}),
-              "sit amet"
-            ] }),
-            /* @__PURE__ */ jsxs39("h4", { children: [
-              "Lorem ipsum dolor sit amet,",
-              /* @__PURE__ */ jsx39("br", {}),
-              /* @__PURE__ */ jsx39("span", { className: "primary inverted", children: "sed do amet" })
-            ] })
+  const [colorClass, setColorClass] = useState6("primary");
+  const onColorClassChange = (e) => setColorClass(e.target.value);
+  return /* @__PURE__ */ jsx39(DocLayout, { theme, children: /* @__PURE__ */ jsxs39("section", { className: "row", children: [
+    /* @__PURE__ */ jsxs39("div", { children: [
+      /* @__PURE__ */ jsxs39("p", { children: [
+        "You can apply several color modes with the help of few classes like ",
+        /* @__PURE__ */ jsx39("code", { children: "primary" }),
+        ", ",
+        /* @__PURE__ */ jsx39("code", { children: "secondary" }),
+        ", ",
+        /* @__PURE__ */ jsx39("code", { children: "success" }),
+        " and ",
+        /* @__PURE__ */ jsx39("code", { children: "error" }),
+        "."
+      ] }),
+      /* @__PURE__ */ jsxs39("p", { children: [
+        "You can combine them with the ",
+        /* @__PURE__ */ jsx39("code", { children: "inverted" }),
+        " class to change the colors of various components."
+      ] }),
+      /* @__PURE__ */ jsx39("form", { children: /* @__PURE__ */ jsxs39("label", { children: [
+        /* @__PURE__ */ jsx39("span", { children: /* @__PURE__ */ jsx39("b", { children: "Color mode" }) }),
+        /* @__PURE__ */ jsxs39("select", { onChange: onColorClassChange, children: [
+          /* @__PURE__ */ jsx39("option", { value: "primary", children: "Primary" }),
+          /* @__PURE__ */ jsx39("option", { value: "secondary", children: "Secondary" }),
+          /* @__PURE__ */ jsx39("option", { value: "success", children: "Success" }),
+          /* @__PURE__ */ jsx39("option", { value: "error", children: "Error" })
+        ] })
+      ] }) }),
+      /* @__PURE__ */ jsx39("hr", {}),
+      /* @__PURE__ */ jsxs39("section", { children: [
+        /* @__PURE__ */ jsxs39("hgroup", { children: [
+          /* @__PURE__ */ jsxs39("h1", { children: [
+            /* @__PURE__ */ jsx39("span", { className: `${colorClass}`, children: "Lorem ipsum dolor" }),
+            /* @__PURE__ */ jsx39("br", {}),
+            "sit amet"
           ] }),
-          /* @__PURE__ */ jsxs39("p", { className: "group", children: [
-            /* @__PURE__ */ jsx39("mark", { className: "primary", children: "v12.5.33" }),
-            /* @__PURE__ */ jsx39("mark", { className: "primary inverted", children: "Passing" })
+          /* @__PURE__ */ jsxs39("h4", { children: [
+            "Lorem ipsum dolor sit amet,",
+            /* @__PURE__ */ jsx39("br", {}),
+            /* @__PURE__ */ jsx39("span", { className: `${colorClass} inverted`, children: "sed do amet" })
           ] })
         ] }),
-        /* @__PURE__ */ jsx39("section", { children: /* @__PURE__ */ jsx39("form", { children: /* @__PURE__ */ jsxs39("div", { className: "group primary", children: [
-          /* @__PURE__ */ jsx39("input", { type: "email", id: "subscribe", placeholder: "Enter email..." }),
-          /* @__PURE__ */ jsx39("input", { type: "submit", value: "Subscribe" })
-        ] }) }) }),
-        /* @__PURE__ */ jsxs39("section", { className: "row", children: [
-          /* @__PURE__ */ jsxs39("div", { className: "primary card", children: [
+        /* @__PURE__ */ jsxs39("p", { className: "group", children: [
+          /* @__PURE__ */ jsx39("mark", { className: `${colorClass}`, children: "v12.5.33" }),
+          /* @__PURE__ */ jsx39("mark", { className: `${colorClass} inverted`, children: "Passing" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsx39("section", { children: /* @__PURE__ */ jsx39("form", { children: /* @__PURE__ */ jsxs39("div", { className: `group ${colorClass}`, children: [
+        /* @__PURE__ */ jsx39("input", { type: "email", id: "subscribe", placeholder: "Enter email..." }),
+        /* @__PURE__ */ jsx39("input", { type: "submit", value: "Subscribe" })
+      ] }) }) }),
+      /* @__PURE__ */ jsxs39("section", { children: [
+        /* @__PURE__ */ jsxs39("div", { className: "row", children: [
+          /* @__PURE__ */ jsxs39("div", { className: `${colorClass} card`, children: [
             /* @__PURE__ */ jsxs39("hgroup", { children: [
               /* @__PURE__ */ jsx39("h4", { children: "Hobby" }),
               /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("b", { children: "Free" }) })
@@ -3890,7 +3903,7 @@ function Semantic({ theme }) {
               /* @__PURE__ */ jsx39("li", { children: "All platforms" })
             ] })
           ] }),
-          /* @__PURE__ */ jsxs39("div", { className: "primary inverted card", children: [
+          /* @__PURE__ */ jsxs39("div", { className: `${colorClass} inverted card`, children: [
             /* @__PURE__ */ jsxs39("hgroup", { children: [
               /* @__PURE__ */ jsx39("h4", { children: "Enterprise" }),
               /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("b", { children: "Contact us" }) })
@@ -3901,10 +3914,16 @@ function Semantic({ theme }) {
               /* @__PURE__ */ jsx39("li", { children: "24/7 support" })
             ] })
           ] })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsx39("pre", { children: /* @__PURE__ */ jsx39("code", { children: `<h1>
-  <span class="primary">
+        ] }),
+        /* @__PURE__ */ jsx39("blockquote", { className: `${colorClass}`, children: /* @__PURE__ */ jsxs39("hgroup", { children: [
+          /* @__PURE__ */ jsx39("h4", { children: "More information" }),
+          /* @__PURE__ */ jsx39("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
+        ] }) })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsx39("pre", { children: /* @__PURE__ */ jsx39("code", { children: `...
+<h1>
+  <span class="${colorClass}">
     Lorem ipsum dolor
   </span>
   <br/>
@@ -3912,70 +3931,52 @@ function Semantic({ theme }) {
     sit amet
   </span>
 </h1>
+
 <h4>
-  <span>
-    Lorem ipsum dolor sit amet,
-  </span>
+  Lorem ipsum dolor sit amet,
   <br/>
-  <span class="secondary">
-    consectetur adipiscing elit
+  <span class="${colorClass} inverted">
+    sed do amet
   </span>
-  <span class="success inverted">
-    sed do
-  </span>
-  <span class="error inverted">
-    eiusmod tempor
-  </span>
-</h4>` }) }) })
-    ] }),
-    /* @__PURE__ */ jsxs39("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs39("div", { children: [
-        /* @__PURE__ */ jsx39("p", { children: "These classes can be applied to other elements like buttons, links, forms, marks, etc:" }),
-        /* @__PURE__ */ jsxs39("p", { children: [
-          /* @__PURE__ */ jsx39("button", { className: "success", children: "Confirm" }),
-          /* @__PURE__ */ jsx39("button", { className: "error", children: "Cancel" })
-        ] }),
-        /* @__PURE__ */ jsxs39("p", { className: "group secondary", children: [
-          /* @__PURE__ */ jsx39("button", { type: "reset", children: "First" }),
-          /* @__PURE__ */ jsx39("button", { children: "Second" }),
-          /* @__PURE__ */ jsx39("button", { type: "reset", children: "Third" })
-        ] }),
-        /* @__PURE__ */ jsx39("form", { className: "primary", children: /* @__PURE__ */ jsxs39("div", { className: "group", children: [
-          /* @__PURE__ */ jsx39("input", { type: "search", id: "search", placeholder: "Search" }),
-          /* @__PURE__ */ jsx39("input", { type: "submit", value: "Search" })
-        ] }) }),
-        /* @__PURE__ */ jsxs39("p", { children: [
-          "Don't forget to ",
-          /* @__PURE__ */ jsx39("span", { children: /* @__PURE__ */ jsx39("a", { href: "", className: "success", children: "subscribe" }) }),
-          "!"
-        ] }),
-        /* @__PURE__ */ jsxs39("p", { className: "group", children: [
-          /* @__PURE__ */ jsx39("mark", { className: "primary inverted", children: "v12.3.0" }),
-          /* @__PURE__ */ jsx39("mark", { className: "success inverted", children: "Passing" })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsx39("div", {})
-    ] }),
-    /* @__PURE__ */ jsxs39("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs39("div", { children: [
-        /* @__PURE__ */ jsx39("p", { children: "And they can be applied to blocks and cards:" }),
-        /* @__PURE__ */ jsxs39("div", { className: "row", children: [
-          /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsx39("blockquote", { className: "secondary", children: /* @__PURE__ */ jsxs39("hgroup", { children: [
-            /* @__PURE__ */ jsx39("h4", { children: "Title" }),
-            /* @__PURE__ */ jsx39("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." })
-          ] }) }) }),
-          /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsxs39("blockquote", { className: "error inverted", children: [
-            /* @__PURE__ */ jsxs39("hgroup", { children: [
-              /* @__PURE__ */ jsx39("h4", { children: "Error" }),
-              /* @__PURE__ */ jsx39("p", { children: "Lorem ipsum dolor sit amet" })
-            ] }),
-            /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("button", { type: "reset", children: "Copy" }) })
-          ] }) })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsx39("div", {})
-    ] })
-  ] });
+</h4>
+
+...
+
+<p class="group">
+  <mark class="${colorClass}">
+    v12.5.33 
+  </mark>
+  <mark class="${colorClass} inverted">
+    Passing
+  </mark>
+</p>
+
+...
+
+<form>
+  <div class="group ${colorClass}">
+    <input .../>
+    <input .../>
+  </div>
+</form>
+
+...
+
+<div class="row">
+  <div class="${colorClass} card">
+    ...
+  </div>
+  <div class="${colorClass} inverted card">
+    ...
+  </div>
+</div>
+<div class="row">
+  <blockquote class="${colorClass}>
+    ...
+  </blockquote>
+</div>
+` }) }) })
+  ] }) });
 }
 
 // pages/common/utils/routes.ts
@@ -4269,8 +4270,8 @@ function HomeLayout({ theme, children }) {
 import { jsx as jsx42, jsxs as jsxs42 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function DocLayout({ theme, children }) {
   const route = useRoute();
-  const [isMenuOpen, setIsMenuOpen] = useState6(false);
-  const [selectedDoc, setSelectedDoc] = useState6(void 0);
+  const [isMenuOpen, setIsMenuOpen] = useState7(false);
+  const [selectedDoc, setSelectedDoc] = useState7(void 0);
   useEffect2(() => {
     if (typeof window !== "undefined") {
       const doc = RouteMaster.getDocFromRoute(window.location.pathname);
@@ -4355,9 +4356,9 @@ function DocLayout({ theme, children }) {
 // pages/pages/docs/forms/FormsValidation.tsx
 import { jsx as jsx43, jsxs as jsxs43 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FormsValidation({ theme }) {
-  const [name, setName] = useState7("a");
-  const [email, setEmail] = useState7("");
-  const [comment, setComment] = useState7("");
+  const [name, setName] = useState8("a");
+  const [email, setEmail] = useState8("");
+  const [comment, setComment] = useState8("");
   return /* @__PURE__ */ jsxs43(DocLayout, { theme, children: [
     /* @__PURE__ */ jsxs43("section", { className: "row", children: [
       /* @__PURE__ */ jsxs43("div", { children: [
