@@ -106,25 +106,25 @@
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins).primary:not(.card) {
+  abbr, cite, q, samp, sub, sub, time, del, ins, summary).primary:not(.card) {
   color: var(--color-int-primary);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins).secondary:not(.card) {
+  abbr, cite, q, samp, sub, sub, time, del, ins, summary).secondary:not(.card) {
   color: var(--color-int-secondary);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins).success:not(.card) {
+  abbr, cite, q, samp, sub, sub, time, del, ins, summary).success:not(.card) {
   color: var(--color-int-success);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins).error:not(.card) {
+  abbr, cite, q, samp, sub, sub, time, del, ins, summary).error:not(.card) {
   color: var(--color-int-error);
 }
 
