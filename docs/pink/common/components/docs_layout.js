@@ -4071,20 +4071,50 @@ function Semantic({ theme }) {
           /* @__PURE__ */ jsx40("code", { children: "inverted" }),
           " class to obtain various effects. For example, you can apply them to typographical elements:"
         ] }),
-        /* @__PURE__ */ jsxs40("hgroup", { children: [
-          /* @__PURE__ */ jsxs40("h1", { children: [
-            /* @__PURE__ */ jsx40("span", { className: "primary", children: "Lorem ipsum dolor" }),
-            /* @__PURE__ */ jsx40("br", {}),
-            "sit amet"
+        /* @__PURE__ */ jsxs40("section", { children: [
+          /* @__PURE__ */ jsxs40("hgroup", { children: [
+            /* @__PURE__ */ jsxs40("h1", { children: [
+              /* @__PURE__ */ jsx40("span", { className: "primary", children: "Lorem ipsum dolor" }),
+              /* @__PURE__ */ jsx40("br", {}),
+              "sit amet"
+            ] }),
+            /* @__PURE__ */ jsxs40("h4", { children: [
+              "Lorem ipsum dolor sit amet,",
+              /* @__PURE__ */ jsx40("br", {}),
+              /* @__PURE__ */ jsx40("span", { className: "primary inverted", children: "sed do amet" })
+            ] })
           ] }),
-          /* @__PURE__ */ jsxs40("h4", { children: [
-            "Lorem ipsum dolor sit amet,",
-            /* @__PURE__ */ jsx40("br", {}),
-            /* @__PURE__ */ jsx40("span", { className: "secondary", children: "consectetur adipiscing elit" }),
-            /* @__PURE__ */ jsx40("br", {}),
-            /* @__PURE__ */ jsx40("span", { className: "success inverted", children: "sed do" }),
-            " ",
-            /* @__PURE__ */ jsx40("span", { className: "error inverted", children: "eiusmod tempor" })
+          /* @__PURE__ */ jsxs40("p", { className: "group", children: [
+            /* @__PURE__ */ jsx40("mark", { className: "primary", children: "v12.5.33" }),
+            /* @__PURE__ */ jsx40("mark", { className: "primary inverted", children: "Passing" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsx40("section", { children: /* @__PURE__ */ jsx40("form", { children: /* @__PURE__ */ jsxs40("div", { className: "group primary", children: [
+          /* @__PURE__ */ jsx40("input", { type: "email", id: "subscribe", placeholder: "Enter email..." }),
+          /* @__PURE__ */ jsx40("input", { type: "submit", value: "Subscribe" })
+        ] }) }) }),
+        /* @__PURE__ */ jsxs40("section", { className: "row", children: [
+          /* @__PURE__ */ jsxs40("div", { className: "primary card", children: [
+            /* @__PURE__ */ jsxs40("hgroup", { children: [
+              /* @__PURE__ */ jsx40("h4", { children: "Hobby" }),
+              /* @__PURE__ */ jsx40("p", { children: /* @__PURE__ */ jsx40("b", { children: "Free" }) })
+            ] }),
+            /* @__PURE__ */ jsx40("p", { children: "Includes" }),
+            /* @__PURE__ */ jsxs40("ul", { children: [
+              /* @__PURE__ */ jsx40("li", { children: "No credit card" }),
+              /* @__PURE__ */ jsx40("li", { children: "All platforms" })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs40("div", { className: "primary inverted card", children: [
+            /* @__PURE__ */ jsxs40("hgroup", { children: [
+              /* @__PURE__ */ jsx40("h4", { children: "Enterprise" }),
+              /* @__PURE__ */ jsx40("p", { children: /* @__PURE__ */ jsx40("b", { children: "Contact us" }) })
+            ] }),
+            /* @__PURE__ */ jsx40("p", { children: "Includes" }),
+            /* @__PURE__ */ jsxs40("ul", { children: [
+              /* @__PURE__ */ jsx40("li", { children: "Everything in Hobby" }),
+              /* @__PURE__ */ jsx40("li", { children: "24/7 support" })
+            ] })
           ] })
         ] })
       ] }),

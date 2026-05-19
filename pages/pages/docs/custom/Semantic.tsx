@@ -12,18 +12,61 @@ export default function Semantic({ theme }) {
             You can combine them with the <code>inverted</code> class to obtain various effects.
             For example, you can apply them to typographical elements:
           </p>
-          <hgroup>
-            <h1>
-              <span className="primary">Lorem ipsum dolor</span>
-              <br />
-              sit amet
-            </h1>
-            <h4>
-              Lorem ipsum dolor sit amet,<br />
-              <span className="secondary">consectetur adipiscing elit</span><br />
-              <span className="success inverted">sed do</span> <span className="error inverted">eiusmod tempor</span>
-            </h4>
-          </hgroup>
+          <section>
+
+            <hgroup>
+              <h1>
+                <span className="primary">Lorem ipsum dolor</span>
+                <br />
+                sit amet
+              </h1>
+              <h4>
+                Lorem ipsum dolor sit amet,<br />
+                <span className="primary inverted">sed do amet</span>
+              </h4>
+            </hgroup>
+            <p className="group">
+              <mark className="primary">v12.5.33</mark>
+              <mark className="primary inverted">Passing</mark>
+            </p>
+          </section>
+
+          <section>
+            <form>
+              <div className="group primary">
+                <input type="email" id="subscribe" placeholder="Enter email..." />
+                <input type="submit" value={"Subscribe"} />
+              </div>
+            </form>
+          </section>
+          <section className="row">
+            {/* <div> */}
+              <div className="primary card">
+                <hgroup>
+                  <h4>Hobby</h4>
+                  <p><b>Free</b></p>
+                </hgroup>
+                <p>Includes</p>
+                <ul>
+                  <li>No credit card</li>
+                  <li>All platforms</li>
+                </ul>
+              </div>
+            {/* </div> */}
+            {/* <div> */}
+              <div className="primary inverted card">
+                <hgroup>
+                  <h4>Enterprise</h4>
+                  <p><b>Contact us</b></p>
+                </hgroup>
+                <p>Includes</p>
+                <ul>
+                  <li>Everything in Hobby</li>
+                  <li>24/7 support</li>
+                </ul>
+              </div>
+            {/* </div> */}
+          </section>
         </div>
         <div>
           <pre><code>

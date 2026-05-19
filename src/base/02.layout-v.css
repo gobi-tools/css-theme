@@ -165,3 +165,9 @@ header> :not(:is(nav, menu, aside)) {
     aspect-ratio: 1.0/1.25;
   }
 }
+
+@container rows (max-width: 600px) {
+  .row > :is(.col, div) {
+    margin-bottom: 0;
+  }
+}
