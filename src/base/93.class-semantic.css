@@ -119,31 +119,31 @@
 .primary {
   &.inverted {
     background-color: var(--color-int-primary) !important;
-    border-color: var(--color-int-primary);
-    color: var(--color-int-txt-on-dark);
+    border-color: var(--color-int-primary) !important;
+    color: var(--color-int-txt-on-dark) !important;
   }
 }
 
 .secondary {
   &.inverted {
     background-color: var(--color-int-secondary) !important;
-    border-color: var(--color-int-secondary);
-    color: var(--color-int-txt-on-dark);
+    border-color: var(--color-int-secondary) !important;
+    color: var(--color-int-txt-on-dark) !important;
   }
 }
 
 .success {
   &.inverted {
     background-color: var(--color-int-success) !important;
-    border-color: var(--color-int-success);
-    color: var(--color-int-txt-on-dark);
+    border-color: var(--color-int-success) !important;
+    color: var(--color-int-txt-on-dark) !important;
   }
 }
 
 .error {
   &.inverted {
     background-color: var(--color-int-error) !important;
-    border-color: var(--color-int-error);
-    color: var(--color-int-txt-on-dark);
+    border-color: var(--color-int-error) !important;
+    color: var(--color-int-txt-on-dark) !important;
   }
 }

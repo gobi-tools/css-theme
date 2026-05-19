@@ -3659,14 +3659,14 @@ function LayoutHeaderSection() {
     /* @__PURE__ */ jsxs29("main", { children: [
       /* @__PURE__ */ jsx29("h1", { children: "Title" }),
       /* @__PURE__ */ jsx29("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-      /* @__PURE__ */ jsx29("section", { children: /* @__PURE__ */ jsx29("header", { children: /* @__PURE__ */ jsx29("aside", { className: "secondary-faint", children: /* @__PURE__ */ jsx29("div", { className: "group", children: /* @__PURE__ */ jsxs29("div", { className: "row", children: [
+      /* @__PURE__ */ jsx29("section", { children: /* @__PURE__ */ jsx29("header", { children: /* @__PURE__ */ jsx29("aside", { className: "secondary inverted", children: /* @__PURE__ */ jsx29("div", { className: "group", children: /* @__PURE__ */ jsxs29("div", { className: "row", children: [
         /* @__PURE__ */ jsxs29("div", { children: [
           /* @__PURE__ */ jsx29("b", { children: "Try Now" }),
           /* @__PURE__ */ jsx29("br", {}),
           "Subtitle"
         ] }),
         /* @__PURE__ */ jsx29("div", { className: "gap" }),
-        /* @__PURE__ */ jsx29("button", { children: "Download" })
+        /* @__PURE__ */ jsx29("button", { type: "reset", children: "Download" })
       ] }) }) }) }) })
     ] })
   ] });
@@ -3750,7 +3750,7 @@ function LayoutHeaderComplex() {
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "About" }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("div", { className: "align-center secondary-faint", children: [
+    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("div", { className: "align-center secondary", children: [
       /* @__PURE__ */ jsx33("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx33("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
       /* @__PURE__ */ jsx33("form", { children: /* @__PURE__ */ jsxs33("div", { className: "group", children: [
@@ -3901,16 +3901,115 @@ function MobileTypography() {
 // pages/pages/docs/custom/Semantic.tsx
 import { jsx as jsx39, jsxs as jsxs39 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Semantic({ theme }) {
-  return /* @__PURE__ */ jsx39(DocLayout, { theme, children: /* @__PURE__ */ jsxs39("section", { className: "row", children: [
-    /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsxs39("hgroup", { className: "card", children: [
-      /* @__PURE__ */ jsxs39("h1", { children: [
-        "Header ",
-        /* @__PURE__ */ jsx39("span", { className: "primary", children: "Cool" })
+  return /* @__PURE__ */ jsxs39(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs39("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs39("div", { children: [
+        /* @__PURE__ */ jsxs39("p", { children: [
+          "You can apply several color modes with the help of few classes like ",
+          /* @__PURE__ */ jsx39("code", { children: "primary" }),
+          ", ",
+          /* @__PURE__ */ jsx39("code", { children: "secondary" }),
+          ", ",
+          /* @__PURE__ */ jsx39("code", { children: "success" }),
+          " and ",
+          /* @__PURE__ */ jsx39("code", { children: "error" }),
+          "."
+        ] }),
+        /* @__PURE__ */ jsxs39("p", { children: [
+          "You can combine them with the ",
+          /* @__PURE__ */ jsx39("code", { children: "inverted" }),
+          " class to obtain various effects. For example, you can apply them to typographical elements:"
+        ] }),
+        /* @__PURE__ */ jsxs39("hgroup", { children: [
+          /* @__PURE__ */ jsxs39("h1", { children: [
+            /* @__PURE__ */ jsx39("span", { className: "primary", children: "Lorem ipsum dolor" }),
+            /* @__PURE__ */ jsx39("br", {}),
+            "sit amet"
+          ] }),
+          /* @__PURE__ */ jsxs39("h4", { children: [
+            "Lorem ipsum dolor sit amet,",
+            /* @__PURE__ */ jsx39("br", {}),
+            /* @__PURE__ */ jsx39("span", { className: "secondary", children: "consectetur adipiscing elit" }),
+            /* @__PURE__ */ jsx39("br", {}),
+            /* @__PURE__ */ jsx39("span", { className: "success inverted", children: "sed do" }),
+            " ",
+            /* @__PURE__ */ jsx39("span", { className: "error inverted", children: "eiusmod tempor" })
+          ] })
+        ] })
       ] }),
-      /* @__PURE__ */ jsx39("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
-    ] }) }),
-    /* @__PURE__ */ jsx39("div", { children: "ref" })
-  ] }) });
+      /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsx39("pre", { children: /* @__PURE__ */ jsx39("code", { children: `<h1>
+  <span class="primary">
+    Lorem ipsum dolor
+  </span>
+  <br/>
+  <span>
+    sit amet
+  </span>
+</h1>
+<h4>
+  <span>
+    Lorem ipsum dolor sit amet,
+  </span>
+  <br/>
+  <span class="secondary">
+    consectetur adipiscing elit
+  </span>
+  <span class="success inverted">
+    sed do
+  </span>
+  <span class="error inverted">
+    eiusmod tempor
+  </span>
+</h4>` }) }) })
+    ] }),
+    /* @__PURE__ */ jsxs39("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs39("div", { children: [
+        /* @__PURE__ */ jsx39("p", { children: "These classes can be applied to other elements like buttons, links, forms, marks, etc:" }),
+        /* @__PURE__ */ jsxs39("p", { children: [
+          /* @__PURE__ */ jsx39("button", { className: "success", children: "Confirm" }),
+          /* @__PURE__ */ jsx39("button", { className: "error", children: "Cancel" })
+        ] }),
+        /* @__PURE__ */ jsxs39("p", { className: "group secondary", children: [
+          /* @__PURE__ */ jsx39("button", { type: "reset", children: "First" }),
+          /* @__PURE__ */ jsx39("button", { children: "Second" }),
+          /* @__PURE__ */ jsx39("button", { type: "reset", children: "Third" })
+        ] }),
+        /* @__PURE__ */ jsx39("form", { className: "primary", children: /* @__PURE__ */ jsxs39("div", { className: "group", children: [
+          /* @__PURE__ */ jsx39("input", { type: "search", id: "search", placeholder: "Search" }),
+          /* @__PURE__ */ jsx39("input", { type: "submit", value: "Search" })
+        ] }) }),
+        /* @__PURE__ */ jsxs39("p", { children: [
+          "Don't forget to ",
+          /* @__PURE__ */ jsx39("span", { children: /* @__PURE__ */ jsx39("a", { href: "", className: "success", children: "subscribe" }) }),
+          "!"
+        ] }),
+        /* @__PURE__ */ jsxs39("p", { className: "group", children: [
+          /* @__PURE__ */ jsx39("mark", { className: "primary inverted", children: "v12.3.0" }),
+          /* @__PURE__ */ jsx39("mark", { className: "success inverted", children: "Passing" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsx39("div", {})
+    ] }),
+    /* @__PURE__ */ jsxs39("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs39("div", { children: [
+        /* @__PURE__ */ jsx39("p", { children: "And they can be applied to blocks and cards:" }),
+        /* @__PURE__ */ jsxs39("div", { className: "row", children: [
+          /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsx39("blockquote", { className: "secondary", children: /* @__PURE__ */ jsxs39("hgroup", { children: [
+            /* @__PURE__ */ jsx39("h4", { children: "Title" }),
+            /* @__PURE__ */ jsx39("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." })
+          ] }) }) }),
+          /* @__PURE__ */ jsx39("div", { children: /* @__PURE__ */ jsxs39("blockquote", { className: "error inverted", children: [
+            /* @__PURE__ */ jsxs39("hgroup", { children: [
+              /* @__PURE__ */ jsx39("h4", { children: "Error" }),
+              /* @__PURE__ */ jsx39("p", { children: "Lorem ipsum dolor sit amet" })
+            ] }),
+            /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("button", { type: "reset", children: "Copy" }) })
+          ] }) })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsx39("div", {})
+    ] })
+  ] });
 }
 
 // pages/common/utils/routes.ts

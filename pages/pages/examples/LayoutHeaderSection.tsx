@@ -16,7 +16,7 @@ export default function LayoutHeaderSection() {
         </p>
         <section>
           <header>
-            <aside className="secondary-faint">
+            <aside className="secondary inverted">
               <div className="group">
                 <div className="row">
                   <div>
@@ -25,7 +25,7 @@ export default function LayoutHeaderSection() {
                     Subtitle
                   </div>
                   <div className="gap"></div>
-                  <button>Download</button>
+                  <button type="reset">Download</button>
                 </div>
               </div>
             </aside>

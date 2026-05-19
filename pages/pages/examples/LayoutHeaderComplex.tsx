@@ -10,7 +10,7 @@ export default function LayoutHeaderComplex() {
         </nav>
       </header>
       <header>
-        <div className="align-center secondary-faint">
+        <div className="align-center secondary">
           <h2>My blog</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
