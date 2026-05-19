@@ -81,45 +81,45 @@
 
 :is(div,
   article, section, main, aside, header, footer,
-  nav, menu).primary {
+  nav, menu).primary:not(.card) {
   background-color: var(--color-int-primary-faint);
 }
 
 :is(div,
   article, section, main, aside, header, footer,
-  nav, menu).secondary {
+  nav, menu).secondary:not(.card) {
   background-color: var(--color-int-secondary-faint);
 }
 
 :is(div,
   article, section, main, aside, header, footer,
-  nav, menu).success {
+  nav, menu).success:not(.card) {
   --color-primary: var(--color-int-success);
   background-color: var(--color-int-primary-faint);
 }
 
 :is(div,
   article, section, main, aside, header, footer,
-  nav, menu).error {
+  nav, menu).error:not(.card) {
   --color-primary: var(--color-int-error);
   background-color: var(--color-int-primary-faint);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins).primary {
+  abbr, cite, q, samp, sub, sub, time, del, ins).primary:not(.card) {
   color: var(--color-int-primary);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins).secondary {
+  abbr, cite, q, samp, sub, sub, time, del, ins).secondary:not(.card) {
   color: var(--color-int-secondary);
 }
 
 .primary {
   &.inverted {
-    background-color: var(--color-int-primary);
+    background-color: var(--color-int-primary) !important;
     border-color: var(--color-int-primary);
     color: var(--color-int-txt-on-dark);
   }
@@ -127,7 +127,7 @@
 
 .secondary {
   &.inverted {
-    background-color: var(--color-int-secondary);
+    background-color: var(--color-int-secondary) !important;
     border-color: var(--color-int-secondary);
     color: var(--color-int-txt-on-dark);
   }
@@ -135,7 +135,7 @@
 
 .success {
   &.inverted {
-    background-color: var(--color-int-success);
+    background-color: var(--color-int-success) !important;
     border-color: var(--color-int-success);
     color: var(--color-int-txt-on-dark);
   }
@@ -143,7 +143,7 @@
 
 .error {
   &.inverted {
-    background-color: var(--color-int-error);
+    background-color: var(--color-int-error) !important;
     border-color: var(--color-int-error);
     color: var(--color-int-txt-on-dark);
   }
