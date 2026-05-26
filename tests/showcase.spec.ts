@@ -5,6 +5,7 @@ const showcases = [
   'newsletter/newsletter.html',
   'landing-page/landing_page.html',
   'newspaper/newspaper.html',
+  'blog/blog.html',
 ];
 
 for (const showcase of showcases) {
