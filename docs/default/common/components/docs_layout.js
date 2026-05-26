@@ -607,7 +607,7 @@ function Blockquotes({ theme }) {
           ] }) }),
           /* @__PURE__ */ jsx3("p", { children: /* @__PURE__ */ jsxs3("small", { children: [
             "You can learn more about semantic colors ",
-            /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("semantic" /* Semantic */, theme, route), children: "here" }),
+            /* @__PURE__ */ jsx3("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "here" }),
             "."
           ] }) })
         ] })
@@ -4049,10 +4049,10 @@ function MobileTypography() {
   ] }) }) }) });
 }
 
-// pages/pages/docs/custom/Semantic.tsx
+// pages/pages/docs/custom/Colors.tsx
 import { useState as useState7 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function Semantic({ theme }) {
+function Colors({ theme }) {
   const [colorClass, setColorClass] = useState7("primary");
   const onColorClassChange = (e) => setColorClass(e.target.value);
   return /* @__PURE__ */ jsx40(DocLayout, { theme, children: /* @__PURE__ */ jsxs40("section", { className: "row", children: [
@@ -4267,8 +4267,8 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/docs/custom/${htmlName(Grids)}`;
       case "containers" /* Containers */:
         return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
-      case "semantic" /* Semantic */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Semantic)}`;
+      case "colors" /* Colors */:
+        return `${base}${theme}/pages/docs/custom/${htmlName(Colors)}`;
       case "groups" /* Groups */:
         return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
     }
@@ -4360,8 +4360,8 @@ var RouteMaster = class _RouteMaster {
             return "grid" /* Grids */;
           case htmlName(Containers):
             return "containers" /* Containers */;
-          case htmlName(Semantic):
-            return "semantic" /* Semantic */;
+          case htmlName(Colors):
+            return "colors" /* Colors */;
           case htmlName(Groups):
             return "groups" /* Groups */;
         }
@@ -4559,7 +4559,7 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx43("li", { "aria-selected": selectedDoc === "grid" /* Grids */, children: /* @__PURE__ */ jsx43("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "Grids" }) }),
           /* @__PURE__ */ jsx43("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx43("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "Containers" }) }),
           /* @__PURE__ */ jsx43("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx43("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) }),
-          /* @__PURE__ */ jsx43("li", { "aria-selected": selectedDoc === "semantic" /* Semantic */, children: /* @__PURE__ */ jsx43("a", { href: RouteMaster.doc("semantic" /* Semantic */, theme, route), children: "Semantic" }) }),
+          /* @__PURE__ */ jsx43("li", { "aria-selected": selectedDoc === "colors" /* Colors */, children: /* @__PURE__ */ jsx43("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "Colors" }) }),
           /* @__PURE__ */ jsx43("li", { "aria-selected": selectedDoc === "classes" /* Classes */, children: /* @__PURE__ */ jsx43("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "Classes" }) })
         ] })
       ] })

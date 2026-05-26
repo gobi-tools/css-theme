@@ -38,7 +38,7 @@ import MobileMenu from "../../pages/examples/MobileMenu";
 import MobileNav from "../../pages/examples/MobileNav";
 import MobileTabs from "../../pages/examples/MobileTabs";
 import MobileTypography from "../../pages/examples/MobileTypography";
-import Semantic from "../../pages/docs/custom/Semantic";
+import Colors from "../../pages/docs/custom/Colors";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -86,7 +86,7 @@ export class RouteMaster {
       case EDoc.Classes: return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
       case EDoc.Grids: return `${base}${theme}/pages/docs/custom/${htmlName(Grids)}`;
       case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
-      case EDoc.Semantic: return `${base}${theme}/pages/docs/custom/${htmlName(Semantic)}`;
+      case EDoc.Colors: return `${base}${theme}/pages/docs/custom/${htmlName(Colors)}`;
       case EDoc.Groups: return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
     }
   }
@@ -151,7 +151,7 @@ export class RouteMaster {
           case htmlName(Classes): return EDoc.Classes;
           case htmlName(Grids): return EDoc.Grids;
           case htmlName(Containers): return EDoc.Containers;
-          case htmlName(Semantic): return EDoc.Semantic;
+          case htmlName(Colors): return EDoc.Colors;
           case htmlName(Groups): return EDoc.Groups;
         }
       }

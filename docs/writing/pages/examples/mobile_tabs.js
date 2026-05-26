@@ -129,7 +129,7 @@ import { Fragment as Fragment8, jsx as jsx36, jsxs as jsxs36 } from "https://esm
 // pages/pages/examples/MobileTypography.tsx
 import { Fragment as Fragment9, jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/docs/custom/Semantic.tsx
+// pages/pages/docs/custom/Colors.tsx
 import { useState as useState5 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 

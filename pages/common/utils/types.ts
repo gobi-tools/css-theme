@@ -36,8 +36,8 @@ export enum EDoc {
   Grids = 'grid',
   Containers = 'containers',
   Groups = 'groups',
-  // custom - semantic
-  Semantic = 'semantic',
+  // custom - colors
+  Colors = 'colors',
   // custom - classes
   Classes = 'classes',
 };

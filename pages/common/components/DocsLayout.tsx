@@ -150,8 +150,8 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Groups}>
                 <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>Groups</a>
               </li>
-              <li aria-selected={selectedDoc === EDoc.Semantic}>
-                <a href={RouteMaster.doc(EDoc.Semantic, theme, route)}>Semantic</a>
+              <li aria-selected={selectedDoc === EDoc.Colors}>
+                <a href={RouteMaster.doc(EDoc.Colors, theme, route)}>Colors</a>
               </li>
               <li aria-selected={selectedDoc === EDoc.Classes}>
                 <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>Classes</a>

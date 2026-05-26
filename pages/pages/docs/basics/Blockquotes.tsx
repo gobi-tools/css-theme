@@ -132,7 +132,7 @@ export default function Blockquotes({ theme }) {
             </p>
             <p>
               <small>
-                You can learn more about semantic colors <a href={RouteMaster.doc(EDoc.Semantic, theme, route)}>here</a>.
+                You can learn more about semantic colors <a href={RouteMaster.doc(EDoc.Colors, theme, route)}>here</a>.
               </small>
             </p>
           </hgroup>
