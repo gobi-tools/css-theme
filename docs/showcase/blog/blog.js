@@ -35,7 +35,6 @@ function Blog() {
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("aside", { className: "secondary", children: /* @__PURE__ */ jsx("div", { children: "abc" }) }) }),
     /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("article", { children: /* @__PURE__ */ jsxs("div", { children: [
       "Subscribe via ",
       /* @__PURE__ */ jsx("a", { href: "", children: "rss" }),
