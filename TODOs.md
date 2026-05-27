@@ -54,14 +54,16 @@ Improvements
 
 Bugs
 ----
-- [ ] elements with display: flex and flex-direction: row tend to push outside of the boundary of the screen (check pagination buttons, etc)
-  - [ ] maybe make horizontal navigation (tabs, etc) be h-scrollable?
-- [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
-- [ ] on really small devices (iPhone SE), the last form on [this page](http://localhost:8081/default/pages/docs/forms/forms_normal.html) does not respect column widths (e.g. they are unqeual)
 - [ ] when we have <header><div>abc</div></header> the content in the div is not in the center, as I'd expect;
   - I need to actually have <header><div><div>abc</div></div></header> to work
   - Similar, when I have <footer>text</footer> or <footer><div>test</div></footer> it doesn't work okay ... need
     to have two nested divs to work, which is unintuitive for first time users
+- [ ] error validation for forms is a bit broken (re the "error" class) ... 
+
+- [ ] elements with display: flex and flex-direction: row tend to push outside of the boundary of the screen (check pagination buttons, etc)
+  - [ ] maybe make horizontal navigation (tabs, etc) be h-scrollable?
+- [ ] nav item with icon + text on mobile is not aligned correctly vertically (both ul>li and ol>li)
+- [ ] on really small devices (iPhone SE), the last form on [this page](http://localhost:8081/default/pages/docs/forms/forms_normal.html) does not respect column widths (e.g. they are unqeual)
 - [x] header nav content can jump out on wider containers
 - [x] If we have two <code> blocks in the same line / paragraph, the 2nd one (and maybe others) have more margin-left than needed 
 - [x] should rows in width<600px have a 0px gap in "92.class-rows.css"?  

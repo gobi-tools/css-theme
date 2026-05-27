@@ -3659,9 +3659,9 @@ function Header({ theme }) {
     /* @__PURE__ */ jsxs28("section", { className: "row", children: [
       /* @__PURE__ */ jsxs28("div", { children: [
         /* @__PURE__ */ jsxs28("p", { children: [
-          'You create more complex "hero" layouts by placing any elemnent (a ',
-          /* @__PURE__ */ jsx28("code", { children: "div" }),
-          ", etc) inside a header."
+          'You create more complex "hero" layouts by placing an ',
+          /* @__PURE__ */ jsx28("code", { children: "article" }),
+          " inside a header."
         ] }),
         /* @__PURE__ */ jsx28("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
       ] }),
@@ -3680,7 +3680,7 @@ function Header({ theme }) {
 
 <!-- hero header -->
 <header>
-  <div class="align-center">
+  <article class="align-center">
     <h2>
       My blog
     </h2>
@@ -3697,7 +3697,7 @@ function Header({ theme }) {
           value="Subscribe"/>
       </div>
     </form>
-  </div>
+  </article>
 </header>
 <main>
   <h1>Title</h1>
@@ -3838,7 +3838,7 @@ function LayoutHeaderComplex() {
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "About" }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("div", { className: "align-center secondary", children: [
+    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("article", { className: "align-center secondary", children: [
       /* @__PURE__ */ jsx33("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx33("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
       /* @__PURE__ */ jsx33("form", { children: /* @__PURE__ */ jsxs33("div", { className: "group", children: [

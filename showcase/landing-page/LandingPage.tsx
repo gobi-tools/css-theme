@@ -31,7 +31,7 @@ export default function LandingPage() {
         </nav>
       </header>
       <header>
-        <div className="align-center">
+        <article className="align-center">
           <hgroup>
             <h1>Hopper</h1>
             <h4>The first agentic development environment for the mainframe</h4>
@@ -44,7 +44,7 @@ export default function LandingPage() {
           <p>
             <a href="">Other platforms</a>
           </p>
-        </div>
+        </article>
       </header>
       <main>
         <section>
@@ -129,7 +129,6 @@ export default function LandingPage() {
       </main>
       <header>
         <aside className="primary inverted">
-          {/* <br /> */}
           <div>
             <div className="group">
               <div className="row">

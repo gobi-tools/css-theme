@@ -10,7 +10,7 @@ export default function LayoutHeaderComplex() {
         </nav>
       </header>
       <header>
-        <div className="align-center secondary">
+        <article className="align-center secondary">
           <h2>My blog</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -21,7 +21,7 @@ export default function LayoutHeaderComplex() {
               <input type="submit" value="Subscribe" />
             </div>
           </form>
-        </div>
+        </article>
       </header>
       <main>
         <h1>Title</h1>

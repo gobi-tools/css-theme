@@ -45,8 +45,7 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
-            You create more complex "hero" layouts by placing any elemnent (a <code>div</code>, etc) 
-            inside a header.
+            You create more complex "hero" layouts by placing an <code>article</code> inside a header.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderComplex, theme, route)} />
         </div>
@@ -67,7 +66,7 @@ export default function Header({ theme }) {
 
 <!-- hero header -->
 <header>
-  <div class="align-center">
+  <article class="align-center">
     <h2>
       My blog
     </h2>
@@ -84,7 +83,7 @@ export default function Header({ theme }) {
           value="Subscribe"/>
       </div>
     </form>
-  </div>
+  </article>
 </header>
 <main>
   <h1>Title</h1>

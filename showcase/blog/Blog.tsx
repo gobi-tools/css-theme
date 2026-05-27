@@ -47,11 +47,11 @@ export default function Blog() {
         </section>
       </main>
       <footer>
-        <div>
+        <article>
           <div>
             Subscribe via <a href="">rss</a> or <a href="">email</a>.
           </div>
-        </div>
+        </article>
       </footer>
     </>
   );

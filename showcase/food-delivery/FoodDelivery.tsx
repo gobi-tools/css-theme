@@ -15,7 +15,7 @@ export default function FoodDelivery() {
         </nav>
       </header>
       <header>
-        <div className="primary">
+        <article className="primary">
           <div>
             <h1 className="align-center">
               Restaurants, takeaways, supermarkets and shops. Delivered.
@@ -42,7 +42,7 @@ export default function FoodDelivery() {
               </button>
             </p>
           </div>
-        </div>
+        </article>
       </header>
       <br />
       <main>
@@ -155,18 +155,18 @@ export default function FoodDelivery() {
         </section>
 
         <header>
-          <div className="align-center big-banner">
+          <article className="align-center big-banner">
             <hgroup>
               <h1>Get grocery and convenience store essentials</h1>
               <h4>Grocery delivery, exactly how you want it.</h4>
               <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</p>
             </hgroup>
             <p><button>Shop Groceries</button></p>
-          </div>
+          </article>
         </header>
 
         <header className="align-center">
-          <div className="primary">
+          <article className="primary">
             <div className="row">
               <div>
                 <hgroup>
@@ -204,7 +204,7 @@ export default function FoodDelivery() {
                 <p><button>Get pet supplies</button></p>
               </div>
             </div>
-          </div>
+          </article>
         </header>
       </main>
       <footer>
