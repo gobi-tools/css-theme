@@ -1974,7 +1974,7 @@ function FormsValidation({ theme }) {
                 onChange: (e) => setName(e.target.value)
               }
             ),
-            /* @__PURE__ */ jsx15("div", { className: "error", children: /* @__PURE__ */ jsx15("small", { className: "error", children: "Enter a name between 4 and 100 characters" }) })
+            /* @__PURE__ */ jsx15("span", { className: "error", children: /* @__PURE__ */ jsx15("small", { children: "Enter a name between 4 and 100 characters" }) })
           ] }),
           /* @__PURE__ */ jsxs15("label", { htmlFor: "email", children: [
             /* @__PURE__ */ jsx15("span", { children: "Email" }),
@@ -2007,7 +2007,7 @@ function FormsValidation({ theme }) {
                 onChange: (e) => setComment(e.target.value)
               }
             ),
-            /* @__PURE__ */ jsx15("div", { className: "error", children: /* @__PURE__ */ jsx15("small", { children: "Enter a meaningful comment" }) })
+            /* @__PURE__ */ jsx15("span", { className: "error", children: /* @__PURE__ */ jsx15("small", { children: "Enter a meaningful comment" }) })
           ] }),
           /* @__PURE__ */ jsx15("input", { type: "submit", value: "Submit" })
         ] }) })
@@ -2030,7 +2030,7 @@ function FormsValidation({ theme }) {
         pattern=".{4,100}"
         title="Name ..."
         value="a"/>
-      <div className="error">
+      <div class="error">
         <small>
           Enter ...
         </small>
@@ -2062,7 +2062,7 @@ function FormsValidation({ theme }) {
         minLength="10"
         maxLength="500">
       </textarea>
-      <div className="error">
+      <div class="error">
         <small>
           Enter ...
         </small>
@@ -2117,7 +2117,7 @@ function FormsValidation({ theme }) {
         selected 
         hidden>
         Please select 
-        a country
+        a countrynp
       </option>
 
       <option value="uk">

@@ -40,9 +40,9 @@ export default function FormsValidation({ theme }) {
                   title="Name must be at least 4 characters"
                   value={name}
                   onChange={(e) => setName(e.target.value)} />
-                <div className="error">
-                  <small className="error">Enter a name between 4 and 100 characters</small>
-                </div>
+                <span className="error">
+                  <small>Enter a name between 4 and 100 characters</small>
+                </span>
               </label>
 
               <label htmlFor="email">
@@ -69,7 +69,9 @@ export default function FormsValidation({ theme }) {
                   maxLength={500}
                   value={comment}
                   onChange={(e) => setComment(e.target.value)}></textarea>
-                <div className="error"><small>Enter a meaningful comment</small></div>
+                <span className="error">
+                  <small>Enter a meaningful comment</small>
+                </span>
               </label>
 
               <input type="submit" value="Submit" />
@@ -96,7 +98,7 @@ export default function FormsValidation({ theme }) {
         pattern=".{4,100}"
         title="Name ..."
         value="a"/>
-      <div className="error">
+      <div class="error">
         <small>
           Enter ...
         </small>
@@ -128,7 +130,7 @@ export default function FormsValidation({ theme }) {
         minLength="10"
         maxLength="500">
       </textarea>
-      <div className="error">
+      <div class="error">
         <small>
           Enter ...
         </small>
@@ -191,7 +193,7 @@ export default function FormsValidation({ theme }) {
         selected 
         hidden>
         Please select 
-        a country
+        a countrynp
       </option>
 
       <option value="uk">
