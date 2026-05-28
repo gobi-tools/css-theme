@@ -1,8 +1,8 @@
 export default function MobileColumns() {
   return (
     <>
-      <main style={{ maxWidth: '600px', marginInline: 'auto' }}>
-        <article>
+      <main>
+        <article style={{ maxWidth: '600px', marginInline: 'auto' }}>
           <div className="row">
             <div>
               <code style={{ width: '100%' }}>col</code>

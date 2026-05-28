@@ -41,6 +41,7 @@ import MobileTypography from "../../pages/examples/MobileTypography";
 import Colors from "../../pages/docs/custom/Colors";
 import Footer from "../../pages/docs/layout/Footer";
 import LayoutFooterSimple from "../../pages/examples/LayoutFooterSimple";
+import LayoutFooterComplex from "../../pages/examples/LayoutFooterComplex";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -172,6 +173,7 @@ export class RouteMaster {
       case EExamples.LayoutHeaderComplex: return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderComplex)}`;
       case EExamples.LayoutHeaderSection: return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderSection)}`;
       case EExamples.LayoutFooterSimple: return `${base}${theme}/pages/examples/${htmlName(LayoutFooterSimple)}`;
+      case EExamples.LayoutFooterComplex: return `${base}${theme}/pages/examples/${htmlName(LayoutFooterComplex)}`;
       case EExamples.MobileColumns: return `${base}${theme}/pages/examples/${htmlName(MobileColumns)}`;
       case EExamples.MobileMenu: return `${base}${theme}/pages/examples/${htmlName(MobileMenu)}`;
       case EExamples.MobileNav: return `${base}${theme}/pages/examples/${htmlName(MobileNav)}`;

@@ -3957,7 +3957,7 @@ function LayoutHeaderComplex() {
 // pages/pages/examples/MobileColumns.tsx
 import { Fragment as Fragment7, jsx as jsx36, jsxs as jsxs36 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileColumns() {
-  return /* @__PURE__ */ jsx36(Fragment7, { children: /* @__PURE__ */ jsx36("main", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsx36("article", { children: /* @__PURE__ */ jsxs36("div", { className: "row", children: [
+  return /* @__PURE__ */ jsx36(Fragment7, { children: /* @__PURE__ */ jsx36("main", { children: /* @__PURE__ */ jsx36("article", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsxs36("div", { className: "row", children: [
     /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("code", { style: { width: "100%" }, children: "col" }) }),
     /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36("code", { style: { width: "100%" }, children: "col" }) })
   ] }) }) }) });
@@ -4236,17 +4236,44 @@ function Colors({ theme }) {
 import { jsx as jsx42, jsxs as jsxs42 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Footer({ theme }) {
   const route = useRoute();
-  return /* @__PURE__ */ jsx42(DocLayout, { theme, children: /* @__PURE__ */ jsxs42("section", { className: "row", children: [
-    /* @__PURE__ */ jsxs42("div", { children: [
-      /* @__PURE__ */ jsxs42("p", { children: [
-        "A ",
-        /* @__PURE__ */ jsx42("code", { children: "footer" }),
-        " element is used to define the very last piece of content in a page or section. The simplest footer can contain text, links, etc."
+  return /* @__PURE__ */ jsxs42(DocLayout, { theme, children: [
+    /* @__PURE__ */ jsxs42("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs42("div", { children: [
+        /* @__PURE__ */ jsxs42("p", { children: [
+          "A ",
+          /* @__PURE__ */ jsx42("code", { children: "footer" }),
+          " element is used to define the very last piece of content in a page or a section. The simplest footer can contain text, links, etc."
+        ] }),
+        /* @__PURE__ */ jsx42("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-footer-simple" /* LayoutFooterSimple */, theme, route) })
       ] }),
-      /* @__PURE__ */ jsx42("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-footer-simple" /* LayoutFooterSimple */, theme, route) })
+      /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<footer>
+  This is a simple footer
+  with a <a href="...">link</a>.
+</footer>` }) }) })
     ] }),
-    /* @__PURE__ */ jsx42("div", {})
-  ] }) });
+    /* @__PURE__ */ jsxs42("section", { className: "row", children: [
+      /* @__PURE__ */ jsxs42("div", { children: [
+        /* @__PURE__ */ jsx42("p", { children: "More complex footers can contain information divided by columns, etc." }),
+        /* @__PURE__ */ jsx42("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-footer-complex" /* LayoutFooterComplex */, theme, route) })
+      ] }),
+      /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<footer>
+  <article>
+    <div class="row">
+      <div>
+        <nav>
+          <ul>...</ul>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <ul>...</ul>
+        </nav>
+      </div>
+    </div>
+  </article>
+</footer>` }) }) })
+    ] })
+  ] });
 }
 
 // pages/pages/examples/LayoutFooterSimple.tsx
@@ -4262,6 +4289,29 @@ function LayoutFooterSimple() {
       /* @__PURE__ */ jsx43("a", { href: "", children: "link" }),
       "."
     ] })
+  ] });
+}
+
+// pages/pages/examples/LayoutFooterComplex.tsx
+import { Fragment as Fragment12, jsx as jsx44, jsxs as jsxs44 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function LayoutFooterComplex() {
+  return /* @__PURE__ */ jsxs44(Fragment12, { children: [
+    /* @__PURE__ */ jsxs44("main", { children: [
+      /* @__PURE__ */ jsx44("h1", { children: "Title" }),
+      /* @__PURE__ */ jsx44("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+    ] }),
+    /* @__PURE__ */ jsx44("footer", { children: /* @__PURE__ */ jsx44("article", { className: "primary", children: /* @__PURE__ */ jsxs44("div", { className: "row", children: [
+      /* @__PURE__ */ jsx44("div", { children: /* @__PURE__ */ jsx44("nav", { children: /* @__PURE__ */ jsxs44("ul", { children: [
+        /* @__PURE__ */ jsx44("b", { children: "COMPANY" }),
+        /* @__PURE__ */ jsx44("li", { children: /* @__PURE__ */ jsx44("a", { href: "", children: "Our Story" }) }),
+        /* @__PURE__ */ jsx44("li", { children: /* @__PURE__ */ jsx44("a", { href: "", children: "Careers" }) })
+      ] }) }) }),
+      /* @__PURE__ */ jsx44("div", { children: /* @__PURE__ */ jsx44("nav", { children: /* @__PURE__ */ jsxs44("ul", { children: [
+        /* @__PURE__ */ jsx44("b", { children: "DEVELOPERS" }),
+        /* @__PURE__ */ jsx44("li", { children: /* @__PURE__ */ jsx44("a", { href: "", children: "API" }) })
+      ] }) }) }),
+      /* @__PURE__ */ jsx44("div", { className: "gap" })
+    ] }) }) })
   ] });
 }
 
@@ -4457,6 +4507,8 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderSection)}`;
       case "layout-footer-simple" /* LayoutFooterSimple */:
         return `${base}${theme}/pages/examples/${htmlName(LayoutFooterSimple)}`;
+      case "layout-footer-complex" /* LayoutFooterComplex */:
+        return `${base}${theme}/pages/examples/${htmlName(LayoutFooterComplex)}`;
       case "mobile-columns" /* MobileColumns */:
         return `${base}${theme}/pages/examples/${htmlName(MobileColumns)}`;
       case "mobile-menu" /* MobileMenu */:
@@ -4484,7 +4536,7 @@ function toKebabCase(str) {
 }
 
 // pages/common/components/TopNav.tsx
-import { jsx as jsx44, jsxs as jsxs44 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx45, jsxs as jsxs45 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function TopNav({ theme }) {
   const route = useRoute();
   const onThemeChange = (e) => {
@@ -4508,53 +4560,53 @@ function TopNav({ theme }) {
       }
     }
   };
-  return /* @__PURE__ */ jsx44("nav", { children: /* @__PURE__ */ jsxs44("ul", { children: [
-    /* @__PURE__ */ jsx44("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs44("a", { href: RouteMaster.home(theme, route), children: [
-      /* @__PURE__ */ jsxs44("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-        /* @__PURE__ */ jsx44("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-        /* @__PURE__ */ jsx44("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+  return /* @__PURE__ */ jsx45("nav", { children: /* @__PURE__ */ jsxs45("ul", { children: [
+    /* @__PURE__ */ jsx45("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs45("a", { href: RouteMaster.home(theme, route), children: [
+      /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx45("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+        /* @__PURE__ */ jsx45("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
       ] }),
-      /* @__PURE__ */ jsx44("span", { children: "Home" })
+      /* @__PURE__ */ jsx45("span", { children: "Home" })
     ] }) }),
-    /* @__PURE__ */ jsx44("li", { className: "gap" }),
-    /* @__PURE__ */ jsx44("li", { className: "hide-on-desktop", children: /* @__PURE__ */ jsxs44("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: [
-      /* @__PURE__ */ jsxs44("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-        /* @__PURE__ */ jsx44("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
-        /* @__PURE__ */ jsx44("path", { d: "M9 18c-4.51 2-5-2-7-2" })
+    /* @__PURE__ */ jsx45("li", { className: "gap" }),
+    /* @__PURE__ */ jsx45("li", { className: "hide-on-desktop", children: /* @__PURE__ */ jsxs45("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: [
+      /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx45("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
+        /* @__PURE__ */ jsx45("path", { d: "M9 18c-4.51 2-5-2-7-2" })
       ] }),
-      /* @__PURE__ */ jsx44("span", { children: "GitHub" })
+      /* @__PURE__ */ jsx45("span", { children: "GitHub" })
     ] }) }),
-    /* @__PURE__ */ jsx44("li", { children: /* @__PURE__ */ jsxs44("select", { name: "theme-selector", onChange: onThemeChange, children: [
-      /* @__PURE__ */ jsxs44("optgroup", { label: "Light/Dark", children: [
-        /* @__PURE__ */ jsx44("option", { value: "default" /* Default */, selected: theme === "default" /* Default */, children: "Default" }),
-        /* @__PURE__ */ jsx44("option", { value: "app" /* App */, selected: theme === "app" /* App */, children: "App" }),
-        /* @__PURE__ */ jsx44("option", { value: "writing" /* Writing */, selected: theme === "writing" /* Writing */, children: "Writing" }),
-        /* @__PURE__ */ jsx44("option", { value: "scholar" /* Scholar */, selected: theme === "scholar" /* Scholar */, children: "Scholar" })
+    /* @__PURE__ */ jsx45("li", { children: /* @__PURE__ */ jsxs45("select", { name: "theme-selector", onChange: onThemeChange, children: [
+      /* @__PURE__ */ jsxs45("optgroup", { label: "Light/Dark", children: [
+        /* @__PURE__ */ jsx45("option", { value: "default" /* Default */, selected: theme === "default" /* Default */, children: "Default" }),
+        /* @__PURE__ */ jsx45("option", { value: "app" /* App */, selected: theme === "app" /* App */, children: "App" }),
+        /* @__PURE__ */ jsx45("option", { value: "writing" /* Writing */, selected: theme === "writing" /* Writing */, children: "Writing" }),
+        /* @__PURE__ */ jsx45("option", { value: "scholar" /* Scholar */, selected: theme === "scholar" /* Scholar */, children: "Scholar" })
       ] }),
-      /* @__PURE__ */ jsxs44("optgroup", { label: "Light Only", children: [
-        /* @__PURE__ */ jsx44("option", { value: "bold" /* Bold */, selected: theme === "bold" /* Bold */, children: "Bold" }),
-        /* @__PURE__ */ jsx44("option", { value: "sunset" /* Sunset */, selected: theme === "sunset" /* Sunset */, children: "Sunset" }),
-        /* @__PURE__ */ jsx44("option", { value: "pink" /* Pink */, selected: theme === "pink" /* Pink */, children: "Pink" })
+      /* @__PURE__ */ jsxs45("optgroup", { label: "Light Only", children: [
+        /* @__PURE__ */ jsx45("option", { value: "bold" /* Bold */, selected: theme === "bold" /* Bold */, children: "Bold" }),
+        /* @__PURE__ */ jsx45("option", { value: "sunset" /* Sunset */, selected: theme === "sunset" /* Sunset */, children: "Sunset" }),
+        /* @__PURE__ */ jsx45("option", { value: "pink" /* Pink */, selected: theme === "pink" /* Pink */, children: "Pink" })
       ] }),
-      /* @__PURE__ */ jsxs44("optgroup", { label: "Dark Only", children: [
-        /* @__PURE__ */ jsx44("option", { value: "forest" /* Forest */, selected: theme === "forest" /* Forest */, children: "Forest" }),
-        /* @__PURE__ */ jsx44("option", { value: "betty" /* Betty */, selected: theme === "betty" /* Betty */, children: "Betty" }),
-        /* @__PURE__ */ jsx44("option", { value: "gold" /* Gold */, selected: theme === "gold" /* Gold */, children: "Gold" })
+      /* @__PURE__ */ jsxs45("optgroup", { label: "Dark Only", children: [
+        /* @__PURE__ */ jsx45("option", { value: "forest" /* Forest */, selected: theme === "forest" /* Forest */, children: "Forest" }),
+        /* @__PURE__ */ jsx45("option", { value: "betty" /* Betty */, selected: theme === "betty" /* Betty */, children: "Betty" }),
+        /* @__PURE__ */ jsx45("option", { value: "gold" /* Gold */, selected: theme === "gold" /* Gold */, children: "Gold" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx44("li", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx44("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: /* @__PURE__ */ jsx44("button", { type: "reset", children: /* @__PURE__ */ jsxs44("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-      /* @__PURE__ */ jsx44("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
-      /* @__PURE__ */ jsx44("path", { d: "M9 18c-4.51 2-5-2-7-2" })
+    /* @__PURE__ */ jsx45("li", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx45("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: /* @__PURE__ */ jsx45("button", { type: "reset", children: /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+      /* @__PURE__ */ jsx45("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
+      /* @__PURE__ */ jsx45("path", { d: "M9 18c-4.51 2-5-2-7-2" })
     ] }) }) }) })
   ] }) });
 }
 
 // pages/common/components/HomeLayout.tsx
-import { Fragment as Fragment12, jsx as jsx45, jsxs as jsxs45 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { Fragment as Fragment13, jsx as jsx46, jsxs as jsxs46 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function HomeLayout({ theme, children }) {
-  return /* @__PURE__ */ jsxs45(Fragment12, { children: [
-    /* @__PURE__ */ jsx45("header", { children: /* @__PURE__ */ jsx45(TopNav, { theme }) }),
-    /* @__PURE__ */ jsx45("main", { children: /* @__PURE__ */ jsx45("article", { children }) })
+  return /* @__PURE__ */ jsxs46(Fragment13, { children: [
+    /* @__PURE__ */ jsx46("header", { children: /* @__PURE__ */ jsx46(TopNav, { theme }) }),
+    /* @__PURE__ */ jsx46("main", { children: /* @__PURE__ */ jsx46("article", { children }) })
   ] });
 }
 

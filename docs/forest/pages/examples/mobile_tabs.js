@@ -139,88 +139,91 @@ import { jsx as jsx39, jsxs as jsxs39 } from "https://esm.sh/react@19.2.0/jsx-ru
 // pages/pages/examples/LayoutFooterSimple.tsx
 import { Fragment as Fragment10, jsx as jsx40, jsxs as jsxs40 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
+// pages/pages/examples/LayoutFooterComplex.tsx
+import { Fragment as Fragment11, jsx as jsx41, jsxs as jsxs41 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+
 // pages/common/components/TopNav.tsx
-import { jsx as jsx41, jsxs as jsxs41 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx42, jsxs as jsxs42 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/common/components/HomeLayout.tsx
-import { Fragment as Fragment11, jsx as jsx42, jsxs as jsxs42 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { Fragment as Fragment12, jsx as jsx43, jsxs as jsxs43 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/common/components/DocsLayout.tsx
-import { jsx as jsx43, jsxs as jsxs43 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx44, jsxs as jsxs44 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/pages/docs/navigation/Tabs.tsx
-import { Fragment as Fragment12, jsx as jsx44, jsxs as jsxs44 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { Fragment as Fragment13, jsx as jsx45, jsxs as jsxs45 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Tab1() {
-  return /* @__PURE__ */ jsxs44(Fragment12, { children: [
-    /* @__PURE__ */ jsx44("h4", { children: "Home" }),
-    /* @__PURE__ */ jsx44("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-    /* @__PURE__ */ jsx44("p", { children: /* @__PURE__ */ jsx44("button", { children: "Edit" }) })
+  return /* @__PURE__ */ jsxs45(Fragment13, { children: [
+    /* @__PURE__ */ jsx45("h4", { children: "Home" }),
+    /* @__PURE__ */ jsx45("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
+    /* @__PURE__ */ jsx45("p", { children: /* @__PURE__ */ jsx45("button", { children: "Edit" }) })
   ] });
 }
 function Tab2() {
-  return /* @__PURE__ */ jsxs44(Fragment12, { children: [
-    /* @__PURE__ */ jsx44("h4", { children: "Projects" }),
-    /* @__PURE__ */ jsx44("p", { children: /* @__PURE__ */ jsxs44("ul", { children: [
-      /* @__PURE__ */ jsx44("li", { children: /* @__PURE__ */ jsx44("a", { href: "", children: "user123/test" }) }),
-      /* @__PURE__ */ jsx44("li", { children: /* @__PURE__ */ jsx44("a", { href: "", children: "user123/notes" }) }),
-      /* @__PURE__ */ jsx44("li", { children: /* @__PURE__ */ jsx44("a", { href: "", children: "user_451/financials" }) })
+  return /* @__PURE__ */ jsxs45(Fragment13, { children: [
+    /* @__PURE__ */ jsx45("h4", { children: "Projects" }),
+    /* @__PURE__ */ jsx45("p", { children: /* @__PURE__ */ jsxs45("ul", { children: [
+      /* @__PURE__ */ jsx45("li", { children: /* @__PURE__ */ jsx45("a", { href: "", children: "user123/test" }) }),
+      /* @__PURE__ */ jsx45("li", { children: /* @__PURE__ */ jsx45("a", { href: "", children: "user123/notes" }) }),
+      /* @__PURE__ */ jsx45("li", { children: /* @__PURE__ */ jsx45("a", { href: "", children: "user_451/financials" }) })
     ] }) })
   ] });
 }
 function Tab3() {
-  return /* @__PURE__ */ jsxs44(Fragment12, { children: [
-    /* @__PURE__ */ jsx44("h4", { children: "Users" }),
-    /* @__PURE__ */ jsx44("div", { className: "group", children: /* @__PURE__ */ jsxs44("div", { className: "row", children: [
-      /* @__PURE__ */ jsx44("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }),
-      /* @__PURE__ */ jsxs44("div", { children: [
-        /* @__PURE__ */ jsx44("b", { children: "user123" }),
-        /* @__PURE__ */ jsx44("br", {}),
-        /* @__PURE__ */ jsx44("span", { children: "active" })
+  return /* @__PURE__ */ jsxs45(Fragment13, { children: [
+    /* @__PURE__ */ jsx45("h4", { children: "Users" }),
+    /* @__PURE__ */ jsx45("div", { className: "group", children: /* @__PURE__ */ jsxs45("div", { className: "row", children: [
+      /* @__PURE__ */ jsx45("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }),
+      /* @__PURE__ */ jsxs45("div", { children: [
+        /* @__PURE__ */ jsx45("b", { children: "user123" }),
+        /* @__PURE__ */ jsx45("br", {}),
+        /* @__PURE__ */ jsx45("span", { children: "active" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx44("div", { className: "group", children: /* @__PURE__ */ jsxs44("div", { className: "row", children: [
-      /* @__PURE__ */ jsx44("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
-      /* @__PURE__ */ jsxs44("div", { children: [
-        /* @__PURE__ */ jsx44("b", { children: "user_451" }),
-        /* @__PURE__ */ jsx44("br", {}),
-        /* @__PURE__ */ jsx44("span", { children: "active" })
+    /* @__PURE__ */ jsx45("div", { className: "group", children: /* @__PURE__ */ jsxs45("div", { className: "row", children: [
+      /* @__PURE__ */ jsx45("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
+      /* @__PURE__ */ jsxs45("div", { children: [
+        /* @__PURE__ */ jsx45("b", { children: "user_451" }),
+        /* @__PURE__ */ jsx45("br", {}),
+        /* @__PURE__ */ jsx45("span", { children: "active" })
       ] })
     ] }) })
   ] });
 }
 
 // pages/pages/examples/MobileTabs.tsx
-import { jsx as jsx45, jsxs as jsxs45 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+import { jsx as jsx46, jsxs as jsxs46 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTabs() {
   const [selected, setSelected] = useState8("tab-1");
-  return /* @__PURE__ */ jsx45("main", { children: /* @__PURE__ */ jsxs45("div", { className: "row disable-mobile", children: [
-    /* @__PURE__ */ jsx45("aside", { children: /* @__PURE__ */ jsx45("div", { children: /* @__PURE__ */ jsxs45("menu", { children: [
-      /* @__PURE__ */ jsx45("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs45("a", { onClick: () => setSelected("tab-1"), children: [
-        /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx45("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
-          /* @__PURE__ */ jsx45("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+  return /* @__PURE__ */ jsx46("main", { children: /* @__PURE__ */ jsxs46("div", { className: "row disable-mobile", children: [
+    /* @__PURE__ */ jsx46("aside", { children: /* @__PURE__ */ jsx46("div", { children: /* @__PURE__ */ jsxs46("menu", { children: [
+      /* @__PURE__ */ jsx46("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs46("a", { onClick: () => setSelected("tab-1"), children: [
+        /* @__PURE__ */ jsxs46("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx46("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+          /* @__PURE__ */ jsx46("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
         ] }),
-        /* @__PURE__ */ jsx45("span", { children: "Home" })
+        /* @__PURE__ */ jsx46("span", { children: "Home" })
       ] }) }),
-      /* @__PURE__ */ jsx45("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs45("a", { onClick: () => setSelected("tab-2"), children: [
-        /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx45("path", { d: "M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" }),
-          /* @__PURE__ */ jsx45("circle", { cx: "12", cy: "13", r: "1" })
+      /* @__PURE__ */ jsx46("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs46("a", { onClick: () => setSelected("tab-2"), children: [
+        /* @__PURE__ */ jsxs46("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx46("path", { d: "M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" }),
+          /* @__PURE__ */ jsx46("circle", { cx: "12", cy: "13", r: "1" })
         ] }),
-        /* @__PURE__ */ jsx45("span", { children: "Projects" })
+        /* @__PURE__ */ jsx46("span", { children: "Projects" })
       ] }) }),
-      /* @__PURE__ */ jsx45("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs45("a", { onClick: () => setSelected("tab-3"), children: [
-        /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx45("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
-          /* @__PURE__ */ jsx45("circle", { cx: "12", cy: "7", r: "4" })
+      /* @__PURE__ */ jsx46("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs46("a", { onClick: () => setSelected("tab-3"), children: [
+        /* @__PURE__ */ jsxs46("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsx46("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
+          /* @__PURE__ */ jsx46("circle", { cx: "12", cy: "7", r: "4" })
         ] }),
-        /* @__PURE__ */ jsx45("span", { children: "Users" })
+        /* @__PURE__ */ jsx46("span", { children: "Users" })
       ] }) })
     ] }) }) }),
-    /* @__PURE__ */ jsxs45("div", { className: "card", style: { flexGrow: 1 }, children: [
-      selected === "tab-1" ? /* @__PURE__ */ jsx45(Tab1, {}) : null,
-      selected === "tab-2" ? /* @__PURE__ */ jsx45(Tab2, {}) : null,
-      selected === "tab-3" ? /* @__PURE__ */ jsx45(Tab3, {}) : null
+    /* @__PURE__ */ jsxs46("div", { className: "card", style: { flexGrow: 1 }, children: [
+      selected === "tab-1" ? /* @__PURE__ */ jsx46(Tab1, {}) : null,
+      selected === "tab-2" ? /* @__PURE__ */ jsx46(Tab2, {}) : null,
+      selected === "tab-3" ? /* @__PURE__ */ jsx46(Tab3, {}) : null
     ] })
   ] }) });
 }

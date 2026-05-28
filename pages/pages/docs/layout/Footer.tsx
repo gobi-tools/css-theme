@@ -11,14 +11,46 @@ export default function Footer({ theme }) {
       <section className="row">
         <div>
           <p>
-            A <code>footer</code> element is used to define the very last
-            piece of content in a page or section.
+            A <code>footer</code> element is used to define the very last piece of content in a page or a section.
             The simplest footer can contain text, links, etc.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutFooterSimple, theme, route)} />
         </div>
         <div>
-
+          <pre><code>
+            {`<footer>
+  This is a simple footer
+  with a <a href="...">link</a>.
+</footer>`}
+          </code></pre>
+        </div>
+      </section>
+      <section className="row">
+        <div>
+          <p>
+            More complex footers can contain information divided by columns, etc.
+          </p>
+          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutFooterComplex, theme, route)} />
+        </div>
+        <div>
+          <pre><code>
+            {`<footer>
+  <article>
+    <div class="row">
+      <div>
+        <nav>
+          <ul>...</ul>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <ul>...</ul>
+        </nav>
+      </div>
+    </div>
+  </article>
+</footer>`}
+          </code></pre>
         </div>
       </section>
     </DocLayout>

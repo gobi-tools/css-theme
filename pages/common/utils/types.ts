@@ -55,6 +55,7 @@ export enum EExamples {
   LayoutHeaderComplex = 'layout-header-sub',
   LayoutHeaderSection = 'layout-header-section',
   LayoutFooterSimple = 'layout-footer-simple',
+  LayoutFooterComplex = 'layout-footer-complex',
 };
 
 export enum ELinks {
