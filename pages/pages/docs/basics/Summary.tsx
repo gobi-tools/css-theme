@@ -73,12 +73,7 @@ export default function Summary({ theme }) {
           </details>
           <p>
             <small>
-              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
-            </small>
-          </p>
-          <p>
-            <small>
-              You can learn more about cards <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>here</a>.
+              You can learn more about colors <a href={RouteMaster.doc(EDoc.Colors, theme, route)}>here</a> and cards <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>here</a>.
             </small>
           </p>
         </div>

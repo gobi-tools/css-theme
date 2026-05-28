@@ -71,8 +71,8 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "typography" /* Typographty */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("typography" /* Typographty */, theme, route), children: "Typography" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "buttons" /* Buttons */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme, route), children: "Buttons" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "tags" /* Tags */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("tags" /* Tags */, theme, route), children: "Tags" }) }),
-          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "links" /* Links */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("links" /* Links */, theme, route), children: "Links" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "lists" /* Lists */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("lists" /* Lists */, theme, route), children: "Lists" }) }),
+          /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "links" /* Links */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("links" /* Links */, theme, route), children: "Links" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "blockquotes" /* Blockquotes */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("blockquotes" /* Blockquotes */, theme, route), children: "Blokquotes" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "summary" /* Summary */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("summary" /* Summary */, theme, route), children: "Summary" }) }),
           /* @__PURE__ */ jsx2("li", { "aria-selected": selectedDoc === "code" /* Code */, children: /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("code" /* Code */, theme, route), children: "Code" }) }),
@@ -645,11 +645,8 @@ function Blockquotes({ theme }) {
         /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsxs5("small", { children: [
           "You can learn more about groups ",
           /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
-          "."
-        ] }) }),
-        /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsxs5("small", { children: [
-          "You can learn more about icons ",
-          /* @__PURE__ */ jsx5("a", { href: "", children: "here" }),
+          " and about icons ",
+          /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("icons" /* Icons */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -705,18 +702,11 @@ function Blockquotes({ theme }) {
           /* @__PURE__ */ jsx5("p", { children: "Important Information" }),
           /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsx5("button", { children: "Click me" }) })
         ] }) }) }),
-        /* @__PURE__ */ jsxs5("hgroup", { children: [
-          /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsxs5("small", { children: [
-            "You can learn more about classes ",
-            /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
-            "."
-          ] }) }),
-          /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsxs5("small", { children: [
-            "You can learn more about semantic colors ",
-            /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "here" }),
-            "."
-          ] }) })
-        ] })
+        /* @__PURE__ */ jsx5("hgroup", { children: /* @__PURE__ */ jsx5("p", { children: /* @__PURE__ */ jsxs5("small", { children: [
+          "You can learn more about colors ",
+          /* @__PURE__ */ jsx5("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "here" }),
+          "."
+        ] }) }) })
       ] }),
       /* @__PURE__ */ jsx5("div", { children: /* @__PURE__ */ jsx5("pre", { children: /* @__PURE__ */ jsx5("code", { children: `<blockquote class="success">
   <hgroup>
@@ -874,50 +864,27 @@ function Figures({ theme }) {
 // pages/pages/docs/basics/Links.tsx
 import { jsx as jsx8, jsxs as jsxs8 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Links({ theme }) {
-  const route = useRoute();
   return /* @__PURE__ */ jsx8(DocLayout, { theme, children: /* @__PURE__ */ jsxs8("section", { className: "row", children: [
     /* @__PURE__ */ jsxs8("div", { children: [
-      /* @__PURE__ */ jsxs8("p", { children: [
-        "Navigation elements can be styled in a standard, success or error way (by applying the corresponding ",
-        /* @__PURE__ */ jsx8("code", { children: "success" }),
-        " and ",
-        /* @__PURE__ */ jsx8("code", { children: "error" }),
-        " classes)"
-      ] }),
-      /* @__PURE__ */ jsxs8("p", { children: [
-        "Basic ",
-        /* @__PURE__ */ jsx8("a", { href: "", children: "link" }),
-        "."
-      ] }),
-      /* @__PURE__ */ jsxs8("p", { children: [
-        "Success ",
-        /* @__PURE__ */ jsx8("a", { href: "", className: "success", children: "link" }),
-        "."
-      ] }),
-      /* @__PURE__ */ jsxs8("p", { children: [
-        "Error ",
-        /* @__PURE__ */ jsx8("a", { href: "", className: "error", children: "link" }),
-        "."
-      ] }),
-      /* @__PURE__ */ jsx8("p", { children: /* @__PURE__ */ jsxs8("small", { children: [
-        "You can learn more about classes ",
-        /* @__PURE__ */ jsx8("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
-        "."
-      ] }) })
+      /* @__PURE__ */ jsx8("p", { children: "Anchor elements are used to create links to other pages, email addresses, locations in the same page or anything else a URL can address." }),
+      /* @__PURE__ */ jsxs8("ul", { children: [
+        /* @__PURE__ */ jsx8("li", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "website.com" }) }),
+        /* @__PURE__ */ jsx8("li", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "email@test.com" }) }),
+        /* @__PURE__ */ jsx8("li", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "/#location" }) })
+      ] })
     ] }),
-    /* @__PURE__ */ jsx8("div", { children: /* @__PURE__ */ jsx8("pre", { children: /* @__PURE__ */ jsx8("code", { children: `<a href="...">
-  link
+    /* @__PURE__ */ jsx8("div", { children: /* @__PURE__ */ jsx8("pre", { children: /* @__PURE__ */ jsx8("code", { children: `<a href="https://website.com">
+  website.com
 </a>
-<a 
-  href="..." 
-  class="success">
-  success
+
+<a href="mailto:email@test.com">
+  email@test.com
 </a>
-<a 
-  href="..." 
-  class="error">
-  error
-</a>` }) }) })
+
+<a href="/#location>
+  /#location
+</a>
+` }) }) })
   ] }) });
 }
 
@@ -975,12 +942,9 @@ function Summary({ theme }) {
           ] })
         ] }),
         /* @__PURE__ */ jsx9("p", { children: /* @__PURE__ */ jsxs9("small", { children: [
-          "You can learn more about classes ",
-          /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
-          "."
-        ] }) }),
-        /* @__PURE__ */ jsx9("p", { children: /* @__PURE__ */ jsxs9("small", { children: [
-          "You can learn more about cards ",
+          "You can learn more about colors ",
+          /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "here" }),
+          " and cards ",
           /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "here" }),
           "."
         ] }) })
@@ -1129,49 +1093,28 @@ function Table({ theme }) {
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }) }),
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("code", { children: "04b720d8" }) }),
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("a", { href: "", children: "@user-1" }) }),
-              /* @__PURE__ */ jsxs10("td", { children: [
-                /* @__PURE__ */ jsx10("button", { children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                  /* @__PURE__ */ jsx10("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
-                  /* @__PURE__ */ jsx10("path", { d: "m15 5 4 4" })
-                ] }) }),
-                /* @__PURE__ */ jsx10("button", { className: "error", children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Delete", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                  /* @__PURE__ */ jsx10("path", { d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" }),
-                  /* @__PURE__ */ jsx10("path", { d: "M3 6h18" }),
-                  /* @__PURE__ */ jsx10("path", { d: "M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" })
-                ] }) })
-              ] })
+              /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("button", { children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+                /* @__PURE__ */ jsx10("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
+                /* @__PURE__ */ jsx10("path", { d: "m15 5 4 4" })
+              ] }) }) })
             ] }),
             /* @__PURE__ */ jsxs10("tr", { children: [
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }) }),
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("code", { children: "3edf8166" }) }),
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("a", { href: "", children: "@user-253" }) }),
-              /* @__PURE__ */ jsxs10("td", { children: [
-                /* @__PURE__ */ jsx10("button", { children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                  /* @__PURE__ */ jsx10("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
-                  /* @__PURE__ */ jsx10("path", { d: "m15 5 4 4" })
-                ] }) }),
-                /* @__PURE__ */ jsx10("button", { className: "error", children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Delete", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                  /* @__PURE__ */ jsx10("path", { d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" }),
-                  /* @__PURE__ */ jsx10("path", { d: "M3 6h18" }),
-                  /* @__PURE__ */ jsx10("path", { d: "M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" })
-                ] }) })
-              ] })
+              /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("button", { children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+                /* @__PURE__ */ jsx10("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
+                /* @__PURE__ */ jsx10("path", { d: "m15 5 4 4" })
+              ] }) }) })
             ] }),
             /* @__PURE__ */ jsxs10("tr", { children: [
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/32/32", alt: "profile pic" }) }),
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("code", { children: "90b4e981" }) }),
               /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("a", { href: "", children: "@user-1182" }) }),
-              /* @__PURE__ */ jsxs10("td", { children: [
-                /* @__PURE__ */ jsx10("button", { children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                  /* @__PURE__ */ jsx10("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
-                  /* @__PURE__ */ jsx10("path", { d: "m15 5 4 4" })
-                ] }) }),
-                /* @__PURE__ */ jsx10("button", { className: "error", children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Delete", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                  /* @__PURE__ */ jsx10("path", { d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" }),
-                  /* @__PURE__ */ jsx10("path", { d: "M3 6h18" }),
-                  /* @__PURE__ */ jsx10("path", { d: "M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" })
-                ] }) })
-              ] })
+              /* @__PURE__ */ jsx10("td", { children: /* @__PURE__ */ jsx10("button", { children: /* @__PURE__ */ jsxs10("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+                /* @__PURE__ */ jsx10("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
+                /* @__PURE__ */ jsx10("path", { d: "m15 5 4 4" })
+              ] }) }) })
             ] })
           ] })
         ] }),
@@ -1213,9 +1156,6 @@ function Table({ theme }) {
       <td>
         <button>
           <svg...></svg>
-        </button>
-        <button class="error">
-          <avg...></svg>
         </button>
       </td>
     </tr>

@@ -54,12 +54,7 @@ export default function Blockquotes({ theme }) {
           </blockquote>
           <p>
             <small>
-              You can learn more about groups <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>here</a>.
-            </small>
-          </p>
-          <p>
-            <small>
-              You can learn more about icons <a href="">here</a>.
+              You can learn more about groups <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>here</a> and about icons <a href={RouteMaster.doc(EDoc.Icons, theme, route)}>here</a>.
             </small>
           </p>
         </div>
@@ -127,12 +122,7 @@ export default function Blockquotes({ theme }) {
           <hgroup>
             <p>
               <small>
-                You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
-              </small>
-            </p>
-            <p>
-              <small>
-                You can learn more about semantic colors <a href={RouteMaster.doc(EDoc.Colors, theme, route)}>here</a>.
+                You can learn more about colors <a href={RouteMaster.doc(EDoc.Colors, theme, route)}>here</a>.
               </small>
             </p>
           </hgroup>

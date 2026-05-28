@@ -51,11 +51,11 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Tags}>
                 <a href={RouteMaster.doc(EDoc.Tags, theme, route)}>Tags</a>
               </li>
-              <li aria-selected={selectedDoc === EDoc.Links}>
-                <a href={RouteMaster.doc(EDoc.Links, theme, route)}>Links</a>
-              </li>
               <li aria-selected={selectedDoc === EDoc.Lists}>
                 <a href={RouteMaster.doc(EDoc.Lists, theme, route)}>Lists</a>
+              </li>
+              <li aria-selected={selectedDoc === EDoc.Links}>
+                <a href={RouteMaster.doc(EDoc.Links, theme, route)}>Links</a>
               </li>
               <li aria-selected={selectedDoc === EDoc.Blockquotes}>
                 <a href={RouteMaster.doc(EDoc.Blockquotes, theme, route)}>Blokquotes</a>

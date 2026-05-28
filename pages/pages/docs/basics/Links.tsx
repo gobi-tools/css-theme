@@ -1,50 +1,34 @@
 import DocLayout from "../../../common/components/DocsLayout";
-import { useRoute } from "../../../common/effects/useRoute";
-import { RouteMaster } from "../../../common/utils/routes";
-import { EDoc } from "../../../common/utils/types";
 
 export default function Links({ theme }) {
-  const route = useRoute();
-    
   return (
     <DocLayout theme={theme}>
       <section className="row">
         <div>
           <p>
-            Navigation elements can be styled in a
-            standard, success or error way (by applying
-            the corresponding <code>success</code> and <code>error</code> classes)
+            Anchor elements are used to create links to other pages, email addresses, locations in the same page 
+            or anything else a URL can address.
           </p>
-          <p>
-            Basic <a href="">link</a>.
-          </p>
-          <p>
-            Success <a href="" className="success">link</a>.
-          </p>
-          <p>
-            Error <a href="" className="error">link</a>.
-          </p>
-          <p>
-            <small>
-              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
-            </small>
-          </p>
+          <ul>
+            <li><a href="">website.com</a></li>
+            <li><a href="">email@test.com</a></li>
+            <li><a href="">{"/#location"}</a></li>
+          </ul>
         </div>
         <div>
           <pre><code>
-            {`<a href="...">
-  link
+            {`<a href="https://website.com">
+  website.com
 </a>
-<a 
-  href="..." 
-  class="success">
-  success
+
+<a href="mailto:email@test.com">
+  email@test.com
 </a>
-<a 
-  href="..." 
-  class="error">
-  error
-</a>`}
+
+<a href="/#location>
+  /#location
+</a>
+`}
           </code></pre>
         </div>
       </section>
