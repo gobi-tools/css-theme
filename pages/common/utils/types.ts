@@ -19,6 +19,7 @@ export enum EDoc {
   FormsValidation = 'forms-validation', 
   // layout
   Header = 'header',
+  Footer = 'footer',
   // dialogs
   Modal = 'modal',
   // navigation
@@ -53,6 +54,7 @@ export enum EExamples {
   LayoutHeaderSimple = 'layout-header-simple',
   LayoutHeaderComplex = 'layout-header-sub',
   LayoutHeaderSection = 'layout-header-section',
+  LayoutFooterSimple = 'layout-footer-simple',
 };
 
 export enum ELinks {

@@ -11,7 +11,7 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
-            A <code>header</code> is used to define the introductory content of a page or a section.
+            A <code>header</code> element is used to define the introductory content of a page or a section.
             The simplest top level header can contain a navigation element (<code>nav</code> or <code>menu</code>):
           </p>
           <iframe scrolling="no" width="100%" height={275} src={RouteMaster.example(EExamples.LayoutHeaderSimple, theme, route)} />

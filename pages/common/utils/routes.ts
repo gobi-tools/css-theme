@@ -39,6 +39,8 @@ import MobileNav from "../../pages/examples/MobileNav";
 import MobileTabs from "../../pages/examples/MobileTabs";
 import MobileTypography from "../../pages/examples/MobileTypography";
 import Colors from "../../pages/docs/custom/Colors";
+import Footer from "../../pages/docs/layout/Footer";
+import LayoutFooterSimple from "../../pages/examples/LayoutFooterSimple";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -70,6 +72,7 @@ export class RouteMaster {
       case EDoc.FormsValidation: return `${base}${theme}/pages/docs/forms/${htmlName(FormsValidation)}`;
       // layout
       case EDoc.Header: return `${base}${theme}/pages/docs/layout/${htmlName(Header)}`;
+      case EDoc.Footer: return `${base}${theme}/pages/docs/layout/${htmlName(Footer)}`;
       // modal
       case EDoc.Modal: return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
       // navigation
@@ -123,6 +126,7 @@ export class RouteMaster {
       case 'layout': {
         switch (doc) {
           case htmlName(Header): return EDoc.Header;
+          case htmlName(Footer): return EDoc.Footer;
         }
       }
       case 'dialogs': {
@@ -167,6 +171,7 @@ export class RouteMaster {
       case EExamples.LayoutHeaderSimple: return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderNav)}`;
       case EExamples.LayoutHeaderComplex: return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderComplex)}`;
       case EExamples.LayoutHeaderSection: return `${base}${theme}/pages/examples/${htmlName(LayoutHeaderSection)}`;
+      case EExamples.LayoutFooterSimple: return `${base}${theme}/pages/examples/${htmlName(LayoutFooterSimple)}`;
       case EExamples.MobileColumns: return `${base}${theme}/pages/examples/${htmlName(MobileColumns)}`;
       case EExamples.MobileMenu: return `${base}${theme}/pages/examples/${htmlName(MobileMenu)}`;
       case EExamples.MobileNav: return `${base}${theme}/pages/examples/${htmlName(MobileNav)}`;

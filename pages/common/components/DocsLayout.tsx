@@ -98,6 +98,9 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Header}>
                 <a href={RouteMaster.doc(EDoc.Header, theme, route)}>Headers</a>
               </li>
+              <li aria-selected={selectedDoc === EDoc.Footer}>
+                <a href={RouteMaster.doc(EDoc.Footer, theme, route)}>Footers</a>
+              </li>
             </menu>
 
             <menu>
