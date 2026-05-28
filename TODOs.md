@@ -22,13 +22,12 @@ Improvements
 ------------
 - [x] hgroup support for better header + subheader cases
 - [x] turn the “rounded” class into a var for all images
-- [ ] create classes for Primary / Secondary / etc that can be applied for text, elements, etc
+- [x] create classes for Primary / Secondary / etc that can be applied for text, elements, etc
   - [x] primary
   - [x] primary-faint (?)
-  - [ ] secondary 
-  - [ ] secondary-faint (?)
+  - [x] secondary 
+  - [x] secondary-faint (?)
 - [x] row & col-2/3/4/5/6 don't actually work very well; implement tailwind option
-- [ ] headers & links should look a bit different
 - [ ] redo CSS with nesting
 - [ ] redo the horizontal spacing to be based on "ch"
 - [ ] redo aside and any other fixed widths to be based on "ch"
