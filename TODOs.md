@@ -50,6 +50,8 @@ Improvements
 - [ ][investigate] instead of the "group" class 
   -> do what [picocss](https://picocss.com/docs/group) does and use the role="group"
   so in this  way we get rif of more classes
+- [ ][investigate] a way to get rid of the "circle" class by creating round images
+ in some other way ... 
 
 Bugs
 ----

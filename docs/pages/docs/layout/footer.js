@@ -4152,11 +4152,11 @@ function LayoutFooterSimple() {
       /* @__PURE__ */ jsx41("h1", { children: "Title" }),
       /* @__PURE__ */ jsx41("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
     ] }),
-    /* @__PURE__ */ jsxs41("footer", { children: [
+    /* @__PURE__ */ jsx41("footer", { children: /* @__PURE__ */ jsxs41("div", { children: [
       "This is a simple footer with a ",
       /* @__PURE__ */ jsx41("a", { href: "", children: "link" }),
       "."
-    ] })
+    ] }) })
   ] });
 }
 
@@ -4581,8 +4581,10 @@ function Footer({ theme }) {
         /* @__PURE__ */ jsx46("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-footer-simple" /* LayoutFooterSimple */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx46("div", { children: /* @__PURE__ */ jsx46("pre", { children: /* @__PURE__ */ jsx46("code", { children: `<footer>
-  This is a simple footer
-  with a <a href="...">link</a>.
+  <div>
+    This is a simple footer
+    with a <a href="...">link</a>.
+  </div>
 </footer>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs46("section", { className: "row", children: [

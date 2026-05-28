@@ -4247,8 +4247,10 @@ function Footer({ theme }) {
         /* @__PURE__ */ jsx42("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-footer-simple" /* LayoutFooterSimple */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx42("div", { children: /* @__PURE__ */ jsx42("pre", { children: /* @__PURE__ */ jsx42("code", { children: `<footer>
-  This is a simple footer
-  with a <a href="...">link</a>.
+  <div>
+    This is a simple footer
+    with a <a href="...">link</a>.
+  </div>
 </footer>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs42("section", { className: "row", children: [
@@ -4284,11 +4286,11 @@ function LayoutFooterSimple() {
       /* @__PURE__ */ jsx43("h1", { children: "Title" }),
       /* @__PURE__ */ jsx43("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
     ] }),
-    /* @__PURE__ */ jsxs43("footer", { children: [
+    /* @__PURE__ */ jsx43("footer", { children: /* @__PURE__ */ jsxs43("div", { children: [
       "This is a simple footer with a ",
       /* @__PURE__ */ jsx43("a", { href: "", children: "link" }),
       "."
-    ] })
+    ] }) })
   ] });
 }
 

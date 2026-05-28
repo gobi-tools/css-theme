@@ -7,7 +7,9 @@ export default function LayoutFooterSimple() {
       </p>
     </main>
     <footer>
-      This is a simple footer with a <a href="">link</a>.
+      <div>
+        This is a simple footer with a <a href="">link</a>.
+      </div>
     </footer>
   </>;
 }

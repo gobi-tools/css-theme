@@ -19,8 +19,10 @@ export default function Footer({ theme }) {
         <div>
           <pre><code>
             {`<footer>
-  This is a simple footer
-  with a <a href="...">link</a>.
+  <div>
+    This is a simple footer
+    with a <a href="...">link</a>.
+  </div>
 </footer>`}
           </code></pre>
         </div>
