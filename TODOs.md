@@ -104,12 +104,11 @@ Bugs/Platform
 Docs
 ----
 - [x] add examples for section headers
-- [ ] add docs for footer
-- [ ] add docs for main
+- [x] add docs for footer
 - [x] On [summary](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/summary.html) page, on mobile,
   the vertical distance between demo & code is too small
 - [x] Clicking the "menu sub-nav" button on mobile only works once  
-- [ ] [Table](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/table.html) example on mobile does not look good
+- [x] [Table](https://gobi-tools.github.io/css-theme/default/pages/docs/basics/table.html) example on mobile does not look good
 - [x] [Form/Checkbox](https://gobi-tools.github.io/css-theme/default/pages/docs/forms/forms_checkbox.html) last example: distance
   between example & code on mobile is too small
 - [x] The search & select menu [here](https://gobi-tools.github.io/css-theme/default/pages/docs/navigation/navigation.html) does 
