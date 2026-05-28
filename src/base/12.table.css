@@ -29,11 +29,6 @@ tr:last-child>td {
   border-bottom: none;
 }
 
-th:first-child,
-td:first-child {
-  padding-left: var(--space-xs);
-}
-
 th:last-child,
 td:last-child {
   padding-right: var(--space-xs);

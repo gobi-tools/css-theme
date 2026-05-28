@@ -3184,77 +3184,45 @@ function Classes({ theme }) {
   return /* @__PURE__ */ jsx24(DocLayout, { theme, children: /* @__PURE__ */ jsx24("section", { children: /* @__PURE__ */ jsxs24("div", { children: [
     /* @__PURE__ */ jsxs24("p", { children: [
       PRODUCT_NAME,
-      " aims to be plug & play as much as possible. In this section we've also seen a number of CSS classes that can be used to allow it to support many more cases."
+      " aims to style elements purely based on their semantic meaning or on the relationships between elements. However, it also provides a limited set of classes that can be used to create more advanced layouts."
     ] }),
-    /* @__PURE__ */ jsx24("p", { children: "Below is the full list of supported classes and the effect they produce:" }),
     /* @__PURE__ */ jsxs24("table", { children: [
       /* @__PURE__ */ jsx24("thead", { children: /* @__PURE__ */ jsxs24("tr", { children: [
+        /* @__PURE__ */ jsx24("th", { children: "Domain" }),
         /* @__PURE__ */ jsx24("th", { children: "Class" }),
         /* @__PURE__ */ jsx24("th", { children: "Effect" })
       ] }) }),
       /* @__PURE__ */ jsxs24("tbody", { children: [
         /* @__PURE__ */ jsxs24("tr", { children: [
-          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "align-center" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Aligns elements centrally on the horizontal axis. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("header" /* Header */, theme, route), children: "here" }),
-            "."
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxs24("tr", { children: [
-          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "card" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Transforms an element into a card. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "here" }),
-            "."
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxs24("tr", { children: [
-          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "circle" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Rounds the edges off an element so it's a perfect circle. Useful for images. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "here" }),
-            "."
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { rowSpan: 3, children: "Containers" }),
           /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "container-medium" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Sets the maximum size of the container to ",
-            /* @__PURE__ */ jsx24("code", { children: "var(--width-container-medium)" }),
-            ". See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
-            "."
-          ] })
+          /* @__PURE__ */ jsx24("td", { children: "Sets the maximum size of the container to 800px." })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
           /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "container-narrow" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Sets the maximum size of the container to ",
-            /* @__PURE__ */ jsx24("code", { children: "var(--width-container-narrow)" }),
-            ". See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
-            "."
-          ] })
+          /* @__PURE__ */ jsx24("td", { children: "Sets the maximum size of the container to 1200px." })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
           /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "container-wide" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Sets the maximum size of the container to ",
-            /* @__PURE__ */ jsx24("code", { children: "var(--width-container-wide)" }),
-            ". See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "here" }),
-            "."
-          ] })
+          /* @__PURE__ */ jsx24("td", { children: "Sets the maximum size of the container to 1600px." })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
-          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "error" }) }),
+          /* @__PURE__ */ jsx24("td", { rowSpan: 5, children: "Layout" }),
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "row" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Transforms its child elements into horizontally aligned columns." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "col" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Instructs an element to occupy as much space as possible. If all elements have this class they will all have equal width." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "col-N" }) }),
           /* @__PURE__ */ jsxs24("td", { children: [
-            "Applies an error-type style of an element by changing its background, foreground or text color. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("tags" /* Tags */, theme, route), children: "here" }),
-            " or ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "here" }),
-            "."
+            "Horizontal space is divided in 12 equal columns. From ",
+            /* @__PURE__ */ jsx24("code", { children: "col-1" }),
+            " to ",
+            /* @__PURE__ */ jsx24("code", { children: "col-12" }),
+            " we can progressively specify columns of greater and greater width."
           ] })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
@@ -3262,54 +3230,64 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsxs24("td", { children: [
             "Used in between ",
             /* @__PURE__ */ jsx24("code", { children: "col" }),
-            " elements. Provides a gap between them so they can be separated into left and right sides. Has no effect on mobile displays. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("navigation" /* Navigation */, theme, route), children: "here" }),
-            "."
+            " elements. Provides a gap between them so they can be separated into left and right sides. Has no effect on mobile displays."
           ] })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
           /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "group" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Groups various elements, like buttons or inputs, together, horizontally. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "here" }),
-            "."
-          ] })
+          /* @__PURE__ */ jsx24("td", { children: "Groups various elements, like buttons or inputs, together, horizontally." })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { rowSpan: 3, children: "Mobile" }),
           /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "hide-on-mobile" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Hides an element if on small displays. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "here" }),
-            "."
-          ] })
+          /* @__PURE__ */ jsx24("td", { children: "Hides an element if on small displays." })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
           /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "hide-on-desktop" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Hides an element if on large displays." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "disable-mobile" }) }),
           /* @__PURE__ */ jsxs24("td", { children: [
-            "Hides an element if on large displays. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("mobile" /* Mobile */, theme, route), children: "here" }),
-            "."
+            "Disable layout changes on small displays. It can be applied to elements that have the ",
+            /* @__PURE__ */ jsx24("code", { children: "row" }),
+            " class applied, nav bars, menus, etc to force them not to change their display on small screens."
           ] })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
-          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "row" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Transforms child elements into horizontally aligned columns. Also the ",
-            /* @__PURE__ */ jsx24("code", { children: "col-N" }),
-            " class. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "here" }),
-            "."
-          ] })
+          /* @__PURE__ */ jsx24("td", { rowSpan: 5, children: "Colors" }),
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "primary" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Depending on context, it changes background, text or border colors to match various hues derived from the theme's primary color." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "secondary" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Depening on context, it changes background, text or border colors to match various hues derived from the theme's secondary color." })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
           /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "success" }) }),
-          /* @__PURE__ */ jsxs24("td", { children: [
-            "Applies a success-type style to an element by changing its background, foreground or text color. See ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("buttons" /* Buttons */, theme, route), children: "here" }),
-            " or ",
-            /* @__PURE__ */ jsx24("a", { href: RouteMaster.doc("summary" /* Summary */, theme, route), children: "here" }),
-            "."
-          ] })
+          /* @__PURE__ */ jsx24("td", { children: "Depending on context, it changes background, text or border colors to match various hues derived from the theme's success color." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "error" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Depending on context, it changes background, text or border colors to match various hues derived from the theme's error color." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "inverted" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Takes any primary, secondary, success or error color scheme and inverts it such that the background color is a lot more proeminent and the text color is usually a contrasting one." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { rowSpan: 2, children: "Style" }),
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "card" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Transforms an element into a card." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "circle" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Rounds the edges off an element so it's a perfect circle. Useful for images." })
+        ] }),
+        /* @__PURE__ */ jsxs24("tr", { children: [
+          /* @__PURE__ */ jsx24("td", { rowSpan: 1, children: "Alignment" }),
+          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "align-center" }) }),
+          /* @__PURE__ */ jsx24("td", { children: "Aligns elements centrally on the horizontal axis." })
         ] })
       ] })
     ] })
