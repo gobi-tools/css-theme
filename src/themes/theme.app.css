@@ -29,6 +29,10 @@
   /* -note applies to: "fieldsets", "card" class  */
   --border-radius-card: 4px;
   --border-bottom-width-card: 5px;
+
+  /* override heights */
+  --height-button: 42px;
+  --height-input: 42px;
 }
 
 :root {
