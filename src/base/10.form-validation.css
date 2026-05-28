@@ -17,7 +17,7 @@
 :is(input, textarea):not(:placeholder-shown):valid + .error,
 :is(input, textarea):not(:placeholder-shown):focus + .error,
 :is(input, textarea):placeholder-shown + .error {
-  background-color: var(--color-bg) !important;
+  background-color: transparent !important;
   color: var(--color-txt) !important;
 }
 

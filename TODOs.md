@@ -99,6 +99,7 @@ Bugs/Platform
 - [x][Mobile Safari/Chrome] Summary with .card class has extra bottom padding or gap
 - [x][Mobile Safari/Chrome] Normal navigation example makes the whole viewport too wide, generating horizontal scrolling
 - [x][Mobile Safari/Chrome] Selector colors are off on all themes;
+- [ ][Mobile Safari/Chrome] on a real mobile, the grouped [app-theme] inputs have different heights ... 
 
 Docs
 ----
