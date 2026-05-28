@@ -31,8 +31,8 @@
   --border-bottom-width-card: 5px;
 
   /* override heights */
-  --height-button: 42px;
-  --height-input: 42px;
+  --height-button: 43px;
+  --height-input: 43px;
 }
 
 :root {
