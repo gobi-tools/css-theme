@@ -6,7 +6,15 @@
 &lt;mark&gt;
   &lt;span&gt;error&lt;/span&gt;
   &lt;svg ...&gt;&lt;/svg&gt;
-&lt;/mark&gt;</code></pre></div></section><section class="row"><div><p>You  can assign the <code>success</code> and <code>error</code> classes to change the appearance of the highlighted content.</p><p><mark class="success">Process OK</mark><mark class="error">Error 400</mark></p><p><small>You can learn more about classes <a href="/bold/pages/docs/custom/classes.html">here</a>.</small></p></div><div><pre><code>&lt;mark class=&quot;success&quot;&gt;
+&lt;/mark&gt;</code></pre></div></section><section class="row"><div><p>You  can assign the <code>primary</code>, <code>secondary</code>, <code>success</code> or <code>error</code> classes to change the appearance of the highlighted content. You can add the <code>inverted</code> class to each of the previous to highlight the content even more.</p><p><mark class="primary">#theme</mark><mark class="secondary">#second</mark><mark class="success">Process OK</mark><mark class="error">Error 400</mark></p><p><mark class="primary inverted">#theme</mark><mark class="secondary inverted">#second</mark><mark class="success inverted">Process OK</mark><mark class="error inverted">Error 400</mark></p><p><small>You can learn more about colors <a href="/bold/pages/docs/custom/colors.html">here</a>.</small></p></div><div><pre><code>&lt;!-- with or without --&gt;
+&lt;!-- the inverted class --&gt;
+&lt;mark class=&quot;primary&quot;&gt;
+  #theme
+&lt;/mark&gt;
+&lt;mark class=&quot;secondary&quot;&gt;
+  #second
+&lt;/mark&gt;
+&lt;mark class=&quot;success&quot;&gt;
   Process OK
 &lt;/mark&gt;
 &lt;mark class=&quot;error&quot;&gt;

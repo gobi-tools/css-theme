@@ -84,7 +84,7 @@ export default function Buttons({ theme }) {
           </p>
           <p>
             <small>
-              You can learn more about icons <a href="">here</a>.
+              You can learn more about icons <a href={RouteMaster.doc(EDoc.Icons, theme, route)}>here</a>.
             </small>
           </p>
         </div>
@@ -144,9 +144,11 @@ export default function Buttons({ theme }) {
       <section className="row">
         <div>
           <p>
-            You can style buttons semantically with the help of the <code>success</code> and <code>error</code> classes.
+            By default, buttons are styled using the <b>primary</b> color, which impacts their background, border or text color. 
+            You can change that by applying classes like <code>secondary</code>, <code>success</code> or <code>error</code>. 
           </p>
           <p>
+            <button className="secondary">Action</button>
             <button className="success">Confirm</button>
             <button type="reset" className="error">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -161,12 +163,17 @@ export default function Buttons({ theme }) {
           </p>
           <p>
             <small>
-              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
+              You can learn more about colors <a href={RouteMaster.doc(EDoc.Colors, theme, route)}>here</a>.
             </small>
           </p>
         </div>
         <div>
-          <pre><code>{`<button 
+          <pre><code>{`<button
+  class="secondary">
+  Action
+</button>
+
+<button 
   class="success">
   Confirm
 </button>

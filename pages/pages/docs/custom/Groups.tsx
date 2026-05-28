@@ -50,7 +50,7 @@ export default function Groups({ theme }) {
     #test
   </mark>
   <mark 
-    className="success">
+    class="success">
     v1.0.0
   </mark>
 </p>`}

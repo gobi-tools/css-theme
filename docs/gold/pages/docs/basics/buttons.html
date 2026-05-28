@@ -9,7 +9,7 @@
   type=&quot;reset&quot; 
   disabled&gt;
   Button
-&lt;/button&gt;</code></pre></div></section><section class="row"><div><p>Buttons can be improved by adding svg icons, either to the left or to the right of the main button title.</p><p><button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><span>Home</span></button><button type="reset"><span>Play</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4v16"></path><path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"></path></svg></button></p><p><small>You can learn more about icons <a href="">here</a>.</small></p></div><div><pre><code>&lt;!-- left side icon --&gt;
+&lt;/button&gt;</code></pre></div></section><section class="row"><div><p>Buttons can be improved by adding svg icons, either to the left or to the right of the main button title.</p><p><button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><span>Home</span></button><button type="reset"><span>Play</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4v16"></path><path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"></path></svg></button></p><p><small>You can learn more about icons <a href="/gold/pages/docs/extra/icons.html">here</a>.</small></p></div><div><pre><code>&lt;!-- left side icon --&gt;
 &lt;button&gt;
   &lt;svg ...&gt;&lt;/svg&gt;
   &lt;span&gt;Home&lt;/span&gt; 
@@ -24,7 +24,12 @@
 &lt;/button&gt;
 &lt;button type=&quot;reset&quot;&gt;
   &lt;dvg ...&gt;&lt;/svg&gt;
-&lt;/button&gt;</code></pre></div></section><section class="row"><div><p>You can style buttons semantically with the help of the <code>success</code> and <code>error</code> classes.</p><p><button class="success">Confirm</button><button type="reset" class="error"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg><span>Cancel</span></button></p><p><small>You can learn more about classes <a href="/gold/pages/docs/custom/classes.html">here</a>.</small></p></div><div><pre><code>&lt;button 
+&lt;/button&gt;</code></pre></div></section><section class="row"><div><p>By default, buttons are styled using the <b>primary</b> color, which impacts their background, border or text color. You can change that by applying classes like <code>secondary</code>, <code>success</code> or <code>error</code>.</p><p><button class="secondary">Action</button><button class="success">Confirm</button><button type="reset" class="error"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg><span>Cancel</span></button></p><p><small>You can learn more about colors <a href="/gold/pages/docs/custom/colors.html">here</a>.</small></p></div><div><pre><code>&lt;button
+  class=&quot;secondary&quot;&gt;
+  Action
+&lt;/button&gt;
+
+&lt;button 
   class=&quot;success&quot;&gt;
   Confirm
 &lt;/button&gt;

@@ -74,22 +74,39 @@ export default function Tags({ theme }) {
       <section className="row">
         <div>
           <p>
-            You  can assign the <code>success</code> and <code>error</code> classes
-            to change the appearance of the highlighted content.
+            You  can assign the <code>primary</code>, <code>secondary</code>, <code>success</code> or <code>error</code> classes
+            to change the appearance of the highlighted content. You can add the <code>inverted</code> class to each of the 
+            previous to highlight the content even more.
           </p>
           <p>
+            <mark className="primary">#theme</mark>
+            <mark className="secondary">#second</mark>
             <mark className="success">Process OK</mark>
             <mark className="error">Error 400</mark>
           </p>
           <p>
+            <mark className="primary inverted">#theme</mark>
+            <mark className="secondary inverted">#second</mark>
+            <mark className="success inverted">Process OK</mark>
+            <mark className="error inverted">Error 400</mark>
+          </p>
+          <p>
             <small>
-              You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
+              You can learn more about colors <a href={RouteMaster.doc(EDoc.Colors, theme, route)}>here</a>.
             </small>
           </p>
         </div>
         <div>
           <pre><code>
-            {`<mark class="success">
+            {`<!-- with or without -->
+<!-- the inverted class -->
+<mark class="primary">
+  #theme
+</mark>
+<mark class="secondary">
+  #second
+</mark>
+<mark class="success">
   Process OK
 </mark>
 <mark class="error">

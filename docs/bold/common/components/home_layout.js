@@ -211,7 +211,7 @@ function Buttons({ theme }) {
         ] }),
         /* @__PURE__ */ jsx2("p", { children: /* @__PURE__ */ jsxs2("small", { children: [
           "You can learn more about icons ",
-          /* @__PURE__ */ jsx2("a", { href: "", children: "here" }),
+          /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("icons" /* Icons */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
@@ -285,13 +285,18 @@ function Buttons({ theme }) {
     /* @__PURE__ */ jsxs2("section", { className: "row", children: [
       /* @__PURE__ */ jsxs2("div", { children: [
         /* @__PURE__ */ jsxs2("p", { children: [
-          "You can style buttons semantically with the help of the ",
+          "By default, buttons are styled using the ",
+          /* @__PURE__ */ jsx2("b", { children: "primary" }),
+          " color, which impacts their background, border or text color. You can change that by applying classes like ",
+          /* @__PURE__ */ jsx2("code", { children: "secondary" }),
+          ", ",
           /* @__PURE__ */ jsx2("code", { children: "success" }),
-          " and ",
+          " or ",
           /* @__PURE__ */ jsx2("code", { children: "error" }),
-          " classes."
+          "."
         ] }),
         /* @__PURE__ */ jsxs2("p", { children: [
+          /* @__PURE__ */ jsx2("button", { className: "secondary", children: "Action" }),
           /* @__PURE__ */ jsx2("button", { className: "success", children: "Confirm" }),
           /* @__PURE__ */ jsxs2("button", { type: "reset", className: "error", children: [
             /* @__PURE__ */ jsxs2(
@@ -316,12 +321,17 @@ function Buttons({ theme }) {
           ] })
         ] }),
         /* @__PURE__ */ jsx2("p", { children: /* @__PURE__ */ jsxs2("small", { children: [
-          "You can learn more about classes ",
-          /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
+          "You can learn more about colors ",
+          /* @__PURE__ */ jsx2("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<button 
+      /* @__PURE__ */ jsx2("div", { children: /* @__PURE__ */ jsx2("pre", { children: /* @__PURE__ */ jsx2("code", { children: `<button
+  class="secondary">
+  Action
+</button>
+
+<button 
   class="success">
   Confirm
 </button>
@@ -1299,22 +1309,44 @@ function Tags({ theme }) {
       /* @__PURE__ */ jsxs10("div", { children: [
         /* @__PURE__ */ jsxs10("p", { children: [
           "You  can assign the ",
+          /* @__PURE__ */ jsx10("code", { children: "primary" }),
+          ", ",
+          /* @__PURE__ */ jsx10("code", { children: "secondary" }),
+          ", ",
           /* @__PURE__ */ jsx10("code", { children: "success" }),
-          " and ",
+          " or ",
           /* @__PURE__ */ jsx10("code", { children: "error" }),
-          " classes to change the appearance of the highlighted content."
+          " classes to change the appearance of the highlighted content. You can add the ",
+          /* @__PURE__ */ jsx10("code", { children: "inverted" }),
+          " class to each of the previous to highlight the content even more."
         ] }),
         /* @__PURE__ */ jsxs10("p", { children: [
+          /* @__PURE__ */ jsx10("mark", { className: "primary", children: "#theme" }),
+          /* @__PURE__ */ jsx10("mark", { className: "secondary", children: "#second" }),
           /* @__PURE__ */ jsx10("mark", { className: "success", children: "Process OK" }),
           /* @__PURE__ */ jsx10("mark", { className: "error", children: "Error 400" })
         ] }),
+        /* @__PURE__ */ jsxs10("p", { children: [
+          /* @__PURE__ */ jsx10("mark", { className: "primary inverted", children: "#theme" }),
+          /* @__PURE__ */ jsx10("mark", { className: "secondary inverted", children: "#second" }),
+          /* @__PURE__ */ jsx10("mark", { className: "success inverted", children: "Process OK" }),
+          /* @__PURE__ */ jsx10("mark", { className: "error inverted", children: "Error 400" })
+        ] }),
         /* @__PURE__ */ jsx10("p", { children: /* @__PURE__ */ jsxs10("small", { children: [
-          "You can learn more about classes ",
-          /* @__PURE__ */ jsx10("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
+          "You can learn more about colors ",
+          /* @__PURE__ */ jsx10("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "here" }),
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx10("div", { children: /* @__PURE__ */ jsx10("pre", { children: /* @__PURE__ */ jsx10("code", { children: `<mark class="success">
+      /* @__PURE__ */ jsx10("div", { children: /* @__PURE__ */ jsx10("pre", { children: /* @__PURE__ */ jsx10("code", { children: `<!-- with or without -->
+<!-- the inverted class -->
+<mark class="primary">
+  #theme
+</mark>
+<mark class="secondary">
+  #second
+</mark>
+<mark class="success">
   Process OK
 </mark>
 <mark class="error">
@@ -3593,7 +3625,7 @@ function Groups({ theme }) {
     #test
   </mark>
   <mark 
-    className="success">
+    class="success">
     v1.0.0
   </mark>
 </p>` }) }) })
