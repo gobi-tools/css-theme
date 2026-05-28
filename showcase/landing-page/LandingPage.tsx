@@ -147,7 +147,7 @@ export default function LandingPage() {
         </aside>
       </header>
       <footer>
-        <div className="primary">
+        <article className="primary">
           <div className="row">
             <div>
               <nav>
@@ -193,7 +193,7 @@ export default function LandingPage() {
             </div>
             <div className="gap"></div>
           </div>
-        </div>
+        </article>
       </footer>
     </>
   );
