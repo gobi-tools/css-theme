@@ -43,6 +43,9 @@ Improvements
 - [x] make 1st child of "header" that's not a nav act like a "hero", and get rid of the "hero" class.  
 - [ ] prefix all variables with the name so they don't collide with other names
 - [ ] try to match tailwind / blueprint / etc naming 
+
+Investigations
+--------------
 - [ ][investigate] instead of the "card" class 
   -> do what [picocss](https://picocss.com/docs/card) does and have an article as card 
   so in this way we get rid of the "card" class ... 
@@ -50,8 +53,9 @@ Improvements
 - [ ][investigate] instead of the "group" class 
   -> do what [picocss](https://picocss.com/docs/group) does and use the role="group"
   so in this  way we get rif of more classes
-- [ ][investigate] a way to get rid of the "circle" class by creating round images
+- [ ][investigate] a way to get rid of the ["circle"] class by creating round images
  in some other way ... 
+- [ ][investigate] instead of a ["gap"] class, use <hr> in various cases ... ? 
 
 Bugs
 ----

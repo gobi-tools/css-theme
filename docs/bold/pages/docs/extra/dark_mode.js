@@ -4144,6 +4144,10 @@ var RouteMaster = class _RouteMaster {
     const base = _RouteMaster.getBase(domain);
     return `${base}${theme}/`;
   }
+  static showcase(theme, domain) {
+    const base = _RouteMaster.getBase(domain);
+    return `${base}${theme}/showcases.html`;
+  }
   static doc(route, theme, domain) {
     const base = _RouteMaster.getBase(domain);
     switch (route) {
@@ -4344,6 +4348,10 @@ var RouteMaster = class _RouteMaster {
       case "mobile-typography" /* MobileTypography */:
         return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
     }
+  }
+  static showacses(showcase, domain) {
+    const base = _RouteMaster.getBase(domain);
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
   }
   static getBase(domain) {
     if (!domain) return "/";

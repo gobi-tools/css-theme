@@ -1,5 +1,5 @@
 import Buttons from "../../pages/docs/basics/Buttons";
-import { EDoc, EExamples, EThemes } from "./types";
+import { EDoc, EExamples, EShowcases, EThemes } from "./types";
 import Typography from "../../pages/docs/basics/Typography";
 import Blockquotes from "../../pages/docs/basics/Blockquotes";
 import Code from "../../pages/docs/basics/Code";
@@ -49,6 +49,11 @@ export class RouteMaster {
   static home(theme: EThemes, domain: string): string {
     const base = RouteMaster.getBase(domain);
     return `${base}${theme}/`;
+  }
+
+  static showcase(theme: EThemes, domain: string): string {
+    const base = RouteMaster.getBase(domain);
+    return `${base}${theme}/showcases.html`;
   }
 
   static doc(route: EDoc, theme: EThemes, domain: string): string {
@@ -181,6 +186,11 @@ export class RouteMaster {
       case EExamples.MobileTabsNav: return `${base}${theme}/pages/examples/${htmlName(MobileTabs)}`;
       case EExamples.MobileTypography: return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
     }
+  }
+
+  static showacses(showcase: EShowcases, domain: string): string {
+    const base = RouteMaster.getBase(domain);
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
   }
 
   private static getBase(domain?: string): string {

@@ -19,11 +19,16 @@ export default function Index(props: { theme: EThemes }) {
           One oppinionated file that can handle styling, responsiveness, light or dark modes and themes.
         </p>
       </section>
-      <section className="align-center">
-        <p>
+      <section>
+        <p className="row align-center disable-mobile">
           <a href={RouteMaster.doc(EDoc.Typographty, props.theme, route)}>
             <button>
               Documentation
+            </button>
+          </a>
+          <a href={RouteMaster.showcase(props.theme, route)}>
+            <button type="reset">
+              Showcase
             </button>
           </a>
         </p>

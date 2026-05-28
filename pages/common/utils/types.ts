@@ -58,6 +58,11 @@ export enum EExamples {
   LayoutFooterComplex = 'layout-footer-complex',
 };
 
+export enum EShowcases {
+  Blog = 'blog',
+  Newsletter = 'newsletter',
+};
+
 export enum ELinks {
   // own css github
   GitHub = 'https://github.com/gobi-tools/css-theme',

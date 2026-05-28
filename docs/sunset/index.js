@@ -4324,6 +4324,10 @@ var RouteMaster = class _RouteMaster {
     const base = _RouteMaster.getBase(domain);
     return `${base}${theme}/`;
   }
+  static showcase(theme, domain) {
+    const base = _RouteMaster.getBase(domain);
+    return `${base}${theme}/showcases.html`;
+  }
   static doc(route, theme, domain) {
     const base = _RouteMaster.getBase(domain);
     switch (route) {
@@ -4525,6 +4529,10 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
     }
   }
+  static showacses(showcase, domain) {
+    const base = _RouteMaster.getBase(domain);
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
+  }
   static getBase(domain) {
     if (!domain) return "/";
     return domain === "" ? "/" : `/${domain}/`;
@@ -4622,7 +4630,10 @@ function Index(props) {
       /* @__PURE__ */ jsx47("h1", { children: "The simplest CSS framework" }),
       /* @__PURE__ */ jsx47("p", { children: "One oppinionated file that can handle styling, responsiveness, light or dark modes and themes." })
     ] }),
-    /* @__PURE__ */ jsx47("section", { className: "align-center", children: /* @__PURE__ */ jsx47("p", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.doc("typography" /* Typographty */, props.theme, route), children: /* @__PURE__ */ jsx47("button", { children: "Documentation" }) }) }) }),
+    /* @__PURE__ */ jsx47("section", { children: /* @__PURE__ */ jsxs47("p", { className: "row align-center disable-mobile", children: [
+      /* @__PURE__ */ jsx47("a", { href: RouteMaster.doc("typography" /* Typographty */, props.theme, route), children: /* @__PURE__ */ jsx47("button", { children: "Documentation" }) }),
+      /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcase(props.theme, route), children: /* @__PURE__ */ jsx47("button", { type: "reset", children: "Showcase" }) })
+    ] }) }),
     /* @__PURE__ */ jsxs47("section", { children: [
       /* @__PURE__ */ jsx47("p", { children: "To install, simply add the following to your HTML page:" }),
       /* @__PURE__ */ jsx47("pre", { children: /* @__PURE__ */ jsx47("code", { children: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@refs/heads/main/dist/theme.${props.theme}.min.css">` }) })
