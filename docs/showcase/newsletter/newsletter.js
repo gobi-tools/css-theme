@@ -4,10 +4,31 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
 // showcase/newsletter/Newsletter.tsx
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function randomId(length = 10) {
+  return Math.random().toString(36).slice(2, 2 + length);
+}
+var Avatar = (props) => {
+  const id = randomId();
+  const diameter = props.size;
+  const radius = diameter / 2;
+  return /* @__PURE__ */ jsxs("svg", { width: diameter, height: diameter, viewBox: `0 0 ${diameter} ${diameter}`, children: [
+    /* @__PURE__ */ jsx("defs", { children: /* @__PURE__ */ jsx("clipPath", { id, children: /* @__PURE__ */ jsx("circle", { cx: radius, cy: radius, r: radius }) }) }),
+    /* @__PURE__ */ jsx(
+      "image",
+      {
+        href: props.url,
+        width: diameter,
+        height: diameter,
+        "clip-path": `url(#${id})`,
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    )
+  ] });
+};
 function Newsletter() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
-      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("img", { className: "circle", width: "30", height: "30", src: "https://picsum.photos/id/42/30/30" }) }),
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Avatar, { url: "https://picsum.photos/id/42/30/30", size: 30 }) }),
       /* @__PURE__ */ jsx("li", { className: "gap" }),
       /* @__PURE__ */ jsx("li", { className: "align-center", children: /* @__PURE__ */ jsx("h3", { children: "My Newsletter" }) }),
       /* @__PURE__ */ jsx("li", { className: "gap" }),
@@ -19,7 +40,7 @@ function Newsletter() {
         /* @__PURE__ */ jsx("h5", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
       ] }),
       /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
-        /* @__PURE__ */ jsx("img", { className: "circle", width: "40", height: "40", src: "https://picsum.photos/id/50/30/30" }),
+        /* @__PURE__ */ jsx(Avatar, { url: "https://picsum.photos/id/50/40/40", size: 40 }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("span", { children: "Author Name" }),
           /* @__PURE__ */ jsx("br", {}),

@@ -1,3 +1,28 @@
+function randomId(length = 10) {
+  return Math.random().toString(36).slice(2, 2 + length);
+}
+
+const Avatar = (props: { url: string, size: number }) => {
+  const id = randomId();
+  const diameter = props.size;
+  const radius = diameter / 2.0;
+
+  return <svg width={diameter} height={diameter} viewBox={`0 0 ${diameter} ${diameter}`}>
+    <defs>
+      <clipPath id={id}>
+        <circle cx={radius} cy={radius} r={radius} />
+      </clipPath>
+    </defs>
+
+    <image
+      href={props.url}
+      width={diameter}
+      height={diameter}
+      clip-path={`url(#${id})`}
+      preserveAspectRatio="xMidYMid slice" />
+  </svg>
+}
+
 export default function Newsletter() {
   return (
     <>
@@ -5,7 +30,7 @@ export default function Newsletter() {
         <nav className="disable-mobile">
           <ul>
             <li>
-              <img className="circle" width={"30"} height={"30"} src="https://picsum.photos/id/42/30/30" />
+              <Avatar url="https://picsum.photos/id/42/30/30" size={30} />
             </li>
             <li className="gap"></li>
             <li className="align-center">
@@ -26,7 +51,7 @@ export default function Newsletter() {
           </hgroup>
           <div className="group">
             <div className="row">
-              <img className="circle" width={"40"} height={"40"} src="https://picsum.photos/id/50/30/30" />
+              <Avatar url="https://picsum.photos/id/50/40/40" size={40} />
               <div>
                 <span>Author Name</span>
                 <br />
