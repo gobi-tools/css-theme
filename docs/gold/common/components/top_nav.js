@@ -4538,9 +4538,13 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
     }
   }
-  static showacses(showcase, domain) {
+  static showcases(showcase, domain) {
     const base = _RouteMaster.getBase(domain);
     return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
+  }
+  static showcaseImg(showcase, domain) {
+    const base = _RouteMaster.getBase(domain);
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.png`;
   }
   static getBase(domain) {
     if (!domain) return "/";
@@ -4580,12 +4584,19 @@ function TopNav({ theme }) {
     }
   };
   return /* @__PURE__ */ jsx46("nav", { children: /* @__PURE__ */ jsxs46("ul", { children: [
-    /* @__PURE__ */ jsx46("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs46("a", { href: RouteMaster.home(theme, route), children: [
+    /* @__PURE__ */ jsx46("li", { children: /* @__PURE__ */ jsxs46("a", { href: RouteMaster.home(theme, route), children: [
       /* @__PURE__ */ jsxs46("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
         /* @__PURE__ */ jsx46("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
         /* @__PURE__ */ jsx46("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
       ] }),
       /* @__PURE__ */ jsx46("span", { children: "Home" })
+    ] }) }),
+    /* @__PURE__ */ jsx46("li", { children: /* @__PURE__ */ jsxs46("a", { href: RouteMaster.showcase(theme, route), children: [
+      /* @__PURE__ */ jsxs46("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsx46("path", { d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" }),
+        /* @__PURE__ */ jsx46("circle", { cx: "12", cy: "12", r: "3" })
+      ] }),
+      /* @__PURE__ */ jsx46("span", { children: "Showcase" })
     ] }) }),
     /* @__PURE__ */ jsx46("li", { className: "gap" }),
     /* @__PURE__ */ jsx46("li", { className: "hide-on-desktop", children: /* @__PURE__ */ jsxs46("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: [

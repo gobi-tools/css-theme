@@ -4529,9 +4529,13 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
     }
   }
-  static showacses(showcase, domain) {
+  static showcases(showcase, domain) {
     const base = _RouteMaster.getBase(domain);
     return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
+  }
+  static showcaseImg(showcase, domain) {
+    const base = _RouteMaster.getBase(domain);
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.png`;
   }
   static getBase(domain) {
     if (!domain) return "/";
@@ -4571,12 +4575,19 @@ function TopNav({ theme }) {
     }
   };
   return /* @__PURE__ */ jsx45("nav", { children: /* @__PURE__ */ jsxs45("ul", { children: [
-    /* @__PURE__ */ jsx45("li", { "aria-selected": true, children: /* @__PURE__ */ jsxs45("a", { href: RouteMaster.home(theme, route), children: [
+    /* @__PURE__ */ jsx45("li", { children: /* @__PURE__ */ jsxs45("a", { href: RouteMaster.home(theme, route), children: [
       /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
         /* @__PURE__ */ jsx45("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
         /* @__PURE__ */ jsx45("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
       ] }),
       /* @__PURE__ */ jsx45("span", { children: "Home" })
+    ] }) }),
+    /* @__PURE__ */ jsx45("li", { children: /* @__PURE__ */ jsxs45("a", { href: RouteMaster.showcase(theme, route), children: [
+      /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsx45("path", { d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" }),
+        /* @__PURE__ */ jsx45("circle", { cx: "12", cy: "12", r: "3" })
+      ] }),
+      /* @__PURE__ */ jsx45("span", { children: "Showcase" })
     ] }) }),
     /* @__PURE__ */ jsx45("li", { className: "gap" }),
     /* @__PURE__ */ jsx45("li", { className: "hide-on-desktop", children: /* @__PURE__ */ jsxs45("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: [
@@ -4622,70 +4633,54 @@ function HomeLayout({ theme, children }) {
 
 // pages/Showcases.tsx
 import { jsx as jsx47, jsxs as jsxs47 } from "https://esm.sh/react@19.2.0/jsx-runtime";
+var Arrow = () => {
+  return /* @__PURE__ */ jsxs47("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+    /* @__PURE__ */ jsx47("path", { d: "M5 12h14" }),
+    /* @__PURE__ */ jsx47("path", { d: "m12 5 7 7-7 7" })
+  ] });
+};
+function ShowcaseTitle(props) {
+  return /* @__PURE__ */ jsx47("nav", { children: /* @__PURE__ */ jsx47("ul", { children: /* @__PURE__ */ jsx47("li", { children: /* @__PURE__ */ jsxs47("a", { href: props.url, target: "_blank", children: [
+    /* @__PURE__ */ jsx47("span", { children: /* @__PURE__ */ jsx47("b", { children: props.title }) }),
+    /* @__PURE__ */ jsx47(Arrow, {})
+  ] }) }) }) });
+}
+function ShowcaePreview(props) {
+  return /* @__PURE__ */ jsx47(
+    "img",
+    {
+      src: RouteMaster.showcaseImg(props.showcase, props.route),
+      width: "100%",
+      style: { aspectRatio: 16 / 9, objectPosition: "top" },
+      alt: props.showcase
+    }
+  );
+}
 function Showcases(props) {
   const route = useRoute();
-  return /* @__PURE__ */ jsxs47(HomeLayout, { theme: props.theme, children: [
-    /* @__PURE__ */ jsx47("section", { children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
-      /* @__PURE__ */ jsxs47("div", { className: "card", children: [
-        /* @__PURE__ */ jsx47("div", { className: "group", children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
-          /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("hgroup", { children: [
-            /* @__PURE__ */ jsx47("h4", { children: "Blog" }),
-            /* @__PURE__ */ jsxs47("p", { children: [
-              "A simple, minimalist, blog theme. Inspired by ",
-              /* @__PURE__ */ jsx47("a", { href: "https://bearblog.dev/", target: "_blank", children: "Bear" }),
-              "."
-            ] })
-          ] }) }),
-          /* @__PURE__ */ jsx47("a", { href: RouteMaster.showacses("blog" /* Blog */, route), target: "_blank", children: /* @__PURE__ */ jsx47("button", { children: "Explore" }) })
-        ] }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("blog" /* Blog */, route) }) })
-      ] }),
-      /* @__PURE__ */ jsxs47("div", { className: "card", children: [
-        /* @__PURE__ */ jsx47("div", { className: "group", children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
-          /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("hgroup", { children: [
-            /* @__PURE__ */ jsx47("h4", { children: "Newsletter" }),
-            /* @__PURE__ */ jsxs47("p", { children: [
-              "A theme suitable for newsletters. Inspired by ",
-              /* @__PURE__ */ jsx47("a", { href: "https://substack.com/", target: "_blank", children: "Substack" }),
-              "."
-            ] })
-          ] }) }),
-          /* @__PURE__ */ jsx47("a", { href: RouteMaster.showacses("newsletter" /* Newsletter */, route), target: "_blank", children: /* @__PURE__ */ jsx47("button", { children: "Explore" }) })
-        ] }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("newsletter" /* Newsletter */, route) }) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx47("section", { children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
-      /* @__PURE__ */ jsxs47("div", { className: "card", children: [
-        /* @__PURE__ */ jsx47("div", { className: "group", children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
-          /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("hgroup", { children: [
-            /* @__PURE__ */ jsx47("h4", { children: "Delivery" }),
-            /* @__PURE__ */ jsxs47("p", { children: [
-              "A full blown app theme. Inspired by ",
-              /* @__PURE__ */ jsx47("a", { href: "https://www.doordash.com/", target: "_blank", children: "DoorDash" }),
-              "."
-            ] })
-          ] }) }),
-          /* @__PURE__ */ jsx47("a", { href: RouteMaster.showacses("food-delivery" /* FoodDelivery */, route), target: "_blank", children: /* @__PURE__ */ jsx47("button", { children: "Explore" }) })
-        ] }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("food-delivery" /* FoodDelivery */, route) }) })
-      ] }),
-      /* @__PURE__ */ jsxs47("div", { className: "card", children: [
-        /* @__PURE__ */ jsx47("div", { className: "group", children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
-          /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("hgroup", { children: [
-            /* @__PURE__ */ jsx47("h4", { children: "Landing" }),
-            /* @__PURE__ */ jsxs47("p", { children: [
-              "Perfect for a product landing pages. Inspired by ",
-              /* @__PURE__ */ jsx47("a", { href: "https://www.uber.com/", target: "_blank", children: "Uber" }),
-              "."
-            ] })
-          ] }) }),
-          /* @__PURE__ */ jsx47("a", { href: RouteMaster.showacses("landing-page" /* LandingPage */, route), target: "_blank", children: /* @__PURE__ */ jsx47("button", { children: "Explore" }) })
-        ] }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("landing-page" /* LandingPage */, route) }) })
-      ] })
-    ] }) })
-  ] });
+  return /* @__PURE__ */ jsx47(HomeLayout, { theme: props.theme, children: /* @__PURE__ */ jsxs47("section", { children: [
+    /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("div", { className: "card", children: [
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Blog", url: RouteMaster.showcases("blog" /* Blog */, route) }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaePreview, { showcase: "blog" /* Blog */, route }) })
+      ] }) }),
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("div", { className: "card", children: [
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Newsletter", url: RouteMaster.showcases("newsletter" /* Newsletter */, route) }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaePreview, { showcase: "newsletter" /* Newsletter */, route }) })
+      ] }) })
+    ] }),
+    /* @__PURE__ */ jsx47("br", { className: "hide-on-desktop" }),
+    /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("div", { className: "card", children: [
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Delivery", url: RouteMaster.showcases("food-delivery" /* FoodDelivery */, route) }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaePreview, { showcase: "food-delivery" /* FoodDelivery */, route }) })
+      ] }) }),
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("div", { className: "card", children: [
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Landing", url: RouteMaster.showcases("landing-page" /* LandingPage */, route) }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaePreview, { showcase: "landing-page" /* LandingPage */, route }) })
+      ] }) })
+    ] })
+  ] }) });
 }
 
 // pages/react-srv-hydrate-Showcases.jsx

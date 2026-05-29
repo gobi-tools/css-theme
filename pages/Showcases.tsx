@@ -1,7 +1,32 @@
 import HomeLayout from "./common/components/HomeLayout";
 import { useRoute } from "./common/effects/useRoute";
 import { RouteMaster } from "./common/utils/routes";
-import { EDoc, EShowcases, EThemes } from "./common/utils/types";
+import { EShowcases, EThemes } from "./common/utils/types";
+
+const Arrow = () => {
+  return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+}
+
+function ShowcaseTitle(props: { title: string, url: string }) {
+  return <nav>
+    <ul>
+      <li>
+        <a href={props.url} target="_blank">
+          <span><b>{props.title}</b></span>
+          <Arrow />
+        </a>
+      </li>
+    </ul>
+  </nav>
+}
+
+function ShowcaePreview(props: { route: string, showcase: EShowcases }) {
+  return <img
+    src={RouteMaster.showcaseImg(props.showcase, props.route)}
+    width={"100%"}
+    style={{ aspectRatio: 16.0 / 9.0, objectPosition: 'top' }}
+    alt={props.showcase} />
+}
 
 export default function Showcases(props: { theme: EThemes }) {
   const route = useRoute();
@@ -10,97 +35,47 @@ export default function Showcases(props: { theme: EThemes }) {
     <HomeLayout theme={props.theme}>
       <section>
         <div className="row">
-          <div className="card">
-            <div className="group">
-              <div className="row">
-                <div>
-                  <hgroup>
-                    <h4>Blog</h4>
-                    <p>
-                      A simple, minimalist, blog theme. Inspired by <a href="https://bearblog.dev/" target="_blank">Bear</a>.
-                    </p>
-                  </hgroup>
-                </div>
-                <a href={RouteMaster.showacses(EShowcases.Blog, route)} target="_blank">
-                  <button>
-                    Explore
-                  </button>
-                </a>
+          <div>
+            <div className="card">
+              <div>
+                <ShowcaseTitle title="Blog" url={RouteMaster.showcases(EShowcases.Blog, route)} />
               </div>
-            </div>
-            <div>
-              <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.Blog, route)} />
+              <div>
+                <ShowcaePreview showcase={EShowcases.Blog} route={route} />
+              </div>
             </div>
           </div>
-          <div className="card">
-            <div className="group">
-              <div className="row">
-                <div>
-                  <hgroup>
-                    <h4>Newsletter</h4>
-                    <p>
-                      A theme suitable for newsletters. Inspired by <a href="https://substack.com/" target="_blank">Substack</a>.
-                    </p>
-                  </hgroup>
-                </div>
-                <a href={RouteMaster.showacses(EShowcases.Newsletter, route)} target="_blank">
-                  <button>
-                    Explore
-                  </button>
-                </a>
+          <div>
+            <div className="card">
+              <div>
+                <ShowcaseTitle title="Newsletter" url={RouteMaster.showcases(EShowcases.Newsletter, route)} />
               </div>
-            </div>
-            <div>
-              <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.Newsletter, route)} />
+              <div>
+                <ShowcaePreview showcase={EShowcases.Newsletter} route={route} />
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section>
+        <br className="hide-on-desktop"/>
         <div className="row">
-          <div className="card">
-            <div className="group">
-              <div className="row">
-                <div>
-                  <hgroup>
-                    <h4>Delivery</h4>
-                    <p>
-                      A full blown app theme. Inspired by <a href="https://www.doordash.com/" target="_blank">DoorDash</a>.
-                    </p>
-                  </hgroup>
-                </div>
-                <a href={RouteMaster.showacses(EShowcases.FoodDelivery, route)} target="_blank">
-                  <button>
-                    Explore
-                  </button>
-                </a>
+          <div>
+            <div className="card">
+              <div>
+                <ShowcaseTitle title="Delivery" url={RouteMaster.showcases(EShowcases.FoodDelivery, route)} />
               </div>
-            </div>
-            <div>
-              <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.FoodDelivery, route)} />
+              <div>
+                <ShowcaePreview showcase={EShowcases.FoodDelivery} route={route} />
+              </div>
             </div>
           </div>
-
-          <div className="card">
-            <div className="group">
-              <div className="row">
-                <div>
-                  <hgroup>
-                    <h4>Landing</h4>
-                    <p>
-                      Perfect for a product landing pages. Inspired by <a href="https://www.uber.com/" target="_blank">Uber</a>.
-                    </p>
-                  </hgroup>
-                </div>
-                <a href={RouteMaster.showacses(EShowcases.LandingPage, route)} target="_blank">
-                  <button>
-                    Explore
-                  </button>
-                </a>
+          <div>
+            <div className="card">
+              <div>
+                <ShowcaseTitle title="Landing" url={RouteMaster.showcases(EShowcases.LandingPage, route)} />
               </div>
-            </div>
-            <div>
-              <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.LandingPage, route)} />
+              <div>
+                <ShowcaePreview showcase={EShowcases.LandingPage} route={route} />
+              </div>
             </div>
           </div>
         </div>

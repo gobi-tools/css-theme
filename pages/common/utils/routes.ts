@@ -188,9 +188,14 @@ export class RouteMaster {
     }
   }
 
-  static showacses(showcase: EShowcases, domain: string): string {
+  static showcases(showcase: EShowcases, domain: string): string {
     const base = RouteMaster.getBase(domain);
     return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
+  }
+
+  static showcaseImg(showcase: EShowcases, domain: string): string {
+    const base = RouteMaster.getBase(domain);
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.png`;
   }
 
   private static getBase(domain?: string): string {

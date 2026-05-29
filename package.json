@@ -6,6 +6,7 @@
     "build": "tsx scripts/build.ts && css-minify -d tmp/ -o /dist",
     "docs": "tsx pages/prerender.ts",
     "showcase": "tsx showcase/prerender.ts",
+    "showcase:screenshots": "tsx showcase/screenshots.ts",
     "test:visual": "npx playwright test",
     "test:visual:update": "npx playwright test --update-snapshots"
   },
@@ -18,6 +19,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "css-minify": "^2.1.0",
+    "playwright": "^1.60.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
