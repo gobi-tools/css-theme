@@ -18,7 +18,7 @@ export default function FoodDelivery() {
         <article className="primary">
           <div>
             <h1 className="align-center">
-              Restaurants, takeaways, supermarkets and shops. Delivered.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h1>
             <form>
               <div className="group">
@@ -50,7 +50,7 @@ export default function FoodDelivery() {
           <div className="card">
             <h2>Become a member</h2>
             <p>
-              As a delivery driver, make money and work on your schedule. Sign up in minutes.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <nav>
               <ul>
@@ -66,7 +66,7 @@ export default function FoodDelivery() {
           <div className="card">
             <h2>Become a merchant</h2>
             <p>
-              Attract new customers and grow sales, starting with 0% commissions for up to 30 days.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
             <nav>
               <ul>
@@ -82,7 +82,7 @@ export default function FoodDelivery() {
           <div className="card">
             <h2>Get the best experience</h2>
             <p>
-              Experience the best your neighborhood has to offer, all in one app.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <nav>
               <ul>
@@ -103,9 +103,9 @@ export default function FoodDelivery() {
           </div>
           <div>
             <hgroup>
-              <h2>Everything you crave, delivered.</h2>
+              <h2>Sed ut perspiciatis unde.</h2>
               <p>
-                Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.
               </p>
             </hgroup>
             <p>
@@ -123,9 +123,9 @@ export default function FoodDelivery() {
           </div>
           <div>
             <hgroup>
-              <h2>Delivery for less</h2>
+              <h2>Omnis iste natus</h2>
               <p>
-                Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus, it's free for 30 days.
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius.
               </p>
             </hgroup>
             <p>
@@ -140,9 +140,9 @@ export default function FoodDelivery() {
           </div>
           <div>
             <hgroup>
-              <h2>Convenience stores at your doorstep.</h2>
+              <h2>Sit voluptatem accusantium.</h2>
               <p>
-                Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.
+                ut labore et dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam, quis nostrum.
               </p>
             </hgroup>
             <p>
@@ -157,9 +157,9 @@ export default function FoodDelivery() {
         <header>
           <article className="align-center big-banner">
             <hgroup>
-              <h1>Get grocery and convenience store essentials</h1>
-              <h4>Grocery delivery, exactly how you want it.</h4>
-              <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</p>
+              <h1>Lorem ipsum dolor sit amet.</h1>
+              <h4>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </hgroup>
             <p><button>Shop Groceries</button></p>
           </article>
@@ -170,16 +170,16 @@ export default function FoodDelivery() {
             <div className="row">
               <div>
                 <hgroup>
-                  <h3>Beauty essentials from top brands</h3>
-                  <p>Get all your beauty and self-care needs delivered at home or on-the-go</p>
+                  <h3>Sed ut perspiciatis unde omnis</h3>
+                  <p>Iste natus error sit voluptatem accusantium doloremque laudantium</p>
                 </hgroup>
                 <p><button>Show beauty</button></p>
                 <hr className="hide-on-desktop" />
               </div>
               <div>
                 <hgroup>
-                  <h3>Flowers for any occasion</h3>
-                  <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
+                  <h3>Totam rem aperiam eaque</h3>
+                  <p>Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
                 </hgroup>
                 <p><button>Send flowers</button></p>
                 <hr className="hide-on-desktop" />
@@ -190,16 +190,16 @@ export default function FoodDelivery() {
             <div className="row">
               <div>
                 <hgroup>
-                  <h3>Restock the minibar</h3>
-                  <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers, champagne and wine delivered fast.</p>
+                  <h3>Dicta sunt explicabo</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
                 </hgroup>
                 <p><button>Show alcohol</button></p>
                 <hr className="hide-on-desktop" />
               </div>
               <div>
                 <hgroup>
-                  <h3>What your pets need, and want</h3>
-                  <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew toys, and even costumes.</p>
+                  <h3>Voluptatem sequi nesciunt neque</h3>
+                  <p>Quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
                 </hgroup>
                 <p><button>Get pet supplies</button></p>
               </div>
