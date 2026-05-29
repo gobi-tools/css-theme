@@ -1,6 +1,7 @@
 /* base */
 
-svg, button>img {
+svg,
+button>img {
   padding: 0;
 }
 
@@ -19,7 +20,7 @@ code>:is(svg, img) {
   height: var(--font-size-sm);
 }
 
-a>:is(svg, img) {
+a>svg {
   width: var(--font-size-xl);
   height: var(--font-size-xl);
 }

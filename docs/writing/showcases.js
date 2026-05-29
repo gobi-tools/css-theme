@@ -4645,7 +4645,7 @@ function ShowcaseTitle(props) {
     /* @__PURE__ */ jsx47(Arrow, {})
   ] }) }) }) });
 }
-function ShowcaePreview(props) {
+function ShowcasePreview(props) {
   return /* @__PURE__ */ jsx47(
     "img",
     {
@@ -4662,22 +4662,22 @@ function Showcases(props) {
     /* @__PURE__ */ jsxs47("div", { className: "row", children: [
       /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("div", { className: "card", children: [
         /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Blog", url: RouteMaster.showcases("blog" /* Blog */, route) }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaePreview, { showcase: "blog" /* Blog */, route }) })
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("blog" /* Blog */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "blog" /* Blog */, route }) }) })
       ] }) }),
       /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("div", { className: "card", children: [
         /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Newsletter", url: RouteMaster.showcases("newsletter" /* Newsletter */, route) }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaePreview, { showcase: "newsletter" /* Newsletter */, route }) })
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("newsletter" /* Newsletter */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "newsletter" /* Newsletter */, route }) }) })
       ] }) })
     ] }),
     /* @__PURE__ */ jsx47("br", { className: "hide-on-desktop" }),
     /* @__PURE__ */ jsxs47("div", { className: "row", children: [
       /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("div", { className: "card", children: [
         /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Delivery", url: RouteMaster.showcases("food-delivery" /* FoodDelivery */, route) }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaePreview, { showcase: "food-delivery" /* FoodDelivery */, route }) })
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("food-delivery" /* FoodDelivery */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "food-delivery" /* FoodDelivery */, route }) }) })
       ] }) }),
       /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("div", { className: "card", children: [
         /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Landing", url: RouteMaster.showcases("landing-page" /* LandingPage */, route) }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaePreview, { showcase: "landing-page" /* LandingPage */, route }) })
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("landing-page" /* LandingPage */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "landing-page" /* LandingPage */, route }) }) })
       ] }) })
     ] })
   ] }) });

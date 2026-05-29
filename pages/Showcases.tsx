@@ -20,7 +20,7 @@ function ShowcaseTitle(props: { title: string, url: string }) {
   </nav>
 }
 
-function ShowcaePreview(props: { route: string, showcase: EShowcases }) {
+function ShowcasePreview(props: { route: string, showcase: EShowcases }) {
   return <img
     src={RouteMaster.showcaseImg(props.showcase, props.route)}
     width={"100%"}
@@ -41,7 +41,9 @@ export default function Showcases(props: { theme: EThemes }) {
                 <ShowcaseTitle title="Blog" url={RouteMaster.showcases(EShowcases.Blog, route)} />
               </div>
               <div>
-                <ShowcaePreview showcase={EShowcases.Blog} route={route} />
+                <a href={RouteMaster.showcases(EShowcases.Blog, route)} target="_blank">
+                  <ShowcasePreview showcase={EShowcases.Blog} route={route} />
+                </a>
               </div>
             </div>
           </div>
@@ -51,12 +53,14 @@ export default function Showcases(props: { theme: EThemes }) {
                 <ShowcaseTitle title="Newsletter" url={RouteMaster.showcases(EShowcases.Newsletter, route)} />
               </div>
               <div>
-                <ShowcaePreview showcase={EShowcases.Newsletter} route={route} />
+                <a href={RouteMaster.showcases(EShowcases.Newsletter, route)} target="_blank">
+                  <ShowcasePreview showcase={EShowcases.Newsletter} route={route} />
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <br className="hide-on-desktop"/>
+        <br className="hide-on-desktop" />
         <div className="row">
           <div>
             <div className="card">
@@ -64,7 +68,9 @@ export default function Showcases(props: { theme: EThemes }) {
                 <ShowcaseTitle title="Delivery" url={RouteMaster.showcases(EShowcases.FoodDelivery, route)} />
               </div>
               <div>
-                <ShowcaePreview showcase={EShowcases.FoodDelivery} route={route} />
+                <a href={RouteMaster.showcases(EShowcases.FoodDelivery, route)} target="_blank">
+                  <ShowcasePreview showcase={EShowcases.FoodDelivery} route={route} />
+                </a>
               </div>
             </div>
           </div>
@@ -74,7 +80,9 @@ export default function Showcases(props: { theme: EThemes }) {
                 <ShowcaseTitle title="Landing" url={RouteMaster.showcases(EShowcases.LandingPage, route)} />
               </div>
               <div>
-                <ShowcaePreview showcase={EShowcases.LandingPage} route={route} />
+                <a href={RouteMaster.showcases(EShowcases.LandingPage, route)} target="_blank">
+                  <ShowcasePreview showcase={EShowcases.LandingPage} route={route} />
+                </a>
               </div>
             </div>
           </div>
