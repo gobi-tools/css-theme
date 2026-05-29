@@ -8,12 +8,23 @@ export default function Showcases(props: { theme: EThemes }) {
 
   return (
     <HomeLayout theme={props.theme}>
-      <section className="row">
-        <div>
-          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.Blog, route)} />
+      <section>
+        <div className="row">
+          <div>
+            <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.Blog, route)} />
+          </div>
+          <div>
+            <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.Newsletter, route)} />
+          </div>
         </div>
-        <div>
-          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.Newsletter, route)} />
+        <br />
+        <div className="row">
+          <div>
+            <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.FoodDelivery, route)} />
+          </div>
+          <div>
+            <iframe scrolling="no" width="100%" height={500} src={RouteMaster.showacses(EShowcases.LandingPage, route)} />
+          </div>
         </div>
       </section>
     </HomeLayout>

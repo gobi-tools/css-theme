@@ -4342,7 +4342,7 @@ function htmlName(elem) {
   return `${toKebabCase(elem.name)}.html`;
 }
 function toKebabCase(str) {
-  return str.replace(/([a-z0-9])([A-Z])/g, "$1_$2").toLowerCase();
+  return str.replace(/([a-z0-9])([A-Z])/g, "$1_$2").replace(/[\s-]+/g, "_").replace(/_+/g, "_").replace(/^_|_$/g, "").toLowerCase();
 }
 
 // pages/common/components/TopNav.tsx

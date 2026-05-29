@@ -4542,7 +4542,7 @@ function htmlName(elem) {
   return `${toKebabCase(elem.name)}.html`;
 }
 function toKebabCase(str) {
-  return str.replace(/([a-z0-9])([A-Z])/g, "$1_$2").toLowerCase();
+  return str.replace(/([a-z0-9])([A-Z])/g, "$1_$2").replace(/[\s-]+/g, "_").replace(/_+/g, "_").replace(/^_|_$/g, "").toLowerCase();
 }
 
 // pages/common/components/TopNav.tsx
@@ -4624,9 +4624,16 @@ function HomeLayout({ theme, children }) {
 import { jsx as jsx47, jsxs as jsxs47 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Showcases(props) {
   const route = useRoute();
-  return /* @__PURE__ */ jsx47(HomeLayout, { theme: props.theme, children: /* @__PURE__ */ jsxs47("section", { className: "row", children: [
-    /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("blog" /* Blog */, route) }) }),
-    /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("newsletter" /* Newsletter */, route) }) })
+  return /* @__PURE__ */ jsx47(HomeLayout, { theme: props.theme, children: /* @__PURE__ */ jsxs47("section", { children: [
+    /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("blog" /* Blog */, route) }) }),
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("newsletter" /* Newsletter */, route) }) })
+    ] }),
+    /* @__PURE__ */ jsx47("br", {}),
+    /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("food-delivery" /* FoodDelivery */, route) }) }),
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("landing-page" /* LandingPage */, route) }) })
+    ] })
   ] }) });
 }
 

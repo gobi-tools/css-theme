@@ -61,6 +61,8 @@ export enum EExamples {
 export enum EShowcases {
   Blog = 'blog',
   Newsletter = 'newsletter',
+  FoodDelivery = 'food-delivery',
+  LandingPage = 'landing-page',
 };
 
 export enum ELinks {
