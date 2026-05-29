@@ -7,7 +7,7 @@ export default function Blog() {
         </nav>
       </header>
       <header>
-        <nav>
+        <nav className="disable-mobile">
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Blog</a></li>

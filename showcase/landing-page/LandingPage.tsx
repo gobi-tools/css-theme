@@ -2,19 +2,18 @@ export default function LandingPage() {
   return (
     <>
       <header>
-        <aside className="primary inverted">
+        <aside className="primary inverted align-center">
           <div>
-            <b>Introducing Hopper</b>— The first agentic development environment for the mainframe.
+            <b>Introducing FooBar</b> — The best product in its category
           </div>
         </aside>
       </header>
-      <header>
+      <header className="hide-on-mobile">
         <nav className="container-wide">
           <ul>
-            <li><a href="">Platform</a></li>
+            <li><a href="">Product</a></li>
             <li><a href="">Industries</a></li>
             <li><a href="">Resources</a></li>
-            <li><a href="">Security</a></li>
             <li><a href="">About</a></li>
             <li className="gap"></li>
             <li>
@@ -33,13 +32,13 @@ export default function LandingPage() {
       <header>
         <article className="align-center">
           <hgroup>
-            <h1>Hopper</h1>
-            <h4>The first agentic development environment for the mainframe</h4>
-            <p>Use AI agents to navigate TN3270, inspect datasets, write JCL, debug jobs, query VSAM, and operate inside z/OS from a modern development environment.</p>
+            <h1>FooBar</h1>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
           </hgroup>
           <p>
-            <button>Download for Linux</button>
-            <button type="reset">Read the Announcement</button>
+            <button>Download</button>
+            <button type="reset">Announcement</button>
           </p>
           <p>
             <a href="">Other platforms</a>
@@ -54,9 +53,9 @@ export default function LandingPage() {
         </section>
         <section>
           <hgroup>
-            <h2>Built by leading minds behind the world's most advanced AI</h2>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
             <p>
-              Our team unites top researchers, engineers, and strategists from pioneering companies and institutions—all focused on building systems that deliver real impact.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
             </p>
           </hgroup>
         </section>
@@ -76,9 +75,8 @@ export default function LandingPage() {
               </p>
               <ul>
                 <li>No credit card required</li>
-                <li>macOS, Windows, and Linux</li>
-                <li>Connect with mainframe</li>
-                <li>All core Hopper features</li>
+                <li>All platforms</li>
+                <li>All core FooBar features</li>
               </ul>
               <br />
               <div>
@@ -97,7 +95,6 @@ export default function LandingPage() {
                 <li>SAML SSO</li>
                 <li>MCP Server Access</li>
                 <li>Admin and Model Controls</li>
-                <li>Org-wide Privacy Controls</li>
               </ul>
               <br />
               <div>
@@ -116,7 +113,7 @@ export default function LandingPage() {
                     <hgroup>
                       <h4>Join our Community</h4>
                       <p>
-                        Connect with builders using Hopper, follow product updates, and swap ideas with the Hypercubic team.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
                       </p>
                     </hgroup>
                   </div>
@@ -136,7 +133,7 @@ export default function LandingPage() {
                   <hgroup>
                     <h4>Need access?</h4>
                     <p>
-                      Fill out the form and we'll send you credentials to try it on for free.
+                      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
                     </p>
                   </hgroup>
                 </div>
