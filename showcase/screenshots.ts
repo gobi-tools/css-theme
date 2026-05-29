@@ -14,6 +14,7 @@ async function main() {
       width: WIDTH,
       height: HEIGHT,
     },
+    deviceScaleFactor: 2,
   });
 
   async function screenshot(url: string, output: string) {
