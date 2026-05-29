@@ -4624,17 +4624,68 @@ function HomeLayout({ theme, children }) {
 import { jsx as jsx47, jsxs as jsxs47 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Showcases(props) {
   const route = useRoute();
-  return /* @__PURE__ */ jsx47(HomeLayout, { theme: props.theme, children: /* @__PURE__ */ jsxs47("section", { children: [
-    /* @__PURE__ */ jsxs47("div", { className: "row", children: [
-      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("blog" /* Blog */, route) }) }),
-      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("newsletter" /* Newsletter */, route) }) })
-    ] }),
-    /* @__PURE__ */ jsx47("br", {}),
-    /* @__PURE__ */ jsxs47("div", { className: "row", children: [
-      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("food-delivery" /* FoodDelivery */, route) }) }),
-      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("landing-page" /* LandingPage */, route) }) })
-    ] })
-  ] }) });
+  return /* @__PURE__ */ jsxs47(HomeLayout, { theme: props.theme, children: [
+    /* @__PURE__ */ jsx47("section", { children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+      /* @__PURE__ */ jsxs47("div", { className: "card", children: [
+        /* @__PURE__ */ jsx47("div", { className: "group", children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+          /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("hgroup", { children: [
+            /* @__PURE__ */ jsx47("h4", { children: "Blog" }),
+            /* @__PURE__ */ jsxs47("p", { children: [
+              "A simple, minimalist, blog theme. Inspired by ",
+              /* @__PURE__ */ jsx47("a", { href: "https://bearblog.dev/", target: "_blank", children: "Bear" }),
+              "."
+            ] })
+          ] }) }),
+          /* @__PURE__ */ jsx47("a", { href: RouteMaster.showacses("blog" /* Blog */, route), target: "_blank", children: /* @__PURE__ */ jsx47("button", { children: "Explore" }) })
+        ] }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("blog" /* Blog */, route) }) })
+      ] }),
+      /* @__PURE__ */ jsxs47("div", { className: "card", children: [
+        /* @__PURE__ */ jsx47("div", { className: "group", children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+          /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("hgroup", { children: [
+            /* @__PURE__ */ jsx47("h4", { children: "Newsletter" }),
+            /* @__PURE__ */ jsxs47("p", { children: [
+              "A theme suitable for newsletters. Inspired by ",
+              /* @__PURE__ */ jsx47("a", { href: "https://substack.com/", target: "_blank", children: "Substack" }),
+              "."
+            ] })
+          ] }) }),
+          /* @__PURE__ */ jsx47("a", { href: RouteMaster.showacses("newsletter" /* Newsletter */, route), target: "_blank", children: /* @__PURE__ */ jsx47("button", { children: "Explore" }) })
+        ] }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("newsletter" /* Newsletter */, route) }) })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx47("section", { children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+      /* @__PURE__ */ jsxs47("div", { className: "card", children: [
+        /* @__PURE__ */ jsx47("div", { className: "group", children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+          /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("hgroup", { children: [
+            /* @__PURE__ */ jsx47("h4", { children: "Delivery" }),
+            /* @__PURE__ */ jsxs47("p", { children: [
+              "A full blown app theme. Inspired by ",
+              /* @__PURE__ */ jsx47("a", { href: "https://www.doordash.com/", target: "_blank", children: "DoorDash" }),
+              "."
+            ] })
+          ] }) }),
+          /* @__PURE__ */ jsx47("a", { href: RouteMaster.showacses("food-delivery" /* FoodDelivery */, route), target: "_blank", children: /* @__PURE__ */ jsx47("button", { children: "Explore" }) })
+        ] }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("food-delivery" /* FoodDelivery */, route) }) })
+      ] }),
+      /* @__PURE__ */ jsxs47("div", { className: "card", children: [
+        /* @__PURE__ */ jsx47("div", { className: "group", children: /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+          /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("hgroup", { children: [
+            /* @__PURE__ */ jsx47("h4", { children: "Landing" }),
+            /* @__PURE__ */ jsxs47("p", { children: [
+              "Perfect for a product landing pages. Inspired by ",
+              /* @__PURE__ */ jsx47("a", { href: "https://www.uber.com/", target: "_blank", children: "Uber" }),
+              "."
+            ] })
+          ] }) }),
+          /* @__PURE__ */ jsx47("a", { href: RouteMaster.showacses("landing-page" /* LandingPage */, route), target: "_blank", children: /* @__PURE__ */ jsx47("button", { children: "Explore" }) })
+        ] }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.showacses("landing-page" /* LandingPage */, route) }) })
+      ] })
+    ] }) })
+  ] });
 }
 
 // pages/react-srv-hydrate-Showcases.jsx
