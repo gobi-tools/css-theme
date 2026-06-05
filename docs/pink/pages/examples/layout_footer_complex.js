@@ -20,7 +20,7 @@ function LayoutFooterComplex() {
         /* @__PURE__ */ jsx("b", { children: "DEVELOPERS" }),
         /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "API" }) })
       ] }) }) }),
-      /* @__PURE__ */ jsx("div", { className: "gap" })
+      /* @__PURE__ */ jsx("div", {})
     ] }) }) })
   ] });
 }

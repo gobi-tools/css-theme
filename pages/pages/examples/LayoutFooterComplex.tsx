@@ -32,7 +32,7 @@ export default function LayoutFooterComplex() {
               </ul>
             </nav>
           </div>
-          <div className="gap"></div>
+          <div></div>
         </div>
       </article>
     </footer>

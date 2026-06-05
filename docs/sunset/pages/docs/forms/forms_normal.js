@@ -2068,8 +2068,7 @@ function Modal({ theme }) {
           formNoValidate>
           Cancel
         </button>
-        <div class="gap">
-        </div>
+        <div></div>
         <button value="confirm">
           Confirm
         </button>
@@ -2086,7 +2085,7 @@ function DialogModal(props) {
     /* @__PURE__ */ jsx18("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
     /* @__PURE__ */ jsx18("form", { method: "dialog", children: /* @__PURE__ */ jsx18("div", { role: "group", children: /* @__PURE__ */ jsxs18("div", { className: "row", children: [
       /* @__PURE__ */ jsx18("button", { className: "error", value: "cancel", formNoValidate: true, children: "Cancel" }),
-      /* @__PURE__ */ jsx18("div", { className: "gap" }),
+      /* @__PURE__ */ jsx18("div", {}),
       /* @__PURE__ */ jsx18("button", { value: "confirm", children: "Confirm" })
     ] }) }) })
   ] });
@@ -4101,6 +4100,7 @@ function Footer({ theme }) {
           <ul>...</ul>
         </nav>
       </div>
+      <div></div>
     </div>
   </article>
 </footer>` }) }) })
@@ -4142,7 +4142,7 @@ function LayoutFooterComplex() {
         /* @__PURE__ */ jsx45("b", { children: "DEVELOPERS" }),
         /* @__PURE__ */ jsx45("li", { children: /* @__PURE__ */ jsx45("a", { href: "", children: "API" }) })
       ] }) }) }),
-      /* @__PURE__ */ jsx45("div", { className: "gap" })
+      /* @__PURE__ */ jsx45("div", {})
     ] }) }) })
   ] });
 }
@@ -4540,7 +4540,7 @@ function FormsNormal({ theme }) {
           ] }),
           /* @__PURE__ */ jsxs46("div", { className: "row disable-mobile", children: [
             /* @__PURE__ */ jsx46("div", { children: /* @__PURE__ */ jsx46("input", { type: "reset", className: "error", value: "Reset" }) }),
-            /* @__PURE__ */ jsx46("div", { className: "gap" }),
+            /* @__PURE__ */ jsx46("div", {}),
             /* @__PURE__ */ jsx46("div", { children: /* @__PURE__ */ jsx46("input", { type: "submit", value: "Confirm" }) })
           ] })
         ] }) }),

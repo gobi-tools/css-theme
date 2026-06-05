@@ -49,6 +49,7 @@ export default function Footer({ theme }) {
           <ul>...</ul>
         </nav>
       </div>
+      <div></div>
     </div>
   </article>
 </footer>`}

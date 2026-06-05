@@ -1811,7 +1811,7 @@ function FormsNormal({ theme }) {
           ] }),
           /* @__PURE__ */ jsxs14("div", { className: "row disable-mobile", children: [
             /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsx14("input", { type: "reset", className: "error", value: "Reset" }) }),
-            /* @__PURE__ */ jsx14("div", { className: "gap" }),
+            /* @__PURE__ */ jsx14("div", {}),
             /* @__PURE__ */ jsx14("div", { children: /* @__PURE__ */ jsx14("input", { type: "submit", value: "Confirm" }) })
           ] })
         ] }) }),
@@ -2146,8 +2146,7 @@ function Modal({ theme }) {
           formNoValidate>
           Cancel
         </button>
-        <div class="gap">
-        </div>
+        <div></div>
         <button value="confirm">
           Confirm
         </button>
@@ -2164,7 +2163,7 @@ function DialogModal(props) {
     /* @__PURE__ */ jsx16("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
     /* @__PURE__ */ jsx16("form", { method: "dialog", children: /* @__PURE__ */ jsx16("div", { role: "group", children: /* @__PURE__ */ jsxs16("div", { className: "row", children: [
       /* @__PURE__ */ jsx16("button", { className: "error", value: "cancel", formNoValidate: true, children: "Cancel" }),
-      /* @__PURE__ */ jsx16("div", { className: "gap" }),
+      /* @__PURE__ */ jsx16("div", {}),
       /* @__PURE__ */ jsx16("button", { value: "confirm", children: "Confirm" })
     ] }) }) })
   ] });
@@ -4087,6 +4086,7 @@ function Footer({ theme }) {
           <ul>...</ul>
         </nav>
       </div>
+      <div></div>
     </div>
   </article>
 </footer>` }) }) })
@@ -4128,7 +4128,7 @@ function LayoutFooterComplex() {
         /* @__PURE__ */ jsx42("b", { children: "DEVELOPERS" }),
         /* @__PURE__ */ jsx42("li", { children: /* @__PURE__ */ jsx42("a", { href: "", children: "API" }) })
       ] }) }) }),
-      /* @__PURE__ */ jsx42("div", { className: "gap" })
+      /* @__PURE__ */ jsx42("div", {})
     ] }) }) })
   ] });
 }

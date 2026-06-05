@@ -188,7 +188,6 @@ export default function LandingPage() {
                 </ul>
               </nav>
             </div>
-            <div className="gap"></div>
           </div>
         </article>
       </footer>

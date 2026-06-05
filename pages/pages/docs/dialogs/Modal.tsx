@@ -40,8 +40,7 @@ export default function Modal({ theme }) {
           formNoValidate>
           Cancel
         </button>
-        <div class="gap">
-        </div>
+        <div></div>
         <button value="confirm">
           Confirm
         </button>
@@ -74,7 +73,7 @@ function DialogModal(
         <div role="group">
           <div className="row">
             <button className="error" value="cancel" formNoValidate>Cancel</button>
-            <div className="gap"></div>
+            <div></div>
             <button value="confirm">Confirm</button>
           </div>
         </div>

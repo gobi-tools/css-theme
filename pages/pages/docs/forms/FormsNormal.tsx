@@ -201,7 +201,7 @@ export default function FormsNormal({ theme }) {
                   <div>
                     <input type="reset" className="error" value={"Reset"} />
                   </div>
-                  <div className="gap"></div>
+                  <div></div>
                   <div>
                     <input type="submit" value={"Confirm"} />
                   </div>

@@ -107,8 +107,7 @@ function LandingPage() {
         /* @__PURE__ */ jsx("b", { children: "MORE" }),
         /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "About" }) }),
         /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Privacy Policy" }) })
-      ] }) }) }),
-      /* @__PURE__ */ jsx("div", { className: "gap" })
+      ] }) }) })
     ] }) }) })
   ] });
 }
