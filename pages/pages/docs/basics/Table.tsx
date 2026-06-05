@@ -1,12 +1,6 @@
 import DocLayout from "../../../common/components/DocsLayout";
-import { useRoute } from "../../../common/effects/useRoute";
-import { RouteMaster } from "../../../common/utils/routes";
-import { EDoc } from "../../../common/utils/types";
 
-export default function Table({ theme }) {
-  const route = useRoute();
-    
-  return (
+export default function Table({ theme }) {  return (
     <DocLayout theme={theme}>
       <section className="row">
         <div>
