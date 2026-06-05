@@ -76,7 +76,7 @@ function LandingPage() {
         ] })
       ] }),
       /* @__PURE__ */ jsx("hr", {}),
-      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { children: /* @__PURE__ */ jsx("div", { role: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
         /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
           /* @__PURE__ */ jsx("h4", { children: "Join our Community" }),
           /* @__PURE__ */ jsx("p", { children: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet" })
@@ -84,7 +84,7 @@ function LandingPage() {
         /* @__PURE__ */ jsx("button", { type: "reset", children: "Join our Discord" })
       ] }) }) }) }) })
     ] }),
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary inverted", children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("aside", { className: "primary inverted", children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("div", { role: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
       /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
         /* @__PURE__ */ jsx("h4", { children: "Need access?" }),
         /* @__PURE__ */ jsx("p", { children: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur." })

@@ -39,7 +39,7 @@ function Newsletter() {
         /* @__PURE__ */ jsx("h1", { children: "Lorem ipsum dolor sit amet" }),
         /* @__PURE__ */ jsx("h5", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
       ] }),
-      /* @__PURE__ */ jsx("div", { className: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+      /* @__PURE__ */ jsx("div", { role: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
         /* @__PURE__ */ jsx(Avatar, { url: "https://picsum.photos/id/50/40/40", size: 40 }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("span", { children: "Author Name" }),

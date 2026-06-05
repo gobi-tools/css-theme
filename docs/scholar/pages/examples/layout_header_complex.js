@@ -13,7 +13,7 @@ function LayoutHeaderComplex() {
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("article", { className: "align-center secondary", children: [
       /* @__PURE__ */ jsx("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-      /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("div", { className: "group", children: [
+      /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("div", { role: "group", children: [
         /* @__PURE__ */ jsx("input", { type: "email", placeholder: "name@example.com" }),
         /* @__PURE__ */ jsx("input", { type: "submit", value: "Subscribe" })
       ] }) })

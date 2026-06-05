@@ -16,7 +16,7 @@ export default function LayoutHeaderComplex() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <form>
-            <div className="group">
+            <div role="group">
               <input type="email" placeholder="name@example.com" />
               <input type="submit" value="Subscribe" />
             </div>

@@ -25,7 +25,7 @@ import Cards from "../../pages/docs/custom/Cards";
 import Classes from "../../pages/docs/custom/Classes";
 import Grids from "../../pages/docs/custom/Grids";
 import Containers from "../../pages/docs/custom/Containers";
-import Groups from "../../pages/docs/custom/Groups";
+import Groups from "../../pages/docs/layout/Groups";
 import Header from "../../pages/docs/layout/Header";
 import Breadcrumbs from "../../pages/docs/navigation/Breadcrumbs";
 import LayoutHeaderSection from "../../pages/examples/LayoutHeaderSection";
@@ -79,6 +79,7 @@ export class RouteMaster {
       // layout
       case EDoc.Header: return `${base}${theme}/pages/docs/layout/${htmlName(Header)}`;
       case EDoc.Footer: return `${base}${theme}/pages/docs/layout/${htmlName(Footer)}`;
+      case EDoc.Groups: return `${base}${theme}/pages/docs/layout/${htmlName(Groups)}`;
       // modal
       case EDoc.Modal: return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
       // navigation
@@ -96,7 +97,6 @@ export class RouteMaster {
       case EDoc.Grids: return `${base}${theme}/pages/docs/custom/${htmlName(Grids)}`;
       case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case EDoc.Colors: return `${base}${theme}/pages/docs/custom/${htmlName(Colors)}`;
-      case EDoc.Groups: return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
     }
   }
 
@@ -133,6 +133,7 @@ export class RouteMaster {
         switch (doc) {
           case htmlName(Header): return EDoc.Header;
           case htmlName(Footer): return EDoc.Footer;
+          case htmlName(Groups): return EDoc.Groups;
         }
       }
       case 'dialogs': {
@@ -162,7 +163,6 @@ export class RouteMaster {
           case htmlName(Grids): return EDoc.Grids;
           case htmlName(Containers): return EDoc.Containers;
           case htmlName(Colors): return EDoc.Colors;
-          case htmlName(Groups): return EDoc.Groups;
         }
       }
     }

@@ -93,7 +93,7 @@ import { jsx as jsx24, jsxs as jsxs24 } from "https://esm.sh/react@19.2.0/jsx-ru
 // pages/pages/docs/custom/Containers.tsx
 import { jsx as jsx25, jsxs as jsxs25 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/docs/custom/Groups.tsx
+// pages/pages/docs/layout/Groups.tsx
 import { jsx as jsx26, jsxs as jsxs26 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/pages/docs/layout/Header.tsx
@@ -173,7 +173,7 @@ function Tab2() {
 function Tab3() {
   return /* @__PURE__ */ jsxs45(Fragment13, { children: [
     /* @__PURE__ */ jsx45("h4", { children: "Users" }),
-    /* @__PURE__ */ jsx45("div", { className: "group", children: /* @__PURE__ */ jsxs45("div", { className: "row", children: [
+    /* @__PURE__ */ jsx45("div", { role: "group", children: /* @__PURE__ */ jsxs45("div", { className: "row", children: [
       /* @__PURE__ */ jsx45("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }),
       /* @__PURE__ */ jsxs45("div", { children: [
         /* @__PURE__ */ jsx45("b", { children: "user123" }),
@@ -181,7 +181,7 @@ function Tab3() {
         /* @__PURE__ */ jsx45("span", { children: "active" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx45("div", { className: "group", children: /* @__PURE__ */ jsxs45("div", { className: "row", children: [
+    /* @__PURE__ */ jsx45("div", { role: "group", children: /* @__PURE__ */ jsxs45("div", { className: "row", children: [
       /* @__PURE__ */ jsx45("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
       /* @__PURE__ */ jsxs45("div", { children: [
         /* @__PURE__ */ jsx45("b", { children: "user_451" }),

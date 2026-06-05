@@ -20,6 +20,7 @@ export enum EDoc {
   // layout
   Header = 'header',
   Footer = 'footer',
+  Groups = 'groups',
   // dialogs
   Modal = 'modal',
   // navigation
@@ -36,7 +37,6 @@ export enum EDoc {
   // custom - layout
   Grids = 'grid',
   Containers = 'containers',
-  Groups = 'groups',
   // custom - colors
   Colors = 'colors',
   // custom - classes

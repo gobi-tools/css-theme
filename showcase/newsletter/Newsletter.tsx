@@ -49,7 +49,7 @@ export default function Newsletter() {
             <h1>Lorem ipsum dolor sit amet</h1>
             <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
           </hgroup>
-          <div className="group">
+          <div role="group">
             <div className="row">
               <Avatar url="https://picsum.photos/id/50/40/40" size={40} />
               <div>

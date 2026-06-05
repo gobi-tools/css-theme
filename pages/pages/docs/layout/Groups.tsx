@@ -7,20 +7,20 @@ export default function Groups({ theme }) {
         <div>
           <p>
             Some elements are visually meant to <q>stick</q> together.
-            In such a case, you can wrap them in a parent that's been given the <code>group</code> class.
+            In such a case, you can wrap them in a parent that's been given the <code>group</code> role.
           </p>
           <p>
             In the case of a group of <code>buttons</code>, all horizontal
             spacing and borders between them dissapear.
           </p>
-          <p className="group">
+          <p role="group">
             <button>Option 1</button>
             <button type="reset">Option 2</button>
           </p>
         </div>
         <div>
           <pre><code>
-            {`<p class="group">
+            {`<p role="group">
   <button>
     Option 1
   </button>f
@@ -38,14 +38,14 @@ export default function Groups({ theme }) {
             In the case of a group of <code>marks</code>, they're
             also pulled together and have any vertical space dissapear.
           </p>
-          <p className="group">
+          <p role="group">
             <mark>#test</mark>
             <mark className="success">v1.0.0</mark>
           </p>
         </div>
         <div>
           <pre><code>
-            {`<p class="group">
+            {`<p role="group">
   <mark>
     #test
   </mark>
@@ -66,7 +66,7 @@ export default function Groups({ theme }) {
             an example of a compact login form.
           </p>
           <form>
-            <div className="group">
+            <div role="group">
               <input id="email" type="email" placeholder="Email" />
               <input id="password" type="password" placeholder="Password" />
               <input type="submit" value={"Login"} />
@@ -76,7 +76,7 @@ export default function Groups({ theme }) {
         <div>
           <pre><code>
             {`<form>
-  <div class="group">
+  <div role="group">
     <input 
       id="email" 
       type="email" 
@@ -100,7 +100,7 @@ export default function Groups({ theme }) {
             Grouping elements can be used to style 
             icons and text together.
           </p>
-          <div className="group">
+          <div role="group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -119,7 +119,7 @@ export default function Groups({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<div class="group">
+            {`<div role="group">
   <svg 
     width="20" 
     height="20" ...>
@@ -138,14 +138,14 @@ export default function Groups({ theme }) {
             Other elements, such as images, can also be grouped,
             although the impact isn't as pronounced.
           </p>
-          <p className="group">
+          <p role="group">
             <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="image 1" />
             <img width="80" height="80" src="https://picsum.photos/id/16/120/120" alt="image 2" />
           </p>
         </div>
         <div>
           <pre><code>
-            {`<p class="group">
+            {`<p role="group">
   <img 
     width="80" 
     height="80" 

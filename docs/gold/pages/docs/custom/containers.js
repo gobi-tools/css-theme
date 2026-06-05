@@ -261,14 +261,14 @@ function Buttons({ theme }) {
         /* @__PURE__ */ jsxs("p", { children: [
           "Finally, buttons can be grouped together by wrapping them in a parent tag that has the ",
           /* @__PURE__ */ jsx("code", { children: "group" }),
-          " class."
+          " role."
         ] }),
-        /* @__PURE__ */ jsxs("p", { className: "group", children: [
+        /* @__PURE__ */ jsxs("p", { role: "group", children: [
           /* @__PURE__ */ jsx("button", { children: "Button 1" }),
           /* @__PURE__ */ jsx("button", { type: "reset", children: "Button 2" }),
           /* @__PURE__ */ jsx("button", { type: "reset", children: "Button 3" })
         ] }),
-        /* @__PURE__ */ jsxs("p", { className: "group", children: [
+        /* @__PURE__ */ jsxs("p", { role: "group", children: [
           /* @__PURE__ */ jsx("button", { type: "reset", children: /* @__PURE__ */ jsx(
             "svg",
             {
@@ -332,7 +332,7 @@ function Buttons({ theme }) {
             }
           ) })
         ] }),
-        /* @__PURE__ */ jsxs("p", { className: "group", children: [
+        /* @__PURE__ */ jsxs("p", { role: "group", children: [
           /* @__PURE__ */ jsx("button", { type: "reset", children: "Prev" }),
           /* @__PURE__ */ jsx("button", { type: "reset", children: "1" }),
           /* @__PURE__ */ jsx("button", { type: "reset", children: "2" }),
@@ -345,7 +345,7 @@ function Buttons({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("pre", { children: /* @__PURE__ */ jsx("code", { children: `<p class="group">
+      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("pre", { children: /* @__PURE__ */ jsx("code", { children: `<p role="group">
   <button>
     Button 1
   </button>
@@ -357,7 +357,7 @@ function Buttons({ theme }) {
   </button>
 </p>
 
-<p class="group">
+<p role="group">
   <button type="reset">
     <
   </button>
@@ -369,7 +369,7 @@ function Buttons({ theme }) {
   </button>
 </p>
 
-<p class="group">
+<p role="group">
   <button type="reset">
     Prev
   </button>
@@ -519,7 +519,7 @@ function Blockquotes({ theme }) {
           " to quit"
         ] }) }),
         /* @__PURE__ */ jsx3("blockquote", { children: /* @__PURE__ */ jsxs3("hgroup", { children: [
-          /* @__PURE__ */ jsxs3("p", { className: "group", children: [
+          /* @__PURE__ */ jsxs3("p", { role: "group", children: [
             /* @__PURE__ */ jsxs3(
               "svg",
               {
@@ -564,7 +564,7 @@ function Blockquotes({ theme }) {
             
 <blockquote>
   <hgroup>
-    <p class="group">
+    <p role="group">
       <svg ... ></svg>
       <span>Information</span>
     </p>
@@ -1211,9 +1211,9 @@ function Tags({ theme }) {
         /* @__PURE__ */ jsxs9("p", { children: [
           "Finally, if you wrap a number of highlighted pieces of text in a html element with the ",
           /* @__PURE__ */ jsx9("code", { children: "group" }),
-          " class, they will be grouped together."
+          " role, they will be grouped together."
         ] }),
-        /* @__PURE__ */ jsxs9("p", { className: "group", children: [
+        /* @__PURE__ */ jsxs9("p", { role: "group", children: [
           /* @__PURE__ */ jsx9("mark", { children: "npm" }),
           /* @__PURE__ */ jsx9("mark", { className: "success", children: "1.0.3" }),
           /* @__PURE__ */ jsx9("mark", { className: "error", children: /* @__PURE__ */ jsxs9(
@@ -1242,7 +1242,7 @@ function Tags({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx9("div", { children: /* @__PURE__ */ jsx9("pre", { children: /* @__PURE__ */ jsx9("code", { children: `<p class="group">
+      /* @__PURE__ */ jsx9("div", { children: /* @__PURE__ */ jsx9("pre", { children: /* @__PURE__ */ jsx9("code", { children: `<p role="group">
   <mark>
     npm
   </mark>
@@ -1507,15 +1507,15 @@ function FormsGrouped({ theme }) {
         /* @__PURE__ */ jsxs13("p", { children: [
           "Simple forms, with a small number of inputs, can be grouped horizontally by applying the ",
           /* @__PURE__ */ jsx13("code", { children: "group" }),
-          " class to a parent tag. In such a case, auxiliary elemnents such as input labels should not be used."
+          " role to a parent tag. In such a case, auxiliary elemnents such as input labels should not be used."
         ] }),
-        /* @__PURE__ */ jsx13("form", { children: /* @__PURE__ */ jsxs13("div", { className: "group", children: [
+        /* @__PURE__ */ jsx13("form", { children: /* @__PURE__ */ jsxs13("div", { role: "group", children: [
           /* @__PURE__ */ jsx13("input", { id: "email", type: "email", placeholder: "Email" }),
           /* @__PURE__ */ jsx13("input", { type: "submit", value: "Subscribe" })
         ] }) })
       ] }),
       /* @__PURE__ */ jsx13("div", { children: /* @__PURE__ */ jsx13("pre", { children: /* @__PURE__ */ jsx13("code", { children: `<form>
-  <div class="group">
+  <div role="group">
     <input 
       id="email" 
       type="email" 
@@ -1529,7 +1529,7 @@ function FormsGrouped({ theme }) {
     /* @__PURE__ */ jsxs13("section", { className: "row", children: [
       /* @__PURE__ */ jsxs13("div", { children: [
         /* @__PURE__ */ jsx13("p", { children: "This can be used to great effect for search inputs." }),
-        /* @__PURE__ */ jsx13("form", { children: /* @__PURE__ */ jsxs13("div", { className: "group", children: [
+        /* @__PURE__ */ jsx13("form", { children: /* @__PURE__ */ jsxs13("div", { role: "group", children: [
           /* @__PURE__ */ jsx13("button", { disabled: true, children: /* @__PURE__ */ jsxs13(
             "svg",
             {
@@ -1553,7 +1553,7 @@ function FormsGrouped({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx13("div", { children: /* @__PURE__ */ jsx13("pre", { children: /* @__PURE__ */ jsx13("code", { children: `<form>
-  <div class="group">
+  <div role="group">
     <button disabled>
       <svg ...></svg>
     </button>
@@ -1578,7 +1578,7 @@ function FormsGrouped({ theme }) {
         ] }),
         /* @__PURE__ */ jsx13("form", { children: /* @__PURE__ */ jsxs13("fieldset", { children: [
           /* @__PURE__ */ jsx13("legend", { children: "Selection" }),
-          /* @__PURE__ */ jsxs13("div", { className: "group", children: [
+          /* @__PURE__ */ jsxs13("div", { role: "group", children: [
             /* @__PURE__ */ jsxs13("select", { id: "delivery", defaultValue: "fast", children: [
               /* @__PURE__ */ jsx13("option", { value: "fast", children: "Fast" }),
               /* @__PURE__ */ jsx13("option", { value: "standard", children: "Standard" })
@@ -1593,7 +1593,7 @@ function FormsGrouped({ theme }) {
     <legend>
       Selection
     </legend>
-    <div class="group">
+    <div role="group">
       <select id="delivery">
         <option 
           value="fast" 
@@ -1618,7 +1618,7 @@ function FormsGrouped({ theme }) {
     /* @__PURE__ */ jsxs13("section", { className: "row", children: [
       /* @__PURE__ */ jsxs13("div", { children: [
         /* @__PURE__ */ jsx13("p", { children: "And you can group checkbox and radio in order to display them horizontally as well." }),
-        /* @__PURE__ */ jsx13("form", { children: /* @__PURE__ */ jsxs13("div", { className: "group", children: [
+        /* @__PURE__ */ jsx13("form", { children: /* @__PURE__ */ jsxs13("div", { role: "group", children: [
           /* @__PURE__ */ jsxs13("label", { htmlFor: "ch_1", children: [
             /* @__PURE__ */ jsx13("input", { type: "checkbox", id: "ch_1", name: "check", value: "ch_1" }),
             /* @__PURE__ */ jsx13("span", { children: "Check #1" })
@@ -1634,7 +1634,7 @@ function FormsGrouped({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx13("div", { children: /* @__PURE__ */ jsx13("pre", { children: /* @__PURE__ */ jsx13("code", { children: `<form>
-  <div class="group">
+  <div role="group">
     <label for="ch_1">
       <input 
         type="checkbox" 
@@ -2138,7 +2138,7 @@ function Modal({ theme }) {
   <p>Lorem ipsum...</p>
 
   <form method="dialog">
-    <div class="group">
+    <div role="group">
       <div class="row">
         <button 
           value="cancel" 
@@ -2162,7 +2162,7 @@ function DialogModal(props) {
   return /* @__PURE__ */ jsxs16("dialog", { ref: props.ref, children: [
     /* @__PURE__ */ jsx16("h2", { children: "Dialog" }),
     /* @__PURE__ */ jsx16("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-    /* @__PURE__ */ jsx16("form", { method: "dialog", children: /* @__PURE__ */ jsx16("div", { className: "group", children: /* @__PURE__ */ jsxs16("div", { className: "row", children: [
+    /* @__PURE__ */ jsx16("form", { method: "dialog", children: /* @__PURE__ */ jsx16("div", { role: "group", children: /* @__PURE__ */ jsxs16("div", { className: "row", children: [
       /* @__PURE__ */ jsx16("button", { className: "error", value: "cancel", formNoValidate: true, children: "Cancel" }),
       /* @__PURE__ */ jsx16("div", { className: "gap" }),
       /* @__PURE__ */ jsx16("button", { value: "confirm", children: "Confirm" })
@@ -2451,7 +2451,7 @@ function Tab2() {
 function Tab3() {
   return /* @__PURE__ */ jsxs18(Fragment, { children: [
     /* @__PURE__ */ jsx18("h4", { children: "Users" }),
-    /* @__PURE__ */ jsx18("div", { className: "group", children: /* @__PURE__ */ jsxs18("div", { className: "row", children: [
+    /* @__PURE__ */ jsx18("div", { role: "group", children: /* @__PURE__ */ jsxs18("div", { className: "row", children: [
       /* @__PURE__ */ jsx18("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }),
       /* @__PURE__ */ jsxs18("div", { children: [
         /* @__PURE__ */ jsx18("b", { children: "user123" }),
@@ -2459,7 +2459,7 @@ function Tab3() {
         /* @__PURE__ */ jsx18("span", { children: "active" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx18("div", { className: "group", children: /* @__PURE__ */ jsxs18("div", { className: "row", children: [
+    /* @__PURE__ */ jsx18("div", { role: "group", children: /* @__PURE__ */ jsxs18("div", { className: "row", children: [
       /* @__PURE__ */ jsx18("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
       /* @__PURE__ */ jsxs18("div", { children: [
         /* @__PURE__ */ jsx18("b", { children: "user_451" }),
@@ -2791,7 +2791,7 @@ function Icons({ theme }) {
     /* @__PURE__ */ jsxs21("section", { className: "row", children: [
       /* @__PURE__ */ jsxs21("div", { children: [
         /* @__PURE__ */ jsx21("p", { children: "If they are used in a standalone mode then they should have a clear width and height specified." }),
-        /* @__PURE__ */ jsxs21("div", { className: "group", children: [
+        /* @__PURE__ */ jsxs21("div", { role: "group", children: [
           /* @__PURE__ */ jsxs21(
             "svg",
             {
@@ -2813,7 +2813,7 @@ function Icons({ theme }) {
           /* @__PURE__ */ jsx21("b", { children: "Test Address, SE11 8CL" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<div class="group">
+      /* @__PURE__ */ jsx21("div", { children: /* @__PURE__ */ jsx21("pre", { children: /* @__PURE__ */ jsx21("code", { children: `<div role="group">
   <svg 
     width="20" 
     height="20" ...></svg>
@@ -3079,7 +3079,7 @@ function Cards({ theme }) {
       /* @__PURE__ */ jsxs23("div", { children: [
         /* @__PURE__ */ jsx23("p", { children: "If we combine groups, columns and cards, we can experiment with even more daring layouts. All without having to write any custom CSS." }),
         /* @__PURE__ */ jsxs23("div", { className: "card", children: [
-          /* @__PURE__ */ jsx23("div", { className: "group", children: /* @__PURE__ */ jsxs23("div", { className: "row", children: [
+          /* @__PURE__ */ jsx23("div", { role: "group", children: /* @__PURE__ */ jsxs23("div", { className: "row", children: [
             /* @__PURE__ */ jsx23("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "header image" }),
             /* @__PURE__ */ jsxs23("div", { children: [
               /* @__PURE__ */ jsx23("b", { children: "Title" }),
@@ -3107,7 +3107,7 @@ function Cards({ theme }) {
         ] }) })
       ] }),
       /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsx23("pre", { children: /* @__PURE__ */ jsx23("code", { children: `<div class="card">
-  <div class="group">
+  <div role="group">
     <div className="row">
       <img 
         width="80" 
@@ -3201,10 +3201,6 @@ function Classes({ theme }) {
             /* @__PURE__ */ jsx24("code", { children: "col" }),
             " elements. Provides a gap between them so they can be separated into left and right sides. Has no effect on mobile displays."
           ] })
-        ] }),
-        /* @__PURE__ */ jsxs24("tr", { children: [
-          /* @__PURE__ */ jsx24("td", { children: /* @__PURE__ */ jsx24("code", { children: "group" }) }),
-          /* @__PURE__ */ jsx24("td", { children: "Groups various elements, like buttons or inputs, together, horizontally." })
         ] }),
         /* @__PURE__ */ jsxs24("tr", { children: [
           /* @__PURE__ */ jsx24("td", { rowSpan: 3, children: "Mobile" }),
@@ -3383,7 +3379,7 @@ function Grids({ theme }) {
   ] });
 }
 
-// pages/pages/docs/custom/Groups.tsx
+// pages/pages/docs/layout/Groups.tsx
 import { jsx as jsx26, jsxs as jsxs26 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Groups({ theme }) {
   return /* @__PURE__ */ jsxs26(DocLayout, { theme, children: [
@@ -3394,19 +3390,19 @@ function Groups({ theme }) {
           /* @__PURE__ */ jsx26("q", { children: "stick" }),
           " together. In such a case, you can wrap them in a parent that's been given the ",
           /* @__PURE__ */ jsx26("code", { children: "group" }),
-          " class."
+          " role."
         ] }),
         /* @__PURE__ */ jsxs26("p", { children: [
           "In the case of a group of ",
           /* @__PURE__ */ jsx26("code", { children: "buttons" }),
           ", all horizontal spacing and borders between them dissapear."
         ] }),
-        /* @__PURE__ */ jsxs26("p", { className: "group", children: [
+        /* @__PURE__ */ jsxs26("p", { role: "group", children: [
           /* @__PURE__ */ jsx26("button", { children: "Option 1" }),
           /* @__PURE__ */ jsx26("button", { type: "reset", children: "Option 2" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<p class="group">
+      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<p role="group">
   <button>
     Option 1
   </button>f
@@ -3422,12 +3418,12 @@ function Groups({ theme }) {
           /* @__PURE__ */ jsx26("code", { children: "marks" }),
           ", they're also pulled together and have any vertical space dissapear."
         ] }),
-        /* @__PURE__ */ jsxs26("p", { className: "group", children: [
+        /* @__PURE__ */ jsxs26("p", { role: "group", children: [
           /* @__PURE__ */ jsx26("mark", { children: "#test" }),
           /* @__PURE__ */ jsx26("mark", { className: "success", children: "v1.0.0" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<p class="group">
+      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<p role="group">
   <mark>
     #test
   </mark>
@@ -3440,14 +3436,14 @@ function Groups({ theme }) {
     /* @__PURE__ */ jsxs26("section", { className: "row", children: [
       /* @__PURE__ */ jsxs26("div", { children: [
         /* @__PURE__ */ jsx26("p", { children: "Grouping elements really shines in the case of forms and form inputs. You can see below an example of a compact login form." }),
-        /* @__PURE__ */ jsx26("form", { children: /* @__PURE__ */ jsxs26("div", { className: "group", children: [
+        /* @__PURE__ */ jsx26("form", { children: /* @__PURE__ */ jsxs26("div", { role: "group", children: [
           /* @__PURE__ */ jsx26("input", { id: "email", type: "email", placeholder: "Email" }),
           /* @__PURE__ */ jsx26("input", { id: "password", type: "password", placeholder: "Password" }),
           /* @__PURE__ */ jsx26("input", { type: "submit", value: "Login" })
         ] }) })
       ] }),
       /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<form>
-  <div class="group">
+  <div role="group">
     <input 
       id="email" 
       type="email" 
@@ -3465,7 +3461,7 @@ function Groups({ theme }) {
     /* @__PURE__ */ jsxs26("section", { className: "row", children: [
       /* @__PURE__ */ jsxs26("div", { children: [
         /* @__PURE__ */ jsx26("p", { children: "Grouping elements can be used to style icons and text together." }),
-        /* @__PURE__ */ jsxs26("div", { className: "group", children: [
+        /* @__PURE__ */ jsxs26("div", { role: "group", children: [
           /* @__PURE__ */ jsxs26(
             "svg",
             {
@@ -3487,7 +3483,7 @@ function Groups({ theme }) {
           /* @__PURE__ */ jsx26("b", { children: "Test Address, SE11 8CL" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<div class="group">
+      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<div role="group">
   <svg 
     width="20" 
     height="20" ...>
@@ -3500,12 +3496,12 @@ function Groups({ theme }) {
     /* @__PURE__ */ jsxs26("section", { className: "row", children: [
       /* @__PURE__ */ jsxs26("div", { children: [
         /* @__PURE__ */ jsx26("p", { children: "Other elements, such as images, can also be grouped, although the impact isn't as pronounced." }),
-        /* @__PURE__ */ jsxs26("p", { className: "group", children: [
+        /* @__PURE__ */ jsxs26("p", { role: "group", children: [
           /* @__PURE__ */ jsx26("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "image 1" }),
           /* @__PURE__ */ jsx26("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/120/120", alt: "image 2" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<p class="group">
+      /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsx26("pre", { children: /* @__PURE__ */ jsx26("code", { children: `<p role="group">
   <img 
     width="80" 
     height="80" 
@@ -3592,7 +3588,7 @@ function Header({ theme }) {
       Lorem ipsum...
     </p>
     <form action="...">
-      <div class="group">
+      <div role="group">
         <input 
           type="email" 
           placeholder="..."/>
@@ -3621,7 +3617,7 @@ function Header({ theme }) {
       /* @__PURE__ */ jsx27("div", { children: /* @__PURE__ */ jsx27("pre", { children: /* @__PURE__ */ jsx27("code", { children: `<main>
   <header>
     <aside>
-      <div class="group">
+      <div role="group">
         <div class="row">
           <div>
             ...
@@ -3714,7 +3710,7 @@ function LayoutHeaderSection() {
     /* @__PURE__ */ jsxs29("main", { children: [
       /* @__PURE__ */ jsx29("h1", { children: "Title" }),
       /* @__PURE__ */ jsx29("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-      /* @__PURE__ */ jsx29("section", { children: /* @__PURE__ */ jsx29("header", { children: /* @__PURE__ */ jsx29("aside", { className: "secondary inverted", children: /* @__PURE__ */ jsx29("div", { className: "group", children: /* @__PURE__ */ jsxs29("div", { className: "row", children: [
+      /* @__PURE__ */ jsx29("section", { children: /* @__PURE__ */ jsx29("header", { children: /* @__PURE__ */ jsx29("aside", { className: "secondary inverted", children: /* @__PURE__ */ jsx29("div", { role: "group", children: /* @__PURE__ */ jsxs29("div", { className: "row", children: [
         /* @__PURE__ */ jsxs29("div", { children: [
           /* @__PURE__ */ jsx29("b", { children: "Try Now" }),
           /* @__PURE__ */ jsx29("br", {}),
@@ -3808,7 +3804,7 @@ function LayoutHeaderComplex() {
     /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("article", { className: "align-center secondary", children: [
       /* @__PURE__ */ jsx33("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx33("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-      /* @__PURE__ */ jsx33("form", { children: /* @__PURE__ */ jsxs33("div", { className: "group", children: [
+      /* @__PURE__ */ jsx33("form", { children: /* @__PURE__ */ jsxs33("div", { role: "group", children: [
         /* @__PURE__ */ jsx33("input", { type: "email", placeholder: "name@example.com" }),
         /* @__PURE__ */ jsx33("input", { type: "submit", value: "Subscribe" })
       ] }) })
@@ -4000,7 +3996,7 @@ function Colors({ theme }) {
             /* @__PURE__ */ jsx39("span", { className: `${colorClass} inverted`, children: "sed do amet" })
           ] })
         ] }),
-        /* @__PURE__ */ jsxs39("p", { className: "group", children: [
+        /* @__PURE__ */ jsxs39("p", { role: "group", children: [
           /* @__PURE__ */ jsx39("mark", { className: `${colorClass}`, children: "v12.5.33" }),
           /* @__PURE__ */ jsx39("mark", { className: `${colorClass} inverted`, children: "Passing" })
         ] })
@@ -4061,7 +4057,7 @@ function Colors({ theme }) {
 
 ...
 
-<p class="group">
+<p role="group">
   <mark class="${colorClass}">
     v12.5.33 
   </mark>
@@ -4234,6 +4230,8 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/docs/layout/${htmlName(Header)}`;
       case "footer" /* Footer */:
         return `${base}${theme}/pages/docs/layout/${htmlName(Footer)}`;
+      case "groups" /* Groups */:
+        return `${base}${theme}/pages/docs/layout/${htmlName(Groups)}`;
       // modal
       case "modal" /* Modal */:
         return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
@@ -4264,8 +4262,6 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case "colors" /* Colors */:
         return `${base}${theme}/pages/docs/custom/${htmlName(Colors)}`;
-      case "groups" /* Groups */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Groups)}`;
     }
   }
   static getDocFromRoute(path) {
@@ -4317,6 +4313,8 @@ var RouteMaster = class _RouteMaster {
             return "header" /* Header */;
           case htmlName(Footer):
             return "footer" /* Footer */;
+          case htmlName(Groups):
+            return "groups" /* Groups */;
         }
       }
       case "dialogs": {
@@ -4359,8 +4357,6 @@ var RouteMaster = class _RouteMaster {
             return "containers" /* Containers */;
           case htmlName(Colors):
             return "colors" /* Colors */;
-          case htmlName(Groups):
-            return "groups" /* Groups */;
         }
       }
     }
@@ -4551,7 +4547,8 @@ function DocLayout({ theme, children }) {
         /* @__PURE__ */ jsxs45("menu", { children: [
           /* @__PURE__ */ jsx45("b", { children: "Layout" }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "header" /* Header */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("header" /* Header */, theme, route), children: "Headers" }) }),
-          /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "footer" /* Footer */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("footer" /* Footer */, theme, route), children: "Footers" }) })
+          /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "footer" /* Footer */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("footer" /* Footer */, theme, route), children: "Footers" }) }),
+          /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) })
         ] }),
         /* @__PURE__ */ jsxs45("menu", { children: [
           /* @__PURE__ */ jsx45("b", { children: "Dialogs" }),
@@ -4575,7 +4572,6 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "cards" /* Cards */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "Cards" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "grid" /* Grids */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "Grids" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "Containers" }) }),
-          /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "colors" /* Colors */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "Colors" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "classes" /* Classes */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "Classes" }) })
         ] })

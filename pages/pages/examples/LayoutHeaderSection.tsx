@@ -17,7 +17,7 @@ export default function LayoutHeaderSection() {
         <section>
           <header>
             <aside className="secondary inverted">
-              <div className="group">
+              <div role="group">
                 <div className="row">
                   <div>
                     <b>Try Now</b>

@@ -46,7 +46,7 @@ export function Tab3() {
   return (
     <>
       <h4>Users</h4>
-      <div className="group">
+      <div role="group">
         <div className="row">
           <img className="circle" width="36" height="36" src="https://picsum.photos/id/16/80/80" alt="profile pic" />
           <div>
@@ -56,7 +56,7 @@ export function Tab3() {
           </div>
         </div>
       </div>
-      <div className="group">
+      <div role="group">
         <div className="row">
           <img className="circle" width="36" height="36" src="https://picsum.photos/id/16/40/40" alt="profile pic" />
           <div>

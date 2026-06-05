@@ -72,13 +72,7 @@ export default function Classes({ theme }) {
                   Has no effect on mobile displays.
                 </td>
               </tr>
-              <tr>
-                <td><code>group</code></td>
-                <td>
-                  Groups various elements, like buttons or inputs, together, horizontally.
-                </td>
-              </tr>
-
+              
               <tr>
                 <td rowSpan={3}>Mobile</td>
                 <td><code>hide-on-mobile</code></td>

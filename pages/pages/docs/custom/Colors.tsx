@@ -44,7 +44,7 @@ export default function Colors({ theme }) {
                 <span className={`${colorClass} inverted`}>sed do amet</span>
               </h4>
             </hgroup>
-            <p className="group">
+            <p role="group">
               <mark className={`${colorClass}`}>v12.5.33</mark>
               <mark className={`${colorClass} inverted`}>Passing</mark>
             </p>
@@ -114,7 +114,7 @@ export default function Colors({ theme }) {
 
 ...
 
-<p class="group">
+<p role="group">
   <mark class="${colorClass}">
     v12.5.33 
   </mark>

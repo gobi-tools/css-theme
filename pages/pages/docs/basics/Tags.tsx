@@ -121,10 +121,10 @@ export default function Tags({ theme }) {
           <p>
             Finally, if you wrap a number of
             highlighted pieces of text in a
-            html element with the <code>group</code> class, they
+            html element with the <code>group</code> role, they
             will be grouped together.
           </p>
-          <p className="group">
+          <p role="group">
             <mark>npm</mark>
             <mark className="success">1.0.3</mark>
             <mark className="error">
@@ -144,7 +144,7 @@ export default function Tags({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<p class="group">
+            {`<p role="group">
   <mark>
     npm
   </mark>

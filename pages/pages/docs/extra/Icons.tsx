@@ -49,7 +49,7 @@ export default function Icons({ theme }) {
             If they are used in a standalone mode then they should have a clear
             width and height specified.
           </p>
-          <div className="group">
+          <div role="group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -68,7 +68,7 @@ export default function Icons({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<div class="group">
+            {`<div role="group">
   <svg 
     width="20" 
     height="20" ...></svg>

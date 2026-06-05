@@ -1,6 +1,6 @@
 /* base */
 
-.group {
+:is(.group, [role="group"]) {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,45 +8,45 @@
   /* flex-wrap: wrap; */
 }
 
-.group>* {
+:is(.group, [role="group"])>* {
   align-items: center;
 }
 
-.group>:is(:first-child) {
+:is(.group, [role="group"])>:is(:first-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.group>:is(:last-child) {
+:is(.group, [role="group"])>:is(:last-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.group>:not(:first-child):not(:last-child) {
+:is(.group, [role="group"])>:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
-.group>:is(button, input[type=submit], input[type=reset], mark) {
+:is(.group, [role="group"])>:is(button, input[type=submit], input[type=reset], mark) {
   width: auto;
   align-self: flex-start;
 }
 
-.group>:is(button, input[type=submit], input[type=reset])+:is(input, button) {
+:is(.group, [role="group"])>:is(button, input[type=submit], input[type=reset])+:is(input, button) {
   border-left-width: 0;
 }
 
-.group>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
+:is(.group, [role="group"])>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
   border-right-width: 0;
 }
 
 /* theme styles */
 
-.group>:is(input, textarea, select) {
+:is(.group, [role="group"])>:is(input, textarea, select) {
   border-bottom-width: var(--border-bottom-width-select);
 }
 
 /* just in case datalist is the last element ... ignore it */
-.group>:is(button, input, textarea, select):has(+ datalist) {
+:is(.group, [role="group"])>:is(button, input, textarea, select):has(+ datalist) {
   border-top-right-radius: var(--border-radius-input) !important;
   border-bottom-right-radius: var(--border-radius-input) !important;
 }

@@ -7,11 +7,11 @@ export default function FormsGrouped({ theme }) {
         <div>
           <p>
             Simple forms, with a small number of inputs, can
-            be grouped horizontally by applying the <code>group</code> class to a parent tag. 
+            be grouped horizontally by applying the <code>group</code> role to a parent tag. 
             In such a case, auxiliary elemnents such as input labels should not be used.
           </p>
           <form>
-            <div className="group">
+            <div role="group">
               <input id="email" type="email" placeholder="Email" />
               <input type="submit" value="Subscribe" />
             </div>
@@ -19,7 +19,7 @@ export default function FormsGrouped({ theme }) {
         </div>
         <div>
           <pre><code>{`<form>
-  <div class="group">
+  <div role="group">
     <input 
       id="email" 
       type="email" 
@@ -38,7 +38,7 @@ export default function FormsGrouped({ theme }) {
             This can be used to great effect for search inputs.
           </p>
           <form>
-            <div className="group">
+            <div role="group">
               <button disabled>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function FormsGrouped({ theme }) {
         <div>
           <pre><code>
             {`<form>
-  <div class="group">
+  <div role="group">
     <button disabled>
       <svg ...></svg>
     </button>
@@ -88,7 +88,7 @@ export default function FormsGrouped({ theme }) {
           <form>
             <fieldset>
               <legend>Selection</legend>
-              <div className="group">
+              <div role="group">
                 <select id="delivery" defaultValue={"fast"}>
                   <option value="fast">Fast</option>
                   <option value="standard">Standard</option>
@@ -107,7 +107,7 @@ export default function FormsGrouped({ theme }) {
     <legend>
       Selection
     </legend>
-    <div class="group">
+    <div role="group">
       <select id="delivery">
         <option 
           value="fast" 
@@ -139,7 +139,7 @@ export default function FormsGrouped({ theme }) {
             to display them horizontally as well.
           </p>
           <form>
-            <div className="group">
+            <div role="group">
               <label htmlFor="ch_1">
                 <input type="checkbox" id="ch_1" name="check" value="ch_1" />
                 <span>Check #1</span>
@@ -158,7 +158,7 @@ export default function FormsGrouped({ theme }) {
         <div>
           <pre><code>
             {`<form>
-  <div class="group">
+  <div role="group">
     <label for="ch_1">
       <input 
         type="checkbox" 

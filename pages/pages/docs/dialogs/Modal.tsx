@@ -32,7 +32,7 @@ export default function Modal({ theme }) {
   <p>Lorem ipsum...</p>
 
   <form method="dialog">
-    <div class="group">
+    <div role="group">
       <div class="row">
         <button 
           value="cancel" 
@@ -71,7 +71,7 @@ function DialogModal(
         labore et dolore magna aliqua.
       </p>
       <form method="dialog">
-        <div className="group">
+        <div role="group">
           <div className="row">
             <button className="error" value="cancel" formNoValidate>Cancel</button>
             <div className="gap"></div>

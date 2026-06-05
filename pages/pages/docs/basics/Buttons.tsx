@@ -193,14 +193,14 @@ export default function Buttons({ theme }) {
           <p>
             Finally, buttons can be grouped together by
             wrapping them in a parent tag
-            that has the <code>group</code> class.
+            that has the <code>group</code> role.
           </p>
-          <p className="group">
+          <p role="group">
             <button>Button 1</button>
             <button type="reset">Button 2</button>
             <button type="reset">Button 3</button>
           </p>
-          <p className="group">
+          <p role="group">
             <button type="reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -228,7 +228,7 @@ export default function Buttons({ theme }) {
             </button>
           </p>
 
-          <p className="group">
+          <p role="group">
             <button type="reset">Prev</button>
             <button type="reset">1</button>
             <button type="reset">2</button>
@@ -242,7 +242,7 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>{`<p class="group">
+          <pre><code>{`<p role="group">
   <button>
     Button 1
   </button>
@@ -254,7 +254,7 @@ export default function Buttons({ theme }) {
   </button>
 </p>
 
-<p class="group">
+<p role="group">
   <button type="reset">
     <
   </button>
@@ -266,7 +266,7 @@ export default function Buttons({ theme }) {
   </button>
 </p>
 
-<p class="group">
+<p role="group">
   <button type="reset">
     Prev
   </button>

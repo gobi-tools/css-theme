@@ -74,7 +74,7 @@ export default function Header({ theme }) {
       Lorem ipsum...
     </p>
     <form action="...">
-      <div class="group">
+      <div role="group">
         <input 
           type="email" 
           placeholder="..."/>
@@ -106,7 +106,7 @@ export default function Header({ theme }) {
             {`<main>
   <header>
     <aside>
-      <div class="group">
+      <div role="group">
         <div class="row">
           <div>
             ...

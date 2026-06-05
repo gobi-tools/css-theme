@@ -107,7 +107,7 @@ export default function LandingPage() {
         <section>
           <header>
             <aside>
-              <div className="group">
+              <div role="group">
                 <div className="row">
                   <div>
                     <hgroup>
@@ -127,7 +127,7 @@ export default function LandingPage() {
       <header>
         <aside className="primary inverted">
           <div>
-            <div className="group">
+            <div role="group">
               <div className="row">
                 <div>
                   <hgroup>

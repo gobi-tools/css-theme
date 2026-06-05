@@ -219,7 +219,7 @@ export default function Cards({ theme }) {
             with even more daring layouts. All without having to write any custom CSS.
           </p>
           <div className="card">
-            <div className="group">
+            <div role="group">
               <div className="row">
                 <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="header image" />
                 <div>
@@ -256,7 +256,7 @@ export default function Cards({ theme }) {
         <div>
           <pre><code>
             {`<div class="card">
-  <div class="group">
+  <div role="group">
     <div className="row">
       <img 
         width="80" 
