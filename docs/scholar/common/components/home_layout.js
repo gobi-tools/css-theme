@@ -3264,7 +3264,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx25("td", { children: "Sets the maximum size of the container to 1600px." })
         ] }),
         /* @__PURE__ */ jsxs25("tr", { children: [
-          /* @__PURE__ */ jsx25("td", { rowSpan: 5, children: "Layout" }),
+          /* @__PURE__ */ jsx25("td", { rowSpan: 4, children: "Layout" }),
           /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "row" }) }),
           /* @__PURE__ */ jsx25("td", { children: "Transforms its child elements into horizontally aligned columns." })
         ] }),

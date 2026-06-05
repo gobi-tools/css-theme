@@ -3273,7 +3273,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx26("td", { children: "Sets the maximum size of the container to 1600px." })
         ] }),
         /* @__PURE__ */ jsxs26("tr", { children: [
-          /* @__PURE__ */ jsx26("td", { rowSpan: 5, children: "Layout" }),
+          /* @__PURE__ */ jsx26("td", { rowSpan: 4, children: "Layout" }),
           /* @__PURE__ */ jsx26("td", { children: /* @__PURE__ */ jsx26("code", { children: "row" }) }),
           /* @__PURE__ */ jsx26("td", { children: "Transforms its child elements into horizontally aligned columns." })
         ] }),

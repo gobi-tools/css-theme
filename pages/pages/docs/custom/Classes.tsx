@@ -46,7 +46,7 @@ export default function Classes({ theme }) {
               </tr>
 
               <tr>
-                <td rowSpan={5}>Layout</td>
+                <td rowSpan={4}>Layout</td>
                 <td><code>row</code></td>
                 <td>
                   Transforms its child elements into horizontally aligned columns.
