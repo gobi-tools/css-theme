@@ -3698,7 +3698,7 @@ function LayoutHeaderSection() {
           /* @__PURE__ */ jsx29("br", {}),
           "Subtitle"
         ] }),
-        /* @__PURE__ */ jsx29("div", { className: "gap" }),
+        /* @__PURE__ */ jsx29("div", {}),
         /* @__PURE__ */ jsx29("button", { type: "reset", children: "Download" })
       ] }) }) }) }) })
     ] })

@@ -3849,7 +3849,7 @@ function LayoutHeaderSection() {
           /* @__PURE__ */ jsx31("br", {}),
           "Subtitle"
         ] }),
-        /* @__PURE__ */ jsx31("div", { className: "gap" }),
+        /* @__PURE__ */ jsx31("div", {}),
         /* @__PURE__ */ jsx31("button", { type: "reset", children: "Download" })
       ] }) }) }) }) })
     ] })

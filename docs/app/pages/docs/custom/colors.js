@@ -3764,7 +3764,7 @@ function LayoutHeaderSection() {
           /* @__PURE__ */ jsx30("br", {}),
           "Subtitle"
         ] }),
-        /* @__PURE__ */ jsx30("div", { className: "gap" }),
+        /* @__PURE__ */ jsx30("div", {}),
         /* @__PURE__ */ jsx30("button", { type: "reset", children: "Download" })
       ] }) }) }) }) })
     ] })

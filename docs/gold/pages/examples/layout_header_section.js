@@ -19,7 +19,7 @@ function LayoutHeaderSection() {
           /* @__PURE__ */ jsx("br", {}),
           "Subtitle"
         ] }),
-        /* @__PURE__ */ jsx("div", { className: "gap" }),
+        /* @__PURE__ */ jsx("div", {}),
         /* @__PURE__ */ jsx("button", { type: "reset", children: "Download" })
       ] }) }) }) }) })
     ] })

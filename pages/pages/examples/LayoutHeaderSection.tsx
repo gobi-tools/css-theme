@@ -24,7 +24,7 @@ export default function LayoutHeaderSection() {
                     <br />
                     Subtitle
                   </div>
-                  <div className="gap"></div>
+                  <div></div>
                   <button type="reset">Download</button>
                 </div>
               </div>
