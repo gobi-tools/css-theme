@@ -20,7 +20,7 @@ export default function DocLayout({ theme, children }) {
     <HomeLayout theme={theme}>
       <div className="row">
         <aside>
-          <div className="hide-on-desktop group">
+          <div className="hide-on-desktop" role="group">
             <div className="row">
               <div>
                 <button onClick={() => setIsMenuOpen(!isMenuOpen)}>

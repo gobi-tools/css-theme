@@ -52,7 +52,7 @@ export default function Colors({ theme }) {
 
           <section>
             <form>
-              <div className={`group ${colorClass}`}>
+              <div role="group" className={`${colorClass}`}>
                 <input type="email" id="subscribe" placeholder="Enter email..." />
                 <input type="submit" value={"Subscribe"} />
               </div>

@@ -41,7 +41,7 @@ function DocLayout({ theme, children }) {
   }, []);
   return /* @__PURE__ */ jsx(HomeLayout, { theme, children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
     /* @__PURE__ */ jsxs("aside", { children: [
-      /* @__PURE__ */ jsxs("div", { className: "hide-on-desktop group", children: [
+      /* @__PURE__ */ jsxs("div", { className: "hide-on-desktop", role: "group", children: [
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("button", { onClick: () => setIsMenuOpen(!isMenuOpen), children: isMenuOpen ? /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
             /* @__PURE__ */ jsx("path", { d: "M18 6 6 18" }),
@@ -4135,7 +4135,7 @@ function Colors({ theme }) {
           /* @__PURE__ */ jsx41("mark", { className: `${colorClass} inverted`, children: "Passing" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx41("section", { children: /* @__PURE__ */ jsx41("form", { children: /* @__PURE__ */ jsxs41("div", { className: `group ${colorClass}`, children: [
+      /* @__PURE__ */ jsx41("section", { children: /* @__PURE__ */ jsx41("form", { children: /* @__PURE__ */ jsxs41("div", { role: "group", className: `${colorClass}`, children: [
         /* @__PURE__ */ jsx41("input", { type: "email", id: "subscribe", placeholder: "Enter email..." }),
         /* @__PURE__ */ jsx41("input", { type: "submit", value: "Subscribe" })
       ] }) }) }),

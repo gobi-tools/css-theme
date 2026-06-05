@@ -3955,7 +3955,7 @@ function Colors({ theme }) {
           /* @__PURE__ */ jsx39("mark", { className: `${colorClass} inverted`, children: "Passing" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx39("section", { children: /* @__PURE__ */ jsx39("form", { children: /* @__PURE__ */ jsxs39("div", { className: `group ${colorClass}`, children: [
+      /* @__PURE__ */ jsx39("section", { children: /* @__PURE__ */ jsx39("form", { children: /* @__PURE__ */ jsxs39("div", { role: "group", className: `${colorClass}`, children: [
         /* @__PURE__ */ jsx39("input", { type: "email", id: "subscribe", placeholder: "Enter email..." }),
         /* @__PURE__ */ jsx39("input", { type: "submit", value: "Subscribe" })
       ] }) }) }),
@@ -4461,7 +4461,7 @@ function DocLayout({ theme, children }) {
   }, []);
   return /* @__PURE__ */ jsx45(HomeLayout, { theme, children: /* @__PURE__ */ jsxs45("div", { className: "row", children: [
     /* @__PURE__ */ jsxs45("aside", { children: [
-      /* @__PURE__ */ jsxs45("div", { className: "hide-on-desktop group", children: [
+      /* @__PURE__ */ jsxs45("div", { className: "hide-on-desktop", role: "group", children: [
         /* @__PURE__ */ jsxs45("div", { className: "row", children: [
           /* @__PURE__ */ jsx45("div", { children: /* @__PURE__ */ jsx45("button", { onClick: () => setIsMenuOpen(!isMenuOpen), children: isMenuOpen ? /* @__PURE__ */ jsxs45("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
             /* @__PURE__ */ jsx45("path", { d: "M18 6 6 18" }),

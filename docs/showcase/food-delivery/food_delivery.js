@@ -73,7 +73,7 @@ function FoodDelivery() {
           ] }) }) }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsxs("section", { className: "row group", children: [
+      /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
         /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/42/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [
@@ -84,7 +84,7 @@ function FoodDelivery() {
         ] }),
         /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/42/640/480", width: "100%" }) })
       ] }),
-      /* @__PURE__ */ jsxs("section", { className: "row group", children: [
+      /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
         /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/103/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [
@@ -94,7 +94,7 @@ function FoodDelivery() {
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Get pass" }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsxs("section", { className: "row group", children: [
+      /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
         /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/348/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [

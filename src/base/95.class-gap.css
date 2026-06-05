@@ -6,7 +6,7 @@
 
 /* @warn: referencing the "rows" container */
 @container rows (max-width: 600px) {
-  :not(:is(.group, [role="group"]))>.row:not(.disable-mobile).gap {
+  :not([role="group"])>.row:not(.disable-mobile).gap {
     display: none;
   }
 }

@@ -23,7 +23,7 @@ dialog {
   }
 }
 
-:is(.group, [role="group"])>*:not(label, input[type=checkbox], input[type=radio]) {
+[role="group"]>*:not(label, input[type=checkbox], input[type=radio]) {
   margin-inline: 0;
 }
 

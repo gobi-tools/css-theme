@@ -97,7 +97,7 @@ export default function FoodDelivery() {
           </div>
         </section>
 
-        <section className="row group">
+        <section className="row" role="group">
           <div className="hide-on-desktop">
             <img className="rounded" src="https://picsum.photos/id/42/640/480" width={"100%"} />
           </div>
@@ -117,7 +117,7 @@ export default function FoodDelivery() {
           </div>
         </section>
 
-        <section className="row group">
+        <section className="row" role="group">
           <div>
             <img className="rounded" src="https://picsum.photos/id/103/640/480" width={"100%"} />
           </div>
@@ -134,7 +134,7 @@ export default function FoodDelivery() {
           </div>
         </section>
 
-        <section className="row group">
+        <section className="row" role="group">
           <div className="hide-on-desktop">
             <img className="rounded" src="https://picsum.photos/id/348/640/480" width={"100%"} />
           </div>

@@ -39,7 +39,7 @@
     flex: 0 4 100%;
   }
 
-  :not(:is(.group, [role="group"]))>.row:not(.disable-mobile) {
+  :not([role="group"])>.row:not(.disable-mobile) {
     flex-direction: column;
   }
 }
