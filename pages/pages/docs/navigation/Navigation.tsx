@@ -166,7 +166,8 @@ export default function Navigation({ theme }) {
       <section className="row">
         <div>
           <p>
-            Navigation can be split into a left and a right section by placing a <code>gap</code> list item.
+            Navigation can be split into a left and a right section by placing an empty <code>div</code> element to 
+            act as gap.
           </p>
           <nav className="disable-mobile">
             <ul>
@@ -200,7 +201,7 @@ export default function Navigation({ theme }) {
 <li>...</li>
 
 <!-- gap -->
-<li class="gap"></li>
+<div></div>
 
 <!-- right side -->
 <li>...</li>
@@ -250,7 +251,7 @@ export default function Navigation({ theme }) {
     <li>...</li>
     <li>...</li>
     <li>...</li>
-    <li class="gap">...</li>
+    <div></div>
     <li>...</li>
   </ul>
 </nav>`}

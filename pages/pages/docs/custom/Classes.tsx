@@ -46,7 +46,7 @@ export default function Classes({ theme }) {
               </tr>
 
               <tr>
-                <td rowSpan={4}>Layout</td>
+                <td rowSpan={3}>Layout</td>
                 <td><code>row</code></td>
                 <td>
                   Transforms its child elements into horizontally aligned columns.
@@ -63,13 +63,6 @@ export default function Classes({ theme }) {
                 <td><code>col-N</code></td>
                 <td>
                   Horizontal space is divided in 12 equal columns. From <code>col-1</code> to <code>col-12</code> we can progressively specify columns of greater and greater width.
-                </td>
-              </tr>
-              <tr>
-                <td><code>gap</code></td>
-                <td>
-                  Used in between <code>col</code> elements. Provides a gap between them so they can be separated into left and right sides.
-                  Has no effect on mobile displays.
                 </td>
               </tr>
               

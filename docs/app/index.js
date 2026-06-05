@@ -1109,17 +1109,7 @@ function Table({ theme }) {
               ] }) }) })
             ] })
           ] })
-        ] }),
-        /* @__PURE__ */ jsx9("p", { children: /* @__PURE__ */ jsxs9("small", { children: [
-          "You can learn more about classes ",
-          /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("classes" /* Classes */, theme, route), children: "here" }),
-          "."
-        ] }) }),
-        /* @__PURE__ */ jsx9("p", { children: /* @__PURE__ */ jsxs9("small", { children: [
-          "You can learn more about images ",
-          /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("figures" /* Figures */, theme, route), children: "here" }),
-          "."
-        ] }) })
+        ] })
       ] }),
       /* @__PURE__ */ jsx9("div", { children: /* @__PURE__ */ jsx9("pre", { children: /* @__PURE__ */ jsx9("code", { children: `<table>
   <thead>
@@ -2398,9 +2388,9 @@ function Navigation({ theme }) {
     /* @__PURE__ */ jsxs18("section", { className: "row", children: [
       /* @__PURE__ */ jsxs18("div", { children: [
         /* @__PURE__ */ jsxs18("p", { children: [
-          "Navigation can be split into a left and a right section by placing a ",
-          /* @__PURE__ */ jsx18("code", { children: "gap" }),
-          " list item."
+          "Navigation can be split into a left and a right section by placing an empty ",
+          /* @__PURE__ */ jsx18("code", { children: "div" }),
+          " element to act as gap."
         ] }),
         /* @__PURE__ */ jsx18("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs18("ul", { children: [
           /* @__PURE__ */ jsx18("li", { children: /* @__PURE__ */ jsx18("a", { href: "", children: "Home" }) }),
@@ -2419,7 +2409,7 @@ function Navigation({ theme }) {
 <li>...</li>
 
 <!-- gap -->
-<li class="gap"></li>
+<div></div>
 
 <!-- right side -->
 <li>...</li>
@@ -2462,7 +2452,7 @@ function Navigation({ theme }) {
     <li>...</li>
     <li>...</li>
     <li>...</li>
-    <li class="gap">...</li>
+    <div></div>
     <li>...</li>
   </ul>
 </nav>` }) }) })
@@ -3263,7 +3253,7 @@ function Classes({ theme }) {
           /* @__PURE__ */ jsx25("td", { children: "Sets the maximum size of the container to 1600px." })
         ] }),
         /* @__PURE__ */ jsxs25("tr", { children: [
-          /* @__PURE__ */ jsx25("td", { rowSpan: 4, children: "Layout" }),
+          /* @__PURE__ */ jsx25("td", { rowSpan: 3, children: "Layout" }),
           /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "row" }) }),
           /* @__PURE__ */ jsx25("td", { children: "Transforms its child elements into horizontally aligned columns." })
         ] }),
@@ -3279,14 +3269,6 @@ function Classes({ theme }) {
             " to ",
             /* @__PURE__ */ jsx25("code", { children: "col-12" }),
             " we can progressively specify columns of greater and greater width."
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxs25("tr", { children: [
-          /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "gap" }) }),
-          /* @__PURE__ */ jsxs25("td", { children: [
-            "Used in between ",
-            /* @__PURE__ */ jsx25("code", { children: "col" }),
-            " elements. Provides a gap between them so they can be separated into left and right sides. Has no effect on mobile displays."
           ] })
         ] }),
         /* @__PURE__ */ jsxs25("tr", { children: [
