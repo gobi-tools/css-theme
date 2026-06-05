@@ -1,7 +1,12 @@
 /* base */
 
-nav :is(ul, ol), menu {
+nav :is(ul, ol),
+menu {
   list-style-type: none;
+}
+
+nav :is(ul, ol)>div:empty {
+  flex-grow: 1;
 }
 
 nav a,
@@ -10,4 +15,11 @@ menu a {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
+}
+
+/* @warn: referencing the "navigation" container */
+@container navigation (max-width: 600px) {
+  nav:not(.disable-mobile)>:is(ul, ol):not(.disable-mobile)>div:empty {
+    display: none;
+  }
 }

@@ -15,7 +15,7 @@ function LandingPage() {
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Industries" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Resources" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "About" }) }),
-      /* @__PURE__ */ jsx("li", { className: "gap" }),
+      /* @__PURE__ */ jsx("div", {}),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("select", { children: [
         /* @__PURE__ */ jsx("option", { selected: true, children: "En" }),
         /* @__PURE__ */ jsx("option", { children: "Fr" }),

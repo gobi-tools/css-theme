@@ -50,3 +50,10 @@
   border-top-right-radius: var(--border-radius-input) !important;
   border-bottom-right-radius: var(--border-radius-input) !important;
 }
+
+/* @warn: referencing the "rows" container */
+@container rows (max-width: 600px) {
+  :not([role="group"])>.row>div:not(.disable-mobile):empty {
+    display: none;
+  }
+}

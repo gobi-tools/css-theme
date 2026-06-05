@@ -32,11 +32,11 @@ export default function Newsletter() {
             <li>
               <Avatar url="https://picsum.photos/id/42/30/30" size={30} />
             </li>
-            <li className="gap"></li>
+            <div></div>
             <li className="align-center">
               <h3>My Newsletter</h3>
             </li>
-            <li className="gap"></li>
+            <div></div>
             <li>
               <button>Subscribe</button>
             </li>

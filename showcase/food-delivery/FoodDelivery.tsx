@@ -4,7 +4,7 @@ export default function FoodDelivery() {
       <header>
         <nav className="disable-mobile primary">
           <ul>
-            <li className="gap"></li>
+            <div></div>
             <li>
               <button>Sign In</button>
             </li>

@@ -7,7 +7,7 @@ import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function FoodDelivery() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile primary", children: /* @__PURE__ */ jsxs("ul", { children: [
-      /* @__PURE__ */ jsx("li", { className: "gap" }),
+      /* @__PURE__ */ jsx("div", {}),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Sign In" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { type: "reset", children: "Sign Up" }) })
     ] }) }) }),

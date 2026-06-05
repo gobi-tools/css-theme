@@ -29,9 +29,9 @@ function Newsletter() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Avatar, { url: "https://picsum.photos/id/42/30/30", size: 30 }) }),
-      /* @__PURE__ */ jsx("li", { className: "gap" }),
+      /* @__PURE__ */ jsx("div", {}),
       /* @__PURE__ */ jsx("li", { className: "align-center", children: /* @__PURE__ */ jsx("h3", { children: "My Newsletter" }) }),
-      /* @__PURE__ */ jsx("li", { className: "gap" }),
+      /* @__PURE__ */ jsx("div", {}),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Subscribe" }) })
     ] }) }) }),
     /* @__PURE__ */ jsx("main", { children: /* @__PURE__ */ jsxs("section", { children: [

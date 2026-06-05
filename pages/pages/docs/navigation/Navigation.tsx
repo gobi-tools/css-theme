@@ -176,7 +176,7 @@ export default function Navigation({ theme }) {
               <li>
                 <a href="">Menu</a>
               </li>
-              <li className="gap"></li>
+              <div></div>
               <li>
                 <a href="">
                   <button>Download</button>
@@ -231,7 +231,7 @@ export default function Navigation({ theme }) {
               <li>
                 <input type="search" placeholder="Search..." />
               </li>
-              <li className="gap"></li>
+              <div></div>
               <li>
                 <a href="">
                   <button type="reset">

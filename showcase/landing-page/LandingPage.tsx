@@ -15,7 +15,7 @@ export default function LandingPage() {
             <li><a href="">Industries</a></li>
             <li><a href="">Resources</a></li>
             <li><a href="">About</a></li>
-            <li className="gap"></li>
+            <div></div>
             <li>
               <select>
                 <option selected>En</option>
