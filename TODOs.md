@@ -55,7 +55,7 @@ Investigations
   so in this  way we get rif of more classes
 - [ ][investigate] a way to get rid of the ["circle"] class by creating round images
  in some other way ... 
-- [ ][investigate] instead of a ["gap"] class, use <hr> in various cases ... ? 
+- [x][investigate] instead of a ["gap"] class, use <div> 
 
 Bugs
 ----
