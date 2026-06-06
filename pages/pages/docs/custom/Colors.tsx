@@ -60,7 +60,7 @@ export default function Colors({ theme }) {
           </section>
           <section>
             <div className="row">
-              <div className={`${colorClass} card`}>
+              <article className={`${colorClass}`}>
                 <hgroup>
                   <h4>Hobby</h4>
                   <p><b>Free</b></p>
@@ -70,8 +70,8 @@ export default function Colors({ theme }) {
                   <li>No credit card</li>
                   <li>All platforms</li>
                 </ul>
-              </div>
-              <div className={`${colorClass} inverted card`}>
+              </article>
+              <article className={`${colorClass} inverted`}>
                 <hgroup>
                   <h4>Enterprise</h4>
                   <p><b>Contact us</b></p>
@@ -81,7 +81,7 @@ export default function Colors({ theme }) {
                   <li>Everything in Hobby</li>
                   <li>24/7 support</li>
                 </ul>
-              </div>
+              </article>
             </div>
             <blockquote className={`${colorClass}`}>
               <hgroup>

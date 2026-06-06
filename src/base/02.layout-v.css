@@ -44,7 +44,6 @@ blockquote,
 pre,
 menu,
 hgroup,
-.card,
 article {
   margin-bottom: var(--space-m);
 }

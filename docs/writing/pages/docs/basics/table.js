@@ -3876,7 +3876,7 @@ function Colors({ theme }) {
       ] }) }) }),
       /* @__PURE__ */ jsxs39("section", { children: [
         /* @__PURE__ */ jsxs39("div", { className: "row", children: [
-          /* @__PURE__ */ jsxs39("div", { className: `${colorClass} card`, children: [
+          /* @__PURE__ */ jsxs39("article", { className: `${colorClass}`, children: [
             /* @__PURE__ */ jsxs39("hgroup", { children: [
               /* @__PURE__ */ jsx39("h4", { children: "Hobby" }),
               /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("b", { children: "Free" }) })
@@ -3887,7 +3887,7 @@ function Colors({ theme }) {
               /* @__PURE__ */ jsx39("li", { children: "All platforms" })
             ] })
           ] }),
-          /* @__PURE__ */ jsxs39("div", { className: `${colorClass} inverted card`, children: [
+          /* @__PURE__ */ jsxs39("article", { className: `${colorClass} inverted`, children: [
             /* @__PURE__ */ jsxs39("hgroup", { children: [
               /* @__PURE__ */ jsx39("h4", { children: "Enterprise" }),
               /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("b", { children: "Contact us" }) })
