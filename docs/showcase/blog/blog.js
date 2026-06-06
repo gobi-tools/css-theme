@@ -35,13 +35,13 @@ function Blog() {
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("article", { children: /* @__PURE__ */ jsxs("div", { children: [
+    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsxs("div", { children: [
       "Subscribe via ",
       /* @__PURE__ */ jsx("a", { href: "", children: "rss" }),
       " or ",
       /* @__PURE__ */ jsx("a", { href: "", children: "email" }),
       "."
-    ] }) }) })
+    ] }) })
   ] });
 }
 

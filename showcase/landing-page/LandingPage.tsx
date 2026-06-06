@@ -30,7 +30,7 @@ export default function LandingPage() {
         </nav>
       </header>
       <header>
-        <article className="align-center">
+        <div className="align-center">
           <hgroup>
             <h1>FooBar</h1>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
@@ -43,7 +43,7 @@ export default function LandingPage() {
           <p>
             <a href="">Other platforms</a>
           </p>
-        </article>
+        </div>
       </header>
       <main>
         <section>

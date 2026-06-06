@@ -23,7 +23,7 @@ function LandingPage() {
       ] }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Request Demo" }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("article", { className: "align-center", children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center", children: [
       /* @__PURE__ */ jsxs("hgroup", { children: [
         /* @__PURE__ */ jsx("h1", { children: "FooBar" }),
         /* @__PURE__ */ jsx("h4", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),

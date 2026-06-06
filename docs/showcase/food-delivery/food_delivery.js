@@ -11,7 +11,7 @@ function FoodDelivery() {
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { children: "Sign In" }) }),
       /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { type: "reset", children: "Sign Up" }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("article", { className: "primary", children: /* @__PURE__ */ jsxs("div", { children: [
+    /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "primary", children: [
       /* @__PURE__ */ jsx("h1", { className: "align-center", children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }),
       /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("div", { role: "group", children: [
         /* @__PURE__ */ jsx("button", { children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
@@ -35,7 +35,7 @@ function FoodDelivery() {
         /* @__PURE__ */ jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: /* @__PURE__ */ jsx("polygon", { points: "3 11 22 2 13 21 11 13 3 11" }) }),
         /* @__PURE__ */ jsx("span", { children: "Use current location" })
       ] }) })
-    ] }) }) }),
+    ] }) }),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsxs("section", { className: "row", children: [
@@ -105,7 +105,7 @@ function FoodDelivery() {
         ] }),
         /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/348/640/480", width: "100%" }) })
       ] }),
-      /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("article", { className: "align-center big-banner", children: [
+      /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center big-banner", children: [
         /* @__PURE__ */ jsxs("hgroup", { children: [
           /* @__PURE__ */ jsx("h1", { children: "Lorem ipsum dolor sit amet." }),
           /* @__PURE__ */ jsx("h4", { children: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
@@ -113,7 +113,7 @@ function FoodDelivery() {
         ] }),
         /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Shop Groceries" }) })
       ] }) }),
-      /* @__PURE__ */ jsx("header", { className: "align-center", children: /* @__PURE__ */ jsxs("article", { className: "primary", children: [
+      /* @__PURE__ */ jsx("header", { className: "align-center", children: /* @__PURE__ */ jsxs("div", { className: "primary", children: [
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
           /* @__PURE__ */ jsxs("div", { children: [
             /* @__PURE__ */ jsxs("hgroup", { children: [
