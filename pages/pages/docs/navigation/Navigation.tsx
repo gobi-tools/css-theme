@@ -213,7 +213,7 @@ export default function Navigation({ theme }) {
       <section className="row">
         <div>
           <p>
-            Navigation can be combined with the <code>card</code> class to create a more striking display.
+            Navigation can be placed inside an <code>article</code> to create a more striking display.
           </p>
           <article>
             <nav className="disable-mobile">
@@ -248,15 +248,17 @@ export default function Navigation({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<nav class="card">
-  <ul>
-    <li>...</li>
-    <li>...</li>
-    <li>...</li>
-    <div></div>
-    <li>...</li>
-  </ul>
-</nav>`}
+            {`<article>
+  <nav>
+    <ul>
+      <li>...</li>
+      <li>...</li>
+      <li>...</li>
+      <div></div>
+      <li>...</li>
+    </ul>
+  </nav>
+</article>`}
           </code></pre>
         </div>
       </section>

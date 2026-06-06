@@ -2269,9 +2269,9 @@ function Navigation({ theme }) {
     /* @__PURE__ */ jsxs16("section", { className: "row", children: [
       /* @__PURE__ */ jsxs16("div", { children: [
         /* @__PURE__ */ jsxs16("p", { children: [
-          "Navigation can be combined with the ",
-          /* @__PURE__ */ jsx16("code", { children: "card" }),
-          " class to create a more striking display."
+          "Navigation can be placed inside an ",
+          /* @__PURE__ */ jsx16("code", { children: "article" }),
+          " to create a more striking display."
         ] }),
         /* @__PURE__ */ jsx16("article", { children: /* @__PURE__ */ jsx16("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs16("ul", { children: [
           /* @__PURE__ */ jsx16("li", { children: /* @__PURE__ */ jsxs16("a", { href: "", children: [
@@ -2298,15 +2298,17 @@ function Navigation({ theme }) {
         ] }) }) }),
         /* @__PURE__ */ jsx16("br", {})
       ] }),
-      /* @__PURE__ */ jsx16("div", { children: /* @__PURE__ */ jsx16("pre", { children: /* @__PURE__ */ jsx16("code", { children: `<nav class="card">
-  <ul>
-    <li>...</li>
-    <li>...</li>
-    <li>...</li>
-    <div></div>
-    <li>...</li>
-  </ul>
-</nav>` }) }) })
+      /* @__PURE__ */ jsx16("div", { children: /* @__PURE__ */ jsx16("pre", { children: /* @__PURE__ */ jsx16("code", { children: `<article>
+  <nav>
+    <ul>
+      <li>...</li>
+      <li>...</li>
+      <li>...</li>
+      <div></div>
+      <li>...</li>
+    </ul>
+  </nav>
+</article>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs16("section", { className: "row", children: [
       /* @__PURE__ */ jsxs16("div", { children: [
