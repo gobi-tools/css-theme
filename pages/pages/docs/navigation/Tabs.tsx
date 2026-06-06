@@ -9,13 +9,12 @@ export type TSelectedTab = 'tab-1' | 'tab-2' | 'tab-3';
 export function Tab1() {
   return (
     <>
-      <h4>Home</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua.
       </p>
       <p>
-        <button>Edit</button>
+        <button>Discover</button>
       </p>
     </>
   );
@@ -24,20 +23,12 @@ export function Tab1() {
 export function Tab2() {
   return (
     <>
-      <h4>Projects</h4>
       <p>
-        <ul>
-          <li>
-            <a href="">user123/test</a>
-          </li>
-          <li>
-            <a href="">user123/notes</a>
-          </li>
-          <li>
-            <a href="">user_451/financials</a>
-          </li>
-        </ul>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
+      <div>
+        <blockquote>lorem ipsum install</blockquote>
+      </div>
     </>
   )
 }
@@ -45,27 +36,9 @@ export function Tab2() {
 export function Tab3() {
   return (
     <>
-      <h4>Users</h4>
-      <div role="group">
-        <div className="row">
-          <img className="circle" width="36" height="36" src="https://picsum.photos/id/16/80/80" alt="profile pic" />
-          <div>
-            <b>user123</b>
-            <br />
-            <span>active</span>
-          </div>
-        </div>
-      </div>
-      <div role="group">
-        <div className="row">
-          <img className="circle" width="36" height="36" src="https://picsum.photos/id/16/40/40" alt="profile pic" />
-          <div>
-            <b>user_451</b>
-            <br />
-            <span>active</span>
-          </div>
-        </div>
-      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
     </>
   )
 }
@@ -95,19 +68,19 @@ export default function Tabs({ theme }) {
               </li>
               <li aria-selected={selected === 'tab-2'}>
                 <a onClick={() => setSelected('tab-2')}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" /><circle cx="12" cy="13" r="1" /></svg>
-                  <span>Projects</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>
+                  <span>Install</span>
                 </a>
               </li>
               <li aria-selected={selected === 'tab-3'}>
                 <a onClick={() => setSelected('tab-3')}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
-                  <span>Users</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M17 12h.01"/><path d="M12 12h.01"/><path d="M7 12h.01"/></svg>
+                  <span>More</span>
                 </a>
               </li>
             </menu>
           </div>
-          <div className="card">
+          <div>
             {selected === 'tab-1' ? <Tab1 /> : null}
             {selected === 'tab-2' ? <Tab2 /> : null}
             {selected === 'tab-3' ? <Tab3 /> : null}

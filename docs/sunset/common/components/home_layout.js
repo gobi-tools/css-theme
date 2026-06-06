@@ -2459,41 +2459,18 @@ import { useState as useState6 } from "https://esm.sh/react@19.2.0";
 import { Fragment, jsx as jsx19, jsxs as jsxs19 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Tab1() {
   return /* @__PURE__ */ jsxs19(Fragment, { children: [
-    /* @__PURE__ */ jsx19("h4", { children: "Home" }),
     /* @__PURE__ */ jsx19("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
-    /* @__PURE__ */ jsx19("p", { children: /* @__PURE__ */ jsx19("button", { children: "Edit" }) })
+    /* @__PURE__ */ jsx19("p", { children: /* @__PURE__ */ jsx19("button", { children: "Discover" }) })
   ] });
 }
 function Tab2() {
   return /* @__PURE__ */ jsxs19(Fragment, { children: [
-    /* @__PURE__ */ jsx19("h4", { children: "Projects" }),
-    /* @__PURE__ */ jsx19("p", { children: /* @__PURE__ */ jsxs19("ul", { children: [
-      /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "user123/test" }) }),
-      /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "user123/notes" }) }),
-      /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsx19("a", { href: "", children: "user_451/financials" }) })
-    ] }) })
+    /* @__PURE__ */ jsx19("p", { children: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }),
+    /* @__PURE__ */ jsx19("div", { children: /* @__PURE__ */ jsx19("blockquote", { children: "lorem ipsum install" }) })
   ] });
 }
 function Tab3() {
-  return /* @__PURE__ */ jsxs19(Fragment, { children: [
-    /* @__PURE__ */ jsx19("h4", { children: "Users" }),
-    /* @__PURE__ */ jsx19("div", { role: "group", children: /* @__PURE__ */ jsxs19("div", { className: "row", children: [
-      /* @__PURE__ */ jsx19("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }),
-      /* @__PURE__ */ jsxs19("div", { children: [
-        /* @__PURE__ */ jsx19("b", { children: "user123" }),
-        /* @__PURE__ */ jsx19("br", {}),
-        /* @__PURE__ */ jsx19("span", { children: "active" })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx19("div", { role: "group", children: /* @__PURE__ */ jsxs19("div", { className: "row", children: [
-      /* @__PURE__ */ jsx19("img", { className: "circle", width: "36", height: "36", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }),
-      /* @__PURE__ */ jsxs19("div", { children: [
-        /* @__PURE__ */ jsx19("b", { children: "user_451" }),
-        /* @__PURE__ */ jsx19("br", {}),
-        /* @__PURE__ */ jsx19("span", { children: "active" })
-      ] })
-    ] }) })
-  ] });
+  return /* @__PURE__ */ jsx19(Fragment, { children: /* @__PURE__ */ jsx19("p", { children: "Lorem ipsum dolor sit amet, consectetur adipisicing elit." }) });
 }
 function Tabs({ theme }) {
   const route = useRoute();
@@ -2519,21 +2496,20 @@ function Tabs({ theme }) {
             /* @__PURE__ */ jsx19("span", { children: "Home" })
           ] }) }),
           /* @__PURE__ */ jsx19("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs19("a", { onClick: () => setSelected("tab-2"), children: [
-            /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-              /* @__PURE__ */ jsx19("path", { d: "M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" }),
-              /* @__PURE__ */ jsx19("circle", { cx: "12", cy: "13", r: "1" })
-            ] }),
-            /* @__PURE__ */ jsx19("span", { children: "Projects" })
+            /* @__PURE__ */ jsx19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: /* @__PURE__ */ jsx19("path", { d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" }) }),
+            /* @__PURE__ */ jsx19("span", { children: "Install" })
           ] }) }),
           /* @__PURE__ */ jsx19("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs19("a", { onClick: () => setSelected("tab-3"), children: [
             /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-              /* @__PURE__ */ jsx19("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
-              /* @__PURE__ */ jsx19("circle", { cx: "12", cy: "7", r: "4" })
+              /* @__PURE__ */ jsx19("circle", { cx: "12", cy: "12", r: "10" }),
+              /* @__PURE__ */ jsx19("path", { d: "M17 12h.01" }),
+              /* @__PURE__ */ jsx19("path", { d: "M12 12h.01" }),
+              /* @__PURE__ */ jsx19("path", { d: "M7 12h.01" })
             ] }),
-            /* @__PURE__ */ jsx19("span", { children: "Users" })
+            /* @__PURE__ */ jsx19("span", { children: "More" })
           ] }) })
         ] }) }),
-        /* @__PURE__ */ jsxs19("div", { className: "card", children: [
+        /* @__PURE__ */ jsxs19("div", { children: [
           selected === "tab-1" ? /* @__PURE__ */ jsx19(Tab1, {}) : null,
           selected === "tab-2" ? /* @__PURE__ */ jsx19(Tab2, {}) : null,
           selected === "tab-3" ? /* @__PURE__ */ jsx19(Tab3, {}) : null
@@ -3981,21 +3957,20 @@ function MobileTabs() {
         /* @__PURE__ */ jsx39("span", { children: "Home" })
       ] }) }),
       /* @__PURE__ */ jsx39("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs39("a", { onClick: () => setSelected("tab-2"), children: [
-        /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx39("path", { d: "M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" }),
-          /* @__PURE__ */ jsx39("circle", { cx: "12", cy: "13", r: "1" })
-        ] }),
-        /* @__PURE__ */ jsx39("span", { children: "Projects" })
+        /* @__PURE__ */ jsx39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: /* @__PURE__ */ jsx39("path", { d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" }) }),
+        /* @__PURE__ */ jsx39("span", { children: "Install" })
       ] }) }),
       /* @__PURE__ */ jsx39("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs39("a", { onClick: () => setSelected("tab-3"), children: [
         /* @__PURE__ */ jsxs39("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-          /* @__PURE__ */ jsx39("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
-          /* @__PURE__ */ jsx39("circle", { cx: "12", cy: "7", r: "4" })
+          /* @__PURE__ */ jsx39("circle", { cx: "12", cy: "12", r: "10" }),
+          /* @__PURE__ */ jsx39("path", { d: "M17 12h.01" }),
+          /* @__PURE__ */ jsx39("path", { d: "M12 12h.01" }),
+          /* @__PURE__ */ jsx39("path", { d: "M7 12h.01" })
         ] }),
-        /* @__PURE__ */ jsx39("span", { children: "Users" })
+        /* @__PURE__ */ jsx39("span", { children: "More" })
       ] }) })
     ] }) }) }),
-    /* @__PURE__ */ jsxs39("div", { className: "card", style: { flexGrow: 1 }, children: [
+    /* @__PURE__ */ jsxs39("div", { style: { flexGrow: 1 }, children: [
       selected === "tab-1" ? /* @__PURE__ */ jsx39(Tab1, {}) : null,
       selected === "tab-2" ? /* @__PURE__ */ jsx39(Tab2, {}) : null,
       selected === "tab-3" ? /* @__PURE__ */ jsx39(Tab3, {}) : null
