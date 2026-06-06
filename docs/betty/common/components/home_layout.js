@@ -915,24 +915,24 @@ function Summary({ theme }) {
           /* @__PURE__ */ jsx8("code", { children: "error" }),
           " classes to form a more visually appealing element."
         ] }),
-        /* @__PURE__ */ jsxs8("details", { className: "card", children: [
+        /* @__PURE__ */ jsx8("article", { children: /* @__PURE__ */ jsxs8("details", { children: [
           /* @__PURE__ */ jsx8("summary", { children: "Note" }),
           /* @__PURE__ */ jsx8("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-        ] }),
-        /* @__PURE__ */ jsxs8("details", { className: "card success", children: [
+        ] }) }),
+        /* @__PURE__ */ jsx8("article", { className: "success", children: /* @__PURE__ */ jsxs8("details", { children: [
           /* @__PURE__ */ jsx8("summary", { children: "Success" }),
           /* @__PURE__ */ jsxs8("p", { children: [
             "Operation finished ",
             /* @__PURE__ */ jsx8("code", { children: "OK" })
           ] })
-        ] }),
-        /* @__PURE__ */ jsxs8("details", { className: "card error", children: [
+        ] }) }),
+        /* @__PURE__ */ jsx8("article", { className: "error", children: /* @__PURE__ */ jsxs8("details", { children: [
           /* @__PURE__ */ jsx8("summary", { children: "Error" }),
           /* @__PURE__ */ jsxs8("div", { children: [
             /* @__PURE__ */ jsx8("p", { children: "Unknown error occurred" }),
             /* @__PURE__ */ jsx8("button", { children: "Ack" })
           ] })
-        ] }),
+        ] }) }),
         /* @__PURE__ */ jsx8("p", { children: /* @__PURE__ */ jsxs8("small", { children: [
           "You can learn more about colors ",
           /* @__PURE__ */ jsx8("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "here" }),

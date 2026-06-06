@@ -924,24 +924,24 @@ function Summary({ theme }) {
           /* @__PURE__ */ jsx9("code", { children: "error" }),
           " classes to form a more visually appealing element."
         ] }),
-        /* @__PURE__ */ jsxs9("details", { className: "card", children: [
+        /* @__PURE__ */ jsx9("article", { children: /* @__PURE__ */ jsxs9("details", { children: [
           /* @__PURE__ */ jsx9("summary", { children: "Note" }),
           /* @__PURE__ */ jsx9("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-        ] }),
-        /* @__PURE__ */ jsxs9("details", { className: "card success", children: [
+        ] }) }),
+        /* @__PURE__ */ jsx9("article", { className: "success", children: /* @__PURE__ */ jsxs9("details", { children: [
           /* @__PURE__ */ jsx9("summary", { children: "Success" }),
           /* @__PURE__ */ jsxs9("p", { children: [
             "Operation finished ",
             /* @__PURE__ */ jsx9("code", { children: "OK" })
           ] })
-        ] }),
-        /* @__PURE__ */ jsxs9("details", { className: "card error", children: [
+        ] }) }),
+        /* @__PURE__ */ jsx9("article", { className: "error", children: /* @__PURE__ */ jsxs9("details", { children: [
           /* @__PURE__ */ jsx9("summary", { children: "Error" }),
           /* @__PURE__ */ jsxs9("div", { children: [
             /* @__PURE__ */ jsx9("p", { children: "Unknown error occurred" }),
             /* @__PURE__ */ jsx9("button", { children: "Ack" })
           ] })
-        ] }),
+        ] }) }),
         /* @__PURE__ */ jsx9("p", { children: /* @__PURE__ */ jsxs9("small", { children: [
           "You can learn more about colors ",
           /* @__PURE__ */ jsx9("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "here" }),

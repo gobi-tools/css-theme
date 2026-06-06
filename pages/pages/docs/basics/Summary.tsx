@@ -49,28 +49,34 @@ export default function Summary({ theme }) {
             the <code>success</code> and <code>error</code> classes
             to form a more visually appealing element.
           </p>
-          <details className="card">
-            <summary>Note</summary>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </details>
-
-          <details className="card success">
-            <summary>Success</summary>
-            <p>
-              Operation finished <code>OK</code>
-            </p>
-          </details>
-          <details className="card error">
-            <summary>Error</summary>
-            <div>
+          <article>
+            <details>
+              <summary>Note</summary>
               <p>
-                Unknown error occurred
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <button>Ack</button>
-            </div>
-          </details>
+            </details>
+          </article>
+
+          <article className="success">
+            <details>
+              <summary>Success</summary>
+              <p>
+                Operation finished <code>OK</code>
+              </p>
+            </details>
+          </article>
+          <article className="error">
+            <details>
+              <summary>Error</summary>
+              <div>
+                <p>
+                  Unknown error occurred
+                </p>
+                <button>Ack</button>
+              </div>
+            </details>
+          </article>
           <p>
             <small>
               You can learn more about colors <a href={RouteMaster.doc(EDoc.Colors, theme, route)}>here</a> and cards <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>here</a>.
