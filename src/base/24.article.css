@@ -31,6 +31,7 @@ article {
   &>details>summary {
     padding-bottom: var(--space-sm);
   }
+
   &>details[open]>*:last-child {
     padding-bottom: var(--space-sm);
   }
