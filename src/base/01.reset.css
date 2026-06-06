@@ -111,7 +111,7 @@
   /* -dialog applies to: "dialog" */
   --border-radius-dialog: 6px;
 
-  /* -card applies to: "fieldsets", "card" class  */
+  /* -card applies to: "fieldsets", "article"  */
   --border-radius-card: 6px;
 
   --border-left-width-card: 2px;

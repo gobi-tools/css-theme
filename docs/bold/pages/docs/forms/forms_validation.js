@@ -2675,9 +2675,9 @@ function Cards({ theme }) {
     /* @__PURE__ */ jsxs22("section", { className: "row", children: [
       /* @__PURE__ */ jsxs22("div", { children: [
         /* @__PURE__ */ jsxs22("p", { children: [
-          "By wrapping together a number of HTML elements inside a parent with the ",
-          /* @__PURE__ */ jsx22("code", { children: "card" }),
-          " class, you can create a basic card-type layout."
+          "By wrapping together a number of HTML elements inside an ",
+          /* @__PURE__ */ jsx22("code", { children: "article" }),
+          ", you can create a basic card-type layout."
         ] }),
         /* @__PURE__ */ jsxs22("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { children: [
@@ -2690,14 +2690,14 @@ function Cards({ theme }) {
           ] }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<article>
   <span>
     <b>Title</b>
   </span>
   <p>
     Lorem ipsum ...
   </p>
-</div>` }) }) })
+</article>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs22("section", { className: "row", children: [
       /* @__PURE__ */ jsxs22("div", { children: [
@@ -2724,16 +2724,20 @@ function Cards({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<div class="card error">
+      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<article>
   <h3>Title</h3>
   <p>
     Lorem ipsum ...
   </p>
-</div>` }) }) })
+</article>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs22("section", { className: "row", children: [
       /* @__PURE__ */ jsxs22("div", { children: [
-        /* @__PURE__ */ jsx22("p", { children: "The starting paragraph of a card will be styled so it's more proeminent." }),
+        /* @__PURE__ */ jsxs22("p", { children: [
+          "The ",
+          /* @__PURE__ */ jsx22("code", { children: "header" }),
+          " element of a card will be styled so it's more proeminent."
+        ] }),
         /* @__PURE__ */ jsxs22("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { children: [
             /* @__PURE__ */ jsx22("header", { children: "Title" }),
@@ -2745,12 +2749,12 @@ function Cards({ theme }) {
           ] }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<div class="card">
-  <p>Title</p>
+      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<article>
+  <header>Title</header>
   <p>
     Lorem ipsum ...
   </p>
-</div>` }) }) })
+</article>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs22("section", { className: "row", children: [
       /* @__PURE__ */ jsxs22("div", { children: [
@@ -2766,7 +2770,7 @@ function Cards({ theme }) {
           ] }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<article>
   <img 
     height="80" 
     src="..." 
@@ -2774,7 +2778,7 @@ function Cards({ theme }) {
   <p>
     Lorem ipsum ...
   </p>
-</div>` }) }) })
+</article>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs22("section", { className: "row", children: [
       /* @__PURE__ */ jsxs22("div", { children: [
@@ -2787,7 +2791,7 @@ function Cards({ theme }) {
           /* @__PURE__ */ jsx22("p", { children: /* @__PURE__ */ jsx22("button", { children: "Button" }) })
         ] })
       ] }),
-      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<article>
   <img 
     height="160" 
     src="..." 
@@ -2803,11 +2807,11 @@ function Cards({ theme }) {
       Button
     </button>
   </p>
-</div>` }) }) })
+</article>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs22("section", { className: "row", children: [
       /* @__PURE__ */ jsxs22("div", { children: [
-        /* @__PURE__ */ jsx22("p", { children: "If we combine groups, columns and cards, we can experiment with even more daring layouts. All without having to write any custom CSS." }),
+        /* @__PURE__ */ jsx22("p", { children: "If we combine groups, columns and cards, we can experiment with even more daring layouts all while using just semantic HTML and minimal classes." }),
         /* @__PURE__ */ jsxs22("article", { children: [
           /* @__PURE__ */ jsx22("div", { role: "group", children: /* @__PURE__ */ jsxs22("div", { className: "row", children: [
             /* @__PURE__ */ jsx22("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "header image" }),
@@ -2836,9 +2840,9 @@ function Cards({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<div class="card">
+      /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsx22("pre", { children: /* @__PURE__ */ jsx22("code", { children: `<article>
   <div role="group">
-    <div className="row">
+    <div class="row">
       <img 
         width="80" 
         height="80" 
@@ -2871,7 +2875,7 @@ function Cards({ theme }) {
       Button
     </button>
   </p>
-</div>` }) }) })
+</article>` }) }) })
     ] })
   ] });
 }

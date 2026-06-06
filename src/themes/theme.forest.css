@@ -16,7 +16,7 @@
   /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
   --border-radius-input: 4px;
 
-  /* -note applies to: "fieldsets", "card" class  */
+  /* -note applies to: "fieldsets", "article"  */
   --border-radius-card: 4px;
 }
 

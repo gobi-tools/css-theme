@@ -12,8 +12,7 @@ export default function Cards({ theme }) {
         <div>
           <p>
             By wrapping together a number of HTML elements
-            inside a parent with the <code>card</code> class,
-            you can create a basic card-type layout.
+            inside an <code>article</code>, you can create a basic card-type layout.
           </p>
           <div className="row disable-mobile">
             <div>
@@ -36,14 +35,14 @@ export default function Cards({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<div class="card">
+            {`<article>
   <span>
     <b>Title</b>
   </span>
   <p>
     Lorem ipsum ...
   </p>
-</div>`}
+</article>`}
           </code></pre>
         </div>
       </section>
@@ -80,12 +79,12 @@ export default function Cards({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<div class="card error">
+            {`<article>
   <h3>Title</h3>
   <p>
     Lorem ipsum ...
   </p>
-</div>`}
+</article>`}
           </code></pre>
         </div>
       </section>
@@ -93,8 +92,7 @@ export default function Cards({ theme }) {
       <section className="row">
         <div>
           <p>
-            The starting paragraph of a card will be
-            styled so it's more proeminent.
+            The <code>header</code> element of a card will be styled so it's more proeminent.
           </p>
           <div className="row disable-mobile">
             <div>
@@ -117,12 +115,12 @@ export default function Cards({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<div class="card">
-  <p>Title</p>
+            {`<article>
+  <header>Title</header>
   <p>
     Lorem ipsum ...
   </p>
-</div>`}
+</article>`}
           </code></pre>
         </div>
       </section>
@@ -154,7 +152,7 @@ export default function Cards({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<div class="card">
+            {`<article>
   <img 
     height="80" 
     src="..." 
@@ -162,7 +160,7 @@ export default function Cards({ theme }) {
   <p>
     Lorem ipsum ...
   </p>
-</div>`}
+</article>`}
           </code></pre>
         </div>
       </section>
@@ -191,7 +189,7 @@ export default function Cards({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<div class="card">
+            {`<article>
   <img 
     height="160" 
     src="..." 
@@ -207,7 +205,7 @@ export default function Cards({ theme }) {
       Button
     </button>
   </p>
-</div>`}
+</article>`}
           </code></pre>
         </div>
       </section>
@@ -216,7 +214,8 @@ export default function Cards({ theme }) {
         <div>
           <p>
             If we combine groups, columns and cards, we can experiment
-            with even more daring layouts. All without having to write any custom CSS.
+            with even more daring layouts all while using just 
+            semantic HTML and minimal classes.
           </p>
           <article>
             <div role="group">
@@ -255,9 +254,9 @@ export default function Cards({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<div class="card">
+            {`<article>
   <div role="group">
-    <div className="row">
+    <div class="row">
       <img 
         width="80" 
         height="80" 
@@ -290,7 +289,7 @@ export default function Cards({ theme }) {
       Button
     </button>
   </p>
-</div>`}
+</article>`}
           </code></pre>
         </div>
       </section>
