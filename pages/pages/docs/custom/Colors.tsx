@@ -135,12 +135,12 @@ export default function Colors({ theme }) {
 ...
 
 <div class="row">
-  <div class="${colorClass} card">
+  <article class="${colorClass}">
     ...
-  </div>
-  <div class="${colorClass} inverted card">
+  </article>
+  <article class="${colorClass} inverted">
     ...
-  </div>
+  </article>
 </div>
 <div class="row">
   <blockquote class="${colorClass}>
