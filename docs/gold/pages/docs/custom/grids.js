@@ -827,7 +827,7 @@ function Summary({ theme }) {
           /* @__PURE__ */ jsx7("code", { children: "error" }),
           " classes to form a more visually appealing element."
         ] }),
-        /* @__PURE__ */ jsx7("article", { children: /* @__PURE__ */ jsxs7("details", { children: [
+        /* @__PURE__ */ jsx7("article", { children: /* @__PURE__ */ jsxs7("details", { open: true, children: [
           /* @__PURE__ */ jsx7("summary", { children: "Note" }),
           /* @__PURE__ */ jsx7("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
         ] }) }),

@@ -50,7 +50,7 @@ export default function Summary({ theme }) {
             to form a more visually appealing element.
           </p>
           <article>
-            <details>
+            <details open>
               <summary>Note</summary>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

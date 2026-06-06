@@ -469,7 +469,7 @@ function Summary({ theme }) {
           /* @__PURE__ */ jsx6("code", { children: "error" }),
           " classes to form a more visually appealing element."
         ] }),
-        /* @__PURE__ */ jsx6("article", { children: /* @__PURE__ */ jsxs6("details", { children: [
+        /* @__PURE__ */ jsx6("article", { children: /* @__PURE__ */ jsxs6("details", { open: true, children: [
           /* @__PURE__ */ jsx6("summary", { children: "Note" }),
           /* @__PURE__ */ jsx6("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
         ] }) }),

@@ -32,7 +32,7 @@ article {
     padding-bottom: var(--space-sm);
   }
 
-  &>details[open]>*:last-child {
+  &>details[open][name]>*:last-child {
     padding-bottom: var(--space-sm);
   }
 }
