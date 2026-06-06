@@ -4512,7 +4512,7 @@ function Footer({ theme }) {
         /* @__PURE__ */ jsx46("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-footer-complex" /* LayoutFooterComplex */, theme, route) })
       ] }),
       /* @__PURE__ */ jsx46("div", { children: /* @__PURE__ */ jsx46("pre", { children: /* @__PURE__ */ jsx46("code", { children: `<footer>
-  <article>
+  <div>
     <div class="row">
       <div>
         <nav>
@@ -4526,7 +4526,7 @@ function Footer({ theme }) {
       </div>
       <div></div>
     </div>
-  </article>
+  </div>
 </footer>` }) }) })
     ] })
   ] });
