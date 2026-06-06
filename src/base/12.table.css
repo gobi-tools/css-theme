@@ -21,7 +21,8 @@ td {
 
 th,
 td {
-  padding-block: var(--space-xs);
+  /* padding-block: var(--space-xs); */
+  padding: var(--space-xs)
 }
 
 tr:last-child>th,
@@ -38,9 +39,17 @@ td:last-child {
 
 th,
 td {
-  border-bottom: 1px solid var(--color-int-accent-inked);
+  /* border-bottom: 1px solid var(--color-int-accent-inked); */
+  border-bottom: 1px solid var(--color-int-accent-muted);
 }
 
 tr:hover {
   background-color: var(--color-int-accent-faint);
+}
+
+thead>tr>th{
+  border-bottom: 2px solid var(--color-int-accent-muted) !important;
+}
+tfoot>tr>td {
+  border-top: 2px solid var(--color-int-accent-muted) !important;
 }

@@ -929,44 +929,52 @@ function Summary({ theme }) {
 // pages/pages/docs/basics/Table.tsx
 import { jsx as jsx8, jsxs as jsxs8 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Table({ theme }) {
-  const route = useRoute();
-  return /* @__PURE__ */ jsxs8(DocLayout, { theme, children: [
-    /* @__PURE__ */ jsxs8("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs8("div", { children: [
-        /* @__PURE__ */ jsx8("p", { children: "Tables are given a light glow up with no borders except the bottom one (to visually separate rows) and a light color switch when highlighting." }),
-        /* @__PURE__ */ jsxs8("table", { children: [
-          /* @__PURE__ */ jsx8("thead", { children: /* @__PURE__ */ jsxs8("tr", { children: [
-            /* @__PURE__ */ jsx8("th", { children: "Item" }),
-            /* @__PURE__ */ jsx8("th", { children: "Value" }),
-            /* @__PURE__ */ jsx8("th", { children: "Comment" })
-          ] }) }),
-          /* @__PURE__ */ jsxs8("tbody", { children: [
-            /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: "Item 1.1" }),
-              /* @__PURE__ */ jsx8("td", { children: "20.35" }),
-              /* @__PURE__ */ jsx8("td", { children: "In stock" })
-            ] }),
-            /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: "Item 2.1" }),
-              /* @__PURE__ */ jsx8("td", { children: "15.99" }),
-              /* @__PURE__ */ jsx8("td", { children: "Out of stock" })
-            ] }),
-            /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: "Item 5.1" }),
-              /* @__PURE__ */ jsx8("td", { children: "14.23" }),
-              /* @__PURE__ */ jsx8("td", { children: "In stock" })
-            ] }),
-            /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: "Item 22" }),
-              /* @__PURE__ */ jsx8("td", { children: "10.11" }),
-              /* @__PURE__ */ jsx8("td", { children: "In stock" })
-            ] })
+  return /* @__PURE__ */ jsx8(DocLayout, { theme, children: /* @__PURE__ */ jsxs8("section", { className: "row", children: [
+    /* @__PURE__ */ jsxs8("div", { children: [
+      /* @__PURE__ */ jsx8("p", { children: "Tables are given a light glow up with appropriate padding, borders and highlights. Naturally, table cells can contain anything from plain text to images or links." }),
+      /* @__PURE__ */ jsxs8("table", { children: [
+        /* @__PURE__ */ jsx8("thead", { children: /* @__PURE__ */ jsxs8("tr", { children: [
+          /* @__PURE__ */ jsx8("th", { children: "Cover" }),
+          /* @__PURE__ */ jsx8("th", { children: "Item" }),
+          /* @__PURE__ */ jsx8("th", { children: "Value" }),
+          /* @__PURE__ */ jsx8("th", { children: "Comment" })
+        ] }) }),
+        /* @__PURE__ */ jsxs8("tbody", { children: [
+          /* @__PURE__ */ jsxs8("tr", { children: [
+            /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { width: "30", height: "50", src: "https://picsum.photos/id/16/30/50", alt: "cover 1" }) }),
+            /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "Item 1.1" }) }),
+            /* @__PURE__ */ jsx8("td", { children: "20.35" }),
+            /* @__PURE__ */ jsx8("td", { children: "In stock" })
+          ] }),
+          /* @__PURE__ */ jsxs8("tr", { children: [
+            /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { width: "30", height: "50", src: "https://picsum.photos/id/100/30/50", alt: "cover 2" }) }),
+            /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "Item 2.1" }) }),
+            /* @__PURE__ */ jsx8("td", { children: "15.99" }),
+            /* @__PURE__ */ jsx8("td", { children: "Out of stock" })
+          ] }),
+          /* @__PURE__ */ jsxs8("tr", { children: [
+            /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { width: "30", height: "50", src: "https://picsum.photos/id/40/30/50", alt: "cover 3" }) }),
+            /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "Item 5.1" }) }),
+            /* @__PURE__ */ jsx8("td", { children: "14.23" }),
+            /* @__PURE__ */ jsx8("td", { children: "In stock" })
+          ] }),
+          /* @__PURE__ */ jsxs8("tr", { children: [
+            /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { width: "30", height: "50", src: "https://picsum.photos/id/25/30/50", alt: "cover 4" }) }),
+            /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "Item 22" }) }),
+            /* @__PURE__ */ jsx8("td", { children: "10.11" }),
+            /* @__PURE__ */ jsx8("td", { children: "In stock" })
           ] })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsx8("div", { children: /* @__PURE__ */ jsx8("pre", { children: /* @__PURE__ */ jsx8("code", { children: `<table>
+        ] }),
+        /* @__PURE__ */ jsx8("tfoot", { children: /* @__PURE__ */ jsxs8("tr", { children: [
+          /* @__PURE__ */ jsx8("td", { colSpan: 2, children: /* @__PURE__ */ jsx8("b", { children: "Total" }) }),
+          /* @__PURE__ */ jsx8("td", { colSpan: 2, children: /* @__PURE__ */ jsx8("b", { children: "60.68" }) })
+        ] }) })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsx8("div", { children: /* @__PURE__ */ jsx8("pre", { children: /* @__PURE__ */ jsx8("code", { children: `<table>
   <thead>
     <tr>
+      <th>Cover</th>
       <th>Item</th>
       <th>Value</th>
       <th>Comment</th>
@@ -974,90 +982,31 @@ function Table({ theme }) {
   </thead>
   <tbody>
     <tr>
-      <td>Item 1.1</td>
+      <td>
+        <img src="..."/>
+      </td>
+      <td>
+        <a href="...">
+          Item 1.1
+        </a>
+      </td>
       <td>20.35</td>
       <td>In stock</td>
     </tr>
     ....
   </tbody>
-</table>` }) }) })
-    ] }),
-    /* @__PURE__ */ jsxs8("section", { className: "row", children: [
-      /* @__PURE__ */ jsxs8("div", { children: [
-        /* @__PURE__ */ jsx8("p", { children: "Tables can, of course, contain any number of elements, as shown in the expample below." }),
-        /* @__PURE__ */ jsxs8("table", { children: [
-          /* @__PURE__ */ jsx8("thead", { children: /* @__PURE__ */ jsxs8("tr", { children: [
-            /* @__PURE__ */ jsx8("th", {}),
-            /* @__PURE__ */ jsx8("th", { children: "ID" }),
-            /* @__PURE__ */ jsx8("th", { children: "Username" }),
-            /* @__PURE__ */ jsx8("th", { children: "Action" })
-          ] }) }),
-          /* @__PURE__ */ jsxs8("tbody", { children: [
-            /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/80/80", alt: "profile pic" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("code", { children: "04b720d8" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "@user-1" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("button", { children: /* @__PURE__ */ jsxs8("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                /* @__PURE__ */ jsx8("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
-                /* @__PURE__ */ jsx8("path", { d: "m15 5 4 4" })
-              ] }) }) })
-            ] }),
-            /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/40/40", alt: "profile pic" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("code", { children: "3edf8166" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "@user-253" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("button", { children: /* @__PURE__ */ jsxs8("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                /* @__PURE__ */ jsx8("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
-                /* @__PURE__ */ jsx8("path", { d: "m15 5 4 4" })
-              ] }) }) })
-            ] }),
-            /* @__PURE__ */ jsxs8("tr", { children: [
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("img", { className: "circle", width: "32", height: "32", src: "https://picsum.photos/id/16/32/32", alt: "profile pic" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("code", { children: "90b4e981" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("a", { href: "", children: "@user-1182" }) }),
-              /* @__PURE__ */ jsx8("td", { children: /* @__PURE__ */ jsx8("button", { children: /* @__PURE__ */ jsxs8("svg", { "aria-label": "Edit", xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
-                /* @__PURE__ */ jsx8("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
-                /* @__PURE__ */ jsx8("path", { d: "m15 5 4 4" })
-              ] }) }) })
-            ] })
-          ] })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsx8("div", { children: /* @__PURE__ */ jsx8("pre", { children: /* @__PURE__ */ jsx8("code", { children: `<table>
-  <thead>
+  <tfoot>
     <tr>
-      <th></th>
-      <th>ID</th>
-      <th>User</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <img 
-          class="circle" 
-          width="32" 
-          height="32" 
-          src="..."/>
+      <td colspan="2">
+        <b>Total</b>
       </td>
-      <td>
-        <code>...</code>
-      </td>
-      <td>
-        <a href="...">...</a>
-      </td>
-      <td>
-        <button>
-          <svg...></svg>
-        </button>
+      <td colspan="2">
+        <b>60.68</b>
       </td>
     </tr>
-    ....
-  </tbody>
+  </tfoot>
 </table>` }) }) })
-    ] })
-  ] });
+  ] }) });
 }
 
 // pages/pages/docs/basics/Tags.tsx
