@@ -17,20 +17,20 @@ export default function Cards({ theme }) {
           </p>
           <div className="row disable-mobile">
             <div>
-              <div className="card">
+              <article>
                 <span><b>Title</b></span>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-              </div>
+              </article>
             </div>
             <div>
-              <div className="card success">
+              <article className="success">
                 <span><b>Title</b></span>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -56,20 +56,20 @@ export default function Cards({ theme }) {
           </p>
           <div className="row disable-mobile">
             <div>
-              <div className="card">
+              <article>
                 <h3>Title</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-              </div>
+              </article>
             </div>
             <div>
-              <div className="card error">
+              <article className="error">
                 <h3>Title</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
           <p>
@@ -98,20 +98,20 @@ export default function Cards({ theme }) {
           </p>
           <div className="row disable-mobile">
             <div>
-              <div className="card">
-                <p>Title</p>
+              <article>
+                <header>Title</header>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-              </div>
+              </article>
             </div>
             <div>
-              <div className="card success">
-                <p>Title</p>
+              <article className="success">
+                <header>Title</header>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -135,20 +135,20 @@ export default function Cards({ theme }) {
           </p>
           <div className="row disable-mobile">
             <div>
-              <div className="card">
+              <article>
                 <img height="80" src="https://picsum.photos/id/16/320/80" alt="header image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-              </div>
+              </article>
             </div>
             <div>
-              <div className="card error">
+              <article className="error">
                 <img height="80" src="https://picsum.photos/id/16/420/80" alt="header image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function Cards({ theme }) {
             By adding a header image, a title, paragraph and a button, we've created an
             interesting visual element in a few lines of HTML.
           </p>
-          <div className="card">
+          <article>
             <img height="160" src="https://picsum.photos/id/16/480/160" alt="header image" />
             <h4>Title</h4>
             <p>
@@ -187,7 +187,7 @@ export default function Cards({ theme }) {
             <p>
               <button>Button</button>
             </p>
-          </div>
+          </article>
         </div>
         <div>
           <pre><code>
@@ -218,7 +218,7 @@ export default function Cards({ theme }) {
             If we combine groups, columns and cards, we can experiment
             with even more daring layouts. All without having to write any custom CSS.
           </p>
-          <div className="card">
+          <article>
             <div role="group">
               <div className="row">
                 <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="header image" />
@@ -241,7 +241,7 @@ export default function Cards({ theme }) {
             <p>
               <button>Button</button>
             </p>
-          </div>
+          </article>
           <p>
             <small>
               You can learn more about groups <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>here</a>.

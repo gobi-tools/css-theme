@@ -45,7 +45,7 @@ export default function FoodDelivery() {
       <br />
       <main>
         <section className="row">
-          <div className="card">
+          <article>
             <h2>Become a member</h2>
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -60,8 +60,8 @@ export default function FoodDelivery() {
                 </li>
               </ul>
             </nav>
-          </div>
-          <div className="card">
+          </article>
+          <article>
             <h2>Become a merchant</h2>
             <p>
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -76,8 +76,8 @@ export default function FoodDelivery() {
                 </li>
               </ul>
             </nav>
-          </div>
-          <div className="card">
+          </article>
+          <article>
             <h2>Get the best experience</h2>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -92,9 +92,8 @@ export default function FoodDelivery() {
                 </li>
               </ul>
             </nav>
-          </div>
+          </article>
         </section>
-
         <section className="row" role="group">
           <div className="hide-on-desktop">
             <img className="rounded" src="https://picsum.photos/id/42/640/480" width={"100%"} />

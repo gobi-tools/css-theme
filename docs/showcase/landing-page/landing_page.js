@@ -45,7 +45,7 @@ function LandingPage() {
       /* @__PURE__ */ jsxs("section", { children: [
         /* @__PURE__ */ jsx("div", { className: "align-center", children: /* @__PURE__ */ jsx("h2", { children: "Pricing" }) }),
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
-          /* @__PURE__ */ jsxs("div", { className: "card", children: [
+          /* @__PURE__ */ jsxs("article", { children: [
             /* @__PURE__ */ jsxs("hgroup", { children: [
               /* @__PURE__ */ jsx("h2", { children: "Hobby" }),
               /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "Free" }) })
@@ -59,7 +59,7 @@ function LandingPage() {
             /* @__PURE__ */ jsx("br", {}),
             /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("button", { children: "Download" }) })
           ] }),
-          /* @__PURE__ */ jsxs("div", { className: "card", children: [
+          /* @__PURE__ */ jsxs("article", { children: [
             /* @__PURE__ */ jsxs("hgroup", { children: [
               /* @__PURE__ */ jsx("h2", { children: "Eterprise" }),
               /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("b", { children: "Custom" }) })

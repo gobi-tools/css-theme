@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.row > :is(.col, div) {
+.row > :is(.col, div, article) {
   flex: 1 1 0;
   min-width: 0;
 }
@@ -35,7 +35,7 @@
 }
 
 @container rows (max-width: 600px) {
-  .row > :is(.col, div) {
+  .row > :is(.col, div, article) {
     flex: 0 4 100%;
   }
 

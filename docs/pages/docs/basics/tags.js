@@ -2096,7 +2096,7 @@ function Navigation({ theme }) {
           /* @__PURE__ */ jsx16("code", { children: "card" }),
           " class to create a more striking display."
         ] }),
-        /* @__PURE__ */ jsx16("nav", { className: "card disable-mobile", children: /* @__PURE__ */ jsxs16("ul", { children: [
+        /* @__PURE__ */ jsx16("article", { children: /* @__PURE__ */ jsx16("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs16("ul", { children: [
           /* @__PURE__ */ jsx16("li", { children: /* @__PURE__ */ jsxs16("a", { href: "", children: [
             /* @__PURE__ */ jsxs16("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
               /* @__PURE__ */ jsx16("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
@@ -2118,7 +2118,7 @@ function Navigation({ theme }) {
             /* @__PURE__ */ jsx16("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),
             /* @__PURE__ */ jsx16("path", { d: "M9 18c-4.51 2-5-2-7-2" })
           ] }) }) }) })
-        ] }) }),
+        ] }) }) }),
         /* @__PURE__ */ jsx16("br", {})
       ] }),
       /* @__PURE__ */ jsx16("div", { children: /* @__PURE__ */ jsx16("pre", { children: /* @__PURE__ */ jsx16("code", { children: `<nav class="card">
@@ -2677,11 +2677,11 @@ function Cards({ theme }) {
           " class, you can create a basic card-type layout."
         ] }),
         /* @__PURE__ */ jsxs22("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("div", { className: "card", children: [
+          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { children: [
             /* @__PURE__ */ jsx22("span", { children: /* @__PURE__ */ jsx22("b", { children: "Title" }) }),
             /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
-          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("div", { className: "card success", children: [
+          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { className: "success", children: [
             /* @__PURE__ */ jsx22("span", { children: /* @__PURE__ */ jsx22("b", { children: "Title" }) }),
             /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
@@ -2706,11 +2706,11 @@ function Cards({ theme }) {
           " classes."
         ] }),
         /* @__PURE__ */ jsxs22("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("div", { className: "card", children: [
+          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { children: [
             /* @__PURE__ */ jsx22("h3", { children: "Title" }),
             /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
-          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("div", { className: "card error", children: [
+          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { className: "error", children: [
             /* @__PURE__ */ jsx22("h3", { children: "Title" }),
             /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
@@ -2732,12 +2732,12 @@ function Cards({ theme }) {
       /* @__PURE__ */ jsxs22("div", { children: [
         /* @__PURE__ */ jsx22("p", { children: "The starting paragraph of a card will be styled so it's more proeminent." }),
         /* @__PURE__ */ jsxs22("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("div", { className: "card", children: [
-            /* @__PURE__ */ jsx22("p", { children: "Title" }),
+          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { children: [
+            /* @__PURE__ */ jsx22("header", { children: "Title" }),
             /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
-          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("div", { className: "card success", children: [
-            /* @__PURE__ */ jsx22("p", { children: "Title" }),
+          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { className: "success", children: [
+            /* @__PURE__ */ jsx22("header", { children: "Title" }),
             /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
         ] })
@@ -2753,11 +2753,11 @@ function Cards({ theme }) {
       /* @__PURE__ */ jsxs22("div", { children: [
         /* @__PURE__ */ jsx22("p", { children: "Likewise, the first image tag used in a card will be styled as a header image." }),
         /* @__PURE__ */ jsxs22("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("div", { className: "card", children: [
+          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { children: [
             /* @__PURE__ */ jsx22("img", { height: "80", src: "https://picsum.photos/id/16/320/80", alt: "header image" }),
             /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) }),
-          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("div", { className: "card error", children: [
+          /* @__PURE__ */ jsx22("div", { children: /* @__PURE__ */ jsxs22("article", { className: "error", children: [
             /* @__PURE__ */ jsx22("img", { height: "80", src: "https://picsum.photos/id/16/420/80", alt: "header image" }),
             /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." })
           ] }) })
@@ -2777,7 +2777,7 @@ function Cards({ theme }) {
       /* @__PURE__ */ jsxs22("div", { children: [
         /* @__PURE__ */ jsx22("p", { children: "You can combine elements inside a card to produce quite compelx results, as the example below shows." }),
         /* @__PURE__ */ jsx22("p", { children: "By adding a header image, a title, paragraph and a button, we've created an interesting visual element in a few lines of HTML." }),
-        /* @__PURE__ */ jsxs22("div", { className: "card", children: [
+        /* @__PURE__ */ jsxs22("article", { children: [
           /* @__PURE__ */ jsx22("img", { height: "160", src: "https://picsum.photos/id/16/480/160", alt: "header image" }),
           /* @__PURE__ */ jsx22("h4", { children: "Title" }),
           /* @__PURE__ */ jsx22("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
@@ -2805,7 +2805,7 @@ function Cards({ theme }) {
     /* @__PURE__ */ jsxs22("section", { className: "row", children: [
       /* @__PURE__ */ jsxs22("div", { children: [
         /* @__PURE__ */ jsx22("p", { children: "If we combine groups, columns and cards, we can experiment with even more daring layouts. All without having to write any custom CSS." }),
-        /* @__PURE__ */ jsxs22("div", { className: "card", children: [
+        /* @__PURE__ */ jsxs22("article", { children: [
           /* @__PURE__ */ jsx22("div", { role: "group", children: /* @__PURE__ */ jsxs22("div", { className: "row", children: [
             /* @__PURE__ */ jsx22("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "header image" }),
             /* @__PURE__ */ jsxs22("div", { children: [
@@ -2996,7 +2996,7 @@ function Grids({ theme }) {
           /* @__PURE__ */ jsx24("code", { children: "col" }),
           " classes."
         ] }),
-        /* @__PURE__ */ jsxs24("div", { className: "card", children: [
+        /* @__PURE__ */ jsxs24("article", { children: [
           /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
             /* @__PURE__ */ jsx24("div", { className: "col", children: /* @__PURE__ */ jsx24("code", { style: { width: "100%" }, children: "col" }) }),
             /* @__PURE__ */ jsx24("div", { className: "col", children: /* @__PURE__ */ jsx24("code", { style: { width: "100%" }, children: "col" }) })
@@ -3035,7 +3035,7 @@ function Grids({ theme }) {
           /* @__PURE__ */ jsx24("code", { children: "col" }),
           " class will fill all available space."
         ] }),
-        /* @__PURE__ */ jsx24("div", { className: "card", children: /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
+        /* @__PURE__ */ jsx24("article", { children: /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx24("div", { className: "col-2", children: /* @__PURE__ */ jsx24("code", { style: { width: "100%" }, children: "col-2" }) }),
           /* @__PURE__ */ jsx24("div", { className: "col", children: /* @__PURE__ */ jsx24("code", { style: { width: "100%" }, children: "col" }) }),
           /* @__PURE__ */ jsx24("div", { className: "col-6", children: /* @__PURE__ */ jsx24("code", { style: { width: "100%" }, children: "col-6" }) })
@@ -3081,7 +3081,7 @@ function Grids({ theme }) {
           /* @__PURE__ */ jsx24("b", { children: "image" }),
           ", etc) will expand naturally. This makes layouts like the one below possible and easy to write."
         ] }),
-        /* @__PURE__ */ jsx24("div", { className: "card", children: /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
+        /* @__PURE__ */ jsx24("article", { children: /* @__PURE__ */ jsxs24("div", { className: "row disable-mobile", children: [
           /* @__PURE__ */ jsx24("img", { width: "80", height: "80", src: "https://picsum.photos/id/16/80/80", alt: "ssample image " }),
           /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsx24("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }) })
         ] }) })

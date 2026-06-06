@@ -39,7 +39,7 @@ function FoodDelivery() {
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsxs("section", { className: "row", children: [
-        /* @__PURE__ */ jsxs("div", { className: "card", children: [
+        /* @__PURE__ */ jsxs("article", { children: [
           /* @__PURE__ */ jsx("h2", { children: "Become a member" }),
           /* @__PURE__ */ jsx("p", { children: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }),
           /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [
@@ -50,7 +50,7 @@ function FoodDelivery() {
             ] })
           ] }) }) }) })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "card", children: [
+        /* @__PURE__ */ jsxs("article", { children: [
           /* @__PURE__ */ jsx("h2", { children: "Become a merchant" }),
           /* @__PURE__ */ jsx("p", { children: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." }),
           /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [
@@ -61,7 +61,7 @@ function FoodDelivery() {
             ] })
           ] }) }) }) })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "card", children: [
+        /* @__PURE__ */ jsxs("article", { children: [
           /* @__PURE__ */ jsx("h2", { children: "Get the best experience" }),
           /* @__PURE__ */ jsx("p", { children: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }),
           /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [

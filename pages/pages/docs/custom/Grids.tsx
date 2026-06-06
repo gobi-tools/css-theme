@@ -15,7 +15,7 @@ export default function Grids({ theme }) {
             be transformed into a grid with columns of equal width 
             using the <code>row</code> and <code>col</code> classes.
           </p>
-          <div className="card">
+          <article>
             <div className="row disable-mobile">
               <div className="col">
                 <code style={{width:'100%'}}>col</code>
@@ -35,7 +35,7 @@ export default function Grids({ theme }) {
                 <code style={{width:'100%'}}>col</code>
               </div>
             </div>
-          </div>
+          </article>
         </div>
         <div>
           <pre><code>
@@ -66,7 +66,7 @@ export default function Grids({ theme }) {
             Grids can combine columns of multiple widths.
             The generic <code>col</code> class will fill all available space.
           </p>
-          <div className="card">
+          <article>
             <div className="row disable-mobile">
               <div className="col-2">
                 <code style={{width:'100%'}}>col-2</code>
@@ -78,7 +78,7 @@ export default function Grids({ theme }) {
                 <code style={{width:'100%'}}>col-6</code>
               </div>
             </div>
-          </div>
+          </article>
         </div>
         <div>
           <pre><code>
@@ -135,7 +135,7 @@ export default function Grids({ theme }) {
             And any other element (like an <b>image</b>, etc) will expand naturally.
             This makes layouts like the one below possible and easy to write.
           </p>
-          <div className="card">
+          <article>
             <div className="row disable-mobile">
               <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="ssample image " />
               <div>
@@ -145,7 +145,7 @@ export default function Grids({ theme }) {
                 </p>
               </div>
             </div>
-          </div>
+          </article>
         </div>
         <div>
           <pre><code>

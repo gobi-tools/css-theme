@@ -65,7 +65,7 @@ export default function LandingPage() {
             <h2>Pricing</h2>
           </div>
           <div className="row">
-            <div className="card">
+            <article>
               <hgroup>
                 <h2>Hobby</h2>
                 <p><b>Free</b></p>
@@ -82,8 +82,8 @@ export default function LandingPage() {
               <div>
                 <button>Download</button>
               </div>
-            </div>
-            <div className="card">
+            </article>
+            <article>
               <hgroup>
                 <h2>Eterprise</h2>
                 <p><b>Custom</b></p>
@@ -100,7 +100,7 @@ export default function LandingPage() {
               <div>
                 <button>Contact Sales</button>
               </div>
-            </div>
+            </article>
           </div>
         </section>
         <hr />

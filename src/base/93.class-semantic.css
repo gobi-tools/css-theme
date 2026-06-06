@@ -90,16 +90,22 @@
   background-color: var(--color-int-secondary-faint);
 }
 
-:is(div,
+/* :is(div,
   article, section, main, aside, header, footer,
-  nav, menu).success:not(.card) {
+  nav, menu).success:not(.card), */
+:is(div,
+  section, main, aside, header, footer,
+  nav, menu).success {
   --color-primary: var(--color-int-success);
   background-color: var(--color-int-primary-faint);
 }
 
-:is(div,
+/* :is(div,
   article, section, main, aside, header, footer,
-  nav, menu).error:not(.card) {
+  nav, menu).error:not(.card), */
+:is(div,
+  section, main, aside, header, footer,
+  nav, menu).error {
   --color-primary: var(--color-int-error);
   background-color: var(--color-int-primary-faint);
 }

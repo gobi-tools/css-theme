@@ -36,7 +36,7 @@ export default function Showcases(props: { theme: EThemes }) {
       <section>
         <div className="row">
           <div>
-            <div className="card">
+            <article>
               <div>
                 <ShowcaseTitle title="Blog" url={RouteMaster.showcases(EShowcases.Blog, route)} />
               </div>
@@ -45,10 +45,10 @@ export default function Showcases(props: { theme: EThemes }) {
                   <ShowcasePreview showcase={EShowcases.Blog} route={route} />
                 </a>
               </div>
-            </div>
+            </article>
           </div>
           <div>
-            <div className="card">
+            <article>
               <div>
                 <ShowcaseTitle title="Newsletter" url={RouteMaster.showcases(EShowcases.Newsletter, route)} />
               </div>
@@ -57,13 +57,13 @@ export default function Showcases(props: { theme: EThemes }) {
                   <ShowcasePreview showcase={EShowcases.Newsletter} route={route} />
                 </a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
         <br className="hide-on-desktop" />
         <div className="row">
           <div>
-            <div className="card">
+            <article>
               <div>
                 <ShowcaseTitle title="Delivery" url={RouteMaster.showcases(EShowcases.FoodDelivery, route)} />
               </div>
@@ -72,10 +72,10 @@ export default function Showcases(props: { theme: EThemes }) {
                   <ShowcasePreview showcase={EShowcases.FoodDelivery} route={route} />
                 </a>
               </div>
-            </div>
+            </article>
           </div>
           <div>
-            <div className="card">
+            <article>
               <div>
                 <ShowcaseTitle title="Landing" url={RouteMaster.showcases(EShowcases.LandingPage, route)} />
               </div>
@@ -84,7 +84,7 @@ export default function Showcases(props: { theme: EThemes }) {
                   <ShowcasePreview showcase={EShowcases.LandingPage} route={route} />
                 </a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
