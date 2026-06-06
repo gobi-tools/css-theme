@@ -146,17 +146,17 @@ details[name]:has(+ details[name]) {
   margin-bottom: 0;
 }
 
-.card,
 article,
 hgroup {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 
-  & * {
-    margin-bottom: 0;
+  & *:not(hr) {
+    margin-bottom: 0 !important;
   }
 }
+
 article:has(> details[name]) {
   gap: 0;
 }
