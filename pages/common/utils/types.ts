@@ -11,6 +11,7 @@ export enum EDoc {
   Code = 'code',
   Table = 'table',
   Figures = 'figures',
+  Cards = 'cards',
   // forms
   FormsNormal = 'forms-normal',
   FormsCheck = 'forms-check',
@@ -32,8 +33,6 @@ export enum EDoc {
   Icons = 'icons',
   DarkMode = 'dark-mode',
   Mobile = 'mobile',
-  // custom - elements
-  Cards = 'cards',
   // custom - layout
   Grids = 'grid',
   Containers = 'containers',

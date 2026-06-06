@@ -21,7 +21,7 @@ import Menu from "../../pages/docs/navigation/Menu";
 import DarkMode from "../../pages/docs/extra/DarkMode";
 import Icons from "../../pages/docs/extra/Icons";
 import Mobile from "../../pages/docs/extra/Mobile";
-import Cards from "../../pages/docs/custom/Cards";
+import Cards from "../../pages/docs/basics/Cards";
 import Classes from "../../pages/docs/custom/Classes";
 import Grids from "../../pages/docs/custom/Grids";
 import Containers from "../../pages/docs/custom/Containers";
@@ -70,6 +70,7 @@ export class RouteMaster {
       case EDoc.Summary: return `${base}${theme}/pages/docs/basics/${htmlName(Summary)}`;
       case EDoc.Table: return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
       case EDoc.Tags: return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
+      case EDoc.Cards: return `${base}${theme}/pages/docs/basics/${htmlName(Cards)}`;
       // forms
       case EDoc.FormsCheck: return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
       case EDoc.FormsDisabled: return `${base}${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
@@ -92,7 +93,6 @@ export class RouteMaster {
       case EDoc.Icons: return `${base}${theme}/pages/docs/extra/${htmlName(Icons)}`;
       case EDoc.Mobile: return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
       // custom
-      case EDoc.Cards: return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
       case EDoc.Classes: return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
       case EDoc.Grids: return `${base}${theme}/pages/docs/custom/${htmlName(Grids)}`;
       case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
@@ -118,6 +118,7 @@ export class RouteMaster {
           case htmlName(Summary): return EDoc.Summary;
           case htmlName(Table): return EDoc.Table;
           case htmlName(Tags): return EDoc.Tags;
+          case htmlName(Cards): return EDoc.Cards;
         }
       }
       case 'forms': {
@@ -158,7 +159,6 @@ export class RouteMaster {
       }
       case 'custom': {
         switch (doc) {
-          case htmlName(Cards): return EDoc.Cards;
           case htmlName(Classes): return EDoc.Classes;
           case htmlName(Grids): return EDoc.Grids;
           case htmlName(Containers): return EDoc.Containers;

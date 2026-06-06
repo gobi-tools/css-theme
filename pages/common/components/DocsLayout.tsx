@@ -72,6 +72,9 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Figures}>
                 <a href={RouteMaster.doc(EDoc.Figures, theme, route)}>Figures</a>
               </li>
+              <li aria-selected={selectedDoc === EDoc.Cards}>
+                <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>Cards</a>
+              </li>
             </menu>
 
             <menu>
@@ -144,9 +147,6 @@ export default function DocLayout({ theme, children }) {
 
             <menu>
               <b>Custom</b>
-              <li aria-selected={selectedDoc === EDoc.Cards}>
-                <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>Cards</a>
-              </li>
               <li aria-selected={selectedDoc === EDoc.Grids}>
                 <a href={RouteMaster.doc(EDoc.Grids, theme, route)}>Grids</a>
               </li>

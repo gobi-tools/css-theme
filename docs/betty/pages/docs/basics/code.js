@@ -2843,7 +2843,7 @@ function Mobile({ theme }) {
   ] });
 }
 
-// pages/pages/docs/custom/Cards.tsx
+// pages/pages/docs/basics/Cards.tsx
 import { jsx as jsx22, jsxs as jsxs22 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Cards({ theme }) {
   const route = useRoute();
@@ -3141,15 +3141,6 @@ function Classes({ theme }) {
         /* @__PURE__ */ jsxs23("tr", { children: [
           /* @__PURE__ */ jsx23("td", { children: /* @__PURE__ */ jsx23("code", { children: "inverted" }) }),
           /* @__PURE__ */ jsx23("td", { children: "Takes any primary, secondary, success or error color scheme and inverts it such that the background color is a lot more proeminent and the text color is usually a contrasting one." })
-        ] }),
-        /* @__PURE__ */ jsxs23("tr", { children: [
-          /* @__PURE__ */ jsx23("td", { rowSpan: 2, children: "Style" }),
-          /* @__PURE__ */ jsx23("td", { children: /* @__PURE__ */ jsx23("code", { children: "card" }) }),
-          /* @__PURE__ */ jsx23("td", { children: "Transforms an element into a card." })
-        ] }),
-        /* @__PURE__ */ jsxs23("tr", { children: [
-          /* @__PURE__ */ jsx23("td", { children: /* @__PURE__ */ jsx23("code", { children: "circle" }) }),
-          /* @__PURE__ */ jsx23("td", { children: "Rounds the edges off an element so it's a perfect circle. Useful for images." })
         ] }),
         /* @__PURE__ */ jsxs23("tr", { children: [
           /* @__PURE__ */ jsx23("td", { rowSpan: 1, children: "Alignment" }),
@@ -4161,6 +4152,8 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
       case "tags" /* Tags */:
         return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
+      case "cards" /* Cards */:
+        return `${base}${theme}/pages/docs/basics/${htmlName(Cards)}`;
       // forms
       case "forms-check" /* FormsCheck */:
         return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
@@ -4199,8 +4192,6 @@ var RouteMaster = class _RouteMaster {
       case "mobile" /* Mobile */:
         return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
       // custom
-      case "cards" /* Cards */:
-        return `${base}${theme}/pages/docs/custom/${htmlName(Cards)}`;
       case "classes" /* Classes */:
         return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
       case "grid" /* Grids */:
@@ -4238,6 +4229,8 @@ var RouteMaster = class _RouteMaster {
             return "table" /* Table */;
           case htmlName(Tags):
             return "tags" /* Tags */;
+          case htmlName(Cards):
+            return "cards" /* Cards */;
         }
       }
       case "forms": {
@@ -4294,8 +4287,6 @@ var RouteMaster = class _RouteMaster {
       }
       case "custom": {
         switch (doc) {
-          case htmlName(Cards):
-            return "cards" /* Cards */;
           case htmlName(Classes):
             return "classes" /* Classes */;
           case htmlName(Grids):
@@ -4481,7 +4472,8 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "summary" /* Summary */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("summary" /* Summary */, theme, route), children: "Summary" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "code" /* Code */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("code" /* Code */, theme, route), children: "Code" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "table" /* Table */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("table" /* Table */, theme, route), children: "Table" }) }),
-          /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "figures" /* Figures */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("figures" /* Figures */, theme, route), children: "Figures" }) })
+          /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "figures" /* Figures */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("figures" /* Figures */, theme, route), children: "Figures" }) }),
+          /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "cards" /* Cards */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "Cards" }) })
         ] }),
         /* @__PURE__ */ jsxs45("menu", { children: [
           /* @__PURE__ */ jsx45("b", { children: "Forms" }),
@@ -4516,7 +4508,6 @@ function DocLayout({ theme, children }) {
         ] }),
         /* @__PURE__ */ jsxs45("menu", { children: [
           /* @__PURE__ */ jsx45("b", { children: "Custom" }),
-          /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "cards" /* Cards */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("cards" /* Cards */, theme, route), children: "Cards" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "grid" /* Grids */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("grid" /* Grids */, theme, route), children: "Grids" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "containers" /* Containers */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("containers" /* Containers */, theme, route), children: "Containers" }) }),
           /* @__PURE__ */ jsx45("li", { "aria-selected": selectedDoc === "colors" /* Colors */, children: /* @__PURE__ */ jsx45("a", { href: RouteMaster.doc("colors" /* Colors */, theme, route), children: "Colors" }) }),

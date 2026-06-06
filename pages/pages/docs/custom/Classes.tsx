@@ -126,20 +126,6 @@ export default function Classes({ theme }) {
               </tr>
 
               <tr>
-                <td rowSpan={2}>Style</td>
-                <td><code>card</code></td>
-                <td>
-                  Transforms an element into a card.
-                </td>
-              </tr>
-              <tr>
-                <td><code>circle</code></td>
-                <td>
-                  Rounds the edges off an element so it's a perfect circle. Useful for images.
-                </td>
-              </tr>
-
-              <tr>
                 <td rowSpan={1}>Alignment</td>
                 <td><code>align-center</code></td>
                 <td>

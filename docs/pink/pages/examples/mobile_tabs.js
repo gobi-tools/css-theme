@@ -81,7 +81,7 @@ import { jsx as jsx20, jsxs as jsxs20 } from "https://esm.sh/react@19.2.0/jsx-ru
 // pages/pages/docs/extra/Mobile.tsx
 import { jsx as jsx21, jsxs as jsxs21 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/docs/custom/Cards.tsx
+// pages/pages/docs/basics/Cards.tsx
 import { jsx as jsx22, jsxs as jsxs22 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
 // pages/pages/docs/custom/Classes.tsx
