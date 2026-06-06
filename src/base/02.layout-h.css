@@ -13,10 +13,7 @@ dialog {
   margin-inline: auto;
 }
 
-header>*,
-footer>:is(article, aside, nav, menu) {
-  /* :is(header, footer)>* { */
-  /* :is(header, footer)>:is(article, aside, nav, menu) { */
+:is(header, footer)>*:has(:is(article, aside, div, nav, menu, section, h1, h2, h3, h4, h5, h6, hgroup, p, ul, ol, table, dt, dl)) {
   width: 100vw !important;
   margin-left: calc(50% - 50vw);
 
