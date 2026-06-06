@@ -3366,8 +3366,8 @@ function Header({ theme }) {
           <div>
             ...
           </div>
-          <div class="gap">
-          </div>
+          <!-- gap -->
+          <div></div>
           <button>
             ...
           </button>
