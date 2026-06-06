@@ -46,14 +46,14 @@ Improvements
 
 Investigations
 --------------
-- [ ][investigate] instead of the "card" class 
+- [x][investigate] instead of the "card" class 
   -> do what [picocss](https://picocss.com/docs/card) does and have an article as card 
   so in this way we get rid of the "card" class ... 
   but might need to change details to have one style with name and another w/o name
 - [x][investigate] instead of the "group" class 
   -> do what [picocss](https://picocss.com/docs/group) does and use the role="group"
   so in this  way we get rif of more classes
-- [ ][investigate] a way to get rid of the ["circle"] class by creating round images
+- [x][investigate] a way to get rid of the ["circle"] class by creating round images
  in some other way ... 
 - [x][investigate] instead of a ["gap"] class, use <div> 
 
