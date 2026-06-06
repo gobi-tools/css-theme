@@ -37,7 +37,7 @@ export default function Footer({ theme }) {
         <div>
           <pre><code>
             {`<footer>
-  <article>
+  <div>
     <div class="row">
       <div>
         <nav>
@@ -51,7 +51,7 @@ export default function Footer({ theme }) {
       </div>
       <div></div>
     </div>
-  </article>
+  </div>
 </footer>`}
           </code></pre>
         </div>

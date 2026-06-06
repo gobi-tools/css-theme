@@ -7,7 +7,7 @@ export default function LayoutFooterComplex() {
       </p>
     </main>
     <footer>
-      <article className="primary">
+      <div className="primary">
         <div className="row">
           <div>
             <nav>
@@ -34,7 +34,7 @@ export default function LayoutFooterComplex() {
           </div>
           <div></div>
         </div>
-      </article>
+      </div>
     </footer>
   </>;
 }

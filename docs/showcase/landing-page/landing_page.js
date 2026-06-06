@@ -91,7 +91,7 @@ function LandingPage() {
       ] }) }),
       /* @__PURE__ */ jsx("button", { type: "reset", children: "Request Credentials" })
     ] }) }) }) }) }),
-    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("article", { className: "primary", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
+    /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("div", { className: "primary", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
       /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
         /* @__PURE__ */ jsx("b", { children: "COMPANY" }),
         /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Our Story" }) }),

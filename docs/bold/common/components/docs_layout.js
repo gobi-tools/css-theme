@@ -4115,7 +4115,7 @@ function LayoutFooterComplex() {
       /* @__PURE__ */ jsx43("h1", { children: "Title" }),
       /* @__PURE__ */ jsx43("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
     ] }),
-    /* @__PURE__ */ jsx43("footer", { children: /* @__PURE__ */ jsx43("article", { className: "primary", children: /* @__PURE__ */ jsxs43("div", { className: "row", children: [
+    /* @__PURE__ */ jsx43("footer", { children: /* @__PURE__ */ jsx43("div", { className: "primary", children: /* @__PURE__ */ jsxs43("div", { className: "row", children: [
       /* @__PURE__ */ jsx43("div", { children: /* @__PURE__ */ jsx43("nav", { children: /* @__PURE__ */ jsxs43("ul", { children: [
         /* @__PURE__ */ jsx43("b", { children: "COMPANY" }),
         /* @__PURE__ */ jsx43("li", { children: /* @__PURE__ */ jsx43("a", { href: "", children: "Our Story" }) }),
