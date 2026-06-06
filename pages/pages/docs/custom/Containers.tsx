@@ -25,7 +25,7 @@ export default function Containers({ theme }) {
                   800px
                 </td>
                 <td>
-                  This is the default viewport. Suitable for blogs, articles, etc.
+                  This is the default viewport. Suitable for blogs, newsletters, etc.
                 </td>
               </tr>
               <tr>

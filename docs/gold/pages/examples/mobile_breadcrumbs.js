@@ -14,10 +14,10 @@ function MobileBreadcrumbs() {
         /* @__PURE__ */ jsx("ul", { children: /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Not visible" }) }) })
       ] })
     ] }) }) }),
-    /* @__PURE__ */ jsx("main", { children: /* @__PURE__ */ jsxs("article", { children: [
+    /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsx("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 

@@ -31,10 +31,10 @@ function DesktopMenu() {
         /* @__PURE__ */ jsx("span", { children: "Profile" })
       ] }) })
     ] }) }),
-    /* @__PURE__ */ jsx("main", { children: /* @__PURE__ */ jsxs("article", { children: [
+    /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsx("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 

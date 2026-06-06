@@ -7,9 +7,7 @@ export default function HomeLayout({ theme, children }) {
         <TopNav theme={theme} />
       </header>
       <main>
-        <article>
-          {children}
-        </article>
+        {children}
       </main>
     </>
   )

@@ -3178,7 +3178,7 @@ function Containers({ theme }) {
           /* @__PURE__ */ jsxs25("tr", { children: [
             /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "container-narrow" }) }),
             /* @__PURE__ */ jsx25("td", { children: "800px" }),
-            /* @__PURE__ */ jsx25("td", { children: "This is the default viewport. Suitable for blogs, articles, etc." })
+            /* @__PURE__ */ jsx25("td", { children: "This is the default viewport. Suitable for blogs, newsletters, etc." })
           ] }),
           /* @__PURE__ */ jsxs25("tr", { children: [
             /* @__PURE__ */ jsx25("td", { children: /* @__PURE__ */ jsx25("code", { children: "container-medium" }) }),
@@ -3388,9 +3388,9 @@ function Header({ theme }) {
     /* @__PURE__ */ jsxs27("section", { className: "row", children: [
       /* @__PURE__ */ jsxs27("div", { children: [
         /* @__PURE__ */ jsxs27("p", { children: [
-          'You create more complex "hero" layouts by placing an ',
-          /* @__PURE__ */ jsx27("code", { children: "article" }),
-          " inside a header."
+          'You create more complex "hero" layouts by placing any element, such as a ',
+          /* @__PURE__ */ jsx27("code", { children: "div" }),
+          ", inside a header. Note that heroes are defined by the extra top and bottom padding child elements receive."
         ] }),
         /* @__PURE__ */ jsx27("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
       ] }),
@@ -3409,7 +3409,7 @@ function Header({ theme }) {
 
 <!-- hero header -->
 <header>
-  <article class="align-center">
+  <div class="align-center">
     <h2>
       My blog
     </h2>
@@ -3426,7 +3426,7 @@ function Header({ theme }) {
           value="Subscribe"/>
       </div>
     </form>
-  </article>
+  </div>
 </header>
 <main>
   <h1>Title</h1>
@@ -3436,10 +3436,9 @@ function Header({ theme }) {
     /* @__PURE__ */ jsxs27("section", { className: "row", children: [
       /* @__PURE__ */ jsxs27("div", { children: [
         /* @__PURE__ */ jsxs27("p", { children: [
-          /* @__PURE__ */ jsx27("code", { children: "headers" }),
-          " and ",
-          /* @__PURE__ */ jsx27("code", { children: "asides" }),
-          ' combine together to form a "banner" element that can be placed at the top of a page or mid-content.'
+          "Finally, ",
+          /* @__PURE__ */ jsx27("code", { children: "aside" }),
+          ' is another specialised element that can be used in a header in order to create a "banner" element, either to be placed at the top of the page or mid-content.'
         ] }),
         /* @__PURE__ */ jsx27("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-section" /* LayoutHeaderSection */, theme, route) })
       ] }),
@@ -3564,10 +3563,10 @@ function MobileBreadcrumbs() {
         /* @__PURE__ */ jsx30("ul", { children: /* @__PURE__ */ jsx30("li", { children: /* @__PURE__ */ jsx30("a", { href: "", children: "Not visible" }) }) })
       ] })
     ] }) }) }),
-    /* @__PURE__ */ jsx30("main", { children: /* @__PURE__ */ jsxs30("article", { children: [
+    /* @__PURE__ */ jsxs30("main", { children: [
       /* @__PURE__ */ jsx30("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx30("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 
@@ -3600,10 +3599,10 @@ function DesktopMenu() {
         /* @__PURE__ */ jsx31("span", { children: "Profile" })
       ] }) })
     ] }) }),
-    /* @__PURE__ */ jsx31("main", { children: /* @__PURE__ */ jsxs31("article", { children: [
+    /* @__PURE__ */ jsxs31("main", { children: [
       /* @__PURE__ */ jsx31("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx31("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 
@@ -3630,7 +3629,7 @@ function LayoutHeaderComplex() {
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "About" }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("article", { className: "align-center secondary", children: [
+    /* @__PURE__ */ jsx33("header", { children: /* @__PURE__ */ jsxs33("div", { className: "align-center secondary", children: [
       /* @__PURE__ */ jsx33("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx33("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
       /* @__PURE__ */ jsx33("form", { children: /* @__PURE__ */ jsxs33("div", { role: "group", children: [
@@ -3648,7 +3647,7 @@ function LayoutHeaderComplex() {
 // pages/pages/examples/MobileColumns.tsx
 import { Fragment as Fragment6, jsx as jsx34, jsxs as jsxs34 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileColumns() {
-  return /* @__PURE__ */ jsx34(Fragment6, { children: /* @__PURE__ */ jsx34("main", { children: /* @__PURE__ */ jsx34("article", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsxs34("div", { className: "row", children: [
+  return /* @__PURE__ */ jsx34(Fragment6, { children: /* @__PURE__ */ jsx34("main", { children: /* @__PURE__ */ jsx34("div", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsxs34("div", { className: "row", children: [
     /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col" }) }),
     /* @__PURE__ */ jsx34("div", { children: /* @__PURE__ */ jsx34("code", { style: { width: "100%" }, children: "col" }) })
   ] }) }) }) });
@@ -3683,10 +3682,10 @@ function MobileMenu() {
         /* @__PURE__ */ jsx35("span", { children: "Profile" })
       ] }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx35("main", { children: /* @__PURE__ */ jsxs35("article", { children: [
+    /* @__PURE__ */ jsxs35("main", { children: [
       /* @__PURE__ */ jsx35("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx35("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 
@@ -3724,10 +3723,10 @@ function MobileNav() {
         ] })
       ] })
     ] }) }) }),
-    /* @__PURE__ */ jsx36("main", { children: /* @__PURE__ */ jsxs36("article", { children: [
+    /* @__PURE__ */ jsxs36("main", { children: [
       /* @__PURE__ */ jsx36("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx36("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 
@@ -3770,11 +3769,11 @@ function MobileTabs() {
 // pages/pages/examples/MobileTypography.tsx
 import { Fragment as Fragment9, jsx as jsx38, jsxs as jsxs38 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTypography() {
-  return /* @__PURE__ */ jsx38(Fragment9, { children: /* @__PURE__ */ jsx38("main", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx38("article", { children: /* @__PURE__ */ jsxs38("p", { children: [
+  return /* @__PURE__ */ jsx38(Fragment9, { children: /* @__PURE__ */ jsx38("main", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs38("p", { children: [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
     /* @__PURE__ */ jsx38("b", { children: "tempor" }),
     " incididunt ut labore et dolore magna aliqua."
-  ] }) }) }) });
+  ] }) }) });
 }
 
 // pages/pages/docs/custom/Colors.tsx
@@ -4318,7 +4317,7 @@ import { Fragment as Fragment12, jsx as jsx44, jsxs as jsxs44 } from "https://es
 function HomeLayout({ theme, children }) {
   return /* @__PURE__ */ jsxs44(Fragment12, { children: [
     /* @__PURE__ */ jsx44("header", { children: /* @__PURE__ */ jsx44(TopNav, { theme }) }),
-    /* @__PURE__ */ jsx44("main", { children: /* @__PURE__ */ jsx44("article", { children }) })
+    /* @__PURE__ */ jsx44("main", { children })
   ] });
 }
 

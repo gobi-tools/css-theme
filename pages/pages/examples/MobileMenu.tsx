@@ -26,13 +26,11 @@ export default function MobileMenu() {
         </nav>
       </header>
       <main>
-        <article>
-          <h1>Heading 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
-          </p>
-        </article>
+        <h1>Heading 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
       </main>
     </>
   )

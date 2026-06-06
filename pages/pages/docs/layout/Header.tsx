@@ -45,7 +45,8 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
-            You create more complex "hero" layouts by placing an <code>article</code> inside a header.
+            You create more complex "hero" layouts by placing any element, such as a <code>div</code>, inside a header. 
+            Note that heroes are defined by the extra top and bottom padding child elements receive.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderComplex, theme, route)} />
         </div>
@@ -66,7 +67,7 @@ export default function Header({ theme }) {
 
 <!-- hero header -->
 <header>
-  <article class="align-center">
+  <div class="align-center">
     <h2>
       My blog
     </h2>
@@ -83,7 +84,7 @@ export default function Header({ theme }) {
           value="Subscribe"/>
       </div>
     </form>
-  </article>
+  </div>
 </header>
 <main>
   <h1>Title</h1>
@@ -96,8 +97,8 @@ export default function Header({ theme }) {
       <section className="row">
         <div>
           <p>
-            <code>headers</code> and <code>asides</code> combine together to form a "banner" element
-            that can be placed at the top of a page or mid-content.
+            Finally, <code>aside</code> is another specialised element that can be used in a header in 
+            order to create a "banner" element, either to be placed at the top of the page or mid-content.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderSection, theme, route)} />
         </div>

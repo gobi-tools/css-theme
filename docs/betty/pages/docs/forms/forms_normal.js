@@ -108,7 +108,7 @@ import { Fragment, jsx as jsx2, jsxs as jsxs2 } from "https://esm.sh/react@19.2.
 function HomeLayout({ theme, children }) {
   return /* @__PURE__ */ jsxs2(Fragment, { children: [
     /* @__PURE__ */ jsx2("header", { children: /* @__PURE__ */ jsx2(TopNav, { theme }) }),
-    /* @__PURE__ */ jsx2("main", { children: /* @__PURE__ */ jsx2("article", { children }) })
+    /* @__PURE__ */ jsx2("main", { children })
   ] });
 }
 
@@ -3223,7 +3223,7 @@ function Containers({ theme }) {
           /* @__PURE__ */ jsxs28("tr", { children: [
             /* @__PURE__ */ jsx28("td", { children: /* @__PURE__ */ jsx28("code", { children: "container-narrow" }) }),
             /* @__PURE__ */ jsx28("td", { children: "800px" }),
-            /* @__PURE__ */ jsx28("td", { children: "This is the default viewport. Suitable for blogs, articles, etc." })
+            /* @__PURE__ */ jsx28("td", { children: "This is the default viewport. Suitable for blogs, newsletters, etc." })
           ] }),
           /* @__PURE__ */ jsxs28("tr", { children: [
             /* @__PURE__ */ jsx28("td", { children: /* @__PURE__ */ jsx28("code", { children: "container-medium" }) }),
@@ -3433,9 +3433,9 @@ function Header({ theme }) {
     /* @__PURE__ */ jsxs30("section", { className: "row", children: [
       /* @__PURE__ */ jsxs30("div", { children: [
         /* @__PURE__ */ jsxs30("p", { children: [
-          'You create more complex "hero" layouts by placing an ',
-          /* @__PURE__ */ jsx30("code", { children: "article" }),
-          " inside a header."
+          'You create more complex "hero" layouts by placing any element, such as a ',
+          /* @__PURE__ */ jsx30("code", { children: "div" }),
+          ", inside a header. Note that heroes are defined by the extra top and bottom padding child elements receive."
         ] }),
         /* @__PURE__ */ jsx30("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-sub" /* LayoutHeaderComplex */, theme, route) })
       ] }),
@@ -3454,7 +3454,7 @@ function Header({ theme }) {
 
 <!-- hero header -->
 <header>
-  <article class="align-center">
+  <div class="align-center">
     <h2>
       My blog
     </h2>
@@ -3471,7 +3471,7 @@ function Header({ theme }) {
           value="Subscribe"/>
       </div>
     </form>
-  </article>
+  </div>
 </header>
 <main>
   <h1>Title</h1>
@@ -3481,10 +3481,9 @@ function Header({ theme }) {
     /* @__PURE__ */ jsxs30("section", { className: "row", children: [
       /* @__PURE__ */ jsxs30("div", { children: [
         /* @__PURE__ */ jsxs30("p", { children: [
-          /* @__PURE__ */ jsx30("code", { children: "headers" }),
-          " and ",
-          /* @__PURE__ */ jsx30("code", { children: "asides" }),
-          ' combine together to form a "banner" element that can be placed at the top of a page or mid-content.'
+          "Finally, ",
+          /* @__PURE__ */ jsx30("code", { children: "aside" }),
+          ' is another specialised element that can be used in a header in order to create a "banner" element, either to be placed at the top of the page or mid-content.'
         ] }),
         /* @__PURE__ */ jsx30("iframe", { scrolling: "no", width: "100%", height: 500, src: RouteMaster.example("layout-header-section" /* LayoutHeaderSection */, theme, route) })
       ] }),
@@ -3609,10 +3608,10 @@ function MobileBreadcrumbs() {
         /* @__PURE__ */ jsx33("ul", { children: /* @__PURE__ */ jsx33("li", { children: /* @__PURE__ */ jsx33("a", { href: "", children: "Not visible" }) }) })
       ] })
     ] }) }) }),
-    /* @__PURE__ */ jsx33("main", { children: /* @__PURE__ */ jsxs33("article", { children: [
+    /* @__PURE__ */ jsxs33("main", { children: [
       /* @__PURE__ */ jsx33("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx33("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 
@@ -3645,10 +3644,10 @@ function DesktopMenu() {
         /* @__PURE__ */ jsx34("span", { children: "Profile" })
       ] }) })
     ] }) }),
-    /* @__PURE__ */ jsx34("main", { children: /* @__PURE__ */ jsxs34("article", { children: [
+    /* @__PURE__ */ jsxs34("main", { children: [
       /* @__PURE__ */ jsx34("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx34("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 
@@ -3675,7 +3674,7 @@ function LayoutHeaderComplex() {
       /* @__PURE__ */ jsx36("li", { children: /* @__PURE__ */ jsx36("a", { href: "", children: "Home" }) }),
       /* @__PURE__ */ jsx36("li", { children: /* @__PURE__ */ jsx36("a", { href: "", children: "About" }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx36("header", { children: /* @__PURE__ */ jsxs36("article", { className: "align-center secondary", children: [
+    /* @__PURE__ */ jsx36("header", { children: /* @__PURE__ */ jsxs36("div", { className: "align-center secondary", children: [
       /* @__PURE__ */ jsx36("h2", { children: "My blog" }),
       /* @__PURE__ */ jsx36("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
       /* @__PURE__ */ jsx36("form", { children: /* @__PURE__ */ jsxs36("div", { role: "group", children: [
@@ -3693,7 +3692,7 @@ function LayoutHeaderComplex() {
 // pages/pages/examples/MobileColumns.tsx
 import { Fragment as Fragment8, jsx as jsx37, jsxs as jsxs37 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileColumns() {
-  return /* @__PURE__ */ jsx37(Fragment8, { children: /* @__PURE__ */ jsx37("main", { children: /* @__PURE__ */ jsx37("article", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsxs37("div", { className: "row", children: [
+  return /* @__PURE__ */ jsx37(Fragment8, { children: /* @__PURE__ */ jsx37("main", { children: /* @__PURE__ */ jsx37("div", { style: { maxWidth: "600px", marginInline: "auto" }, children: /* @__PURE__ */ jsxs37("div", { className: "row", children: [
     /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("code", { style: { width: "100%" }, children: "col" }) }),
     /* @__PURE__ */ jsx37("div", { children: /* @__PURE__ */ jsx37("code", { style: { width: "100%" }, children: "col" }) })
   ] }) }) }) });
@@ -3728,10 +3727,10 @@ function MobileMenu() {
         /* @__PURE__ */ jsx38("span", { children: "Profile" })
       ] }) })
     ] }) }) }),
-    /* @__PURE__ */ jsx38("main", { children: /* @__PURE__ */ jsxs38("article", { children: [
+    /* @__PURE__ */ jsxs38("main", { children: [
       /* @__PURE__ */ jsx38("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx38("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 
@@ -3769,10 +3768,10 @@ function MobileNav() {
         ] })
       ] })
     ] }) }) }),
-    /* @__PURE__ */ jsx39("main", { children: /* @__PURE__ */ jsxs39("article", { children: [
+    /* @__PURE__ */ jsxs39("main", { children: [
       /* @__PURE__ */ jsx39("h1", { children: "Heading 1" }),
       /* @__PURE__ */ jsx39("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-    ] }) })
+    ] })
   ] });
 }
 
@@ -3815,11 +3814,11 @@ function MobileTabs() {
 // pages/pages/examples/MobileTypography.tsx
 import { Fragment as Fragment11, jsx as jsx41, jsxs as jsxs41 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function MobileTypography() {
-  return /* @__PURE__ */ jsx41(Fragment11, { children: /* @__PURE__ */ jsx41("main", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsx41("article", { children: /* @__PURE__ */ jsxs41("p", { children: [
+  return /* @__PURE__ */ jsx41(Fragment11, { children: /* @__PURE__ */ jsx41("main", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs41("p", { children: [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",
     /* @__PURE__ */ jsx41("b", { children: "tempor" }),
     " incididunt ut labore et dolore magna aliqua."
-  ] }) }) }) });
+  ] }) }) });
 }
 
 // pages/pages/docs/custom/Colors.tsx
