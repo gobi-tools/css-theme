@@ -4,54 +4,68 @@
   &lt;p&gt;Details&lt;/p&gt;
 &lt;/details&gt;
 
-&lt;details&gt;...&lt;/details&gt;</code></pre></div></section><section class="row"><div><p>This basic summary can be combined both with the <code>card</code> class as well as the <code>success</code> and <code>error</code> classes to form a more visually appealing element.</p><article><details open=""><summary>Note</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details></article><article class="success"><details><summary>Success</summary><p>Operation finished <code>OK</code></p></details></article><article class="error"><details><summary>Error</summary><div><p>Unknown error occurred</p><button>Ack</button></div></details></article><p><small>You can learn more about colors <a href="/forest/pages/docs/custom/colors.html">here</a> and cards <a href="/forest/pages/docs/custom/cards.html">here</a>.</small></p></div><div><pre><code>&lt;details class=&quot;card&quot;&gt;
-  &lt;summary&gt;Note&lt;/summary&gt;
-  &lt;p&gt;
-    Lorem ipsum dolor sit 
-    amet, consectetur 
-    adipiscing elit, 
-    sed do eiusmod tempor 
-    incididunt ut labore 
-    et dolore magna aliqua.
-  &lt;/p&gt;
-&lt;/details&gt;
-            
-&lt;details class=&quot;card success&quot;&gt;
-  &lt;summary&gt;Success&lt;/summary&gt;
-  &lt;p&gt;
-    Operation finished 
-    &lt;code&gt;
-      OK
-    &lt;/code&gt;
-  &lt;/p&gt;
-&lt;/details&gt;
-  
-&lt;details class=&quot;card error&quot;&gt;
-  &lt;summary&gt;Error&lt;/summary&gt;
-  &lt;div&gt;
+&lt;details&gt;...&lt;/details&gt;</code></pre></div></section><section class="row"><div><p>This basic summary can be placed inside an <code>article</code> and combined with the <code>primary</code>, <code>success</code> or <code>error</code>, etc classes to form a more visually appealing element.</p><article><details open=""><summary>Note</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details></article><article class="primary"><details><summary>Info</summary><p>Larn more <a href="">here</a></p></details></article><article class="success"><details><summary>Success</summary><p>Operation finished <code>OK</code></p></details></article><article class="error"><details><summary>Error</summary><div><p>Unknown error occurred</p><button>Ack</button></div></details></article><p><small>You can learn more about colors <a href="/forest/pages/docs/custom/colors.html">here</a> and cards <a href="/forest/pages/docs/custom/cards.html">here</a>.</small></p></div><div><pre><code>&lt;article&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Note&lt;/summary&gt;
     &lt;p&gt;
-      Unknown error occurred
+      Lorem ipsum dolor sit 
+      amet, consectetur 
+      adipiscing elit, 
+      sed do eiusmod tempor 
+      incididunt ut labore 
+      et dolore magna aliqua.
     &lt;/p&gt;
-    &lt;button&gt;Ack&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/details&gt;</code></pre></div></section><section class="row"><div><p>Finally, by giving a group of summary elements the same name, you can form an accordion menu:</p><article><details name="menu"><summary>Option 1</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details><details name="menu" open=""><summary>Option 2</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details><details name="menu"><summary>Option 3</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details></article></div><div><pre><code>&lt;details 
-  class=&quot;card&quot; 
-  name=&quot;menu&quot;&gt;
-  &lt;summary&gt;Option 1&lt;/summary&gt;
-  &lt;p&gt;...&lt;/p&gt;
-&lt;/details&gt;
+  &lt;/details&gt;
+&lt;/article&gt;
+          
+&lt;article class=&quot;primary&quot;&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Info&lt;/summary&gt;
+    &lt;p&gt;
+      Learn more
+      &lt;a href=&quot;...&quot;&gt;
+        here
+      &lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/details&gt;
+&lt;/article&gt;
 
-&lt;details 
-  class=&quot;card&quot; 
-  name=&quot;menu&quot;&gt;
-  &lt;summary&gt;Option 2&lt;/summary&gt;
-  &lt;p&gt;...&lt;/p&gt;
-&lt;/details&gt;
+&lt;article class=&quot;success&quot;&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Success&lt;/summary&gt;
+    &lt;p&gt;
+      Operation finished 
+      &lt;code&gt;
+        OK
+      &lt;/code&gt;
+    &lt;/p&gt;
+  &lt;/details&gt;
+&lt;/article&gt;
+  
+&lt;article class=&quot;error&quot;&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Error&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Unknown error occurred
+      &lt;/p&gt;
+      &lt;button&gt;Ack&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+&lt;/article&gt;</code></pre></div></section><section class="row"><div><p>Finally, by giving a group of summary elements the same name and placing them inside an <code>article</code>, you can form an accordion menu:</p><article><details name="menu"><summary>Option 1</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details><details name="menu" open=""><summary>Option 2</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details><details name="menu"><summary>Option 3</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details></article></div><div><pre><code>
+&lt;article&gt;
+  &lt;details name=&quot;menu&quot;&gt;
+    &lt;summary&gt;Option 1&lt;/summary&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/details&gt;
 
-&lt;details 
-  class=&quot;card&quot; 
-  name=&quot;menu&quot;&gt;
-  &lt;summary&gt;Option 3&lt;/summary&gt;
-  &lt;p&gt;...&lt;/p&gt;
-&lt;/details&gt;
-            </code></pre></div></section></div></div></main></div><script>globalThis.__INITIAL_PROPS__ = {"theme":"forest"};</script><script type="module" src="./summary.js"></script></div></body></html>
+  &lt;details name=&quot;menu&quot;&gt;
+    &lt;summary&gt;Option 2&lt;/summary&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/details&gt;
+
+  &lt;details name=&quot;menu&quot;&gt;
+    &lt;summary&gt;Option 3&lt;/summary&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/article&gt;</code></pre></div></section></div></div></main></div><script>globalThis.__INITIAL_PROPS__ = {"theme":"forest"};</script><script type="module" src="./summary.js"></script></div></body></html>

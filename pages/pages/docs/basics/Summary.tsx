@@ -44,9 +44,8 @@ export default function Summary({ theme }) {
       <section className="row">
         <div>
           <p>
-            This basic summary can be combined both with
-            the <code>card</code> class as well as
-            the <code>success</code> and <code>error</code> classes
+            This basic summary can be placed inside an <code>article</code> and 
+            combined with the <code>primary</code>, <code>success</code> or <code>error</code>, etc classes 
             to form a more visually appealing element.
           </p>
           <article>
@@ -54,6 +53,15 @@ export default function Summary({ theme }) {
               <summary>Note</summary>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </details>
+          </article>
+          
+          <article className="primary">
+            <details>
+              <summary>Info</summary>
+              <p>
+                Larn more <a href="">here</a>
               </p>
             </details>
           </article>
@@ -66,6 +74,7 @@ export default function Summary({ theme }) {
               </p>
             </details>
           </article>
+
           <article className="error">
             <details>
               <summary>Error</summary>
@@ -85,37 +94,55 @@ export default function Summary({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<details class="card">
-  <summary>Note</summary>
-  <p>
-    Lorem ipsum dolor sit 
-    amet, consectetur 
-    adipiscing elit, 
-    sed do eiusmod tempor 
-    incididunt ut labore 
-    et dolore magna aliqua.
-  </p>
-</details>
-            
-<details class="card success">
-  <summary>Success</summary>
-  <p>
-    Operation finished 
-    <code>
-      OK
-    </code>
-  </p>
-</details>
-  
-<details class="card error">
-  <summary>Error</summary>
-  <div>
+            {`<article>
+  <details>
+    <summary>Note</summary>
     <p>
-      Unknown error occurred
+      Lorem ipsum dolor sit 
+      amet, consectetur 
+      adipiscing elit, 
+      sed do eiusmod tempor 
+      incididunt ut labore 
+      et dolore magna aliqua.
     </p>
-    <button>Ack</button>
-  </div>
-</details>`}
+  </details>
+</article>
+          
+<article class="primary">
+  <details>
+    <summary>Info</summary>
+    <p>
+      Learn more
+      <a href="...">
+        here
+      </a>
+    </p>
+  </details>
+</article>
+
+<article class="success">
+  <details>
+    <summary>Success</summary>
+    <p>
+      Operation finished 
+      <code>
+        OK
+      </code>
+    </p>
+  </details>
+</article>
+  
+<article class="error">
+  <details>
+    <summary>Error</summary>
+    <div>
+      <p>
+        Unknown error occurred
+      </p>
+      <button>Ack</button>
+    </div>
+  </details>
+</article>`}
           </code></pre>
         </div>
       </section>
@@ -124,7 +151,7 @@ export default function Summary({ theme }) {
         <div>
           <p>
             Finally, by giving a group of summary elements the
-            same name, you can form an accordion menu:
+            same name and placing them inside an <code>article</code>, you can form an accordion menu:
           </p>
           <article>
             <details name="menu">
@@ -149,27 +176,23 @@ export default function Summary({ theme }) {
         </div>
         <div>
           <pre><code>
-            {`<details 
-  class="card" 
-  name="menu">
-  <summary>Option 1</summary>
-  <p>...</p>
-</details>
+            {`
+<article>
+  <details name="menu">
+    <summary>Option 1</summary>
+    <p>...</p>
+  </details>
 
-<details 
-  class="card" 
-  name="menu">
-  <summary>Option 2</summary>
-  <p>...</p>
-</details>
+  <details name="menu">
+    <summary>Option 2</summary>
+    <p>...</p>
+  </details>
 
-<details 
-  class="card" 
-  name="menu">
-  <summary>Option 3</summary>
-  <p>...</p>
-</details>
-            `}
+  <details name="menu">
+    <summary>Option 3</summary>
+    <p>...</p>
+  </details>
+</article>`}
           </code></pre>
         </div>
       </section>

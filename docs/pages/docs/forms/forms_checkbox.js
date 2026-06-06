@@ -822,17 +822,26 @@ function Summary({ theme }) {
     /* @__PURE__ */ jsxs7("section", { className: "row", children: [
       /* @__PURE__ */ jsxs7("div", { children: [
         /* @__PURE__ */ jsxs7("p", { children: [
-          "This basic summary can be combined both with the ",
-          /* @__PURE__ */ jsx7("code", { children: "card" }),
-          " class as well as the ",
+          "This basic summary can be placed inside an ",
+          /* @__PURE__ */ jsx7("code", { children: "article" }),
+          " and combined with the ",
+          /* @__PURE__ */ jsx7("code", { children: "primary" }),
+          ", ",
           /* @__PURE__ */ jsx7("code", { children: "success" }),
-          " and ",
+          " or ",
           /* @__PURE__ */ jsx7("code", { children: "error" }),
-          " classes to form a more visually appealing element."
+          ", etc classes to form a more visually appealing element."
         ] }),
         /* @__PURE__ */ jsx7("article", { children: /* @__PURE__ */ jsxs7("details", { open: true, children: [
           /* @__PURE__ */ jsx7("summary", { children: "Note" }),
           /* @__PURE__ */ jsx7("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+        ] }) }),
+        /* @__PURE__ */ jsx7("article", { className: "primary", children: /* @__PURE__ */ jsxs7("details", { children: [
+          /* @__PURE__ */ jsx7("summary", { children: "Info" }),
+          /* @__PURE__ */ jsxs7("p", { children: [
+            "Larn more ",
+            /* @__PURE__ */ jsx7("a", { href: "", children: "here" })
+          ] })
         ] }) }),
         /* @__PURE__ */ jsx7("article", { className: "success", children: /* @__PURE__ */ jsxs7("details", { children: [
           /* @__PURE__ */ jsx7("summary", { children: "Success" }),
@@ -856,41 +865,63 @@ function Summary({ theme }) {
           "."
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx7("div", { children: /* @__PURE__ */ jsx7("pre", { children: /* @__PURE__ */ jsx7("code", { children: `<details class="card">
-  <summary>Note</summary>
-  <p>
-    Lorem ipsum dolor sit 
-    amet, consectetur 
-    adipiscing elit, 
-    sed do eiusmod tempor 
-    incididunt ut labore 
-    et dolore magna aliqua.
-  </p>
-</details>
-            
-<details class="card success">
-  <summary>Success</summary>
-  <p>
-    Operation finished 
-    <code>
-      OK
-    </code>
-  </p>
-</details>
-  
-<details class="card error">
-  <summary>Error</summary>
-  <div>
+      /* @__PURE__ */ jsx7("div", { children: /* @__PURE__ */ jsx7("pre", { children: /* @__PURE__ */ jsx7("code", { children: `<article>
+  <details>
+    <summary>Note</summary>
     <p>
-      Unknown error occurred
+      Lorem ipsum dolor sit 
+      amet, consectetur 
+      adipiscing elit, 
+      sed do eiusmod tempor 
+      incididunt ut labore 
+      et dolore magna aliqua.
     </p>
-    <button>Ack</button>
-  </div>
-</details>` }) }) })
+  </details>
+</article>
+          
+<article class="primary">
+  <details>
+    <summary>Info</summary>
+    <p>
+      Learn more
+      <a href="...">
+        here
+      </a>
+    </p>
+  </details>
+</article>
+
+<article class="success">
+  <details>
+    <summary>Success</summary>
+    <p>
+      Operation finished 
+      <code>
+        OK
+      </code>
+    </p>
+  </details>
+</article>
+  
+<article class="error">
+  <details>
+    <summary>Error</summary>
+    <div>
+      <p>
+        Unknown error occurred
+      </p>
+      <button>Ack</button>
+    </div>
+  </details>
+</article>` }) }) })
     ] }),
     /* @__PURE__ */ jsxs7("section", { className: "row", children: [
       /* @__PURE__ */ jsxs7("div", { children: [
-        /* @__PURE__ */ jsx7("p", { children: "Finally, by giving a group of summary elements the same name, you can form an accordion menu:" }),
+        /* @__PURE__ */ jsxs7("p", { children: [
+          "Finally, by giving a group of summary elements the same name and placing them inside an ",
+          /* @__PURE__ */ jsx7("code", { children: "article" }),
+          ", you can form an accordion menu:"
+        ] }),
         /* @__PURE__ */ jsxs7("article", { children: [
           /* @__PURE__ */ jsxs7("details", { name: "menu", children: [
             /* @__PURE__ */ jsx7("summary", { children: "Option 1" }),
@@ -906,27 +937,23 @@ function Summary({ theme }) {
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ jsx7("div", { children: /* @__PURE__ */ jsx7("pre", { children: /* @__PURE__ */ jsx7("code", { children: `<details 
-  class="card" 
-  name="menu">
-  <summary>Option 1</summary>
-  <p>...</p>
-</details>
+      /* @__PURE__ */ jsx7("div", { children: /* @__PURE__ */ jsx7("pre", { children: /* @__PURE__ */ jsx7("code", { children: `
+<article>
+  <details name="menu">
+    <summary>Option 1</summary>
+    <p>...</p>
+  </details>
 
-<details 
-  class="card" 
-  name="menu">
-  <summary>Option 2</summary>
-  <p>...</p>
-</details>
+  <details name="menu">
+    <summary>Option 2</summary>
+    <p>...</p>
+  </details>
 
-<details 
-  class="card" 
-  name="menu">
-  <summary>Option 3</summary>
-  <p>...</p>
-</details>
-            ` }) }) })
+  <details name="menu">
+    <summary>Option 3</summary>
+    <p>...</p>
+  </details>
+</article>` }) }) })
     ] })
   ] });
 }
