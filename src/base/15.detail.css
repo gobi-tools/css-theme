@@ -28,7 +28,10 @@ details[name]+details[name] {
 details[name]:has(+ details[name]) {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  border-bottom: none;
+
+  border-bottom-width: calc(min(var(--border-bottom-width-card), var(--border-top-width-card)));
+  border-bottom-style: var(--border-bottom-style-card);
+  border-bottom-color: var(--color-int-border);
 }
 
 details[name]+details[name] {

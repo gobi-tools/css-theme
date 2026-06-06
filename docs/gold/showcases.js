@@ -976,17 +976,19 @@ function Summary({ theme }) {
     /* @__PURE__ */ jsxs8("section", { className: "row", children: [
       /* @__PURE__ */ jsxs8("div", { children: [
         /* @__PURE__ */ jsx8("p", { children: "Finally, by giving a group of summary elements the same name, you can form an accordion menu:" }),
-        /* @__PURE__ */ jsxs8("details", { name: "menu", className: "card", children: [
-          /* @__PURE__ */ jsx8("summary", { children: "Option 1" }),
-          /* @__PURE__ */ jsx8("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-        ] }),
-        /* @__PURE__ */ jsxs8("details", { name: "menu", className: "card", open: true, children: [
-          /* @__PURE__ */ jsx8("summary", { children: "Option 2" }),
-          /* @__PURE__ */ jsx8("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
-        ] }),
-        /* @__PURE__ */ jsxs8("details", { name: "menu", className: "card", children: [
-          /* @__PURE__ */ jsx8("summary", { children: "Option 3" }),
-          /* @__PURE__ */ jsx8("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+        /* @__PURE__ */ jsxs8("article", { children: [
+          /* @__PURE__ */ jsxs8("details", { name: "menu", children: [
+            /* @__PURE__ */ jsx8("summary", { children: "Option 1" }),
+            /* @__PURE__ */ jsx8("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+          ] }),
+          /* @__PURE__ */ jsxs8("details", { name: "menu", open: true, children: [
+            /* @__PURE__ */ jsx8("summary", { children: "Option 2" }),
+            /* @__PURE__ */ jsx8("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+          ] }),
+          /* @__PURE__ */ jsxs8("details", { name: "menu", children: [
+            /* @__PURE__ */ jsx8("summary", { children: "Option 3" }),
+            /* @__PURE__ */ jsx8("p", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." })
+          ] })
         ] })
       ] }),
       /* @__PURE__ */ jsx8("div", { children: /* @__PURE__ */ jsx8("pre", { children: /* @__PURE__ */ jsx8("code", { children: `<details 

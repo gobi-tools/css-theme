@@ -126,24 +126,26 @@ export default function Summary({ theme }) {
             Finally, by giving a group of summary elements the
             same name, you can form an accordion menu:
           </p>
-          <details name="menu" className="card">
-            <summary>Option 1</summary>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </details>
-          <details name="menu" className="card" open>
-            <summary>Option 2</summary>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </details>
-          <details name="menu" className="card">
-            <summary>Option 3</summary>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </details>
+          <article>
+            <details name="menu">
+              <summary>Option 1</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </details>
+            <details name="menu" open>
+              <summary>Option 2</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </details>
+            <details name="menu">
+              <summary>Option 3</summary>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </details>
+          </article>
         </div>
         <div>
           <pre><code>

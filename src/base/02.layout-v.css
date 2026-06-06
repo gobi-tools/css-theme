@@ -158,6 +158,9 @@ hgroup {
     margin-bottom: 0;
   }
 }
+article:has(> details[name]) {
+  gap: 0;
+}
 
 hgroup {
   gap: var(--space-xs);

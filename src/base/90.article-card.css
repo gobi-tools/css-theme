@@ -7,22 +7,31 @@ article {
   &>*:not(img, details) {
     padding-inline: var(--space-sm);
   }
+
   &>*:is(details)>* {
     padding-inline: var(--space-sm);
   }
+
   &>*:first-child:not(img, details) {
     padding-top: var(--space-sm);
   }
-  &>*:first-child:is(details)>summary {
+
+  &>details>summary {
     padding-top: var(--space-sm);
   }
+
   &>*:first-child:is(header) {
     padding-bottom: var(--space-sm);
   }
+
   &:has(> details:not([open])) {
     padding-bottom: 0;
   }
-  &>*:first-child:is(details)>summary {
+
+  &>details>summary {
+    padding-bottom: var(--space-sm);
+  }
+  &>details[open]>*:last-child {
     padding-bottom: var(--space-sm);
   }
 }
