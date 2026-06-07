@@ -5,6 +5,7 @@ import newsletterConfig from './newsletter/react-srv.config';
 import landingPageConfig from './landing-page/react-srv.config';
 import newspaperConfig from './newspaper/react-srv.config';
 import blogConfig from './blog/react-srv.config';
+import appConfig from './app/react-srv.config';
 
 (async () => {
   // food delivery
@@ -36,5 +37,11 @@ import blogConfig from './blog/react-srv.config';
   await blogReact.prerender();
   cp('./showcase/blog/custom.css', './docs/showcase/blog/custom.css');
   console.log('Rendered Blog showcase');
+
+  // app page
+  const appReact = new ReactSrv(appConfig);
+  await appReact.prerender();
+  cp('./showcase/app/custom.css', './docs/showcase/app/custom.css');
+  console.log('Rendered App showcase');
 })();
 

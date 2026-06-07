@@ -87,6 +87,22 @@ export default function Showcases(props: { theme: EThemes }) {
             </article>
           </div>
         </div>
+        <br className="hide-on-desktop" />
+        <div className="row">
+          <div>
+            <article>
+              <div>
+                <ShowcaseTitle title="App" url={RouteMaster.showcases(EShowcases.App, route)} />
+              </div>
+              <div>
+                <a href={RouteMaster.showcases(EShowcases.App, route)} target="_blank">
+                  <ShowcasePreview showcase={EShowcases.App} route={route} />
+                </a>
+              </div>
+            </article>
+          </div>
+          <div></div>
+        </div>
       </section>
     </HomeLayout>
   )

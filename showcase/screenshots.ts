@@ -36,6 +36,7 @@ async function main() {
     { url: 'http://localhost:8080/showcase/newsletter/newsletter.html', output: 'newsletter/newsletter.png' },
     { url: 'http://localhost:8080/showcase/food-delivery/food_delivery.html', output: 'food-delivery/food_delivery.png' },
     { url: 'http://localhost:8080/showcase/landing-page/landing_page.html', output: 'landing-page/landing_page.png' },
+    { url: 'http://localhost:8080/showcase/app/app.html', output: 'app/app.png' },
   ];
 
   for (const { url, output } of data) {

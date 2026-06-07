@@ -4598,6 +4598,14 @@ function Showcases(props) {
         /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Landing", url: RouteMaster.showcases("landing-page" /* LandingPage */, route) }) }),
         /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("landing-page" /* LandingPage */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "landing-page" /* LandingPage */, route }) }) })
       ] }) })
+    ] }),
+    /* @__PURE__ */ jsx47("br", { className: "hide-on-desktop" }),
+    /* @__PURE__ */ jsxs47("div", { className: "row", children: [
+      /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("article", { children: [
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "App", url: RouteMaster.showcases("app" /* App */, route) }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("app" /* App */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "app" /* App */, route }) }) })
+      ] }) }),
+      /* @__PURE__ */ jsx47("div", {})
     ] })
   ] }) });
 }

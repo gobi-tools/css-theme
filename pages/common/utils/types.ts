@@ -61,6 +61,7 @@ export enum EShowcases {
   Newsletter = 'newsletter',
   FoodDelivery = 'food-delivery',
   LandingPage = 'landing-page',
+  App = 'app',
 };
 
 export enum ELinks {
