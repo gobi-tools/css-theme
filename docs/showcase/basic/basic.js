@@ -42,8 +42,8 @@ function Basic() {
     ] }),
     /* @__PURE__ */ jsx("header", { className: "align-center", children: /* @__PURE__ */ jsxs("div", { children: [
       /* @__PURE__ */ jsxs("hgroup", { children: [
-        /* @__PURE__ */ jsx("h1", { children: "Ship and scale your startup faster with Acme" }),
-        /* @__PURE__ */ jsx("p", { children: "Acme Cloud is the all-in-one platform that helps engineering teams plan, build, and deploy without the overhead." })
+        /* @__PURE__ */ jsx("h1", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing" }),
+        /* @__PURE__ */ jsx("p", { children: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis." })
       ] }),
       /* @__PURE__ */ jsxs("div", { children: [
         /* @__PURE__ */ jsx("button", { children: "Get Started" }),
@@ -54,19 +54,19 @@ function Basic() {
       /* @__PURE__ */ jsxs("div", { className: "row", children: [
         /* @__PURE__ */ jsxs("article", { children: [
           /* @__PURE__ */ jsx("img", { width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://picsum.photos/id/20/600/200" }),
-          /* @__PURE__ */ jsx("h3", { children: "Deploy in seconds" }),
-          /* @__PURE__ */ jsx("p", { children: "Push to main and we handle the rest \u2014 automatic builds, previews, and zero-downtime rollouts on every commit." })
+          /* @__PURE__ */ jsx("h3", { children: "Sed ut perspiciatis" }),
+          /* @__PURE__ */ jsx("p", { children: "Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa." })
         ] }),
         /* @__PURE__ */ jsxs("article", { children: [
           /* @__PURE__ */ jsx("img", { width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://picsum.photos/id/42/600/200" }),
-          /* @__PURE__ */ jsx("h3", { children: "Scale without thinking" }),
-          /* @__PURE__ */ jsx("p", { children: "Auto-scaling infrastructure that grows with your traffic, so you only pay for what you actually use." })
+          /* @__PURE__ */ jsx("h3", { children: "Nemo enim ipsam quia" }),
+          /* @__PURE__ */ jsx("p", { children: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed." })
         ] })
       ] }),
       /* @__PURE__ */ jsx("header", { className: "align-center secondary", children: /* @__PURE__ */ jsxs("aside", { children: [
         /* @__PURE__ */ jsxs("hgroup", { children: [
-          /* @__PURE__ */ jsx("h2", { children: "Start shipping in minutes" }),
-          /* @__PURE__ */ jsx("p", { children: "Free for up to 5 teammates. No credit card required." })
+          /* @__PURE__ */ jsx("h2", { children: "Ut enim ad minima veniam" }),
+          /* @__PURE__ */ jsx("p", { children: "Quis nostrum exercitationem ullam corporis suscipit laboriosam." })
         ] }),
         /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsxs("button", { children: [
           /* @__PURE__ */ jsx("span", { children: "Sign up for free" }),
@@ -79,9 +79,9 @@ function Basic() {
     ] }),
     /* @__PURE__ */ jsx("hr", {}),
     /* @__PURE__ */ jsx("footer", { children: /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
-      /* @__PURE__ */ jsxs("div", { children: [
+      /* @__PURE__ */ jsxs("div", { className: "col-6", children: [
         /* @__PURE__ */ jsx("h5", { children: "About us" }),
-        /* @__PURE__ */ jsx("p", { children: "Acme Cloud gives modern engineering teams the infrastructure to ship products customers love." })
+        /* @__PURE__ */ jsx("p", { children: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae." })
       ] }),
       /* @__PURE__ */ jsxs("div", { children: [
         /* @__PURE__ */ jsx("h5", { children: "Quick Links" }),

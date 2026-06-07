@@ -66,10 +66,10 @@ export default function Basic() {
         <div>
           <hgroup>
             <h1>
-              Ship and scale your startup faster with Acme
+              Lorem ipsum dolor sit amet, consectetur adipiscing
             </h1>
             <p>
-              Acme Cloud is the all-in-one platform that helps engineering teams plan, build, and deploy without the overhead.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis.
             </p>
           </hgroup>
           <div>
@@ -82,21 +82,21 @@ export default function Basic() {
         <div className="row">
           <article>
             <img width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://picsum.photos/id/20/600/200" />
-            <h3>Deploy in seconds</h3>
-            <p>Push to main and we handle the rest — automatic builds, previews, and zero-downtime rollouts on every commit.</p>
+            <h3>Sed ut perspiciatis</h3>
+            <p>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
           </article>
           <article>
             <img width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://picsum.photos/id/42/600/200" />
-            <h3>Scale without thinking</h3>
-            <p>Auto-scaling infrastructure that grows with your traffic, so you only pay for what you actually use.</p>
+            <h3>Nemo enim ipsam quia</h3>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed.</p>
           </article>
         </div>
 
         <header className="align-center secondary">
           <aside>
             <hgroup>
-              <h2>Start shipping in minutes</h2>
-              <p>Free for up to 5 teammates. No credit card required.</p>
+              <h2>Ut enim ad minima veniam</h2>
+              <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
             </hgroup>
             <p>
               <button>
@@ -111,10 +111,10 @@ export default function Basic() {
       <footer>
         <div>
           <div className="row">
-            <div>
+            <div className="col-6">
               <h5>About us</h5>
               <p>
-                Acme Cloud gives modern engineering teams the infrastructure to ship products customers love.
+                 Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.
               </p>
             </div>
             <div>
