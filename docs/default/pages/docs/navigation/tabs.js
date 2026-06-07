@@ -4309,22 +4309,12 @@ function TopNav({ theme }) {
       /* @__PURE__ */ jsx43("span", { children: "GitHub" })
     ] }) }),
     /* @__PURE__ */ jsx43("li", { children: /* @__PURE__ */ jsxs43("select", { name: "theme-selector", onChange: onThemeChange, children: [
-      /* @__PURE__ */ jsxs43("optgroup", { label: "Light/Dark", children: [
-        /* @__PURE__ */ jsx43("option", { value: "default" /* Default */, selected: theme === "default" /* Default */, children: "Default" }),
-        /* @__PURE__ */ jsx43("option", { value: "app" /* App */, selected: theme === "app" /* App */, children: "App" }),
-        /* @__PURE__ */ jsx43("option", { value: "writing" /* Writing */, selected: theme === "writing" /* Writing */, children: "Writing" }),
-        /* @__PURE__ */ jsx43("option", { value: "scholar" /* Scholar */, selected: theme === "scholar" /* Scholar */, children: "Scholar" })
-      ] }),
-      /* @__PURE__ */ jsxs43("optgroup", { label: "Light Only", children: [
-        /* @__PURE__ */ jsx43("option", { value: "bold" /* Bold */, selected: theme === "bold" /* Bold */, children: "Bold" }),
-        /* @__PURE__ */ jsx43("option", { value: "sunset" /* Sunset */, selected: theme === "sunset" /* Sunset */, children: "Sunset" }),
-        /* @__PURE__ */ jsx43("option", { value: "pink" /* Pink */, selected: theme === "pink" /* Pink */, children: "Pink" })
-      ] }),
-      /* @__PURE__ */ jsxs43("optgroup", { label: "Dark Only", children: [
-        /* @__PURE__ */ jsx43("option", { value: "forest" /* Forest */, selected: theme === "forest" /* Forest */, children: "Forest" }),
-        /* @__PURE__ */ jsx43("option", { value: "betty" /* Betty */, selected: theme === "betty" /* Betty */, children: "Betty" }),
-        /* @__PURE__ */ jsx43("option", { value: "gold" /* Gold */, selected: theme === "gold" /* Gold */, children: "Gold" })
-      ] })
+      /* @__PURE__ */ jsx43("option", { value: "default" /* Default */, selected: theme === "default" /* Default */, children: "Default" }),
+      /* @__PURE__ */ jsx43("option", { value: "blog" /* Blog */, selected: theme === "blog" /* Blog */, children: "Blog" }),
+      /* @__PURE__ */ jsx43("option", { value: "app" /* App */, selected: theme === "app" /* App */, children: "App" }),
+      /* @__PURE__ */ jsx43("option", { value: "delivery" /* Delivery */, selected: theme === "delivery" /* Delivery */, children: "Delivery" }),
+      /* @__PURE__ */ jsx43("option", { value: "landing" /* Landing */, selected: theme === "landing" /* Landing */, children: "Landing" }),
+      /* @__PURE__ */ jsx43("option", { value: "newsletter" /* Newsletter */, selected: theme === "newsletter" /* Newsletter */, children: "Newsletter" })
     ] }) }),
     /* @__PURE__ */ jsx43("li", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx43("a", { href: "https://github.com/gobi-tools/css-theme" /* GitHub */, target: "blank", children: /* @__PURE__ */ jsx43("button", { type: "reset", children: /* @__PURE__ */ jsxs43("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
       /* @__PURE__ */ jsx43("path", { d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" }),

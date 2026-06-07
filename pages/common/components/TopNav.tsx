@@ -54,22 +54,13 @@ export default function TopNav({ theme }) {
         </li>
         <li>
           <select name="theme-selector" onChange={onThemeChange}>
-            <optgroup label="Light/Dark">
-              <option value={EThemes.Default} selected={theme === EThemes.Default}>Default</option>
-              <option value={EThemes.App} selected={theme === EThemes.App}>App</option>
-              <option value={EThemes.Writing} selected={theme === EThemes.Writing}>Writing</option>
-              <option value={EThemes.Scholar} selected={theme === EThemes.Scholar}>Scholar</option>
-            </optgroup>
-            <optgroup label="Light Only">
-              <option value={EThemes.Bold} selected={theme === EThemes.Bold}>Bold</option>
-              <option value={EThemes.Sunset} selected={theme === EThemes.Sunset}>Sunset</option>
-              <option value={EThemes.Pink} selected={theme === EThemes.Pink}>Pink</option>
-            </optgroup>
-            <optgroup label="Dark Only">
-              <option value={EThemes.Forest} selected={theme === EThemes.Forest}>Forest</option>
-              <option value={EThemes.Betty} selected={theme === EThemes.Betty}>Betty</option>
-              <option value={EThemes.Gold} selected={theme === EThemes.Gold}>Gold</option>
-            </optgroup>
+            <option value={EThemes.Default} selected={theme === EThemes.Default}>Default</option>
+            <option value={EThemes.Blog} selected={theme === EThemes.Blog}>Blog</option>
+            <option value={EThemes.App} selected={theme === EThemes.App}>App</option>
+
+            <option value={EThemes.Delivery} selected={theme === EThemes.Delivery}>Delivery</option>
+            <option value={EThemes.Landing} selected={theme === EThemes.Landing}>Landing</option>
+            <option value={EThemes.Newsletter} selected={theme === EThemes.Newsletter}>Newsletter</option>
           </select>
         </li>
         <li className="hide-on-mobile">

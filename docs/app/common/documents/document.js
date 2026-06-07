@@ -11,16 +11,11 @@ var ThemeToDarkMode = {
   // light / dark
   ["default" /* Default */]: "light-dark",
   ["app" /* App */]: "light-dark",
-  ["writing" /* Writing */]: "light-dark",
-  ["scholar" /* Scholar */]: "light-dark",
+  ["blog" /* Blog */]: "light-dark",
   // light
-  ["bold" /* Bold */]: "light",
-  ["sunset" /* Sunset */]: "light",
-  ["pink" /* Pink */]: "light",
-  // dark
-  ["forest" /* Forest */]: "dark",
-  ["betty" /* Betty */]: "dark",
-  ["gold" /* Gold */]: "dark"
+  ["newsletter" /* Newsletter */]: "light",
+  ["landing" /* Landing */]: "light",
+  ["delivery" /* Delivery */]: "light"
 };
 function Document({ theme, children }) {
   const typography = ThemeToDarkMode[theme] ?? "light-dark";

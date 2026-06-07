@@ -26,10 +26,13 @@ for (const extraCssFile of extraCssFiles) {
   console.log(`Extracted ${BASE_FOLDER}/${extraCssFile}`);
 }
 
-// 3. get all the theme files
-const themes = fs.readdirSync(THEMES_FOLDER);
-for (const theme of themes) { 
-  const themeCss = fs.readFileSync(`${THEMES_FOLDER}/${theme}`, 'utf-8');
-  const css = [baseCss, ...extraCsss, themeCss].join('\n');
-  fs.writeFileSync(`${TMP_FOLDER}/${theme}`, css);
+const themes = [
+  'default', 'blog', 'app', 'delivery', 'landing', 'newsletter', 
+];
+
+for (const theme of themes) {
+  const fontCss = fs.readFileSync(`${THEMES_FOLDER}/theme.${theme}.fonts.css`, 'utf-8');
+  const themeCss = fs.readFileSync(`${THEMES_FOLDER}/theme.${theme}.css`, 'utf-8');
+  const css = [fontCss, baseCss, ...extraCsss, themeCss].join('\n');
+  fs.writeFileSync(`${TMP_FOLDER}/theme.${theme}.css`, css);
 }

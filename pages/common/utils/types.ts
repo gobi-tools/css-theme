@@ -83,14 +83,10 @@ export enum ELinks {
 export enum EThemes {
   Default = 'default',
   App = 'app',
-  Writing = 'writing',
-  Scholar = 'scholar',
-  Bold = 'bold',
-  Sunset = 'sunset',
-  Pink = 'pink',
-  Forest = 'forest',
-  Betty = 'betty',
-  Gold = 'gold',
+  Blog = 'blog',
+  Delivery = 'delivery',
+  Landing = 'landing',
+  Newsletter = 'newsletter',
 };
 
 export const PRODUCT_NAME = "CSS Theme";

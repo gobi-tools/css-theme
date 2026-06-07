@@ -7,16 +7,11 @@ const ThemeToDarkMode: Record<EThemes, TThemeMode> = {
   // light / dark
   [EThemes.Default]: 'light-dark',
   [EThemes.App]: 'light-dark',
-  [EThemes.Writing]: 'light-dark',
-  [EThemes.Scholar]: 'light-dark',
+  [EThemes.Blog]: 'light-dark',
   // light
-  [EThemes.Bold]: 'light',
-  [EThemes.Sunset]: 'light',
-  [EThemes.Pink]: 'light',
-  // dark
-  [EThemes.Forest]: 'dark',
-  [EThemes.Betty]: 'dark',
-  [EThemes.Gold]: 'dark'
+  [EThemes.Newsletter]: 'light',
+  [EThemes.Landing]: 'light',
+  [EThemes.Delivery]: 'light',
 };
 
 export default function Document({ theme, children }) {

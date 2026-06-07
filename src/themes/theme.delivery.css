@@ -1,0 +1,23 @@
+:root {
+  color-scheme: light only;
+
+  --font-family-head: "Montserrat", sans-serif;
+  --font-familu-navi:  "Google Sans", sans-serif;
+  --font-family-body: "Google Sans", sans-serif;
+
+  --color-bg: light-dark(#FAFAFA, #111827);
+  --color-txt: light-dark(#370008, #d8eaff);
+  --color-txt-on-dark: #ffffff;
+  --color-primary: #FB7185;
+  --color-secondary: #73162B;
+
+  --color-success: #23b157;
+  --color-error: #ef4444;
+
+  --border-radius-img: 10px;
+}
+
+.big-banner {
+  background-image: url('https://picsum.photos/id/130/640/480');
+  background-size: cover;
+}
