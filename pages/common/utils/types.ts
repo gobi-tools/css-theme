@@ -22,7 +22,6 @@ export enum EDoc {
   Header = 'header',
   Footer = 'footer',
   Groups = 'groups',
-  // dialogs
   Modal = 'modal',
   // navigation
   Navigation = 'navigation',

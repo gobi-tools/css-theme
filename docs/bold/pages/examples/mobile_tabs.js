@@ -62,7 +62,7 @@ import { jsx as jsx14, jsxs as jsxs14 } from "https://esm.sh/react@19.2.0/jsx-ru
 import { useState as useState4 } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx15, jsxs as jsxs15 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 
-// pages/pages/docs/dialogs/Modal.tsx
+// pages/pages/docs/layout/Modal.tsx
 import { useRef } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx16, jsxs as jsxs16 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 

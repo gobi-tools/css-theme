@@ -83,10 +83,7 @@ function DocLayout({ theme, children }) {
           /* @__PURE__ */ jsx("b", { children: "Layout" }),
           /* @__PURE__ */ jsx("li", { "aria-selected": selectedDoc === "header" /* Header */, children: /* @__PURE__ */ jsx("a", { href: RouteMaster.doc("header" /* Header */, theme, route), children: "Headers" }) }),
           /* @__PURE__ */ jsx("li", { "aria-selected": selectedDoc === "footer" /* Footer */, children: /* @__PURE__ */ jsx("a", { href: RouteMaster.doc("footer" /* Footer */, theme, route), children: "Footers" }) }),
-          /* @__PURE__ */ jsx("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) })
-        ] }),
-        /* @__PURE__ */ jsxs("menu", { children: [
-          /* @__PURE__ */ jsx("b", { children: "Dialogs" }),
+          /* @__PURE__ */ jsx("li", { "aria-selected": selectedDoc === "groups" /* Groups */, children: /* @__PURE__ */ jsx("a", { href: RouteMaster.doc("groups" /* Groups */, theme, route), children: "Groups" }) }),
           /* @__PURE__ */ jsx("li", { "aria-selected": selectedDoc === "modal" /* Modal */, children: /* @__PURE__ */ jsx("a", { href: RouteMaster.doc("modal" /* Modal */, theme, route), children: "Modal" }) })
         ] }),
         /* @__PURE__ */ jsxs("menu", { children: [
@@ -2174,7 +2171,7 @@ function FormsValidation({ theme }) {
   ] });
 }
 
-// pages/pages/docs/dialogs/Modal.tsx
+// pages/pages/docs/layout/Modal.tsx
 import { useRef } from "https://esm.sh/react@19.2.0";
 import { jsx as jsx17, jsxs as jsxs17 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 function Modal({ theme }) {
@@ -4299,9 +4296,8 @@ var RouteMaster = class _RouteMaster {
         return `${base}${theme}/pages/docs/layout/${htmlName(Footer)}`;
       case "groups" /* Groups */:
         return `${base}${theme}/pages/docs/layout/${htmlName(Groups)}`;
-      // modal
       case "modal" /* Modal */:
-        return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
+        return `${base}${theme}/pages/docs/layout/${htmlName(Modal)}`;
       // navigation
       case "navigation" /* Navigation */:
         return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
@@ -4382,10 +4378,6 @@ var RouteMaster = class _RouteMaster {
             return "footer" /* Footer */;
           case htmlName(Groups):
             return "groups" /* Groups */;
-        }
-      }
-      case "dialogs": {
-        switch (doc) {
           case htmlName(Modal):
             return "modal" /* Modal */;
         }

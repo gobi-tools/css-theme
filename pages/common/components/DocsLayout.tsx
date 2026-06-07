@@ -107,10 +107,6 @@ export default function DocLayout({ theme, children }) {
               <li aria-selected={selectedDoc === EDoc.Groups}>
                 <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>Groups</a>
               </li>
-            </menu>
-
-            <menu>
-              <b>Dialogs</b>
               <li aria-selected={selectedDoc === EDoc.Modal}>
                 <a href={RouteMaster.doc(EDoc.Modal, theme, route)}>Modal</a>
               </li>

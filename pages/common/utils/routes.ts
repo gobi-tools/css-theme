@@ -14,7 +14,7 @@ import FormsDisabled from "../../pages/docs/forms/FormsDisabled";
 import FormsGrouped from "../../pages/docs/forms/FormsGrouped";
 import FormsNormal from "../../pages/docs/forms/FormsNormal";
 import FormsValidation from "../../pages/docs/forms/FormsValidation";
-import Modal from "../../pages/docs/dialogs/Modal";
+import Modal from "../../pages/docs/layout/Modal";
 import Navigation from "../../pages/docs/navigation/Navigation";
 import Tabs from "../../pages/docs/navigation/Tabs";
 import Menu from "../../pages/docs/navigation/Menu";
@@ -81,8 +81,7 @@ export class RouteMaster {
       case EDoc.Header: return `${base}${theme}/pages/docs/layout/${htmlName(Header)}`;
       case EDoc.Footer: return `${base}${theme}/pages/docs/layout/${htmlName(Footer)}`;
       case EDoc.Groups: return `${base}${theme}/pages/docs/layout/${htmlName(Groups)}`;
-      // modal
-      case EDoc.Modal: return `${base}${theme}/pages/docs/dialogs/${htmlName(Modal)}`;
+      case EDoc.Modal: return `${base}${theme}/pages/docs/layout/${htmlName(Modal)}`;
       // navigation
       case EDoc.Navigation: return `${base}${theme}/pages/docs/navigation/${htmlName(Navigation)}`;
       case EDoc.Breadcrumbs: return `${base}${theme}/pages/docs/navigation/${htmlName(Breadcrumbs)}`;
@@ -135,10 +134,6 @@ export class RouteMaster {
           case htmlName(Header): return EDoc.Header;
           case htmlName(Footer): return EDoc.Footer;
           case htmlName(Groups): return EDoc.Groups;
-        }
-      }
-      case 'dialogs': {
-        switch (doc) {
           case htmlName(Modal): return EDoc.Modal;
         }
       }
