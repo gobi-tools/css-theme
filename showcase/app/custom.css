@@ -58,3 +58,8 @@ blockquote {
 pre>code {
   border: none;
 }
+
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smoother on iOS */
+}

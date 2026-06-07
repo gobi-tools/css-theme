@@ -19,7 +19,7 @@ function Document({ children }) {
       /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/showcase/app/custom.css` }),
       /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/${PUB_SUBDOMAIN}/showcase/app/custom.css` })
     ] }),
-    /* @__PURE__ */ jsx("body", { children: /* @__PURE__ */ jsx("div", { children }) })
+    /* @__PURE__ */ jsx("body", { children: /* @__PURE__ */ jsx("div", { className: "container-medium", children }) })
   ] });
 }
 
