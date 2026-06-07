@@ -39,11 +39,11 @@
 }
 
 :root {
-  --color-bg: light-dark(#fefcfc, #111827);
+  --color-bg: light-dark(#fefcfc, #002235);
   --color-txt: light-dark(#212121, #d8eaff);
   --color-txt-on-dark: #ffffff;
-  --color-primary: #526cfe;
-  --color-secondary: #8b5cf6;
+  --color-primary: #0172ad;
+  --color-secondary: #181c25;
 
   --color-success: #23b157;
   --color-error: #ef4444;
