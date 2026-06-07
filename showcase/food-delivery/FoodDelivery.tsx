@@ -96,7 +96,7 @@ export default function FoodDelivery() {
         </section>
         <section className="row" role="group">
           <div className="hide-on-desktop">
-            <img className="rounded" src="https://picsum.photos/id/42/640/480" width={"100%"} />
+            <img src="https://picsum.photos/id/42/640/480" width={"100%"} />
           </div>
           <div>
             <hgroup>
@@ -110,13 +110,13 @@ export default function FoodDelivery() {
             </p>
           </div>
           <div className="hide-on-mobile">
-            <img className="rounded" src="https://picsum.photos/id/42/640/480" width={"100%"} />
+            <img src="https://picsum.photos/id/42/640/480" width={"100%"} />
           </div>
         </section>
 
         <section className="row" role="group">
           <div>
-            <img className="rounded" src="https://picsum.photos/id/103/640/480" width={"100%"} />
+            <img src="https://picsum.photos/id/103/640/480" width={"100%"} />
           </div>
           <div>
             <hgroup>
@@ -133,7 +133,7 @@ export default function FoodDelivery() {
 
         <section className="row" role="group">
           <div className="hide-on-desktop">
-            <img className="rounded" src="https://picsum.photos/id/348/640/480" width={"100%"} />
+            <img src="https://picsum.photos/id/348/640/480" width={"100%"} />
           </div>
           <div>
             <hgroup>
@@ -147,7 +147,7 @@ export default function FoodDelivery() {
             </p>
           </div>
           <div className="hide-on-mobile">
-            <img className="rounded" src="https://picsum.photos/id/348/640/480" width={"100%"} />
+            <img src="https://picsum.photos/id/348/640/480" width={"100%"} />
           </div>
         </section>
 

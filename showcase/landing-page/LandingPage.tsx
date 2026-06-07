@@ -48,7 +48,7 @@ export default function LandingPage() {
       <main>
         <section>
           <figure>
-            <img className="rounded" width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://picsum.photos/id/2/1200/500?grayscale" />
+            <img width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://picsum.photos/id/2/1200/500?grayscale" />
           </figure>
         </section>
         <section>

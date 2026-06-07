@@ -11,8 +11,10 @@
   --color-txt: light-dark(#212121, #d8eaff);
   --color-txt-on-dark: #ffffff;
   --color-primary: #0000ee;
-  --color-secondary: #8b5cf6;
+  --color-secondary: #475569;
 
   --color-success: #23b157;
   --color-error: #ef4444;
+
+  --border-radius-button: 20px;
 }

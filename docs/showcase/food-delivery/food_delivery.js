@@ -74,7 +74,7 @@ function FoodDelivery() {
         ] })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
-        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/42/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/42/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [
             /* @__PURE__ */ jsx("h2", { children: "Sed ut perspiciatis unde." }),
@@ -82,10 +82,10 @@ function FoodDelivery() {
           ] }),
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Find restaurants" }) })
         ] }),
-        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/42/640/480", width: "100%" }) })
+        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/42/640/480", width: "100%" }) })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
-        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/103/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/103/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [
             /* @__PURE__ */ jsx("h2", { children: "Omnis iste natus" }),
@@ -95,7 +95,7 @@ function FoodDelivery() {
         ] })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
-        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/348/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/348/640/480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [
             /* @__PURE__ */ jsx("h2", { children: "Sit voluptatem accusantium." }),
@@ -103,7 +103,7 @@ function FoodDelivery() {
           ] }),
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Shop now" }) })
         ] }),
-        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { className: "rounded", src: "https://picsum.photos/id/348/640/480", width: "100%" }) })
+        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/348/640/480", width: "100%" }) })
       ] }),
       /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center big-banner", children: [
         /* @__PURE__ */ jsxs("hgroup", { children: [

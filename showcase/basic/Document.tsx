@@ -20,7 +20,7 @@ export default function Document({ children }) {
         <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/showcase/basic/custom.css`} />
       </head>
       <body>
-        <div className='container-medium'>
+        <div>
           {children}
         </div>
       </body>

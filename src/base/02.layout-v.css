@@ -169,15 +169,16 @@ header> :not(:is(nav, menu, aside)) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  aspect-ratio: 16.0 / 9.0;
   max-height: 36rem;
+  /* aspect-ratio: 16.0 / 9.0; */
+  padding-block: var(--space-2xl) !important;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   header> :not(:is(nav, menu, aside)) {
     aspect-ratio: 1.0/1.25;
   }
-}
+} */
 
 @container rows (max-width: 600px) {
 
