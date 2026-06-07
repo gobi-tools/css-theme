@@ -4209,9 +4209,9 @@ var RouteMaster = class _RouteMaster {
     const base = _RouteMaster.getBase(domain);
     return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
   }
-  static showcaseImg(showcase, domain) {
+  static showcaseImg(showcase, domain, mode = "light") {
     const base = _RouteMaster.getBase(domain);
-    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.png`;
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.${mode}.png`;
   }
   static getBase(domain) {
     if (!domain) return "/";

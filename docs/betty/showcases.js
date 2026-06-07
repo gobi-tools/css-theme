@@ -4452,9 +4452,9 @@ var RouteMaster = class _RouteMaster {
     const base = _RouteMaster.getBase(domain);
     return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
   }
-  static showcaseImg(showcase, domain) {
+  static showcaseImg(showcase, domain, mode = "light") {
     const base = _RouteMaster.getBase(domain);
-    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.png`;
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.${mode}.png`;
   }
   static getBase(domain) {
     if (!domain) return "/";
@@ -4550,6 +4550,24 @@ function HomeLayout({ theme, children }) {
   ] });
 }
 
+// pages/common/effects/useDarkMode.ts
+import { useEffect as useEffect3, useState as useState9 } from "https://esm.sh/react@19.2.0";
+function usePrefersDarkMode() {
+  if (typeof window !== "undefined") {
+    const [isDark, setIsDark] = useState9(() => {
+      return !window.matchMedia("(prefers-color-scheme: dark)").matches;
+    });
+    useEffect3(() => {
+      const media = window.matchMedia("(prefers-color-scheme: dark)");
+      const update = () => setIsDark(media.matches);
+      update();
+      media.addEventListener("change", update);
+      return () => media.removeEventListener("change", update);
+    }, []);
+    return isDark;
+  }
+}
+
 // pages/Showcases.tsx
 import { jsx as jsx47, jsxs as jsxs47 } from "https://esm.sh/react@19.2.0/jsx-runtime";
 var Arrow = () => {
@@ -4565,10 +4583,11 @@ function ShowcaseTitle(props) {
   ] }) }) }) });
 }
 function ShowcasePreview(props) {
+  const isDark = usePrefersDarkMode();
   return /* @__PURE__ */ jsx47(
     "img",
     {
-      src: RouteMaster.showcaseImg(props.showcase, props.route),
+      src: RouteMaster.showcaseImg(props.showcase, props.route, isDark ? "dark" : "light"),
       width: "100%",
       style: { aspectRatio: 16 / 9, objectPosition: "top" },
       alt: props.showcase
@@ -4588,8 +4607,8 @@ function Showcases(props) {
         /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("blog" /* Blog */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "blog" /* Blog */, route }) }) })
       ] }) }),
       /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("article", { children: [
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Newsletter", url: RouteMaster.showcases("newsletter" /* Newsletter */, route) }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("newsletter" /* Newsletter */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "newsletter" /* Newsletter */, route }) }) })
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "App", url: RouteMaster.showcases("app" /* App */, route) }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("app" /* App */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "app" /* App */, route }) }) })
       ] }) })
     ] }),
     /* @__PURE__ */ jsx47("br", { className: "hide-on-desktop" }),
@@ -4603,8 +4622,8 @@ function Showcases(props) {
         /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("landing-page" /* LandingPage */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "landing-page" /* LandingPage */, route }) }) })
       ] }) }),
       /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsxs47("article", { children: [
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "App", url: RouteMaster.showcases("app" /* App */, route) }) }),
-        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("app" /* App */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "app" /* App */, route }) }) })
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47(ShowcaseTitle, { title: "Newsletter", url: RouteMaster.showcases("newsletter" /* Newsletter */, route) }) }),
+        /* @__PURE__ */ jsx47("div", { children: /* @__PURE__ */ jsx47("a", { href: RouteMaster.showcases("newsletter" /* Newsletter */, route), target: "_blank", children: /* @__PURE__ */ jsx47(ShowcasePreview, { showcase: "newsletter" /* Newsletter */, route }) }) })
       ] }) })
     ] })
   ] }) });

@@ -85,7 +85,7 @@ function Basic() {
       ] }),
       /* @__PURE__ */ jsxs("div", { children: [
         /* @__PURE__ */ jsx("h5", { children: "Quick Links" }),
-        /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { className: "secondary", children: [
+        /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
           /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Features" }) }),
           /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Pricing" }) }),
           /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "About" }) })
@@ -93,7 +93,7 @@ function Basic() {
       ] }),
       /* @__PURE__ */ jsxs("div", { children: [
         /* @__PURE__ */ jsx("h5", { children: "Legal" }),
-        /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { className: "secondary", children: [
+        /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsxs("ul", { children: [
           /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Privacy Policy" }) }),
           /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Terms of Service" }) })
         ] }) })

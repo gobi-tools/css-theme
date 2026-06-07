@@ -120,7 +120,7 @@ export default function Basic() {
             <div>
               <h5>Quick Links</h5>
               <nav>
-                <ul className="secondary">
+                <ul>
                   <li><a href="">Features</a></li>
                   <li><a href="">Pricing</a></li>
                   <li><a href="">About</a></li>
@@ -130,7 +130,7 @@ export default function Basic() {
             <div>
               <h5>Legal</h5>
               <nav>
-                <ul className="secondary">
+                <ul>
                   <li><a href="">Privacy Policy</a></li>
                   <li><a href="">Terms of Service</a></li>
                 </ul>

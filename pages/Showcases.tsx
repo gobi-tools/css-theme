@@ -1,7 +1,9 @@
+import { useEffect, useState } from "react";
 import HomeLayout from "./common/components/HomeLayout";
 import { useRoute } from "./common/effects/useRoute";
 import { RouteMaster } from "./common/utils/routes";
 import { EShowcases, EThemes } from "./common/utils/types";
+import { usePrefersDarkMode } from "./common/effects/useDarkMode";
 
 const Arrow = () => {
   return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
@@ -21,8 +23,10 @@ function ShowcaseTitle(props: { title: string, url: string }) {
 }
 
 function ShowcasePreview(props: { route: string, showcase: EShowcases }) {
+  const isDark = usePrefersDarkMode();
+
   return <img
-    src={RouteMaster.showcaseImg(props.showcase, props.route)}
+    src={RouteMaster.showcaseImg(props.showcase, props.route, isDark ? 'dark' : 'light')}
     width={"100%"}
     style={{ aspectRatio: 16.0 / 9.0, objectPosition: 'top' }}
     alt={props.showcase} />
@@ -62,11 +66,11 @@ export default function Showcases(props: { theme: EThemes }) {
           <div>
             <article>
               <div>
-                <ShowcaseTitle title="Newsletter" url={RouteMaster.showcases(EShowcases.Newsletter, route)} />
+                <ShowcaseTitle title="App" url={RouteMaster.showcases(EShowcases.App, route)} />
               </div>
               <div>
-                <a href={RouteMaster.showcases(EShowcases.Newsletter, route)} target="_blank">
-                  <ShowcasePreview showcase={EShowcases.Newsletter} route={route} />
+                <a href={RouteMaster.showcases(EShowcases.App, route)} target="_blank">
+                  <ShowcasePreview showcase={EShowcases.App} route={route} />
                 </a>
               </div>
             </article>
@@ -101,11 +105,11 @@ export default function Showcases(props: { theme: EThemes }) {
           <div>
             <article>
               <div>
-                <ShowcaseTitle title="App" url={RouteMaster.showcases(EShowcases.App, route)} />
+                <ShowcaseTitle title="Newsletter" url={RouteMaster.showcases(EShowcases.Newsletter, route)} />
               </div>
               <div>
-                <a href={RouteMaster.showcases(EShowcases.App, route)} target="_blank">
-                  <ShowcasePreview showcase={EShowcases.App} route={route} />
+                <a href={RouteMaster.showcases(EShowcases.Newsletter, route)} target="_blank">
+                  <ShowcasePreview showcase={EShowcases.Newsletter} route={route} />
                 </a>
               </div>
             </article>

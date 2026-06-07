@@ -7,12 +7,12 @@
   --font-family-body: 'Sora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-family-mono: monospace; 
 
-  --color-bg: light-dark(#ffffff, #111827);
+  --color-bg: light-dark(#ffffff, #0b1220);
   --color-txt: light-dark(#212121, #d8eaff);
   --color-txt-on-dark: #ffffff;
-  --color-primary: #0000ee;
-  --color-secondary: #475569;
-
+  --color-primary: light-dark(#0000ee, #526cfe);
+  --color-secondary: light-dark(#475569, #526cfe);
+  
   --color-success: #23b157;
   --color-error: #ef4444;
 

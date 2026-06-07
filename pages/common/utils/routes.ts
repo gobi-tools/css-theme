@@ -188,9 +188,9 @@ export class RouteMaster {
     return `${base}showcase/${showcase}/${toKebabCase(showcase)}.html`;
   }
 
-  static showcaseImg(showcase: EShowcases, domain: string): string {
+  static showcaseImg(showcase: EShowcases, domain: string, mode: 'light' | 'dark' = 'light'): string {
     const base = RouteMaster.getBase(domain);
-    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.png`;
+    return `${base}showcase/${showcase}/${toKebabCase(showcase)}.${mode}.png`;
   }
 
   private static getBase(domain?: string): string {
