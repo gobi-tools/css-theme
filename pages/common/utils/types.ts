@@ -57,6 +57,7 @@ export enum EExamples {
 };
 
 export enum EShowcases {
+  Basic = 'basic',
   Blog = 'blog',
   Newsletter = 'newsletter',
   FoodDelivery = 'food-delivery',

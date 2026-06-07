@@ -38,6 +38,18 @@ export default function Showcases(props: { theme: EThemes }) {
           <div>
             <article>
               <div>
+                <ShowcaseTitle title="Basic" url={RouteMaster.showcases(EShowcases.Basic, route)} />
+              </div>
+              <div>
+                <a href={RouteMaster.showcases(EShowcases.Basic, route)} target="_blank">
+                  <ShowcasePreview showcase={EShowcases.Basic} route={route} />
+                </a>
+              </div>
+            </article>
+          </div>
+          <div>
+            <article>
+              <div>
                 <ShowcaseTitle title="Blog" url={RouteMaster.showcases(EShowcases.Blog, route)} />
               </div>
               <div>
@@ -86,9 +98,6 @@ export default function Showcases(props: { theme: EThemes }) {
               </div>
             </article>
           </div>
-        </div>
-        <br className="hide-on-desktop" />
-        <div className="row">
           <div>
             <article>
               <div>
@@ -101,7 +110,6 @@ export default function Showcases(props: { theme: EThemes }) {
               </div>
             </article>
           </div>
-          <div></div>
         </div>
       </section>
     </HomeLayout>

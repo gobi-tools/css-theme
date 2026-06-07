@@ -32,6 +32,7 @@ async function main() {
   }
 
   const data = [
+    { url: 'http://localhost:8080/showcase/basic/basic.html', output: 'basic/basic.png' },
     { url: 'http://localhost:8080/showcase/blog/blog.html', output: 'blog/blog.png' },
     { url: 'http://localhost:8080/showcase/newsletter/newsletter.html', output: 'newsletter/newsletter.png' },
     { url: 'http://localhost:8080/showcase/food-delivery/food_delivery.html', output: 'food-delivery/food_delivery.png' },

@@ -2157,14 +2157,14 @@ function Navigation({ theme }) {
         /* @__PURE__ */ jsx17("p", { children: "Links may contain icons to enhance the look and feel of the navigation bar. Sub-lists are rendered as collapsible items." }),
         /* @__PURE__ */ jsx17("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs17("ul", { children: [
           /* @__PURE__ */ jsx17("li", { children: /* @__PURE__ */ jsxs17("a", { href: "", children: [
-            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx17("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
               /* @__PURE__ */ jsx17("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
             ] }),
             /* @__PURE__ */ jsx17("span", { children: "Home" })
           ] }) }),
           /* @__PURE__ */ jsx17("li", { children: /* @__PURE__ */ jsxs17("a", { href: "", children: [
-            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx17("path", { d: "m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" }),
               /* @__PURE__ */ jsx17("path", { d: "m18 15 4-4" }),
               /* @__PURE__ */ jsx17("path", { d: "m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" })
@@ -2173,7 +2173,7 @@ function Navigation({ theme }) {
           ] }) }),
           /* @__PURE__ */ jsxs17("li", { children: [
             /* @__PURE__ */ jsxs17("a", { href: "", children: [
-              /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", className: "lucide lucide-circle-chevron-right-icon lucide-circle-chevron-right", children: [
+              /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: "lucide lucide-circle-chevron-right-icon lucide-circle-chevron-right", children: [
                 /* @__PURE__ */ jsx17("circle", { cx: "12", cy: "12", r: "10" }),
                 /* @__PURE__ */ jsx17("path", { d: "m10 8 4 4-4 4" })
               ] }),
@@ -2245,7 +2245,7 @@ function Navigation({ theme }) {
         ] }),
         /* @__PURE__ */ jsx17("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs17("ul", { children: [
           /* @__PURE__ */ jsx17("li", { children: /* @__PURE__ */ jsxs17("a", { href: "", children: [
-            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx17("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
               /* @__PURE__ */ jsx17("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
             ] }),
@@ -2314,14 +2314,14 @@ function Navigation({ theme }) {
         ] }),
         /* @__PURE__ */ jsx17("article", { children: /* @__PURE__ */ jsx17("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs17("ul", { children: [
           /* @__PURE__ */ jsx17("li", { children: /* @__PURE__ */ jsxs17("a", { href: "", children: [
-            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx17("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
               /* @__PURE__ */ jsx17("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
             ] }),
             /* @__PURE__ */ jsx17("span", { children: "Home" })
           ] }) }),
           /* @__PURE__ */ jsx17("li", { children: /* @__PURE__ */ jsxs17("a", { href: "", children: [
-            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs17("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx17("path", { d: "m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" }),
               /* @__PURE__ */ jsx17("path", { d: "m18 15 4-4" }),
               /* @__PURE__ */ jsx17("path", { d: "m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" })
@@ -2432,18 +2432,18 @@ function Tabs({ theme }) {
         ] }),
         /* @__PURE__ */ jsx18("div", { className: "disable-mobile", children: /* @__PURE__ */ jsxs18("menu", { children: [
           /* @__PURE__ */ jsx18("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs18("a", { onClick: () => setSelected("tab-1"), children: [
-            /* @__PURE__ */ jsxs18("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs18("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx18("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
               /* @__PURE__ */ jsx18("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
             ] }),
             /* @__PURE__ */ jsx18("span", { children: "Home" })
           ] }) }),
           /* @__PURE__ */ jsx18("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs18("a", { onClick: () => setSelected("tab-2"), children: [
-            /* @__PURE__ */ jsx18("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: /* @__PURE__ */ jsx18("path", { d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" }) }),
+            /* @__PURE__ */ jsx18("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: /* @__PURE__ */ jsx18("path", { d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" }) }),
             /* @__PURE__ */ jsx18("span", { children: "Install" })
           ] }) }),
           /* @__PURE__ */ jsx18("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs18("a", { onClick: () => setSelected("tab-3"), children: [
-            /* @__PURE__ */ jsxs18("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs18("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx18("circle", { cx: "12", cy: "12", r: "10" }),
               /* @__PURE__ */ jsx18("path", { d: "M17 12h.01" }),
               /* @__PURE__ */ jsx18("path", { d: "M12 12h.01" }),
@@ -2541,7 +2541,7 @@ function Menu({ theme }) {
             /* @__PURE__ */ jsx19("span", { children: "Home" })
           ] }) }),
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsxs19("a", { href: "", children: [
-            /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx19("path", { d: "M4 11a9 9 0 0 1 9 9" }),
               /* @__PURE__ */ jsx19("path", { d: "M4 4a16 16 0 0 1 16 16" }),
               /* @__PURE__ */ jsx19("circle", { cx: "5", cy: "19", r: "1" })
@@ -2549,7 +2549,7 @@ function Menu({ theme }) {
             /* @__PURE__ */ jsx19("span", { children: "Latest" })
           ] }) }),
           /* @__PURE__ */ jsx19("li", { children: /* @__PURE__ */ jsxs19("a", { href: "", children: [
-            /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+            /* @__PURE__ */ jsxs19("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
               /* @__PURE__ */ jsx19("path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2" }),
               /* @__PURE__ */ jsx19("path", { d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" }),
               /* @__PURE__ */ jsx19("circle", { cx: "10", cy: "7", r: "4" })
@@ -3637,7 +3637,7 @@ function Breadcrumbs({ theme }) {
       /* @__PURE__ */ jsx29("p", { children: "Likewise, icons can be added to any link element, but unlike normal unordered navigation sub-lists will not be displayed." }),
       /* @__PURE__ */ jsx29("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs29("ol", { children: [
         /* @__PURE__ */ jsx29("li", { children: /* @__PURE__ */ jsxs29("a", { href: "", children: [
-          /* @__PURE__ */ jsxs29("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+          /* @__PURE__ */ jsxs29("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
             /* @__PURE__ */ jsx29("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
             /* @__PURE__ */ jsx29("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
           ] }),
@@ -3732,7 +3732,7 @@ function DesktopMenu() {
         /* @__PURE__ */ jsx32("span", { children: "Home" })
       ] }) }),
       /* @__PURE__ */ jsx32("li", { children: /* @__PURE__ */ jsxs32("a", { href: "", children: [
-        /* @__PURE__ */ jsxs32("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsxs32("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx32("path", { d: "M4 11a9 9 0 0 1 9 9" }),
           /* @__PURE__ */ jsx32("path", { d: "M4 4a16 16 0 0 1 16 16" }),
           /* @__PURE__ */ jsx32("circle", { cx: "5", cy: "19", r: "1" })
@@ -3740,7 +3740,7 @@ function DesktopMenu() {
         /* @__PURE__ */ jsx32("span", { children: "Latest" })
       ] }) }),
       /* @__PURE__ */ jsx32("li", { children: /* @__PURE__ */ jsxs32("a", { href: "", children: [
-        /* @__PURE__ */ jsxs32("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsxs32("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx32("path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2" }),
           /* @__PURE__ */ jsx32("path", { d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" }),
           /* @__PURE__ */ jsx32("circle", { cx: "10", cy: "7", r: "4" })
@@ -3815,7 +3815,7 @@ function MobileMenu() {
         /* @__PURE__ */ jsx36("span", { children: "Home" })
       ] }) }),
       /* @__PURE__ */ jsx36("li", { children: /* @__PURE__ */ jsxs36("a", { href: "", children: [
-        /* @__PURE__ */ jsxs36("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsxs36("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx36("path", { d: "M4 11a9 9 0 0 1 9 9" }),
           /* @__PURE__ */ jsx36("path", { d: "M4 4a16 16 0 0 1 16 16" }),
           /* @__PURE__ */ jsx36("circle", { cx: "5", cy: "19", r: "1" })
@@ -3823,7 +3823,7 @@ function MobileMenu() {
         /* @__PURE__ */ jsx36("span", { children: "Latest" })
       ] }) }),
       /* @__PURE__ */ jsx36("li", { children: /* @__PURE__ */ jsxs36("a", { href: "", children: [
-        /* @__PURE__ */ jsxs36("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsxs36("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx36("path", { d: "M11.5 15H7a4 4 0 0 0-4 4v2" }),
           /* @__PURE__ */ jsx36("path", { d: "M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" }),
           /* @__PURE__ */ jsx36("circle", { cx: "10", cy: "7", r: "4" })
@@ -3844,14 +3844,14 @@ function MobileNav() {
   return /* @__PURE__ */ jsxs37(Fragment9, { children: [
     /* @__PURE__ */ jsx37("header", { children: /* @__PURE__ */ jsx37("nav", { style: { maxWidth: "600px" }, children: /* @__PURE__ */ jsxs37("ul", { children: [
       /* @__PURE__ */ jsx37("li", { children: /* @__PURE__ */ jsxs37("a", { href: "", children: [
-        /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx37("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
           /* @__PURE__ */ jsx37("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
         ] }),
         /* @__PURE__ */ jsx37("span", { children: "Home" })
       ] }) }),
       /* @__PURE__ */ jsx37("li", { children: /* @__PURE__ */ jsxs37("a", { href: "", children: [
-        /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx37("path", { d: "m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" }),
           /* @__PURE__ */ jsx37("path", { d: "m18 15 4-4" }),
           /* @__PURE__ */ jsx37("path", { d: "m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" })
@@ -3860,7 +3860,7 @@ function MobileNav() {
       ] }) }),
       /* @__PURE__ */ jsxs37("li", { children: [
         /* @__PURE__ */ jsxs37("a", { href: "", children: [
-          /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", className: "lucide lucide-circle-chevron-right-icon lucide-circle-chevron-right", children: [
+          /* @__PURE__ */ jsxs37("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: "lucide lucide-circle-chevron-right-icon lucide-circle-chevron-right", children: [
             /* @__PURE__ */ jsx37("circle", { cx: "12", cy: "12", r: "10" }),
             /* @__PURE__ */ jsx37("path", { d: "m10 8 4 4-4 4" })
           ] }),
@@ -3887,18 +3887,18 @@ function MobileTabs() {
   return /* @__PURE__ */ jsx38("main", { children: /* @__PURE__ */ jsxs38("div", { className: "row disable-mobile", children: [
     /* @__PURE__ */ jsx38("aside", { children: /* @__PURE__ */ jsx38("div", { children: /* @__PURE__ */ jsxs38("menu", { children: [
       /* @__PURE__ */ jsx38("li", { "aria-selected": selected === "tab-1", children: /* @__PURE__ */ jsxs38("a", { onClick: () => setSelected("tab-1"), children: [
-        /* @__PURE__ */ jsxs38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsxs38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx38("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
           /* @__PURE__ */ jsx38("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
         ] }),
         /* @__PURE__ */ jsx38("span", { children: "Home" })
       ] }) }),
       /* @__PURE__ */ jsx38("li", { "aria-selected": selected === "tab-2", children: /* @__PURE__ */ jsxs38("a", { onClick: () => setSelected("tab-2"), children: [
-        /* @__PURE__ */ jsx38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: /* @__PURE__ */ jsx38("path", { d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" }) }),
+        /* @__PURE__ */ jsx38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: /* @__PURE__ */ jsx38("path", { d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" }) }),
         /* @__PURE__ */ jsx38("span", { children: "Install" })
       ] }) }),
       /* @__PURE__ */ jsx38("li", { "aria-selected": selected === "tab-3", children: /* @__PURE__ */ jsxs38("a", { onClick: () => setSelected("tab-3"), children: [
-        /* @__PURE__ */ jsxs38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+        /* @__PURE__ */ jsxs38("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
           /* @__PURE__ */ jsx38("circle", { cx: "12", cy: "12", r: "10" }),
           /* @__PURE__ */ jsx38("path", { d: "M17 12h.01" }),
           /* @__PURE__ */ jsx38("path", { d: "M12 12h.01" }),
@@ -4370,7 +4370,7 @@ function TopNav({ theme }) {
       /* @__PURE__ */ jsx43("span", { children: "Home" })
     ] }) }),
     /* @__PURE__ */ jsx43("li", { children: /* @__PURE__ */ jsxs43("a", { href: RouteMaster.showcase(theme, route), children: [
-      /* @__PURE__ */ jsxs43("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+      /* @__PURE__ */ jsxs43("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
         /* @__PURE__ */ jsx43("path", { d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" }),
         /* @__PURE__ */ jsx43("circle", { cx: "12", cy: "12", r: "3" })
       ] }),
