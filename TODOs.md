@@ -20,6 +20,7 @@ Features
 
 Improvements
 ------------
+- [ ] tabs navigation should be a bit more like github (thin underline, horizontal bottom border throught, etc)
 - [x] hgroup support for better header + subheader cases
 - [x] turn the “rounded” class into a var for all images
 - [x] create classes for Primary / Secondary / etc that can be applied for text, elements, etc
@@ -59,6 +60,7 @@ Investigations
 
 Bugs
 ----
+- [ ] inverted primary cards don’t highlight links correctly
 - [x] when we have <header><div>abc</div></header> the content in the div is not in the center, as I'd expect;
   - I need to actually have <header><div><div>abc</div></div></header> to work
   - Similar, when I have <footer>text</footer> or <footer><div>test</div></footer> it doesn't work okay ... need

@@ -92,14 +92,14 @@ export default function Basic() {
           </article>
         </div>
 
-        <header className="align-center secondary">
+        <header className="align-center">
           <aside>
             <hgroup>
               <h2>Ut enim ad minima veniam</h2>
               <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
             </hgroup>
             <p>
-              <button>
+              <button className="secondary">
                 <span>Sign up for free</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
               </button>

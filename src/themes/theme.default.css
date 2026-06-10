@@ -4,11 +4,11 @@
   --font-family-body: 'Sora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-family-mono: monospace; 
 
-  --color-bg: light-dark(#ffffff, #0b1220);
-  --color-txt: light-dark(#212121, #d8eaff);
+  --color-bg: light-dark(#ffffff, #171717);
+  --color-txt: light-dark(#171717, #f5f5f5);
   --color-txt-on-dark: #ffffff;
-  --color-primary: light-dark(#0000ee, #526cfe);
-  --color-secondary: light-dark(#475569, #526cfe);
+  --color-primary: light-dark(#0000ee, #147cb8);
+  --color-secondary: light-dark(#475569, #475569);
   
   --color-success: #23b157;
   --color-error: #ef4444;
