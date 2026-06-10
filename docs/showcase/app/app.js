@@ -204,13 +204,13 @@ function Table() {
 }
 function Pagination() {
   return /* @__PURE__ */ jsxs("p", { role: "group", className: "align-center", children: [
-    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "Prev" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "1" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "2" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "..." }),
-    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "17" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "18" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "Next" })
+    /* @__PURE__ */ jsx("button", { type: "reset", children: "Prev" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", children: "1" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", children: "2" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", children: "..." }),
+    /* @__PURE__ */ jsx("button", { type: "reset", children: "17" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", children: "18" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", children: "Next" })
   ] });
 }
 function App() {
