@@ -36,10 +36,10 @@
 }
 
 :root {
-  --color-bg: light-dark(#ffffff, #2e2936);
+  --color-bg: light-dark(#ffffff, #0f1a3a);
   --color-txt: light-dark(#212121, #e7e5ea);
   --color-txt-on-dark: #ffffff;
-  --color-primary: #7554ff;
+  --color-primary: #005cd6;
   --color-secondary: #7b7b7b;
 
   --color-success: #23b157;
