@@ -19,7 +19,7 @@ function DesktopHeader() {
         /* @__PURE__ */ jsx("path", { d: "M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" }),
         /* @__PURE__ */ jsx("circle", { cx: "12", cy: "12", r: "3" })
       ] }) }),
-      /* @__PURE__ */ jsx("button", { className: "success", children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+      /* @__PURE__ */ jsx("button", { children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
         /* @__PURE__ */ jsx("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
         /* @__PURE__ */ jsx("circle", { cx: "12", cy: "7", r: "4" })
       ] }) })
@@ -42,7 +42,7 @@ function MobileHeader() {
         /* @__PURE__ */ jsx("path", { d: "M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" }),
         /* @__PURE__ */ jsx("circle", { cx: "12", cy: "12", r: "3" })
       ] }) }),
-      /* @__PURE__ */ jsx("button", { className: "success", children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+      /* @__PURE__ */ jsx("button", { children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
         /* @__PURE__ */ jsx("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
         /* @__PURE__ */ jsx("circle", { cx: "12", cy: "7", r: "4" })
       ] }) })
@@ -197,23 +197,20 @@ function Table() {
           r.is_active && /* @__PURE__ */ jsx("mark", { className: "success", children: "active" }),
           !r.is_active && /* @__PURE__ */ jsx("mark", { className: "error", children: "active" })
         ] }),
-        /* @__PURE__ */ jsx("td", { children: /* @__PURE__ */ jsx("div", { className: "row disable-mobile", children: /* @__PURE__ */ jsx("button", { children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-          /* @__PURE__ */ jsx("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
-          /* @__PURE__ */ jsx("path", { d: "m15 5 4 4" })
-        ] }) }) }) })
+        /* @__PURE__ */ jsx("td", { children: /* @__PURE__ */ jsx("div", { className: "row disable-mobile", children: /* @__PURE__ */ jsx("a", { href: "", children: "Edit" }) }) })
       ] }, r.name);
     }) })
   ] }) });
 }
 function Pagination() {
   return /* @__PURE__ */ jsxs("p", { role: "group", className: "align-center", children: [
-    /* @__PURE__ */ jsx("button", { type: "reset", children: "Prev" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", children: "1" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", children: "2" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", children: "..." }),
-    /* @__PURE__ */ jsx("button", { type: "reset", children: "17" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", children: "18" }),
-    /* @__PURE__ */ jsx("button", { type: "reset", children: "Next" })
+    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "Prev" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "1" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "2" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "..." }),
+    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "17" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "18" }),
+    /* @__PURE__ */ jsx("button", { type: "reset", style: { borderWidth: 0 }, children: "Next" })
   ] });
 }
 function App() {
