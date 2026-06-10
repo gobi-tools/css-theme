@@ -36,11 +36,11 @@
 }
 
 :root {
-  --color-bg: light-dark(#fefcfc, #002235);
-  --color-txt: light-dark(#212121, #d8eaff);
+  --color-bg: light-dark(#ffffff, #2e2936);
+  --color-txt: light-dark(#212121, #e7e5ea);
   --color-txt-on-dark: #ffffff;
-  --color-primary: #0172ad;
-  --color-secondary: #181c25;
+  --color-primary: #7554ff;
+  --color-secondary: #7b7b7b;
 
   --color-success: #23b157;
   --color-error: #ef4444;
@@ -58,5 +58,6 @@ pre>code {
 
 .table-wrapper {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* smoother on iOS */
+  -webkit-overflow-scrolling: touch;
+  /* smoother on iOS */
 }

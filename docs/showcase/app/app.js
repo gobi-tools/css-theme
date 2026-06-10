@@ -4,8 +4,8 @@ import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
 // showcase/app/App.tsx
 import { Fragment, jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
-function Header() {
-  return /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
+function DesktopHeader() {
+  return /* @__PURE__ */ jsx("header", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
     /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [
       /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
         /* @__PURE__ */ jsx("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
@@ -14,10 +14,39 @@ function Header() {
       /* @__PURE__ */ jsx("span", { children: "Home" })
     ] }) }),
     /* @__PURE__ */ jsx("div", {}),
-    /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("button", { type: "reset", children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-      /* @__PURE__ */ jsx("path", { d: "M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" }),
-      /* @__PURE__ */ jsx("circle", { cx: "12", cy: "12", r: "3" })
-    ] }) }) })
+    /* @__PURE__ */ jsxs("li", { children: [
+      /* @__PURE__ */ jsx("button", { type: "reset", children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx("path", { d: "M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" }),
+        /* @__PURE__ */ jsx("circle", { cx: "12", cy: "12", r: "3" })
+      ] }) }),
+      /* @__PURE__ */ jsx("button", { className: "success", children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
+        /* @__PURE__ */ jsx("circle", { cx: "12", cy: "7", r: "4" })
+      ] }) })
+    ] })
+  ] }) }) });
+}
+function MobileHeader() {
+  return /* @__PURE__ */ jsx("header", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ol", { children: [
+    /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs("a", { href: "", children: [
+      /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx("path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }),
+        /* @__PURE__ */ jsx("path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" })
+      ] }),
+      /* @__PURE__ */ jsx("span", { children: "Home" })
+    ] }) }),
+    /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Dashboard" }) }),
+    /* @__PURE__ */ jsx("div", {}),
+    /* @__PURE__ */ jsxs("li", { children: [
+      /* @__PURE__ */ jsx("button", { type: "reset", children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx("path", { d: "M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" }),
+        /* @__PURE__ */ jsx("circle", { cx: "12", cy: "12", r: "3" })
+      ] }) }),
+      /* @__PURE__ */ jsx("button", { className: "success", children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+        /* @__PURE__ */ jsx("path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" }),
+        /* @__PURE__ */ jsx("circle", { cx: "12", cy: "7", r: "4" })
+      ] }) })
+    ] })
   ] }) }) });
 }
 function Menu() {
@@ -65,29 +94,29 @@ function Menu() {
   ] });
 }
 function Search() {
-  return /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("fieldset", { children: [
-    /* @__PURE__ */ jsx("legend", { children: "Search params" }),
+  return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsxs("div", { className: "row disable-mobile", children: [
-      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("label", { children: [
-        /* @__PURE__ */ jsx("span", { children: /* @__PURE__ */ jsx("b", { children: "Params" }) }),
-        /* @__PURE__ */ jsx("input", { type: "search", id: "search", name: "search", placeholder: "Search" })
-      ] }) }),
-      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("label", { children: [
-        /* @__PURE__ */ jsx("span", { children: /* @__PURE__ */ jsx("b", { children: "Category" }) }),
+      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("div", { role: "group", children: [
         /* @__PURE__ */ jsxs("select", { id: "category", name: "category", children: [
           /* @__PURE__ */ jsx("option", { selected: true, children: "Gold" }),
           /* @__PURE__ */ jsx("option", { children: "Others" })
-        ] })
-      ] }) }),
-      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsxs("label", { children: [
-        /* @__PURE__ */ jsx("span", { children: /* @__PURE__ */ jsx("b", { children: "Status" }) }),
+        ] }),
         /* @__PURE__ */ jsxs("select", { id: "status", name: "status", children: [
           /* @__PURE__ */ jsx("option", { selected: true, children: "Active" }),
           /* @__PURE__ */ jsx("option", { children: "Inactive" })
         ] })
-      ] }) })
-    ] })
-  ] }) });
+      ] }) }) }),
+      /* @__PURE__ */ jsx("div", { className: "hide-on-mobile" }),
+      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsxs("div", { className: "row disable-mobile", children: [
+        /* @__PURE__ */ jsxs("select", { id: "env", name: "env", children: [
+          /* @__PURE__ */ jsx("option", { selected: true, children: "Prod" }),
+          /* @__PURE__ */ jsx("option", { children: "Test" })
+        ] }),
+        /* @__PURE__ */ jsx("button", { children: "Save" })
+      ] }) }) })
+    ] }),
+    /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("form", { children: /* @__PURE__ */ jsx("input", { type: "search", id: "search", name: "search", placeholder: "Search" }) }) })
+  ] });
 }
 function Table() {
   const data = [
@@ -95,85 +124,83 @@ function Table() {
       "name": "Acme Logistics Ltd",
       "is_gold": true,
       "is_active": true,
-      "email": "office@acmelogistics.example"
+      "email": "office@acme.com"
     },
     {
       "name": "Northbridge Solutions",
       "is_gold": false,
       "is_active": true,
-      "email": "contact@northbridge.example"
+      "email": "contact@northbridge.net"
     },
     {
       "name": "Summit Retail Group",
       "is_gold": true,
       "is_active": false,
-      "email": "admin@summitretail.example"
+      "email": "admin@summit.co.uk"
     },
     {
       "name": "Blue Horizon Consulting",
       "is_gold": false,
       "is_active": true,
-      "email": "office@bluehorizon.example"
+      "email": "office@bluehorizon.com"
     },
     {
       "name": "Greenfield Industries",
       "is_gold": true,
       "is_active": true,
-      "email": "support@greenfield.example"
+      "email": "support@greenfield.net"
     },
     {
       "name": "Evercrest Partners",
       "is_gold": false,
       "is_active": false,
-      "email": "hello@evercrest.example"
+      "email": "hello@evercrest.io"
     },
     {
       "name": "Redwood Technologies",
       "is_gold": true,
       "is_active": true,
-      "email": "info@redwoodtech.example"
+      "email": "info@rwtech.io"
     },
     {
       "name": "Sterling Procurement",
       "is_gold": false,
       "is_active": true,
-      "email": "office@sterlingprocurement.example"
+      "email": "office@sterling.com"
     },
     {
       "name": "Vertex Manufacturing",
       "is_gold": true,
       "is_active": false,
-      "email": "contact@vertexmfg.example"
+      "email": "contact@vertexmfg.net"
     },
     {
       "name": "Oakstone Services",
       "is_gold": false,
       "is_active": true,
-      "email": "admin@oakstone.example"
+      "email": "admin@oakstone.co"
     }
   ];
   return /* @__PURE__ */ jsx("div", { className: "table-wrapper", children: /* @__PURE__ */ jsxs("table", { children: [
     /* @__PURE__ */ jsx("thead", { children: /* @__PURE__ */ jsxs("tr", { children: [
       /* @__PURE__ */ jsx("th", { children: "Partner" }),
       /* @__PURE__ */ jsx("th", { children: "Status" }),
-      /* @__PURE__ */ jsx("th", { children: "Email" }),
       /* @__PURE__ */ jsx("th", { children: "Action" })
     ] }) }),
     /* @__PURE__ */ jsx("tbody", { children: data.map((r) => {
       return /* @__PURE__ */ jsxs("tr", { children: [
-        /* @__PURE__ */ jsx("td", { children: r.name }),
+        /* @__PURE__ */ jsxs("td", { children: [
+          /* @__PURE__ */ jsx("div", { children: r.name }),
+          /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("a", { href: "", children: r.email }) })
+        ] }),
         /* @__PURE__ */ jsxs("td", { children: [
           r.is_active && /* @__PURE__ */ jsx("mark", { className: "success", children: "active" }),
           !r.is_active && /* @__PURE__ */ jsx("mark", { className: "error", children: "active" })
         ] }),
-        /* @__PURE__ */ jsx("td", { children: /* @__PURE__ */ jsx("a", { href: "", children: r.email }) }),
-        /* @__PURE__ */ jsx("td", { children: /* @__PURE__ */ jsxs("div", { className: "row disable-mobile", children: [
-          /* @__PURE__ */ jsx("button", { children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-            /* @__PURE__ */ jsx("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
-            /* @__PURE__ */ jsx("path", { d: "m15 5 4 4" })
-          ] }) }),
-          /* @__PURE__ */ jsx("button", { disabled: !r.is_gold, type: "reset", children: /* @__PURE__ */ jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: /* @__PURE__ */ jsx("path", { d: "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" }) }) })
-        ] }) })
+        /* @__PURE__ */ jsx("td", { children: /* @__PURE__ */ jsx("div", { className: "row disable-mobile", children: /* @__PURE__ */ jsx("button", { children: /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
+          /* @__PURE__ */ jsx("path", { d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" }),
+          /* @__PURE__ */ jsx("path", { d: "m15 5 4 4" })
+        ] }) }) }) })
       ] }, r.name);
     }) })
   ] }) });
@@ -191,9 +218,10 @@ function Pagination() {
 }
 function App() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx(Header, {}),
+    /* @__PURE__ */ jsx(DesktopHeader, {}),
+    /* @__PURE__ */ jsx(MobileHeader, {}),
     /* @__PURE__ */ jsx("main", { children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
-      /* @__PURE__ */ jsx("div", { className: "col-3", children: /* @__PURE__ */ jsx(Menu, {}) }),
+      /* @__PURE__ */ jsx("div", { className: "col-3 hide-on-mobile", children: /* @__PURE__ */ jsx(Menu, {}) }),
       /* @__PURE__ */ jsxs("div", { children: [
         /* @__PURE__ */ jsx(Search, {}),
         /* @__PURE__ */ jsx(Table, {}),
