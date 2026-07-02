@@ -3,7 +3,7 @@
 dialog {
   border: none;
   padding: var(--space-m);
-  width: var(--width-dialog);
+  width: var(--width-dialog) !important;
   margin-bottom: var(--space-xl);
   max-height: calc(100dvh - 2 * var(--space-xl));
 }
