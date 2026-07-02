@@ -3,7 +3,9 @@
 dialog {
   border: none;
   padding: var(--space-m);
-  width: min(100% - var(--space-l), var(--width-dialog));
+  width: var(--width-dialog);
+  margin-bottom: var(--space-xl);
+  max-height: calc(100dvh - 2 * var(--space-xl));
 }
 
 /* theme styles */
