@@ -1,0 +1,26 @@
+/* base */
+
+dialog:modal {
+  border: none;
+  padding: var(--space-m);
+  width: var(--width-dialog) !important;
+  margin-bottom: var(--space-xl);
+  max-height: calc(100dvh - 2 * var(--space-xl));
+}
+
+/* theme styles */
+
+dialog:modal {
+  border-radius: var(--border-radius-dialog);
+}
+
+/* theme colors */
+
+dialog:modal {
+  background: var(--color-bg);
+}
+
+dialog:modal::backdrop {
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
