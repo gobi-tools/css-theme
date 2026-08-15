@@ -172,8 +172,7 @@
   --color-int-secondary: var(--color-secondary);
   --color-int-secondary-faint: color-mix(in srgb, var(--color-secondary) 8%, transparent);
   --color-int-secondary-muted: light-dark(color-mix(in oklch, var(--color-secondary) 30%, white), color-mix(in oklch, var(--color-secondary) 90%, black));
-  --color-int-secondary-muted-hover: color-mix(in oklab, var(--color-int-secondary-muted) 90%, light-dark(black, white));
-
+ 
   --color-int-success: var(--color-success);
   --color-int-error: var(--color-error);
 }

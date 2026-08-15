@@ -44,12 +44,13 @@ article {
   border-color: var(--color-int-border);
 }
 
+/* @FEATURE: Open/Close nice looking panel  */
 article>header:first-child,
 article>details>summary {
   background-color: var(--color-int-secondary-muted);
 
   &:hover {
-    background-color: var(--color-int-secondary-muted-hover);
+    filter: brightness(110%);
   }
 }
 
