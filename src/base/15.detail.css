@@ -18,10 +18,10 @@ summary {
 details[name]:has(+ details[name]),
 details[name]+details[name] {
   &:not([open])>:is(summary) {
-    background-color: light-dark(var(--color-bg), var(--color-int-accent-faint));
-
+    background: var(--color-card);  
+    
     &:hover {
-      background-color: light-dark(var(--color-int-accent-faint), var(--color-int-accent-muted));
+      background: var(--color-head);
       filter: brightness(110%);
     }
   }

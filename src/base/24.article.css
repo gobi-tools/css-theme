@@ -40,15 +40,15 @@ article {
 /* theme colors */
 
 article {
-  background: light-dark(var(--color-bg), var(--color-int-accent-faint));
-  border-color: var(--color-int-border);
+  background: var(--color-card);  
+  border-color: var(--color-border);
 }
 
 /* @FEATURE: Open/Close nice looking panel  */
 article>header:first-child,
 article>details>summary {
-  background-color: var(--color-int-secondary-muted);
-
+  background: var(--color-head);
+  
   &:hover {
     filter: brightness(110%);
   }
