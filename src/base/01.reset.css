@@ -145,15 +145,68 @@
   /* --color-success: __THEME__ */
   /* --color-error: __THEME__ */
 
-  --color-base: oklch(68.949% 0.00008 271.152);
-  --color: var(--color-base);
+  --color-base: oklch(60% 0 0);
 }
 
 * {
-  --color-lighter: color-mix(in oklch, var(--color), white 80%);
-  --color-light: color-mix(in oklch, var(--color), white 50%);
+  --color-lightest: color-mix(in oklch, var(--color), white 80%);
+  --color-lighter: color-mix(in oklch, var(--color), white 52%);
+  --color-light: color-mix(in oklch, var(--color), white 12%);
+
   --color-dark: color-mix(in oklch, var(--color), black 20%);
   --color-darker: color-mix(in oklch, var(--color), black 40%);
+  --color-darkest: color-mix(in oklch, var(--color), black 55%);
+
+  --color-light-9: color-mix(in oklch, var(--color), white 90%);
+  --color-light-8: color-mix(in oklch, var(--color), white 80%);
+  --color-light-7: color-mix(in oklch, var(--color), white 70%);
+  --color-light-6: color-mix(in oklch, var(--color), white 60%);
+  --color-light-5: color-mix(in oklch, var(--color), white 50%);
+  --color-light-4: color-mix(in oklch, var(--color), white 40%);
+  --color-light-3: color-mix(in oklch, var(--color), white 30%);
+  --color-light-2: color-mix(in oklch, var(--color), white 20%);
+  --color-light-1: color-mix(in oklch, var(--color), white 10%);
+  --color: var(--color-base);
+  --color-dark-1: color-mix(in oklch, var(--color), black 10%);
+  --color-dark-2: color-mix(in oklch, var(--color), black 20%);
+  --color-dark-3: color-mix(in oklch, var(--color), black 30%);
+  --color-dark-4: color-mix(in oklch, var(--color), black 40%);
+  --color-dark-5: color-mix(in oklch, var(--color), black 50%);
+  --color-dark-6: color-mix(in oklch, var(--color), black 60%);
+  --color-dark-7: color-mix(in oklch, var(--color), black 70%);
+  --color-dark-8: color-mix(in oklch, var(--color), black 80%);
+  --color-dark-9: color-mix(in oklch, var(--color), black 90%);
+
+  /** links */
+  --color-link: light-dark(var(--color-dark-2), var(--color-light-5));
+  --color-link-hover: light-dark(var(--color-dark-7), var(--color-light-8));
+
+  /** buttons: full */
+  --color-button: var(--color);
+  --color-button-hover: light-dark(var(--color-dark-2), var(--color-light-2));
+  /** buttons: empty surface */
+  --color-surface: var(--color-bg);
+  --color-surface-hover: light-dark(var(--color-light-8), var(--color-dark-4)); 
+
+  /**
+   
+   --color-block: --color-lightes (blockquotes, code blocks)
+   
+   --color-stroke: --color-darkest (strokes for blockquotes, code blocks)
+   
+   --color-card: --color-lightest (card bodies, article bodies, forms)
+   
+   --color-head: ??? (card headers, article headers)
+   --color-head-hover
+
+   --color-tag: ???
+   
+   --color-border: ??? (form, hr, etc)
+   --color-border-focused (focused form, etc)
+
+   --color-form (form background)
+   --color-form-accent (form accent)
+   */
 }
 
 :root,
@@ -172,8 +225,8 @@
   --color-error: __THEME__
   */
 
-  --color-int-bg: var(--color-bg);
-  --color-int-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white));
+  /* --color-int-bg: var(--color-bg); */
+  /* --color-int-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white)); */
 
   --color-int-txt: var(--color-txt);
   --color-int-txt-on-dark: var(--color-txt-on-dark);

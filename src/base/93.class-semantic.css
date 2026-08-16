@@ -1,3 +1,23 @@
+.success,
+.success * {
+  --color: var(--color-success) !important;
+}
+
+.error,
+.error * {
+  --color: var(--color-error) !important;
+}
+
+.primary,
+.primary * {
+  --color: var(--color-primary) !important;
+}
+
+.secondary,
+.secondary * {
+  --color: var(--color-secondary) !important;
+}
+
 .success {
   --color-int-border: color-mix(in srgb, var(--color-success) 40%, transparent);
 

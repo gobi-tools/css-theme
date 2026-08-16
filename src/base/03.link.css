@@ -1,4 +1,4 @@
-/* base */ 
+/* base */
 
 a {
   cursor: pointer;
@@ -7,13 +7,16 @@ a {
 /* theme colors */
 
 a {
-  color: var(--color-int-primary-inked);
+  --color: var(--color-primary);
 }
 
-a:hover {
-  color: var(--color-int-primary-inked-hover);
+a {
+  color: var(--color-link);
+  /* color: var(--color-int-primary-inked); */
 }
 
+a:hover,
 [aria-selected="true"] a {
-  color: var(--color-int-primary-inked-hover);
+  color: var(--color-link-hover);
+  /* color: var(--color-int-primary-inked-hover); */
 }
