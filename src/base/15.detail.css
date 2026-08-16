@@ -14,17 +14,7 @@ summary {
   cursor: pointer;
 }
 
-/* @FEATURE: Setup for the accordion style menu */
-details[name]:has(+ details[name]),
-details[name]+details[name] {
-  &:not([open])>:is(summary) {
-    background: var(--color-card);  
-    
-    &:hover {
-      background: var(--color-head-hover);
-    }
-  }
-}
+/* theme styles */
 
 details[name]:has(+ details[name]) {
   border-bottom-left-radius: 0;
@@ -38,4 +28,18 @@ details[name]:has(+ details[name]) {
 details[name]+details[name] {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+/* theme colors */
+
+/* @FEATURE: Setup for the accordion style menu */
+details[name]:has(+ details[name]),
+details[name]+details[name] {
+  &:not([open])>:is(summary) {
+    background: var(--color-card);  
+    
+    &:hover {
+      background: var(--color-head-hover);
+    }
+  }
 }
