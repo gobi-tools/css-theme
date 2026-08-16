@@ -149,14 +149,6 @@
 }
 
 * {
-  --color-lightest: color-mix(in oklch, var(--color), white 80%);
-  --color-lighter: color-mix(in oklch, var(--color), white 52%);
-  --color-light: color-mix(in oklch, var(--color), white 12%);
-
-  --color-dark: color-mix(in oklch, var(--color), black 20%);
-  --color-darker: color-mix(in oklch, var(--color), black 40%);
-  --color-darkest: color-mix(in oklch, var(--color), black 55%);
-
   --color-light-9: color-mix(in oklch, var(--color), white 90%);
   --color-light-8: color-mix(in oklch, var(--color), white 80%);
   --color-light-7: color-mix(in oklch, var(--color), white 70%);
