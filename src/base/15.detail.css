@@ -21,8 +21,7 @@ details[name]+details[name] {
     background: var(--color-card);  
     
     &:hover {
-      background: var(--color-head);
-      filter: brightness(110%);
+      background: var(--color-head-hover);
     }
   }
 }

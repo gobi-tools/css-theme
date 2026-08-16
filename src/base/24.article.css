@@ -50,7 +50,7 @@ article>details>summary {
   background: var(--color-head);
   
   &:hover {
-    filter: brightness(110%);
+    background: var(--color-head-hover);
   }
 }
 
