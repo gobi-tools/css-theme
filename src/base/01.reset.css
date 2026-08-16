@@ -137,18 +137,20 @@
 /* theme colors */
 
 :root {
+  /* --color-base: __THEME__ */
   /* --color-bg: __THEME__ */
-  /* --color-txt: __THEME__ */
-  /* --color-txt-on-dark: __THEME__ */
   /* --color-primary: __THEME__ */
   /* --color-secondary: __THEME__ */
   /* --color-success: __THEME__ */
   /* --color-error: __THEME__ */
 
-  --color-base: oklch(60% 0 0);
+  /* --color-base: light-dark(#928b9c, #7d748c); */
 }
 
 * {
+  /* --color-base: color-mix(in srgb, var(--color-txt) 50%, transparent); */
+  
+  --color-light-10: color-mix(in oklch, var(--color), white 95%);
   --color-light-9: color-mix(in oklch, var(--color), white 90%);
   --color-light-8: color-mix(in oklch, var(--color), white 80%);
   --color-light-7: color-mix(in oklch, var(--color), white 70%);
@@ -168,9 +170,14 @@
   --color-dark-7: color-mix(in oklch, var(--color), black 70%);
   --color-dark-8: color-mix(in oklch, var(--color), black 80%);
   --color-dark-9: color-mix(in oklch, var(--color), black 90%);
+  --color-dark-10: color-mix(in oklch, var(--color), black 95%);
+
+  /** text */
+  --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
+  --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
 
   /** links */
-  --color-link: light-dark(var(--color-dark-2), var(--color-light-5));
+  --color-link: light-dark(var(--color-dark-2), var(--color-light-6));
   --color-link-hover: light-dark(var(--color-dark-7), var(--color-light-8));
 
   /** buttons: full */
@@ -179,6 +186,9 @@
   /** buttons: empty surface */
   --color-surface: var(--color-bg);
   --color-surface-hover: light-dark(var(--color-light-8), var(--color-dark-4)); 
+
+  /** tags & code */
+  --color-code: light-dark(var(--color-light-8), var(--color-dark-3));
 
   /**
    

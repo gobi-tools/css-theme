@@ -58,7 +58,7 @@ code,
 kbd,
 var,
 mark {
-  background: var(--color-int-accent-muted);
+  background: var(--color-code);
 }
 
 kbd>*,

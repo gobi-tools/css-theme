@@ -12,11 +12,9 @@ a {
 
 a {
   color: var(--color-link);
-  /* color: var(--color-int-primary-inked); */
 }
 
 a:hover,
 [aria-selected="true"] a {
   color: var(--color-link-hover);
-  /* color: var(--color-int-primary-inked-hover); */
 }

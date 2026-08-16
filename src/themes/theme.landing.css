@@ -5,9 +5,10 @@
   --font-familu-navi:  "Geist", sans-serif;
   --font-family-body: "Geist", sans-serif;
 
-  --color-bg: light-dark(#FAFAFA, #0F1819);
-  --color-txt: light-dark(#0F1819, #FAFAFA);
-  --color-txt-on-dark: #ffffff;
+  --color-bg: #FAFAFA;
+  --color-base: #768f92;
+  /* --color-txt: light-dark(#0F1819, #FAFAFA);
+  --color-txt-on-dark: #ffffff; */
   --color-primary: #1C2829;
   --color-secondary: #364244;
 

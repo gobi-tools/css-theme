@@ -69,8 +69,6 @@ button,
 input[type=submit] {
   background: var(--color-button);
   border-color: var(--color-button);
-  /* background: var(--color-int-primary); */
-  /* border-color: var(--color-int-primary); */
   color: var(--color-txt-on-dark);
 }
 
@@ -78,7 +76,6 @@ button:hover,
 input[type=submit]:hover {
   background: var(--color-button-hover);
   border-color: var(--color-button-hover);
-  /* background: var(--color-int-primary-hover); */
 }
 
 button[type=reset],
@@ -86,11 +83,9 @@ input[type=reset] {
   background: var(--color-surface);
   border-color: var(--color-button);
   color: var(--color-txt);
-  /* border-color: var(--color-int-primary); */
 }
 
 button[type=reset]:hover,
 input[type=reset]:hover {
   background-color: var(--color-surface-hover);
-  /* background: var(--color-int-bg-hover); */
 }
