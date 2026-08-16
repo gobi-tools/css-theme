@@ -27,5 +27,5 @@
 
 :is(input, textarea):placeholder-shown:not(:focus) {
   background: var(--color-bg) !important;
-  border-color: var(--color-int-border) !important;
+  border-color: var(--color-border) !important;
 }

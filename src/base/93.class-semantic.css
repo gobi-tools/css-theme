@@ -1,21 +1,33 @@
 .success,
 .success * {
   --color: var(--color-success) !important;
+  --color-form-input-accent: var(--color-success) !important;
+  --color-form-select-accent: var(--color-success) !important;
+  --color-form-input-outline: var(--color-success) !important;
 }
 
 .error,
 .error * {
   --color: var(--color-error) !important;
+  --color-form-input-accent: var(--color-error) !important;
+  --color-form-select-accent: var(--color-error) !important;
+  --color-form-input-outline: var(--color-error) !important;
 }
 
 .primary,
 .primary * {
   --color: var(--color-primary) !important;
+  --color-form-input-accent: var(--color-primary) !important;
+  --color-form-select-accent: var(--color-primary) !important;
+  --color-form-input-outline: var(--color-primary) !important;
 }
 
 .secondary,
 .secondary * {
   --color: var(--color-secondary) !important;
+  --color-form-input-accent: var(--color-secondary) !important;
+  --color-form-select-accent: var(--color-secondary) !important;
+  --color-form-input-outline: var(--color-secondary) !important;
 }
 
 .success {
