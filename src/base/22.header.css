@@ -20,9 +20,3 @@ header>*:last-child {
     max-height: initial;
   }
 }
-
-/* theme styles */
-
-header {
-  /* border-radius: var(--border-radius-card); */
-}

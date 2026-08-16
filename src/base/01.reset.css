@@ -187,7 +187,7 @@
   /** buttons: full */
   --color-button: var(--color);
   --color-button-hover: light-dark(var(--color-dark-2), var(--color-light-2));
-  /** buttons: empty surface */
+  /** buttons with type reset, table cells */
   --color-surface: var(--color-bg);
   --color-surface-hover: light-dark(var(--color-light-8), var(--color-dark-4)); 
 
@@ -198,13 +198,12 @@
   --color-block: light-dark(var(--color-light-8-5), var(--color-dark-4));
   --color-stroke: light-dark(var(--color), var(--color-light-3));
 
-  /** card */
+  /** cards & card headers */
   --color-card: light-dark(var(--color-bg), var(--color-dark-4));
-
   --color-head: light-dark(var(--color-light-5), var(--color-dark-3));
   --color-head-hover: light-dark(var(--color-light-3), var(--color-dark-2));
 
-  /** border */
+  /** border (borders for all sorts of elements) */
   --color-border: light-dark(var(--color-light-7), var(--color-dark-2));
 
   /**
