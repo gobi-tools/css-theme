@@ -13,3 +13,7 @@ a {
 a:hover {
   color: var(--color-int-primary-inked-hover);
 }
+
+[aria-selected="true"] a {
+  color: var(--color-int-primary-inked-hover);
+}

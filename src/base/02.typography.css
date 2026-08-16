@@ -79,7 +79,3 @@ body {
 hr {
   border-color: inherit;
 }
-
-[aria-selected="true"] a {
-  color: var(--color-int-primary-inked-hover);
-}

@@ -136,6 +136,26 @@
 
 /* theme colors */
 
+:root {
+  /* --color-bg: __THEME__ */
+  /* --color-txt: __THEME__ */
+  /* --color-txt-on-dark: __THEME__ */
+  /* --color-primary: __THEME__ */
+  /* --color-secondary: __THEME__ */
+  /* --color-success: __THEME__ */
+  /* --color-error: __THEME__ */
+
+  --color-base: oklch(68.949% 0.00008 271.152);
+  --color: var(--color-base);
+}
+
+* {
+  --color-lighter: color-mix(in oklch, var(--color), white 80%);
+  --color-light: color-mix(in oklch, var(--color), white 50%);
+  --color-dark: color-mix(in oklch, var(--color), black 20%);
+  --color-darker: color-mix(in oklch, var(--color), black 40%);
+}
+
 :root,
 .success,
 .error {
@@ -172,7 +192,7 @@
   --color-int-secondary: var(--color-secondary);
   --color-int-secondary-faint: color-mix(in srgb, var(--color-secondary) 8%, transparent);
   --color-int-secondary-muted: light-dark(color-mix(in oklch, var(--color-secondary) 30%, white), color-mix(in oklch, var(--color-secondary) 90%, black));
- 
+
   --color-int-success: var(--color-success);
   --color-int-error: var(--color-error);
 }
