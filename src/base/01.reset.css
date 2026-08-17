@@ -250,7 +250,6 @@
 :root,
 .success,
 .error {
-  --color-int-accent-faint: color-mix(in srgb, var(--color-txt) 8%, transparent);
   --color-int-primary-faint: color-mix(in srgb, var(--color-primary) 8%, transparent);
   --color-int-secondary-faint: color-mix(in srgb, var(--color-secondary) 8%, transparent);
   

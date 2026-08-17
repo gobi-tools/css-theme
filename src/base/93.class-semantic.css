@@ -31,38 +31,22 @@
 }
 
 .success {
-  --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-success) 20%, transparent),
-      color-mix(in srgb, var(--color-success) 45%, transparent));
-  
   --color-int-primary: var(--color-success);
-  
   --color-int-secondary: var(--color-success);
 }
 
 .error {
-  --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
-      color-mix(in srgb, var(--color-error) 45%, transparent));
-  
   --color-int-primary: var(--color-error);
-  
   --color-int-secondary: var(--color-error);
 }
 
 .primary {
-  --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-primary) 20%, transparent),
-      color-mix(in srgb, var(--color-primary) 45%, transparent));
-  
   --color-int-primary: var(--color-primary);
-  
   --color-int-secondary: var(--color-primary);
 }
 
 .secondary {
-  --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-secondary) 20%, transparent),
-      color-mix(in srgb, var(--color-secondary) 45%, transparent));
-  
   --color-int-primary: var(--color-secondary);
-  
   --color-int-secondary: var(--color-secondary);
 }
 
