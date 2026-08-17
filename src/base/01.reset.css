@@ -223,6 +223,7 @@
     - buttons
     - links (& nav)
     - text
+    - form inputs
    */
 
   /** buttons */
@@ -239,15 +240,12 @@
   --color-stroke: light-dark(var(--color), var(--color-light-3));
   /** border (borders for all sorts of elements) */
   --color-border: light-dark(var(--color-light-6), var(--color-dark-2));
-  
+
   /** form select */
-  --color-form-input: var(--color-bg);
-  /* exception! */
-  --color-form-input-accent: var(--color-secondary);
   --color-form-select: light-dark(var(--color-light-8), var(--color-bg));
-  /* exception! */
+  /* exceptions! */
+  --color-form-input-accent: var(--color-secondary);
   --color-form-select-accent: var(--color-primary);
-  /* exception! */
   --color-form-input-outline: var(--color-primary);
 }
 

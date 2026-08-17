@@ -95,7 +95,7 @@ fieldset,
 input,
 select,
 textarea {
-  background: var(--color-form-input);
+  background: var(--color-surface);
   accent-color: var(--color-form-input-accent);
   border-color: var(--color-border);
   color: var(--color-txt);
