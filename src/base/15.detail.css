@@ -32,12 +32,10 @@ details[name]+details[name] {
 /* theme colors */
 
 /* @FEATURE: Setup for the accordion style menu */
-details[name]:has(+ details[name]) {
-  border-bottom-color: var(--color-int-border);
-}
-
 details[name]:has(+ details[name]),
 details[name]+details[name] {
+  border-bottom-color: var(--color-int-border);
+
   &:not([open])>:is(summary) {
     background: var(--color-card);  
     
