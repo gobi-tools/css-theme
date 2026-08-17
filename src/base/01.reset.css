@@ -251,9 +251,7 @@
 .success,
 .error {
   --color-int-txt: var(--color-txt);
-  --color-int-txt-on-dark: var(--color-txt-on-dark);
-  --color-int-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
-
+  
   --color-int-accent-faint: color-mix(in srgb, var(--color-txt) 8%, transparent);
   --color-int-accent-muted: color-mix(in srgb, var(--color-txt) 14%, transparent);
   --color-int-accent-inked: light-dark(color-mix(in oklch, var(--color-txt) 75%, white), color-mix(in oklch, var(--color-txt) 50%, black));

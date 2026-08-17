@@ -31,8 +31,6 @@
 }
 
 .success {
-  --color-int-border: color-mix(in srgb, var(--color-success) 40%, transparent);
-
   --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-success) 20%, transparent),
       color-mix(in srgb, var(--color-success) 45%, transparent));
   --color-int-accent-muted: light-dark(color-mix(in srgb, var(--color-success) 35%, transparent),
@@ -51,8 +49,6 @@
 }
 
 .error {
-  --color-int-border: color-mix(in srgb, var(--color-error) 40%, transparent);
-
   --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
       color-mix(in srgb, var(--color-error) 45%, transparent));
   --color-int-accent-muted: light-dark(color-mix(in srgb, var(--color-error) 35%, transparent),
@@ -71,8 +67,6 @@
 }
 
 .primary {
-  --color-int-border: color-mix(in srgb, var(--color-primary) 40%, transparent);
-
   --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-primary) 20%, transparent),
       color-mix(in srgb, var(--color-primary) 45%, transparent));
   --color-int-accent-muted: light-dark(color-mix(in srgb, var(--color-primary) 35%, transparent),
@@ -91,8 +85,6 @@
 }
 
 .secondary {
-  --color-int-border: color-mix(in srgb, var(--color-secondary) 40%, transparent);
-
   --color-int-accent-faint: light-dark(color-mix(in srgb, var(--color-secondary) 20%, transparent),
       color-mix(in srgb, var(--color-secondary) 45%, transparent));
   --color-int-accent-muted: light-dark(color-mix(in srgb, var(--color-secondary) 35%, transparent),
@@ -164,7 +156,7 @@
   &.inverted {
     background-color: var(--color-int-primary) !important;
     border-color: var(--color-int-primary) !important;
-    color: var(--color-int-txt-on-dark) !important;
+    color: var(--color-txt-on-dark) !important;
   }
 }
 
@@ -172,7 +164,7 @@
   &.inverted {
     background-color: var(--color-int-secondary) !important;
     border-color: var(--color-int-secondary) !important;
-    color: var(--color-int-txt-on-dark) !important;
+    color: var(--color-txt-on-dark) !important;
   }
 }
 
@@ -180,7 +172,7 @@
   &.inverted {
     background-color: var(--color-int-success) !important;
     border-color: var(--color-int-success) !important;
-    color: var(--color-int-txt-on-dark) !important;
+    color: var(--color-txt-on-dark) !important;
   }
 }
 
@@ -188,6 +180,6 @@
   &.inverted {
     background-color: var(--color-int-error) !important;
     border-color: var(--color-int-error) !important;
-    color: var(--color-int-txt-on-dark) !important;
+    color: var(--color-txt-on-dark) !important;
   }
 }
