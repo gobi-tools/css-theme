@@ -198,33 +198,38 @@
    Now the light mode surface is also a bit darker. 
    It's applied to: 
     - tabs bg on mobile
-    + dive & other elements given a semantic class
+    + divs & other elements given a semantic class
     - button[reset] _hover_
     - table cells _hover_
     - form input on _invalid_ 
    */
   --color-surface-hover: light-dark(var(--color-light-8), var(--color-dark-4));
   
+  /**
+   LAYER 3 ??!?: 
+   */
+  --color-surface-blocks: light-dark(var(--color-light-8-5), var(--color-dark-4));
+
   /** define surfaces and order them by colourfullness */
   /** 
-    0)[surface] I need a surface for the normal webpage background 
+    0)[L0][surface] I need a surface for the normal webpage background 
       - with a normal variant: 
         - webpage backgrounds
         - form input backgrounds
-    1) then one for things that have normal bg in light mode, fainter color in dark mode;
+    1)[L1] then one for things that have normal bg in light mode, fainter color in dark mode;
       - cards 
       - details content
       - form fieldsets 
+    2)[L2] then one for a light surface, such as 
+      - mobile tabs when selected
+      - divs & other elements when given a semantic class 
+    3)[L3] then one for big blocks, like 
+      - blockquotes 
+      - code blocks
     4) then one that signals the header of something 
       - header for cards 
       - header for details content
         + a hovering variant  
-    3) then one for big blocks, like 
-      - blockquotes 
-      - code blocks
-    2) then one for a light surface, such as 
-      - mobile tabs when selected
-      - divs & other elements when given a semantic class 
     5) then one for darker surfaces, such as
       - mark
       - code
@@ -261,8 +266,6 @@
   /** tags & code */
   --color-code: light-dark(var(--color-light-6), var(--color-dark-2));
 
-  /** blockquotes */
-  --color-block: light-dark(var(--color-light-8-5), var(--color-dark-4));
   --color-stroke: light-dark(var(--color), var(--color-light-3));
 
   /** cards & card headers, form fieldsets */
