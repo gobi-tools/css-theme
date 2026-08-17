@@ -38,8 +38,6 @@
 :root {
   --color-bg: light-dark(#ffffff, #0f1a3a);
   --color-base: light-dark(#858585, #5b75b8);
-  /* --color-txt: light-dark(#212121, #e7e5ea);
-  --color-txt-on-dark: #ffffff; */
   --color-primary: #005cd6;
   --color-secondary: #7b7b7b;
 
