@@ -235,18 +235,16 @@
   /** text */
   --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
   --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
-  
-  /** strokes */
-  --color-stroke: light-dark(var(--color), var(--color-light-3));
-  /** border (borders for all sorts of elements) */
-  --color-border: light-dark(var(--color-light-6), var(--color-dark-2));
-
-  /** form select */
+  /** forms */
+  --color-form-input: var(--color-bg);
   --color-form-select: light-dark(var(--color-light-8), var(--color-bg));
   /* exceptions! */
   --color-form-input-accent: var(--color-secondary);
-  --color-form-select-accent: var(--color-primary);
   --color-form-input-outline: var(--color-primary);
+  --color-form-select-accent: var(--color-primary);
+  /** strokes & borders */
+  --color-border: light-dark(var(--color-light-6), var(--color-dark-2));
+  --color-stroke: light-dark(var(--color), var(--color-light-3));
 }
 
 :root,
