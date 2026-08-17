@@ -52,7 +52,7 @@ menu>li[aria-selected="true"] {
     padding-left: calc(var(--space-m) - var(--border-width-vert-tabs)) !important;
     border-left-width: var(--border-width-vert-tabs);
     border-left-style: solid;
-    background: var(--color-tabs);
+    background: var(--color-surface-hover);
     border-left-color: var(--color-link-hover);
   }
 }
