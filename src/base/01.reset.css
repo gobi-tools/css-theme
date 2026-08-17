@@ -251,17 +251,11 @@
 .success,
 .error {
   --color-int-accent-faint: color-mix(in srgb, var(--color-txt) 8%, transparent);
-  --color-int-accent-muted: color-mix(in srgb, var(--color-txt) 14%, transparent);
-  --color-int-accent-inked: light-dark(color-mix(in oklch, var(--color-txt) 75%, white), color-mix(in oklch, var(--color-txt) 50%, black));
-
-  --color-int-primary: var(--color-primary);
-  --color-int-primary-hover: color-mix(in oklab, var(--color-primary) 90%, light-dark(black, white));
   --color-int-primary-faint: color-mix(in srgb, var(--color-primary) 8%, transparent);
-  --color-int-primary-inked: light-dark(color-mix(in oklch, var(--color-primary) 85%, black), color-mix(in oklch, var(--color-primary) 35%, white));
-
-  --color-int-secondary: var(--color-secondary);
   --color-int-secondary-faint: color-mix(in srgb, var(--color-secondary) 8%, transparent);
   
+  --color-int-primary: var(--color-primary);
+  --color-int-secondary: var(--color-secondary);
   --color-int-success: var(--color-success);
   --color-int-error: var(--color-error);
 }
