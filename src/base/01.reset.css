@@ -146,13 +146,9 @@
   /* --color-secondary: __THEME__ */
   /* --color-success: __THEME__ */
   /* --color-error: __THEME__ */
-
-  /* --color-base: light-dark(#928b9c, #7d748c); */
 }
 
 * {
-  /* --color-base: color-mix(in srgb, var(--color-txt) 50%, transparent); */
-
   --color-light-10: color-mix(in oklch, var(--color), white 95%);
   --color-light-9: color-mix(in oklch, var(--color), white 90%);
   --color-light-8-5: color-mix(in oklch, var(--color), white 85%);
@@ -223,22 +219,6 @@
 :root,
 .success,
 .error {
-  /*
-  --color-bg: __THEME__
-
-  --color-txt: __THEME__
-  --color-on-dark: __THEME__
-  
-  --color-primary: __THEME__
-  --color-secondary: __THEME__
-
-  --color-success: __THEME__
-  --color-error: __THEME__
-  */
-
-  /* --color-int-bg: var(--color-bg); */
-  /* --color-int-bg-hover: color-mix(in oklab, var(--color-bg) 90%, light-dark(black, white)); */
-
   --color-int-txt: var(--color-txt);
   --color-int-txt-on-dark: var(--color-txt-on-dark);
   --color-int-border: color-mix(in srgb, var(--color-txt) 14%, transparent);
