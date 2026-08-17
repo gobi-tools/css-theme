@@ -1,17 +1,14 @@
 /* theme colors */
 
 :is(input, textarea)[value]:not(:focus):invalid {
-  border-color: var(--color-error);
-  /* same as --color-int-accent-faint for error */
-  background: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
-          color-mix(in srgb, var(--color-error) 45%, transparent));
+  --color: var(--color-error);
+  background: var(--color-surface-hover);
+  border-color: var(--color);
 }
 
 :is(input, textarea):not(:placeholder-shown):not(:focus):invalid {
-  border-color: var(--color-error);
-  /* same as --color-int-accent-faint for error */
-  background: light-dark(color-mix(in srgb, var(--color-error) 20%, transparent),
-          color-mix(in srgb, var(--color-error) 45%, transparent));
+  --color: var(--color-error);
+  background: var(--color-surface-hover);
 }
 
 :is(input, textarea):not(:placeholder-shown):valid + .error,
@@ -26,6 +23,7 @@
 }
 
 :is(input, textarea):placeholder-shown:not(:focus) {
+  --color: var(--color-base) !important;
   background: var(--color-bg) !important;
   border-color: var(--color-border) !important;
 }
