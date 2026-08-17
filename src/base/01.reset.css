@@ -174,8 +174,32 @@
   --color-dark-10: color-mix(in oklch, var(--color), black 95%);
 
   /** colors ordered from lightest to most colourfull */
+
+  /**
+   LAYER 0: 
+   This is the basic background colour of a website; 
+   The usesr neesd to set this value.
+   It's applied to: 
+    - body
+    - button[type=reset]
+   The *hover* version is applied to: 
+    - button[reset]
+    - table cells 
+    - form input[invalid] 
+   */ 
   --color-surface: var(--color-bg); 
   --color-surface-hover: light-dark(var(--color-light-8), var(--color-dark-4));
+
+  /**
+   LAYER 1: 
+   This is very similar to the basic surface; 
+   The only difference is in dark mode the color pops out a bit.
+   It's applied to:
+    - cards
+    - details
+    - form fieldsets
+   */
+  --color-surface-subtle: light-dark(var(--color-bg), var(--color-dark-4));
 
   /** define surfaces and order them by colourfullness */
   /** 
@@ -242,7 +266,6 @@
   --color-stroke: light-dark(var(--color), var(--color-light-3));
 
   /** cards & card headers, form fieldsets */
-  --color-card: light-dark(var(--color-bg), var(--color-dark-4));
   --color-head: light-dark(var(--color-light-5), var(--color-dark-3));
   --color-head-hover: light-dark(var(--color-light-3), var(--color-dark-2));
 

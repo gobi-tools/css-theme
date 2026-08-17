@@ -37,7 +37,7 @@ details[name]+details[name] {
   border-bottom-color: var(--color-border);
 
   &:not([open])>:is(summary) {
-    background: var(--color-card);  
+    background: var(--color-surface-subtle);  
     
     &:hover {
       background: var(--color-head-hover);

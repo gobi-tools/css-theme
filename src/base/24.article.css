@@ -55,7 +55,7 @@ article {
 /* theme colors */
 
 article {
-  background: var(--color-card);  
+  background: var(--color-surface-subtle);  
   border-color: var(--color-border);
 }
 

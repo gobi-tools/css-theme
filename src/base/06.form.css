@@ -121,6 +121,6 @@ textarea:focus {
 }
 
 fieldset {
-  background: var(--color-card);
+  background: var(--color-surface-subtle);
   border-color: var(--color-border);
 }
