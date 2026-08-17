@@ -50,7 +50,7 @@
 button,
 input[type=submit],
 blockquote {
-  border-color: var(--color-int-primary-inked);
+  border-color: light-dark(var(--color-dark-2), var(--color-light-3)) !important;
 }
 
 pre>code {
