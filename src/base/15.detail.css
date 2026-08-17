@@ -37,10 +37,10 @@ details[name]+details[name] {
   border-bottom-color: var(--color-border);
 
   &:not([open])>:is(summary) {
-    background: var(--color-surface-subtle);  
+    background: var(--color-surface-faint);  
     
     &:hover {
-      background: var(--color-surface-medium-dark);
+      background: var(--color-surface-dark);
     }
   }
 }

@@ -55,7 +55,7 @@ article {
 /* theme colors */
 
 article {
-  background: var(--color-surface-subtle);  
+  background: var(--color-surface-faint);  
   border-color: var(--color-border);
 }
 
@@ -65,6 +65,6 @@ article>details>summary {
   background: var(--color-surface-medium);
   
   &:hover {
-    background: var(--color-surface-medium-dark);
+    background: var(--color-surface-dark);
   }
 }

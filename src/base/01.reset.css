@@ -176,22 +176,22 @@
   /** colors ordered from lightest to most colourfull */
 
   /**
-   LAYER 0: Basic background colour of a website.
+   SURFACE 0: Basic background colour of a website.
     - body
     - button[type=reset]
    */
   --color-surface: var(--color-bg);
 
   /**
-   LAYER 1: Very subtle light color applied on top of the background
+   SURFACE 1: Very faintest --color applied on top of the background
     - cards
     - details
     - form fieldsets
    */
-  --color-surface-subtle: light-dark(var(--color-light-10), var(--color-dark-4));
+  --color-surface-faint: light-dark(var(--color-light-10), var(--color-dark-4));
   
   /**
-   LAYER 2: More presence on the light colour
+   SURFACE 2: A light --color, darker than --faint 
    - blockquotes 
    - code blocks
    - [selected] tabs bacground on mobile
@@ -203,7 +203,7 @@
 
 
   /** 
-   LAYER 3: Slighlty darker elements to stand out against "light" elements
+   SURFACE 3: A medium --color, darker than --light
     - mark & code & kbd 
     - cards headers
     - details summary 
@@ -211,53 +211,13 @@
   --color-surface-medium: light-dark(var(--color-light-6), var(--color-dark-2));
 
   /**
-   LAYER 4 An offshoot of the medium surface, which is just used for hovering 
+   SURFACE 4 The strongest --color for surfaces, darker than --medium
     - [hover] cards header
     - [hover] details summary 
    */
-  --color-surface-medium-dark: light-dark(var(--color-light-3), var(--color-dark-1));
+  --color-surface-dark: light-dark(var(--color-light-3), var(--color-dark-1));
 
-  /** define surfaces and order them by colourfullness */
-  /** 
-    0)[L0][surface] I need a surface for the normal webpage background 
-      - with a normal variant: 
-        - webpage backgrounds
-        - form input backgrounds
-    1)[L1] then one for things that have normal bg in light mode, fainter color in dark mode;
-      - cards 
-      - details content
-      - form fieldsets 
-    2)[L2] then one for a light surface, such as 
-      - mobile tabs when selected
-      - divs & other elements when given a semantic class 
-    3)[L3] then one for big blocks, like 
-      - blockquotes 
-      - code blocks
-    4) then one that signals the header of something 
-      - header for cards 
-      - header for details content
-        + a hovering variant  
-    5) then one for darker surfaces, such as
-      - mark
-      - code
-    6) then one mid dark surface, such as for 
-      - form select backgrounds
-    7) then one for a full surface, such as 
-      - buttons
-      - form submit backgrounds
-      - divs & other elements when given a sematic inverted class 
-        + a hovering variant
-
-    8) then a set of really dark foregrounds colors: 
-     - txt
-     - txt-on-dark
-     - link + :hover 
-     - border 
-     - stroke 
-     - accent   (for forms)
-     - outline  (for forms)
-  */
-
+  
   /** text */
   --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
   --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
