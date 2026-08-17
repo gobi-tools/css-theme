@@ -30,104 +30,22 @@
   --color-form-input-outline: var(--color-secondary) !important;
 }
 
-.success {
-  --color-int-primary: var(--color-success);
-  --color-int-secondary: var(--color-success);
-}
-
-.error {
-  --color-int-primary: var(--color-error);
-  --color-int-secondary: var(--color-error);
-}
-
-.primary {
-  --color-int-primary: var(--color-primary);
-  --color-int-secondary: var(--color-primary);
-}
-
-.secondary {
-  --color-int-primary: var(--color-secondary);
-  --color-int-secondary: var(--color-secondary);
-}
-
 :is(div,
   section, main, aside, header, footer,
-  nav, menu).primary {
-  background-color: var(--color-int-primary-faint);
-}
-
-:is(div,
-  section, main, aside, header, footer,
-  nav, menu).secondary {
-  background-color: var(--color-int-secondary-faint);
-}
-
-:is(div,
-  section, main, aside, header, footer,
-  nav, menu).success {
-  --color-primary: var(--color-int-success);
-  background-color: var(--color-int-primary-faint);
-}
-
-:is(div,
-  section, main, aside, header, footer,
-  nav, menu).error {
-  --color-primary: var(--color-int-error);
-  background-color: var(--color-int-primary-faint);
+  nav, menu):is(.primary, .secondary, .success, .error) {
+  background-color: var(--color-surface-light);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins, summary).primary {
-  color: var(--color-int-primary);
+  abbr, cite, q, samp, sub, sub, time, del, ins, summary):is(.primary, .secondary, .success, .error) {
+  color: var(--color);
 }
 
-:is(h1, h2, h3, h4, h5, h6, p, hgroup,
-  span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins, summary).secondary {
-  color: var(--color-int-secondary);
-}
-
-:is(h1, h2, h3, h4, h5, h6, p, hgroup,
-  span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins, summary).success {
-  color: var(--color-int-success);
-}
-
-:is(h1, h2, h3, h4, h5, h6, p, hgroup,
-  span, strong, em, b, i, small, label, legend,
-  abbr, cite, q, samp, sub, sub, time, del, ins, summary).error {
-  color: var(--color-int-error);
-}
-
-.primary {
+:is(.primary, .secondary, .success, .error) {
   &.inverted {
-    background-color: var(--color-int-primary) !important;
-    border-color: var(--color-int-primary) !important;
-    color: var(--color-txt-on-dark) !important;
-  }
-}
-
-.secondary {
-  &.inverted {
-    background-color: var(--color-int-secondary) !important;
-    border-color: var(--color-int-secondary) !important;
-    color: var(--color-txt-on-dark) !important;
-  }
-}
-
-.success {
-  &.inverted {
-    background-color: var(--color-int-success) !important;
-    border-color: var(--color-int-success) !important;
-    color: var(--color-txt-on-dark) !important;
-  }
-}
-
-.error {
-  &.inverted {
-    background-color: var(--color-int-error) !important;
-    border-color: var(--color-int-error) !important;
+    background-color: var(--color) !important;
+    border-color: var(--color) !important;
     color: var(--color-txt-on-dark) !important;
   }
 }
