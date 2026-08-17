@@ -149,6 +149,7 @@
 }
 
 * {
+  /* color shades based on the base color */ 
   --color-light-10: color-mix(in oklch, var(--color), white 95%);
   --color-light-9: color-mix(in oklch, var(--color), white 90%);
   --color-light-8-5: color-mix(in oklch, var(--color), white 85%);
@@ -171,6 +172,10 @@
   --color-dark-8: color-mix(in oklch, var(--color), black 80%);
   --color-dark-9: color-mix(in oklch, var(--color), black 90%);
   --color-dark-10: color-mix(in oklch, var(--color), black 95%);
+
+  /** colors ordered from lightest to most colourfull */
+  --color-surface: var(--color-bg); 
+  --color-surface-hover: light-dark(var(--color-light-8), var(--color-dark-4));
 
   /** define surfaces and order them by colourfullness */
   /** 
@@ -228,10 +233,7 @@
   /** buttons: full */
   --color-button: var(--color);
   --color-button-hover: light-dark(var(--color-dark-2), var(--color-light-2));
-  /** buttons with type reset, table cells */
-  --color-surface: var(--color-bg);
-  --color-surface-hover: light-dark(var(--color-light-8), var(--color-dark-4));
-
+  
   /** tags & code */
   --color-code: light-dark(var(--color-light-6), var(--color-dark-2));
 

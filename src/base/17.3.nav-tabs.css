@@ -18,7 +18,7 @@ menu>li {
   --color: var(--color-primary);
   border-bottom-width: var(--border-width-horz-tabs);
   border-bottom-style: solid;
-  border-bottom-color: var(--color-bg);
+  border-bottom-color: var(--color-surface);
 }
 
 menu>li[aria-selected="true"] {

@@ -64,7 +64,7 @@ header:has(nav > menu):not(.disable-mobile) {
     bottom: 0;
     justify-content: center;
     gap: 0;
-    background: var(--color-bg);
+    background: var(--color-surface);
     border-top: 1px solid var(--color-border);
   }
 

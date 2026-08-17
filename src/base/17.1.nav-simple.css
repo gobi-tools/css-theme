@@ -48,8 +48,8 @@ nav li:has(> :is(ul, ol))>a::after {
 /* theme colors */
 
 nav :is(ul, ol)>li>:is(ul, ol) {
-  background: var(--color-bg);
-  border-color: var(--color-txt);
+  background: var(--color-surface);
+  border-color: var(--color-border);
 }
 
 /* theme style */
