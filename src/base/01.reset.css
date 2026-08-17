@@ -211,26 +211,26 @@
       - with a normal variant: 
         - webpage backgrounds
         - form input backgrounds
-    1)[0] then one for things that have normal bg in light mode, fainter color in dark mode;
+    1) then one for things that have normal bg in light mode, fainter color in dark mode;
       - cards 
       - details content
       - form fieldsets 
-    4)[3] then one that signals the header of something 
+    4) then one that signals the header of something 
       - header for cards 
       - header for details content
         + a hovering variant  
-    3)[2] then one for big blocks, like 
+    3) then one for big blocks, like 
       - blockquotes 
       - code blocks
-    2)[1] then one for a light surface, such as 
+    2) then one for a light surface, such as 
       - mobile tabs when selected
       - divs & other elements when given a semantic class 
-    5)[4] then one for darker surfaces, such as
+    5) then one for darker surfaces, such as
       - mark
       - code
-    6)[medium] then one mid dark surface, such as for 
+    6) then one mid dark surface, such as for 
       - form select backgrounds
-    7)[full] then one for a full surface, such as 
+    7) then one for a full surface, such as 
       - buttons
       - form submit backgrounds
       - divs & other elements when given a sematic inverted class 
