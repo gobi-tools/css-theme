@@ -40,7 +40,7 @@ details[name]+details[name] {
     background: var(--color-surface-subtle);  
     
     &:hover {
-      background: var(--color-surface-mediun-dark);
+      background: var(--color-surface-medium-dark);
     }
   }
 }

@@ -65,6 +65,6 @@ article>details>summary {
   background: var(--color-surface-medium);
   
   &:hover {
-    background: var(--color-surface-mediun-dark);
+    background: var(--color-surface-medium-dark);
   }
 }
