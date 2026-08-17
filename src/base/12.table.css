@@ -66,5 +66,5 @@ tfoot>tr>td {
 }
 
 tr:hover {
-  background: var(--color-surface-hover);
+  background: var(--color-surface-light);
 }

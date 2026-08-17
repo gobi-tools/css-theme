@@ -2,13 +2,13 @@
 
 :is(input, textarea)[value]:not(:focus):invalid {
   --color: var(--color-error);
-  background: var(--color-surface-hover);
+  background: var(--color-surface-light);
   border-color: var(--color);
 }
 
 :is(input, textarea):not(:placeholder-shown):not(:focus):invalid {
   --color: var(--color-error);
-  background: var(--color-surface-hover);
+  background: var(--color-surface-light);
 }
 
 :is(input, textarea):not(:placeholder-shown):valid + .error,

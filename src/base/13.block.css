@@ -43,7 +43,7 @@ pre>code {
 /* theme colors */
 
 blockquote {
-  background: var(--color-surface-blocks);
+  background: var(--color-surface-light);
   border-color: var(--color-stroke);
 }
 
@@ -52,6 +52,6 @@ pre {
 }
 
 pre>code {
-  background: var(--color-surface-blocks);
+  background: var(--color-surface-light);
   border-color: var(--color-stroke);
 }

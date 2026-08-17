@@ -58,7 +58,7 @@ code,
 kbd,
 var,
 mark {
-  background: var(--color-code);
+  background: var(--color-surface-medium);
 }
 
 kbd>*,

@@ -62,9 +62,9 @@ article {
 /* @FEATURE: Open/Close nice looking panel  */
 article>header:first-child,
 article>details>summary {
-  background: var(--color-head);
+  background: var(--color-surface-medium);
   
   &:hover {
-    background: var(--color-head-hover);
+    background: var(--color-surface-mediun-dark);
   }
 }

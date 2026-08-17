@@ -149,7 +149,7 @@
 }
 
 * {
-  /* color shades based on the base color */ 
+  /* color shades based on the base color */
   --color-light-10: color-mix(in oklch, var(--color), white 95%);
   --color-light-9: color-mix(in oklch, var(--color), white 90%);
   --color-light-8-5: color-mix(in oklch, var(--color), white 85%);
@@ -177,38 +177,45 @@
 
   /**
    LAYER 0: Basic background colour of a website.
-   It's applied to: 
     - body
     - button[type=reset]
-   */ 
-  --color-surface: var(--color-bg); 
-  
+   */
+  --color-surface: var(--color-bg);
+
   /**
-   LAYER 1: Very similar to the basic surface.
-   Is in dark mode the color pops out a bit.
-   It's applied to:
+   LAYER 1: Very subtle light color applied on top of the background
     - cards
     - details
     - form fieldsets
    */
-  --color-surface-subtle: light-dark(var(--color-bg), var(--color-dark-4));
-
-  /**
-   LAYER 2: Very siliar to the previous surface. 
-   Now the light mode surface is also a bit darker. 
-   It's applied to: 
-    - tabs bg on mobile
-    + divs & other elements given a semantic class
-    - button[reset] _hover_
-    - table cells _hover_
-    - form input on _invalid_ 
-   */
-  --color-surface-hover: light-dark(var(--color-light-8), var(--color-dark-4));
+  --color-surface-subtle: light-dark(var(--color-light-10), var(--color-dark-4));
   
   /**
-   LAYER 3 ??!?: 
+   LAYER 2 More presence on the light colour
+   - blockquotes 
+   - code blocks
+   - [selected] tabs bacground on mobile
+   - [hover] button with type reset 
+   - [hover] table cells 
+   - [invalid] form input on  
    */
-  --color-surface-blocks: light-dark(var(--color-light-8-5), var(--color-dark-4));
+  --color-surface-light: light-dark(var(--color-light-8), var(--color-dark-4));
+
+
+  /** 
+   LAYER 3 Slighlty darker elements to stand out against "light" elements
+    - mark & code & kbd 
+    - cards headers
+    - details summary 
+  */
+  --color-surface-medium: light-dark(var(--color-light-6), var(--color-dark-2));
+
+  /**
+   LAYER 4 An offshoot of the medium surface, which is just used for hovering 
+    - [hover] cards header
+    - [hover] details summary 
+   */
+  --color-surface-mediun-dark: light-dark(var(--color-light-3), var(--color-dark-1));
 
   /** define surfaces and order them by colourfullness */
   /** 
@@ -249,8 +256,8 @@
      - stroke 
      - accent   (for forms)
      - outline  (for forms)
-  */ 
-  
+  */
+
   /** text */
   --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
   --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
@@ -262,15 +269,12 @@
   /** buttons: full */
   --color-button: var(--color);
   --color-button-hover: light-dark(var(--color-dark-2), var(--color-light-2));
-  
+
   /** tags & code */
-  --color-code: light-dark(var(--color-light-6), var(--color-dark-2));
 
   --color-stroke: light-dark(var(--color), var(--color-light-3));
 
   /** cards & card headers, form fieldsets */
-  --color-head: light-dark(var(--color-light-5), var(--color-dark-3));
-  --color-head-hover: light-dark(var(--color-light-3), var(--color-dark-2));
 
   /** border (borders for all sorts of elements) */
   --color-border: light-dark(var(--color-light-6), var(--color-dark-2));
@@ -282,7 +286,7 @@
   --color-form-select: light-dark(var(--color-light-8), var(--color-bg));
   /* exception! */
   --color-form-select-accent: var(--color-primary);
-  /* exception! */ 
+  /* exception! */
   --color-form-input-outline: var(--color-primary);
 }
 
