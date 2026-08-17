@@ -34,7 +34,7 @@ details[name]+details[name] {
 /* @FEATURE: Setup for the accordion style menu */
 details[name]:has(+ details[name]),
 details[name]+details[name] {
-  border-bottom-color: var(--color-int-border);
+  border-bottom-color: var(--color-border);
 
   &:not([open])>:is(summary) {
     background: var(--color-card);  
