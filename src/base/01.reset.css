@@ -211,34 +211,35 @@
   --color-surface-medium: light-dark(var(--color-light-6), var(--color-dark-2));
 
   /**
-   SURFACE 4 The strongest --color for surfaces, darker than --medium
+   SURFACE 4: The strongest --color for surfaces, darker than --medium
     - [hover] cards header
     - [hover] details summary 
    */
   --color-surface-dark: light-dark(var(--color-light-3), var(--color-dark-1));
 
-  
-  /** text */
-  --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
-  --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
+  /**
+   ELEMENTS: These are colors for various elements that the user can interact with or
+   that he can read, usually from the more neutral --color to darkest
+    - buttons
+    - links (& nav)
+    - text
+   */
 
+  /** buttons */
+  --color-button: var(--color);
+  --color-button-hover: light-dark(var(--color-dark-2), var(--color-light-2));
   /** links */
   --color-link: light-dark(var(--color-dark-2), var(--color-light-6));
   --color-link-hover: light-dark(var(--color-dark-7), var(--color-light-8));
-
-  /** buttons: full */
-  --color-button: var(--color);
-  --color-button-hover: light-dark(var(--color-dark-2), var(--color-light-2));
-
-  /** tags & code */
-
+  /** text */
+  --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
+  --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
+  
+  /** strokes */
   --color-stroke: light-dark(var(--color), var(--color-light-3));
-
-  /** cards & card headers, form fieldsets */
-
   /** border (borders for all sorts of elements) */
   --color-border: light-dark(var(--color-light-6), var(--color-dark-2));
-
+  
   /** form select */
   --color-form-input: var(--color-bg);
   /* exception! */
