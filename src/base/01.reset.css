@@ -137,18 +137,18 @@
   --border-radius-img: 0px;
 }
 
-/* theme colors */
 
-:root {
+* {
+  /**
+   THEME: colors set by the user 
+   */
   /* --color-base: __THEME__ */
   /* --color-bg: __THEME__ */
   /* --color-primary: __THEME__ */
   /* --color-secondary: __THEME__ */
   /* --color-success: __THEME__ */
   /* --color-error: __THEME__ */
-}
 
-* {
   /* color shades based on the base color */
   --color-light-10: color-mix(in oklch, var(--color), white 95%);
   --color-light-9: color-mix(in oklch, var(--color), white 90%);
@@ -245,18 +245,6 @@
   /** strokes & borders */
   --color-border: light-dark(var(--color-light-6), var(--color-dark-2));
   --color-stroke: light-dark(var(--color), var(--color-light-3));
-}
-
-:root,
-.success,
-.error {
-  --color-int-primary-faint: color-mix(in srgb, var(--color-primary) 8%, transparent);
-  --color-int-secondary-faint: color-mix(in srgb, var(--color-secondary) 8%, transparent);
-  
-  --color-int-primary: var(--color-primary);
-  --color-int-secondary: var(--color-secondary);
-  --color-int-success: var(--color-success);
-  --color-int-error: var(--color-error);
 }
 
 /* base */
