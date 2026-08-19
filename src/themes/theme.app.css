@@ -36,19 +36,23 @@
 }
 
 :root {
-  --color-bg: light-dark(#ffffff, #0f1a3a);
-  --color-base: light-dark(#858585, #5b75b8);
-  --color-primary: #005cd6;
-  --color-secondary: #7b7b7b;
+  --color-base: light-dark(#858585, #747990);
+  --color-primary: light-dark(#1465e9, #2d77ed);
+  --color-secondary: #238cd1;
 
   --color-success: #23b157;
   --color-error: #ef4444;
 }
 
 button,
-input[type=submit],
-blockquote {
-  border-color: light-dark(var(--color-dark-2), var(--color-light-3)) !important;
+input[type=submit] {
+  background: light-dark(var(--color-button), var(--color-dark-4));
+  border-color: light-dark(var(--color-dark-2), var(--color-light-3));
+}
+
+button:hover,
+input[type=submit]:hover {
+  border-color: light-dark(var(--color-dark-4), var(--color-light-4));
 }
 
 pre>code {

@@ -178,9 +178,9 @@
   /**
    SURFACE 0: Basic background colour of a website.
     - body
-    - button[type=reset]
    */
-  --color-surface: var(--color-bg);
+  /* --color-surface: var(--color-bg); */
+  --color-surface: light-dark(var(--color-light-10), var(--color-dark-6));
 
   /**
    SURFACE 1: Very faintest --color applied on top of the background
@@ -236,8 +236,8 @@
   --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
   --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
   /** forms */
-  --color-form-input: var(--color-bg);
-  --color-form-select: light-dark(var(--color-light-8), var(--color-bg));
+  --color-form-input: var(--color-surface);
+  --color-form-select: light-dark(var(--color-light-8), var(--color-surface));
   /* exceptions! */
   --color-form-input-accent: var(--color-secondary);
   --color-form-input-outline: var(--color-primary);

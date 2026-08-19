@@ -80,7 +80,7 @@ input[type=submit]:hover {
 
 button[type=reset],
 input[type=reset] {
-  background: var(--color-surface);
+  background: transparent;
   border-color: var(--color-button);
   color: var(--color-txt);
 }
