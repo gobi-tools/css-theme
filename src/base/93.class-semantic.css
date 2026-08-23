@@ -32,7 +32,7 @@
 
 :is(div,
   section, main, aside, header, footer,
-  nav, menu):is(.primary, .secondary, .success, .error) {
+  nav):is(.primary, .secondary, .success, .error) {
   background-color: var(--color-surface-light);
 }
 
