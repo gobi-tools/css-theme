@@ -47,5 +47,10 @@
     background-color: var(--color) !important;
     border-color: var(--color) !important;
     color: var(--color-txt-on-dark) !important;
+
+    & * {
+      color: var(--color-txt-on-dark);
+    }
+    
   }
 }

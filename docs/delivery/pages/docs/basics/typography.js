@@ -3886,7 +3886,7 @@ function Colors({ theme }) {
           /* @__PURE__ */ jsxs39("article", { className: `${colorClass} inverted`, children: [
             /* @__PURE__ */ jsxs39("hgroup", { children: [
               /* @__PURE__ */ jsx39("h4", { children: "Enterprise" }),
-              /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("b", { children: "Contact us" }) })
+              /* @__PURE__ */ jsx39("p", { children: /* @__PURE__ */ jsx39("b", { children: /* @__PURE__ */ jsx39("a", { href: "", children: "Contact us" }) }) })
             ] }),
             /* @__PURE__ */ jsx39("p", { children: "Includes" }),
             /* @__PURE__ */ jsxs39("ul", { children: [

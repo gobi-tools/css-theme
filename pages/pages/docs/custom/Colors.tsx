@@ -74,7 +74,7 @@ export default function Colors({ theme }) {
               <article className={`${colorClass} inverted`}>
                 <hgroup>
                   <h4>Enterprise</h4>
-                  <p><b>Contact us</b></p>
+                  <p><b><a href="">Contact us</a></b></p>
                 </hgroup>
                 <p>Includes</p>
                 <ul>
