@@ -46,7 +46,7 @@
 
 button,
 input[type=submit] {
-  background: light-dark(var(--color-button), var(--color-dark-4));
+  background: light-dark(var(--color-surface-strong), var(--color-dark-4));
   border-color: light-dark(var(--color-dark-2), var(--color-light-3));
 }
 

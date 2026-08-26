@@ -67,21 +67,21 @@ input[type="submit"] {
 
 button,
 input[type=submit] {
-  background: var(--color-button);
-  border-color: var(--color-button);
+  background: var(--color-surface-strong);
+  border-color: var(--color-surface-strong);
   color: var(--color-txt-on-dark);
 }
 
 button:hover,
 input[type=submit]:hover {
-  background: var(--color-button-hover);
-  border-color: var(--color-button-hover);
+  background: var(--color-surface-strongest);
+  border-color: var(--color-surface-strongest);
 }
 
 button[type=reset],
 input[type=reset] {
   background: transparent;
-  border-color: var(--color-button);
+  border-color: var(--color-surface-strong);
   color: var(--color-txt);
 }
 

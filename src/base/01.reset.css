@@ -211,11 +211,23 @@
   --color-surface-medium: light-dark(var(--color-light-6), var(--color-dark-2));
 
   /**
-   SURFACE 4: The strongest --color for surfaces, darker than --medium
+   SURFACE 4: A dark --color for surfaces, darker than --medium
     - [hover] cards header
     - [hover] details summary 
    */
   --color-surface-dark: light-dark(var(--color-light-3), var(--color-dark-1));
+
+  /**
+   SURFACE 5: Even stronger, used for but action elements, stronger than --dark
+   - button
+   */
+  --color-surface-strong: var(--color);
+
+  /**
+   SURFACE 6: the darkest surface
+    - [hover] button
+   */
+  --color-surface-strongest: light-dark(var(--color-dark-2), var(--color-light-2));
 
   /**
    ELEMENTS: These are colors for various elements that the user can interact with or
@@ -226,9 +238,6 @@
     - form inputs
    */
 
-  /** buttons */
-  --color-button: var(--color);
-  --color-button-hover: light-dark(var(--color-dark-2), var(--color-light-2));
   /** links */
   --color-link: light-dark(var(--color-dark-2), var(--color-light-6));
   --color-link-hover: light-dark(var(--color-dark-7), var(--color-light-8));
@@ -244,7 +253,6 @@
   --color-form-select-accent: var(--color-primary);
   /** strokes & borders */
   --color-border: light-dark(var(--color-light-6), var(--color-dark-2));
-  --color-stroke: light-dark(var(--color), var(--color-light-3));
 }
 
 /* base */
