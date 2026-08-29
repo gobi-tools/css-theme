@@ -137,124 +137,99 @@
   --border-radius-img: 0px;
 }
 
-
 * {
   /**
    THEME: colors set by the user 
    */
   /* --color-base: __THEME__ */
-  /* --color-bg: __THEME__ */
   /* --color-primary: __THEME__ */
   /* --color-secondary: __THEME__ */
   /* --color-success: __THEME__ */
   /* --color-error: __THEME__ */
 
-  /* color shades based on the base color */
-  --color-light-10: color-mix(in oklch, var(--color), white 95%);
-  --color-light-9: color-mix(in oklch, var(--color), white 90%);
-  --color-light-8-5: color-mix(in oklch, var(--color), white 85%);
-  --color-light-8: color-mix(in oklch, var(--color), white 80%);
-  --color-light-7: color-mix(in oklch, var(--color), white 70%);
-  --color-light-6: color-mix(in oklch, var(--color), white 60%);
-  --color-light-5: color-mix(in oklch, var(--color), white 50%);
-  --color-light-4: color-mix(in oklch, var(--color), white 40%);
-  --color-light-3: color-mix(in oklch, var(--color), white 30%);
-  --color-light-2: color-mix(in oklch, var(--color), white 20%);
-  --color-light-1: color-mix(in oklch, var(--color), white 10%);
-  --color: var(--color-base);
-  --color-dark-1: color-mix(in oklch, var(--color), black 10%);
-  --color-dark-2: color-mix(in oklch, var(--color), black 20%);
-  --color-dark-3: color-mix(in oklch, var(--color), black 30%);
-  --color-dark-4: color-mix(in oklch, var(--color), black 40%);
-  --color-dark-5: color-mix(in oklch, var(--color), black 50%);
-  --color-dark-6: color-mix(in oklch, var(--color), black 60%);
-  --color-dark-7: color-mix(in oklch, var(--color), black 70%);
-  --color-dark-8: color-mix(in oklch, var(--color), black 80%);
-  --color-dark-9: color-mix(in oklch, var(--color), black 90%);
-  --color-dark-10: color-mix(in oklch, var(--color), black 95%);
-
-  /** colors ordered from lightest to most colourfull */
-
-  /**
-   SURFACE 0: Basic background colour of a website.
-    - body
-   */
-  --color-surface: light-dark(var(--color-light-10), var(--color-dark-6));
-
-  /**
-   SURFACE 1: Very faintest --color applied on top of the background
-    - cards
-    - details
-    - form fieldsets
-   */
-  --color-surface-faint: light-dark(var(--color-light-10), var(--color-dark-4));
-  
-  /**
-   SURFACE 2: A light --color, darker than --faint 
-   - blockquotes 
-   - code blocks
-   - [selected] tabs bacground on mobile
-   - [hover] button with type reset 
-   - [hover] table cells 
-   - [invalid] form inputs 
-   */
-  --color-surface-light: light-dark(var(--color-light-8), var(--color-dark-4));
-
-  /** 
-   SURFACE 3: A medium --color, darker than --light
-    - mark & code & kbd 
-    - cards headers
-    - details summary 
-  */
-  --color-surface-medium: light-dark(var(--color-light-6), var(--color-dark-2));
-
-  /**
-   SURFACE 4: A dark --color for surfaces, darker than --medium
-    - [hover] cards header
-    - [hover] details summary 
-   */
-  --color-surface-dark: light-dark(var(--color-light-3), var(--color-dark-1));
-
+  --color-surface: var(--color-base);
+  /* button */
   --color-control: var(--color-base);
+  /* [border] button, block, pre>code */
+  --color-borders: var(--color-base);
+  --color-textual: var(--color-base);
+  /* [accent|outline] input, select */
+  --color-outline: var(--color-base);
+  /* accents for inputs */
+  --color-accents: var(--color-base);
+  
+  /* body */
+  --color-surface-light-5: light-dark(
+    color-mix(in oklch, var(--color-surface), white 95%),
+    color-mix(in oklch, var(--color-surface), black 60%)
+  );
+  /* card, detail, fieldset */
+  --color-surface-light-4: light-dark(
+    color-mix(in oklch, var(--color-surface), white 95%),
+    color-mix(in oklch, var(--color-surface), black 40%)
+  );
+  /* bloquotes, pre>code, td, [selected] tabs, [invalid] input */
+  --color-surface-light-3: light-dark(
+    color-mix(in oklch, var(--color-surface), white 80%),
+    color-mix(in oklch, var(--color-surface), black 40%)
+  );
+  /* mark, code, kbd, card>header, summary */
+  --color-surface-light-2: light-dark(
+    color-mix(in oklch, var(--color-surface), white 60%),
+    color-mix(in oklch, var(--color-surface), black 20%)
+  );
+  /* [hover] card>header, summary */
+  --color-surface-light-1: light-dark(
+    color-mix(in oklch, var(--color-surface), white 30%),
+    color-mix(in oklch, var(--color-surface), black 10%)
+  );
 
-  /**
-   SURFACE 5: Even stronger, used for but action elements, stronger than --dark
-   - button
-   - [border] block
-   - [border] pre>code
-   */
-  --color-surface-strong: var(--color);
+  /* input */
+  --color-control-light-5: light-dark(
+    color-mix(in oklch, var(--color-control), white 95%),
+    color-mix(in oklch, var(--color-control), black 60%)
+  );
+  /* select */
+  --color-control-light-4: light-dark(
+    color-mix(in oklch, var(--color-control), white 90%),
+    color-mix(in oklch, var(--color-control), black 60%)
+  );
+  /* [hover] reset button */
+  --color-control-light-3: light-dark(
+    color-mix(in oklch, var(--color-control), white 80%),
+    color-mix(in oklch, var(--color-control), black 40%)
+  );
+  /* [hover] button */
+  --color-control-dark-1: light-dark(
+    color-mix(in oklch, var(--color-control), black 20%),
+    color-mix(in oklch, var(--color-control), white 20%)
+  );
 
-  /**
-   SURFACE 6: the darkest surface
-    - [hover] button
-   */
-  --color-surface-strongest: light-dark(var(--color-dark-2), var(--color-light-2));
+  /* [border] hr, input, fieldset, textarea, table, details, etc */
+  --color-borders-light-1: light-dark(
+    color-mix(in oklch, var(--color-borders), white 60%),
+    color-mix(in oklch, var(--color-borders), black 20%)
+  );
+  /* [hover][border] button  */
+  --color-borders-dark-1: light-dark(
+    color-mix(in oklch, var(--color-borders), black 20%),
+    color-mix(in oklch, var(--color-borders), white 20%)
+  );
 
-  /**
-   ELEMENTS: These are colors for various elements that the user can interact with or
-   that he can read, usually from the more neutral --color to darkest
-    - buttons
-    - links (& nav)
-    - text
-    - form inputs
-   */
-
-  /** links */
-  --color-link: light-dark(var(--color-dark-2), var(--color-light-6));
-  /** text */
-  --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
-  --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
-
-  /** forms */
-  --color-form-input: var(--color-surface);
-  --color-form-select: light-dark(var(--color-light-8), var(--color-surface));
-  /* exceptions! */
-  --color-form-input-accent: var(--color-secondary);
-  --color-form-input-outline: var(--color-primary);
-  --color-form-select-accent: var(--color-primary);
-  /** strokes & borders */
-  --color-border: light-dark(var(--color-light-6), var(--color-dark-2));
+  /* a, menu>a */
+  --color-textual-light-2: light-dark(
+    color-mix(in oklch, var(--color-textual), white 95%),
+    color-mix(in oklch, var(--color-textual), white 95%)
+  );
+  --color-textual-dark-1: light-dark(
+    color-mix(in oklch, var(--color-textual), black 20%),
+    color-mix(in oklch, var(--color-textual), white 60%)
+  );
+  /* all  text */
+  --color-textual-dark-2: light-dark(
+    color-mix(in oklch, var(--color-textual), black 90%),
+    color-mix(in oklch, var(--color-textual), white 90%)
+  );
 }
 
 /* base */

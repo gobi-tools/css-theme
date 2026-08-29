@@ -34,13 +34,13 @@ details[name]+details[name] {
 /* @FEATURE: Setup for the accordion style menu */
 details[name]:has(+ details[name]),
 details[name]+details[name] {
-  border-bottom-color: var(--color-border);
+  border-bottom-color: var(--color-borders-light-1);
 
   &:not([open])>:is(summary) {
-    background: var(--color-surface-faint);  
+    background: var(--color-surface-light-4);  
     
     &:hover {
-      background: var(--color-surface-dark);
+      background: var(--color-surface-light-1);
     }
   }
 }

@@ -55,16 +55,16 @@ article {
 /* theme colors */
 
 article {
-  background: var(--color-surface-faint);  
-  border-color: var(--color-border);
+  background: var(--color-surface-light-4);  
+  border-color: var(--color-borders-light-1);
 }
 
 /* @FEATURE: Open/Close nice looking panel  */
 article>header:first-child,
 article>details>summary {
-  background: var(--color-surface-medium);
+  background: var(--color-surface-light-2);
   
   &:hover {
-    background: var(--color-surface-dark);
+    background: var(--color-surface-light-1);
   }
 }

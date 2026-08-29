@@ -91,21 +91,32 @@ fieldset {
 
 /* theme colors */
 
+input,
+select,
+textarea {
+  --color-outline: var(--color-primary);
+  --color-accents: var(--color-secondary);
+}
+
+select {
+  --color-accents: var(--color-primary);
+}
+
 fieldset,
 input,
 select,
 textarea {
-  background: var(--color-form-input);
-  accent-color: var(--color-form-input-accent);
-  border-color: var(--color-border);
-  color: var(--color-txt);
+  background: var(--color-control-light-5);
+  accent-color: var(--color-accents);
+  border-color: var(--color-borders-light-1);
+  color: var(--color-textual-dark-2);
 }
 
 select {
-  background: var(--color-form-select);
-  border-color: var(--color-border);
-  color: var(--color-form-select-accent);
-  accent-color: var(--color-form-select-accent);
+  background: var(--color-control-light-4);
+  border-color: var(--color-borders-light-1);
+  color: var(--color-outline);
+  accent-color: var(--color-accents);
 }
 
 :is(input, select, textarea)::placeholder {
@@ -116,11 +127,11 @@ fieldset:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  outline-color: var(--color-form-input-outline);
-  border-bottom-color: var(--color-form-input-outline);
+  outline-color: var(--color-outline);
+  border-bottom-color: var(--color-outline);
 }
 
 fieldset {
-  background: var(--color-surface-faint);
-  border-color: var(--color-border);
+  background: var(--color-surface-light-4);
+  border-color: var(--color-borders-light-1);
 }

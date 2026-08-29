@@ -1,29 +1,35 @@
 /* theme colors */
 
 :is(input, textarea)[value]:not(:focus):invalid {
-  --color: var(--color-error);
-  background: var(--color-surface-light);
-  border-color: var(--color);
+  --color-outline: var(--color-error);
+  --color-control: var(--color-error);
+  --color-borders: var(--color-error);
+  --color-textual: var(--color-error);
+
+  background: var(--color-control-light-3);
+  border-color: var(--color-outline);
 }
 
 :is(input, textarea):not(:placeholder-shown):not(:focus):invalid {
-  --color: var(--color-error);
-  background: var(--color-surface-light);
+  --color-outline: var(--color-error);
+  --color-control: var(--color-error);
+  background: var(--color-control-light-3);
 }
 
 :is(input, textarea):not(:placeholder-shown):valid + .error,
 :is(input, textarea):not(:placeholder-shown):focus + .error,
 :is(input, textarea):placeholder-shown + .error {
-  background-color: transparent !important;
-  color: var(--color-txt) !important;
+  color: inherit;
 }
 
 :is(input, textarea):not(:placeholder-shown):not(:focus):invalid + .error {
-  color: var(--color-error);
+  --color-textual: var(--color-error);
 }
 
 :is(input, textarea):placeholder-shown:not(:focus) {
-  --color: var(--color-base) !important;
-  background: var(--color-surface) !important;
-  border-color: var(--color-border) !important;
+  --color-control: var(--color-base) !important;
+  --color-borders: var(--color-base) !important;
+  
+  background: var(--color-control-light-5) !important;
+  border-color: var(--color-borders-light-1) !important;
 }

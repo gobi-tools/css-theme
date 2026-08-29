@@ -17,7 +17,7 @@ dialog:modal {
 /* theme colors */
 
 dialog:modal {
-  background: var(--color-surface);
+  background: var(--color-surface-light-5);
 }
 
 dialog:modal::backdrop {

@@ -7,14 +7,14 @@ a {
 /* theme colors */
 
 a {
-  --color: var(--color-primary);
+  --color-textual: var(--color-primary);
 }
 
 a {
-  color: var(--color-link);
+  color: var(--color-textual-dark-1);
 }
 
 a:hover,
 [aria-selected="true"] a {
-  color: var(--color-txt);
+  color: var(--color-textual-dark-2);
 }

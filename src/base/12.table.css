@@ -58,13 +58,13 @@ tfoot>tr>td {
 th,
 td,
 thead>tr>th {
-  border-bottom-color: var(--color-border) !important;
+  border-bottom-color: var(--color-borders-light-1) !important;
 }
 
 tfoot>tr>td {
-  border-top-color: var(--color-border) !important;
+  border-top-color: var(--color-borders-light-1) !important;
 }
 
 tr:hover {
-  background: var(--color-surface-light);
+  background: var(--color-surface-light-3);
 }

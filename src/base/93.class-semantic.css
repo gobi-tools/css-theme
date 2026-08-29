@@ -1,56 +1,63 @@
 .success,
 .success * {
-  --color: var(--color-success) !important;
-  --color-form-input-accent: var(--color-success) !important;
-  --color-form-select-accent: var(--color-success) !important;
-  --color-form-input-outline: var(--color-success) !important;
+  --color-surface: var(--color-success) !important;
+  --color-control: var(--color-success) !important;
+  --color-borders: var(--color-success) !important;
+  --color-textual: var(--color-success) !important;
+  --color-outline: var(--color-success) !important;
+  --color-accents: var(--color-success) !important;
 }
 
 .error,
 .error * {
-  --color: var(--color-error) !important;
-  --color-form-input-accent: var(--color-error) !important;
-  --color-form-select-accent: var(--color-error) !important;
-  --color-form-input-outline: var(--color-error) !important;
+  --color-surface: var(--color-error) !important;
+  --color-control: var(--color-error) !important;
+  --color-borders: var(--color-error) !important;
+  --color-textual: var(--color-error) !important;
+  --color-outline: var(--color-error) !important;
+  --color-accents: var(--color-error) !important;
 }
 
 .primary,
 .primary * {
-  --color: var(--color-primary) !important;
-  --color-form-input-accent: var(--color-primary) !important;
-  --color-form-select-accent: var(--color-primary) !important;
-  --color-form-input-outline: var(--color-primary) !important;
+  --color-surface: var(--color-primary) !important;
+  --color-control: var(--color-primary) !important;
+  --color-borders: var(--color-primary) !important;
+  --color-textual: var(--color-primary) !important;
+  --color-outline: var(--color-primary) !important;
+  --color-accents: var(--color-primary) !important;
 }
 
 .secondary,
 .secondary * {
-  --color: var(--color-secondary) !important;
-  --color-form-input-accent: var(--color-secondary) !important;
-  --color-form-select-accent: var(--color-secondary) !important;
-  --color-form-input-outline: var(--color-secondary) !important;
+  --color-surface: var(--color-secondary) !important;
+  --color-control: var(--color-secondary) !important;
+  --color-borders: var(--color-secondary) !important;
+  --color-textual: var(--color-secondary) !important;
+  --color-outline: var(--color-secondary) !important;
+  --color-accents: var(--color-secondary) !important;
 }
 
 :is(div,
   section, main, aside, header, footer,
   nav):is(.primary, .secondary, .success, .error) {
-  background-color: var(--color-surface-light);
+  background-color: var(--color-surface-light-3);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, hgroup,
   span, strong, em, b, i, small, label, legend,
   abbr, cite, q, samp, sub, sub, time, del, ins, summary):is(.primary, .secondary, .success, .error) {
-  color: var(--color);
+  color: var(--color-textual);
 }
 
 :is(.primary, .secondary, .success, .error) {
   &.inverted {
-    background-color: var(--color) !important;
-    border-color: var(--color) !important;
-    color: var(--color-txt-on-dark) !important;
+    background-color: var(--color-surface);
+    border-color: var(--color-borders);
+    color: var(--color-textual-light-2);
 
     & * {
-      color: var(--color-txt-on-dark);
+      color: var(--color-textual-light-2);
     }
-    
   }
 }

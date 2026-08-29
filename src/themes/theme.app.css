@@ -46,13 +46,7 @@
 
 button,
 input[type=submit] {
-  background: light-dark(var(--color-surface-strong), var(--color-dark-4));
-  border-color: light-dark(var(--color-dark-2), var(--color-light-3));
-}
-
-button:hover,
-input[type=submit]:hover {
-  border-color: light-dark(var(--color-dark-4), var(--color-light-4));
+  border-color: var(--color-control-dark-1);
 }
 
 pre>code {

@@ -60,17 +60,17 @@ h4, h5, h5 {
 }
 
 nav, menu {
-  font-family: var(--font-familu-navi);
+  font-family: var(--font-family-navi);
 }
 
 /* theme colors */
 
 body {
-  background: var(--color-surface);
+  background: var(--color-surface-light-5);
 }
 
 * {
-  color: var(--color-txt);
+  color: var(--color-textual-dark-2);
 }
 
 *>* {
@@ -78,5 +78,5 @@ body {
 }
 
 hr {
-  background: var(--color-border);
+  background: var(--color-borders-light-1);
 }

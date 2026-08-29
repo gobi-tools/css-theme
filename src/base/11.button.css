@@ -62,30 +62,31 @@ input[type=reset] {
 
 button,
 input[type="submit"] {
-  --color: var(--color-primary);
+  --color-control: var(--color-primary);
+  --color-borders: var(--color-primary);
 }
 
 button,
 input[type=submit] {
-  background: var(--color-surface-strong);
-  border-color: var(--color-surface-strong);
-  color: var(--color-txt-on-dark);
+  background: var(--color-control);
+  border-color: var(--color-borders);
+  color: var(--color-textual-light-2);
 }
 
 button:hover,
 input[type=submit]:hover {
-  background: var(--color-surface-strongest);
-  border-color: var(--color-surface-strongest);
+  background: var(--color-control-dark-1);
+  border-color: var(--color-borders-dark-1);
 }
 
 button[type=reset],
 input[type=reset] {
   background: transparent;
-  border-color: var(--color-surface-strong);
-  color: var(--color-txt);
+  border-color: var(--color-borders);
+  color: var(--color-textual-dark-2);
 }
 
 button[type=reset]:hover,
 input[type=reset]:hover {
-  background-color: var(--color-surface-light);
+  background-color: var(--color-control-light-3);
 }
