@@ -132,9 +132,6 @@
   /* -tabs applies to: "tab" (nav>ol) */
   --border-width-horz-tabs: 4px;
   --border-width-vert-tabs: 3px;
-
-  /* -img applies to the img objects */
-  --border-radius-img: 0px;
 }
 
 * {
