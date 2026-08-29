@@ -1011,7 +1011,8 @@ function Summary({ theme }) {
           /* @__PURE__ */ jsx10("summary", { children: "Error" }),
           /* @__PURE__ */ jsxs10("div", { children: [
             /* @__PURE__ */ jsx10("p", { children: "Unknown error occurred" }),
-            /* @__PURE__ */ jsx10("button", { children: "Ack" })
+            /* @__PURE__ */ jsx10("hr", {}),
+            /* @__PURE__ */ jsx10("button", { children: "Acknowledge" })
           ] })
         ] }) }),
         /* @__PURE__ */ jsx10("p", { children: /* @__PURE__ */ jsxs10("small", { children: [

@@ -851,7 +851,8 @@ function Summary({ theme }) {
           /* @__PURE__ */ jsx7("summary", { children: "Error" }),
           /* @__PURE__ */ jsxs7("div", { children: [
             /* @__PURE__ */ jsx7("p", { children: "Unknown error occurred" }),
-            /* @__PURE__ */ jsx7("button", { children: "Ack" })
+            /* @__PURE__ */ jsx7("hr", {}),
+            /* @__PURE__ */ jsx7("button", { children: "Acknowledge" })
           ] })
         ] }) }),
         /* @__PURE__ */ jsx7("p", { children: /* @__PURE__ */ jsxs7("small", { children: [

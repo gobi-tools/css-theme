@@ -82,7 +82,8 @@ export default function Summary({ theme }) {
                 <p>
                   Unknown error occurred
                 </p>
-                <button>Ack</button>
+                <hr/>
+                <button>Acknowledge</button>
               </div>
             </details>
           </article>

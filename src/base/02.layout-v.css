@@ -132,10 +132,14 @@ details[open] {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
+  margin-bottom: var(--space-m);
 
   &>* {
     margin-bottom: 0;
   }
+}
+article>details[open] {
+  gap: var(--space-m);
 }
 
 details:not([open]) {
@@ -150,7 +154,7 @@ article,
 hgroup {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-m);
 
   & *:not(hr) {
     margin-bottom: 0 !important;

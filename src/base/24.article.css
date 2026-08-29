@@ -2,7 +2,7 @@
 
 article {
   overflow: hidden;
-  padding-bottom: var(--space-sm);
+  padding-bottom: var(--space-m);
 
   &>*:not(img, details) {
     padding-inline: var(--space-sm);
@@ -33,7 +33,7 @@ article {
   }
 
   &>details[open][name]>*:last-child {
-    padding-bottom: var(--space-sm);
+    padding-bottom: var(--space-m) !important;
   }
 }
 
