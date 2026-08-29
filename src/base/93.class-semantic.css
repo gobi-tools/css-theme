@@ -56,7 +56,7 @@
     border-color: var(--color-borders);
     color: var(--color-textual-light-2);
 
-    & * {
+    & *:not(:is(button[type="reset"], input[type="reset"])) {
       color: var(--color-textual-light-2);
     }
   }

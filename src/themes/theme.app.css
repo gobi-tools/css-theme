@@ -46,7 +46,7 @@
 
 button,
 input[type=submit] {
-  border-color: var(--color-control-dark-1);
+  border-color: var(--color-control-dark-1) !important;
 }
 
 pre>code {
