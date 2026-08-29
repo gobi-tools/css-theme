@@ -16,5 +16,5 @@ a {
 
 a:hover,
 [aria-selected="true"] a {
-  color: var(--color-link-hover);
+  color: var(--color-txt);
 }

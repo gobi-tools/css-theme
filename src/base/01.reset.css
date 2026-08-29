@@ -179,7 +179,6 @@
    SURFACE 0: Basic background colour of a website.
     - body
    */
-  /* --color-surface: var(--color-bg); */
   --color-surface: light-dark(var(--color-light-10), var(--color-dark-6));
 
   /**
@@ -197,10 +196,9 @@
    - [selected] tabs bacground on mobile
    - [hover] button with type reset 
    - [hover] table cells 
-   - [invalid] form input on  
+   - [invalid] form inputs 
    */
   --color-surface-light: light-dark(var(--color-light-8), var(--color-dark-4));
-
 
   /** 
    SURFACE 3: A medium --color, darker than --light
@@ -217,9 +215,13 @@
    */
   --color-surface-dark: light-dark(var(--color-light-3), var(--color-dark-1));
 
+  --color-control: var(--color-base);
+
   /**
    SURFACE 5: Even stronger, used for but action elements, stronger than --dark
    - button
+   - [border] block
+   - [border] pre>code
    */
   --color-surface-strong: var(--color);
 
@@ -240,10 +242,10 @@
 
   /** links */
   --color-link: light-dark(var(--color-dark-2), var(--color-light-6));
-  --color-link-hover: light-dark(var(--color-dark-7), var(--color-light-8));
   /** text */
   --color-txt: light-dark(var(--color-dark-9), var(--color-light-9));
   --color-txt-on-dark: light-dark(var(--color-light-10), var(--color-light-10));
+
   /** forms */
   --color-form-input: var(--color-surface);
   --color-form-select: light-dark(var(--color-light-8), var(--color-surface));
