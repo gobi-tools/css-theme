@@ -81,7 +81,8 @@ input[type=submit]:hover {
 
 button[type=reset],
 input[type=reset] {
-  background: var(--color-control-light-5);
+  background: var(--color-surface-light-5);
+  /* background: var(--color-control-light-5); */
   border-color: var(--color-borders);
   color: var(--color-textual-dark-2);
 }
