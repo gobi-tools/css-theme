@@ -2,15 +2,15 @@
   color-scheme: light only;
 
   --font-family-head: "Montserrat", sans-serif;
-  --font-familu-navi:  "Google Sans", sans-serif;
+  --font-family-navi:  "Google Sans", sans-serif;
   --font-family-body: "Google Sans", sans-serif;
 
-  --color-base: #7f7f7f;
+  --color-base: #c9c9c9;
   --color-primary: #FB7185;
-  --color-secondary: #73162B;
+  --color-secondary: #71CBFB;
 
   --color-success: #23b157;
-  --color-error: #ef4444;
+  --color-error: #e4cb3f;
 }
 
 .big-banner {

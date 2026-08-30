@@ -1,11 +1,15 @@
 :root {
   --font-family-head: "PT Serif", sans-serif;
-  --font-familu-navi:  "Lato", sans-serif;
+  --font-family-navi:  "Lato", sans-serif;
   --font-family-body: "Lato", sans-serif;
 
-  --color-base: light-dark(#557dab, #6e869d);
+  /* --color-base: light-dark(#557dab, #6e869d);
   --color-primary: light-dark(#00476D, #4fa3c7);
-  --color-secondary: light-dark(#4F67C7, #4F67C7);
+  --color-secondary: light-dark(#4F67C7, #4F67C7); */
+
+  --color-base: light-dark(#afa9b8, #7d748c);
+  --color-primary: light-dark(#557dab, #5988b4);
+  --color-secondary: #4F67C7;
 
   --color-success: #23b157;
   --color-error: #ef4444;

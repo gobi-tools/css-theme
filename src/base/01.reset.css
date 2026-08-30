@@ -41,7 +41,7 @@
 
   /* typography - font type */
   --font-family-head: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-familu-navi: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-navi: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-family-mono: monospace;
 
@@ -195,6 +195,11 @@
   --color-control-light-3: light-dark(
     color-mix(in oklch, var(--color-control), white 80%),
     color-mix(in oklch, var(--color-control), black 40%)
+  );
+  /* [app_theme] button */
+  --color-control-light-2: light-dark(
+    color-mix(in oklch, var(--color-control), white 40%),
+    color-mix(in oklch, var(--color-control), black 30%)
   );
   /* [hover] button */
   --color-control-dark-1: light-dark(
