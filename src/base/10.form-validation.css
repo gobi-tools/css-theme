@@ -1,6 +1,7 @@
 /* theme colors */
 
-:is(input, textarea)[value]:not(:focus):invalid {
+/* :not(:placeholder-shown) -> instead of [value] */
+:is(input, textarea):not(:placeholder-shown):not(:focus):invalid {
   --color-control: var(--color-error) !important; 
   --color-borders: var(--color-error) !important;
   --color-textual: var(--color-error) !important;
@@ -31,10 +32,10 @@
 }
 
 :is(input, textarea):placeholder-shown:not(:focus):invalid {
-  --color-control: var(--color-base) !important;
-  --color-borders: var(--color-base) !important;
-  --color-outline: var(--color-primary) !important;
-  --color-accents: var(--color-secondary) !important;
+  --color-control: var(--color-base);
+  --color-borders: var(--color-base);
+  --color-outline: var(--color-primary);
+  --color-accents: var(--color-secondary);
   
   background: var(--color-control-light-5) !important;
   border-color: var(--color-borders-light-1) !important;
