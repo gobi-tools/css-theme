@@ -4,11 +4,10 @@
   --font-family-head: "TikTok Sans", sans-serif;
   --font-family-navi:  "Geist", sans-serif;
   --font-family-body: "Geist", sans-serif;
-
-  --color-bg: #FAFAFA;
-  --color-base: #8b8b8b;
-  --color-primary: #1C2829;
-  --color-secondary: #d9ae00;
+  
+  --color-base: #c9c9c9;
+  --color-primary: #4a4a4a;
+  --color-secondary: #ff5d00;
 
   --color-success: #23b157;
   --color-error: #ef4444;
