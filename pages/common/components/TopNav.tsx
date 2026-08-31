@@ -61,6 +61,8 @@ export default function TopNav({ theme }) {
             <option value={EThemes.Delivery} selected={theme === EThemes.Delivery}>Delivery</option>
             <option value={EThemes.Landing} selected={theme === EThemes.Landing}>Landing</option>
             <option value={EThemes.Newsletter} selected={theme === EThemes.Newsletter}>Newsletter</option>
+
+            <option value={EThemes.Bold} selected={theme === EThemes.Bold}>Bold</option>
           </select>
         </li>
         <li className="hide-on-mobile">

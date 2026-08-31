@@ -6,6 +6,8 @@ const THEMES_FOLDER = 'src/themes';
 const BASE_FOLDER = 'src/base';
 const RESET_FILE = '01.reset.css';
 
+import { EThemes } from '../pages/common/utils/types';
+
 // 1. setup workspace dir
 try {
   fs.rmSync(TMP_FOLDER, { recursive: true, force: true });
@@ -26,9 +28,7 @@ for (const extraCssFile of extraCssFiles) {
   console.log(`Extracted ${BASE_FOLDER}/${extraCssFile}`);
 }
 
-const themes = [
-  'default', 'blog', 'app', 'delivery', 'landing', 'newsletter', 
-];
+const themes = Object.keys(EThemes).map(t => t.toLocaleLowerCase());
 
 for (const theme of themes) {
   const fontCss = fs.readFileSync(`${THEMES_FOLDER}/theme.${theme}.fonts.css`, 'utf-8');
