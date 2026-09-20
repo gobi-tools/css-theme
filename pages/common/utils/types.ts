@@ -87,7 +87,6 @@ export enum EThemes {
   Delivery = 'delivery',
   Landing = 'landing',
   Newsletter = 'newsletter',
-  Bold = 'bold',
 };
 
 export const PRODUCT_NAME = "CSS Theme";
