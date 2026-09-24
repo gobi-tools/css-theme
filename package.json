@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "tsx scripts/build.ts && css-minify -d tmp/ -o /dist",
-    "docs": "tsx pages/prerender.ts",
+    "docs": "rm -rf docs && tsx pages/prerender.ts",
     "showcase": "tsx showcase/prerender.ts",
     "showcase:screenshots": "tsx showcase/screenshots.ts",
     "test:visual": "npx playwright test",
@@ -27,6 +27,6 @@
     "fast-glob": "^3.3.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-srv": "^0.0.53"
+    "react-srv": "^0.0.65"
   }
 }
