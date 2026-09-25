@@ -1,4 +1,3 @@
-import ThemeProvider from "../contexts/themeProvider";
 import { PUB_SUBDOMAIN } from "../utils/constants";
 import { EThemes } from "../utils/types";
 
@@ -18,11 +17,9 @@ export default function Document(props: { theme: EThemes, children: any }) {
         <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/res/theme.${props.theme}.min.css`} />
       </head>
       <body>
-        <ThemeProvider theme={props.theme}>
-          <div className="container-wide">
-            {props.children}
-          </div>
-        </ThemeProvider>
+        <div className="container-wide">
+          {props.children}
+        </div>
       </body>
     </html>
   );

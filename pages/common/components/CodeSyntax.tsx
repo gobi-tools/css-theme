@@ -3,7 +3,6 @@ import { docco, atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hlj
 import { usePrefersDarkMode } from '../effects/useDarkMode';
 import { EThemes } from '../utils/types';
 import { useTheme } from '../contexts/themeContext';
-import { useEffect } from 'react';
 
 type TThemeMode = 'light-dark' | 'light' | 'dark';
 
@@ -22,10 +21,6 @@ export default function CodeSyntax(props: { lang: 'javascript' | 'xml' | 'json' 
   const isDark = usePrefersDarkMode();
   const theme = useTheme();
   const mode = ThemeToDarkMode[theme];
-
-  useEffect(() => {
-    console.log('Theme is', theme, mode, isDark, isDark && mode === 'light-dark');
-  }, []);
 
   return (
     <SyntaxHighlighter language={props.lang} style={isDark && mode === 'light-dark' ? atomOneDark : docco}>
