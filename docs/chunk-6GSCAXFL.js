@@ -1,0 +1,1 @@
+import{Fragment as t,jsx as i,jsxs as o}from"https://esm.sh/react@19.2.0/jsx-runtime";function e(){return i(t,{children:i("main",{style:{maxWidth:"600px"},children:o("p",{children:["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ",i("b",{children:"tempor"})," incididunt ut labore et dolore magna aliqua."]})})})}export{e as a};
