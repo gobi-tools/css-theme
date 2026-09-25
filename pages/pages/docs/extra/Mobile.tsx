@@ -1,10 +1,10 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
-import DocsLayout from "../../../common/components/DocsLayout";
+import DocsLayout from "../../../common/layouts/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
-import { EDoc, EExamples } from "../../../common/utils/types";
+import { EDoc, EExamples, EThemes } from "../../../common/utils/types";
 
-export default function Mobile({ theme }) {
+export default function Mobile({ theme }: { theme: EThemes}) {
   const route = useRoute();
     
   return (

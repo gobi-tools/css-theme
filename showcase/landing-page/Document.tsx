@@ -1,7 +1,7 @@
 import React from 'react';
 export const PUB_SUBDOMAIN = 'css-theme';
 
-export default function Document({ children }) {
+export default function Document({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>

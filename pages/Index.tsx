@@ -1,14 +1,14 @@
 import CodeSyntax from "./common/components/CodeSyntax";
-import HomeLayout from "./common/components/HomeLayout";
+import HomeLayout from "./common/layouts/HomeLayout";
 import { useRoute } from "./common/effects/useRoute";
 import { RouteMaster } from "./common/utils/routes";
 import { EDoc, EThemes } from "./common/utils/types";
 
-export default function Index(props: { theme: EThemes }) {
+export default function Index({ theme }: { theme: EThemes }) {
   const route = useRoute();
 
   return (
-    <HomeLayout theme={props.theme}>
+    <HomeLayout theme={theme}>
       <section>
         <br />
       </section>
@@ -22,12 +22,12 @@ export default function Index(props: { theme: EThemes }) {
       </section>
       <section>
         <p className="row align-center disable-mobile">
-          <a href={RouteMaster.doc(EDoc.Typographty, props.theme, route)}>
+          <a href={RouteMaster.doc(EDoc.Typographty, theme, route)}>
             <button>
               Documentation
             </button>
           </a>
-          <a href={RouteMaster.showcase(props.theme, route)}>
+          <a href={RouteMaster.showcase(theme, route)}>
             <button type="reset">
               Showcase
             </button>
@@ -38,7 +38,7 @@ export default function Index(props: { theme: EThemes }) {
         <p>
           To install, simply add the following to your HTML page:
         </p>
-        <CodeSyntax lang={'xml'}>{`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@refs/heads/main/dist/theme.${props.theme}.min.css">`}</CodeSyntax>
+        <CodeSyntax lang={'xml'}>{`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@refs/heads/main/dist/theme.${theme}.min.css">`}</CodeSyntax>
       </section>
     </HomeLayout>
   )

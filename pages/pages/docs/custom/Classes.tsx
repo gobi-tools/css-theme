@@ -1,11 +1,7 @@
-import DocLayout from "../../../common/components/DocsLayout";
-import { useRoute } from "../../../common/effects/useRoute";
-import { RouteMaster } from "../../../common/utils/routes";
-import { EDoc, PRODUCT_NAME } from "../../../common/utils/types";
+import DocLayout from "../../../common/layouts/DocsLayout";
+import { EThemes, PRODUCT_NAME } from "../../../common/utils/types";
 
-export default function Classes({ theme }) {
-  const route = useRoute();
-
+export default function Classes({ theme }: { theme: EThemes}) {
   return (
     <DocLayout theme={theme}>
       <section>

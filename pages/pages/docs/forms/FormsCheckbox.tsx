@@ -1,8 +1,9 @@
 import { useState } from "react";
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
 import CodeSyntax from "../../../common/components/CodeSyntax";
+import { EThemes } from "../../../common/utils/types";
 
-export default function FormsCheckbox({ theme }) {
+export default function FormsCheckbox({ theme }: { theme: EThemes }) {
   const [radio, setRadio] = useState('bread');
 
   return (

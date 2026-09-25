@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { EDoc, ELinks } from "../../../common/utils/types";
+import { EDoc, ELinks, EThemes } from "../../../common/utils/types";
 import { RouteMaster } from "../../../common/utils/routes";
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import CodeSyntax from "../../../common/components/CodeSyntax";
 
-export default function FormsNormal({ theme }) {
+export default function FormsNormal({ theme }: { theme: EThemes }) {
   const route = useRoute();
   const [volume, setVolume] = useState(50);
 

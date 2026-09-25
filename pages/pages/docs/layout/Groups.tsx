@@ -1,7 +1,8 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
+import { EThemes } from "../../../common/utils/types";
 
-export default function Groups({ theme }) {
+export default function Groups({ theme }: { theme: EThemes }) {
   return (
     <DocLayout theme={theme}>
       <section className="row">

@@ -1,10 +1,11 @@
+import { useTheme } from "../contexts/ThemeContext";
 import { useRoute } from "../effects/useRoute";
 import { PUB_SUBDOMAIN } from "../utils/constants";
 import { RouteMaster } from "../utils/routes";
 import { EThemes, ELinks } from "../utils/types";
 
-export default function TopNav({ theme }) {
-
+export default function TopNav() {
+  const theme = useTheme();
   const route = useRoute();
 
   const onThemeChange = (e: { target: { value: string } }) => {

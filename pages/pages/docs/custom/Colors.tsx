@@ -1,10 +1,11 @@
 import { useState } from "react";
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
 import CodeSyntax from "../../../common/components/CodeSyntax";
+import { EThemes } from "../../../common/utils/types";
 
 type TColor = 'primary' | 'secondary' | 'success' | 'error';
 
-export default function Colors({ theme }) {
+export default function Colors({ theme }: { theme: EThemes}) {
   const [colorClass, setColorClass] = useState<TColor>('primary');
 
   const onColorClassChange = (e: { target: { value: string }}) => setColorClass(e.target.value as TColor);

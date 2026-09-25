@@ -1,8 +1,8 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
-import DocLayout from "../../../common/components/DocsLayout";
-import { ELinks } from "../../../common/utils/types";
+import DocLayout from "../../../common/layouts/DocsLayout";
+import { ELinks, EThemes } from "../../../common/utils/types";
 
-export default function Code({ theme }) {
+export default function Code({ theme }: { theme: EThemes}) {
   return (
     <DocLayout theme={theme}>
       <section>

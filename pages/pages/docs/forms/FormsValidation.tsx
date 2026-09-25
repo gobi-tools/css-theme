@@ -1,8 +1,9 @@
 import { useState } from "react";
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
 import CodeSyntax from "../../../common/components/CodeSyntax";
+import { EThemes } from "../../../common/utils/types";
 
-export default function FormsValidation({ theme }) {
+export default function FormsValidation({ theme }: { theme: EThemes }) {
   const [name, setName] = useState("a");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");

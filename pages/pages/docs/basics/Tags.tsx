@@ -1,10 +1,10 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
-import { EDoc } from "../../../common/utils/types";
+import { EDoc, EThemes } from "../../../common/utils/types";
 
-export default function Tags({ theme }) {
+export default function Tags({ theme }: { theme: EThemes}) {
   const route = useRoute();
     
   return (

@@ -1,8 +1,9 @@
 import { useRef } from "react";
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
 import CodeSyntax from "../../../common/components/CodeSyntax";
+import { EThemes } from "../../../common/utils/types";
 
-export default function Modal({ theme }) {
+export default function Modal({ theme }: { theme: EThemes }) {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
   const openDialog = () => dialogRef.current?.showModal();
 
@@ -59,7 +60,7 @@ export default function Modal({ theme }) {
 
 function DialogModal(
   props: {
-    ref: React.RefObject<HTMLDialogElement>,
+    ref: React.RefObject<HTMLDialogElement | null> | null,
   }
 ) {
   return (

@@ -1,7 +1,7 @@
 import { useState } from "react"
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
 import { RouteMaster } from "../../../common/utils/routes";
-import { EExamples } from "../../../common/utils/types";
+import { EExamples, EThemes } from "../../../common/utils/types";
 import { useRoute } from "../../../common/effects/useRoute";
 import CodeSyntax from "../../../common/components/CodeSyntax";
 
@@ -44,7 +44,7 @@ export function Tab3() {
   )
 }
 
-export default function Tabs({ theme }) {
+export default function Tabs({ theme }: { theme: EThemes }) {
   const route = useRoute();
   const [selected, setSelected] = useState<TSelectedTab>('tab-1');
 

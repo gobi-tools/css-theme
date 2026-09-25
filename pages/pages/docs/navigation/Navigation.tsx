@@ -1,10 +1,10 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
-import DocLayout from "../../../common/components/DocsLayout"
+import DocLayout from "../../../common/layouts/DocsLayout"
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes"
-import { EExamples } from "../../../common/utils/types"
+import { EExamples, EThemes } from "../../../common/utils/types"
 
-export default function Navigation({ theme }) {
+export default function Navigation({ theme }: { theme: EThemes }) {
   const route = useRoute();
     
   return (

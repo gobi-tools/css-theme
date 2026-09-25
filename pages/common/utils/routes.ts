@@ -96,13 +96,15 @@ export class RouteMaster {
       case EDoc.Grids: return `${base}${theme}/pages/docs/custom/${htmlName(Grids)}`;
       case EDoc.Containers: return `${base}${theme}/pages/docs/custom/${htmlName(Containers)}`;
       case EDoc.Colors: return `${base}${theme}/pages/docs/custom/${htmlName(Colors)}`;
+      // default
+      default: return `/`;
     }
   }
 
   static getDocFromRoute(path: string): EDoc | undefined {
     const items = path.split('/docs/');
     const last = items.pop();
-    const [folder, doc] = last.split('/');
+    const [folder, doc] = last?.split('/') ?? [];
 
     switch (folder) {
       case 'basics': {

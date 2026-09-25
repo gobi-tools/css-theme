@@ -1,10 +1,10 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
-import DocLayout from "../../../common/components/DocsLayout";
+import DocLayout from "../../../common/layouts/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
-import { ELinks, EExamples } from "../../../common/utils/types";
+import { ELinks, EExamples, EThemes } from "../../../common/utils/types";
 
-export default function Grids({ theme }) {
+export default function Grids({ theme }: { theme: EThemes}) {
   const route = useRoute();
   
   return (

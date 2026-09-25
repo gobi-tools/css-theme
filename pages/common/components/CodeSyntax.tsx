@@ -2,7 +2,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco, atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { usePrefersDarkMode } from '../effects/useDarkMode';
 import { EThemes } from '../utils/types';
-import { useTheme } from '../contexts/themeContext';
+import { useTheme } from '../contexts/ThemeContext';
 
 type TThemeMode = 'light-dark' | 'light' | 'dark';
 

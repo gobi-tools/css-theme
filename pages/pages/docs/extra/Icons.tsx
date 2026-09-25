@@ -1,7 +1,8 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
-import DocsLayout from "../../../common/components/DocsLayout";
+import DocsLayout from "../../../common/layouts/DocsLayout";
+import { EThemes } from "../../../common/utils/types";
 
-export default function Icons({ theme }) {
+export default function Icons({ theme }: { theme: EThemes}) {
   return (
     <DocsLayout theme={theme}>
       <section className="row">

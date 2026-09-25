@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import HomeLayout from "./common/components/HomeLayout";
+import HomeLayout from "./common/layouts/HomeLayout";
 import { useRoute } from "./common/effects/useRoute";
 import { RouteMaster } from "./common/utils/routes";
 import { EShowcases, EThemes } from "./common/utils/types";
@@ -9,12 +9,12 @@ const Arrow = () => {
   return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
 }
 
-function ShowcaseTitle(props: { title: string, url: string }) {
+function ShowcaseTitle({ title, url }: { title: string, url: string }) {
   return <nav>
     <ul>
       <li>
-        <a href={props.url} target="_blank">
-          <span><b>{props.title}</b></span>
+        <a href={url} target="_blank">
+          <span><b>{title}</b></span>
           <Arrow />
         </a>
       </li>
@@ -22,21 +22,21 @@ function ShowcaseTitle(props: { title: string, url: string }) {
   </nav>
 }
 
-function ShowcasePreview(props: { route: string, showcase: EShowcases }) {
+function ShowcasePreview({ route, showcase }: { route: string, showcase: EShowcases }) {
   const isDark = usePrefersDarkMode();
 
   return <img
-    src={RouteMaster.showcaseImg(props.showcase, props.route, isDark ? 'dark' : 'light')}
+    src={RouteMaster.showcaseImg(showcase, route, isDark ? 'dark' : 'light')}
     width={"100%"}
     style={{ aspectRatio: 16.0 / 9.0, objectPosition: 'top' }}
-    alt={props.showcase} />
+    alt={showcase} />
 }
 
-export default function Showcases(props: { theme: EThemes }) {
+export default function Showcases({ theme }: { theme: EThemes }) {
   const route = useRoute();
 
   return (
-    <HomeLayout theme={props.theme}>
+    <HomeLayout theme={theme}>
       <section>
         <div className="row">
           <div>
