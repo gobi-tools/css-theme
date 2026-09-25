@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 
 export default function FormsGrouped({ theme }) {
@@ -18,7 +19,7 @@ export default function FormsGrouped({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>{`<form>
+          <CodeSyntax lang={'xml'}>{`<form>
   <div role="group">
     <input 
       id="email" 
@@ -28,7 +29,7 @@ export default function FormsGrouped({ theme }) {
       type="submit" 
       value="Subscribe"/>
   </div>
-</form>`}</code></pre>
+</form>`}</CodeSyntax>
         </div>
       </section>
 
@@ -60,7 +61,7 @@ export default function FormsGrouped({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <div role="group">
     <button disabled>
@@ -75,7 +76,7 @@ export default function FormsGrouped({ theme }) {
       value="Search"/>
   </div>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -101,7 +102,7 @@ export default function FormsGrouped({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <fieldset>
     <legend>
@@ -128,7 +129,7 @@ export default function FormsGrouped({ theme }) {
     </div>
   </fieldset>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -156,7 +157,7 @@ export default function FormsGrouped({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <div role="group">
     <label for="ch_1">
@@ -169,7 +170,7 @@ export default function FormsGrouped({ theme }) {
     </label>
     ...
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { ELinks } from "../../../common/utils/types";
 
@@ -16,7 +17,7 @@ export default function Typography({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<p>
   Lorem ipsum dolor sit amet, 
   consectetur adipiscing elit, 
@@ -29,7 +30,7 @@ export default function Typography({ theme }) {
   aliquip ex ea 
   commodo consequat.
 </p>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
       <section className="row">
@@ -84,7 +85,7 @@ export default function Typography({ theme }) {
           </p> */}
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<i>italic</i>
 <em>emphasized</em>
 <dfn>definition</dfn>
@@ -100,7 +101,7 @@ export default function Typography({ theme }) {
 <small>smaller</small>
 <sub>subscript</sub>
 <sup>supescript</sup>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
       <section className="row">
@@ -116,14 +117,14 @@ export default function Typography({ theme }) {
           <h6>Heading 6</h6>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
       <section className="row">
@@ -139,7 +140,7 @@ export default function Typography({ theme }) {
           </hgroup>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<hgroup>
   <h1>Heading 1</h1>
   <p>
@@ -150,7 +151,7 @@ export default function Typography({ theme }) {
     dolore magna aliqua. 
   </p>
 </hgroup>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

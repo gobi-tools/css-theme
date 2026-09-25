@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocsLayout from "../../../common/components/DocsLayout";
 
 export default function DarkMode({ theme }) {
@@ -82,7 +83,7 @@ export default function DarkMode({ theme }) {
           </table>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<html>
   <head>
     <!-- both variants -->
@@ -96,7 +97,7 @@ export default function DarkMode({ theme }) {
       content="dark"/>
   </head>
 </html>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocsLayout>

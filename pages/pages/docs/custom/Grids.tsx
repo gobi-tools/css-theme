@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -38,7 +39,7 @@ export default function Grids({ theme }) {
           </article>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<div class="row">
   <div class="col">...</div>
   <div class="col">...</div>
@@ -48,7 +49,7 @@ export default function Grids({ theme }) {
   <div class="col">...</div>
   <div class="col">...</div>
 </div>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -81,13 +82,13 @@ export default function Grids({ theme }) {
           </article>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<div class="row">
   <div class="col-2">...</div>
   <div class="col">...</div>
   <div class="col-6">...</div>
 </div>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -109,7 +110,7 @@ export default function Grids({ theme }) {
           
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<div class="row">
   <div>
     <p>
@@ -122,7 +123,7 @@ export default function Grids({ theme }) {
     </p>
   </div>
 </div>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -148,7 +149,7 @@ export default function Grids({ theme }) {
           </article>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<div class="row">
   <p 
     width="80" 
@@ -157,7 +158,7 @@ export default function Grids({ theme }) {
   </p>
   <div>...</div>
 </div>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

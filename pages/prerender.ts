@@ -2,7 +2,7 @@ import ReactSrv from "react-srv";
 import Document from "./common/documents/Document";
 import { EThemes } from "./common/utils/types";
 import fs from "fs";
-import { cp } from "fs/promises";
+import { cp } from "node:fs/promises";
 
 const themes = Object.keys(EThemes);
 const deployments = ['', ...themes.map(t => t.toLowerCase())];
@@ -17,6 +17,8 @@ const deployments = ['', ...themes.map(t => t.toLowerCase())];
       Document,
       srcPath: './pages',
       outPath: `./docs/${deployment}`,
+      minify: true,
+      // splitting: false,
       initProps: { theme },
     });
     await react.prerender();

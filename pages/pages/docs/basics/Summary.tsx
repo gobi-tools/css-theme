@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -30,14 +31,14 @@ export default function Summary({ theme }) {
           </details>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<details>
   <summary>Summary</summary>
   <p>Details</p>
 </details>
 
 <details>...</details>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -94,7 +95,7 @@ export default function Summary({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<article>
   <details>
     <summary>Note</summary>
@@ -144,7 +145,7 @@ export default function Summary({ theme }) {
     </div>
   </details>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -176,7 +177,7 @@ export default function Summary({ theme }) {
           </article>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`
 <article>
   <details name="menu">
@@ -194,7 +195,7 @@ export default function Summary({ theme }) {
     <p>...</p>
   </details>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

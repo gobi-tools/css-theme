@@ -1,3 +1,4 @@
+import CodeSyntax from "./common/components/CodeSyntax";
 import HomeLayout from "./common/components/HomeLayout";
 import { useRoute } from "./common/effects/useRoute";
 import { RouteMaster } from "./common/utils/routes";
@@ -37,7 +38,7 @@ export default function Index(props: { theme: EThemes }) {
         <p>
           To install, simply add the following to your HTML page:
         </p>
-        <pre><code>{`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@refs/heads/main/dist/theme.${props.theme}.min.css">`}</code></pre>
+        <CodeSyntax lang={'xml'}>{`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gobi-tools/css-theme@refs/heads/main/dist/theme.${props.theme}.min.css">`}</CodeSyntax>
       </section>
     </HomeLayout>
   )

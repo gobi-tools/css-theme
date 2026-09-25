@@ -3,6 +3,7 @@ import { EDoc, ELinks } from "../../../common/utils/types";
 import { RouteMaster } from "../../../common/utils/routes";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
+import CodeSyntax from "../../../common/components/CodeSyntax";
 
 export default function FormsNormal({ theme }) {
   const route = useRoute();
@@ -35,7 +36,7 @@ export default function FormsNormal({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <fieldset>
     <legend>
@@ -76,7 +77,7 @@ export default function FormsNormal({ theme }) {
     </p>
   </fieldset>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -93,7 +94,7 @@ export default function FormsNormal({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <textarea 
     rows="4" 
@@ -105,7 +106,7 @@ export default function FormsNormal({ theme }) {
     type="submit" 
     value="Comment"/>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -125,7 +126,7 @@ export default function FormsNormal({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <label for="volume">
     <span>
@@ -144,7 +145,7 @@ export default function FormsNormal({ theme }) {
     type="submit" 
     value="Tune"/>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -227,7 +228,7 @@ export default function FormsNormal({ theme }) {
             </p>
           </div>
           <div>
-            <pre><code>
+            <CodeSyntax lang={'xml'}>
               {`<form>
   <fieldset>
     <legend>
@@ -288,7 +289,7 @@ export default function FormsNormal({ theme }) {
     </div>
   </fieldset>
 </form>`}
-            </code></pre>
+            </CodeSyntax>
           </div>
         </div>
       </section>

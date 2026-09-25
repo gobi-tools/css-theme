@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 
 export default function Lists({ theme }) {
@@ -25,7 +26,7 @@ export default function Lists({ theme }) {
 
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<ul>
   <li>Item 1</li>
   <li>Item 2</li>
@@ -34,7 +35,7 @@ export default function Lists({ theme }) {
     <li>Item 2.2</li>
   </ol>
 </ul>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -52,14 +53,14 @@ export default function Lists({ theme }) {
           </dl>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<dl>
   <dt>Coffee</dt>
   <dd>Black hot drink</dd>
   <dt>Milk</dt>
   <dd>White cold drink</dd>
 </dl>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

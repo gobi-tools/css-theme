@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { ELinks } from "../../../common/utils/types";
 
@@ -18,7 +19,7 @@ export default function Code({ theme }) {
               Keyboard shortcut <kbd>{"Ctrl + S"}</kbd>
             </p>
             <figure>
-            <pre><code>{"console.log('abc')"}</code></pre>
+            <CodeSyntax lang={'xml'}>{"console.log('abc')"}</CodeSyntax>
             <figcaption>Code block</figcaption>
             </figure>
             <p>
@@ -27,7 +28,7 @@ export default function Code({ theme }) {
             </p>
           </div>
           <div>
-            <pre><code>
+            <CodeSyntax lang={'xml'}>
               {`<p>
   Inline code <code>...</code>
 </p>
@@ -38,7 +39,7 @@ export default function Code({ theme }) {
 <pre>
   <code>....</code>
 </pre>`}
-            </code></pre>
+            </CodeSyntax>
           </div>
         </div>
       </section>

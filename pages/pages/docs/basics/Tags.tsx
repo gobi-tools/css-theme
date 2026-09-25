@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -19,9 +20,9 @@ export default function Tags({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<mark>v15.20.30</mark>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -58,7 +59,7 @@ export default function Tags({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<mark>
   <svg ...></svg>
   <span>released</span>
@@ -67,7 +68,7 @@ export default function Tags({ theme }) {
   <span>error</span>
   <svg ...></svg>
 </mark>`}
-         </code></pre>
+         </CodeSyntax>
         </div>
       </section>
 
@@ -97,7 +98,7 @@ export default function Tags({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<!-- with or without -->
 <!-- the inverted class -->
 <mark class="primary">
@@ -112,7 +113,7 @@ export default function Tags({ theme }) {
 <mark class="error">
   Error 400
 </mark>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -143,7 +144,7 @@ export default function Tags({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<p role="group">
   <mark>
     npm
@@ -155,7 +156,7 @@ export default function Tags({ theme }) {
     <svg ...></svg>
   </mark>
 </p>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

@@ -1,23 +1,8 @@
+import ThemeProvider from "../contexts/themeProvider";
 import { PUB_SUBDOMAIN } from "../utils/constants";
 import { EThemes } from "../utils/types";
 
-type TThemeMode = 'light-dark' | 'light' | 'dark';
-
-const ThemeToDarkMode: Record<EThemes, TThemeMode> = {
-  // light / dark
-  [EThemes.Default]: 'light-dark',
-  [EThemes.App]: 'light-dark',
-  [EThemes.Blog]: 'light-dark',
-  // light
-  [EThemes.Newsletter]: 'light',
-  [EThemes.Landing]: 'light',
-  [EThemes.Delivery]: 'light',
-};
-
-export default function Document({ theme, children }) {
-
-  const typography = ThemeToDarkMode[theme] ?? 'light-dark';
-
+export default function Document(props: { theme: EThemes, children: any }) {
   return (
     <html lang="en">
       <head>
@@ -29,15 +14,15 @@ export default function Document({ theme, children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="color-scheme" content="light dark" />
 
-        <link rel="stylesheet" href={`/res/theme.${theme}.min.css`}/>
-        <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/res/theme.${theme}.min.css`}/>
-        <link rel="stylesheet" href={`/res/custom.${typography}.css`}/>
-        <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/res/custom.${typography}.css`}/>
+        <link rel="stylesheet" href={`/res/theme.${props.theme}.min.css`} />
+        <link rel="stylesheet" href={`/${PUB_SUBDOMAIN}/res/theme.${props.theme}.min.css`} />
       </head>
       <body>
-        <div className="container-wide">
-          {children}
-        </div>
+        <ThemeProvider theme={props.theme}>
+          <div className="container-wide">
+            {props.children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

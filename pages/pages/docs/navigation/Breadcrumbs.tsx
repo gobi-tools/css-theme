@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -58,7 +59,7 @@ export default function Breadcrumbs({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<nav>
   <ol>
     <li>
@@ -81,7 +82,7 @@ export default function Breadcrumbs({ theme }) {
     </li>
   </ol>
 </nav>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

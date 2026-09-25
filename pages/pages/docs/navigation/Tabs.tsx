@@ -3,6 +3,7 @@ import DocLayout from "../../../common/components/DocsLayout";
 import { RouteMaster } from "../../../common/utils/routes";
 import { EExamples } from "../../../common/utils/types";
 import { useRoute } from "../../../common/effects/useRoute";
+import CodeSyntax from "../../../common/components/CodeSyntax";
 
 export type TSelectedTab = 'tab-1' | 'tab-2' | 'tab-3';
 
@@ -87,7 +88,7 @@ export default function Tabs({ theme }) {
           </div>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<main>
   <menu>
     <li>
@@ -113,7 +114,7 @@ export default function Tabs({ theme }) {
     </div>
   </div>
 </main>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -134,7 +135,7 @@ export default function Tabs({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<div className="row">
   <aside>
     <menu>
@@ -162,7 +163,7 @@ export default function Tabs({ theme }) {
     </div>
   </div>
 </div>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

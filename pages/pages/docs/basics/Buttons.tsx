@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -19,12 +20,12 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<button>Button</button>
 <button type="reset">
   Button
 </button>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -40,7 +41,7 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<button disabled>
   Button
 </button>
@@ -49,7 +50,7 @@ export default function Buttons({ theme }) {
   disabled>
   Button
 </button>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -89,7 +90,7 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>{`<!-- left side icon -->
+          <CodeSyntax lang={'xml'}>{`<!-- left side icon -->
 <button>
   <svg ...></svg>
   <span>Home</span> 
@@ -100,7 +101,7 @@ export default function Buttons({ theme }) {
   <span>Play</span>
   <svg ...></svg>
 </button>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -131,13 +132,13 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>{`<button>
+          <CodeSyntax lang={'xml'}>{`<button>
   <svg ...></svg>
 </button>
 <button type="reset">
   <dvg ...></svg>
 </button>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -168,7 +169,7 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>{`<button
+          <CodeSyntax lang={'xml'}>{`<button
   class="secondary">
   Action
 </button>
@@ -184,7 +185,7 @@ export default function Buttons({ theme }) {
   <svg ...></svg>
   <span>Cancel</span>
 </button>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -242,7 +243,7 @@ export default function Buttons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>{`<p role="group">
+          <CodeSyntax lang={'xml'}>{`<p role="group">
   <button>
     Button 1
   </button>
@@ -278,7 +279,7 @@ export default function Buttons({ theme }) {
     Next
   </button>
 </p>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

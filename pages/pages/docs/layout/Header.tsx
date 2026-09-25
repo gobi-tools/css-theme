@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -17,7 +18,7 @@ export default function Header({ theme }) {
           <iframe scrolling="no" width="100%" height={275} src={RouteMaster.example(EExamples.LayoutHeaderSimple, theme, route)} />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<header>
   <nav>
     <ul>
@@ -38,7 +39,7 @@ export default function Header({ theme }) {
   <h1>Title</h1>
   <p>Lorem ipsum...</p>
 </main>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -51,7 +52,7 @@ export default function Header({ theme }) {
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderComplex, theme, route)} />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<!-- nav header -->
 <header>
   <nav>
@@ -90,7 +91,7 @@ export default function Header({ theme }) {
   <h1>Title</h1>
   <p>Lorem ipsum...</p>
 </main>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -103,7 +104,7 @@ export default function Header({ theme }) {
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderSection, theme, route)} />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<main>
   <header>
     <aside>
@@ -122,7 +123,7 @@ export default function Header({ theme }) {
     </aside>
   </header>
 </main>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

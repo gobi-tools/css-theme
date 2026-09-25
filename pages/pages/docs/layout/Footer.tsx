@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -17,14 +18,14 @@ export default function Footer({ theme }) {
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutFooterSimple, theme, route)} />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<footer>
   <div>
     This is a simple footer
     with a <a href="...">link</a>.
   </div>
 </footer>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
       <section className="row">
@@ -35,7 +36,7 @@ export default function Footer({ theme }) {
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutFooterComplex, theme, route)} />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<footer>
   <div>
     <div class="row">
@@ -53,7 +54,7 @@ export default function Footer({ theme }) {
     </div>
   </div>
 </footer>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

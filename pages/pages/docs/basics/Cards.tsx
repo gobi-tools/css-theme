@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -34,7 +35,7 @@ export default function Cards({ theme }) {
           </div>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<article>
   <span>
     <b>Title</b>
@@ -43,7 +44,7 @@ export default function Cards({ theme }) {
     Lorem ipsum ...
   </p>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -78,14 +79,14 @@ export default function Cards({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<article>
   <h3>Title</h3>
   <p>
     Lorem ipsum ...
   </p>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -114,14 +115,14 @@ export default function Cards({ theme }) {
           </div>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<article>
   <header>Title</header>
   <p>
     Lorem ipsum ...
   </p>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -151,7 +152,7 @@ export default function Cards({ theme }) {
           </div>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<article>
   <img 
     height="80" 
@@ -161,7 +162,7 @@ export default function Cards({ theme }) {
     Lorem ipsum ...
   </p>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -188,7 +189,7 @@ export default function Cards({ theme }) {
           </article>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<article>
   <img 
     height="160" 
@@ -206,7 +207,7 @@ export default function Cards({ theme }) {
     </button>
   </p>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -253,7 +254,7 @@ export default function Cards({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<article>
   <div role="group">
     <div class="row">
@@ -290,7 +291,7 @@ export default function Cards({ theme }) {
     </button>
   </p>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 
 export default function FormsDisabled({ theme }) {
@@ -36,7 +37,7 @@ export default function FormsDisabled({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <fieldset>
     <legend>
@@ -90,7 +91,7 @@ export default function FormsDisabled({ theme }) {
       disabled/>
   </fieldset>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

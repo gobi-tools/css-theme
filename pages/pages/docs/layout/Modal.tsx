@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import DocLayout from "../../../common/components/DocsLayout";
+import CodeSyntax from "../../../common/components/CodeSyntax";
 
 export default function Modal({ theme }) {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
@@ -24,7 +25,7 @@ export default function Modal({ theme }) {
           <DialogModal ref={dialogRef} />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<button id="openBtn">Open modal</button>
 
 <dialog id="modal">
@@ -49,7 +50,7 @@ export default function Modal({ theme }) {
   </form>
 </dialog>
 `}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

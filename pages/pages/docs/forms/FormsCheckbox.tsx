@@ -1,5 +1,6 @@
 import { useState } from "react";
 import DocLayout from "../../../common/components/DocsLayout";
+import CodeSyntax from "../../../common/components/CodeSyntax";
 
 export default function FormsCheckbox({ theme }) {
   const [radio, setRadio] = useState('bread');
@@ -58,7 +59,7 @@ export default function FormsCheckbox({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <div className="row">
     <div>
@@ -77,7 +78,7 @@ export default function FormsCheckbox({ theme }) {
     ...
   </div>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -103,7 +104,7 @@ export default function FormsCheckbox({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <div className="row">
     <p><b>Wrapping</b></p>
@@ -119,7 +120,7 @@ export default function FormsCheckbox({ theme }) {
     ...
   </div>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

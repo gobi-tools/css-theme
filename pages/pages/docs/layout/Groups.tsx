@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 
 export default function Groups({ theme }) {
@@ -19,7 +20,7 @@ export default function Groups({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<p role="group">
   <button>
     Option 1
@@ -28,7 +29,7 @@ export default function Groups({ theme }) {
     Option 2
   </button>
 </p>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -44,7 +45,7 @@ export default function Groups({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<p role="group">
   <mark>
     #test
@@ -54,7 +55,7 @@ export default function Groups({ theme }) {
     v1.0.0
   </mark>
 </p>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -74,7 +75,7 @@ export default function Groups({ theme }) {
           </form>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<form>
   <div role="group">
     <input 
@@ -90,7 +91,7 @@ export default function Groups({ theme }) {
       value={"Login"}/>
   </div>
 </form>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -118,7 +119,7 @@ export default function Groups({ theme }) {
           </div>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<div role="group">
   <svg 
     width="20" 
@@ -128,7 +129,7 @@ export default function Groups({ theme }) {
     Test Address, SE11 8CL
   </b>
 </div>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -144,7 +145,7 @@ export default function Groups({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<p role="group">
   <img 
     width="80" 
@@ -157,7 +158,7 @@ export default function Groups({ theme }) {
     src="..." 
     alt="image 2"/>
 </p>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

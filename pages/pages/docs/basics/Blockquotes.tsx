@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -19,9 +20,9 @@ export default function Blockquotes({ theme }) {
           </blockquote>
         </div>
         <div>
-          <pre><code>{`<blockquote>
+          <CodeSyntax lang={'xml'}>{`<blockquote>
   Lorem ipsum ...
-</blockquote>`}</code></pre>
+</blockquote>`}</CodeSyntax>
         </div>
       </section>
 
@@ -59,7 +60,7 @@ export default function Blockquotes({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<blockquote>
   <p>
     Press 
@@ -81,7 +82,7 @@ export default function Blockquotes({ theme }) {
     </p>
   </hgroup>
 </blockquote>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -128,7 +129,7 @@ export default function Blockquotes({ theme }) {
           </hgroup>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<blockquote class="success">
   <hgroup>
     <h4>Success</h4>
@@ -167,7 +168,7 @@ export default function Blockquotes({ theme }) {
     </button>
   </hgroup>
 </blockquote>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

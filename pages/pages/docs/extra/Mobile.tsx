@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocsLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -27,14 +28,14 @@ export default function Mobile({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<!-- elements that -->
 <!-- resize naturally -->
 <!-- on mobile -->
 <p>
   Lorem ipsum ....
 </p>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -52,7 +53,7 @@ export default function Mobile({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<header>
   <nav>
     <ul>
@@ -61,7 +62,7 @@ export default function Mobile({ theme }) {
     </ul>
   </nav>
 </header>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -79,14 +80,14 @@ export default function Mobile({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<header>
   <menu>
     <li><a ...>...</a></li>
     ....
   </menu>
 </header>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -103,12 +104,12 @@ export default function Mobile({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<div class="row">
   <div class="col">...</div>
   <div class="col">...</div>
 </div>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 

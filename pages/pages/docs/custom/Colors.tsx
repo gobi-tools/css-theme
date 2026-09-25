@@ -1,5 +1,6 @@
 import { useState } from "react";
 import DocLayout from "../../../common/components/DocsLayout";
+import CodeSyntax from "../../../common/components/CodeSyntax";
 
 type TColor = 'primary' | 'secondary' | 'success' | 'error';
 
@@ -92,7 +93,7 @@ export default function Colors({ theme }) {
           </section>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`...
 <h1>
   <span class="${colorClass}">
@@ -148,7 +149,7 @@ export default function Colors({ theme }) {
   </blockquote>
 </div>
 `}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 
 export default function Links({ theme }) {
@@ -16,7 +17,7 @@ export default function Links({ theme }) {
           </ul>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<a href="https://website.com">
   website.com
 </a>
@@ -29,7 +30,7 @@ export default function Links({ theme }) {
   /#location
 </a>
 `}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

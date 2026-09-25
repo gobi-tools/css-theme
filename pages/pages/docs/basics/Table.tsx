@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 
 export default function Table({ theme }) {
@@ -62,7 +63,7 @@ export default function Table({ theme }) {
           </table>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<table>
   <thead>
     <tr>
@@ -98,7 +99,7 @@ export default function Table({ theme }) {
     </tr>
   </tfoot>
 </table>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout"
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes"
@@ -75,7 +76,7 @@ export default function Navigation({ theme }) {
           </nav>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<header>
   <nav>
     <ul>
@@ -112,7 +113,7 @@ export default function Navigation({ theme }) {
     </ul>
   </nav>
 </header>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -144,7 +145,7 @@ export default function Navigation({ theme }) {
           <br />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<li>
   <img 
     height="24" 
@@ -159,7 +160,7 @@ export default function Navigation({ theme }) {
     type="search" 
     placeholder="Search..."/>
 </li>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -195,7 +196,7 @@ export default function Navigation({ theme }) {
           <br />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<!-- left side -->
 <li>...</li>
 <li>...</li>
@@ -206,7 +207,7 @@ export default function Navigation({ theme }) {
 <!-- right side -->
 <li>...</li>
 <li>...</li>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -247,7 +248,7 @@ export default function Navigation({ theme }) {
           <br />
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<article>
   <nav>
     <ul>
@@ -259,7 +260,7 @@ export default function Navigation({ theme }) {
     </ul>
   </nav>
 </article>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -276,7 +277,7 @@ export default function Navigation({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<header>
   <nav>
     <ul>
@@ -313,7 +314,7 @@ export default function Navigation({ theme }) {
     </ul>
   </nav>
 </header>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

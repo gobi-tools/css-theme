@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
@@ -43,7 +44,7 @@ export default function Menu({ theme }) {
           </nav>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<nav>
   <menu>
     <li aria-selected>
@@ -55,7 +56,7 @@ export default function Menu({ theme }) {
     ...
   </menu>
 </nav>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -73,7 +74,7 @@ export default function Menu({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<header>
   <nav>
     <menu>
@@ -81,7 +82,7 @@ export default function Menu({ theme }) {
     </menu>
   </nav>
 </header>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

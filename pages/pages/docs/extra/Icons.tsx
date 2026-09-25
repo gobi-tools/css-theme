@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocsLayout from "../../../common/components/DocsLayout";
 
 export default function Icons({ theme }) {
@@ -27,7 +28,7 @@ export default function Icons({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<p>
   <!-- with <svg> element -->
   <button>
@@ -40,7 +41,7 @@ export default function Icons({ theme }) {
     <img src="..."/>
   </button>
 </p>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
       <section className="row">
@@ -67,7 +68,7 @@ export default function Icons({ theme }) {
           </div>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<div role="group">
   <svg 
     width="20" 
@@ -76,7 +77,7 @@ export default function Icons({ theme }) {
     Test Address, SE11 8CL
   </b>
 </div>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocsLayout>

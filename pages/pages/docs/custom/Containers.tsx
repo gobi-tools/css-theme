@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 
 export default function Containers({ theme }) {
@@ -59,7 +60,7 @@ export default function Containers({ theme }) {
           </p>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<header class="container-medium">
   <nav>
     ....
@@ -71,7 +72,7 @@ export default function Containers({ theme }) {
 <footer class="container-medium">
  ...
 </footer>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>

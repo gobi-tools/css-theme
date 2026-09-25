@@ -1,3 +1,4 @@
+import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/components/DocsLayout";
 
 export default function Figures({ theme }) {
@@ -15,7 +16,7 @@ export default function Figures({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<figure>
   <img 
     width="640" 
@@ -26,7 +27,7 @@ export default function Figures({ theme }) {
     Sample caption
   </figcaption>
 </figure>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -50,7 +51,7 @@ export default function Figures({ theme }) {
           </figure>
         </div>
         <div>
-          <pre><code>
+          <CodeSyntax lang={'xml'}>
             {`<figure>
   <figure>
     <img 
@@ -81,7 +82,7 @@ export default function Figures({ theme }) {
     figure group
   </figcaption>
 </figure>`}
-          </code></pre>
+          </CodeSyntax>
         </div>
       </section>
     </DocLayout>
