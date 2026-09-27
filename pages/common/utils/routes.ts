@@ -30,7 +30,7 @@ import Header from "../../pages/docs/layout/Header";
 import Breadcrumbs from "../../pages/docs/navigation/Breadcrumbs";
 import LayoutHeaderSection from "../../pages/examples/LayoutHeaderSection";
 import MobileBreadcrumbs from "../../pages/examples/MobileBreadcrumbs";
-import DesktopMenu from "../../pages/examples/DekstopMenu";
+import DesktopMenu from "../../pages/examples/DesktopMenu";
 import LayoutHeaderNav from "../../pages/examples/LayoutHeaderNav";
 import LayoutHeaderComplex from "../../pages/examples/LayoutHeaderComplex";
 import MobileColumns from "../../pages/examples/MobileColumns";
