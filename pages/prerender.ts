@@ -17,7 +17,7 @@ const deployments = ['', ...themes.map(t => t.toLowerCase())];
       Document,
       srcPath: './pages',
       outPath: `./docs/${deployment}`,
-      minify: false,
+      minify: true,
       splitting: true,
       initProps: { theme },
     });
