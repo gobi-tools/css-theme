@@ -1,1 +1,36 @@
-import{a as m}from"../../chunk-7AZBNJU6.js";import"../../chunk-5TBO732O.js";import i from"https://esm.sh/react@19.2.0";import{hydrateRoot as h}from"https://esm.sh/react-dom@19.2.0/client";import{jsx as e,jsxs as r}from"https://esm.sh/react@19.2.0/jsx-runtime";function o(t){return r("html",{lang:"en",children:[r("head",{children:[e("meta",{charSet:"utf-8"}),e("title",{children:"Title"}),e("meta",{name:"description",content:"CSS Theme Demo"}),e("meta",{name:"author",content:"CSS Theme"}),e("meta",{name:"viewport",content:"width=device-width, initial-scale=1.0"}),e("meta",{name:"color-scheme",content:"light dark"}),e("link",{rel:"stylesheet",href:`/res/theme.${t.theme}.min.css`}),e("link",{rel:"stylesheet",href:`/${m}/res/theme.${t.theme}.min.css`})]}),e("body",{children:e("div",{className:"container-wide",children:t.children})})]})}var n=document.getElementById("root");if(!n)throw new Error("react-srv: Could not find hydration root.");globalThis.__REACT_SRV_HYDRATED__||(globalThis.__REACT_SRV_HYDRATED__=!0,h(n,i.createElement(o,globalThis.__INITIAL_PROPS__||{})));
+import {
+  PUB_SUBDOMAIN
+} from "../../chunk-NJ357LRU.js";
+import "../../chunk-U67V476Y.js";
+
+// ../../../../tmp/react-srv/84311/wrappers/common/documents/document.4f46a7.js
+import React from "https://esm.sh/react@19.2.0";
+import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
+
+// pages/common/documents/Document.tsx
+import { jsx, jsxs } from "https://esm.sh/react@19.2.0/jsx-runtime";
+function Document(props) {
+  return /* @__PURE__ */ jsxs("html", { lang: "en", children: [
+    /* @__PURE__ */ jsxs("head", { children: [
+      /* @__PURE__ */ jsx("meta", { charSet: "utf-8" }),
+      /* @__PURE__ */ jsx("title", { children: "Title" }),
+      /* @__PURE__ */ jsx("meta", { name: "description", content: "CSS Theme Demo" }),
+      /* @__PURE__ */ jsx("meta", { name: "author", content: "CSS Theme" }),
+      /* @__PURE__ */ jsx("meta", { name: "viewport", content: "width=device-width, initial-scale=1.0" }),
+      /* @__PURE__ */ jsx("meta", { name: "color-scheme", content: "light dark" }),
+      /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/res/theme.${props.theme}.min.css` }),
+      /* @__PURE__ */ jsx("link", { rel: "stylesheet", href: `/${PUB_SUBDOMAIN}/res/theme.${props.theme}.min.css` })
+    ] }),
+    /* @__PURE__ */ jsx("body", { children: /* @__PURE__ */ jsx("div", { className: "container-wide", children: props.children }) })
+  ] });
+}
+
+// ../../../../tmp/react-srv/84311/wrappers/common/documents/document.4f46a7.js
+var root = document.getElementById("root");
+if (!root) {
+  throw new Error("react-srv: Could not find hydration root.");
+}
+if (!globalThis.__REACT_SRV_HYDRATED__) {
+  globalThis.__REACT_SRV_HYDRATED__ = true;
+  hydrateRoot(root, React.createElement(Document, globalThis.__INITIAL_PROPS__ || {}));
+}
