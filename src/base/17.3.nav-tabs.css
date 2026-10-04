@@ -21,7 +21,7 @@ menu>li {
 }
 
 menu>li>a {
-  color: var(--color-textual-dark-2);
+  color: var(--color-text);
 }
 
 menu>li>a:hover {

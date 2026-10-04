@@ -4,6 +4,7 @@
   --font-family-body: 'Sora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-family-mono: monospace; 
 
+  --color-text: light-dark(#0c0c0c, #efefef);
   --color-base: light-dark(#afa9b8, #7d748c);
   --color-primary: light-dark(#7554ff, #8364ff);
   --color-secondary: light-dark(#CC54FF, #D164FF);

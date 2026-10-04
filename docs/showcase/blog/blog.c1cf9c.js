@@ -1,4 +1,4 @@
-// ../../../../tmp/react-srv/1161533/wrappers/blog.c1cf9c.js
+// ../../../../tmp/react-srv/1203881/wrappers/blog.c1cf9c.js
 import React from "https://esm.sh/react@19.2.0";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.0/client";
 
@@ -45,7 +45,7 @@ function Blog() {
   ] });
 }
 
-// ../../../../tmp/react-srv/1161533/wrappers/blog.c1cf9c.js
+// ../../../../tmp/react-srv/1203881/wrappers/blog.c1cf9c.js
 var root = document.getElementById("root");
 if (!root) {
   throw new Error("react-srv: Could not find hydration root.");

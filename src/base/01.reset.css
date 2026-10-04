@@ -138,18 +138,19 @@
   /**
    THEME: colors set by the user 
    */
+  /* --color-text: __THEME__ */
   /* --color-base: __THEME__ */
   /* --color-primary: __THEME__ */
   /* --color-secondary: __THEME__ */
   /* --color-success: __THEME__ */
   /* --color-error: __THEME__ */
 
-  /* surfaces & controls */
+  /* surfaces & controls & various borders */
   --color-surface: var(--color-base);
   --color-control: var(--color-base);
-  /* all texts: p, buttons, block, pre>code */
-  --color-textual: var(--color-base);
   --color-borders: var(--color-base);
+  /* all texts: p, buttons, block, pre>code */
+  --color-textual: var(--color-text);
   /* [outline|accent] for input, select, textarea, fieldset
      they are always set to --color-primary or --color-secondary 
   */
@@ -213,25 +214,20 @@
     color-mix(in oklch, var(--color-borders), white 60%),
     color-mix(in oklch, var(--color-borders), black 20%)
   );
-  /* [hover][border] button  */
+  /* pre>code, blockquote  */
   --color-borders-dark-1: light-dark(
-    color-mix(in oklch, var(--color-borders), black 20%),
-    color-mix(in oklch, var(--color-borders), white 20%)
+    color-mix(in oklch, var(--color-borders), black 5%),
+    color-mix(in oklch, var(--color-borders), white 15%)
   );
 
   /* a, menu>a */
-  --color-textual-light-2: light-dark(
+  --color-textual-light-1: light-dark(
     color-mix(in oklch, var(--color-textual), white 95%),
     color-mix(in oklch, var(--color-textual), white 95%)
   );
   --color-textual-dark-1: light-dark(
     color-mix(in oklch, var(--color-textual), black 20%),
     color-mix(in oklch, var(--color-textual), white 60%)
-  );
-  /* all  text */
-  --color-textual-dark-2: light-dark(
-    color-mix(in oklch, var(--color-textual), black 90%),
-    color-mix(in oklch, var(--color-textual), white 90%)
   );
 }
 

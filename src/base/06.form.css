@@ -109,7 +109,7 @@ textarea {
   background: var(--color-control-light-5);
   accent-color: var(--color-accents);
   border-color: var(--color-borders-light-1);
-  color: var(--color-textual-dark-2);
+  color: var(--color-text);
 }
 
 select {

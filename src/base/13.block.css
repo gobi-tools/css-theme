@@ -45,7 +45,7 @@ pre>code {
 blockquote,
 pre>code {
   background: var(--color-surface-light-3);
-  border-color: var(--color-borders);
+  border-color: var(--color-borders-dark-1);
 }
 
 pre {

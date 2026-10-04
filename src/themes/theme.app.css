@@ -36,6 +36,7 @@
 }
 
 :root {
+  --color-text: light-dark(#0c0c0c, #efefef);
   --color-base: light-dark(#858585, #747990);
   --color-primary: light-dark(#1465e9, #2d77ed);
   --color-secondary: #238cd1;

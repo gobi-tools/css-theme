@@ -3,10 +3,7 @@
   --font-family-navi:  "Lato", sans-serif;
   --font-family-body: "Lato", sans-serif;
 
-  /* --color-base: light-dark(#557dab, #6e869d);
-  --color-primary: light-dark(#00476D, #4fa3c7);
-  --color-secondary: light-dark(#4F67C7, #4F67C7); */
-
+  --color-text: light-dark(#3c4249, #f0f6fb);
   --color-base: light-dark(#afa9b8, #7d748c);
   --color-primary: light-dark(#557dab, #5988b4);
   --color-secondary: #4F67C7;
