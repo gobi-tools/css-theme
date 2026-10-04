@@ -144,15 +144,16 @@
   /* --color-success: __THEME__ */
   /* --color-error: __THEME__ */
 
+  /* surfaces & controls */
   --color-surface: var(--color-base);
-  /* button */
   --color-control: var(--color-base);
-  /* [border] button, block, pre>code */
-  --color-borders: var(--color-base);
+  /* all texts: p, buttons, block, pre>code */
   --color-textual: var(--color-base);
-  /* [accent|outline] input, select */
+  --color-borders: var(--color-base);
+  /* [outline|accent] for input, select, textarea, fieldset
+     they are always set to --color-primary or --color-secondary 
+  */
   --color-outline: var(--color-base);
-  /* accents for inputs */
   --color-accents: var(--color-base);
   
   /* body */
