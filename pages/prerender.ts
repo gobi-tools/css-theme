@@ -19,6 +19,7 @@ const deployments = ['', ...themes.map(t => t.toLowerCase())];
       outPath: `./docs/${deployment}`,
       minify: true,
       splitting: true,
+      keepNames: true,
       initProps: { theme },
     });
     await react.prerender();
