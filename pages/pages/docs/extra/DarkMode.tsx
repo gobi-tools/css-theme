@@ -33,53 +33,31 @@ export default function DarkMode({ theme }: { theme: EThemes}) {
                 <td>&#9989;</td>
               </tr>
               <tr>
+                <td>Blog</td>
+                <td>&#9989;</td>
+                <td>&#9989;</td>
+              </tr>
+              <tr>
                 <td>App</td>
                 <td>&#9989;</td>
                 <td>&#9989;</td>
               </tr>
-              <tr>
-                <td>Writing</td>
-                <td>&#9989;</td>
-                <td>&#9989;</td>
-              </tr>
-              <tr>
-                <td>Scholar</td>
-                <td>&#9989;</td>
-                <td>&#9989;</td>
-              </tr>
 
               <tr>
-                <td>Bold</td>
+                <td>Delivery</td>
                 <td>&#9989;</td>
                 <td>&#10060;</td>
               </tr>
               <tr>
-                <td>Sunset</td>
+                <td>Landing</td>
                 <td>&#9989;</td>
                 <td>&#10060;</td>
               </tr>
               <tr>
-                <td>Sunset</td>
+                <td>Newsletter</td>
                 <td>&#9989;</td>
                 <td>&#10060;</td>
               </tr>
-
-              <tr>
-                <td>Green</td>
-                <td>&#10060;</td>
-                <td>&#9989;</td>
-              </tr>
-              <tr>
-                <td>Betty</td>
-                <td>&#10060;</td>
-                <td>&#9989;</td>
-              </tr>
-              <tr>
-                <td>Gold</td>
-                <td>&#10060;</td>
-                <td>&#9989;</td>
-              </tr>
-
             </tbody>
           </table>
         </div>
