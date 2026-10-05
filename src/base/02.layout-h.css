@@ -52,15 +52,6 @@ nav>:is(ul, ol) {
   margin-left: 0;
 }
 
-/* horizontal layout: right margins */
-
-svg:has(+*),
-*:has(+svg),
-button>img:has(+*),
-button>*:has(+img) {
-  margin-right: var(--space-2xs) !important;
-}
-
 /* 
  * if a label contains check | radios, it gets the right margin 
  */

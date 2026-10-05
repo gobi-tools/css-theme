@@ -9,6 +9,7 @@ input[type=reset] {
   padding-block: var(--space-xs);
   padding-inline: var(--space-m);
   display: inline-flex;
+  gap: var(--space-2xs);
   align-items: center;
   vertical-align: middle;
   text-align: center;

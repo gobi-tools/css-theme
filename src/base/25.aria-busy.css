@@ -20,7 +20,3 @@
 :is(button, input[type=submit], input[type=reset])[aria-busy=true]:empty {
   padding-inline: var(--space-sm);
 }
-
-:is(button, input[type=submit], input[type=reset])[aria-busy=true]:not(:empty) {
-  gap: var(--space-2xs);
-}

@@ -12,6 +12,7 @@ mark {
 mark {
   height: var(--height-small-code);
   display: inline-flex;
+  gap: var(--space-2xs);
   align-items: center;
   vertical-align: middle;
 }
