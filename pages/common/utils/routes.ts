@@ -42,6 +42,7 @@ import Colors from "../../pages/docs/custom/Colors";
 import Footer from "../../pages/docs/layout/Footer";
 import LayoutFooterSimple from "../../pages/examples/LayoutFooterSimple";
 import LayoutFooterComplex from "../../pages/examples/LayoutFooterComplex";
+import Loading from "../../pages/docs/extra/Loading";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -90,6 +91,7 @@ export class RouteMaster {
       // extra
       case EDoc.DarkMode: return `${base}${theme}/pages/docs/extra/${htmlName(DarkMode)}`;
       case EDoc.Icons: return `${base}${theme}/pages/docs/extra/${htmlName(Icons)}`;
+      case EDoc.Loading: return `${base}${theme}/pages/docs/extra/${htmlName(Loading)}`;
       case EDoc.Mobile: return `${base}${theme}/pages/docs/extra/${htmlName(Mobile)}`;
       // custom
       case EDoc.Classes: return `${base}${theme}/pages/docs/custom/${htmlName(Classes)}`;
@@ -151,6 +153,7 @@ export class RouteMaster {
         switch (doc) {
           case htmlName(DarkMode): return EDoc.DarkMode;
           case htmlName(Icons): return EDoc.Icons;
+          case htmlName(Loading): return EDoc.Loading;
           case htmlName(Mobile): return EDoc.Mobile;
         }
       }

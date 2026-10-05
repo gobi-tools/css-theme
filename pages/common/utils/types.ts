@@ -30,6 +30,7 @@ export enum EDoc {
   Tabs = 'tabs',
   // extra
   Icons = 'icons',
+  Loading = 'loading',
   DarkMode = 'dark-mode',
   Mobile = 'mobile',
   // custom - layout

@@ -138,6 +138,9 @@ export default function DocLayout(
               <li aria-selected={selectedDoc === EDoc.Icons}>
                 <a href={RouteMaster.doc(EDoc.Icons, theme, route)}>Icons</a>
               </li>
+              <li aria-selected={selectedDoc === EDoc.Loading}>
+                <a href={RouteMaster.doc(EDoc.Loading, theme, route)}>Loading</a>
+              </li>
               <li aria-selected={selectedDoc === EDoc.Mobile}>
                 <a href={RouteMaster.doc(EDoc.Mobile, theme, route)}>Mobile</a>
               </li>
