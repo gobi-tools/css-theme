@@ -89,6 +89,7 @@ export default function Colors({ theme }: { theme: EThemes}) {
               <hgroup>
                 <h4>More information</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p>Link <a href="">here</a>.</p>
               </hgroup>
             </blockquote>
           </section>
