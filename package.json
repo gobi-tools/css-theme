@@ -28,7 +28,7 @@
     "fast-glob": "^3.3.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-srv": "^0.0.70",
+    "react-srv": "^0.0.76",
     "react-syntax-highlighter": "^16.1.1"
   }
 }
