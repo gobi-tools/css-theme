@@ -1,22 +1,56 @@
 /* base */
 
-[aria-busy=true]:not(input, select, textarea, html, form)::before {
+:root {
+  --loading-icon: url("data:image/svg+xml,%3Csvg fill='none' height='24' width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E g %7B animation: rotate 2s linear infinite; transform-origin: center center; %7D circle %7B stroke-dasharray: 75,100; stroke-dashoffset: -5; animation: dash 1.5s ease-in-out infinite; stroke-linecap: round; %7D @keyframes rotate %7B 0%25 %7B transform: rotate(0deg); %7D 100%25 %7B transform: rotate(360deg); %7D %7D @keyframes dash %7B 0%25 %7B stroke-dasharray: 1,100; stroke-dashoffset: 0; %7D 50%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -17.5; %7D 100%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -62; %7D %7D %3C/style%3E%3Cg%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='white' stroke-width='4' /%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* for all normal elements */
+[aria-busy=true]:not(input, select, textarea, html, form)::before,
+/* buttons with a last child icon will get an after element */
+button[aria-busy=true]:has(>:is(svg, img):last-child)::after {
   display: inline-block;
   width: var(--font-size-base);
   height: var(--font-size-base);
-
   background-color: currentColor;
-
-  mask-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E g %7B animation: rotate 2s linear infinite; transform-origin: center center; %7D circle %7B stroke-dasharray: 75,100; stroke-dashoffset: -5; animation: dash 1.5s ease-in-out infinite; stroke-linecap: round; %7D @keyframes rotate %7B 0%25 %7B transform: rotate(0deg); %7D 100%25 %7B transform: rotate(360deg); %7D %7D @keyframes dash %7B 0%25 %7B stroke-dasharray: 1,100; stroke-dashoffset: 0; %7D 50%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -17.5; %7D 100%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -62; %7D %7D %3C/style%3E%3Cg%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='white' stroke-width='4' /%3E%3C/g%3E%3C/svg%3E");
-
-  mask-size: 1em auto;
+  mask-image: var(--loading-icon);
+  mask-size: var(--font-size-base) auto;
   mask-repeat: no-repeat;
   mask-position: center;
-
   content: "";
   vertical-align: -.125em;
 }
 
-:is(button, input[type=submit], input[type=reset])[aria-busy=true]:empty {
+button[aria-busy=true]:has(>:is(svg, img):last-child)::before {
+  display: none !important;
+}
+
+*:not(button)[aria-busy=true]>* {
+  display: none;
+}
+
+button[aria-busy=true]>:is(svg, img) {
+  display: none;
+}
+
+
+/* in each of those cases listed, the display is "inline-flex" and the spacing between 
+   elements is done via "gap" */
+[aria-busy=true]:not(button, mark, nav a, menu a, nav>menu>li>a)::before {
+  margin-right: var(--space-2xs);
+}
+
+[aria-busy=true]:is(button) {
   padding-inline: var(--space-sm);
 }
+
+article[aria-busy=true] {
+  padding-inline: var(--space-m) !important;
+  padding-block: var(--space-l) !important;
+}
+
+article[aria-busy=true]::before {
+  position: relative;
+  inset: 50% auto auto 50%;
+}
+
+/* todo: should NAV/MENU elements have this? */
