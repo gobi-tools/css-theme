@@ -75,6 +75,7 @@
 
   /* -button applies to: "button" (& "grouped" buttons) */
   --height-button: 41.48px;
+  --width-button: 150px;
   --border-radius-button: 6px;
 
   --border-left-width-button: 2px;

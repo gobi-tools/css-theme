@@ -28,6 +28,7 @@
 
 [role="group"]>:is(button, input[type=submit], input[type=reset], mark) {
   width: auto;
+  min-width: auto;
   align-self: flex-start;
 }
 

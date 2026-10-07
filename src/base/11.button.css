@@ -18,6 +18,11 @@ input[type=reset] {
   -webkit-appearance: none;
   appearance: none;
 }
+button {
+  width: var(--width-button);
+  max-width: 100%;
+  min-width: max-content;
+}
 
 *:disabled {
   filter: opacity(50%);
