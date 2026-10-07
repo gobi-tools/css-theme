@@ -148,7 +148,7 @@ export default function Buttons({ theme }: { theme: EThemes}) {
             By default, buttons are styled using the <b>primary</b> color, which impacts their background, border or text color. 
             You can change that by applying classes like <code>secondary</code>, <code>success</code> or <code>error</code>. 
           </p>
-          <p>
+          <p className="flex">
             <button className="secondary">Action</button>
             <button className="success">Confirm</button>
             <button type="reset" className="error">

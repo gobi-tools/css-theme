@@ -8,6 +8,9 @@ mark {
   padding-inline: var(--space-xs);
   display: inline-block;
 }
+kbd, var, mark {
+  max-width: max-content;
+}
 
 mark {
   height: var(--height-small-code);

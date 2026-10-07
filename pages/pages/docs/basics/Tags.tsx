@@ -79,13 +79,13 @@ export default function Tags({ theme }: { theme: EThemes}) {
             to change the appearance of the highlighted content. You can add the <code>inverted</code> class to each of the 
             previous to highlight the content even more.
           </p>
-          <p>
+          <p className="flex">
             <mark className="primary">#theme</mark>
             <mark className="secondary">#second</mark>
             <mark className="success">Process OK</mark>
             <mark className="error">Error 400</mark>
           </p>
-          <p>
+          <p className="flex">
             <mark className="primary inverted">#theme</mark>
             <mark className="secondary inverted">#second</mark>
             <mark className="success inverted">Process OK</mark>

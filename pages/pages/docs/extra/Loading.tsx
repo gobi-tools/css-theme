@@ -19,7 +19,7 @@ export default function Loading({ theme }: { theme: EThemes }) {
             For example, it can be applied to buttons (with or without exiting icons):
           </p>
 
-          <p>
+          <p className="flex">
             <button aria-busy={isLoading}>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

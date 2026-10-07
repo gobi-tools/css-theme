@@ -13,6 +13,7 @@ button>img {
 :is(button, input[type=submit], input[type=reset]):has(:is(svg:only-child, img:only-child)) {
   padding-inline: var(--space-sm);
   min-width: auto;
+  max-width: fit-content;
   width: auto;
 }
 

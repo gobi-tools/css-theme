@@ -8,6 +8,16 @@
   display: none !important;
 }
 
+.flex {
+  display: flex;
+}
+*:has(>.flex) {
+  container-type: inline-size;
+}
+
+/* this is a class that works applyed to other elements, like nav, etc */
+.disable-mobile {}
+
 /* different layouts */
 
 @container (max-width: 600px) {
@@ -17,5 +27,14 @@
 
   .hide-on-desktop {
     display: block !important;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: var(--space-2xs);
+
+    > * {
+      margin-left: 0;
+    }
   }
 }
