@@ -11,3 +11,7 @@
 .container-wide {
   --width-page: var(--width-container-wide);
 }
+
+.container-full {
+  --width-page: 100%;
+}

@@ -53,6 +53,17 @@ export default function Containers({ theme }: { theme: EThemes}) {
                   The largest viewport. Suitable for apps, dashboard, etc.
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <code>container-full</code>
+                </td>
+                <td>
+                  100%
+                </td>
+                <td>
+                  Sets the size of the container to 100%. When <code>container-wide</code> is not enough.
+                </td>
+              </tr>
             </tbody>
           </table>
           <p>

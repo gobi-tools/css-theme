@@ -22,7 +22,7 @@ export default function Classes({ theme }: { theme: EThemes}) {
             </thead>
             <tbody>
               <tr>
-                <td rowSpan={3}>Containers</td>
+                <td rowSpan={4}>Containers</td>
                 <td><code>container-medium</code></td>
                 <td>
                   Sets the maximum size of the container to 800px.
@@ -38,6 +38,12 @@ export default function Classes({ theme }: { theme: EThemes}) {
                 <td><code>container-wide</code></td>
                 <td>
                   Sets the maximum size of the container to 1600px.
+                </td>
+              </tr>
+              <tr>
+                <td><code>container-full</code></td>
+                <td>
+                  Sets the  maximum size of the container to 100% (width of the screen).
                 </td>
               </tr>
 
