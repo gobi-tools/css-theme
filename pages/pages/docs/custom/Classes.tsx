@@ -63,7 +63,7 @@ export default function Classes({ theme }: { theme: EThemes}) {
               </tr>
               
               <tr>
-                <td rowSpan={3}>Mobile</td>
+                <td rowSpan={4}>Mobile</td>
                 <td><code>hide-on-mobile</code></td>
                 <td>
                   Hides an element if on small displays.
@@ -81,6 +81,12 @@ export default function Classes({ theme }: { theme: EThemes}) {
                   Disable layout changes on small displays.
                   It can be applied to elements that have the <code>row</code> class applied, nav bars, menus, etc 
                   to force them not to change their display on small screens.
+                </td>
+              </tr>
+              <tr>
+                <td><code>flex</code></td>
+                <td>
+                  Displays content normally on wider screens but switches to a row layout on smaller devices.
                 </td>
               </tr>
 
