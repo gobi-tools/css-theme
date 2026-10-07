@@ -17,7 +17,6 @@ button[aria-busy=true]:has(>:is(svg, img):last-child)::after {
   mask-repeat: no-repeat;
   mask-position: center;
   content: "";
-  vertical-align: -.125em;
 }
 
 button[aria-busy=true]:has(>:is(svg, img):last-child)::before {

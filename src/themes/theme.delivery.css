@@ -12,6 +12,10 @@
 
   --color-success: #23b157;
   --color-error: #e4cb3f;
+
+  /* one offs */
+  /** used to fix icon v alignment */
+  --valign-nav-icon-fix: -0.125em;
 }
 
 .big-banner {

@@ -133,6 +133,10 @@
   /* -tabs applies to: "tab" (nav>ol) */
   --border-width-horz-tabs: 4px;
   --border-width-vert-tabs: 3px;
+
+  /* one offs */
+  /** used to fix icon v alignment */
+  --valign-nav-icon-fix: -0.0625em;
 }
 
 * {
