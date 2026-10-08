@@ -49,7 +49,8 @@
   --height-small-code: 32px;
 
   /* heights for hr */
-  --hr-height: 2px;
+  --height-hr: 2px;
+  --height-menu-mobile: 60px;
 
   --border-radius-code: 6px;
   --border-left-width-code: 0px;

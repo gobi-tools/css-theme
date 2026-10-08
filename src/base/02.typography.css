@@ -1,7 +1,7 @@
 /* base */ 
 
 hr {
-  height: var(--hr-height);
+  height: var(--height-hr);
   display: block;
   border-width: 0px;
   border-top-width: 1px;
