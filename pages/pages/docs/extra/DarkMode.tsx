@@ -66,14 +66,10 @@ export default function DarkMode({ theme }: { theme: EThemes}) {
             {`<html>
   <head>
     <!-- both variants -->
-    <meta 
-      name="color-scheme" 
-      content="light dark"/>
+    <meta name="color-scheme" content="light dark"/>
     
     <!-- only dark variant -->
-    <meta 
-      name="color-scheme" 
-      content="dark"/>
+    <meta name="color-scheme" content="dark"/>
   </head>
 </html>`}
           </CodeSyntax>

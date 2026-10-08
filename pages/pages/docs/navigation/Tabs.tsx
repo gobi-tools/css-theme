@@ -136,7 +136,7 @@ export default function Tabs({ theme }: { theme: EThemes }) {
         </div>
         <div>
           <CodeSyntax lang={'xml'}>
-            {`<div className="row">
+            {`<div class="row">
   <aside>
     <menu>
       <li>

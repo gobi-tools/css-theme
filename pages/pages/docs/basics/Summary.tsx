@@ -100,12 +100,7 @@ export default function Summary({ theme }: { theme: EThemes}) {
   <details>
     <summary>Note</summary>
     <p>
-      Lorem ipsum dolor sit 
-      amet, consectetur 
-      adipiscing elit, 
-      sed do eiusmod tempor 
-      incididunt ut labore 
-      et dolore magna aliqua.
+      Lorem ipsum ...
     </p>
   </details>
 </article>
@@ -114,10 +109,7 @@ export default function Summary({ theme }: { theme: EThemes}) {
   <details>
     <summary>Info</summary>
     <p>
-      Learn more
-      <a href="...">
-        here
-      </a>
+      Learn more <a href="...">here</a>
     </p>
   </details>
 </article>

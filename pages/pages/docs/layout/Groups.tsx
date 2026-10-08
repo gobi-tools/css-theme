@@ -51,8 +51,7 @@ export default function Groups({ theme }: { theme: EThemes }) {
   <mark>
     #test
   </mark>
-  <mark 
-    class="success">
+  <mark class="success">
     v1.0.0
   </mark>
 </p>`}
@@ -89,7 +88,7 @@ export default function Groups({ theme }: { theme: EThemes }) {
       placeholder="Password"/>
     <input 
       type="submit" 
-      value={"Login"}/>
+      value="Login"/>
   </div>
 </form>`}
           </CodeSyntax>
@@ -122,9 +121,7 @@ export default function Groups({ theme }: { theme: EThemes }) {
         <div>
           <CodeSyntax lang={'xml'}>
             {`<div role="group">
-  <svg 
-    width="20" 
-    height="20" ...>
+  <svg width="20" height="20" ...>
   </svg>
   <b>
     Test Address, SE11 8CL

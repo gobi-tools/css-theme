@@ -57,7 +57,7 @@ export default function Mobile({ theme }: { theme: EThemes}) {
             {`<header>
   <nav>
     <ul>
-      <li><a ...>...</a></li>
+      <li><a href="...">...</a></li>
       ....
     </ul>
   </nav>
@@ -83,7 +83,7 @@ export default function Mobile({ theme }: { theme: EThemes}) {
           <CodeSyntax lang={'xml'}>
             {`<header>
   <menu>
-    <li><a ...>...</a></li>
+    <li><a href="...">...</a></li>
     ....
   </menu>
 </header>`}

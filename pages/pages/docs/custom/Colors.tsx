@@ -146,7 +146,7 @@ export default function Colors({ theme }: { theme: EThemes}) {
   </article>
 </div>
 <div class="row">
-  <blockquote class="${colorClass}>
+  <blockquote class="${colorClass}">
     ...
   </blockquote>
 </div>

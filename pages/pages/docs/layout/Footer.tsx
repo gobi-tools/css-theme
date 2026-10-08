@@ -21,8 +21,7 @@ export default function Footer({ theme }: { theme: EThemes }) {
           <CodeSyntax lang={'xml'}>
             {`<footer>
   <div>
-    This is a simple footer
-    with a <a href="...">link</a>.
+    This is a simple footer with a <a href="...">link</a>.
   </div>
 </footer>`}
           </CodeSyntax>
@@ -40,16 +39,26 @@ export default function Footer({ theme }: { theme: EThemes }) {
             {`<footer>
   <div>
     <div class="row">
+      <!-- first column -->
       <div>
         <nav>
-          <ul>...</ul>
+          <ul>
+            <b>COMPANY</b>
+            <li>...</li>
+            <li>...</li>
+          </ul>
         </nav>
       </div>
+      <!-- second column -->
       <div>
         <nav>
-          <ul>...</ul>
+          <ul>
+            <b>DEVELOPERS<b/>
+            <li>...</li>
+          </ul>
         </nav>
       </div>
+      <!-- empty column -->
       <div></div>
     </div>
   </div>

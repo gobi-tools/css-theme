@@ -18,10 +18,9 @@ pre>code {
   text-align: left;
   text-wrap: auto;
   word-wrap: break-word;
-  /* word-break: break-all; */
   word-break: auto-phrase;
-  white-space: break-spaces !important;
   padding: var(--space-m);
+  overflow-x: auto;
 }
 
 /* theme styles */
@@ -49,5 +48,6 @@ pre>code {
 }
 
 pre {
-  background: transparent !important;
+  /* background: transparent !important; */
+  background: var(--color-surface-light-3) !important;
 }

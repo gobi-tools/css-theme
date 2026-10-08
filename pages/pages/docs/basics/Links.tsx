@@ -27,7 +27,7 @@ export default function Links({ theme }: { theme: EThemes}) {
   email@test.com
 </a>
 
-<a href="/#location>
+<a href="/#location">
   /#location
 </a>
 `}

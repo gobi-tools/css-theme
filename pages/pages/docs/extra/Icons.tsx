@@ -71,9 +71,7 @@ export default function Icons({ theme }: { theme: EThemes}) {
         <div>
           <CodeSyntax lang={'xml'}>
             {`<div role="group">
-  <svg 
-    width="20" 
-    height="20" ...></svg>
+  <svg width="20" height="20" ...></svg>
   <b>
     Test Address, SE11 8CL
   </b>

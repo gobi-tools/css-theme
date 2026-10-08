@@ -70,10 +70,7 @@ export default function FormsNormal({ theme }: { theme: EThemes }) {
       value="Login"/>
 
     <p>
-      Don't have an account?
-      <a href="...">
-        Sign up
-      </a>.
+      Don't have an account? <a href="...">Sign up</a>.
     </p>
   </fieldset>
 </form>`}
@@ -236,11 +233,9 @@ export default function FormsNormal({ theme }: { theme: EThemes }) {
     </legend>
 
     <!-- name row -->
-    <div 
-      class="row disable-mobile">
+    <div class="row disable-mobile">
       <div>
-        <label 
-          for="first-name">
+        <label for="first-name">
           <span>
             First name
           </span>
@@ -251,8 +246,7 @@ export default function FormsNormal({ theme }: { theme: EThemes }) {
         </label>
       </div>
       <div>
-        <label 
-          for="last-name">
+        <label for="last-name">
           <span>
             Last name
           </span>
@@ -268,12 +262,10 @@ export default function FormsNormal({ theme }: { theme: EThemes }) {
     <!-- .... -->
 
     <blockquote class="success">
-      Order total is 
-      <b>$33.59</b>
+      Order total is <b>$33.59</b>
     </blockquote>
 
-    <div 
-      class="row disable-mobile">
+    <div class="row disable-mobile">
       <div>
         <input 
           type="reset" 

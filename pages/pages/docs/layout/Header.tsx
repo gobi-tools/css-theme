@@ -87,6 +87,8 @@ export default function Header({ theme }: { theme: EThemes }) {
     </form>
   </div>
 </header>
+
+<!-- main content -->
 <main>
   <h1>Title</h1>
   <p>Lorem ipsum...</p>
@@ -116,7 +118,7 @@ export default function Header({ theme }: { theme: EThemes }) {
           <!-- gap -->
           <div></div>
           <button>
-            ...
+            Download
           </button>
         </div>
       </div>

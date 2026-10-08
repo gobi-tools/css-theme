@@ -194,8 +194,7 @@ export default function FormsValidation({ theme }: { theme: EThemes }) {
         disabled 
         selected 
         hidden>
-        Please select 
-        a countrynp
+        Please select a country
       </option>
 
       <option value="uk">
@@ -214,8 +213,7 @@ export default function FormsValidation({ theme }: { theme: EThemes }) {
         type="checkbox" 
         name="terms" 
         required/>
-      I accept the 
-      terms and conditions
+      I accept the terms and conditions
     </label>
 
     <input 

@@ -30,14 +30,13 @@ export default function Code({ theme }: { theme: EThemes}) {
           <div>
             <CodeSyntax lang={'xml'}>
               {`<p>
-  Inline code <code>...</code>
+  Inline code <code>console.log('abc')</code>
 </p>
 <p>
-  Keyboard shortcut 
-  <kbd>...</kbd>
+  Keyboard shortcut <kbd>Ctrl + S</kbd>
 </p>
 <pre>
-  <code>....</code>
+  <code>console.log('abc')</code>
 </pre>`}
             </CodeSyntax>
           </div>

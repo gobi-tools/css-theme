@@ -45,9 +45,7 @@ export default function Buttons({ theme }: { theme: EThemes}) {
             {`<button disabled>
   Button
 </button>
-<button 
-  type="reset" 
-  disabled>
+<button type="reset" disabled>
   Button
 </button>`}
           </CodeSyntax>
@@ -179,9 +177,7 @@ export default function Buttons({ theme }: { theme: EThemes}) {
   Confirm
 </button>
 
-<button 
-  type="reset" 
-  class="error">
+<button tsype="reset" class="error">
   <svg ...></svg>
   <span>Cancel</span>
 </button>`}
@@ -257,13 +253,13 @@ export default function Buttons({ theme }: { theme: EThemes}) {
 
 <p role="group">
   <button type="reset">
-    <
+    <svg...></svg>
   </button>
   <button type="reset">
     <svg ...></svg>
   </button>
   <button>
-    >
+    <svg...></svg>
   </button>
 </p>
 

@@ -42,13 +42,13 @@ export default function Figures({ theme }: { theme: EThemes}) {
           <figure>
             <figure>
               <img width="200" height="240" src="https://picsum.photos/id/16/200/240" alt="first image" />
-              <figcaption>Caption for the first image</figcaption>
+              <figcaption>First image</figcaption>
             </figure>
             <figure>
               <img width="240" height="240" src="https://picsum.photos/id/16/240/240" alt="second image" />
-              <figcaption>Caption for the second image</figcaption>
+              <figcaption>Second image</figcaption>
             </figure>
-            <figcaption>Caption for the figure group</figcaption>
+            <figcaption>Figure group</figcaption>
           </figure>
         </div>
         <div>
@@ -61,8 +61,7 @@ export default function Figures({ theme }: { theme: EThemes}) {
       src="..." 
       alt="first image" />
     <figcaption>
-      Caption for the 
-      first image
+      First image
     </figcaption>
   </figure>
   
@@ -73,14 +72,12 @@ export default function Figures({ theme }: { theme: EThemes}) {
       src="..." 
       alt="second image" />
     <figcaption>
-      Caption for the 
-      second image
+      Second image
     </figcaption>
   </figure>
   
   <figcaption>
-    Caption for the 
-    figure group
+    Figure group
   </figcaption>
 </figure>`}
           </CodeSyntax>

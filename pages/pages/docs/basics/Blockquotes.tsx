@@ -49,7 +49,7 @@ export default function Blockquotes({ theme }: { theme: EThemes}) {
                 <span>Information</span>
               </p>
               <p>
-                Your package will be delivered on <b>Tuesday at 08:00.</b>
+                Delivery for <b>Tuesday at 08:00.</b>
               </p>
             </hgroup>
           </blockquote>
@@ -63,9 +63,7 @@ export default function Blockquotes({ theme }: { theme: EThemes}) {
           <CodeSyntax lang={'xml'}>
             {`<blockquote>
   <p>
-    Press 
-    <kbd>Ctrl + Q</kbd>
-    to quit
+    Press <kbd>Ctrl + Q</kbd> to quit
   </p>
 </blockquote>
             
@@ -76,9 +74,7 @@ export default function Blockquotes({ theme }: { theme: EThemes}) {
       <span>Information</span>
     </p>
     <p>
-      Your package will 
-      be delivered on 
-      <b>Tuesday at 08:00</b>.
+      Delivery for <b>Tuesday at 08:00</b>.
     </p>
   </hgroup>
 </blockquote>`}
@@ -94,7 +90,7 @@ export default function Blockquotes({ theme }: { theme: EThemes}) {
           <blockquote className="success">
             <hgroup>
               <h4>Success</h4>
-              <p>The operation was completed successfully</p>
+              <p>The operation was successfull</p>
             </hgroup>
           </blockquote>
 
@@ -102,7 +98,7 @@ export default function Blockquotes({ theme }: { theme: EThemes}) {
             <hgroup>
               <p>Unknown error</p>
               <p>
-                <code>Server responsed with <b>Error 500</b></code>
+                <code>Server response is <b>Error 500</b></code>
               </p>
             </hgroup>
           </blockquote>
@@ -134,8 +130,7 @@ export default function Blockquotes({ theme }: { theme: EThemes}) {
   <hgroup>
     <h4>Success</h4>
     <p>
-      The operation was 
-      completed successfully
+      The operation was successfull
     </p>
   </hgroup>
 </blockquote>
@@ -145,16 +140,14 @@ export default function Blockquotes({ theme }: { theme: EThemes}) {
     <p>Unknown error</p>
     <p>
       <code>
-        Server responsed with 
-        <b>Error 500</b>
+        Server sesponse is <b>Error 500</b>
       </code>
     </p>
   </hgroup>
 </blockquote>
 
 <blockquote class="primary">
-  Lorem ipsum dolor sit amet, 
-  consectetur adipiscing elit
+  Lorem ipsum ...
 </blockquote>
 
 <blockquote class="secondary">

@@ -151,9 +151,7 @@ export default function Grids({ theme }: { theme: EThemes}) {
         <div>
           <CodeSyntax lang={'xml'}>
             {`<div class="row">
-  <p 
-    width="80" 
-    height="80" ...>
+  <p width="80" height="80" ...>
     <svg .../>
   </p>
   <div>...</div>
