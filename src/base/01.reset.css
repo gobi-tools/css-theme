@@ -110,8 +110,8 @@
   --border-bottom-width-select: 2px;
   --border-bottom-style-select: solid;
 
-  --outline-input: 2px solid;
-  --outline-offset-input: -2px;
+  --outline-style: 2px solid;
+  --outline-ofset-control: -2px;
 
   /* -dialog applies to: "dialog" */
   --border-radius-dialog: 6px;

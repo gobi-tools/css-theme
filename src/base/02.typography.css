@@ -73,6 +73,15 @@ body {
   color: var(--color-text);
 }
 
+* {
+  --color-outline: var(--color-primary);
+}
+
+*:focus-visible {
+  outline: var(--outline-style);
+  outline-color: var(--color-outline);
+}
+
 *>* {
   color: inherit;
 }

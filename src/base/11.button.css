@@ -96,3 +96,7 @@ button[type=reset]:hover,
 input[type=reset]:hover {
   background: var(--color-control-light-3);
 }
+
+button:focus-visible {
+  outline-offset: var(--outline-ofset-control);
+}

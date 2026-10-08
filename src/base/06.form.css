@@ -58,11 +58,10 @@ textarea {
   border-bottom-style: var(--border-bottom-style-input);
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: var(--outline-input);
-  outline-offset: var(--outline-offset-input);
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-offset: var(--outline-ofset-control);
 }
 
 select {
@@ -93,13 +92,9 @@ fieldset {
 
 input,
 select,
-textarea {
-  --color-outline: var(--color-primary);
-  --color-accents: var(--color-secondary);
-}
-
+textarea,
 select {
-  --color-accents: var(--color-primary);
+  --color-accents: var(--color-secondary);
 }
 
 fieldset,
@@ -116,19 +111,26 @@ select {
   background: var(--color-control-light-4);
   border-color: var(--color-borders-light-1);
   color: var(--color-outline);
-  accent-color: var(--color-accents);
 }
 
 :is(input, select, textarea)::placeholder {
   filter: opacity(70%);
 }
 
-fieldset:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline-color: var(--color-outline);
+fieldset:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   border-bottom-color: var(--color-outline);
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  box-shadow:
+    0 0 0 2px color-mix(in oklch, var(--color-outline) 20%, transparent),
+    0 0 0 5px color-mix(in oklch, var(--color-outline) 5%, transparent);
 }
 
 fieldset {
