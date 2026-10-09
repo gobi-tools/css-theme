@@ -32,16 +32,28 @@
   align-self: flex-start;
 }
 
-[role="group"]>:is(button, input[type=submit], input[type=reset])+:is(input, button) {
-  border-left-width: 0;
-}
-
-[role="group"]>:not(:last-child):not(button, input[type=submit], input[type=reset]) {
-  border-right-width: 0;
-}
-
 [role="group"]>:is(svg, img) {
   margin-right: var(--space-2xs) !important;
+}
+
+/* to help with outlines on focus-visible */
+
+[role="group"] > :is(button, input[type=submit], input[type=reset]) + :is(button, input[type=submit], input[type=reset]),
+[role="group"] > :is(select, input:not([type=submit]), input:not([type=reset]), textarea) + :is(select, input:not([type=submit]), input:not([type=reset]), textarea) {
+  border-inline-start: 0px;
+}
+
+[role="group"] > :is(button, input[type=submit], input[type=reset]):not(:first-child):focus-visible {
+  margin-inline-start: var(--outline-ofset-control) !important;
+  padding-inline-start: calc(var(--space-m) + (-1 * var(--outline-ofset-control)));
+
+  &:has(:is(svg:only-child, img:only-child)) {
+    padding-inline-start: calc(var(--space-sm) + (-1 * var(--outline-ofset-control)));
+  }
+}
+
+[role="group"]>:is(:focus-visible) {
+  z-index: 1;
 }
 
 /* theme styles */
