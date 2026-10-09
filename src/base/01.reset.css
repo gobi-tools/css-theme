@@ -235,6 +235,12 @@
     color-mix(in oklch, var(--color-textual), black 20%),
     color-mix(in oklch, var(--color-textual), white 60%)
   );
+
+  /* outline */ 
+  --color-outline-dark-1: light-dark(
+    color-mix(in oklch, var(--color-outline), black 40%),
+    color-mix(in oklch, var(--color-outline), white 60%)
+  );
 }
 
 /* base */

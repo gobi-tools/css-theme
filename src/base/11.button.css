@@ -18,6 +18,7 @@ input[type=reset] {
   -webkit-appearance: none;
   appearance: none;
 }
+
 button {
   width: var(--width-button);
   max-width: 100%;
@@ -77,6 +78,12 @@ input[type=submit] {
   background: var(--color-control);
   border-color: var(--color-borders);
   color: var(--color-textual-light-1);
+}
+
+button:focus-visible,
+input[type=submit]:focus-visible,
+input[type=reset]:focus-visible {
+  outline-color: var(--color-outline-dark-1);
 }
 
 button:hover,

@@ -124,15 +124,6 @@ textarea:focus-visible {
   border-bottom-color: var(--color-outline);
 }
 
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible,
-button:focus-visible {
-  box-shadow:
-    0 0 0 2px color-mix(in oklch, var(--color-outline) 20%, transparent),
-    0 0 0 5px color-mix(in oklch, var(--color-outline) 5%, transparent);
-}
-
 fieldset {
   background: var(--color-surface-light-4);
   border-color: var(--color-borders-light-1);
