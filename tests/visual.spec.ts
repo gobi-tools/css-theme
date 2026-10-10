@@ -8,8 +8,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.join(__dirname, '../docs/pages');
 
 // get all the themes
-const themes = [EThemes.Default];
-// const themes = Object.keys(EThemes);
+// const themes = [EThemes.Default];
+const themes = Object.keys(EThemes);
 
 // get all html files
 const files = fg.sync('**/*.html', {

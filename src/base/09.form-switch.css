@@ -1,0 +1,37 @@
+/* base */
+
+[type="checkbox"][role="switch"] {
+  width: 2.25em;
+  height: 1.25em;
+  border-radius: 1.25em;
+  appearance: none;
+  padding: 0;
+}
+
+[type="checkbox"][role="switch"]:before {
+  display: block;
+  aspect-ratio: 1;
+  height: 100%;
+  content: '';
+  border-radius: 50%;
+  transition: margin .1s ease-in-out;
+}
+
+[type="checkbox"][role="switch"]:checked:before {
+  margin-inline-start: 1em;
+}
+
+/* theme colors */
+
+[type="checkbox"][role="switch"] {
+  background-color: var(--color-surface-light-1);
+}
+
+[type="checkbox"][role="switch"]:checked {
+  background-color: var(--color-accents);
+  border-color: var(--color-accents);
+}
+
+[type="checkbox"][role="switch"]:before {
+  background-color: var(--color-surface-light-5);
+}

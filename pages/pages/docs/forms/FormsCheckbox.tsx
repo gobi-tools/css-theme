@@ -6,6 +6,9 @@ import { EThemes } from "../../../common/utils/types";
 export default function FormsCheckbox({ theme }: { theme: EThemes }) {
   const [radio, setRadio] = useState('bread');
 
+  const [termsSigned, setSigned] = useState(false);
+  const [subscribed, setSubscribed] = useState(true);
+
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -120,6 +123,46 @@ export default function FormsCheckbox({ theme }: { theme: EThemes }) {
     </label>
     ...
   </div>
+</form>`}
+          </CodeSyntax>
+        </div>
+      </section>
+
+      <section className="row">
+        <div>
+          <p>
+            And if you want to represent an on/off state, you can use switches. 
+          </p>
+          <form>
+            <label htmlFor="terms" onClick={() => setSigned(!termsSigned)}>
+              <input name="terms" type="checkbox" role="switch" checked={termsSigned}/>
+              <span>I agree to the terms</span>
+            </label>
+
+            <label htmlFor="updates" onClick={() => setSubscribed(!subscribed)}>
+              <input name="updates" type="checkbox" role="switch" checked={subscribed}/>
+              <span>I want to receive updates</span>
+            </label>
+          </form>
+        </div>
+        <div>
+          <CodeSyntax lang={'xml'}>
+            {`<form>
+  <label for="terms">
+    <input 
+      name="terms"
+      type="checkbox"
+      role="switch"${termsSigned ? "\n      checked/>" : "/>"}
+    <span>I agree to the terms</span>
+  </label>
+
+  <label for="updates">
+    <input
+      name="updates"
+      type="checkbox"
+      role="switch"${subscribed ? "\n      checked/>" : "/>"}
+    <span>I want to receive updates</span>
+  </label>
 </form>`}
           </CodeSyntax>
         </div>

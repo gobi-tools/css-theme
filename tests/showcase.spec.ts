@@ -2,11 +2,11 @@ import { test, expect } from '@playwright/test';
 
 const showcases = [
   'basic/basic.html',
-  // 'food-delivery/food_delivery.html',
-  // 'newsletter/newsletter.html',
-  // 'landing-page/landing_page.html',
-  // 'blog/blog.html',
-  // 'app/app.html',
+  'food-delivery/food_delivery.html',
+  'newsletter/newsletter.html',
+  'landing-page/landing_page.html',
+  'blog/blog.html',
+  'app/app.html',
 ];
 
 for (const showcase of showcases) {

@@ -39,6 +39,9 @@
 :is(button, input[type=submit], input[type=reset]):focus-visible {
   border-color: var(--color-outline-dark-1) !important;
 }
+[type="checkbox"][role="switch"] {
+  border-width: 2px;
+}
 
 pre>code {
   border: none;
