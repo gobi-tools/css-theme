@@ -80,6 +80,7 @@ body {
 *:focus-visible {
   outline: var(--outline-style);
   outline-color: var(--color-outline);
+  border-color: var(--color-outline);
 }
 
 *>* {

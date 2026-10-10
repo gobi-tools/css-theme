@@ -28,15 +28,8 @@ pre>code {
 blockquote,
 pre>code {
   border-radius: var(--border-radius-blocks);
-
-  border-left-width: var(--border-left-width-blocks);
-  border-left-style: var(--border-left-style-blocks);
-  border-right-width: var(--border-right-width-blocks);
-  border-right-style: var(--border-right-style-blocks);
-  border-top-width: var(--border-top-width-blocks);
-  border-top-style: var(--border-top-style-blocks);
-  border-bottom-width: var(--border-bottom-width-blocks);
-  border-bottom-style: var(--border-bottom-style-blocks);
+  border-width: var(--border-width-blocks);
+  border-style: var(--border-style-blocks);
 }
 
 /* theme colors */

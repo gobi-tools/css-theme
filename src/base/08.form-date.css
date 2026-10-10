@@ -6,5 +6,5 @@ input[type="date"]::-webkit-date-and-time-value {
 }
 /* fix height for date type inputs across the board */
 input[type="date"] {
-  height: var(--height-input) !important;
+  height: var(--height-control) !important;
 }

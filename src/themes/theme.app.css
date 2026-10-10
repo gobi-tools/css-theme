@@ -9,30 +9,18 @@
 
   /* -blocks applies to to: "blockquote", "pre", "dialog" */
   --border-radius-blocks: 4px;
-  --border-left-width-blocks: 2px;
-  --border-left-style-blocks: solid;
-  --border-right-width-blocks: 2px;
-  --border-right-style-blocks: solid;
-  --border-top-width-blocks: 2px;
-  --border-top-style-blocks: solid;
-  --border-bottom-width-blocks: 5px;
-  --border-bottom-style-blocks: solid;
-
-  /* -button applies to: "button" (& "grouped" buttons) */
-  --border-radius-button: 4px;
-  --border-bottom-width-button: 5px;
-
-  /* -input applies to: form "inputs", "button" (for -height), "grouped" inputs */
-  --border-radius-input: 4px;
-  --border-bottom-width-select: 5px;
+  --border-width-blocks: 2px 2px 5px 2px;
+  --border-style-blocks: solid;
 
   /* -note applies to: "fieldsets", "article"  */
   --border-radius-card: 4px;
-  --border-bottom-width-card: 5px;
+  --border-width-card: 2px 2px 5px 2px;
 
-  /* override heights */
-  --height-button: 43px;
-  --height-input: 43px;
+  /* -button applies to: "button" (& "grouped" buttons), inputs, etc */
+  --height-control:43px; 
+  --border-radius-control-button: 4px;
+  --border-radius-control-input: 4px;
+  --border-width-control: 2px 2px 5px 2px;
 }
 
 :root {
@@ -45,9 +33,11 @@
   --color-error: #ef4444;
 }
 
-button,
-input[type=submit] {
+:is(button,input[type=submit]) {
   border-color: var(--color-control-dark-1) !important;
+}
+:is(button, input[type=submit], input[type=reset]):focus-visible {
+  border-color: var(--color-outline-dark-1) !important;
 }
 
 pre>code {
@@ -57,5 +47,4 @@ pre>code {
 .table-wrapper {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  /* smoother on iOS */
 }

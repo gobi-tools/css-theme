@@ -20,8 +20,8 @@ details[name]:has(+ details[name]) {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 
-  border-bottom-width: calc(min(var(--border-bottom-width-card), var(--border-top-width-card)));
-  border-bottom-style: var(--border-bottom-style-card);
+  border-bottom-width: var(--border-width-card);
+  border-bottom-style: var(--border-style-card);
 }
 
 details[name]+details[name] {

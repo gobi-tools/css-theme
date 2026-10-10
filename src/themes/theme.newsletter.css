@@ -17,8 +17,8 @@
 
   --border-radius-code: 6px;
   --border-radius-blocks: 0px;
-  --border-radius-button: 20px;
-  --border-radius-input: 4px;
+  --border-radius-control-button: 20px;
+  --border-radius-control-input: 4px;
   --border-radius-card: 4px;
 }
 
@@ -29,14 +29,14 @@ blockquote {
 [role="group"]>:is(button,
   input,
   select):first-child {
-  border-top-left-radius: var(--border-radius-button);
-  border-bottom-left-radius: var(--border-radius-button);
-  padding-left: calc(var(--border-radius-button) / 1.35) !important;
+  border-top-left-radius: var(--border-radius-control-button);
+  border-bottom-left-radius: var(--border-radius-control-button);
+  padding-left: calc(var(--border-radius-control-button) / 1.35) !important;
 }
 
 [role="group"]>:is(button,
   input,
   select):last-child {
-  border-top-right-radius: var(--border-radius-button);
-  border-bottom-right-radius: var(--border-radius-button);
+  border-top-right-radius: var(--border-radius-control-button);
+  border-bottom-right-radius: var(--border-radius-control-button);
 }

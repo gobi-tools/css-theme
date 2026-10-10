@@ -16,12 +16,12 @@ textarea {
   width: 100%;
   min-width: 0;
   padding: var(--space-xs);
-  min-height: var(--height-input);
+  min-height: var(--height-control);
   text-align: left;
 }
 
 select {
-  height: var(--height-input);
+  height: var(--height-control);
 }
 
 textarea {
@@ -46,16 +46,9 @@ select {
 input,
 select,
 textarea {
-  border-radius: var(--border-radius-input);
-
-  border-left-width: var(--border-left-width-input);
-  border-left-style: var(--border-left-style-input);
-  border-right-width: var(--border-right-width-input);
-  border-right-style: var(--border-right-style-input);
-  border-top-width: var(--border-top-width-input);
-  border-top-style: var(--border-top-style-input);
-  border-bottom-width: var(--border-bottom-width-input);
-  border-bottom-style: var(--border-bottom-style-input);
+  border-radius: var(--border-radius-control-input);
+  border-width: var(--border-width-control);
+  border-style: var(--border-style-control-input);
 }
 
 input:focus-visible,
@@ -64,28 +57,10 @@ textarea:focus-visible {
   outline-offset: var(--outline-ofset-control);
 }
 
-select {
-  border-left-width: var(--border-left-width-select);
-  border-left-style: var(--border-left-style-select);
-  border-right-width: var(--border-right-width-select);
-  border-right-style: var(--border-right-style-select);
-  border-top-width: var(--border-top-width-select);
-  border-top-style: var(--border-top-style-select);
-  border-bottom-width: var(--border-bottom-width-select);
-  border-bottom-style: var(--border-bottom-style-select);
-}
-
 fieldset {
   border-radius: var(--border-radius-card);
-
-  border-left-width: var(--border-left-width-card);
-  border-left-style: var(--border-left-style-card);
-  border-right-width: var(--border-right-width-card);
-  border-right-style: var(--border-right-style-card);
-  border-top-width: var(--border-top-width-card);
-  border-top-style: var(--border-top-style-card);
-  border-bottom-width: var(--border-bottom-width-card);
-  border-bottom-style: var(--border-bottom-style-card);
+  border-width: var(--border-width-card);
+  border-style: var(--border-style-card);
 }
 
 /* theme colors */
@@ -115,13 +90,6 @@ select {
 
 :is(input, select, textarea)::placeholder {
   filter: opacity(70%);
-}
-
-fieldset:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  border-bottom-color: var(--color-outline);
 }
 
 fieldset {

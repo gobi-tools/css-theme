@@ -4,7 +4,7 @@ button,
 input[type=submit],
 input[type=reset] {
   cursor: pointer;
-  min-height: var(--height-button);
+  min-height: var(--height-control);
   min-width: auto;
   padding-block: var(--space-xs);
   padding-inline: var(--space-m);
@@ -17,10 +17,11 @@ input[type=reset] {
   /* Mobile Safari */
   -webkit-appearance: none;
   appearance: none;
+  
 }
 
 button {
-  width: var(--width-button);
+  width: var(--width-control-button);
   max-width: 100%;
   min-width: max-content;
 }
@@ -53,16 +54,9 @@ input[type=reset] {
 button,
 input[type=submit],
 input[type=reset] {
-  border-radius: var(--border-radius-button);
-
-  border-left-width: var(--border-left-width-button);
-  border-left-style: var(--border-left-style-button);
-  border-right-width: var(--border-right-width-button);
-  border-right-style: var(--border-right-style-button);
-  border-top-width: var(--border-top-width-button);
-  border-top-style: var(--border-top-style-button);
-  border-bottom-width: var(--border-bottom-width-button);
-  border-bottom-style: var(--border-bottom-style-button);
+  border-radius: var(--border-radius-control-button);
+  border-width: var(--border-width-control);
+  border-style: var(--border-style-control-button);
 }
 
 /* theme colors */
