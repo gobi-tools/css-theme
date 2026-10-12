@@ -74,12 +74,6 @@ input[type=submit] {
   color: var(--color-textual-light-1);
 }
 
-button:focus-visible,
-input[type=submit]:focus-visible,
-input[type=reset]:focus-visible {
-  outline-color: var(--color-outline-dark-1);
-}
-
 button:hover,
 input[type=submit]:hover {
   background: var(--color-control-dark-1);

@@ -1,0 +1,16 @@
+/* theme colors */
+
+* {
+  --color-outline: var(--color-primary);
+}
+
+*:focus-visible {
+  outline: var(--outline-style);
+  outline-color: var(--color-outline);
+  border-color: var(--color-outline);
+}
+
+:is(button, [type="submit"], [type="reset"]):focus-visible {
+  border-color: var(--color-outline-dark-1);
+  outline-color: var(--color-outline-dark-1);
+}

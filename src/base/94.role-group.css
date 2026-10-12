@@ -36,24 +36,32 @@
   margin-right: var(--space-2xs) !important;
 }
 
-/* to help with outlines on focus-visible */
+/* to help with outlines on focus-visible for buttons & inputs */
 
-[role="group"] > :is(button, input[type=submit], input[type=reset]) + :is(button, input[type=submit], input[type=reset]),
-[role="group"] > :is(select, input:not([type=submit]), input:not([type=reset]), textarea) + :is(select, input:not([type=submit]), input:not([type=reset]), textarea) {
-  border-inline-start: 0px;
+[role=group]> :not(:first-child) {
+  margin-inline-start: -2px !important;
 }
 
-[role="group"] > :is(button, input[type=submit], input[type=reset]):not(:first-child):focus-visible {
-  margin-inline-start: var(--outline-ofset-control) !important;
-  padding-inline-start: calc(var(--space-m) + (-1 * var(--outline-ofset-control)));
-
-  &:has(:is(svg:only-child, img:only-child)) {
-    padding-inline-start: calc(var(--space-sm) + (-1 * var(--outline-ofset-control)));
-  }
+[role=group]> :is(button, [type=submit], [type=button]):has(+ *) {
+  z-index: 1;
 }
 
 [role="group"]>:is(:focus-visible) {
-  z-index: 1;
+  z-index: 999;
+}
+/* this is completely optional ... can remove if it's hard */
+[role=group]> :not(:last-child) {
+  &:is(input, select, textarea) {
+    padding-right: calc(var(--space-sm) + 2px) !important;
+  }
+
+  &:is(button, input[type=submit], input[type=reset]) {
+    padding-right: calc(var(--space-m) + 2px) !important;
+
+    &:has(:is(svg:only-child, img:only-child)) {
+      padding-right: calc(var(--space-sm) + 2px) !important;
+    }
+  }
 }
 
 /* theme styles */
@@ -68,5 +76,16 @@
 @container rows (max-width: 600px) {
   :not([role="group"])>.row>div:not(.disable-mobile):empty {
     display: none;
+  }
+}
+
+/* theme colors */
+form [role=group]>[type=reset] {
+  --color-control: var(--color-base);
+  --color-borders: var(--color-base);
+  border-color: var(--color-borders-light-1) !important;
+
+  &:focus-visible {
+    outline-color: var(--color-outline) !important;
   }
 }
