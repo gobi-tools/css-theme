@@ -4,9 +4,9 @@ import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
 import { EDoc, EThemes } from "../../../common/utils/types";
 
-export default function Tags({ theme }: { theme: EThemes}) {
+export default function Tags({ theme }: { theme: EThemes }) {
   const route = useRoute();
-    
+
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -68,7 +68,7 @@ export default function Tags({ theme }: { theme: EThemes}) {
   <span>error</span>
   <svg ...></svg>
 </mark>`}
-         </CodeSyntax>
+          </CodeSyntax>
         </div>
       </section>
 
@@ -76,7 +76,7 @@ export default function Tags({ theme }: { theme: EThemes}) {
         <div>
           <p>
             You  can assign the <code>primary</code>, <code>secondary</code>, <code>success</code> or <code>error</code> classes
-            to change the appearance of the highlighted content. You can add the <code>inverted</code> class to each of the 
+            to change the appearance of the highlighted content. You can add the <code>inverted</code> class to each of the
             previous to highlight the content even more.
           </p>
           <p className="flex">
@@ -156,6 +156,107 @@ export default function Tags({ theme }: { theme: EThemes}) {
     <svg ...></svg>
   </mark>
 </p>`}
+          </CodeSyntax>
+        </div>
+      </section>
+
+      <section className="row">
+        <div>
+          <p>
+            You can use the <code>mark</code> tag as standalone badges with text or with icons.
+          </p>
+          <p>
+            <mark>1</mark>
+            <mark>2</mark>
+            <mark>3</mark>
+            <mark>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24" fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </mark>
+          </p>
+          <p>
+            Or in more complex layouts.
+          </p>
+          <article>
+            <div role="group">
+              <div className="row">
+                <mark className="secondary">1</mark>
+                <div>
+                  <b>Lorem ipsum dolor sit amet</b>
+                  <br />
+                  <small>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+              </div>
+            </div>
+
+            <div role="group">
+              <div className="row">
+                <mark className="secondary">2</mark>
+                <div>
+                  <b>Sed ut perspiciatis unde omnis</b>
+                  <br />
+                  <small>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</small>
+                </div>
+              </div>
+            </div>
+
+            <div role="group">
+              <div className="row">
+                <mark className="secondary">3</mark>
+                <div>
+                  <b>At vero eos et accusamus</b>
+                  <br />
+                  <small>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</small>
+                </div>
+              </div>
+            </div>
+          </article>
+          <p>
+            <small>
+              You can learn more about cards <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>here</a>.
+            </small>
+          </p>
+        </div>
+        <div>
+          <CodeSyntax lang={'xml'}>
+            {`<p>
+  <mark>1</mark>
+  <mark>2</mark>
+  <mark>3</mark>
+  <mark><svg .../></svg></mark>
+</p>
+
+<article>
+  <div role="group">
+    <div class="row">
+      <mark class="secondary">1</mark>
+      <div>
+        <b>Lorem ipsum ...</b>
+        <br/>
+        <small>>Ut enum...</small>
+      </div>
+    </div>
+
+    <div class="row">
+      <mark class="secondary">2</mark>
+      <div>
+        <b>Set ut ...</b>
+        <br/>
+        <small>Nemo enim...</small>
+      </div>
+    </div>
+
+    ...
+  </div>
+</article>`}
           </CodeSyntax>
         </div>
       </section>

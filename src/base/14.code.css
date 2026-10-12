@@ -14,10 +14,14 @@ kbd, var, mark {
 
 mark {
   height: var(--height-small-code);
+  min-width: var(--height-small-code);
   display: inline-flex;
   gap: var(--space-2xs);
+  /* vertical */
   align-items: center;
   vertical-align: middle;
+  /* horizontal */
+  justify-content: center;
 }
 
 code>code,
