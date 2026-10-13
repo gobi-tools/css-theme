@@ -26,7 +26,7 @@
   border-radius: 0;
 }
 
-[role="group"]>:is(button, input[type=submit], input[type=reset], mark) {
+[role="group"]>:is(button, input[type=submit], input[type=reset], input[type=button], mark) {
   width: auto;
   min-width: auto;
   align-self: flex-start;
@@ -55,7 +55,7 @@
     padding-right: calc(var(--space-sm) + 2px) !important;
   }
 
-  &:is(button, input[type=submit], input[type=reset]) {
+  &:is(button, input[type=submit], input[type=reset], input[type=button]) {
     padding-right: calc(var(--space-m) + 2px) !important;
 
     &:has(:is(svg:only-child, img:only-child)) {

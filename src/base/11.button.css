@@ -1,6 +1,7 @@
 /* base */
 
 button,
+input[type=button],
 input[type=submit],
 input[type=reset] {
   cursor: pointer;
@@ -17,7 +18,7 @@ input[type=reset] {
   /* Mobile Safari */
   -webkit-appearance: none;
   appearance: none;
-  
+
 }
 
 button {
@@ -32,6 +33,7 @@ button {
 }
 
 *:hover:disabled,
+input[type=buttoon]:hover:disabled,
 input[type=submit]:hover:disabled,
 input[type=reset]:hover:disabled {
   filter: opacity(50%);
@@ -41,6 +43,7 @@ input[type=reset]:hover:disabled {
 
 button,
 input[type=submit],
+input[type=button],
 input[type=reset] {
   font-weight: bold;
   letter-spacing: -0.015em;
@@ -53,6 +56,7 @@ input[type=reset] {
 
 button,
 input[type=submit],
+input[type=button],
 input[type=reset] {
   border-radius: var(--border-radius-control-button);
   border-width: var(--border-width-control);
@@ -62,20 +66,23 @@ input[type=reset] {
 /* theme colors */
 
 button,
-input[type="submit"] {
+input[type=submit],
+input[type=button] {
   --color-control: var(--color-primary);
   --color-borders: var(--color-primary);
 }
 
 button,
-input[type=submit] {
+input[type=submit],
+input[type=button] {
   background: var(--color-control);
   border-color: var(--color-borders);
   color: var(--color-textual-light-1);
 }
 
 button:hover,
-input[type=submit]:hover {
+input[type=submit]:hover,
+input[type=button]:hover {
   background: var(--color-control-dark-1);
   border-color: var(--color-control-dark-1);
 }
@@ -90,8 +97,4 @@ input[type=reset] {
 button[type=reset]:hover,
 input[type=reset]:hover {
   background: var(--color-control-light-3);
-}
-
-button:focus-visible {
-  outline-offset: var(--outline-ofset-control);
 }

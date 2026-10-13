@@ -1,3 +1,9 @@
+/* theme style */ 
+
+button:focus-visible {
+  outline-offset: var(--outline-ofset-control);
+}
+
 /* theme colors */
 
 * {
@@ -14,3 +20,4 @@
   border-color: var(--color-outline-dark-1);
   outline-color: var(--color-outline-dark-1);
 }
+

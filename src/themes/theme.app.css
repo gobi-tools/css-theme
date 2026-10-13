@@ -17,7 +17,7 @@
   --border-width-card: 2px 2px 5px 2px;
 
   /* -button applies to: "button" (& "grouped" buttons), inputs, etc */
-  --height-control:43px; 
+  --height-control: 43px;
   --border-radius-control-button: 4px;
   --border-radius-control-input: 4px;
   --border-width-control: 2px 2px 5px 2px;
@@ -33,12 +33,14 @@
   --color-error: #ef4444;
 }
 
-:is(button,input[type=submit]) {
+:is(button, input[type=submit], input[type=button]) {
   border-color: var(--color-control-dark-1) !important;
 }
-:is(button, input[type=submit], input[type=reset]):focus-visible {
+
+:is(button, input[type=submit], input[type=reset], input[type=button]):focus-visible {
   border-color: var(--color-outline-dark-1) !important;
 }
+
 [type="checkbox"][role="switch"] {
   border-width: 2px;
 }

@@ -33,13 +33,19 @@ img+img,
 mark+mark,
 button+button,
 input[type=submit]+input[type=submit],
+input[type=submit]+input[type=button],
 input[type=submit]+input[type=reset],
 input[type=reset]+input[type=reset],
-input[type=reset]+input[type=submit] {
+input[type=reset]+input[type=submit],
+input[type=reset]+input[type=button],
+input[type=button]+input[type=button],
+input[type=button]+input[type=submit],
+input[type=button]+input[type=reset] {
   margin-left: var(--space-2xs);
 }
-.row > *:has(+*),
-.row > * + * {
+
+.row>*:has(+*),
+.row>*+* {
   margin-inline: 0;
 }
 
