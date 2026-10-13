@@ -42,7 +42,7 @@
   margin-inline-start: -2px !important;
 }
 
-[role=group]> :is(button, [type=submit], [type=button]):has(+ *) {
+[role=group]> :is(button, [type=submit], [type=button]) {
   z-index: 1;
 }
 

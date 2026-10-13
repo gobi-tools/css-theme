@@ -9,7 +9,7 @@ export default function FormsGrouped({ theme }: { theme: EThemes }) {
         <div>
           <p>
             Simple forms, with a small number of inputs, can
-            be grouped horizontally by applying the <code>group</code> role to a parent tag. 
+            be grouped horizontally by applying the <code>group</code> role to a parent tag.
             In such a case, auxiliary elemnents such as input labels should not be used.
           </p>
           <form>
@@ -75,6 +75,71 @@ export default function FormsGrouped({ theme }: { theme: EThemes }) {
     <input 
       type="submit" 
       value="Search"/>
+  </div>
+</form>`}
+          </CodeSyntax>
+        </div>
+      </section>
+
+      <section className="row">
+        <div>
+          <p>
+            And even use mutliple buttons:
+          </p>
+          <form>
+            <div role="group">
+              <input type="search" value="" placeholder="e.g. SW1A 1AA" />
+
+              <button type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none"
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="22" x2="18" y1="12" y2="12" />
+                  <line x1="6" x2="2" y1="12" y2="12" />
+                  <line x1="12" x2="12" y1="6" y2="2" />
+                  <line x1="12" x2="12" y1="22" y2="18" />
+                </svg>
+              </button>
+              <button type="submit">
+                <span>Go</span>
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none"
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div>
+          <CodeSyntax lang={'xml'}>
+            {`<form>
+  <div role="group">
+    <input 
+      type="search" 
+      value="" 
+      placeholder="e.g. SW1A 1AA"/>
+    <button type="reset">
+      <svg ...></svg>
+    </button>
+    <button type="submit">
+      <span>Go</span>
+      <svg ...></svg>
+    </button> 
   </div>
 </form>`}
           </CodeSyntax>
