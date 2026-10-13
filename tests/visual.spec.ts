@@ -26,6 +26,13 @@ for (const theme of themes) {
     const route = `/${theme.toLowerCase()}/${file.replace(/\\/g, '/')}`;
 
     test(`visual: ${route}`, async ({ page }) => {
+      // disable images
+      await page.route('**/*', route =>
+        route.request().resourceType() === 'image'
+          ? route.abort()
+          : route.continue()
+      );
+
       await page.goto(route);
 
       await page.addStyleTag({

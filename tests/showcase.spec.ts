@@ -13,6 +13,13 @@ for (const showcase of showcases) {
   const route = `/showcase/${showcase}`;
 
   test(`showcase ${route}`, async ({ page }) => {
+    // disable images
+    await page.route('**/*', route =>
+      route.request().resourceType() === 'image'
+        ? route.abort()
+        : route.continue()
+    );
+
     await page.goto(route);
 
     await page.addStyleTag({

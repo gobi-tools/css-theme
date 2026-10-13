@@ -491,11 +491,11 @@ import{a as Bt}from"./chunk-MDCAHXJR.js";import{a as Ft}from"./chunk-XF2WV4YZ.js
       type="submit" 
       value="Subscribe"/>
   </div>
-</form>`})})]}),A("section",{className:"row",children:[A("div",{children:[b("p",{children:"This can be used to great effect for search inputs."}),b("form",{children:A("div",{role:"group",children:[b("button",{disabled:!0,children:A("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",children:[b("path",{d:"m21 21-4.34-4.34"}),b("circle",{cx:"11",cy:"11",r:"8"})]})}),b("input",{type:"search",id:"search",placeholder:"Search"}),b("input",{type:"submit",value:"Search"})]})})]}),b("div",{children:b(o,{lang:"xml",children:`<form>
+</form>`})})]}),A("section",{className:"row",children:[A("div",{children:[b("p",{children:"This can be used to great effect for search inputs."}),b("form",{children:A("div",{role:"group",children:[b("mark",{children:A("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",children:[b("path",{d:"m21 21-4.34-4.34"}),b("circle",{cx:"11",cy:"11",r:"8"})]})}),b("input",{type:"search",id:"search",placeholder:"Search"}),b("input",{type:"submit",value:"Search"})]})})]}),b("div",{children:b(o,{lang:"xml",children:`<form>
   <div role="group">
-    <button disabled>
+    <mark>
       <svg ...></svg>
-    </button>
+    </mark>
     <input 
       id="search" 
       type="search" 

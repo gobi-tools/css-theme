@@ -26,7 +26,7 @@
   border-radius: 0;
 }
 
-[role="group"]>:is(button, input[type=submit], input[type=reset], input[type=button], mark) {
+[role="group"]>:is(button, input[type=submit], input[type=reset], input[type=button]) {
   width: auto;
   min-width: auto;
   align-self: flex-start;
@@ -72,6 +72,11 @@
   border-bottom-right-radius: var(--border-radius-control-input) !important;
 }
 
+form [role=group] mark {
+  height: var(--height-control);
+  min-width: var(--height-control);
+}
+
 /* @warn: referencing the "rows" container */
 @container rows (max-width: 600px) {
   :not([role="group"])>.row>div:not(.disable-mobile):empty {
@@ -80,6 +85,7 @@
 }
 
 /* theme colors */
+
 form [role=group]>[type=reset] {
   --color-control: var(--color-base);
   --color-borders: var(--color-base);

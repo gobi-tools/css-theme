@@ -41,7 +41,7 @@ export default function FormsGrouped({ theme }: { theme: EThemes }) {
           </p>
           <form>
             <div role="group">
-              <button disabled>
+              <mark>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -55,7 +55,7 @@ export default function FormsGrouped({ theme }: { theme: EThemes }) {
                   <path d="m21 21-4.34-4.34" />
                   <circle cx="11" cy="11" r="8" />
                 </svg>
-              </button>
+              </mark>
               <input type="search" id="search" placeholder="Search" />
               <input type="submit" value="Search" />
             </div>
@@ -65,9 +65,9 @@ export default function FormsGrouped({ theme }: { theme: EThemes }) {
           <CodeSyntax lang={'xml'}>
             {`<form>
   <div role="group">
-    <button disabled>
+    <mark>
       <svg ...></svg>
-    </button>
+    </mark>
     <input 
       id="search" 
       type="search" 
