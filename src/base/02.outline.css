@@ -1,7 +1,7 @@
 /* theme style */
 
 button:focus-visible {
-  outline-offset: var(--outline-ofset-control);
+  outline-offset: calc(-1 * var(--outline-ofset-control));
 }
 
 /* theme colors */
@@ -27,4 +27,22 @@ button:focus-visible {
   input[type="week"],
   input[type="time"])::-webkit-calendar-picker-indicator {
   outline-color: var(--color-outline);
+}
+
+details:has(> summary:focus-visible) {
+  outline: var(--outline-style);
+  outline-color: var(--color-outline);
+  outline-offset: var(--outline-ofset-control);
+}
+
+article:has(details > summary:focus-visible) {
+  outline: var(--outline-style);
+  outline-color: var(--color-outline);
+  outline-offset: calc(-1 * var(--outline-ofset-control));
+}
+
+details>summary:focus-visible,
+article>details:has(>summary:focus-visible),
+article>details>summary:focus-visible {
+  outline: none;
 }
