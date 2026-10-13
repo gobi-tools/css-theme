@@ -78,7 +78,7 @@
   /* outlines */
 
   --outline-style: 2px solid;
-  --outline-ofset-control: 2px;
+  --outline-ofset-control: -2px;
 
   /* hr */
   --height-hr: 2px;
