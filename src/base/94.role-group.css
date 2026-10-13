@@ -36,6 +36,10 @@
   margin-right: var(--space-2xs) !important;
 }
 
+form [role=group] {
+  overflow: hidden;
+}
+
 /* to help with outlines on focus-visible for buttons & inputs */
 
 [role=group]> :not(:first-child) {
@@ -67,14 +71,14 @@
 /* theme styles */
 
 /* just in case datalist is the last element ... ignore it */
-[role="group"]>:is(button, input, textarea, select):has(+ datalist) {
-  border-top-right-radius: var(--border-radius-control-input) !important;
-  border-bottom-right-radius: var(--border-radius-control-input) !important;
-}
 
 form [role=group] mark {
   height: var(--height-control);
   min-width: var(--height-control);
+}
+
+form [role=group] {
+  border-radius: var(--border-radius-control-input);
 }
 
 /* @warn: referencing the "rows" container */
