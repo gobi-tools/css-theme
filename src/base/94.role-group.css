@@ -53,20 +53,6 @@ form [role=group] {
 [role="group"]>:is(:focus-visible) {
   z-index: 999;
 }
-/* this is completely optional ... can remove if it's hard */
-[role=group]> :not(:last-child) {
-  &:is(input, select, textarea) {
-    padding-right: calc(var(--space-sm) + 2px) !important;
-  }
-
-  &:is(button, input[type=submit], input[type=reset], input[type=button]) {
-    padding-right: calc(var(--space-m) + 2px) !important;
-
-    &:has(:is(svg:only-child, img:only-child)) {
-      padding-right: calc(var(--space-sm) + 2px) !important;
-    }
-  }
-}
 
 /* theme styles */
 
