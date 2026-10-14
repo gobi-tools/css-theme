@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  workers: 16,
+  // workers: 16,
   fullyParallel: true,
 
   use: {

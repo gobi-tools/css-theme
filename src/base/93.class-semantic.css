@@ -119,3 +119,7 @@
     }
   }
 }
+
+:is(.inverted) a:hover {
+  filter: opacity(0.85);
+}
