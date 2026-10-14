@@ -1,5 +1,4 @@
-.success,
-.success * {
+.success {
   --color-surface: var(--color-success) !important;
   --color-control: var(--color-success) !important;
   --color-borders: var(--color-success) !important;
@@ -8,8 +7,7 @@
   --color-accents: var(--color-success) !important;
 }
 
-.error,
-.error * {
+.error {
   --color-surface: var(--color-error) !important;
   --color-control: var(--color-error) !important;
   --color-borders: var(--color-error) !important;
@@ -18,8 +16,7 @@
   --color-accents: var(--color-error) !important;
 }
 
-.primary,
-.primary * {
+.primary {
   --color-surface: var(--color-primary) !important;
   --color-control: var(--color-primary) !important;
   --color-borders: var(--color-primary) !important;
@@ -28,14 +25,75 @@
   --color-accents: var(--color-primary) !important;
 }
 
-.secondary,
-.secondary * {
+.secondary {
   --color-surface: var(--color-secondary) !important;
   --color-control: var(--color-secondary) !important;
   --color-borders: var(--color-secondary) !important;
   --color-textual: var(--color-secondary) !important;
   --color-outline: var(--color-secondary) !important;
   --color-accents: var(--color-secondary) !important;
+}
+
+/*
+ * The element's own class is handled above (0,1,0 !important — beats every
+ * element-level default like `button { --color-control: var(--color-primary) }`,
+ * and beats the scoped rules below).
+ *
+ * Everything *inside* a semantic container is painted by a @scope whose root is
+ * that container. When containers nest, the browser compares scopes by
+ * proximity — the closest scope wins — so nested semantic classes resolve to
+ * the nearest one regardless of source order or nesting depth.
+ *
+ * IMPORTANT: do not re-add flat `.C, .C *` rules alongside these — they have
+ * higher specificity than the scoped rules (0,1,0 vs 0,0,0, both !important)
+ * and would silently disable proximity, restoring order-dependent behavior.
+ *
+ * Requires @scope: Chrome 118+, Safari 17.4+, Firefox 146+. Browsers without it
+ * still color containers and elements with their own class; descendants of a
+ * container fall back to theme defaults.
+ */
+@scope (.success) {
+  * {
+    --color-surface: var(--color-success) !important;
+    --color-control: var(--color-success) !important;
+    --color-borders: var(--color-success) !important;
+    --color-textual: var(--color-success) !important;
+    --color-outline: var(--color-success) !important;
+    --color-accents: var(--color-success) !important;
+  }
+}
+
+@scope (.error) {
+  * {
+    --color-surface: var(--color-error) !important;
+    --color-control: var(--color-error) !important;
+    --color-borders: var(--color-error) !important;
+    --color-textual: var(--color-error) !important;
+    --color-outline: var(--color-error) !important;
+    --color-accents: var(--color-error) !important;
+  }
+}
+
+@scope (.primary) {
+  * {
+    --color-surface: var(--color-primary) !important;
+    --color-control: var(--color-primary) !important;
+    --color-borders: var(--color-primary) !important;
+    --color-textual: var(--color-primary) !important;
+    --color-outline: var(--color-primary) !important;
+    --color-accents: var(--color-primary) !important;
+  }
+}
+
+@scope (.secondary) {
+  * {
+    --color-surface: var(--color-secondary) !important;
+    --color-control: var(--color-secondary) !important;
+    --color-borders: var(--color-secondary) !important;
+    --color-textual: var(--color-secondary) !important;
+    --color-outline: var(--color-secondary) !important;
+    --color-accents: var(--color-secondary) !important;
+  }
 }
 
 :is(div,
