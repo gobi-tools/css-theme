@@ -8,9 +8,11 @@ a {
   text-decoration: none;
 }
 
+:is(h1, h2, h3, h4, h5, h6) a[href^='#']:focus-visible::after,
 :is(h1, h2, h3, h4, h5, h6):is(:hover, [data-hover]) a[href^='#']::after {
   content: '#';
   margin-left: var(--space-2xs);
+  margin-right: var(--space-2xs);
 }
 
 /* theme colors */
