@@ -166,6 +166,60 @@ export default function Tabs({ theme }: { theme: EThemes }) {
           </CodeSyntax>
         </div>
       </section>
+
+      <section className="row">
+        <div>
+          <p>
+            Tabs can be nested and they can be combiend with <code>summary</code> elements  
+            to be collapsible.
+          </p>
+          <figure>
+            <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.MobileTabsExpandableNav, theme, route)} />
+
+            <figcaption>
+              Showcase of tabbed navigation with detail and colapsible sections
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <CodeSyntax lang={'xml'}>
+            {`<menu<
+  <b>Menu</b>
+  <li><a>Section 1</a>
+  <li>Section 2</a>
+  <!-- non collapsible section -->
+  <li>
+    <menu>
+      <li><a>Section 2.1</a>
+      <li><a>Section 2.2</a>
+    </menu>
+  </li>
+  <!-- collapsible section -->
+  <li>
+    <details open>
+      <summary>Section 3</summary>
+      <menu>
+        <li><a>Section 3.1</a></li>
+        <li><a>Section 3.2</a></li>
+        <li><a>Section 3.3</a></li>
+        <!-- sub section -->
+        <li>
+          <details>
+            <summary>Section 3.4</summary>
+            <menu>
+              <li><a>Section 3.4.1</a></li>
+              <li><a>Section 3.4.2</a></li>
+            </menu>
+          </details>
+        </li>
+      </menu>
+    </details>
+  </li>
+  <li><a>Section 4</a></li>
+</menu>`}
+          </CodeSyntax>
+        </div>
+      </section>
     </DocLayout>
   )
 }

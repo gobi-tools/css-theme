@@ -43,6 +43,7 @@ import Footer from "../../pages/docs/layout/Footer";
 import LayoutFooterSimple from "../../pages/examples/LayoutFooterSimple";
 import LayoutFooterComplex from "../../pages/examples/LayoutFooterComplex";
 import Loading from "../../pages/docs/extra/Loading";
+import MobileTabsExpandable from "../../pages/examples/MobileTabsExpandable";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -184,6 +185,7 @@ export class RouteMaster {
       case EExamples.MobileNav: return `${base}${theme}/pages/examples/${htmlName(MobileNav)}`;
       case EExamples.MobileBreadcrumbs: return `${base}${theme}/pages/examples/${htmlName(MobileBreadcrumbs)}`;
       case EExamples.MobileTabsNav: return `${base}${theme}/pages/examples/${htmlName(MobileTabs)}`;
+      case EExamples.MobileTabsExpandableNav: return `${base}${theme}/pages/examples/${htmlName(MobileTabsExpandable)}`;
       case EExamples.MobileTypography: return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
     }
   }

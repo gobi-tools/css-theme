@@ -48,6 +48,7 @@ export enum EExamples {
   MobileMenu = 'mobile-menu',
   DekstopMenu = 'desktop-menu',
   MobileTabsNav = 'mobile-tabs-nav',
+  MobileTabsExpandableNav = 'mobile-tabs-exp-nav',
   MobileColumns = 'mobile-columns',
   MobileTypography = 'mobile-typography',
   LayoutHeaderSimple = 'layout-header-simple',
