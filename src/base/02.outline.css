@@ -50,3 +50,7 @@ article>details:has(>summary:focus-visible),
 article>details>summary:focus-visible {
   outline: none;
 }
+article>details>summary:focus-visible {
+  /* just like for :hover */
+  background: var(--color-surface-light-1); 
+}
