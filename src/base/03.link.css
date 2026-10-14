@@ -4,6 +4,15 @@ a {
   cursor: pointer;
 }
 
+:is(h1, h2, h3, h4, h5, h6) a[href^='#'] {
+  text-decoration: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6):is(:hover, [data-hover]) a[href^='#']::after {
+  content: '#';
+  margin-left: var(--space-2xs);
+}
+
 /* theme colors */
 
 a {
