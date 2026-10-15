@@ -37,6 +37,10 @@ article {
   }
 }
 
+article:has(*:only-child) {
+  padding-bottom: var(--space-sm);
+}
+
 /* theme styles */
 
 article {

@@ -12,21 +12,19 @@ export default function Cards({ theme }: { theme: EThemes}) {
       <section className="row">
         <div>
           <p>
-            By wrapping together a number of HTML elements
+            By wrapping together a elements
             inside an <code>article</code>, you can create a basic card-type layout.
           </p>
           <div className="row disable-mobile">
             <div>
               <article>
-                <span><b>Title</b></span>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </article>
             </div>
             <div>
-              <article className="success">
-                <span><b>Title</b></span>
+              <article className="primary">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -34,12 +32,16 @@ export default function Cards({ theme }: { theme: EThemes}) {
             </div>
           </div>
         </div>
+
         <div>
           <CodeSyntax lang={'xml'}>
             {`<article>
-  <span>
-    <b>Title</b>
-  </span>
+  <p>
+    Lorem ipsum ...
+  </p>
+</article>
+
+<article class="primary">
   <p>
     Lorem ipsum ...
   </p>
@@ -52,11 +54,31 @@ export default function Cards({ theme }: { theme: EThemes}) {
         <div>
           <p>
             Cards can wrap headings and paragraphs and
-            can be styled with <code>success</code> and <code>error</code> classes.
+            can be styled with <code>success</code>, <code>error</code>, etc classes.
           </p>
-          <div className="row disable-mobile">
+          
+           <div className="row disable-mobile">
             <div>
               <article>
+                <span><b>Title</b></span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </article>
+            </div>
+            <div>
+              <article className="secondary">
+                <span><b>Title</b></span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div className="row disable-mobile">
+            <div>
+              <article className="success">
                 <h3>Title</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -72,6 +94,9 @@ export default function Cards({ theme }: { theme: EThemes}) {
               </article>
             </div>
           </div>
+
+         
+
           <p>
             <small>
               You can learn more about classes <a href={RouteMaster.doc(EDoc.Classes, theme, route)}>here</a>.
@@ -80,12 +105,24 @@ export default function Cards({ theme }: { theme: EThemes}) {
         </div>
         <div>
           <CodeSyntax lang={'xml'}>
-            {`<article>
+            {`
+<article> 
+  <span>
+    <b>Title</b>
+  </span>
+  <p>
+    Lorem ipsum ...
+  </p>
+</article>
+
+<article class="secondary">
   <h3>Title</h3>
   <p>
     Lorem ipsum ...
   </p>
-</article>`}
+</article>
+
+...`}
           </CodeSyntax>
         </div>
       </section>
