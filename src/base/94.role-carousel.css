@@ -7,50 +7,32 @@
 /* base style */
 
 [aria-roledescription="carousel"] {
-  ol {
-    /* height: 300px; */
-    margin: 0;
-    /* padding-bottom: var(--space-m); */
-    /* layout */
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    /* scrolling */
-    overflow-x: scroll;
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    /* position scroll buttons */
-    anchor-name: --carousel;
-    scroll-marker-group: after;
-    /* ensure there's enough space for the markers at the bottom & that content is pushed down */
-    padding-bottom: calc(
-      var(--carousel-marker-size) + 
-      var(--carousel-marker-border) + 
-      var(--carousel-marker-padding)
-    );
+  margin: 0;
+  /* layout */
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  /* scrolling */
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* position scroll buttons */
+  anchor-name: --carousel;
+  scroll-marker-group: after;
+  /* ensure there's enough space for the markers at the bottom & that content is pushed down */
+  padding-bottom: calc(var(--carousel-marker-size) + var(--carousel-marker-border) + var(--carousel-marker-padding));
+
+  li,
+  [aria-roledescription="slide"] {
+    list-style-type: none;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
   }
 
-  ol::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* scroll markers */
-
-  ol::scroll-marker-group {
-    display: flex;
-    justify-content: center;
-    gap: var(--space-m);
-    transform: translateY(calc(-1 * (
-      var(--carousel-marker-size) + 
-      var(--carousel-marker-border) + 
-      (var(--carousel-marker-padding) / 2.0)
-    )));
-    transform: translateY(-17px);
-  }
-
-  li::scroll-marker {
-    content: attr(data-accName);
+  li::scroll-marker,
+  [aria-roledescription="slide"]::scroll-marker {
+    content: '';
     width: var(--carousel-marker-size);
     height: var(--carousel-marker-size);
     background-color: transparent;
@@ -60,59 +42,62 @@
     overflow: hidden;
   }
 
-  li::scroll-marker:target-current {
+  li::scroll-marker:target-current,
+  [aria-roledescription="slide"]::scroll-marker:target-current {
     background-color: var(--color-borders);
   }
 
-  /* carousel pages */
-
-  li {
-    list-style-type: none;
-    flex: 0 0 100%;
-    scroll-snap-align: center;
-  }
-
-  /* carousel children */
-  li>* {
+  li>*,
+  [aria-roledescription="slide"]>* {
     margin-bottom: 0;
     height: 100%;
   }
 
-  /* interactions with other things */
-  .row {
+  &.row {
     flex-direction: row !important;
     gap: var(--space-m);
   }
 
-  &>.row>.col-1 {
-    flex-basis: calc(8.333 - (5 * var(--space-m) / 6.0));
+  &.row>.col-1 {
+    flex-basis: calc(8.333% - (5 * var(--space-m) / 6.0));
   }
 
-  &>.row>.col-2 {
-    flex-basis: calc(16.666 - (4 * var(--space-m) / 5.0));
+  &.row>.col-2 {
+    flex-basis: calc(16.666% - (4 * var(--space-m) / 5.0));
   }
 
-  &>.row>.col-3 {
+  &.row>.col-3 {
     flex-basis: calc(25% - (3 * var(--space-m) / 4.0));
   }
 
-  &>.row>.col-4 {
+  &.row>.col-4 {
     flex-basis: calc(33.333% - (2 * var(--space-m) / 3.0));
   }
 
-  &>.row>.col-6 {
+  &.row>.col-6 {
     flex-basis: calc(50% - var(--space-m) / 2.0);
   }
 }
 
+[aria-roledescription="carousel"]::-webkit-scrollbar {
+  display: none;
+}
+
+[aria-roledescription="carousel"]::scroll-marker-group {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-m);
+  transform: translateY(calc(-1 * (var(--carousel-marker-size) + var(--carousel-marker-border) + (var(--carousel-marker-padding) / 2.0))));
+}
+
 @container rows (max-width: 600px) {
-  section[aria-roledescription="carousel"]>.row>* {
+  [aria-roledescription="carousel"].row>* {
     flex: 0 0 100%;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  [aria-roledescription="carousel"]>ol {
+  [aria-roledescription="carousel"] {
     scroll-behavior: auto;
   }
 }
