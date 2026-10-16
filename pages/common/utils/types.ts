@@ -21,6 +21,7 @@ export enum EDoc {
   // layout
   Header = 'header',
   Footer = 'footer',
+  Carousel = 'carousel',
   Groups = 'groups',
   Modal = 'modal',
   // navigation
@@ -76,6 +77,8 @@ export enum ELinks {
   HugeIcons = 'https://hugeicons.com/',
   // other things
   CSS3 = 'https://en.wikipedia.org/wiki/CSS#CSS_3',
+  CSSCarousel = 'https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels',
+  W3CCarousel = 'https://www.w3.org/WAI/ARIA/apg/patterns/carousel/"',
   Syntax_Hilite = 'http://hilite.me/',
   Syntax_HighlightJS = 'https://highlightjs.org/',
   HtmlFormsDocs = 'https://www.w3schools.com/html/html_forms.asp',

@@ -44,6 +44,7 @@ import LayoutFooterSimple from "../../pages/examples/LayoutFooterSimple";
 import LayoutFooterComplex from "../../pages/examples/LayoutFooterComplex";
 import Loading from "../../pages/docs/extra/Loading";
 import MobileTabsExpandable from "../../pages/examples/MobileTabsExpandable";
+import Carousel from "../../pages/docs/layout/Carousel";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -82,6 +83,7 @@ export class RouteMaster {
       // layout
       case EDoc.Header: return `${base}${theme}/pages/docs/layout/${htmlName(Header)}`;
       case EDoc.Footer: return `${base}${theme}/pages/docs/layout/${htmlName(Footer)}`;
+      case EDoc.Carousel: return `${base}${theme}/pages/docs/layout/${htmlName(Carousel)}`;
       case EDoc.Groups: return `${base}${theme}/pages/docs/layout/${htmlName(Groups)}`;
       case EDoc.Modal: return `${base}${theme}/pages/docs/layout/${htmlName(Modal)}`;
       // navigation
@@ -138,6 +140,7 @@ export class RouteMaster {
         switch (doc) {
           case htmlName(Header): return EDoc.Header;
           case htmlName(Footer): return EDoc.Footer;
+          case htmlName(Carousel): return EDoc.Carousel;
           case htmlName(Groups): return EDoc.Groups;
           case htmlName(Modal): return EDoc.Modal;
         }

@@ -35,10 +35,16 @@ article {
   &>details[open][name]>*:last-child {
     padding-bottom: var(--space-m) !important;
   }
+  &>hr {
+    margin-block: 0 !important;
+  }
 }
 
 article:has(*:only-child) {
   padding-bottom: var(--space-sm);
+}
+article>*:only-child {
+  gap: 0;
 }
 
 /* theme styles */
