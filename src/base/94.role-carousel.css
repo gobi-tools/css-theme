@@ -11,7 +11,7 @@
   /* layout */
   display: flex;
   flex-direction: row;
-  gap: 0;
+  gap: var(--space-m);
   /* scrolling */
   overflow-x: scroll;
   scrollbar-width: none;
