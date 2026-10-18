@@ -101,3 +101,9 @@
     scroll-behavior: auto;
   }
 }
+
+@supports not selector(::scroll-marker-group) {
+  [aria-roledescription="carousel"] {
+    scrollbar-width: auto;
+  }
+}
