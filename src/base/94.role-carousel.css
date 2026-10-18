@@ -104,6 +104,6 @@
 
 @supports not selector(::scroll-marker-group) {
   [aria-roledescription="carousel"] {
-    scrollbar-width: auto;
+    scrollbar-width: thin;
   }
 }
