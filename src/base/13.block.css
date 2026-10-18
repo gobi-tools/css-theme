@@ -21,6 +21,7 @@ pre>code {
   word-break: auto-phrase;
   padding: var(--space-m);
   overflow-x: auto;
+  scrollbar-width: thin;
 }
 
 /* theme styles */
