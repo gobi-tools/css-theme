@@ -11,7 +11,7 @@ export default function CarouselHeader() {
       </header>
       <header>
         <ol aria-roledescription="carousel" aria-label="Simple Carousel">
-          <li style={{ backgroundImage: "url('/res/bg-img-1.png')", backgroundSize: 'cover' }}>
+          <li className="primary inverted">
             <div>
               <br />
               <h3>Page 1</h3>
@@ -21,7 +21,7 @@ export default function CarouselHeader() {
               <br />
             </div>
           </li>
-          <li style={{ backgroundImage: "url('/res/bg-img-2.png')", backgroundSize: 'cover' }}>
+          <li className="secondary inverted">
             <div>
               <br />
               <h3>Page 2</h3>

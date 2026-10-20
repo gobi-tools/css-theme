@@ -12,11 +12,8 @@ export default function CarouselHeader({ theme }: { theme: EThemes }) {
       <section className="row">
         <div>
           <p>
-            A carousel placed inside a header element will automatically extend it's slide to cover
-            the whole width of the page whilst leaving the actual content correctly centered.
-          </p>
-          <p>
-            This achieves the carousel banner effect when paired with a background image.
+            A carousel placed inside a header element will automatically form a hero element, where 
+            each slide extends as wide as the screen whilst the content stays correctly centered.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.CarouselHeader, theme, route)} />
           <p>
@@ -27,8 +24,9 @@ export default function CarouselHeader({ theme }: { theme: EThemes }) {
           <CodeSyntax lang={'xml'}>
             {`<header>
   <ol aria-roledescription="carousel">
-    <!-- each slide and its background image extends for the whole page width -->
-    <li style="background:url('...')">
+    <!-- the slide can have a strong, bold, colour -->
+    <!-- or a background image -->
+    <li class="primary inverted">
       <!-- make sure the child is a layout element -->
       <div>
         <br>
@@ -37,7 +35,7 @@ export default function CarouselHeader({ theme }: { theme: EThemes }) {
         </br>
       </div>
     </li>
-    <li style="background:url('...')">
+    <li class="secondary inverted">
       <div>...</div>
     <li>
   </ol>
