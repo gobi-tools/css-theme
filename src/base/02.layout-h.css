@@ -15,9 +15,10 @@ dialog {
 
 :is(header, footer)>*:has(:is(article, aside, div, nav, menu, section, h1, h2, h3, h4, h5, h6, hgroup, p, ul, ol, table, dt, dl)) {
   width: 100vw !important;
-  margin-left: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw) !important;
 
-  &>* {
+  &>*,
+  &[aria-roledescription="carousel"]>:is(li, [aria-roledescription="slide"])>* {
     width: min(100% - var(--space-l), var(--width-page)) !important;
     margin-inline: auto !important;
   }

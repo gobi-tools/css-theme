@@ -45,6 +45,8 @@ import LayoutFooterComplex from "../../pages/examples/LayoutFooterComplex";
 import Loading from "../../pages/docs/extra/Loading";
 import MobileTabsExpandable from "../../pages/examples/MobileTabsExpandable";
 import Carousel from "../../pages/docs/layout/Carousel";
+import CarouselHeader from "../../pages/docs/layout/CarouselHeader";
+import CarouselHeaderExample from "../../pages/examples/CarouselHeader";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -84,6 +86,7 @@ export class RouteMaster {
       case EDoc.Header: return `${base}${theme}/pages/docs/layout/${htmlName(Header)}`;
       case EDoc.Footer: return `${base}${theme}/pages/docs/layout/${htmlName(Footer)}`;
       case EDoc.Carousel: return `${base}${theme}/pages/docs/layout/${htmlName(Carousel)}`;
+      case EDoc.CarouselHeader: return `${base}${theme}/pages/docs/layout/${htmlName(CarouselHeader)}`;
       case EDoc.Groups: return `${base}${theme}/pages/docs/layout/${htmlName(Groups)}`;
       case EDoc.Modal: return `${base}${theme}/pages/docs/layout/${htmlName(Modal)}`;
       // navigation
@@ -141,6 +144,7 @@ export class RouteMaster {
           case htmlName(Header): return EDoc.Header;
           case htmlName(Footer): return EDoc.Footer;
           case htmlName(Carousel): return EDoc.Carousel;
+          case htmlName(CarouselHeader): return EDoc.CarouselHeader;
           case htmlName(Groups): return EDoc.Groups;
           case htmlName(Modal): return EDoc.Modal;
         }
@@ -190,6 +194,7 @@ export class RouteMaster {
       case EExamples.MobileTabsNav: return `${base}${theme}/pages/examples/${htmlName(MobileTabs)}`;
       case EExamples.MobileTabsExpandableNav: return `${base}${theme}/pages/examples/${htmlName(MobileTabsExpandable)}`;
       case EExamples.MobileTypography: return `${base}${theme}/pages/examples/${htmlName(MobileTypography)}`;
+      case EExamples.CarouselHeader: return `${base}${theme}/pages/examples/${htmlName(CarouselHeaderExample)}`;
     }
   }
 

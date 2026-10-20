@@ -106,8 +106,18 @@ export default function DocLayout(
               <li aria-selected={selectedDoc === EDoc.Footer}>
                 <a href={RouteMaster.doc(EDoc.Footer, theme, route)}>Footers</a>
               </li>
-              <li aria-selected={selectedDoc === EDoc.Carousel}>
-                <a href={RouteMaster.doc(EDoc.Carousel, theme, route)}>Carousel</a>
+              <li>
+                <details open>
+                  <summary>Carousel</summary>
+                  <menu>
+                    <li aria-selected={selectedDoc === EDoc.Carousel}>
+                      <a href={RouteMaster.doc(EDoc.Carousel, theme, route)}>Inline</a>
+                      </li>
+                    <li aria-selected={selectedDoc === EDoc.CarouselHeader}>
+                      <a href={RouteMaster.doc(EDoc.CarouselHeader, theme, route)}>Header</a>
+                    </li>
+                  </menu>
+                </details>
               </li>
               <li aria-selected={selectedDoc === EDoc.Groups}>
                 <a href={RouteMaster.doc(EDoc.Groups, theme, route)}>Groups</a>

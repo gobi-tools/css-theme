@@ -138,6 +138,7 @@ details[open] {
     margin-bottom: 0;
   }
 }
+
 article>details[open] {
   gap: var(--space-m);
 }
@@ -169,7 +170,7 @@ hgroup {
   gap: var(--space-xs);
 }
 
-header> :not(:is(nav, menu, aside)) {
+header> :not(:is(nav, menu, aside, [aria-roledescription="carousel"])) {
   display: flex;
   flex-direction: column;
   justify-content: center;

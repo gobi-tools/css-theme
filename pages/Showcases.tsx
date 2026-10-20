@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import HomeLayout from "./common/layouts/HomeLayout";
 import { useRoute } from "./common/effects/useRoute";
 import { RouteMaster } from "./common/utils/routes";

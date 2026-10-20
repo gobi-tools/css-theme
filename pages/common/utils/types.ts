@@ -22,6 +22,7 @@ export enum EDoc {
   Header = 'header',
   Footer = 'footer',
   Carousel = 'carousel',
+  CarouselHeader = 'carousel-header',
   Groups = 'groups',
   Modal = 'modal',
   // navigation
@@ -57,6 +58,7 @@ export enum EExamples {
   LayoutHeaderSection = 'layout-header-section',
   LayoutFooterSimple = 'layout-footer-simple',
   LayoutFooterComplex = 'layout-footer-complex',
+  CarouselHeader = 'carousel-header',
 };
 
 export enum EShowcases {

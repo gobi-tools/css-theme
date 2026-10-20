@@ -4,7 +4,7 @@ header>*:first-child {
   padding-top: var(--space-m);
 }
 
-header>*:last-child {
+header>*:last-child:not([aria-roledescription="carousel"]) {
   padding-bottom: var(--space-m);
 }
 
