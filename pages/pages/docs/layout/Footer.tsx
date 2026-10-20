@@ -16,6 +16,9 @@ export default function Footer({ theme }: { theme: EThemes }) {
             The simplest footer can contain text, links, etc.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutFooterSimple, theme, route)} />
+          <p>
+            <a href={RouteMaster.example(EExamples.LayoutFooterSimple, theme, route)} target="_blank">See standalone example</a>
+          </p>
         </div>
         <div>
           <CodeSyntax lang={'xml'}>
@@ -33,6 +36,9 @@ export default function Footer({ theme }: { theme: EThemes }) {
             More complex footers can contain information divided by columns, etc.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutFooterComplex, theme, route)} />
+          <p>
+            <a href={RouteMaster.example(EExamples.LayoutFooterComplex, theme, route)} target="_blank">See standalone example</a>
+          </p>
         </div>
         <div>
           <CodeSyntax lang={'xml'}>

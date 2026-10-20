@@ -16,6 +16,9 @@ export default function Header({ theme }: { theme: EThemes }) {
             The simplest top level header can contain a navigation element (<code>nav</code> or <code>menu</code>):
           </p>
           <iframe scrolling="no" width="100%" height={275} src={RouteMaster.example(EExamples.LayoutHeaderSimple, theme, route)} />
+          <p>
+            <a href={RouteMaster.example(EExamples.LayoutHeaderSimple, theme, route)} target="_blank">See standalone example</a>
+          </p>
         </div>
         <div>
           <CodeSyntax lang={'xml'}>
@@ -46,10 +49,13 @@ export default function Header({ theme }: { theme: EThemes }) {
       <section className="row">
         <div>
           <p>
-            You create more complex "hero" layouts by placing any element, such as a <code>div</code>, inside a header. 
+            You create more complex "hero" layouts by placing any element, such as a <code>div</code>, inside a header.
             Note that heroes are defined by the extra top and bottom padding child elements receive.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderComplex, theme, route)} />
+          <p>
+            <a href={RouteMaster.example(EExamples.LayoutHeaderComplex, theme, route)} target="_blank">See standalone example</a>
+          </p>
         </div>
         <div>
           <CodeSyntax lang={'xml'}>
@@ -100,10 +106,13 @@ export default function Header({ theme }: { theme: EThemes }) {
       <section className="row">
         <div>
           <p>
-            Finally, <code>aside</code> is another specialised element that can be used in a header in 
+            Finally, <code>aside</code> is another specialised element that can be used in a header in
             order to create a "banner" element, either to be placed at the top of the page or mid-content.
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.LayoutHeaderSection, theme, route)} />
+          <p>
+            <a href={RouteMaster.example(EExamples.LayoutHeaderSection, theme, route)} target="_blank">See standalone example</a>
+          </p>
         </div>
         <div>
           <CodeSyntax lang={'xml'}>

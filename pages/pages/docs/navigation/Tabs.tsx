@@ -49,7 +49,7 @@ export default function Tabs({ theme }: { theme: EThemes }) {
   const [selected, setSelected] = useState<TSelectedTab>('tab-1');
 
   return (
-     <DocLayout theme={theme}>
+    <DocLayout theme={theme}>
       <section className="row">
         <div>
           <p>
@@ -69,13 +69,13 @@ export default function Tabs({ theme }: { theme: EThemes }) {
               </li>
               <li aria-selected={selected === 'tab-2'}>
                 <a onClick={() => setSelected('tab-2')}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /></svg>
                   <span>Install</span>
                 </a>
               </li>
               <li aria-selected={selected === 'tab-3'}>
                 <a onClick={() => setSelected('tab-3')}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M17 12h.01"/><path d="M12 12h.01"/><path d="M7 12h.01"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M17 12h.01" /><path d="M12 12h.01" /><path d="M7 12h.01" /></svg>
                   <span>More</span>
                 </a>
               </li>
@@ -121,18 +121,15 @@ export default function Tabs({ theme }: { theme: EThemes }) {
       <section className="row">
         <div>
           <p>
-            Tabs are responsive. On larger screens they 
+            Tabs are responsive. On larger screens they
             will expand horizontally, whilst on smaller screens (or
             smaller containers in general) they will expand
             vertically.
           </p>
-          <figure>
-            <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileTabsNav, theme, route)} />
-
-            <figcaption>
-              Showcase of tabbed navigation in a smaller container or device.
-            </figcaption>
-          </figure>
+          <iframe scrolling="no" width="100%" height={300} src={RouteMaster.example(EExamples.MobileTabsNav, theme, route)} />
+          <p>
+            <a href={RouteMaster.example(EExamples.MobileTabsNav, theme, route)} target="_blank">See standalone example</a>
+          </p>
         </div>
         <div>
           <CodeSyntax lang={'xml'}>
@@ -170,16 +167,13 @@ export default function Tabs({ theme }: { theme: EThemes }) {
       <section className="row">
         <div>
           <p>
-            Tabs can be nested and they can be combiend with <code>summary</code> elements  
+            Tabs can be nested and they can be combiend with <code>summary</code> elements
             to be collapsible.
           </p>
-          <figure>
-            <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.MobileTabsExpandableNav, theme, route)} />
-
-            <figcaption>
-              Showcase of tabbed navigation with detail and colapsible sections
-            </figcaption>
-          </figure>
+          <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.MobileTabsExpandableNav, theme, route)} />
+          <p>
+            <a href={RouteMaster.example(EExamples.MobileTabsExpandableNav, theme, route)} target="_blank">See standalone example</a>
+          </p>
         </div>
         <div>
           <CodeSyntax lang={'xml'}>

@@ -17,7 +17,7 @@ export default function CarouselHeader({ theme }: { theme: EThemes }) {
           </p>
           <iframe scrolling="no" width="100%" height={500} src={RouteMaster.example(EExamples.CarouselHeader, theme, route)} />
           <p>
-            <a href={RouteMaster.example(EExamples.CarouselHeader, theme, route)} target="_blank">See example</a>
+            <a href={RouteMaster.example(EExamples.CarouselHeader, theme, route)} target="_blank">See standalone example</a>
           </p>
         </div>
         <div>

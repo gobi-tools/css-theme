@@ -1,5 +1,6 @@
 import ReactSrv from "react-srv";
 import Document from "./common/documents/Document";
+import DocumentExamples from "./common/documents/DocumentExamples";
 import { EThemes } from "./common/utils/types";
 import fs from "fs";
 import { cp } from "node:fs/promises";
@@ -13,7 +14,8 @@ const deployments = ['', ...themes.map(t => t.toLowerCase())];
 
     console.log('Outputting for theme', theme);
 
-    const react = new ReactSrv({
+    // normal pages
+    const pages = new ReactSrv({
       Document,
       srcPath: './pages',
       outPath: `./docs/${deployment}`,
@@ -22,7 +24,19 @@ const deployments = ['', ...themes.map(t => t.toLowerCase())];
       keepNames: true,
       initProps: { theme },
     });
-    await react.prerender();
+    await pages.prerender();
+
+    // examples
+    const examples = new ReactSrv({
+      Document: DocumentExamples,
+      srcPath: './pages/pages/examples',
+      outPath: `./docs/${deployment}/pages/examples`,
+      minify: true,
+      splitting: true,
+      keepNames: true,
+      initProps: { theme },
+    });
+    await examples.prerender();
 
     console.log('---------------------------');
   }
