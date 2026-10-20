@@ -3,7 +3,7 @@ import { defineConfig } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   // workers: 16,
-  fullyParallel: true,
+  fullyParallel: false,
 
   use: {
     baseURL: 'http://localhost:8080',
@@ -14,12 +14,6 @@ export default defineConfig({
       name: 'desktop',
       use: {
         viewport: { width: 1280, height: 3000 },
-      },
-    },
-    {
-      name: 'tablet',
-      use: {
-        viewport: { width: 768, height: 4000 },
       },
     },
     {

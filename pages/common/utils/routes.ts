@@ -208,6 +208,11 @@ export class RouteMaster {
     return `${base}showcase/${showcase}/${toKebabCase(showcase)}.${mode}.png`;
   }
 
+  static resImg(url: string, domain: string) {
+    const base = RouteMaster.getBase(domain);
+    return `${base}res/${url}`;
+  }
+
   private static getBase(domain?: string): string {
     if (!domain) return '/';
     return domain === '' ? '/' : `/${domain}/`;

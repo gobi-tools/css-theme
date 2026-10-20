@@ -3,6 +3,7 @@ import DocLayout from "../../../common/layouts/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
 import { EDoc, EThemes } from "../../../common/utils/types";
+import { PUB_SUBDOMAIN } from "../../../common/utils/constants";
 
 export default function Cards({ theme }: { theme: EThemes}) {
   const route = useRoute();
@@ -172,7 +173,7 @@ export default function Cards({ theme }: { theme: EThemes}) {
           <div className="row disable-mobile">
             <div>
               <article>
-                <img height="80" src="https://picsum.photos/id/16/320/80" alt="header image" />
+                <img height="80" src={RouteMaster.resImg("16-320x80.jpg", route)}/>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
