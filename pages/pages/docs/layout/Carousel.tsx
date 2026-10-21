@@ -90,13 +90,13 @@ export default function Carousel({ theme }: { theme: EThemes }) {
           </p>
           <ol aria-roledescription="carousel" aria-label="Image Carousel">
             <li>
-              <img width={'100%'} height={250} src="https://picsum.photos/id/16/500/250" alt="Slide Image 1" />
+              <img width={'100%'} height={250} src={RouteMaster.resImg("16-500x250.jpg", route)} alt="Slide Image 1" />
             </li>
             <li>
-              <img width={'100%'} height={250} src="https://picsum.photos/id/100/500/250" alt="Slide Image 2" />
+              <img width={'100%'} height={250} src={RouteMaster.resImg("100-500x250.jpg", route)} alt="Slide Image 2" />
             </li>
             <li>
-              <img width={'100%'} height={250} src="https://picsum.photos/id/40/500/250" alt="Slide Image 3" />
+              <img width={'100%'} height={250} src={RouteMaster.resImg("40-500x250.jpg", route)} alt="Slide Image 3" />
             </li>
           </ol>
           <figcaption>
@@ -167,7 +167,7 @@ export default function Carousel({ theme }: { theme: EThemes }) {
           <ol aria-roledescription="carousel" aria-label="Ordering Menu" className="row disable-mobile">
             <li className="col-6">
               <article>
-                <img height="120" src="https://picsum.photos/id/216/480/120" alt="header image" />
+                <img height="120" src={RouteMaster.resImg("216-480x120.jpg", route)} alt="header image 1" />
                 <hgroup>
                   <h4>Botanical Garden</h4>
                   <p>
@@ -184,7 +184,7 @@ export default function Carousel({ theme }: { theme: EThemes }) {
             </li>
             <li className="col-6">
               <article>
-                <img height="120" src="https://picsum.photos/id/42/480/120" alt="header image" />
+                <img height="120" src={RouteMaster.resImg("42-480x120.jpg", route)} alt="header image 2" />
                 <hgroup>
                   <h4>Brunch</h4>
                   <p>
@@ -198,7 +198,7 @@ export default function Carousel({ theme }: { theme: EThemes }) {
             </li>
             <li className="col-6">
               <article>
-                <img height="120" src="https://picsum.photos/id/211/480/120" alt="header image" />
+                <img height="120" src={RouteMaster.resImg("211-480x120.jpg", route)} alt="header image 3" />
                 <hgroup>
                   <h4>Boat trip</h4>
                   <p>

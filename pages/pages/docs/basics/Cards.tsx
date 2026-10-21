@@ -3,9 +3,8 @@ import DocLayout from "../../../common/layouts/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
 import { EDoc, EThemes } from "../../../common/utils/types";
-import { PUB_SUBDOMAIN } from "../../../common/utils/constants";
 
-export default function Cards({ theme }: { theme: EThemes}) {
+export default function Cards({ theme }: { theme: EThemes }) {
   const route = useRoute();
 
   return (
@@ -57,8 +56,8 @@ export default function Cards({ theme }: { theme: EThemes}) {
             Cards can wrap headings and paragraphs and
             can be styled with <code>success</code>, <code>error</code>, etc classes.
           </p>
-          
-           <div className="row disable-mobile">
+
+          <div className="row disable-mobile">
             <div>
               <article>
                 <span><b>Title</b></span>
@@ -96,7 +95,7 @@ export default function Cards({ theme }: { theme: EThemes}) {
             </div>
           </div>
 
-         
+
 
           <p>
             <small>
@@ -173,7 +172,7 @@ export default function Cards({ theme }: { theme: EThemes}) {
           <div className="row disable-mobile">
             <div>
               <article>
-                <img height="80" src={RouteMaster.resImg("16-320x80.jpg", route)}/>
+                <img height="80" src={RouteMaster.resImg("16-320x80.jpg", route)} alt="header image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -181,7 +180,7 @@ export default function Cards({ theme }: { theme: EThemes}) {
             </div>
             <div>
               <article className="error">
-                <img height="80" src="https://picsum.photos/id/16/420/80" alt="header image" />
+                <img height="80" src={RouteMaster.resImg("16-420x80.jpg", route)} alt="header image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -215,7 +214,7 @@ export default function Cards({ theme }: { theme: EThemes}) {
             interesting visual element in a few lines of HTML.
           </p>
           <article>
-            <img height="160" src="https://picsum.photos/id/16/480/160" alt="header image" />
+            <img height="160" src={RouteMaster.resImg("16-480x160.jpg", route)} alt="header image" />
             <h4>Title</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -253,13 +252,13 @@ export default function Cards({ theme }: { theme: EThemes}) {
         <div>
           <p>
             If we combine groups, columns and cards, we can experiment
-            with even more daring layouts all while using just 
+            with even more daring layouts all while using just
             semantic HTML and minimal classes.
           </p>
           <article>
             <div role="group">
               <div className="row">
-                <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="header image" />
+                <img width="80" height="80" src={RouteMaster.resImg("16-80x80.jpg", route)} alt="header image" />
                 <div>
                   <b>Title</b>
                   <br />

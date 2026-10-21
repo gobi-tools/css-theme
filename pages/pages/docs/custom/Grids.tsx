@@ -2,38 +2,38 @@ import CodeSyntax from "../../../common/components/CodeSyntax";
 import DocLayout from "../../../common/layouts/DocsLayout";
 import { useRoute } from "../../../common/effects/useRoute";
 import { RouteMaster } from "../../../common/utils/routes";
-import { ELinks, EExamples, EThemes } from "../../../common/utils/types";
+import { EExamples, EThemes } from "../../../common/utils/types";
 
-export default function Grids({ theme }: { theme: EThemes}) {
+export default function Grids({ theme }: { theme: EThemes }) {
   const route = useRoute();
-  
+
   return (
     <DocLayout theme={theme}>
       <section className="row">
         <div>
           <p>
-            Any layout element, such as a <code>div</code> or <code>section</code>, can 
-            be transformed into a grid with columns of equal width 
+            Any layout element, such as a <code>div</code> or <code>section</code>, can
+            be transformed into a grid with columns of equal width
             using the <code>row</code> and <code>col</code> classes.
           </p>
           <article>
             <div className="row disable-mobile">
               <div className="col">
-                <code style={{width:'100%'}}>col</code>
+                <code style={{ width: '100%' }}>col</code>
               </div>
               <div className="col">
-                <code style={{width:'100%'}}>col</code>
+                <code style={{ width: '100%' }}>col</code>
               </div>
             </div>
             <div className="row disable-mobile">
               <div className="col">
-                <code style={{width:'100%'}}>col</code>
+                <code style={{ width: '100%' }}>col</code>
               </div>
               <div className="col">
-                <code style={{width:'100%'}}>col</code>
+                <code style={{ width: '100%' }}>col</code>
               </div>
               <div className="col">
-                <code style={{width:'100%'}}>col</code>
+                <code style={{ width: '100%' }}>col</code>
               </div>
             </div>
           </article>
@@ -59,8 +59,8 @@ export default function Grids({ theme }: { theme: EThemes}) {
             Like similar CSS libraries, a grid contains 12 columns.
           </p>
           <p>
-            An element with class <code>col-1</code> will span just one 
-            column, whilst an element with class <code>col-4</code> will span 4 columns (or 33.333% of the 
+            An element with class <code>col-1</code> will span just one
+            column, whilst an element with class <code>col-4</code> will span 4 columns (or 33.333% of the
             available space) and an element with <code>col-12</code> will span the whole width of the grid.
           </p>
           <p>
@@ -70,13 +70,13 @@ export default function Grids({ theme }: { theme: EThemes}) {
           <article>
             <div className="row disable-mobile">
               <div className="col-2">
-                <code style={{width:'100%'}}>col-2</code>
+                <code style={{ width: '100%' }}>col-2</code>
               </div>
               <div className="col">
-                <code style={{width:'100%'}}>col</code>
+                <code style={{ width: '100%' }}>col</code>
               </div>
               <div className="col-6">
-                <code style={{width:'100%'}}>col-6</code>
+                <code style={{ width: '100%' }}>col-6</code>
               </div>
             </div>
           </article>
@@ -107,7 +107,7 @@ export default function Grids({ theme }: { theme: EThemes}) {
             </figcaption>
           </figure>
 
-          
+
         </div>
         <div>
           <CodeSyntax lang={'xml'}>
@@ -138,7 +138,7 @@ export default function Grids({ theme }: { theme: EThemes}) {
           </p>
           <article>
             <div className="row disable-mobile">
-              <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="ssample image " />
+              <img width="80" height="80" src={RouteMaster.resImg("16-80x80.jpg", route)} alt="sample image" />
               <div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

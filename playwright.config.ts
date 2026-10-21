@@ -13,13 +13,13 @@ export default defineConfig({
     {
       name: 'desktop',
       use: {
-        viewport: { width: 1280, height: 3000 },
+        viewport: { width: 1280, height: 800 },
       },
     },
     {
       name: 'mobile',
       use: {
-        viewport: { width: 375, height: 4500 },
+        viewport: { width: 375, height: 800 },
       },
     },
   ],

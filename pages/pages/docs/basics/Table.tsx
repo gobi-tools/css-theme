@@ -1,8 +1,12 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
+import { useRoute } from "../../../common/effects/useRoute";
 import DocLayout from "../../../common/layouts/DocsLayout";
+import { RouteMaster } from "../../../common/utils/routes";
 import { EThemes } from "../../../common/utils/types";
 
 export default function Table({ theme }: { theme: EThemes}) {
+  const route = useRoute();
+  
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -24,7 +28,7 @@ export default function Table({ theme }: { theme: EThemes}) {
             <tbody>
               <tr>
                 <td>  
-                  <img width="30" height="50" src="https://picsum.photos/id/16/30/50" alt="cover 1" />
+                  <img width="30" height="50" src={RouteMaster.resImg("16-30x50.jpg", route)} alt="cover 1" />
                 </td>
                 <td><a href="">Item 1.1</a></td>
                 <td>20.35</td>
@@ -32,7 +36,7 @@ export default function Table({ theme }: { theme: EThemes}) {
               </tr>
               <tr>
                 <td>
-                  <img width="30" height="50" src="https://picsum.photos/id/100/30/50" alt="cover 2" />
+                  <img width="30" height="50" src={RouteMaster.resImg("100-30x50.jpg", route)} alt="cover 2" />
                 </td>
                 <td><a href="">Item 2.1</a></td>
                 <td>15.99</td>
@@ -40,7 +44,7 @@ export default function Table({ theme }: { theme: EThemes}) {
               </tr>
               <tr>
                 <td>
-                  <img width="30" height="50" src="https://picsum.photos/id/40/30/50" alt="cover 3" />
+                  <img width="30" height="50" src={RouteMaster.resImg("40-30x50.jpg", route)} alt="cover 3" />
                 </td>
                 <td><a href="">Item 5.1</a></td>
                 <td>14.23</td>
@@ -48,7 +52,7 @@ export default function Table({ theme }: { theme: EThemes}) {
               </tr>
               <tr>
                 <td>
-                  <img width="30" height="50" src="https://picsum.photos/id/25/30/50" alt="cover 4" />
+                  <img width="30" height="50" src={RouteMaster.resImg("25-30x50.jpg", route)} alt="cover 4" />
                 </td>
                 <td><a href="">Item 22</a></td>
                 <td>10.11</td>

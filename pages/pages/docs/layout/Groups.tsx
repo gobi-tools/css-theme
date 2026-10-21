@@ -1,8 +1,12 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
+import { useRoute } from "../../../common/effects/useRoute";
 import DocLayout from "../../../common/layouts/DocsLayout";
+import { RouteMaster } from "../../../common/utils/routes";
 import { EThemes } from "../../../common/utils/types";
 
 export default function Groups({ theme }: { theme: EThemes }) {
+  const route = useRoute();
+  
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -138,8 +142,8 @@ export default function Groups({ theme }: { theme: EThemes }) {
             although the impact isn't as pronounced.
           </p>
           <p role="group">
-            <img width="80" height="80" src="https://picsum.photos/id/16/80/80" alt="image 1" />
-            <img width="80" height="80" src="https://picsum.photos/id/16/120/120" alt="image 2" />
+            <img width="80" height="80" src={RouteMaster.resImg("16-80x80.jpg", route)} alt="image 1" />
+            <img width="80" height="80" src={RouteMaster.resImg("16-80x80.jpg", route)} alt="image 2" />
           </p>
         </div>
         <div>

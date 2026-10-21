@@ -13,30 +13,17 @@ for (const showcase of showcases) {
   const route = `/showcase/${showcase}`;
 
   test(`showcase ${route}`, async ({ page }) => {
-    // disable images
-    await page.route('**/*', route =>
-      route.request().resourceType() === 'image'
-        ? route.abort()
-        : route.continue()
-    );
-
-    await page.goto(route);
-
-    await page.addStyleTag({
-      content: `
-        * {
-          animation: none !important;
-          transition: none !important;
-        }
-      `,
-    });
-
     const snapshotName = route
       .replace(/\.html$/, '')
       .replace(/\//g, '__');
 
-    expect(await page.screenshot()).toMatchSnapshot(
-      `${snapshotName}.png`
-    );
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto(route);
+
+    await expect(page).toHaveScreenshot(`${snapshotName}.png`, {
+      fullPage: true,
+      animations: 'disabled',
+      scale: 'css',
+    });
   });
 }

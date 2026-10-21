@@ -31,7 +31,6 @@ button[aria-busy=true]>:is(svg, img) {
   display: none;
 }
 
-
 /* in each of those cases listed, the display is "inline-flex" and the spacing between 
    elements is done via "gap" */
 [aria-busy=true]:not(button, mark, nav a, menu a, nav>menu>li>a)::before {
@@ -53,3 +52,11 @@ article[aria-busy=true]::before {
 }
 
 /* todo: should NAV/MENU elements have this? */
+
+/* for special cases */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --loading-icon: none;
+  }
+}

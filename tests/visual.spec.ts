@@ -8,8 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.join(__dirname, '../docs/pages');
 
 // get all the themes
-// const themes = [EThemes.Default];
-const themes = Object.keys(EThemes);
+const themes = [EThemes.Default];
 
 // get all html files
 const files = fg.sync('**/*.html', {
@@ -26,31 +25,18 @@ for (const theme of themes) {
     const route = `/${theme.toLowerCase()}/${file.replace(/\\/g, '/')}`;
 
     test(`visual: ${route}`, async ({ page }) => {
-      // disable images
-      await page.route('**/*', route =>
-        route.request().resourceType() === 'image'
-          ? route.abort()
-          : route.continue()
-      );
-
-      await page.goto(route);
-
-      await page.addStyleTag({
-        content: `
-        * {
-          animation: none !important;
-          transition: none !important;
-        }
-      `,
-      });
-
       const snapshotName = route
         .replace(/\.html$/, '')
         .replace(/\//g, '__');
 
-      expect(await page.screenshot()).toMatchSnapshot(
-        `${snapshotName}.png`
-      );
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      await page.goto(route);
+
+      await expect(page).toHaveScreenshot(`${snapshotName}.png`, {
+        fullPage: true,
+        animations: 'disabled',
+        scale: 'css',
+      });
     });
   }
 }

@@ -1,8 +1,12 @@
 import CodeSyntax from "../../../common/components/CodeSyntax";
+import { useRoute } from "../../../common/effects/useRoute";
 import DocLayout from "../../../common/layouts/DocsLayout";
+import { RouteMaster } from "../../../common/utils/routes";
 import { EThemes } from "../../../common/utils/types";
 
 export default function Figures({ theme }: { theme: EThemes}) {
+  const route = useRoute();
+  
   return (
     <DocLayout theme={theme}>
       <section className="row">
@@ -12,7 +16,7 @@ export default function Figures({ theme }: { theme: EThemes}) {
             associated caption.
           </p>
           <figure>
-            <img width="640" height="480" src="https://picsum.photos/id/16/640/480" alt="ssample image " />
+            <img width="640" height="480" src={RouteMaster.resImg("16-640x480.jpg", route)} alt="header image" />
             <figcaption>Sample caption</figcaption>
           </figure>
         </div>
@@ -41,11 +45,11 @@ export default function Figures({ theme }: { theme: EThemes}) {
           </p>
           <figure>
             <figure>
-              <img width="200" height="240" src="https://picsum.photos/id/16/200/240" alt="first image" />
+              <img width="200" height="240" src={RouteMaster.resImg("16-200x240.jpg", route)} alt="header image" />
               <figcaption>First image</figcaption>
             </figure>
             <figure>
-              <img width="240" height="240" src="https://picsum.photos/id/16/240/240" alt="second image" />
+              <img width="240" height="240" src={RouteMaster.resImg("16-240x240.jpg", route)} alt="second image" />
               <figcaption>Second image</figcaption>
             </figure>
             <figcaption>Figure group</figcaption>
