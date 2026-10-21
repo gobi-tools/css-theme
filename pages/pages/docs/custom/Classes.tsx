@@ -128,7 +128,8 @@ export default function Classes({ theme }: { theme: EThemes}) {
               <tr>
                 <td><code>inverted</code></td>
                 <td>
-                  Takes any primary, secondary, success or error color scheme and inverts it such that the 
+                  Normally it inverts the text colour. 
+                  Can take any primary, secondary, success or error color scheme and inverts it such that the 
                   background color is a lot more proeminent and the text color is usually a contrasting one.
                 </td>
               </tr>
