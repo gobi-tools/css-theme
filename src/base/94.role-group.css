@@ -76,7 +76,7 @@ form [role=group] {
 
 /* theme colors */
 
-form [role=group]>[type=reset] {
+form [role=group] [type=reset] {
   --color-control: var(--color-base);
   --color-borders: var(--color-base);
   border-color: var(--color-borders-light-1) !important;
