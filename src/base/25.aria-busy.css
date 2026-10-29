@@ -7,7 +7,7 @@
 /* for all normal elements */
 [aria-busy=true]:not(input, select, textarea, html, form)::before,
 /* buttons with a last child icon will get an after element */
-button[aria-busy=true]:has(>:is(svg, img):last-child)::after {
+:is(button, [role=button])[aria-busy=true]:has(>:is(svg, img):last-child)::after {
   display: inline-block;
   width: var(--font-size-base);
   height: var(--font-size-base);
@@ -19,25 +19,25 @@ button[aria-busy=true]:has(>:is(svg, img):last-child)::after {
   content: "";
 }
 
-button[aria-busy=true]:has(>:is(svg, img):last-child)::before {
+:is(button, [role=button])[aria-busy=true]:has(>:is(svg, img):last-child)::before {
   display: none !important;
 }
 
-*:not(button)[aria-busy=true]>* {
+*:not(:is(button, [role=button]))[aria-busy=true]>* {
   display: none;
 }
 
-button[aria-busy=true]>:is(svg, img) {
+:is(button, [role=button])[aria-busy=true]>:is(svg, img) {
   display: none;
 }
 
 /* in each of those cases listed, the display is "inline-flex" and the spacing between 
    elements is done via "gap" */
-[aria-busy=true]:not(button, mark, nav a, menu a, nav>menu>li>a)::before {
+[aria-busy=true]:not(button, [role=button] mark, nav a, menu a, nav>menu>li>a)::before {
   margin-right: var(--space-2xs);
 }
 
-[aria-busy=true]:is(button) {
+[aria-busy=true]:is(button, [role=button]) {
   padding-inline: var(--space-sm);
 }
 

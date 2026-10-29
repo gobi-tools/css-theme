@@ -33,11 +33,11 @@
   --color-error: #ef4444;
 }
 
-:is(button, input[type=submit], input[type=button]) {
+:is(button, [role=button], input[type=submit], input[type=button]) {
   border-color: var(--color-control-dark-1) !important;
 }
 
-:is(button, input[type=submit], input[type=reset], input[type=button]):focus-visible {
+:is(button, [role=button], input[type=submit], input[type=reset], input[type=button]):focus-visible {
   border-color: var(--color-outline-dark-1) !important;
 }
 

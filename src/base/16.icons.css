@@ -1,16 +1,17 @@
 /* base */
 
 svg,
-button>img {
+button>img,
+[role=button]>img {
   padding: 0;
 }
 
-:is(button, input[type=submit], input[type=reset], input[type=button])>:is(svg, img) {
+:is(button, [role=button], input[type=submit], input[type=reset], input[type=button])>:is(svg, img) {
   width: var(--font-size-base);
   height: var(--font-size-base);
 }
 
-:is(button, input[type=submit], input[type=reset], input[type=button]):has(:is(svg:only-child, img:only-child)) {
+:is(button, [role=button], input[type=submit], input[type=reset], input[type=button]):has(:is(svg:only-child, img:only-child)) {
   padding-inline: var(--space-sm);
   min-width: auto;
   max-width: fit-content;

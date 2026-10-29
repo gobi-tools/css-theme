@@ -20,7 +20,7 @@ button:focus-visible {
   border-color: var(--color-outline);
 }
 
-:is(button, [type="submit"], [type="reset"]):focus-visible {
+:is(button, [role=button], [type="submit"], [type="reset"]):focus-visible {
   border-color: var(--color-outline-dark-1);
   outline-color: var(--color-outline-dark-1);
 }

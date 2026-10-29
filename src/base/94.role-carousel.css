@@ -17,7 +17,7 @@
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  /* position scroll buttons */
+  /* position scroll btns */
   anchor-name: --carousel;
   scroll-marker-group: after;
   /* ensure there's enough space for the markers at the bottom & that content is pushed down */

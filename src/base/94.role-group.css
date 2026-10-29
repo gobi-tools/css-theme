@@ -26,7 +26,7 @@
   border-radius: 0;
 }
 
-[role="group"]>:is(button, input[type=submit], input[type=reset], input[type=button]) {
+[role="group"]>:is(button, [role=button], input[type=submit], input[type=reset], input[type=button]) {
   width: auto;
   min-width: auto;
   align-self: flex-start;
@@ -46,7 +46,7 @@ form [role=group] {
   margin-inline-start: -2px !important;
 }
 
-[role=group]> :is(button, [type=submit], [type=button]) {
+[role=group]> :is(button, [role=button], [type=submit], [type=button]) {
   z-index: 1;
 }
 
