@@ -4,7 +4,8 @@ button,
 [role=button],
 input[type=button],
 input[type=submit],
-input[type=reset] {
+input[type=reset],
+[type=reset] {
   cursor: pointer;
   min-height: var(--height-control);
   min-width: auto;
@@ -26,7 +27,7 @@ button,
 [role=button] {
   width: var(--width-control-button);
   max-width: 100%;
-  min-width: max-content;
+  min-width: max-content !important;
 }
 
 *:disabled,
@@ -50,7 +51,8 @@ button,
 [role=button],
 input[type=submit],
 input[type=button],
-input[type=reset] {
+input[type=reset],
+[type=reset] {
   font-weight: bold;
   letter-spacing: -0.015em;
   border: solid;
@@ -65,7 +67,8 @@ button,
 [role=button],
 input[type=submit],
 input[type=button],
-input[type=reset] {
+input[type=reset],
+[type=reset] {
   border-radius: var(--border-radius-control-button);
   border-width: var(--border-width-control);
   border-style: var(--border-style-control-button);
@@ -100,14 +103,16 @@ input[type=button]:hover {
 }
 
 button[type=reset],
-input[type=reset] {
+input[type=reset],
+[type=reset] {
   background: var(--color-surface-light-5);
   border-color: var(--color-borders);
   color: var(--color-text);
 }
 
 button[type=reset]:hover,
-input[type=reset]:hover {
+input[type=reset]:hover,
+[type=reset]:hover {
   background: var(--color-control-light-3);
   color: var(--color-text);
 }
