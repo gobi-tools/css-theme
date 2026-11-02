@@ -22,16 +22,18 @@ input[type=reset] {
 
 }
 
-button, 
+button,
 [role=button] {
   width: var(--width-control-button);
   max-width: 100%;
   min-width: max-content;
 }
 
-*:disabled {
+*:disabled,
+[aria-disabled=true] {
   filter: opacity(50%);
   cursor: not-allowed;
+  pointer-events: none;
 }
 
 *:hover:disabled,
