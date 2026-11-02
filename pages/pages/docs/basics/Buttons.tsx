@@ -16,7 +16,7 @@ export default function Buttons({ theme }: { theme: EThemes}) {
           </p>
           <p>
             <button>Button</button>
-            <button type="reset">Button</button>
+            <button type={'reset'}>Button</button>
           </p>
         </div>
         <div>
