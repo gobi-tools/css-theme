@@ -48,7 +48,7 @@ input[type=button]+input[type=reset] {
 
 .row>*:has(+*),
 .row>*+* {
-  margin-inline: 0;
+  margin-inline: 0 !important;
 }
 
 ul,
