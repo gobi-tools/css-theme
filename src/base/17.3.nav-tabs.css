@@ -7,7 +7,7 @@ menu {
 }
 
 menu>li {
-  padding-left: var(--space-sm);
+  padding-inline: var(--space-sm);
   padding-bottom: var(--space-xs);
 }
 
@@ -65,6 +65,10 @@ menu>li[aria-selected="true"] a {
   }
 
   /* for collapsible menus within menus */
+
+  menu>li:has( details) {
+    padding-right: 0 !important;
+  }
 
   menu>li details>summary {
     display: flex;
