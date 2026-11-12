@@ -49,10 +49,6 @@ hr {
 
 /* self layout: bottom margins */
 
-details {
-  margin-bottom: var(--space-2xs);
-}
-
 p,
 ul,
 ol,
@@ -64,7 +60,8 @@ blockquote,
 pre,
 menu,
 hgroup,
-article {
+article,
+details {
   margin-bottom: var(--space-m);
 }
 
@@ -164,15 +161,10 @@ details[open] {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
-  margin-bottom: var(--space-m);
 
   &>*:not(hr) {
     margin-block: 0 !important;
   }
-}
-
-article>details[open] {
-  gap: var(--space-m);
 }
 
 details:not([open]) {
