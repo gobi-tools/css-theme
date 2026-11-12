@@ -12,7 +12,7 @@ const page = await ctx.newPage();
 const results = {};
 
 for (const p of pages) {
-  await page.goto(BASE + p, { waitUntil: 'domcontentloaded', timeout: 15000 }).catch(e => console.log('goto fail', p, e.message));
+  await page.goto(BASE + p, { waitUntil: 'load', timeout: 15000 }).catch(e => console.log('goto fail', p, e.message));
   await page.waitForTimeout(1200);
   const data = await page.evaluate(() => {
     const out = [];

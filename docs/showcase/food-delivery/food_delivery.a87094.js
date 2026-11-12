@@ -1,4 +1,4 @@
-// ../../../../tmp/react-srv/471002/wrappers-UOWU4Z/food_delivery.a87094.js
+// ../../../../tmp/react-srv/507542/wrappers-orCWH4/food_delivery.a87094.js
 import React from "https://esm.sh/react@19.2.6";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.6/client";
 
@@ -74,7 +74,7 @@ function FoodDelivery() {
         ] })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
-        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/42/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { src: "https://via.placeholder.com/photo/food1/640x480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [
             /* @__PURE__ */ jsx("h2", { children: "Sed ut perspiciatis unde." }),
@@ -82,10 +82,10 @@ function FoodDelivery() {
           ] }),
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Find restaurants" }) })
         ] }),
-        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/42/640/480", width: "100%" }) })
+        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { src: "https://via.placeholder.com/photo/food1/640x480", width: "100%" }) })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
-        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/103/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("img", { src: "https://via.placeholder.com/photo/food2/640x480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [
             /* @__PURE__ */ jsx("h2", { children: "Omnis iste natus" }),
@@ -95,7 +95,7 @@ function FoodDelivery() {
         ] })
       ] }),
       /* @__PURE__ */ jsxs("section", { className: "row", role: "group", children: [
-        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/348/640/480", width: "100%" }) }),
+        /* @__PURE__ */ jsx("div", { className: "hide-on-desktop", children: /* @__PURE__ */ jsx("img", { src: "https://via.placeholder.com/photo/food4/640x480", width: "100%" }) }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsxs("hgroup", { children: [
             /* @__PURE__ */ jsx("h2", { children: "Sit voluptatem accusantium." }),
@@ -103,15 +103,15 @@ function FoodDelivery() {
           ] }),
           /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Shop now" }) })
         ] }),
-        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { src: "https://picsum.photos/id/348/640/480", width: "100%" }) })
+        /* @__PURE__ */ jsx("div", { className: "hide-on-mobile", children: /* @__PURE__ */ jsx("img", { src: "https://via.placeholder.com/photo/food4/640x480", width: "100%" }) })
       ] }),
-      /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center big-banner", children: [
+      /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsxs("div", { className: "align-center primary inverted", children: [
         /* @__PURE__ */ jsxs("hgroup", { children: [
           /* @__PURE__ */ jsx("h1", { children: "Lorem ipsum dolor sit amet." }),
           /* @__PURE__ */ jsx("h4", { children: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
           /* @__PURE__ */ jsx("p", { children: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." })
         ] }),
-        /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { children: "Shop Groceries" }) })
+        /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("button", { className: "secondary", children: "Shop Groceries" }) })
       ] }) }),
       /* @__PURE__ */ jsx("header", { className: "align-center", children: /* @__PURE__ */ jsxs("div", { className: "primary", children: [
         /* @__PURE__ */ jsxs("div", { className: "row", children: [
@@ -162,7 +162,7 @@ function FoodDelivery() {
   ] });
 }
 
-// ../../../../tmp/react-srv/471002/wrappers-UOWU4Z/food_delivery.a87094.js
+// ../../../../tmp/react-srv/507542/wrappers-orCWH4/food_delivery.a87094.js
 var root = document.getElementById("root");
 if (!root) {
   throw new Error("react-srv: Could not find hydration root.");

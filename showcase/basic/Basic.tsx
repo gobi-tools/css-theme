@@ -81,12 +81,12 @@ export default function Basic() {
       <main>
         <div className="row">
           <article>
-            <img width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://picsum.photos/id/20/600/200" />
+            <img width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://via.placeholder.com/photo/coffee/600x200" />
             <h3>Sed ut perspiciatis</h3>
             <p>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
           </article>
           <article>
-            <img width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://picsum.photos/id/42/600/200" />
+            <img width={"100%"} style={{ aspectRatio: 16.0 / 9.0 }} src="https://via.placeholder.com/photo/cafe-interior/600x260" />
             <h3>Nemo enim ipsam quia</h3>
             <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed.</p>
           </article>

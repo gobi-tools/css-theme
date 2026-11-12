@@ -1,4 +1,4 @@
-// ../../../../tmp/react-srv/471002/wrappers-BSOuIT/basic.0ec8d3.js
+// ../../../../tmp/react-srv/507542/wrappers-FyTT24/basic.0ec8d3.js
 import React from "https://esm.sh/react@19.2.6";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.6/client";
 
@@ -53,12 +53,12 @@ function Basic() {
     /* @__PURE__ */ jsxs("main", { children: [
       /* @__PURE__ */ jsxs("div", { className: "row", children: [
         /* @__PURE__ */ jsxs("article", { children: [
-          /* @__PURE__ */ jsx("img", { width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://picsum.photos/id/20/600/200" }),
+          /* @__PURE__ */ jsx("img", { width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://via.placeholder.com/photo/coffee/600x200" }),
           /* @__PURE__ */ jsx("h3", { children: "Sed ut perspiciatis" }),
           /* @__PURE__ */ jsx("p", { children: "Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa." })
         ] }),
         /* @__PURE__ */ jsxs("article", { children: [
-          /* @__PURE__ */ jsx("img", { width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://picsum.photos/id/42/600/200" }),
+          /* @__PURE__ */ jsx("img", { width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://via.placeholder.com/photo/cafe-interior/600x260" }),
           /* @__PURE__ */ jsx("h3", { children: "Nemo enim ipsam quia" }),
           /* @__PURE__ */ jsx("p", { children: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed." })
         ] })
@@ -102,7 +102,7 @@ function Basic() {
   ] });
 }
 
-// ../../../../tmp/react-srv/471002/wrappers-BSOuIT/basic.0ec8d3.js
+// ../../../../tmp/react-srv/507542/wrappers-FyTT24/basic.0ec8d3.js
 var root = document.getElementById("root");
 if (!root) {
   throw new Error("react-srv: Could not find hydration root.");

@@ -96,7 +96,7 @@ export default function FoodDelivery() {
         </section>
         <section className="row" role="group">
           <div className="hide-on-desktop">
-            <img src="https://picsum.photos/id/42/640/480" width={"100%"} />
+            <img src="https://via.placeholder.com/photo/food1/640x480" width={"100%"} />
           </div>
           <div>
             <hgroup>
@@ -110,13 +110,13 @@ export default function FoodDelivery() {
             </p>
           </div>
           <div className="hide-on-mobile">
-            <img src="https://picsum.photos/id/42/640/480" width={"100%"} />
+            <img src="https://via.placeholder.com/photo/food1/640x480" width={"100%"} />
           </div>
         </section>
 
         <section className="row" role="group">
           <div>
-            <img src="https://picsum.photos/id/103/640/480" width={"100%"} />
+            <img src="https://via.placeholder.com/photo/food2/640x480" width={"100%"} />
           </div>
           <div>
             <hgroup>
@@ -133,7 +133,7 @@ export default function FoodDelivery() {
 
         <section className="row" role="group">
           <div className="hide-on-desktop">
-            <img src="https://picsum.photos/id/348/640/480" width={"100%"} />
+            <img src="https://via.placeholder.com/photo/food4/640x480" width={"100%"} />
           </div>
           <div>
             <hgroup>
@@ -147,18 +147,18 @@ export default function FoodDelivery() {
             </p>
           </div>
           <div className="hide-on-mobile">
-            <img src="https://picsum.photos/id/348/640/480" width={"100%"} />
+            <img src="https://via.placeholder.com/photo/food4/640x480" width={"100%"} />
           </div>
         </section>
 
         <header>
-          <div className="align-center big-banner">
+          <div className="align-center primary inverted">
             <hgroup>
               <h1>Lorem ipsum dolor sit amet.</h1>
               <h4>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </hgroup>
-            <p><button>Shop Groceries</button></p>
+            <p><button className="secondary">Shop Groceries</button></p>
           </div>
         </header>
 

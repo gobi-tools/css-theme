@@ -11,6 +11,8 @@ const pages = [
   ['modal', 'http://localhost:8124/default/pages/docs/layout/modal.html'],
   ['forms', 'http://localhost:8124/default/pages/docs/forms/forms_normal.html'],
   ['blog', 'http://localhost:8124/showcase/blog/blog.html'],
+  ['forms-grouped', 'http://localhost:8124/default/pages/docs/forms/forms_grouped.html'],
+  ['forms-checkbox', 'http://localhost:8124/default/pages/docs/forms/forms_checkbox.html'],
   ['header-complex', 'http://localhost:8124/default/pages/examples/layout_header_complex.html'],
 ];
 

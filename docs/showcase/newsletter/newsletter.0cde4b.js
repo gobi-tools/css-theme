@@ -1,4 +1,4 @@
-// ../../../../tmp/react-srv/471002/wrappers-TnSi1z/newsletter.0cde4b.js
+// ../../../../tmp/react-srv/507542/wrappers-CnrLmW/newsletter.0cde4b.js
 import React from "https://esm.sh/react@19.2.6";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.6/client";
 
@@ -28,7 +28,7 @@ var Avatar = (props) => {
 function Newsletter() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx("header", { children: /* @__PURE__ */ jsx("nav", { className: "disable-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
-      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Avatar, { url: "https://picsum.photos/id/42/30/30", size: 30 }) }),
+      /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Avatar, { url: "https://via.placeholder.com/photo/snow/30x30", size: 30 }) }),
       /* @__PURE__ */ jsx("div", {}),
       /* @__PURE__ */ jsx("li", { className: "align-center", children: /* @__PURE__ */ jsx("h3", { children: "My Newsletter" }) }),
       /* @__PURE__ */ jsx("div", {}),
@@ -40,7 +40,7 @@ function Newsletter() {
         /* @__PURE__ */ jsx("h5", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
       ] }),
       /* @__PURE__ */ jsx("div", { role: "group", children: /* @__PURE__ */ jsxs("div", { className: "row", children: [
-        /* @__PURE__ */ jsx(Avatar, { url: "https://picsum.photos/id/50/40/40", size: 40 }),
+        /* @__PURE__ */ jsx(Avatar, { url: "https://via.placeholder.com/photo/desert/40x40", size: 40 }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("span", { children: "Author Name" }),
           /* @__PURE__ */ jsx("br", {}),
@@ -117,7 +117,7 @@ function Newsletter() {
       /* @__PURE__ */ jsx("p", { children: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." }),
       /* @__PURE__ */ jsx("p", { children: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" }),
       /* @__PURE__ */ jsxs("figure", { children: [
-        /* @__PURE__ */ jsx("img", { width: "100%", src: "https://picsum.photos/id/16/640/480", alt: "ssample image " }),
+        /* @__PURE__ */ jsx("img", { width: "100%", src: "https://via.placeholder.com/photo/city/640x480", alt: "ssample image " }),
         /* @__PURE__ */ jsx("figcaption", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" })
       ] }),
       /* @__PURE__ */ jsx("p", { children: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident" }),
@@ -145,7 +145,7 @@ function Newsletter() {
   ] });
 }
 
-// ../../../../tmp/react-srv/471002/wrappers-TnSi1z/newsletter.0cde4b.js
+// ../../../../tmp/react-srv/507542/wrappers-CnrLmW/newsletter.0cde4b.js
 var root = document.getElementById("root");
 if (!root) {
   throw new Error("react-srv: Could not find hydration root.");

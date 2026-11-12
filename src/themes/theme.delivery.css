@@ -17,8 +17,3 @@
   /** used to fix icon v alignment */
   --valign-nav-icon-fix: -0.125em;
 }
-
-.big-banner {
-  background-image: url('https://picsum.photos/id/130/640/480');
-  background-size: cover;
-}

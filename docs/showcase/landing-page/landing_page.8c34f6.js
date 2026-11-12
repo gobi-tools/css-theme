@@ -1,4 +1,4 @@
-// ../../../../tmp/react-srv/471002/wrappers-hlsst8/landing_page.8c34f6.js
+// ../../../../tmp/react-srv/507542/wrappers-isum0R/landing_page.8c34f6.js
 import React from "https://esm.sh/react@19.2.6";
 import { hydrateRoot } from "https://esm.sh/react-dom@19.2.6/client";
 
@@ -36,7 +36,7 @@ function LandingPage() {
       /* @__PURE__ */ jsx("p", { children: /* @__PURE__ */ jsx("a", { href: "", children: "Other platforms" }) })
     ] }) }),
     /* @__PURE__ */ jsxs("main", { children: [
-      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("figure", { children: /* @__PURE__ */ jsx("img", { width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://picsum.photos/id/2/1200/500?grayscale" }) }) }),
+      /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsx("figure", { children: /* @__PURE__ */ jsx("img", { width: "100%", style: { aspectRatio: 16 / 9 }, src: "https://via.placeholder.com/photo/desk5/1200x500?grayscale" }) }) }),
       /* @__PURE__ */ jsx("section", { children: /* @__PURE__ */ jsxs("hgroup", { children: [
         /* @__PURE__ */ jsx("h2", { children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" }),
         /* @__PURE__ */ jsx("p", { children: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." })
@@ -112,7 +112,7 @@ function LandingPage() {
   ] });
 }
 
-// ../../../../tmp/react-srv/471002/wrappers-hlsst8/landing_page.8c34f6.js
+// ../../../../tmp/react-srv/507542/wrappers-isum0R/landing_page.8c34f6.js
 var root = document.getElementById("root");
 if (!root) {
   throw new Error("react-srv: Could not find hydration root.");

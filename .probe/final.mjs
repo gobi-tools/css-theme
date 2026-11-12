@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 const b = await chromium.launch();
 const p = await b.newPage({ viewport: { width: 1000, height: 900 } });
-await p.goto('http://localhost:8123/.probe/probe.html', { waitUntil: 'domcontentloaded' });
+await p.goto('http://localhost:8123/.probe/probe.html', { waitUntil: 'load' });
 await p.waitForTimeout(400);
 const res = await p.evaluate(() => {
   const g = el => el.getBoundingClientRect();

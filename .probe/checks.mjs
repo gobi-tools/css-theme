@@ -11,7 +11,7 @@ const checks = [
 ];
 
 for (const [name, url] of checks) {
-  await page.goto(url, { waitUntil: 'domcontentloaded' });
+  await page.goto(url, { waitUntil: 'load' });
   await page.waitForTimeout(700);
   const res = await page.evaluate(() => {
     const out = [];
