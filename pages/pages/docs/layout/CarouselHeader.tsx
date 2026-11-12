@@ -29,10 +29,8 @@ export default function CarouselHeader({ theme }: { theme: EThemes }) {
     <li class="primary inverted">
       <!-- make sure the child is a layout element -->
       <div>
-        <br>
         <h1>...</h1>
         <p>...</p>
-        </br>
       </div>
     </li>
     <li class="secondary inverted">

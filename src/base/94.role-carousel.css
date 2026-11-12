@@ -90,6 +90,10 @@
   transform: translateY(calc(-1 * (var(--carousel-marker-size) + var(--carousel-marker-border) + (var(--carousel-marker-padding) / 2.0))));
 }
 
+header>[aria-roledescription="carousel"]>:is(li, [aria-roledescription="slide"]) {
+  padding-block: var(--space-l);
+}
+
 @container rows (max-width: 600px) {
   [aria-roledescription="carousel"].row>* {
     flex: 0 0 100%;

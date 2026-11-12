@@ -1,0 +1,207 @@
+/* misc */
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* self layout: top margins */
+
+main {
+  margin-top: var(--space-l);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: var(--space-l);
+}
+
+/* a heading right after a heading keeps the tight pair rhythm */
+:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 0;
+}
+
+/* first child: the container owns the top boundary */
+:is(h1, h2, h3, h4, h5, h6):first-child {
+  margin-top: 0;
+}
+
+dialog {
+  margin-top: var(--space-xl);
+}
+
+hr {
+  margin-top: var(--space-m) !important;
+}
+
+/* self layout: bottom margins */
+
+details {
+  margin-bottom: var(--space-2xs);
+}
+
+p,
+ul,
+ol,
+dl,
+form,
+fieldset,
+table,
+blockquote,
+pre,
+menu,
+hgroup,
+article {
+  margin-bottom: var(--space-m);
+}
+
+h1,
+h2 {
+  margin-bottom: var(--space-l);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: var(--space-m);
+}
+
+h1:has(+ :is(h1, h2, h3, h4, h5, h6)),
+h2:has(+ :is(h2, h3, h4, h5, h6)),
+h3:has(+ :is(h3, h4, h5, h6)),
+h4:has(+ :is(h4, h5, h6)),
+h5:has(+ :is(h5, h6)),
+h6:has(+ :is(h6)) {
+  margin-bottom: var(--space-sm);
+}
+
+hr {
+  margin-bottom: var(--space-m) !important;
+}
+
+figure {
+  margin-bottom: var(--space-l);
+
+  &>figure {
+    margin-bottom: 0;
+  }
+}
+
+section {
+  margin-bottom: var(--space-xl);
+}
+
+:is(header, footer)>nav * {
+  margin-bottom: 0;
+}
+
+:is(header, footer) :last-child {
+  margin-bottom: 0;
+}
+
+*:has(+ figcaption) {
+  margin-bottom: 0;
+}
+
+/* child displays */
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+
+  &>*:not(hr) {
+    margin-block: 0 !important;
+  }
+}
+
+form,
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+
+  & *:not(hr) {
+    margin-block: 0 !important;
+  }
+}
+
+ul,
+ol,
+dl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+details[open] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-m);
+
+  &>*:not(hr) {
+    margin-block: 0 !important;
+  }
+}
+
+article>details[open] {
+  gap: var(--space-m);
+}
+
+details:not([open]) {
+  gap: 0 !important;
+}
+
+details[name]:has(+ details[name]) {
+  margin-bottom: 0;
+}
+
+article,
+hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+
+  & *:not(hr) {
+    margin-block: 0 !important;
+  }
+}
+
+article:has(> details[name]) {
+  gap: 0;
+}
+
+hgroup {
+  gap: var(--space-xs);
+}
+
+header> :not(:is(nav, menu, aside, [aria-roledescription="carousel"])) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: var(--space-2xl) !important;
+}
+
+@container rows (max-width: 600px) {
+
+  .row> :is(div, article, .col,
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12):not(:last-child) {
+    margin-bottom: 0;
+  }
+}

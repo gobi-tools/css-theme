@@ -1,6 +1,6 @@
 /* base */
 
-header>*:first-child {
+header>*:first-child:not([aria-roledescription="carousel"]) {
   padding-top: var(--space-m);
 }
 
