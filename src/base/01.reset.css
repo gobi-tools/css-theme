@@ -14,13 +14,15 @@
   /* spacing */
   --space-2xs: 0.25rem;
   --space-xs: 0.5rem;
-  --space-sm: 0.7rem;
+  --space-sm: 0.75rem;
   --space-m: 1rem;
+  /* content rhythm: free-flowing blocks and dividers breathe wider than the component unit */
+  --space-prose: 1.5rem;
   --space-l: 2rem;
   --space-xl: 4rem;
   --space-2xl: 6.5rem;
   /* text size */
-  --line-height-body: 1.45;
+  --line-height-body: 1.5;
   --line-height-head: 1.25;
   --letter-spacing-head: -0.01em;
   /* font sizes */

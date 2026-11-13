@@ -20,13 +20,14 @@ main {
   margin-top: var(--space-l);
 }
 
+/* headings sit twice the prose gap above their content */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: var(--space-l);
+  margin-top: calc(var(--space-prose) * 2);
 }
 
 /* a heading right after a heading keeps the tight pair rhythm */
@@ -43,8 +44,9 @@ dialog {
   margin-top: var(--space-xl);
 }
 
+/* a divider keeps the prose gap even on both sides */
 hr {
-  margin-top: var(--space-m) !important;
+  margin-top: var(--space-prose) !important;
 }
 
 /* self layout: bottom margins */
@@ -60,16 +62,18 @@ blockquote,
 pre,
 menu,
 hgroup,
-article,
+article {
+  margin-bottom: var(--space-prose);
+}
+
+/* a standalone details is a widget: it keeps the component unit instead of the prose gap */
 details {
   margin-bottom: var(--space-m);
 }
 
+/* all headings: --space-prose ×2 above, --space-m below (pairs keep the --space-sm rhythm) */
 h1,
-h2 {
-  margin-bottom: var(--space-l);
-}
-
+h2,
 h3,
 h4,
 h5,
@@ -87,7 +91,7 @@ h6:has(+ :is(h6)) {
 }
 
 hr {
-  margin-bottom: var(--space-m) !important;
+  margin-bottom: var(--space-prose) !important;
 }
 
 figure {
