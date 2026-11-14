@@ -1,0 +1,13 @@
+progress {
+  width: 100%; 
+}
+
+/* theme colors */
+
+progress {
+  --color-accents: var(--color-primary);
+}
+
+progress {
+  accent-color: var(--color-accents);
+}
