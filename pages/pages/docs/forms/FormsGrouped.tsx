@@ -91,14 +91,14 @@ export default function FormsGrouped({ theme }: { theme: EThemes }) {
               <input type="search" value="" placeholder="e.g. SW1A 1AA" />
 
               <button type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="none"
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                   strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
                   <line x1="22" x2="18" y1="12" y2="12" />
@@ -109,14 +109,14 @@ export default function FormsGrouped({ theme }: { theme: EThemes }) {
               </button>
               <button type="submit">
                 <span>Go</span>
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="none"
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                   strokeLinejoin="round">
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
@@ -239,6 +239,53 @@ export default function FormsGrouped({ theme }: { theme: EThemes }) {
           </CodeSyntax>
         </div>
       </section>
+
+      {/* <section className="row">
+        <div>
+          <p>
+            And you can combine grouped and ungrouped form items as well.
+          </p>
+          <form>
+            <fieldset>
+              <legend>Form</legend>
+              <label>
+                <span>Email</span>
+
+                <div role={'group'}>
+                  <mark>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round">
+                      <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>
+                  </mark>
+                  <input type={'email'} placeholder="Email" />
+                </div>
+              </label>
+
+              <label>
+                <span>Type</span>
+
+                <div role={'group'}>
+                  <input type={'button'} value={'Free'} />
+                  <input type={'reset'} className="primary" value={'Paid'} />
+                </div>
+              </label>
+
+              <input type='submit' value={'Subscribe'} />
+            </fieldset>
+          </form>
+        </div>
+        <div></div>
+      </section> */}
     </DocLayout>
   )
 }

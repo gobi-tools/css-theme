@@ -139,11 +139,6 @@ fieldset {
   & *:not(hr) {
     margin-block: 0 !important;
   }
-
-  /* a plain text label binds to the control right after it */
-  & label:not(:has(> input, > select, > textarea)) + *:not(hr) {
-    margin-top: calc(-1 * var(--space-xs)) !important;
-  }
 }
 
 ul,
@@ -155,7 +150,7 @@ dl {
 }
 
 /* a label stacking its text over the control keeps them together */
-label:has(> span + :is(input:not([type="checkbox"], [type="radio"]), select, textarea)) {
+label:has(> span + :is(input:not([type="checkbox"], [type="radio"]), select, textarea, div, p)) {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
