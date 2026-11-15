@@ -5,9 +5,9 @@ import { EThemes } from "../../../common/utils/types";
 
 export default function FormsCheckbox({ theme }: { theme: EThemes }) {
   const [radio, setRadio] = useState('bread');
-
   const [termsSigned, setSigned] = useState(false);
   const [subscribed, setSubscribed] = useState(true);
+  const [group, setGroup] = useState<'free' | 'premium' | 'founder'>('free');
 
   return (
     <DocLayout theme={theme}>
@@ -131,16 +131,16 @@ export default function FormsCheckbox({ theme }: { theme: EThemes }) {
       <section className="row">
         <div>
           <p>
-            And if you want to represent an on/off state, you can use switches. 
+            If you want to represent an on/off state, you can use switches.
           </p>
           <form>
             <label htmlFor="terms" onClick={() => setSigned(!termsSigned)}>
-              <input name="terms" type="checkbox" role="switch" checked={termsSigned}/>
+              <input name="terms" type="checkbox" role="switch" checked={termsSigned} />
               <span>I agree to the terms</span>
             </label>
 
             <label htmlFor="updates" onClick={() => setSubscribed(!subscribed)}>
-              <input name="updates" type="checkbox" role="switch" checked={subscribed}/>
+              <input name="updates" type="checkbox" role="switch" checked={subscribed} />
               <span>I want to receive updates</span>
             </label>
           </form>
@@ -163,6 +163,35 @@ export default function FormsCheckbox({ theme }: { theme: EThemes }) {
       role="switch"${subscribed ? "\n      checked/>" : "/>"}
     <span>I want to receive updates</span>
   </label>
+</form>`}
+          </CodeSyntax>
+        </div>
+      </section>
+
+      <section className="row">
+        <div>
+          <p>
+            And if you want to represent a group of buttons acting as a radio selector,
+            you can combine the <code>group</code> role and a hidden <code>input</code>.
+          </p>
+          <form>
+            <div role={'group'}>
+              <button className="primary" type={group === 'free' ? 'button' : 'reset'} onClick={() => setGroup('free')}>Free</button>
+              <button className="primary" type={group === 'premium' ? 'button' : 'reset'} onClick={() => setGroup('premium')}>Premium</button>
+              <button className="primary" type={group === 'founder' ? 'button' : 'reset'} onClick={() => setGroup('founder')}>Founder</button>
+            </div>
+            <input id="group" name="group" type={'hidden'} value={group} />
+          </form>
+        </div>
+        <div>
+          <CodeSyntax lang={'xml'}>
+            {`<form>
+  <div role="group">
+    <button class="primary" type="${group === 'free' ? 'button' : 'reset'}">Free</button>
+    <button class="primary" type="${group === 'premium' ? 'button' : 'reset'}">Premium</button>
+    <button class="primary" type="${group === 'founder' ? 'button' : 'reset'}">Founder</button>
+  </div>
+  <input id="group" name="group" type="hidden" value="${group}"/>
 </form>`}
           </CodeSyntax>
         </div>

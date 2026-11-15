@@ -13,8 +13,8 @@ input[type=radio] {
  * make labels that are parts of checboxes and radio btns 
  * diplay as flex so any inline padding the browser adds is nulliied
  */ 
-label:has(> input[type="checkbox"]),
-label:has(> input[type="radio"]) {
+label:has(> input[type=checkbox]),
+label:has(> input[type=radio]) {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);

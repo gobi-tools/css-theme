@@ -63,7 +63,7 @@ nav>:is(ul, ol) {
 /* 
  * if a label contains check | radios, it gets the right margin 
  */
-label:has(> input[type="checkbox"]),
-label:has(> input[type="radio"]) {
+label:has(> input[type=checkbox]),
+label:has(> input[type=radio]) {
   margin-right: var(--space-l);
 }
