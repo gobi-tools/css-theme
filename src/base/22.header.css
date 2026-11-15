@@ -19,4 +19,12 @@ header>*:last-child:not([aria-roledescription="carousel"]) {
   header> :not(:is(nav, menu)) {
     max-height: initial;
   }
+
+  header>*:first-child:has(>menu) {
+    padding-top: 0 !important;
+  }
+
+  header>*:last-child:has(>menu) {
+    padding-bottom: 0 !important;
+  }
 }
