@@ -47,6 +47,7 @@ import MobileTabsExpandable from "../../pages/examples/MobileTabsExpandable";
 import Carousel from "../../pages/docs/layout/Carousel";
 import CarouselHeader from "../../pages/docs/layout/CarouselHeader";
 import CarouselHeaderExample from "../../pages/examples/CarouselHeader";
+import Meters from "../../pages/docs/basics/Meters";
 
 export class RouteMaster {
   static baseRoute: string = '';
@@ -76,6 +77,7 @@ export class RouteMaster {
       case EDoc.Table: return `${base}${theme}/pages/docs/basics/${htmlName(Table)}`;
       case EDoc.Tags: return `${base}${theme}/pages/docs/basics/${htmlName(Tags)}`;
       case EDoc.Cards: return `${base}${theme}/pages/docs/basics/${htmlName(Cards)}`;
+      case EDoc.Meters: return`${base}${theme}/pages/docs/basics/${htmlName(Meters)}`;
       // forms
       case EDoc.FormsCheck: return `${base}${theme}/pages/docs/forms/${htmlName(FormsCheckbox)}`;
       case EDoc.FormsDisabled: return `${base}${theme}/pages/docs/forms/${htmlName(FormsDisabled)}`;
@@ -128,6 +130,7 @@ export class RouteMaster {
           case htmlName(Table): return EDoc.Table;
           case htmlName(Tags): return EDoc.Tags;
           case htmlName(Cards): return EDoc.Cards;
+          case htmlName(Meters): return EDoc.Meters;
         }
       }
       case 'forms': {

@@ -1,13 +1,16 @@
-progress {
+progress,
+meter {
   width: 100%; 
 }
 
 /* theme colors */
 
-progress {
+progress,
+meter {
   --color-accents: var(--color-primary);
 }
 
-progress {
+progress,
+meter {
   accent-color: var(--color-accents);
 }

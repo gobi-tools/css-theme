@@ -12,6 +12,7 @@ export enum EDoc {
   Table = 'table',
   Figures = 'figures',
   Cards = 'cards',
+  Meters = 'meters',
   // forms
   FormsNormal = 'forms-normal',
   FormsCheck = 'forms-check',

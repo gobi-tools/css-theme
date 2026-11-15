@@ -77,6 +77,9 @@ export default function DocLayout(
               <li aria-selected={selectedDoc === EDoc.Cards}>
                 <a href={RouteMaster.doc(EDoc.Cards, theme, route)}>Cards</a>
               </li>
+              <li aria-selected={selectedDoc === EDoc.Meters}>
+                <a href={RouteMaster.doc(EDoc.Meters, theme, route)}>Meters</a>
+              </li>
             </menu>
 
             <menu>
